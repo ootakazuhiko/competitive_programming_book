@@ -1,0 +1,229 @@
+<svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図6-15：データ構造選択の判断フロー</title>
+  <desc>問題分析からデータ構造選択までの思考プロセスを段階的にガイドするフローチャート</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .step-title { font: 600 12px Inter, sans-serif; }
+      .question-text { font: 500 11px Inter, sans-serif; fill: #4B5563; }
+      .detail-text { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .decision-text { font: 600 11px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .analysis-section { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 2; }
+      .question-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .list-choice { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .dict-choice { fill: #D1FAE5; stroke: #10B981; stroke-width: 2; }
+      .set-choice { fill: #F3E8FF; stroke: #8B5CF6; stroke-width: 2; }
+      .deque-choice { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .arrow { stroke: #059669; stroke-width: 2; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="#059669"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="900" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図6-15：データ構造選択の判断フロー</text>
+  
+  <!-- Problem Analysis Section -->
+  <g id="problem-analysis">
+    <rect x="200" y="60" width="400" height="200" rx="12" class="analysis-section"/>
+    <text x="220" y="85" class="emoji">🤔</text>
+    <text x="250" y="85" class="section-title" fill="#1E40AF">問題分析から始めよう</text>
+    
+    <g transform="translate(220, 100)">
+      <g transform="translate(0, 15)">
+        <text x="0" y="15" class="step-title" fill="#1E40AF">1. どんなデータを扱う？</text>
+        <text x="20" y="30" class="detail-text">• 数値？文字列？複合データ？</text>
+      </g>
+      
+      <g transform="translate(0, 55)">
+        <text x="0" y="15" class="step-title" fill="#1E40AF">2. データをどう使う？</text>
+        <text x="20" y="30" class="detail-text">• 順番に処理？ • 特定の値を検索？ • 追加・削除が頻繁？</text>
+      </g>
+      
+      <g transform="translate(0, 95)">
+        <text x="0" y="15" class="step-title" fill="#1E40AF">3. パフォーマンスの要求は？</text>
+        <text x="20" y="30" class="detail-text">• データ量は？ • 処理速度重視？メモリ重視？</text>
+      </g>
+      
+      <g transform="translate(0, 135)">
+        <text x="0" y="15" class="step-title" fill="#1E40AF">4. 重複データの扱いは？</text>
+        <text x="20" y="30" class="detail-text">• 重複許可？除去？</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Arrow down -->
+  <path d="M400 270 L400 300" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Decision Point -->
+  <g id="decision-point">
+    <text x="400" y="325" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #059669;">
+      適切なデータ構造の選択
+    </text>
+  </g>
+  
+  <!-- Decision Branches -->
+  <g id="decision-branches">
+    <!-- List Choice -->
+    <g transform="translate(50, 350)">
+      <rect x="0" y="0" width="160" height="120" rx="12" class="list-choice"/>
+      <text x="10" y="20" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">📋 リスト (list)</text>
+      
+      <g transform="translate(10, 35)">
+        <text x="0" y="15" class="decision-text" fill="#1E40AF">選択条件:</text>
+        <text x="0" y="30" class="detail-text">• 順序が重要</text>
+        <text x="0" y="45" class="detail-text">• インデックスアクセス</text>
+        <text x="0" y="60" class="detail-text">• 末尾追加が多い</text>
+        <text x="0" y="75" class="detail-text">• 重複データOK</text>
+      </g>
+    </g>
+    
+    <!-- Dictionary Choice -->
+    <g transform="translate(230, 350)">
+      <rect x="0" y="0" width="160" height="120" rx="12" class="dict-choice"/>
+      <text x="10" y="20" style="font: 600 12px Inter, sans-serif; fill: #047857;">🔍 辞書 (dict)</text>
+      
+      <g transform="translate(10, 35)">
+        <text x="0" y="15" class="decision-text" fill="#047857">選択条件:</text>
+        <text x="0" y="30" class="detail-text">• 高速検索が必要</text>
+        <text x="0" y="45" class="detail-text">• キー値の対応</text>
+        <text x="0" y="60" class="detail-text">• 頻繁な追加・削除</text>
+        <text x="0" y="75" class="detail-text">• O(1)の性能重視</text>
+      </g>
+    </g>
+    
+    <!-- Set Choice -->
+    <g transform="translate(410, 350)">
+      <rect x="0" y="0" width="160" height="120" rx="12" class="set-choice"/>
+      <text x="10" y="20" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">🎯 集合 (set)</text>
+      
+      <g transform="translate(10, 35)">
+        <text x="0" y="15" class="decision-text" fill="#7C3AED">選択条件:</text>
+        <text x="0" y="30" class="detail-text">• 重複除去が必要</text>
+        <text x="0" y="45" class="detail-text">• 集合演算を使う</text>
+        <text x="0" y="60" class="detail-text">• メンバーシップ判定</text>
+        <text x="0" y="75" class="detail-text">• 順序は不要</text>
+      </g>
+    </g>
+    
+    <!-- Deque Choice -->
+    <g transform="translate(590, 350)">
+      <rect x="0" y="0" width="160" height="120" rx="12" class="deque-choice"/>
+      <text x="10" y="20" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">🔄 deque</text>
+      
+      <g transform="translate(10, 35)">
+        <text x="0" y="15" class="decision-text" fill="#DC2626">選択条件:</text>
+        <text x="0" y="30" class="detail-text">• 両端操作が多い</text>
+        <text x="0" y="45" class="detail-text">• スタック・キュー</text>
+        <text x="0" y="60" class="detail-text">• 先頭挿入・削除</text>
+        <text x="0" y="75" class="detail-text">• FIFO/LIFOパターン</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Arrows from decision point to choices -->
+  <path d="M350 340 L130 350" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M380 340 L310 350" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M420 340 L490 350" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M450 340 L670 350" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Specific Use Cases -->
+  <g id="use-cases">
+    <text x="400" y="510" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #374151;">具体的な使用例</text>
+    
+    <!-- List examples -->
+    <g transform="translate(50, 530)">
+      <rect x="0" y="0" width="160" height="80" rx="8" fill="#F0F9FF" stroke="#3B82F6" stroke-width="1"/>
+      <text x="10" y="15" style="font: 600 10px Inter, sans-serif; fill: #1E40AF;">リストの典型例:</text>
+      <text x="10" y="30" class="detail-text">• 成績一覧の管理</text>
+      <text x="10" y="45" class="detail-text">• 座標点の保存</text>
+      <text x="10" y="60" class="detail-text">• 履歴・ログ記録</text>
+    </g>
+    
+    <!-- Dictionary examples -->
+    <g transform="translate(230, 530)">
+      <rect x="0" y="0" width="160" height="80" rx="8" fill="#F0FDF4" stroke="#10B981" stroke-width="1"/>
+      <text x="10" y="15" style="font: 600 10px Inter, sans-serif; fill: #047857;">辞書の典型例:</text>
+      <text x="10" y="30" class="detail-text">• 名前→点数の対応</text>
+      <text x="10" y="45" class="detail-text">• 文字→出現回数</text>
+      <text x="10" y="60" class="detail-text">• キャッシュ・メモ化</text>
+    </g>
+    
+    <!-- Set examples -->
+    <g transform="translate(410, 530)">
+      <rect x="0" y="0" width="160" height="80" rx="8" fill="#FAF5FF" stroke="#8B5CF6" stroke-width="1"/>
+      <text x="10" y="15" style="font: 600 10px Inter, sans-serif; fill: #7C3AED;">集合の典型例:</text>
+      <text x="10" y="30" class="detail-text">• 重複除去処理</text>
+      <text x="10" y="45" class="detail-text">• 共通要素の抽出</text>
+      <text x="10" y="60" class="detail-text">• 要素の存在判定</text>
+    </g>
+    
+    <!-- Deque examples -->
+    <g transform="translate(590, 530)">
+      <rect x="0" y="0" width="160" height="80" rx="8" fill="#FEF2F2" stroke="#EF4444" stroke-width="1"/>
+      <text x="10" y="15" style="font: 600 10px Inter, sans-serif; fill: #DC2626;">dequeの典型例:</text>
+      <text x="10" y="30" class="detail-text">• 幅優先探索(BFS)</text>
+      <text x="10" y="45" class="detail-text">• スライディング窓</text>
+      <text x="10" y="60" class="detail-text">• 履歴の管理</text>
+    </g>
+  </g>
+  
+  <!-- Performance Considerations -->
+  <g id="performance-tips">
+    <rect x="100" y="640" width="600" height="200" rx="12" fill="#FFFBEB" stroke="#F59E0B" stroke-width="2"/>
+    <text x="120" y="665" class="emoji">⚡</text>
+    <text x="150" y="665" style="font: 600 14px Inter, sans-serif; fill: #D97706;">性能を考慮した選択のポイント</text>
+    
+    <g transform="translate(120, 680)">
+      <g transform="translate(0, 15)">
+        <circle cx="8" cy="8" r="4" fill="#F59E0B"/>
+        <text x="20" y="12" class="question-text">データ量が大きい（N > 10⁴）場合は O(1) 操作を持つ dict, set を優先</text>
+      </g>
+      
+      <g transform="translate(0, 35)">
+        <circle cx="8" cy="8" r="4" fill="#F59E0B"/>
+        <text x="20" y="12" class="question-text">検索が頻繁な場合は list よりも dict を選択（O(N) → O(1)）</text>
+      </g>
+      
+      <g transform="translate(0, 55)">
+        <circle cx="8" cy="8" r="4" fill="#F59E0B"/>
+        <text x="20" y="12" class="question-text">両端操作が多い場合は list よりも deque を選択（O(N) → O(1)）</text>
+      </g>
+      
+      <g transform="translate(0, 75)">
+        <circle cx="8" cy="8" r="4" fill="#F59E0B"/>
+        <text x="20" y="12" class="question-text">重複が問題になる場合は set で重複除去してから処理</text>
+      </g>
+      
+      <g transform="translate(0, 95)">
+        <circle cx="8" cy="8" r="4" fill="#F59E0B"/>
+        <text x="20" y="12" class="question-text">メモリ使用量を抑えたい場合は必要最小限のデータ構造を選択</text>
+      </g>
+      
+      <g transform="translate(0, 115)">
+        <circle cx="8" cy="8" r="4" fill="#F59E0B"/>
+        <text x="20" y="12" class="question-text">複数のデータ構造を組み合わせて使うことも有効（例：dict + list）</text>
+      </g>
+      
+      <g transform="translate(200, 135)">
+        <rect x="0" y="0" width="240" height="40" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1"/>
+        <text x="120" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">
+          💡 迷ったら性能測定で決める
+        </text>
+        <text x="120" y="35" text-anchor="middle" class="detail-text">
+          実際のデータで計算量を確認しよう
+        </text>
+      </g>
+    </g>
+  </g>
+  
+</svg>

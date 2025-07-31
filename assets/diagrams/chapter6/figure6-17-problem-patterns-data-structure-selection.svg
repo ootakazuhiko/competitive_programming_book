@@ -1,0 +1,201 @@
+<svg viewBox="0 0 800 850" xmlns="http://www.w3.org/2000/svg">
+  <title>図6-17：典型的な問題パターンとデータ構造選択</title>
+  <desc>競技プログラミングでよく出る問題パターン別に最適なデータ構造の選び方を実例で解説</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .pattern-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .method-title { font: 600 12px Inter, sans-serif; }
+      .code-text { font: 500 10px 'Monaco', monospace; fill: #4B5563; }
+      .comment-text { font: 400 9px Inter, sans-serif; fill: #6B7280; }
+      .tip-text { font: 500 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .pattern-section { fill: #F9FAFB; stroke: #D1D5DB; stroke-width: 2; }
+      .bad-method { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .good-method { fill: #ECFDF5; stroke: #10B981; stroke-width: 2; }
+      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .tip-box { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="850" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図6-17：典型的な問題パターンとデータ構造選択</text>
+  
+  <!-- Pattern 1: Search and Existence Check -->
+  <g id="pattern1">
+    <rect x="50" y="60" width="700" height="220" rx="12" class="pattern-section"/>
+    <text x="70" y="85" class="emoji">🔍</text>
+    <text x="100" y="85" class="pattern-title">問題パターン1: 要素の検索・存在確認</text>
+    
+    <g transform="translate(70, 100)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #374151;">
+        問題：「リストの中に特定の値が含まれているか？」
+      </text>
+      
+      <!-- Bad method -->
+      <g transform="translate(0, 35)">
+        <rect x="0" y="0" width="300" height="80" class="bad-method"/>
+        <text x="10" y="20" class="emoji">❌</text>
+        <text x="35" y="20" class="method-title" fill="#DC2626">効率が悪い方法:</text>
+        
+        <rect x="10" y="25" width="280" height="45" class="code-box"/>
+        <text x="15" y="40" class="code-text">numbers = [1, 5, 3, 8, 2, 9, 4]</text>
+        <text x="15" y="52" class="code-text">if 5 in numbers:</text>
+        <text x="150" y="52" class="comment-text"># O(N) - 遅い</text>
+        <text x="25" y="64" class="code-text">print("見つかりました")</text>
+      </g>
+      
+      <!-- Good method -->
+      <g transform="translate(320, 35)">
+        <rect x="0" y="0" width="300" height="80" class="good-method"/>
+        <text x="10" y="20" class="emoji">✅</text>
+        <text x="35" y="20" class="method-title" fill="#059669">効率的な方法:</text>
+        
+        <rect x="10" y="25" width="280" height="45" class="code-box"/>
+        <text x="15" y="40" class="code-text">numbers_set = {1, 5, 3, 8, 2, 9, 4}</text>
+        <text x="15" y="52" class="code-text">if 5 in numbers_set:</text>
+        <text x="150" y="52" class="comment-text"># O(1) - 高速</text>
+        <text x="25" y="64" class="code-text">print("見つかりました")</text>
+      </g>
+      
+      <!-- Selection criteria -->
+      <g transform="translate(0, 130)">
+        <rect x="0" y="0" width="620" height="60" class="tip-box"/>
+        <text x="10" y="20" class="emoji">💡</text>
+        <text x="35" y="20" class="tip-text" fill="#1E40AF">選択基準:</text>
+        
+        <text x="35" y="35" class="tip-text" fill="#1E40AF">• 検索が頻繁 → set または dict</text>
+        <text x="35" y="50" class="tip-text" fill="#1E40AF">• 順序が重要 → list（検索は遅いが順序保持）</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Pattern 2: Data Correspondence -->
+  <g id="pattern2">
+    <rect x="50" y="300" width="700" height="200" rx="12" class="pattern-section"/>
+    <text x="70" y="325" class="emoji">🔄</text>
+    <text x="100" y="325" class="pattern-title">問題パターン2: データの対応関係</text>
+    
+    <g transform="translate(70, 340)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #374151;">
+        問題：「学生名から点数を高速で取得したい」
+      </text>
+      
+      <!-- Dictionary solution -->
+      <g transform="translate(0, 35)">
+        <rect x="0" y="0" width="300" height="100" class="good-method"/>
+        <text x="10" y="20" class="emoji">✅</text>
+        <text x="35" y="20" class="method-title" fill="#059669">辞書が最適:</text>
+        
+        <rect x="10" y="25" width="280" height="65" class="code-box"/>
+        <text x="15" y="40" class="code-text">scores = {</text>
+        <text x="25" y="52" class="code-text">"Alice": 85,</text>
+        <text x="25" y="64" class="code-text">"Bob": 92,</text>
+        <text x="25" y="76" class="code-text">"Charlie": 78</text>
+        <text x="15" y="88" class="code-text">}</text>
+      </g>
+      
+      <!-- Alternative comparison -->
+      <g transform="translate(320, 35)">
+        <rect x="0" y="0" width="300" height="100" class="bad-method"/>
+        <text x="10" y="20" class="emoji">❌</text>
+        <text x="35" y="20" class="method-title" fill="#DC2626">リスト + 線形検索:</text>
+        
+        <rect x="10" y="25" width="280" height="65" class="code-box"/>
+        <text x="15" y="40" class="code-text">names = ["Alice", "Bob", "Charlie"]</text>
+        <text x="15" y="52" class="code-text">scores = [85, 92, 78]</text>
+        <text x="15" y="64" class="code-text">idx = names.index("Alice")</text>
+        <text x="15" y="76" class="code-text">score = scores[idx]</text>
+        <text x="180" y="76" class="comment-text"># O(N)</text>
+      </g>
+      
+      <!-- Performance comparison -->
+      <g transform="translate(0, 150)">
+        <rect x="0" y="0" width="620" height="30" class="tip-box"/>
+        <text x="10" y="20" class="tip-text" fill="#1E40AF">
+          💡 辞書: O(1)アクセス vs リスト検索: O(N) → 大量データでは辞書が圧倒的に有利
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Pattern 3: Duplicate Removal -->
+  <g id="pattern3">
+    <rect x="50" y="520" width="700" height="160" rx="12" class="pattern-section"/>
+    <text x="70" y="545" class="emoji">🎯</text>
+    <text x="100" y="545" class="pattern-title">問題パターン3: 重複除去と集合演算</text>
+    
+    <g transform="translate(70, 560)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #374151;">
+        問題：「重複する要素を除去して、ユニークな要素のみを取得したい」
+      </text>
+      
+      <!-- Set solution -->
+      <g transform="translate(0, 35)">
+        <rect x="0" y="0" width="300" height="80" class="good-method"/>
+        <text x="10" y="20" class="emoji">✅</text>
+        <text x="35" y="20" class="method-title" fill="#059669">集合が最適:</text>
+        
+        <rect x="10" y="25" width="280" height="45" class="code-box"/>
+        <text x="15" y="40" class="code-text">numbers = [1, 2, 2, 3, 3, 3, 4]</text>
+        <text x="15" y="52" class="code-text">unique = list(set(numbers))</text>
+        <text x="15" y="64" class="code-text"># [1, 2, 3, 4]</text>
+      </g>
+      
+      <!-- Manual approach -->
+      <g transform="translate(320, 35)">
+        <rect x="0" y="0" width="300" height="80" class="bad-method"/>
+        <text x="10" y="20" class="emoji">❌</text>
+        <text x="35" y="20" class="method-title" fill="#DC2626">手動での重複チェック:</text>
+        
+        <rect x="10" y="25" width="280" height="45" class="code-box"/>
+        <text x="15" y="40" class="code-text">unique = []</text>
+        <text x="15" y="52" class="code-text">for x in numbers:</text>
+        <text x="25" y="64" class="code-text">if x not in unique:</text>
+        <text x="175" y="64" class="comment-text"># O(N²)</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Pattern 4: FIFO/LIFO Operations -->
+  <g id="pattern4">
+    <rect x="50" y="700" width="700" height="120" rx="12" class="pattern-section"/>
+    <text x="70" y="725" class="emoji">📚</text>
+    <text x="100" y="725" class="pattern-title">問題パターン4: FIFO/LIFO操作</text>
+    
+    <g transform="translate(70, 740)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #374151;">
+        問題：「先頭・末尾の要素を頻繁に追加・削除する」
+      </text>
+      
+      <!-- Deque solution -->
+      <g transform="translate(0, 35)">
+        <rect x="0" y="0" width="300" height="60" class="good-method"/>
+        <text x="10" y="20" class="emoji">✅</text>
+        <text x="35" y="20" class="method-title" fill="#059669">dequeが最適:</text>
+        
+        <rect x="10" y="25" width="280" height="30" class="code-box"/>
+        <text x="15" y="40" class="code-text">from collections import deque</text>
+        <text x="15" y="52" class="code-text">dq = deque([1, 2, 3])</text>
+      </g>
+      
+      <!-- List alternative -->
+      <g transform="translate(320, 35)">
+        <rect x="0" y="0" width="300" height="60" class="bad-method"/>
+        <text x="10" y="20" class="emoji">❌</text>
+        <text x="35" y="20" class="method-title" fill="#DC2626">リストでの先頭操作:</text>
+        
+        <rect x="10" y="25" width="280" height="30" class="code-box"/>
+        <text x="15" y="40" class="code-text">lst = [1, 2, 3]</text>
+        <text x="15" y="52" class="code-text">lst.insert(0, x)</text>
+        <text x="150" y="52" class="comment-text"># O(N) - 遅い</text>
+      </g>
+    </g>
+  </g>
+  
+</svg>

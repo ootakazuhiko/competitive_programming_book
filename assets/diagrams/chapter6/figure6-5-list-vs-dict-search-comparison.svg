@@ -1,0 +1,169 @@
+<svg viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg">
+  <title>図6-5：リスト検索 vs 辞書検索の効率比較</title>
+  <desc>リストでの線形検索と辞書でのハッシュ検索の効率差とコードの複雑さを視覚的に比較する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .method-title { font: 600 12px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Monaco', monospace; fill: #4B5563; }
+      .comment-text { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .problem-text { font: 500 11px Inter, sans-serif; fill: #DC2626; }
+      .benefit-text { font: 500 11px Inter, sans-serif; fill: #059669; }
+      .complexity-text { font: 600 12px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .inefficient-section { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .efficient-section { fill: #ECFDF5; stroke: #10B981; stroke-width: 2; }
+      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .problem-box { fill: #FEF2F2; stroke: #F87171; stroke-width: 1; }
+      .benefit-box { fill: #ECFDF5; stroke: #34D399; stroke-width: 1; }
+      .comparison-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="750" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図6-5：リスト検索 vs 辞書検索の効率比較</text>
+  
+  <!-- Inefficient List Search -->
+  <g id="list-search">
+    <rect x="50" y="60" width="700" height="280" rx="12" class="inefficient-section"/>
+    <text x="70" y="85" class="emoji">❌</text>
+    <text x="100" y="85" class="method-title" fill="#DC2626">リストでの検索（効率が悪い）</text>
+    
+    <g transform="translate(70, 100)">
+      <rect x="0" y="0" width="630" height="180" class="code-box"/>
+      <text x="10" y="20" class="code-text">students = ["Alice", "Bob", "Charlie", "David"]</text>
+      <text x="10" y="35" class="code-text">scores = [85, 92, 78, 90]</text>
+      
+      <text x="10" y="60" class="comment-text"># "Bob"の点数を知りたい場合</text>
+      <text x="10" y="75" class="code-text">bob_score = None</text>
+      <text x="10" y="90" class="code-text">for i, name in enumerate(students):</text>
+      <text x="30" y="105" class="code-text">if name == "Bob":</text>
+      <text x="50" y="120" class="code-text">bob_score = scores[i]</text>
+      <text x="50" y="135" class="code-text">break</text>
+      <text x="10" y="150" class="code-text">print(bob_score)  # 92</text>
+      
+      <!-- Visual process representation -->
+      <g transform="translate(400, 20)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">検索プロセス:</text>
+        
+        <!-- Step visualization -->
+        <g transform="translate(0, 30)">
+          <rect x="0" y="0" width="50" height="20" fill="#FCA5A5" stroke="#DC2626" stroke-width="1"/>
+          <text x="25" y="15" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #7F1D1D;">Alice?</text>
+          <text x="60" y="15" style="font: 500 10px Inter, sans-serif; fill: #7F1D1D;">× 違う</text>
+        </g>
+        
+        <g transform="translate(0, 55)">
+          <rect x="0" y="0" width="50" height="20" fill="#34D399" stroke="#10B981" stroke-width="1"/>
+          <text x="25" y="15" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #065F46;">Bob?</text>
+          <text x="60" y="15" style="font: 500 10px Inter, sans-serif; fill: #065F46;">✓ 発見!</text>
+        </g>
+        
+        <g transform="translate(0, 80)">  
+          <rect x="0" y="0" width="50" height="20" fill="#D1D5DB" stroke="#9CA3AF" stroke-width="1"/>
+          <text x="25" y="15" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #6B7280;">...</text>
+          <text x="60" y="15" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">未チェック</text>
+        </g>
+        
+        <text x="0" y="115" style="font: 600 10px Inter, sans-serif; fill: #DC2626;">平均2回の比較が必要</text>
+      </g>
+    </g>
+    
+    <!-- Problems section -->
+    <g transform="translate(70, 290)">
+      <rect x="0" y="0" width="630" height="40" class="problem-box"/>
+      <text x="10" y="15" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">問題点:</text>
+      <text x="10" y="30" class="problem-text">• 線形検索で時間がかかる（O(N)） • コードが複雑 • データの対応関係がわかりにくい</text>
+    </g>
+  </g>
+  
+  <!-- Efficient Dictionary Search -->
+  <g id="dict-search">
+    <rect x="50" y="360" width="700" height="220" rx="12" class="efficient-section"/>
+    <text x="70" y="385" class="emoji">✅</text>
+    <text x="100" y="385" class="method-title" fill="#059669">辞書での検索（効率的）</text>
+    
+    <g transform="translate(70, 400)">
+      <rect x="0" y="0" width="630" height="100" class="code-box"/>
+      <text x="10" y="20" class="code-text">scores = {"Alice": 85, "Bob": 92, "Charlie": 78, "David": 90}</text>
+      
+      <text x="10" y="45" class="comment-text"># "Bob"の点数を知りたい場合</text>
+      <text x="10" y="60" class="code-text">bob_score = scores["Bob"]</text>
+      <text x="10" y="75" class="code-text">print(bob_score)  # 92</text>
+      
+      <!-- Visual process representation -->
+      <g transform="translate(400, 20)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #059669;">検索プロセス:</text>
+        
+        <g transform="translate(0, 30)">
+          <rect x="0" y="0" width="80" height="40" fill="#A7F3D0" stroke="#10B981" stroke-width="2" rx="8"/>
+          <text x="40" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #065F46;">ハッシュ関数</text>
+          <text x="40" y="32" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #065F46;">"Bob" → 位置</text>
+        </g>
+        
+        <text x="90" y="50" style="font: 600 14px Inter, sans-serif; fill: #059669;">⚡</text>
+        <text x="110" y="35" style="font: 600 10px Inter, sans-serif; fill: #059669;">即座に発見！</text>
+        <text x="110" y="50" style="font: 500 10px Inter, sans-serif; fill: #059669;">1回で完了</text>
+      </g>
+    </g>
+    
+    <!-- Benefits section -->
+    <g transform="translate(70, 510)">
+      <rect x="0" y="0" width="630" height="55" class="benefit-box"/>
+      <text x="10" y="15" style="font: 600 12px Inter, sans-serif; fill: #059669;">利点:</text>
+      <text x="10" y="30" class="benefit-text">• ハッシュテーブルで高速検索（O(1)） • コードがシンプル</text>
+      <text x="10" y="45" class="benefit-text">• データの対応関係が明確 • 大規模データでも高速</text>
+    </g>
+  </g>
+  
+  <!-- Performance Comparison -->
+  <g id="performance-comparison">
+    <rect x="50" y="600" width="700" height="120" rx="12" class="comparison-box"/>
+    <text x="70" y="625" class="emoji">📊</text>
+    <text x="100" y="625" style="font: 600 14px Inter, sans-serif; fill: #D97706;">性能比較</text>
+    
+    <g transform="translate(70, 640)">
+      <!-- Data size vs performance chart -->
+      <g transform="translate(0, 10)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #92400E;">データ件数</text>
+        <text x="100" y="15" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">リスト検索時間</text>
+        <text x="220" y="15" style="font: 600 12px Inter, sans-serif; fill: #059669;">辞書検索時間</text>
+        <text x="340" y="15" style="font: 600 12px Inter, sans-serif; fill: #3B82F6;">速度差</text>
+      </g>
+      
+      <g transform="translate(0, 35)">
+        <text x="0" y="15" class="complexity-text" fill="#6B7280;">100件</text>
+        <text x="100" y="15" class="complexity-text" fill="#DC2626;">平均50回</text>
+        <text x="220" y="15" class="complexity-text" fill="#059669;">1回</text>
+        <text x="340" y="15" class="complexity-text" fill="#3B82F6;">50倍高速</text>
+      </g>
+      
+      <g transform="translate(0, 55)">
+        <text x="0" y="15" class="complexity-text" fill="#6B7280;">10,000件</text>
+        <text x="100" y="15" class="complexity-text" fill="#DC2626;">平均5,000回</text>
+        <text x="220" y="15" class="complexity-text" fill="#059669;">1回</text>
+        <text x="340" y="15" class="complexity-text" fill="#3B82F6;">5,000倍高速</text>
+      </g>
+      
+      <g transform="translate(450, 10)">
+        <rect x="0" y="0" width="220" height="60" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1"/>
+        <text x="110" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">
+          💡 競技プログラミングでの教訓
+        </text>
+        <text x="110" y="35" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #1E40AF;">
+          大量データの検索 → 辞書を使う
+        </text>
+        <text x="110" y="50" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #1E40AF;">
+          計算量 O(N) → O(1) への改善が鍵
+        </text>
+      </g>
+    </g>
+  </g>
+  
+</svg>
