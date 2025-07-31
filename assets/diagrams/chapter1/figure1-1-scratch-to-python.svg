@@ -1,0 +1,87 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-1：ScratchからPythonへの進化</title>
+  <desc>Scratchのビジュアルプログラミングから、Pythonのテキストベースプログラミングへの自然な移行を示す概念図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .subtitle { font: 500 14px Inter, sans-serif; fill: #4B5563; }
+      .code { font: 400 12px 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace; fill: #374151; }
+      .label { font: 400 12px Inter, sans-serif; fill: #6B7280; }
+      .scratch-bg { fill: #FF6B35; }
+      .python-bg { fill: #3B82F6; }
+      .arrow { fill: #10B981; }
+      .box-border { stroke: #D1D5DB; stroke-width: 2; fill: #F9FAFB; }
+      .scratch-block { fill: #FF8C42; stroke: #FF6B35; stroke-width: 2; }
+      .python-block { fill: #EEF2FF; stroke: #3B82F6; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図1-1：ScratchからPythonへの進化</text>
+  
+  <!-- Left side: Scratch -->
+  <g id="scratch-side">
+    <!-- Container -->
+    <rect x="40" y="80" width="300" height="280" rx="8" class="box-border"/>
+    
+    <!-- Header -->
+    <rect x="40" y="80" width="300" height="40" rx="8" class="scratch-bg"/>
+    <text x="190" y="104" text-anchor="middle" class="subtitle" fill="white">Scratchのブロック組み合わせ</text>
+    
+    <!-- Scratch blocks -->
+    <g id="scratch-blocks" transform="translate(60, 140)">
+      <!-- Repeat block -->
+      <rect x="0" y="0" width="260" height="32" rx="16" class="scratch-block"/>
+      <text x="8" y="20" class="code" fill="white">10回繰り返す</text>
+      
+      <!-- Nested blocks -->
+      <rect x="20" y="40" width="220" height="28" rx="14" class="scratch-block"/>
+      <text x="28" y="58" class="code" fill="white">x を 1 ずつ変える</text>
+      
+      <rect x="20" y="76" width="220" height="28" rx="14" class="scratch-block"/>
+      <text x="28" y="94" class="code" fill="white">x を言う</text>
+    </g>
+    
+    <!-- Bottom label -->
+    <text x="190" y="340" text-anchor="middle" class="label">視覚的・直感的</text>
+  </g>
+  
+  <!-- Arrow -->
+  <g id="arrow" transform="translate(370, 200)">
+    <path d="M 0 0 L 40 0 L 35 -8 M 40 0 L 35 8" stroke="#10B981" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="20" y="-12" text-anchor="middle" class="label" fill="#10B981">進化</text>
+  </g>
+  
+  <!-- Right side: Python -->
+  <g id="python-side">
+    <!-- Container -->
+    <rect x="460" y="80" width="300" height="280" rx="8" class="box-border"/>
+    
+    <!-- Header -->
+    <rect x="460" y="80" width="300" height="40" rx="8" class="python-bg"/>
+    <text x="610" y="104" text-anchor="middle" class="subtitle" fill="white">Pythonでのコード記述</text>
+    
+    <!-- Python code -->
+    <g id="python-code" transform="translate(480, 140)">
+      <rect x="0" y="0" width="260" height="120" rx="4" class="python-block"/>
+      
+      <!-- Code lines -->
+      <text x="12" y="24" class="code">for i in range(10):</text>
+      <text x="32" y="48" class="code">x += 1</text>
+      <text x="32" y="72" class="code">print(x)</text>
+    </g>
+    
+    <!-- Bottom label -->
+    <text x="610" y="340" text-anchor="middle" class="label">論理的・効率的</text>
+  </g>
+  
+  <!-- Benefits section -->
+  <g id="benefits" transform="translate(40, 380)">
+    <text x="0" y="0" class="subtitle">🎯 同じロジック、より強力な表現力</text>
+  </g>
+  
+</svg>

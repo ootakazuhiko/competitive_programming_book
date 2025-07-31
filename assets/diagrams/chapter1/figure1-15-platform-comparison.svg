@@ -1,0 +1,199 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-15：主要な競技プログラミングプラットフォーム比較</title>
+  <desc>AtCoder、Codeforces、LeetCode、TopCoderなど主要な競技プログラミングプラットフォームの特徴比較</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .platform-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .feature-label { font: 500 11px Inter, sans-serif; fill: #6B7280; }
+      .feature-value { font: 400 11px Inter, sans-serif; fill: #4B5563; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      .rating { font: 600 12px Inter, sans-serif; }
+      
+      .atcoder { fill: #E0F2FE; stroke: #0284C7; stroke-width: 2; }
+      .codeforces { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .leetcode { fill: #DCFCE7; stroke: #16A34A; stroke-width: 2; }
+      .topcoder { fill: #FAE8FF; stroke: #A855F7; stroke-width: 2; }
+      
+      .excellent { fill: #22C55E; }
+      .good { fill: #3B82F6; }
+      .fair { fill: #F59E0B; }
+      .poor { fill: #EF4444; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図1-15：主要な競技プログラミングプラットフォーム比較</text>
+  
+  <!-- AtCoder -->
+  <g id="atcoder">
+    <rect x="40" y="80" width="340" height="220" rx="8" class="atcoder"/>
+    
+    <text x="60" y="105" class="emoji">🇯🇵</text>
+    <text x="85" y="105" class="platform-title">AtCoder (日本)</text>
+    
+    <g transform="translate(50, 120)">
+      <!-- Features grid -->
+      <text x="0" y="0" class="feature-label">言語サポート:</text>
+      <text x="150" y="0" class="feature-value">日本語完全対応</text>
+      <circle cx="260" cy="-4" r="6" class="excellent"/>
+      
+      <text x="0" y="18" class="feature-label">初心者適性:</text>
+      <text x="150" y="18" class="feature-value">非常に高い</text>
+      <circle cx="260" cy="14" r="6" class="excellent"/>
+      
+      <text x="0" y="36" class="feature-label">問題難易度:</text>
+      <text x="150" y="36" class="feature-value">段階的・親切</text>
+      <circle cx="260" cy="32" r="6" class="excellent"/>
+      
+      <text x="0" y="54" class="feature-label">コンテスト頻度:</text>
+      <text x="150" y="54" class="feature-value">週1回（ABC）</text>
+      <circle cx="260" cy="50" r="6" class="good"/>
+      
+      <text x="0" y="72" class="feature-label">解説品質:</text>
+      <text x="150" y="72" class="feature-value">日本語で詳細</text>
+      <circle cx="260" cy="68" r="6" class="excellent"/>
+      
+      <text x="0" y="90" class="feature-label">コミュニティ:</text>
+      <text x="150" y="90" class="feature-value">日本人中心</text>
+      <circle cx="260" cy="86" r="6" class="good"/>
+      
+      <!-- Recommendation -->
+      <rect x="0" y="105" width="320" height="40" rx="4" fill="#0EA5E9" opacity="0.1"/>
+      <text x="10" y="120" class="rating" fill="#0284C7">🌟 中学生に最適！</text>
+      <text x="10" y="135" class="feature-value">日本語で安心、段階的学習が可能</text>
+    </g>
+  </g>
+  
+  <!-- Codeforces -->
+  <g id="codeforces">
+    <rect x="420" y="80" width="340" height="220" rx="8" class="codeforces"/>
+    
+    <text x="440" y="105" class="emoji">🌍</text>
+    <text x="465" y="105" class="platform-title">Codeforces (ロシア)</text>
+    
+    <g transform="translate(430, 120)">
+      <text x="0" y="0" class="feature-label">言語サポート:</text>
+      <text x="150" y="0" class="feature-value">英語のみ</text>
+      <circle cx="260" cy="-4" r="6" class="fair"/>
+      
+      <text x="0" y="18" class="feature-label">初心者適性:</text>
+      <text x="150" y="18" class="feature-value">中級者向け</text>
+      <circle cx="260" cy="14" r="6" class="fair"/>
+      
+      <text x="0" y="36" class="feature-label">問題難易度:</text>
+      <text x="150" y="36" class="feature-value">高難易度中心</text>
+      <circle cx="260" cy="32" r="6" class="poor"/>
+      
+      <text x="0" y="54" class="feature-label">コンテスト頻度:</text>
+      <text x="150" y="54" class="feature-value">週2-3回</text>
+      <circle cx="260" cy="50" r="6" class="excellent"/>
+      
+      <text x="0" y="72" class="feature-label">解説品質:</text>
+      <text x="150" y="72" class="feature-value">英語、簡潔</text>
+      <circle cx="260" cy="68" r="6" class="fair"/>
+      
+      <text x="0" y="90" class="feature-label">コミュニティ:</text>
+      <text x="150" y="90" class="feature-value">世界最大規模</text>
+      <circle cx="260" cy="86" r="6" class="excellent"/>
+      
+      <rect x="0" y="105" width="320" height="40" rx="4" fill="#F59E0B" opacity="0.1"/>
+      <text x="10" y="120" class="rating" fill="#D97706">⚡ 上級者向け</text>
+      <text x="10" y="135" class="feature-value">世界最高峰、英語必須</text>
+    </g>
+  </g>
+  
+  <!-- LeetCode -->
+  <g id="leetcode">
+    <rect x="40" y="320" width="340" height="220" rx="8" class="leetcode"/>
+    
+    <text x="60" y="345" class="emoji">💼</text>
+    <text x="85" y="345" class="platform-title">LeetCode (アメリカ)</text>
+    
+    <g transform="translate(50, 360)">
+      <text x="0" y="0" class="feature-label">言語サポート:</text>
+      <text x="150" y="0" class="feature-value">英語・中国語</text>
+      <circle cx="260" cy="-4" r="6" class="fair"/>
+      
+      <text x="0" y="18" class="feature-label">初心者適性:</text>
+      <text x="150" y="18" class="feature-value">まずまず</text>
+      <circle cx="260" cy="14" r="6" class="good"/>
+      
+      <text x="0" y="36" class="feature-label">問題難易度:</text>
+      <text x="150" y="36" class="feature-value">Easy〜Hard</text>
+      <circle cx="260" cy="32" r="6" class="good"/>
+      
+      <text x="0" y="54" class="feature-label">コンテスト頻度:</text>
+      <text x="150" y="54" class="feature-value">週1-2回</text>
+      <circle cx="260" cy="50" r="6" class="good"/>
+      
+      <text x="0" y="72" class="feature-label">解説品質:</text>
+      <text x="150" y="72" class="feature-value">コミュニティ中心</text>
+      <circle cx="260" cy="68" r="6" class="good"/>
+      
+      <text x="0" y="90" class="feature-label">就職対策:</text>
+      <text x="150" y="90" class="feature-value">最強</text>
+      <circle cx="260" cy="86" r="6" class="excellent"/>
+      
+      <rect x="0" y="105" width="320" height="40" rx="4" fill="#16A34A" opacity="0.1"/>
+      <text x="10" y="120" class="rating" fill="#15803D">🎯 就職特化</text>
+      <text x="10" y="135" class="feature-value">企業面接対策に最適</text>
+    </g>
+  </g>
+  
+  <!-- TopCoder -->
+  <g id="topcoder">
+    <rect x="420" y="320" width="340" height="220" rx="8" class="topcoder"/>
+    
+    <text x="440" y="345" class="emoji">🏆</text>
+    <text x="465" y="345" class="platform-title">TopCoder (アメリカ)</text>
+    
+    <g transform="translate(430, 360)">
+      <text x="0" y="0" class="feature-label">言語サポート:</text>
+      <text x="150" y="0" class="feature-value">英語のみ</text>
+      <circle cx="260" cy="-4" r="6" class="fair"/>
+      
+      <text x="0" y="18" class="feature-label">初心者適性:</text>
+      <text x="150" y="18" class="feature-value">低い</text>
+      <circle cx="260" cy="14" r="6" class="poor"/>
+      
+      <text x="0" y="36" class="feature-label">問題難易度:</text>
+      <text x="150" y="36" class="feature-value">非常に高い</text>
+      <circle cx="260" cy="32" r="6" class="poor"/>
+      
+      <text x="0" y="54" class="feature-label">コンテスト頻度:</text>
+      <text x="150" y="54" class="feature-value">月1-2回</text>
+      <circle cx="260" cy="50" r="6" class="fair"/>
+      
+      <text x="0" y="72" class="feature-label">歴史・権威:</text>
+      <text x="150" y="72" class="feature-value">最古・最高峰</text>
+      <circle cx="260" cy="68" r="6" class="excellent"/>
+      
+      <text x="0" y="90" class="feature-label">賞金制度:</text>
+      <text x="150" y="90" class="feature-value">充実</text>
+      <circle cx="260" cy="86" r="6" class="excellent"/>
+      
+      <rect x="0" y="105" width="320" height="40" rx="4" fill="#A855F7" opacity="0.1"/>
+      <text x="10" y="120" class="rating" fill="#9333EA">👑 伝統と権威</text>
+      <text x="10" y="135" class="feature-value">歴史あるプラットフォーム</text>
+    </g>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(250, 560)">
+    <text x="0" y="0" class="feature-label">評価:</text>
+    <circle cx="40" cy="-4" r="6" class="excellent"/>
+    <text x="50" y="0" class="feature-value">優秀</text>
+    <circle cx="100" cy="-4" r="6" class="good"/>
+    <text x="110" y="0" class="feature-value">良好</text>
+    <circle cx="160" cy="-4" r="6" class="fair"/>
+    <text x="170" y="0" class="feature-value">普通</text>
+    <circle cx="220" cy="-4" r="6" class="poor"/>
+    <text x="230" y="0" class="feature-value">課題</text>
+  </g>
+  
+</svg>

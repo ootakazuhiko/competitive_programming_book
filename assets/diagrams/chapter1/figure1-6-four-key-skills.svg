@@ -1,0 +1,127 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-6：競技プログラミングで身につく4つの力</title>
+  <desc>競技プログラミングを通じて身につく4つの核心的なスキル（論理的思考力、問題解決能力、集中力・持続力、創造性・発想力）を視覚化した図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .skill-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .skill-desc { font: 400 11px Inter, sans-serif; fill: #4B5563; line-height: 1.3; }
+      .emoji { font: 400 24px Inter, sans-serif; }
+      .center-text { font: 500 14px Inter, sans-serif; fill: #1F2937; }
+      .connecting-line { stroke: #10B981; stroke-width: 2; opacity: 0.6; }
+      
+      .skill1 { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 2; }
+      .skill2 { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .skill3 { fill: #FFF7ED; stroke: #FB923C; stroke-width: 2; }
+      .skill4 { fill: #FDF2F8; stroke: #EC4899; stroke-width: 2; }
+      .center-circle { fill: #F3F4F6; stroke: #10B981; stroke-width: 3; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図1-6：競技プログラミングで身につく4つの力</text>
+  
+  <!-- Center circle -->
+  <circle cx="400" cy="320" r="80" class="center-circle"/>
+  <text x="400" y="310" text-anchor="middle" class="center-text">競技プログラミング</text>
+  <text x="400" y="330" text-anchor="middle" class="center-text">で身につく</text>
+  <text x="400" y="350" text-anchor="middle" class="center-text">コアスキル</text>
+  
+  <!-- Connecting lines from center to each skill -->
+  <line x1="350" y1="280" x2="200" y2="180" class="connecting-line"/>
+  <line x1="450" y1="280" x2="600" y2="180" class="connecting-line"/>
+  <line x1="350" y1="360" x2="200" y2="460" class="connecting-line"/>
+  <line x1="450" y1="360" x2="600" y2="460" class="connecting-line"/>
+  
+  <!-- Skill 1: 論理的思考力 (Top Left) -->
+  <g id="skill1">
+    <rect x="50" y="80" width="300" height="140" rx="12" class="skill1"/>
+    
+    <text x="70" y="110" class="emoji">🧠</text>
+    <text x="110" y="110" class="skill-title">論理的思考力</text>
+    
+    <foreignObject x="60" y="120" width="280" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="skill-desc">
+        <div style="margin-bottom: 6px;">• 複雑な問題を段階的に分解</div>
+        <div style="margin-bottom: 6px;">• 条件と制約を整理・分析</div>
+        <div style="margin-bottom: 6px;">• 論理的な手順で解法を構築</div>
+        <div style="margin-bottom: 6px;">• 抽象的概念の具体化</div>
+        <div style="background: #DBEAFE; padding: 4px; border-radius: 4px; margin-top: 8px; font-size: 10px;">
+          💡 数学・理科の成績向上にも直結
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Skill 2: 問題解決能力 (Top Right) -->
+  <g id="skill2">
+    <rect x="450" y="80" width="300" height="140" rx="12" class="skill2"/>
+    
+    <text x="470" y="110" class="emoji">🔧</text>
+    <text x="510" y="110" class="skill-title">問題解決能力</text>
+    
+    <foreignObject x="460" y="120" width="280" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="skill-desc">
+        <div style="margin-bottom: 6px;">• 限られた時間での最適解発見</div>
+        <div style="margin-bottom: 6px;">• 複数のアプローチを比較検討</div>
+        <div style="margin-bottom: 6px;">• エラーの原因を特定・修正</div>
+        <div style="margin-bottom: 6px;">• 効率性と正確性のバランス</div>
+        <div style="background: #DCFCE7; padding: 4px; border-radius: 4px; margin-top: 8px; font-size: 10px;">
+          💡 日常生活の課題解決にも活用
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Skill 3: 集中力・持続力 (Bottom Left) -->
+  <g id="skill3">
+    <rect x="50" y="420" width="300" height="140" rx="12" class="skill3"/>
+    
+    <text x="70" y="450" class="emoji">⚡</text>
+    <text x="110" y="450" class="skill-title">集中力・持続力</text>
+    
+    <foreignObject x="60" y="460" width="280" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="skill-desc">
+        <div style="margin-bottom: 6px;">• 長時間の集中を継続</div>
+        <div style="margin-bottom: 6px;">• 困難な問題に粘り強く取り組み</div>
+        <div style="margin-bottom: 6px;">• プレッシャー下での冷静な判断</div>
+        <div style="margin-bottom: 6px;">• 失敗から学び続ける姿勢</div>
+        <div style="background: #FED7AA; padding: 4px; border-radius: 4px; margin-top: 8px; font-size: 10px;">
+          💡 受験勉強や部活動でも威力発揮
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Skill 4: 創造性・発想力 (Bottom Right) -->
+  <g id="skill4">
+    <rect x="450" y="420" width="300" height="140" rx="12" class="skill4"/>
+    
+    <text x="470" y="450" class="emoji">💡</text>
+    <text x="510" y="450" class="skill-title">創造性・発想力</text>
+    
+    <foreignObject x="460" y="460" width="280" height="90">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="skill-desc">
+        <div style="margin-bottom: 6px;">• 斬新な解法アイデアの創出</div>
+        <div style="margin-bottom: 6px;">• 既存知識の新しい組み合わせ</div>
+        <div style="margin-bottom: 6px;">• パターン認識と応用力</div>
+        <div style="margin-bottom: 6px;">• 柔軟な思考の切り替え</div>
+        <div style="background: #FCE7F3; padding: 4px; border-radius: 4px; margin-top: 8px; font-size: 10px;">
+          💡 芸術活動や起業精神にも通じる
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Bottom message -->
+  <g transform="translate(50, 580)">
+    <text x="0" y="0" style="font: 500 12px Inter, sans-serif; fill: #059669;">
+      🌟 これらのスキルは相互に関連し合い、総合的な知的能力を向上させます
+    </text>
+  </g>
+  
+</svg>

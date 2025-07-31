@@ -1,0 +1,98 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-4：競技プログラミングの楽しさサイクル</title>
+  <desc>問題発見から達成感まで、競技プログラミングの学習における正のスパイラルを示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .step-title { font: 600 13px Inter, sans-serif; fill: #374151; }
+      .step-desc { font: 400 11px Inter, sans-serif; fill: #4B5563; }
+      .emoji { font: 400 20px Inter, sans-serif; }
+      .cycle-arrow { stroke: #10B981; stroke-width: 3; fill: none; }
+      .step-box { fill: #F9FAFB; stroke: #D1D5DB; stroke-width: 2; }
+      .step1 { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .step2 { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .step3 { fill: #D1FAE5; stroke: #10B981; stroke-width: 2; }
+      .step4 { fill: #FCE7F3; stroke: #EC4899; stroke-width: 2; }
+      .center-circle { fill: #EEF2FF; stroke: #6366F1; stroke-width: 3; }
+    </style>
+    
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図1-4：競技プログラミングの楽しさサイクル</text>
+  
+  <!-- Center motivation circle -->
+  <circle cx="400" cy="320" r="60" class="center-circle"/>
+  <text x="400" y="310" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #4338CA;">成長の</text>
+  <text x="400" y="330" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #4338CA;">実感</text>
+  
+  <!-- Step 1: 困惑 (Top) -->
+  <g id="step1">
+    <ellipse cx="400" cy="120" rx="140" ry="50" class="step1"/>
+    <text x="350" y="110" class="emoji">😕</text>
+    <text x="380" y="110" class="step-title">問題を見る</text>
+    <text x="320" y="130" class="step-desc">「え？これどうやって解くの？」</text>
+    <text x="360" y="145" class="step-desc">最初は戸惑いと困惑</text>
+  </g>
+  
+  <!-- Step 2: 挑戦 (Right) -->
+  <g id="step2">
+    <ellipse cx="600" cy="320" rx="140" ry="50" class="step2"/>
+    <text x="550" y="310" class="emoji">🤔</text>
+    <text x="580" y="310" class="step-title">考え始める</text>
+    <text x="520" y="330" class="step-desc">「まずは簡単な例から...」</text>
+    <text x="560" y="345" class="step-desc">試行錯誤の開始</text>
+  </g>
+  
+  <!-- Step 3: 理解 (Bottom) -->
+  <g id="step3">
+    <ellipse cx="400" cy="520" rx="140" ry="50" class="step3"/>
+    <text x="350" y="510" class="emoji">💡</text>
+    <text x="380" y="510" class="step-title">ひらめく瞬間</text>
+    <text x="320" y="530" class="step-desc">「あ！こうすればいいんだ！」</text>
+    <text x="360" y="545" class="step-desc">解法の発見と理解</text>
+  </g>
+  
+  <!-- Step 4: 達成感 (Left) -->
+  <g id="step4">
+    <ellipse cx="200" cy="320" rx="140" ry="50" class="step4"/>
+    <text x="150" y="310" class="emoji">🎉</text>
+    <text x="180" y="310" class="step-title">AC（正解）！</text>
+    <text x="120" y="330" class="step-desc">「やった！解けた！」</text>
+    <text x="160" y="345" class="step-desc">達成感と自信の獲得</text>
+  </g>
+  
+  <!-- Cycle arrows -->
+  <path d="M 400 170 Q 500 180 540 280" class="cycle-arrow" marker-end="url(#arrow)"/>
+  <path d="M 600 370 Q 580 450 480 480" class="cycle-arrow" marker-end="url(#arrow)"/>
+  <path d="M 400 470 Q 300 460 260 360" class="cycle-arrow" marker-end="url(#arrow)"/>
+  <path d="M 200 270 Q 220 190 320 160" class="cycle-arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Spiral arrows toward center -->
+  <path d="M 460 200 Q 450 250 430 280" stroke="#6366F1" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.7"/>
+  <path d="M 520 350 Q 480 340 440 330" stroke="#6366F1" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.7"/>
+  <path d="M 340 440 Q 360 390 380 360" stroke="#6366F1" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.7"/>
+  <path d="M 280 290 Q 320 300 360 310" stroke="#6366F1" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity="0.7"/>
+  
+  <!-- Process descriptions -->
+  <g transform="translate(50, 80)">
+    <text x="0" y="0" style="font: 500 12px Inter, sans-serif; fill: #059669;">🔄 この循環を繰り返すことで...</text>
+  </g>
+  
+  <g transform="translate(450, 80)">
+    <text x="0" y="0" style="font: 500 12px Inter, sans-serif; fill: #059669;">📈 スキルと自信が向上</text>
+  </g>
+  
+  <!-- Bottom benefits -->
+  <g transform="translate(50, 570)">
+    <text x="0" y="0" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">✨ 効果: 困難に立ち向かう力・継続的学習習慣・達成への集中力</text>
+  </g>
+  
+</svg>

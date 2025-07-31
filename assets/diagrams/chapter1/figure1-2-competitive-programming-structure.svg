@@ -1,0 +1,150 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-2：競技プログラミングの基本構造</title>
+  <desc>問題文、プログラマー、ジャッジシステムの三者による競技プログラミングの基本的な流れを示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .content { font: 400 12px Inter, sans-serif; fill: #4B5563; }
+      .emoji { font: 400 20px Inter, sans-serif; }
+      .process { font: 500 11px Inter, sans-serif; fill: #6B7280; }
+      .box { fill: #F9FAFB; stroke: #D1D5DB; stroke-width: 2; }
+      .problem-box { fill: #FFF7ED; stroke: #FB923C; stroke-width: 2; }
+      .coder-box { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 2; }
+      .judge-box { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .arrow { stroke: #10B981; stroke-width: 2; fill: none; }
+      .success { fill: #22C55E; }
+      .error { fill: #EF4444; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図1-2：競技プログラミングの基本構造</text>
+  
+  <!-- Problem Section -->
+  <g id="problem-section">
+    <rect x="40" y="80" width="200" height="320" rx="8" class="problem-box"/>
+    
+    <!-- Header -->
+    <text x="60" y="108" class="emoji">📝</text>
+    <text x="90" y="108" class="section-title">問題文</text>
+    
+    <!-- Problem content -->
+    <foreignObject x="50" y="120" width="180" height="200">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="font: 400 12px Inter, sans-serif; color: #4B5563; line-height: 1.4;">
+        <div style="background: #FEF3C7; padding: 8px; border-radius: 4px; margin-bottom: 8px;">
+          「1から100までの数で<br/>
+          3で割り切れる数の<br/>
+          合計を求めなさい」
+        </div>
+        <div style="font-size: 10px; color: #6B7280;">
+          • 制約条件<br/>
+          • 入力形式<br/>
+          • 出力形式<br/>
+          • サンプル
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Coder Section -->
+  <g id="coder-section">
+    <rect x="300" y="80" width="200" height="320" rx="8" class="coder-box"/>
+    
+    <!-- Header -->
+    <text x="320" y="108" class="emoji">👨‍💻</text>
+    <text x="350" y="108" class="section-title">あなた</text>
+    
+    <!-- Thinking process -->
+    <g transform="translate(310, 130)">
+      <!-- Step 1: Think -->
+      <rect x="0" y="0" width="180" height="40" rx="4" fill="#DBEAFE" stroke="#3B82F6"/>
+      <text x="20" y="16" class="emoji">💭</text>
+      <text x="45" y="16" class="process">考える</text>
+      <text x="10" y="32" class="content" style="font-size: 10px;">問題を理解し、解法を考案</text>
+      
+      <!-- Arrow down -->
+      <path d="M90 45 L90 55" class="arrow" marker-end="url(#arrowhead)"/>
+      
+      <!-- Step 2: Code -->
+      <rect x="0" y="60" width="180" height="40" rx="4" fill="#DBEAFE" stroke="#3B82F6"/>
+      <text x="20" y="76" class="emoji">⌨️</text>
+      <text x="45" y="76" class="process">プログラムを書く</text>
+      <text x="10" y="92" class="content" style="font-size: 10px;">Pythonでコードを実装</text>
+      
+      <!-- Code sample -->
+      <rect x="0" y="110" width="180" height="60" rx="4" fill="#F8FAFC" stroke="#CBD5E1"/>
+      <text x="8" y="126" style="font: 400 9px 'SF Mono', monospace; fill: #475569;">total = 0</text>
+      <text x="8" y="140" style="font: 400 9px 'SF Mono', monospace; fill: #475569;">for i in range(1, 101):</text>
+      <text x="8" y="154" style="font: 400 9px 'SF Mono', monospace; fill: #475569;">  if i % 3 == 0:</text>
+      <text x="8" y="168" style="font: 400 9px 'SF Mono', monospace; fill: #475569;">    total += i</text>
+    </g>
+  </g>
+  
+  <!-- Judge System Section -->
+  <g id="judge-section">
+    <rect x="560" y="80" width="200" height="320" rx="8" class="judge-box"/>
+    
+    <!-- Header -->
+    <text x="580" y="108" class="emoji">🖥️</text>
+    <text x="610" y="108" class="section-title">ジャッジシステム</text>
+    
+    <!-- Judge process -->
+    <g transform="translate(570, 130)">
+      <!-- Step 1: Execute -->
+      <rect x="0" y="0" width="180" height="40" rx="4" fill="#D1FAE5" stroke="#22C55E"/>
+      <text x="20" y="16" class="emoji">⚡</text>
+      <text x="45" y="16" class="process">コードを実行</text>
+      <text x="10" y="32" class="content" style="font-size: 10px;">提出されたプログラムを動作</text>
+      
+      <!-- Arrow down -->
+      <path d="M90 45 L90 55" class="arrow"/>
+      
+      <!-- Step 2: Check -->
+      <rect x="0" y="60" width="180" height="40" rx="4" fill="#D1FAE5" stroke="#22C55E"/>
+      <text x="20" y="76" class="emoji">📊</text>
+      <text x="45" y="76" class="process">結果をチェック</text>
+      <text x="10" y="92" class="content" style="font-size: 10px;">出力が正解と一致するか判定</text>
+      
+      <!-- Results -->
+      <g transform="translate(0, 110)">
+        <rect x="0" y="0" width="85" height="50" rx="4" fill="#DCFCE7" stroke="#22C55E"/>
+        <text x="12" y="16" class="emoji">✅</text>
+        <text x="8" y="32" class="content" style="font-size: 10px;">「正解！」</text>
+        <text x="8" y="44" class="content" style="font-size: 9px;">AC</text>
+        
+        <rect x="95" y="0" width="85" height="50" rx="4" fill="#FEE2E2" stroke="#EF4444"/>
+        <text x="107" y="16" class="emoji">❌</text>
+        <text x="103" y="32" class="content" style="font-size: 10px;">「不正解」</text>
+        <text x="103" y="44" class="content" style="font-size: 9px;">WA</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Flow Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- Problem to Coder -->
+  <path d="M250 200 L290 200" class="arrow" marker-end="url(#arrowhead)"/>
+  <text x="270" y="195" class="process" text-anchor="middle" fill="#10B981">読む</text>
+  
+  <!-- Coder to Judge -->
+  <path d="M510 200 L550 200" class="arrow" marker-end="url(#arrowhead)"/>
+  <text x="530" y="195" class="process" text-anchor="middle" fill="#10B981">提出</text>
+  
+  <!-- Bottom description -->
+  <g transform="translate(40, 420)">
+    <text x="0" y="0" class="content">競技プログラミングは、この3つの要素による循環的なプロセスです</text>
+    <text x="0" y="20" class="process">💡 問題を理解 → 💻 解法を実装 → 📊 結果を確認 → 🔄 改善を繰り返し</text>
+  </g>
+  
+</svg>
