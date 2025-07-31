@@ -1,0 +1,254 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-3：A問題を確実に解くための5ステップ</title>
+  <desc>競技プログラミングのA問題を確実に解くための段階的なアプローチを示すフローチャート</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    A問題を確実に解くための5ステップ
+  </text>
+  
+  <!-- Step 1: 問題文の精読 -->
+  <g id="step1">
+    <rect x="50" y="80" width="140" height="80" rx="8" fill="#3b82f6" stroke="#1e40af" stroke-width="2"/>
+    <text x="120" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+      🔍 Step 1
+    </text>
+    <text x="120" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      問題文の精読
+    </text>
+    <text x="120" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#bfdbfe">
+      (2-3分)
+    </text>
+    <text x="120" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#e0f2fe">
+      最低2回読む
+    </text>
+  </g>
+  
+  <!-- Step 2: サンプル分析 -->
+  <g id="step2">
+    <rect x="240" y="80" width="140" height="80" rx="8" fill="#10b981" stroke="#047857" stroke-width="2"/>
+    <text x="310" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+      💡 Step 2
+    </text>
+    <text x="310" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      サンプル分析
+    </text>
+    <text x="310" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#bbf7d0">
+      (1-2分)
+    </text>
+    <text x="310" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#d1fae5">
+      変換過程を理解
+    </text>
+  </g>
+  
+  <!-- Step 3: 実装 -->
+  <g id="step3">
+    <rect x="430" y="80" width="140" height="80" rx="8" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
+    <text x="500" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+      ⌨️ Step 3
+    </text>
+    <text x="500" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      実装
+    </text>
+    <text x="500" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#fde68a">
+      (3-5分)
+    </text>
+    <text x="500" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#fef3c7">
+      段階的に書く
+    </text>
+  </g>
+  
+  <!-- Step 4: 検証 -->
+  <g id="step4">
+    <rect x="620" y="80" width="140" height="80" rx="8" fill="#8b5cf6" stroke="#7c3aed" stroke-width="2"/>
+    <text x="690" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+      🧪 Step 4
+    </text>
+    <text x="690" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      検証
+    </text>
+    <text x="690" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#ddd6fe">
+      (1-2分)
+    </text>
+    <text x="690" y="148" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#ede9fe">
+      動作確認
+    </text>
+  </g>
+  
+  <!-- Step 5: 提出 -->
+  <g id="step5">
+    <rect x="340" y="200" width="140" height="80" rx="8" fill="#ef4444" stroke="#dc2626" stroke-width="2"/>
+    <text x="410" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+      🚀 Step 5
+    </text>
+    <text x="410" y="236" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      提出
+    </text>
+    <text x="410" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#fecaca">
+      (30秒)
+    </text>
+    <text x="410" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#fef2f2">
+      即座に提出
+    </text>
+  </g>
+  
+  <!-- 矢印 Step1→Step2 -->
+  <path d="M190 120 L240 120" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 矢印 Step2→Step3 -->
+  <path d="M380 120 L430 120" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 矢印 Step3→Step4 -->
+  <path d="M570 120 L620 120" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 矢印 Step4→Step5 -->
+  <path d="M690 160 Q690 180 480 200" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!--詳細説明エリア -->
+  <rect x="50" y="320" width="700" height="260" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  
+  <!-- 詳細説明タイトル -->
+  <text x="400" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
+    各ステップの詳細ガイド
+  </text>
+  
+  <!-- Step 1 詳細 -->
+  <g id="step1-detail">
+    <rect x="70" y="360" width="130" height="100" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+    <text x="135" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      Step 1: 問題文精読
+    </text>
+    <text x="75" y="392" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 要求を明確化
+    </text>
+    <text x="75" y="406" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 入出力形式確認
+    </text>
+    <text x="75" y="420" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 制約条件把握
+    </text>
+    <text x="75" y="434" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🚫 コード書き始めない
+    </text>
+    <text x="75" y="448" font-family="Arial, sans-serif" font-size="8" fill="#dc2626">
+      ⚠️ 複雑な解法考えない
+    </text>
+  </g>
+  
+  <!-- Step 2 詳細 -->
+  <g id="step2-detail">
+    <rect x="220" y="360" width="130" height="100" rx="4" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+    <text x="285" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857">
+      Step 2: サンプル分析
+    </text>
+    <text x="225" y="392" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 手動で変換追跡
+    </text>
+    <text x="225" y="406" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 論理的に理解
+    </text>
+    <text x="225" y="420" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 解法の検証
+    </text>
+    <text x="225" y="434" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      💭 特殊ケース考慮
+    </text>
+    <text x="225" y="448" font-family="Arial, sans-serif" font-size="8" fill="#047857">
+      🔍 他ケースでも正しい？
+    </text>
+  </g>
+  
+  <!-- Step 3 詳細 -->
+  <g id="step3-detail">
+    <rect x="370" y="360" width="130" height="100" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+    <text x="435" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      Step 3: 実装
+    </text>
+    <text x="375" y="392" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 入力処理から書く
+    </text>
+    <text x="375" y="406" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ メインロジック実装
+    </text>
+    <text x="375" y="420" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 出力処理を書く
+    </text>
+    <text x="375" y="434" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🚫 一行に詰め込まない
+    </text>
+    <text x="375" y="448" font-family="Arial, sans-serif" font-size="8" fill="#dc2626">
+      ⚠️ 意味不明な変数名避ける
+    </text>
+  </g>
+  
+  <!-- Step 4 詳細 -->
+  <g id="step4-detail">
+    <rect x="520" y="360" width="130" height="100" rx="4" fill="#ede9fe" stroke="#8b5cf6" stroke-width="1"/>
+    <text x="585" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#7c3aed">
+      Step 4: 検証
+    </text>
+    <text x="525" y="392" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ サンプル動作確認
+    </text>
+    <text x="525" y="406" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 手動計算照合
+    </text>
+    <text x="525" y="420" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 出力形式正確性
+    </text>
+    <text x="525" y="434" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ エッジケース想定
+    </text>
+    <text x="525" y="448" font-family="Arial, sans-serif" font-size="8" fill="#7c3aed">
+      🔍 頭の中でトレース
+    </text>
+  </g>
+  
+  <!-- Step 5 詳細 -->
+  <g id="step5-detail">
+    <rect x="670" y="360" width="110" height="100" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+    <text x="725" y="376" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+      Step 5: 提出
+    </text>
+    <text x="675" y="392" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ Python 3選択
+    </text>
+    <text x="675" y="406" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ コード確認
+    </text>
+    <text x="675" y="420" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🚀 即座に提出
+    </text>
+    <text x="675" y="434" font-family="Arial, sans-serif" font-size="8" fill="#dc2626">
+      ⚠️ 悩みすぎない
+    </text>
+    <text x="675" y="448" font-family="Arial, sans-serif" font-size="8" fill="#dc2626">
+      ⌛ 10分以内目標
+    </text>
+  </g>
+  
+  <!-- 時間管理ガイド -->
+  <rect x="50" y="480" width="700" height="80" rx="8" fill="#fef7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+    ⏱️ 時間管理のコツ
+  </text>
+  <text x="70" y="518" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+    • A問題全体で10分以内を目標にする
+  </text>
+  <text x="70" y="534" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+    • 15分以上かかる場合は一旦飛ばしてB問題に進む
+  </text>
+  <text x="70" y="550" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+    • サンプルが通ることを確認したら迷わず提出（完璧を求めない）
+  </text>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+    </marker>
+  </defs>
+</svg>

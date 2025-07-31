@@ -1,0 +1,298 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-13：ABC 100分コンテストの理想的時間配分</title>
+  <desc>AtCoder Beginner Contest 100分間の戦略的な時間配分を示すタイムライン</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    ABC 100分コンテストの理想的時間配分
+  </text>
+  
+  <!-- メインタイムライン -->
+  <line x1="80" y1="100" x2="720" y2="100" stroke="#374151" stroke-width="4"/>
+  
+  <!-- 時間軸の目盛り -->
+  <g id="time-markers">
+    <!-- 0分 -->
+    <line x1="80" y1="95" x2="80" y2="105" stroke="#374151" stroke-width="2"/>
+    <text x="80" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">0分</text>
+    
+    <!-- 15分 -->
+    <line x1="176" y1="95" x2="176" y2="105" stroke="#374151" stroke-width="2"/>
+    <text x="176" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">15分</text>
+    
+    <!-- 40分 -->
+    <line x1="336" y1="95" x2="336" y2="105" stroke="#374151" stroke-width="2"/>
+    <text x="336" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">40分</text>
+    
+    <!-- 80分 -->
+    <line x1="592" y1="95" x2="592" y2="105" stroke="#374151" stroke-width="2"/>
+    <text x="592" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">80分</text>
+    
+    <!-- 100分 -->
+    <line x1="720" y1="95" x2="720" y2="105" stroke="#374151" stroke-width="2"/>
+    <text x="720" y="120" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">100分</text>
+  </g>
+  
+  <!-- フェーズ1: A問題確実攻略フェーズ (0-15分) -->
+  <g id="phase1">
+    <rect x="80" y="80" width="96" height="20" fill="#3b82f6" rx="4"/>
+    <text x="128" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">
+      🕐 A問題確実攻略
+    </text>
+    
+    <rect x="60" y="140" width="136" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="128" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+      フェーズ1 (0-15分)
+    </text>
+    <text x="128" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+      A問題確実攻略
+    </text>
+    
+    <text x="70" y="194" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎯 目標: A問題AC
+    </text>
+    <text x="70" y="206" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ⏱️ 理想: 10分以内
+    </text>
+    <text x="70" y="218" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 完璧より確実性重視
+    </text>
+    <text x="70" y="230" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🚨 15分超えたら一旦飛ばす
+    </text>
+    <text x="70" y="242" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      💡 サンプル通ったら即提出
+    </text>
+  </g>
+  
+  <!-- フェーズ2: B問題挑戦フェーズ (15-40分) -->
+  <g id="phase2">
+    <rect x="176" y="80" width="160" height="20" fill="#10b981" rx="4"/>
+    <text x="256" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">
+      🕐 B問題挑戦
+    </text>
+    
+    <rect x="156" y="140" width="200" height="120" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+    <text x="256" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+      フェーズ2 (15-40分)
+    </text>
+    <text x="256" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#047857">
+      B問題挑戦フェーズ
+    </text>
+    
+    <text x="166" y="194" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎯 目標: B問題ACを狙う
+    </text>
+    <text x="166" y="206" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 20分で解法見えた → 実装進行
+    </text>
+    <text x="166" y="218" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ❌ 20分で見えない → C問題確認
+    </text>
+    <text x="166" y="230" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ❌ 35分で動かない → 潔く諦める
+    </text>
+    <text x="166" y="242" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      💡 解けなくても学習機会として活用
+    </text>
+  </g>
+  
+  <!-- フェーズ3: C問題挑戦・学習フェーズ (40-80分) -->
+  <g id="phase3">
+    <rect x="336" y="80" width="256" height="20" fill="#f59e0b" rx="4"/>
+    <text x="464" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">
+      🕐 C問題挑戦・学習
+    </text>
+    
+    <rect x="316" y="140" width="296" height="120" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="464" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+      フェーズ3 (40-80分)
+    </text>
+    <text x="464" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#d97706">
+      C問題挑戦・学習フェーズ
+    </text>
+    
+    <text x="326" y="194" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎯 目標: C問題を通じた実力向上
+    </text>
+    <text x="326" y="206" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      💡 中学生にとって「解けなくて当然」のレベル
+    </text>
+    <text x="326" y="218" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📚 問題文理解するだけでも価値がある
+    </text>
+    <text x="326" y="230" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 部分点や方向性発見できれば上出来
+    </text>
+    <text x="326" y="242" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🔍 「挑戦する経験」が最重要
+    </text>
+  </g>
+  
+  <!-- フェーズ4: 見直し・追加挑戦フェーズ (80-100分) -->
+  <g id="phase4">
+    <rect x="592" y="80" width="128" height="20" fill="#8b5cf6" rx="4"/>
+    <text x="656" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">
+      🕐 見直し・追加
+    </text>
+    
+    <rect x="572" y="140" width="168" height="120" rx="8" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="656" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7c3aed">
+      フェーズ4 (80-100分)
+    </text>
+    <text x="656" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#7c3aed">
+      見直し・追加挑戦
+    </text>
+    
+    <text x="582" y="194" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      1️⃣ AC済み問題の安全性確保
+    </text>
+    <text x="582" y="206" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      2️⃣ 部分点の可能性がある問題
+    </text>
+    <text x="582" y="218" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      3️⃣ D問題以降への挑戦
+    </text>
+    <text x="582" y="230" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📝 コンテスト振り返り準備
+    </text>
+    <text x="582" y="242" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎯 次回への課題明確化
+    </text>
+  </g>
+  
+  <!-- 成功パターンの例 -->
+  <rect x="50" y="280" width="700" height="120" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="400" y="304" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#16a34a">
+    🏆 理想的な成功パターンの例
+  </text>
+  
+  <!-- 成功例1 -->
+  <g id="success1">
+    <rect x="70" y="320" width="200" height="70" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="170" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      🥉 初心者レベル
+    </text>
+    <text x="75" y="350" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • A問題: 15分でAC
+    </text>
+    <text x="75" y="362" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • B問題: 25分で挑戦（解けなくてもOK）
+    </text>
+    <text x="75" y="374" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • C問題: 60分で問題理解と学習
+    </text>
+    <text x="75" y="386" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 茶色レーティング(400+)目標
+    </text>
+  </g>
+  
+  <!-- 成功例2 -->
+  <g id="success2">
+    <rect x="290" y="320" width="200" height="70" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="390" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      🥈 中級レベル
+    </text>
+    <text x="295" y="350" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • A問題: 10分でAC
+    </text>
+    <text x="295" y="362" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • B問題: 20分でAC
+    </text>
+    <text x="295" y="374" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • C問題: 70分で本格挑戦
+    </text>
+    <text x="295" y="386" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 緑色レーティング(800+)目標
+    </text>
+  </g>
+  
+  <!-- 成功例3 -->
+  <g id="success3">
+    <rect x="510" y="320" width="200" height="70" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="610" y="336" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      🥇 上級レベル
+    </text>
+    <text x="515" y="350" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • A問題: 5分でAC
+    </text>
+    <text x="515" y="362" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • B問題: 15分でAC
+    </text>
+    <text x="515" y="374" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • C問題: 30分でAC, D問題挑戦
+    </text>
+    <text x="515" y="386" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 水色レーティング(1200+)目標
+    </text>
+  </g>
+  
+  <!-- 重要なポイント -->
+  <rect x="50" y="420" width="700" height="120" rx="8" fill="#fef7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="444" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d97706">
+    ⚠️ 時間配分で重要なポイント
+  </text>
+  
+  <!-- ポイント1 -->
+  <g id="point1">
+    <rect x="70" y="460" width="200" height="70" rx="4" fill="#fff7ed" stroke="#f97316" stroke-width="1"/>
+    <text x="170" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ea580c">
+      ⏰ 時間厳守の原則
+    </text>
+    <text x="75" y="490" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 計画より遅れたら潔く次へ
+    </text>
+    <text x="75" y="502" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 完璧主義は時間の敵
+    </text>
+    <text x="75" y="514" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 「今解ける問題」を優先
+    </text>
+    <text x="75" y="526" font-family="Arial, sans-serif" font-size="8" fill="#ea580c">
+      → 確実な得点を重視
+    </text>
+  </g>
+  
+  <!-- ポイント2 -->
+  <g id="point2">
+    <rect x="290" y="460" width="200" height="70" rx="4" fill="#fff7ed" stroke="#f97316" stroke-width="1"/>
+    <text x="390" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ea580c">
+      🎯 柔軟な調整力
+    </text>
+    <text x="295" y="490" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 調子悪い日は時間配分変更
+    </text>
+    <text x="295" y="502" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 得意分野の問題は時短
+    </text>
+    <text x="295" y="514" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 苦手分野は早めに見切り
+    </text>
+    <text x="295" y="526" font-family="Arial, sans-serif" font-size="8" fill="#ea580c">
+      → 臨機応変な判断
+    </text>
+  </g>
+  
+  <!-- ポイント3 -->
+  <g id="point3">
+    <rect x="510" y="460" width="200" height="70" rx="4" fill="#fff7ed" stroke="#f97316" stroke-width="1"/>
+    <text x="610" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ea580c">
+      📚 学習重視の姿勢
+    </text>
+    <text x="515" y="490" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 解けない問題も経験値
+    </text>
+    <text x="515" y="502" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • コンテスト後の解説が重要
+    </text>
+    <text x="515" y="514" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 次回への課題を明確化
+    </text>
+    <text x="515" y="526" font-family="Arial, sans-serif" font-size="8" fill="#ea580c">
+      → 継続的な成長を重視
+    </text>
+  </g>
+</svg>
