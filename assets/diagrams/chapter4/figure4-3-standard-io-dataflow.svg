@@ -1,0 +1,165 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-3：標準入出力のデータフロー</title>
+  <desc>競技プログラミングにおける標準入力から標準出力までのデータの流れを示すフロー図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .box-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .data-text { font: 500 12px 'Monaco', monospace; fill: #4B5563; }
+      .label-text { font: 500 12px Inter, sans-serif; fill: #6B7280; }
+      .concept-text { font: 600 12px Inter, sans-serif; }
+      .example-text { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .input-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .program-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .output-box { fill: #D1FAE5; stroke: #10B981; stroke-width: 2; }
+      .data-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .concept-box { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .arrow { stroke: #10B981; stroke-width: 4; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="16" markerHeight="16" refX="14" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L16,4 z" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-3：標準入出力のデータフロー</text>
+  
+  <!-- Main Flow Boxes -->
+  <!-- Standard Input -->
+  <g id="standard-input">
+    <rect x="50" y="80" width="180" height="120" rx="12" class="input-box"/>
+    <text x="140" y="105" text-anchor="middle" class="box-title" fill="#D97706">標準入力</text>
+    <text x="140" y="125" text-anchor="middle" style="font: 500 14px Inter, sans-serif; fill: #D97706;">(Standard Input)</text>
+    
+    <!-- Example input data -->
+    <g transform="translate(70, 140)">
+      <rect x="0" y="0" width="140" height="45" class="data-box"/>
+      <text x="70" y="18" text-anchor="middle" class="data-text">5</text>
+      <text x="70" y="32" text-anchor="middle" class="data-text">1 2 3 4 5</text>
+      <text x="0" y="45" class="example-text">問題文で指定された</text>
+      <text x="0" y="55" class="example-text">入力データ</text>
+    </g>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M240 140 L290 140" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Your Program -->
+  <g id="your-program">
+    <rect x="300" y="80" width="200" height="120" rx="12" class="program-box"/>
+    <text x="400" y="105" text-anchor="middle" class="box-title" fill="#1E40AF">あなたの</text>
+    <text x="400" y="125" text-anchor="middle" class="box-title" fill="#1E40AF">プログラム</text>
+    
+    <!-- Program logic -->
+    <g transform="translate(320, 140)">
+      <rect x="0" y="0" width="160" height="45" class="data-box"/>
+      <text x="80" y="18" text-anchor="middle" style="font: 500 11px 'Monaco', monospace; fill: #1E40AF;">n = int(input())</text>
+      <text x="80" y="32" style="font: 500 11px 'Monaco', monospace; fill: #1E40AF;" text-anchor="middle">sum = sum(map(int,</text>
+      <text x="80" y="42" style="font: 500 11px 'Monaco', monospace; fill: #1E40AF;" text-anchor="middle">input().split()))</text>
+    </g>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M510 140 L560 140" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Standard Output -->
+  <g id="standard-output">
+    <rect x="570" y="80" width="180" height="120" rx="12" class="output-box"/>
+    <text x="660" y="105" text-anchor="middle" class="box-title" fill="#047857">標準出力</text>
+    <text x="660" y="125" text-anchor="middle" style="font: 500 14px Inter, sans-serif; fill: #047857;">(Standard Output)</text>
+    
+    <!-- Example output data -->
+    <g transform="translate(590, 140)">
+      <rect x="0" y="0" width="140" height="45" class="data-box"/>
+      <text x="70" y="25" text-anchor="middle" class="data-text">15</text>
+      <text x="0" y="45" class="example-text">問題文で指定された</text>
+      <text x="0" y="55" class="example-text">期待される出力</text>
+    </g>
+  </g>
+  
+  <!-- Flow Labels -->
+  <text x="265" y="130" text-anchor="middle" class="label-text">読み込み</text>
+  <text x="535" y="130" text-anchor="middle" class="label-text">出力</text>
+  
+  <!-- Detailed Input Section -->
+  <g id="input-detail">
+    <text x="140" y="250" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #D97706;">
+      ↑ 入力の詳細
+    </text>
+    <rect x="60" y="260" width="160" height="80" rx="8" class="data-box"/>
+    <text x="70" y="280" class="example-text">入力例の解釈：</text>
+    <text x="70" y="295" class="example-text">• 1行目：5 (データの個数)</text>
+    <text x="70" y="310" class="example-text">• 2行目：1 2 3 4 5</text>
+    <text x="70" y="325" class="example-text">  (実際の数値データ)</text>
+  </g>
+  
+  <!-- Detailed Output Section -->
+  <g id="output-detail">
+    <text x="660" y="250" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #047857;">
+      ↑ 出力の詳細
+    </text>
+    <rect x="580" y="260" width="160" height="80" rx="8" class="data-box"/>
+    <text x="590" y="280" class="example-text">出力例の解釈：</text>
+    <text x="590" y="295" class="example-text">• 15 (1+2+3+4+5の結果)</text>
+    <text x="590" y="310" class="example-text">• 改行文字で終了</text>
+    <text x="590" y="325" class="example-text">• 余計な出力は一切なし</text>
+  </g>
+  
+  <!-- Important Concepts -->
+  <g id="concepts">
+    <rect x="100" y="370" width="600" height="140" rx="12" class="concept-box"/>
+    <text x="120" y="395" class="emoji">💡</text>
+    <text x="150" y="395" class="concept-text" fill="#059669">重要な概念：</text>
+    
+    <g transform="translate(120, 410)">
+      <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+      <text x="20" y="12" class="example-text" fill="#166534">
+        <tspan class="concept-text">標準入力</tspan>：プログラムがデータを受け取る「入り口」
+      </text>
+      
+      <circle cx="8" cy="28" r="4" fill="#22C55E"/>
+      <text x="20" y="32" class="example-text" fill="#166534">
+        <tspan class="concept-text">標準出力</tspan>：プログラムが結果を送り出す「出口」
+      </text>
+      
+      <circle cx="8" cy="48" r="4" fill="#22C55E"/>
+      <text x="20" y="52" class="example-text" fill="#166534">
+        <tspan class="concept-text">一方向の流れ</tspan>：入力→処理→出力（対話なし）
+      </text>
+      
+      <circle cx="8" cy="68" r="4" fill="#22C55E"/>
+      <text x="20" y="72" class="example-text" fill="#166534">
+        <tspan class="concept-text">形式の厳密性</tspan>：問題文で完全に指定された形式に従う
+      </text>
+      
+      <rect x="350" y="-5" width="240" height="85" rx="8" fill="#DCFCE7" stroke="#22C55E" stroke-width="1"/>
+      <text x="470" y="15" text-anchor="middle" class="concept-text" fill="#059669">
+        競技プログラミングの基本原則
+      </text>
+      <text x="365" y="35" class="example-text" fill="#166534">
+        1. 問題文の形式を正確に理解
+      </text>
+      <text x="365" y="50" class="example-text" fill="#166534">
+        2. 効率的な入出力処理の実装
+      </text>
+      <text x="365" y="65" class="example-text" fill="#166534">
+        3. エラーハンドリングは不要
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom Example -->
+  <g transform="translate(200, 540)">
+    <text x="0" y="0" style="font: 600 14px Inter, sans-serif; fill: #374151;">
+      🎯 このフローを理解すれば、どんな入出力問題でも対応できる！
+    </text>
+  </g>
+  
+</svg>

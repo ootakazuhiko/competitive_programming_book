@@ -1,0 +1,197 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-9：map()関数による一括変換</title>
+  <desc>map()関数がリストの各要素に関数を適用して一括変換する仕組みを視覚的に説明する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .code-text { font: 500 12px 'Monaco', monospace; fill: #4B5563; }
+      .concept-text { font: 600 12px Inter, sans-serif; }
+      .example-text { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .step-text { font: 500 12px Inter, sans-serif; fill: #059669; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .input-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .map-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .output-box { fill: #D1FAE5; stroke: #10B981; stroke-width: 2; }
+      .concept-box { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .comparison-box { fill: #FDF2F8; stroke: #EC4899; stroke-width: 2; }
+      .arrow { stroke: #3B82F6; stroke-width: 3; fill: none; }
+      .transform-arrow { stroke: #10B981; stroke-width: 4; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="#3B82F6"/>
+    </marker>
+    
+    <marker id="transform-arrow" markerWidth="16" markerHeight="16" refX="14" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L16,4 z" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-9：map()関数による一括変換</text>
+  
+  <!-- Main Concept Flow -->
+  <!-- Input List -->
+  <g id="input-section">
+    <rect x="50" y="70" width="160" height="120" rx="12" class="input-box"/>
+    <text x="130" y="95" text-anchor="middle" class="section-title" fill="#D97706">入力データ</text>
+    <text x="130" y="115" text-anchor="middle" style="font: 500 14px Inter, sans-serif; fill: #D97706;">(文字列リスト)</text>
+    
+    <!-- String list representation -->
+    <g transform="translate(70, 130)">
+      <rect x="0" y="5" width="30" height="20" class="code-box"/>
+      <text x="15" y="18" text-anchor="middle" class="code-text">"1"</text>
+      
+      <rect x="35" y="5" width="30" height="20" class="code-box"/>
+      <text x="50" y="18" text-anchor="middle" class="code-text">"2"</text>
+      
+      <rect x="70" y="5" width="30" height="20" class="code-box"/>
+      <text x="85" y="18" text-anchor="middle" class="code-text">"3"</text>
+      
+      <rect x="105" y="5" width="30" height="20" class="code-box"/>
+      <text x="120" y="18" text-anchor="middle" class="code-text">"4"</text>
+      
+      <text x="70" y="40" text-anchor="middle" class="example-text">input().split()の結果</text>
+    </g>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M220 130 L280 130" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Map Function -->
+  <g id="map-section">
+    <rect x="290" y="70" width="220" height="120" rx="12" class="map-box"/>
+    <text x="400" y="95" text-anchor="middle" class="section-title" fill="#1E40AF">map()関数</text>
+    <text x="400" y="115" text-anchor="middle" style="font: 500 14px Inter, sans-serif; fill: #1E40AF;">(変換処理)</text>
+    
+    <!-- Map process visualization -->
+    <g transform="translate(310, 130)">
+      <rect x="0" y="0" width="180" height="45" class="code-box"/>
+      <text x="90" y="18" text-anchor="middle" style="font: 500 11px 'Monaco', monospace; fill: #1E40AF;">map(int, string_list)</text>
+      <text x="90" y="32" text-anchor="middle" class="example-text">各要素にint()を適用</text>
+      <text x="90" y="42" text-anchor="middle" class="example-text">文字列 → 数値に変換</text>
+    </g>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M520 130 L580 130" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Output List -->
+  <g id="output-section">
+    <rect x="590" y="70" width="160" height="120" rx="12" class="output-box"/>
+    <text x="670" y="95" text-anchor="middle" class="section-title" fill="#047857">出力データ</text>
+    <text x="670" y="115" text-anchor="middle" style="font: 500 14px Inter, sans-serif; fill: #047857;">(整数リスト)</text>
+    
+    <!-- Integer list representation -->
+    <g transform="translate(610, 130)">
+      <rect x="0" y="5" width="30" height="20" class="code-box"/>
+      <text x="15" y="18" text-anchor="middle" class="code-text">1</text>
+      
+      <rect x="35" y="5" width="30" height="20" class="code-box"/>
+      <text x="50" y="18" text-anchor="middle" class="code-text">2</text>
+      
+      <rect x="70" y="5" width="30" height="20" class="code-box"/>
+      <text x="85" y="18" text-anchor="middle" class="code-text">3</text>
+      
+      <rect x="105" y="5" width="30" height="20" class="code-box"/>
+      <text x="120" y="18" text-anchor="middle" class="code-text">4</text>
+      
+      <text x="70" y="40" text-anchor="middle" class="example-text">list(map(...))の結果</text>
+    </g>
+  </g>
+  
+  <!-- Detailed Steps -->
+  <g id="detailed-steps">
+    <text x="400" y="220" text-anchor="middle" style="font: 600 16px Inter, sans-serif; fill: #374151;">
+      🔍 map()の動作を詳しく見てみよう
+    </text>
+    
+    <!-- Step-by-step process -->
+    <g transform="translate(100, 240)">
+      <rect x="0" y="0" width="600" height="120" rx="12" class="concept-box"/>
+      <text x="20" y="25" class="emoji">📝</text>
+      <text x="50" y="25" class="concept-text" fill="#059669">各要素の変換過程：</text>
+      
+      <!-- Individual transformations -->
+      <g transform="translate(20, 40)">
+        <text x="0" y="15" class="step-text">①</text>
+        <text x="25" y="15" class="code-text">"1"</text>
+        <path d="M50 10 L80 10" class="transform-arrow" marker-end="url(#transform-arrow)"/>
+        <text x="90" y="15" style="font: 500 12px 'Monaco', monospace; fill: #10B981;">int("1")</text>
+        <path d="M140 10 L170 10" class="transform-arrow" marker-end="url(#transform-arrow)"/>
+        <text x="180" y="15" class="code-text">1</text>
+        
+        <text x="0" y="35" class="step-text">②</text>
+        <text x="25" y="35" class="code-text">"2"</text>
+        <path d="M50 30 L80 30" class="transform-arrow" marker-end="url(#transform-arrow)"/>
+        <text x="90" y="35" style="font: 500 12px 'Monaco', monospace; fill: #10B981;">int("2")</text>
+        <path d="M140 30 L170 30" class="transform-arrow" marker-end="url(#transform-arrow)"/>
+        <text x="180" y="35" class="code-text">2</text>
+        
+        <text x="0" y="55" class="step-text">③</text>
+        <text x="25" y="55" class="code-text">"3"</text>
+        <path d="M50 50 L80 50" class="transform-arrow" marker-end="url(#transform-arrow)"/>
+        <text x="90" y="55" style="font: 500 12px 'Monaco', monospace; fill: #10B981;">int("3")</text>
+        <path d="M140 50 L170 50" class="transform-arrow" marker-end="url(#transform-arrow)"/>
+        <text x="180" y="55" class="code-text">3</text>
+        
+        <text x="0" y="75" class="step-text">④</text>
+        <text x="25" y="75" class="code-text">"4"</text>
+        <path d="M50 70 L80 70" class="transform-arrow" marker-end="url(#transform-arrow)"/>
+        <text x="90" y="75" style="font: 500 12px 'Monaco', monospace; fill: #10B981;">int("4")</text>
+        <path d="M140 70 L170 70" class="transform-arrow" marker-end="url(#transform-arrow)"/>
+        <text x="180" y="75" class="code-text">4</text>
+        
+        <!-- Result summary -->
+        <rect x="300" y="10" width="260" height="60" rx="8" fill="#DCFCE7" stroke="#22C55E" stroke-width="1"/>
+        <text x="430" y="30" text-anchor="middle" class="step-text">結果リスト生成:</text>
+        <text x="430" y="50" text-anchor="middle" style="font: 500 12px 'Monaco', monospace; fill: #059669;">[1, 2, 3, 4]</text>
+        <text x="430" y="65" text-anchor="middle" class="example-text">すべて整数型に変換完了！</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Code Comparison -->
+  <g id="code-comparison">
+    <rect x="50" y="380" width="700" height="140" rx="12" class="comparison-box"/>
+    <text x="70" y="405" class="emoji">💡</text>
+    <text x="100" y="405" class="concept-text" fill="#BE185D">map()と従来のforループの比較：</text>
+    
+    <!-- Method 1: Using map() -->
+    <g transform="translate(70, 420)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #059669;">✅ map()を使う方法（推奨）</text>
+      <rect x="0" y="20" width="300" height="35" class="code-box"/>
+      <text x="10" y="35" style="font: 500 11px 'Monaco', monospace; fill: #4B5563;">numbers = list(map(int, input().split()))</text>
+      <text x="10" y="50" class="example-text">→ 1行で完結、効率的</text>
+    </g>
+    
+    <!-- Method 2: Using for loop -->
+    <g transform="translate(390, 420)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">⚠️ forループで書く方法（参考）</text>
+      <rect x="0" y="20" width="300" height="60" class="code-box"/>
+      <text x="10" y="35" style="font: 500 11px 'Monaco', monospace; fill: #4B5563;">string_list = input().split()</text>
+      <text x="10" y="48" style="font: 500 11px 'Monaco', monospace; fill: #4B5563;">numbers = []</text>
+      <text x="10" y="61" style="font: 500 11px 'Monaco', monospace; fill: #4B5563;">for s in string_list:</text>
+      <text x="10" y="74" style="font: 500 11px 'Monaco', monospace; fill: #4B5563;">    numbers.append(int(s))</text>
+      <text x="10" y="85" class="example-text">→ 冗長、競技プログラミングでは非効率</text>
+    </g>
+  </g>
+  
+  <!-- Usage Examples -->
+  <g id="usage-examples">
+    <text x="400" y="550" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #374151;">
+      🎯 map()は競技プログラミングで最も頻繁に使う関数の一つ！
+    </text>
+    <text x="400" y="570" text-anchor="middle" class="example-text">
+      input().split()で得た文字列リストを、一瞬で数値リストに変換できる
+    </text>
+  </g>
+  
+</svg>
