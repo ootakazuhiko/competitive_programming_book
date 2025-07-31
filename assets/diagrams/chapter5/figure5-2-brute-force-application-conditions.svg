@@ -1,0 +1,239 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-2：全探索の適用条件</title>
+  <desc>全探索アルゴリズムをいつ使うべきか、いつ避けるべきかの判断基準と計算量の目安を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .condition-text { font: 500 12px Inter, sans-serif; fill: #4B5563; }
+      .timing-text { font: 500 11px Inter, sans-serif; fill: #6B7280; }
+      .performance-text { font: 600 12px Inter, sans-serif; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .good-section { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .bad-section { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .performance-section { fill: #F0F9FF; stroke: #0EA5E9; stroke-width: 2; }
+      .condition-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .timing-fast { fill: #D1FAE5; stroke: #10B981; stroke-width: 1; }
+      .timing-slow { fill: #FEE2E2; stroke: #F87171; stroke-width: 1; }
+      .timing-medium { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-2：全探索の適用条件</text>
+  
+  <!-- Good Cases Section -->
+  <g id="good-cases">
+    <rect x="50" y="60" width="350" height="180" rx="12" class="good-section"/>
+    <text x="70" y="85" class="emoji">✅</text>
+    <text x="100" y="85" class="section-title" fill="#059669">全探索が有効な場合：</text>
+    
+    <g transform="translate(70, 100)">
+      <g transform="translate(0, 10)">
+        <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+        <text x="20" y="12" class="condition-text" fill="#166534">
+          調べる範囲が十分小さい（通常10⁶程度まで）
+        </text>
+      </g>
+      
+      <g transform="translate(0, 35)">
+        <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+        <text x="20" y="12" class="condition-text" fill="#166534">
+          他に効率的な方法が思いつかない
+        </text>
+      </g>
+      
+      <g transform="translate(0, 60)">
+        <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+        <text x="20" y="12" class="condition-text" fill="#166534">
+          確実に正解したい（実装が簡単で間違いにくい）
+        </text>
+      </g>
+      
+      <g transform="translate(0, 85)">
+        <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+        <text x="20" y="12" class="condition-text" fill="#166534">
+          計算量の見積もりが制限時間内に収まる
+        </text>
+      </g>
+      
+      <!-- Good example box -->
+      <g transform="translate(0, 115)">
+        <rect x="0" y="0" width="300" height="50" class="condition-box"/>
+        <text x="150" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #059669;">
+          典型例：AtCoderのA,B問題
+        </text>
+        <text x="150" y="35" text-anchor="middle" class="timing-text" fill="#166534">
+          N≤1000程度の制約が多い
+        </text>
+        <text x="150" y="48" text-anchor="middle" class="timing-text" fill="#166534">
+          → 全探索で確実に解ける！
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Bad Cases Section -->
+  <g id="bad-cases">
+    <rect x="420" y="60" width="330" height="180" rx="12" class="bad-section"/>
+    <text x="440" y="85" class="emoji">❌</text>
+    <text x="470" y="85" class="section-title" fill="#DC2626">全探索が不適切な場合：</text>
+    
+    <g transform="translate(440, 100)">
+      <g transform="translate(0, 10)">
+        <circle cx="8" cy="8" r="4" fill="#EF4444"/>
+        <text x="20" y="12" class="condition-text" fill="#991B1B">
+          調べる範囲が巨大（10⁸以上など）
+        </text>
+      </g>
+      
+      <g transform="translate(0, 35)">
+        <circle cx="8" cy="8" r="4" fill="#EF4444"/>
+        <text x="20" y="12" class="condition-text" fill="#991B1B">
+          明らかに効率的な数学的解法が存在する
+        </text>
+      </g>
+      
+      <g transform="translate(0, 60)">
+        <circle cx="8" cy="8" r="4" fill="#EF4444"/>
+        <text x="20" y="12" class="condition-text" fill="#991B1B">
+          メモリ使用量が制限を超える
+        </text>
+      </g>
+      
+      <g transform="translate(0, 85)">
+        <circle cx="8" cy="8" r="4" fill="#EF4444"/>
+        <text x="20" y="12" class="condition-text" fill="#991B1B">
+          実装が複雑すぎて間違いやすい
+        </text>
+      </g>
+      
+      <!-- Bad example box -->
+      <g transform="translate(0, 115)">
+        <rect x="0" y="0" width="280" height="50" class="condition-box"/>
+        <text x="140" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">
+          典型例：AtCoderのD,E問題
+        </text>
+        <text x="140" y="35" text-anchor="middle" class="timing-text" fill="#991B1B">
+          N≥10⁷の制約が多い
+        </text>
+        <text x="140" y="48" text-anchor="middle" class="timing-text" fill="#991B1B">
+          → 効率的なアルゴリズムが必要
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Performance Section -->
+  <g id="performance-guide">
+    <rect x="100" y="270" width="600" height="280" rx="12" class="performance-section"/>
+    <text x="120" y="295" class="emoji">📊</text>
+    <text x="150" y="295" class="section-title" fill="#0284C7">計算量の目安（Python基準）：</text>
+    
+    <!-- Fast operations -->
+    <g transform="translate(120, 310)">
+      <text x="0" y="20" style="font: 600 14px Inter, sans-serif; fill: #059669;">⚡ 高速（瞬時）</text>
+      
+      <g transform="translate(0, 30)">
+        <rect x="0" y="0" width="250" height="25" class="timing-fast"/>
+        <text x="10" y="18" class="performance-text" fill="#059669">10³回のループ</text>
+        <text x="180" y="18" class="timing-text" fill="#166534">瞬時</text>
+      </g>
+      
+      <g transform="translate(0, 60)">
+        <rect x="0" y="0" width="250" height="25" class="timing-fast"/>
+        <text x="10" y="18" class="performance-text" fill="#059669">10⁴回のループ</text>
+        <text x="180" y="18" class="timing-text" fill="#166534">瞬時</text>
+      </g>
+    </g>
+    
+    <!-- Medium operations -->
+    <g transform="translate(120, 400)">
+      <text x="0" y="20" style="font: 600 14px Inter, sans-serif; fill: #D97706;">⚠️ 中速（注意が必要）</text>
+      
+      <g transform="translate(0, 30)">
+        <rect x="0" y="0" width="250" height="25" class="timing-medium"/>
+        <text x="10" y="18" class="performance-text" fill="#D97706">10⁵回のループ</text>
+        <text x="180" y="18" class="timing-text" fill="#92400E">0.01秒程度</text>
+      </g>
+      
+      <g transform="translate(0, 60)">
+        <rect x="0" y="0" width="250" height="25" class="timing-medium"/>
+        <text x="10" y="18" class="performance-text" fill="#D97706">10⁶回のループ</text>
+        <text x="180" y="18" class="timing-text" fill="#92400E">0.1秒程度</text>
+      </g>
+      
+      <g transform="translate(0, 90)">
+        <rect x="0" y="0" width="250" height="25" class="timing-medium"/>
+        <text x="10" y="18" class="performance-text" fill="#D97706">10⁷回のループ</text>
+        <text x="180" y="18" class="timing-text" fill="#92400E">1秒程度</text>
+      </g>
+    </g>
+    
+    <!-- Slow operations -->
+    <g transform="translate(400, 340)">
+      <text x="0" y="20" style="font: 600 14px Inter, sans-serif; fill: #DC2626;">🚨 低速（危険）</text>
+      
+      <g transform="translate(0, 30)">
+        <rect x="0" y="0" width="250" height="25" class="timing-slow"/>
+        <text x="10" y="18" class="performance-text" fill="#DC2626">10⁸回のループ</text>
+        <text x="150" y="18" class="timing-text" fill="#991B1B">10秒程度</text>
+      </g>
+      
+      <g transform="translate(0, 60)">
+        <rect x="0" y="0" width="250" height="50" rx="8" fill="#FEE2E2" stroke="#F87171" stroke-width="2"/>
+        <text x="125" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">
+          制限時間2秒だと危険！
+        </text>
+        <text x="125" y="35" text-anchor="middle" class="timing-text" fill="#991B1B">
+          Time Limit Exceededの原因
+        </text>
+        <text x="125" y="48" text-anchor="middle" class="timing-text" fill="#991B1B">
+          より効率的な解法を考える
+        </text>
+      </g>
+      
+      <!-- Guidance box -->
+      <g transform="translate(0, 120)">
+        <rect x="0" y="0" width="250" height="70" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+        <text x="125" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #0284C7;">
+          💡 判断のコツ
+        </text>
+        <text x="125" y="35" text-anchor="middle" class="timing-text" fill="#0369A1">
+          制約を見て計算量を見積もる
+        </text>
+        <text x="125" y="50" text-anchor="middle" class="timing-text" fill="#0369A1">
+          N≤10⁶なら全探索OK
+        </text>
+        <text x="125" y="65" text-anchor="middle" class="timing-text" fill="#0369A1">
+          N≥10⁷なら他の方法を考える
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Decision Flow -->
+  <g id="decision-flow">
+    <rect x="150" y="570" width="500" height="100" rx="12" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="2"/>
+    <text x="170" y="595" class="emoji">🤔</text>
+    <text x="200" y="595" style="font: 600 14px Inter, sans-serif; fill: #374151;">全探索を使うかどうかの判断フロー：</text>
+    
+    <g transform="translate(170, 610)">
+      <text x="0" y="15" class="condition-text" fill="#4B5563">
+        1️⃣ 制約を確認 → 2️⃣ 計算量を見積もり → 3️⃣ 制限時間と比較 → 4️⃣ 実装の簡単さを考慮
+      </text>
+      <text x="0" y="35" style="font: 600 12px Inter, sans-serif; fill: #059669;">
+        ✅ すべてクリアなら全探索！ 確実で間違いにくい最強の手法
+      </text>
+      <text x="0" y="50" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">
+        ❌ 1つでも問題があるなら他の解法を検討
+      </text>
+    </g>
+  </g>
+  
+</svg>

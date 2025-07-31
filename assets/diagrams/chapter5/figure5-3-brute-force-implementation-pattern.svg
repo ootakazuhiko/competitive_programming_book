@@ -1,0 +1,176 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-3：全探索実装パターン</title>
+  <desc>各桁の和がKになる数を見つける全探索アルゴリズムの実装パターンを段階的に説明する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .step-text { font: 500 12px Inter, sans-serif; fill: #4B5563; }
+      .code-text { font: 500 11px 'Monaco', monospace; fill: #4B5563; }
+      .example-text { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .output-text { font: 500 11px 'Monaco', monospace; fill: #059669; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .problem-section { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .algorithm-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .implementation-section { fill: #D1FAE5; stroke: #10B981; stroke-width: 2; }
+      .digit-process-section { fill: #F3E8FF; stroke: #8B5CF6; stroke-width: 2; }
+      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .arrow { stroke: #059669; stroke-width: 2; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="#059669"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-3：全探索実装パターン</text>
+  
+  <!-- Problem Statement -->
+  <g id="problem-statement">
+    <rect x="50" y="60" width="700" height="100" rx="12" class="problem-section"/>
+    <text x="70" y="85" class="emoji">📋</text>
+    <text x="100" y="85" class="section-title" fill="#D97706">問題例：「1以上N以下の整数で、各桁の和がKになるものを全て出力」</text>
+    
+    <g transform="translate(70, 100)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #92400E;">入力例:</text>
+      <text x="80" y="15" class="code-text">100 10</text>
+      <text x="200" y="15" class="example-text">（N=100, K=10）</text>
+      
+      <text x="0" y="35" style="font: 600 12px Inter, sans-serif; fill: #92400E;">出力例:</text>
+      <text x="80" y="35" class="output-text">19 28 37 46 55 64 73 82 91</text>
+      <text x="300" y="35" class="example-text">（各桁の和が10の数）</text>
+    </g>
+  </g>
+  
+  <!-- Algorithm Strategy -->
+  <g id="algorithm-strategy">
+    <rect x="50" y="180" width="700" height="120" rx="12" class="algorithm-section"/>
+    <text x="70" y="205" class="emoji">🎯</text>
+    <text x="100" y="205" class="section-title" fill="#1E40AF">解法分析</text>
+    
+    <g transform="translate(70, 220)">
+      <text x="0" y="20" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">方針：</text>
+      <text x="50" y="20" class="step-text">1からNまでの全ての数について、各桁の和を計算し、Kと等しいかチェック</text>
+      
+      <g name="steps" transform="translate(0, 40)">
+        <rect x="0" y="0" width="30" height="20" rx="10" fill="#93C5FD"/>
+        <text x="15" y="15" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #1E3A8A;">1</text>
+        <text x="40" y="15" class="step-text">i = 1 から N まで繰り返す</text>
+        
+        <rect x="220" y="0" width="30" height="20" rx="10" fill="#93C5FD"/>
+        <text x="235" y="15" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #1E3A8A;">2</text>
+        <text x="260" y="15" class="step-text">iの各桁の和を計算</text>
+        
+        <rect x="420" y="0" width="30" height="20" rx="10" fill="#93C5FD"/>
+        <text x="435" y="15" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #1E3A8A;">3</text>
+        <text x="460" y="15" class="step-text">桁の和がKと等しければ出力</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Implementation Code -->
+  <g id="implementation">
+    <rect x="50" y="320" width="700" height="220" rx="12" class="implementation-section"/>
+    <text x="70" y="345" class="emoji">💻</text>
+    <text x="100" y="345" class="section-title" fill="#047857">実装コード</text>
+    
+    <g transform="translate(70, 360)">
+      <rect x="0" y="0" width="650" height="165" class="code-box"/>
+      <text x="10" y="20" class="code-text">n, k = map(int, input().split())</text>
+      <text x="10" y="35" class="code-text">result = []</text>
+      
+      <text x="10" y="55" class="code-text">for i in range(1, n + 1):</text>
+      <text x="320" y="55" class="example-text"># 1からNまで全チェック</text>
+      
+      <text x="30" y="75" class="code-text"># iの各桁の和を計算</text>
+      <text x="30" y="90" class="code-text">digit_sum = 0</text>
+      <text x="30" y="105" class="code-text">temp = i</text>
+      <text x="30" y="120" class="code-text">while temp > 0:</text>
+      <text x="50" y="135" class="code-text">digit_sum += temp % 10</text>
+      <text x="220" y="135" class="example-text"># 最下位桁を取得</text>
+      <text x="50" y="150" class="code-text">temp //= 10</text>
+      <text x="220" y="150" class="example-text"># 最下位桁を除去</text>
+      
+      <text x="500" y="75" class="example-text">各桁分解の詳細は→</text>
+      
+      <!-- Arrows pointing to digit processing -->
+      <path d="M480 100 L520 100" class="arrow" marker-end="url(#arrow)"/>
+    </g>
+  </g>
+  
+  <!-- Digit Processing Detail -->
+  <g id="digit-processing">
+    <rect x="420" y="360" width="330" height="180" rx="12" class="digit-process-section"/>
+    <text x="440" y="385" class="emoji">🔢</text>
+    <text x="470" y="385" style="font: 600 14px Inter, sans-serif; fill: #7C3AED;">各桁分解の例（i=19）</text>
+    
+    <g transform="translate(440, 400)">
+      <g transform="translate(0, 10)">
+        <rect x="0" y="0" width="280" height="25" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+        <text x="10" y="17" style="font: 600 11px Inter, sans-serif; fill: #5B21B6;">Step 1:</text>
+        <text x="60" y="17" class="code-text">temp=19, digit_sum=0</text>
+      </g>
+      
+      <g transform="translate(0, 40)">
+        <rect x="0" y="0" width="280" height="25" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+        <text x="10" y="17" style="font: 600 11px Inter, sans-serif; fill: #5B21B6;">Step 2:</text>
+        <text x="60" y="17" class="code-text">19%10=9, digit_sum=9</text>
+      </g>
+      
+      <g transform="translate(0, 70)">
+        <rect x="0" y="0" width="280" height="25" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+        <text x="10" y="17" style="font: 600 11px Inter, sans-serif; fill: #5B21B6;">Step 3:</text>
+        <text x="60" y="17" class="code-text">temp=19//10=1</text>
+      </g>
+      
+      <g transform="translate(0, 100)">
+        <rect x="0" y="0" width="280" height="25" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+        <text x="10" y="17" style="font: 600 11px Inter, sans-serif; fill: #5B21B6;">Step 4:</text>
+        <text x="60" y="17" class="code-text">1%10=1, digit_sum=10</text>
+      </g>
+      
+      <g transform="translate(0, 130)">
+        <rect x="0" y="0" width="280" height="25" fill="#DCFCE7" stroke="#22C55E" stroke-width="1"/>
+        <text x="10" y="17" style="font: 600 11px Inter, sans-serif; fill: #166534;">結果:</text>
+        <text x="60" y="17" class="code-text">digit_sum=10 == k=10 ✓</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Final Steps -->
+  <g id="final-steps">
+    <rect x="50" y="560" width="330" height="120" rx="12" class="implementation-section"/>
+    <text x="70" y="585" class="emoji">✅</text>
+    <text x="100" y="585" class="section-title" fill="#047857">条件判定と出力</text>
+    
+    <g transform="translate(70, 600)">
+      <rect x="0" y="0" width="290" height="65" class="code-box"/>
+      <text x="10" y="20" class="code-text"># 条件チェック</text>
+      <text x="10" y="35" class="code-text">if digit_sum == k:</text>
+      <text x="30" y="50" class="code-text">result.append(i)</text>
+      <text x="10" y="65" class="code-text">print(*result)</text>
+    </g>
+  </g>
+  
+  <!-- Execution Flow -->
+  <g id="execution-flow">
+    <rect x="400" y="560" width="350" height="120" rx="12" class="algorithm-section"/>
+    <text x="420" y="585" class="emoji">🔄</text>
+    <text x="450" y="585" class="section-title" fill="#1E40AF">実行フロー例</text>
+    
+    <g transform="translate(420, 600)">
+      <text x="0" y="15" class="step-text">i=1: 桁の和=1 ≠ 10 → スキップ</text>
+      <text x="0" y="30" class="step-text">i=19: 桁の和=1+9=10 = 10 → 結果に追加</text>
+      <text x="0" y="45" class="step-text">i=28: 桁の和=2+8=10 = 10 → 結果に追加</text>
+      <text x="0" y="60" class="step-text">...</text>
+      <text x="0" y="75" class="output-text">最終結果: [19, 28, 37, 46, 55, 64, 73, 82, 91]</text>
+    </g>
+  </g>
+  
+</svg>

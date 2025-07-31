@@ -1,0 +1,164 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-1：Scratchのゲーム開発と全探索の関係</title>
+  <desc>Scratchでの敵キャラ発見処理と競技プログラミングの全探索アルゴリズムの共通概念を視覚的に説明する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .step-text { font: 500 12px Inter, sans-serif; fill: #4B5563; }
+      .concept-text { font: 600 12px Inter, sans-serif; }
+      .example-text { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .scratch-section { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .competitive-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .process-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .insight-box { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .connection-line { stroke: #10B981; stroke-width: 3; fill: none; }
+      .arrow { stroke: #059669; stroke-width: 2; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="#059669"/>
+    </marker>
+    
+    <marker id="connection-arrow" markerWidth="16" markerHeight="16" refX="14" refY="4" orient="auto">
+      <path d="M0,0 L0,8 L16,4 z" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-1：Scratchのゲーム開発と全探索の関係</text>
+  
+  <!-- Scratch Section -->
+  <g id="scratch-section">
+    <rect x="50" y="70" width="320" height="250" rx="12" class="scratch-section"/>
+    <text x="70" y="95" class="emoji">🎮</text>
+    <text x="100" y="95" class="section-title" fill="#D97706">Scratchでの敵キャラ発見</text>
+    
+    <!-- Step 1: Check all locations -->
+    <g transform="translate(70, 115)">
+      <rect x="0" y="0" width="280" height="45" class="process-box"/>
+      <text x="140" y="20" text-anchor="middle" class="step-text">画面上の全ての場所を</text>
+      <text x="140" y="35" text-anchor="middle" class="step-text">順番にチェック</text>
+    </g>
+    
+    <!-- Arrow 1 -->
+    <path d="M210 170 L210 190" class="arrow" marker-end="url(#arrow)"/>
+    
+    <!-- Step 2: Check for enemy -->
+    <g transform="translate(70, 200)">
+      <rect x="0" y="0" width="280" height="45" class="process-box"/>
+      <text x="140" y="20" text-anchor="middle" class="step-text">敵がいるかどうか確認</text>
+      <text x="140" y="35" text-anchor="middle" class="example-text">「もし〈マウスポインターに触れた〉なら」</text>
+    </g>
+    
+    <!-- Arrow 2 -->
+    <path d="M210 255 L210 275" class="arrow" marker-end="url(#arrow)"/>
+    
+    <!-- Step 3: Execute action -->
+    <g transform="translate(70, 285)">
+      <rect x="0" y="0" width="280" height="45" class="process-box"/>
+      <text x="140" y="20" text-anchor="middle" class="step-text">見つかったら処理実行</text>
+      <text x="140" y="35" text-anchor="middle" class="example-text">「効果音を鳴らす」「得点を加える」</text>
+    </g>
+  </g>
+  
+  <!-- Connection Arrow -->
+  <g transform="translate(390, 195)">
+    <path d="M0 0 L50 0" class="connection-line" marker-end="url(#connection-arrow)"/>
+    <path d="M50 0 L0 0" class="connection-line" marker-end="url(#connection-arrow)"/>
+    <text x="25" y="-10" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #10B981;">⟷</text>
+  </g>
+  
+  <!-- Competitive Programming Section -->
+  <g id="competitive-section">
+    <rect x="430" y="70" width="320" height="250" rx="12" class="competitive-section"/>
+    <text x="450" y="95" class="emoji">🔍</text>
+    <text x="480" y="95" class="section-title" fill="#1E40AF">競技プログラミングの全探索</text>
+    
+    <!-- Step 1: Check all possibilities -->
+    <g transform="translate(450, 115)">
+      <rect x="0" y="0" width="280" height="45" class="process-box"/>
+      <text x="140" y="20" text-anchor="middle" class="step-text">可能な全ての答えを</text>
+      <text x="140" y="35" text-anchor="middle" class="step-text">順番にチェック</text>
+    </g>
+    
+    <!-- Arrow 1 -->
+    <path d="M590 170 L590 190" class="arrow" marker-end="url(#arrow)"/>
+    
+    <!-- Step 2: Check condition -->
+    <g transform="translate(450, 200)">
+      <rect x="0" y="0" width="280" height="45" class="process-box"/>
+      <text x="140" y="20" text-anchor="middle" class="step-text">条件を満たすかどうか確認</text>
+      <text x="140" y="35" text-anchor="middle" class="example-text">「if 桁の和 == K: 」</text>
+    </g>
+    
+    <!-- Arrow 2 -->
+    <path d="M590 255 L590 275" class="arrow" marker-end="url(#arrow)"/>
+    
+    <!-- Step 3: Adopt as answer -->
+    <g transform="translate(450, 285)">
+      <rect x="0" y="0" width="280" height="45" class="process-box"/>
+      <text x="140" y="20" text-anchor="middle" class="step-text">見つかったら答えとして採用</text>
+      <text x="140" y="35" text-anchor="middle" class="example-text">「print(i)」「result.append(i)」</text>
+    </g>
+  </g>
+  
+  <!-- Common Concept -->
+  <g id="common-concept">
+    <rect x="100" y="350" width="600" height="120" rx="12" class="insight-box"/>
+    <text x="120" y="375" class="emoji">💡</text>
+    <text x="150" y="375" class="concept-text" fill="#059669">共通する考え方：「しらみつぶしに調べる」</text>
+    
+    <g transform="translate(120, 390)">
+      <text x="0" y="20" style="font: 600 14px Inter, sans-serif; fill: #059669;">
+        = 「可能性を1つずつ丁寧に確認していく」
+      </text>
+      
+      <g transform="translate(0, 40)">
+        <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+        <text x="20" y="12" class="example-text" fill="#166534">
+          <tspan class="concept-text">Scratchのゲーム</tspan>：画面上の各座標をチェックして敵を探す
+        </text>
+        
+        <circle cx="8" cy="28" r="4" fill="#22C55E"/>
+        <text x="20" y="32" class="example-text" fill="#166534">
+          <tspan class="concept-text">競技プログラミング</tspan>：1からNまでの各数値をチェックして条件に合うものを探す
+        </text>
+        
+        <rect x="350" y="-5" width="230" height="50" rx="8" fill="#DCFCE7" stroke="#22C55E" stroke-width="1"/>
+        <text x="465" y="15" text-anchor="middle" class="concept-text" fill="#059669">
+          どちらも「全部調べる」が基本！
+        </text>
+        <text x="465" y="30" text-anchor="middle" class="example-text" fill="#166534">
+          確実だけど時間がかかる手法
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Algorithm Examples -->
+  <g id="algorithm-examples">
+    <rect x="150" y="490" width="500" height="80" rx="12" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="170" y="515" class="emoji">🔧</text>
+    <text x="200" y="515" style="font: 600 14px Inter, sans-serif; fill: #374151;">実際の例：</text>
+    
+    <g transform="translate(170, 530)">
+      <text x="0" y="15" class="example-text" fill="#4B5563">
+        • パスワード総当たり攻撃 → セキュリティでの全探索
+      </text>
+      <text x="0" y="30" class="example-text" fill="#4B5563">
+        • 迷路の全経路探索 → ゲームAIでの全探索  
+      </text>
+      <text x="0" y="45" class="example-text" fill="#4B5563">
+        • 数独パズル解法 → 制約充足問題での全探索
+      </text>
+    </g>
+  </g>
+  
+</svg>

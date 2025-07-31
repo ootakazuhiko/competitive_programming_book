@@ -1,0 +1,201 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-18：貪欲法の思考プロセス</title>
+  <desc>コイン問題を例に貪欲アルゴリズムの思考プロセスと最適解に至る理論を視覚的に説明する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .step-title { font: 600 12px Inter, sans-serif; }
+      .amount-text { font: 600 14px Inter, sans-serif; }
+      .calc-text { font: 500 12px Inter, sans-serif; fill: #4B5563; }
+      .explanation-text { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .coin-text { font: 600 12px Inter, sans-serif; fill: #FFFFFF; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .problem-section { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .step-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .result-section { fill: #D1FAE5; stroke: #10B981; stroke-width: 2; }
+      .theory-section { fill: #F3E8FF; stroke: #8B5CF6; stroke-width: 2; }
+      .coin-500 { fill: #FFD700; stroke: #FFA500; stroke-width: 2; }
+      .coin-100 { fill: #C0C0C0; stroke: #808080; stroke-width: 2; }
+      .coin-50 { fill: #CD7F32; stroke: #A0522D; stroke-width: 2; }
+      .coin-10 { fill: #B87333; stroke: #8B4513; stroke-width: 2; }
+      .coin-1 { fill: #E6E6FA; stroke: #9370DB; stroke-width: 2; }
+      .arrow { stroke: #059669; stroke-width: 3; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="#059669"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-18：貪欲法の思考プロセス</text>
+  
+  <!-- Problem Statement -->
+  <g id="problem-statement">
+    <rect x="50" y="60" width="700" height="80" rx="12" class="problem-section"/>
+    <text x="70" y="85" class="emoji">🎯</text>
+    <text x="100" y="85" class="section-title" fill="#D97706">問題例：「コインを使って目標金額を作る。使うコインの枚数を最小にしたい」</text>
+    
+    <g transform="translate(70, 100)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #92400E;">利用可能コイン：</text>
+      <circle cx="120" cy="11" r="12" class="coin-500"/>
+      <text x="120" y="15" text-anchor="middle" class="coin-text" style="font: 600 10px Inter, sans-serif;">500</text>
+      <circle cx="160" cy="11" r="12" class="coin-100"/>
+      <text x="160" y="15" text-anchor="middle" class="coin-text" style="font: 600 10px Inter, sans-serif;">100</text>
+      <circle cx="200" cy="11" r="12" class="coin-50"/>
+      <text x="200" y="15" text-anchor="middle" class="coin-text" style="font: 600 10px Inter, sans-serif;">50</text>
+      <circle cx="240" cy="11" r="12" class="coin-10"/>
+      <text x="240" y="15" text-anchor="middle" class="coin-text" style="font: 600 10px Inter, sans-serif;">10</text>
+      <circle cx="280" cy="11" r="12" class="coin-1"/>
+      <text x="280" y="15" text-anchor="middle" class="coin-text" style="font: 600 10px Inter, sans-serif;">1</text>
+      
+      <text x="400" y="15" style="font: 600 12px Inter, sans-serif; fill: #92400E;">目標：</text>
+      <text x="450" y="15" class="amount-text" fill="#DC2626">890円を作る</text>
+    </g>
+  </g>
+  
+  <!-- Greedy Steps -->
+  <g id="greedy-steps">
+    <text x="400" y="175" text-anchor="middle" style="font: 600 16px Inter, sans-serif; fill: #3B82F6;">
+      🔄 貪欲アルゴリズムのステップ
+    </text>
+    
+    <!-- Step 1 -->
+    <g id="step1" transform="translate(50, 190)">
+      <rect x="0" y="0" width="330" height="100" rx="12" class="step-section"/>
+      <text x="20" y="25" class="step-title" fill="#1E40AF">Step 1: 500円を使えるだけ使う</text>
+      
+      <g transform="translate(20, 35)">
+        <text x="0" y="20" class="calc-text">890 ÷ 500 = 1枚</text>
+        <text x="0" y="35" class="calc-text">残り：890 - 500 = 390円</text>
+        
+        <circle cx="200" cy="25" r="20" class="coin-500"/>
+        <text x="200" y="30" text-anchor="middle" class="coin-text">500</text>
+        <text x="200" y="50" text-anchor="middle" class="explanation-text">1枚使用</text>
+      </g>
+    </g>
+    
+    <!-- Arrow 1 -->
+    <path d="M215 300 L215 320" class="arrow" marker-end="url(#arrow)"/>
+    
+    <!-- Step 2 -->
+    <g id="step2" transform="translate(420, 190)">
+      <rect x="0" y="0" width="330" height="100" rx="12" class="step-section"/>
+      <text x="20" y="25" class="step-title" fill="#1E40AF">Step 2: 100円を使えるだけ使う</text>
+      
+      <g transform="translate(20, 35)">
+        <text x="0" y="20" class="calc-text">390 ÷ 100 = 3枚</text>
+        <text x="0" y="35" class="calc-text">残り：390 - 300 = 90円</text>
+        
+        <circle cx="170" cy="25" r="15" class="coin-100"/>
+        <text x="170" y="29" text-anchor="middle" class="coin-text" style="font: 600 9px Inter, sans-serif;">100</text>
+        <circle cx="200" cy="25" r="15" class="coin-100"/>
+        <text x="200" y="29" text-anchor="middle" class="coin-text" style="font: 600 9px Inter, sans-serif;">100</text>
+        <circle cx="230" cy="25" r="15" class="coin-100"/>
+        <text x="230" y="29" text-anchor="middle" class="coin-text" style="font: 600 9px Inter, sans-serif;">100</text>
+        <text x="200" y="50" text-anchor="middle" class="explanation-text">3枚使用</text>
+      </g>
+    </g>
+    
+    <!-- Arrow 2 -->
+    <path d="M585 300 L585 320" class="arrow" marker-end="url(#arrow)"/>
+    
+    <!-- Step 3 -->
+    <g id="step3" transform="translate(50, 330)">
+      <rect x="0" y="0" width="330" height="100" rx="12" class="step-section"/>
+      <text x="20" y="25" class="step-title" fill="#1E40AF">Step 3: 50円を使えるだけ使う</text>
+      
+      <g transform="translate(20, 35)">
+        <text x="0" y="20" class="calc-text">90 ÷ 50 = 1枚</text>
+        <text x="0" y="35" class="calc-text">残り：90 - 50 = 40円</text>
+        
+        <circle cx="200" cy="25" r="18" class="coin-50"/>
+        <text x="200" y="30" text-anchor="middle" class="coin-text">50</text>
+        <text x="200" y="50" text-anchor="middle" class="explanation-text">1枚使用</text>
+      </g>
+    </g>
+    
+    <!-- Step 4 -->
+    <g id="step4" transform="translate(420, 330)">
+      <rect x="0" y="0" width="330" height="100" rx="12" class="step-section"/>
+      <text x="20" y="25" class="step-title" fill="#1E40AF">Step 4: 10円を使えるだけ使う</text>
+      
+      <g transform="translate(20, 35)">
+        <text x="0" y="20" class="calc-text">40 ÷ 10 = 4枚</text>
+        <text x="0" y="35" class="calc-text">残り：40 - 40 = 0円</text>
+        
+        <circle cx="170" cy="25" r="12" class="coin-10"/>
+        <text x="170" y="29" text-anchor="middle" class="coin-text" style="font: 600 8px Inter, sans-serif;">10</text>
+        <circle cx="195" cy="25" r="12" class="coin-10"/>
+        <text x="195" y="29" text-anchor="middle" class="coin-text" style="font: 600 8px Inter, sans-serif;">10</text>
+        <circle cx="220" cy="25" r="12" class="coin-10"/>
+        <text x="220" y="29" text-anchor="middle" class="coin-text" style="font: 600 8px Inter, sans-serif;">10</text>
+        <circle cx="245" cy="25" r="12" class="coin-10"/>
+        <text x="245" y="29" text-anchor="middle" class="coin-text" style="font: 600 8px Inter, sans-serif;">10</text>
+        <text x="207" y="50" text-anchor="middle" class="explanation-text">4枚使用</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Result -->
+  <g id="result">
+    <rect x="250" y="450" width="300" height="80" rx="12" class="result-section"/>
+    <text x="270" y="475" class="emoji">🎉</text>
+    <text x="300" y="475" class="section-title" fill="#047857">最終結果</text>
+    
+    <g transform="translate(270, 490)">
+      <text x="0" y="20" class="amount-text" fill="#059669">合計：1 + 3 + 1 + 4 = 9枚</text>
+      <text x="0" y="35" class="explanation-text">最小枚数で890円を作成完了！</text>
+    </g>
+  </g>
+  
+  <!-- Theory Explanation -->
+  <g id="theory">
+    <rect x="50" y="550" width="700" height="120" rx="12" class="theory-section"/>
+    <text x="70" y="575" class="emoji">💡</text>
+    <text x="100" y="575" class="section-title" fill="#7C3AED">なぜ貪欲法で正解になるのか？</text>
+    
+    <g transform="translate(70, 590)">
+      <g transform="translate(0, 10)">
+        <circle cx="8" cy="8" r="4" fill="#8B5CF6"/>
+        <text x="20" y="12" class="explanation-text" fill="#5B21B6">
+          <tspan style="font: 600 11px Inter, sans-serif;">局所最適が全体最適</tspan>：大きいコインを使える時に使わないと、後で小さいコインをたくさん使うことになる
+        </text>
+      </g>
+      
+      <g transform="translate(0, 30)">
+        <circle cx="8" cy="8" r="4" fill="#8B5CF6"/>
+        <text x="20" y="12" class="explanation-text" fill="#5B21B6">
+          <tspan style="font: 600 11px Inter, sans-serif;">硬貨システムの特性</tspan>：日本の硬貨システムは貪欲法で最適解が得られるよう設計されている
+        </text>
+      </g>
+      
+      <g transform="translate(0, 50)">
+        <circle cx="8" cy="8" r="4" fill="#8B5CF6"/>
+        <text x="20" y="12" class="explanation-text" fill="#5B21B6">
+          <tspan style="font: 600 11px Inter, sans-serif;">計算量</tspan>：O(硬貨の種類数) = O(1) で超高速、全探索よりもはるかに効率的
+        </text>
+      </g>
+      
+      <g transform="translate(450, 10)">
+        <rect x="0" y="0" width="220" height="60" rx="8" fill="#FEF2F2" stroke="#EF4444" stroke-width="1"/>
+        <text x="110" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">
+          ⚠️ 注意事項
+        </text>
+        <text x="110" y="35" text-anchor="middle" class="explanation-text" fill="#991B1B">
+          すべての硬貨システムで成立するわけではない
+        </text>
+        <text x="110" y="50" text-anchor="middle" class="explanation-text" fill="#991B1B">
+          問題によっては動的プログラミングが必要
+        </text>
+      </g>
+    </g>
+  </g>
+  
+</svg>
