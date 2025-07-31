@@ -1,0 +1,239 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図11-9：学習機会の多様な活用方法</title>
+  <desc>プログラミング教室・イベントの効果的な選択と活用戦略</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    学習機会の多様な活用方法
+  </text>
+  
+  <!-- 地域のプログラミング教室 -->
+  <rect x="50" y="60" width="340" height="250" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="3"/>
+  <text x="220" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e40af">
+    🏢 地域のプログラミング教室
+  </text>
+  <text x="220" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3730a3">
+    対面指導による体系的な学習
+  </text>
+  
+  <g transform="translate(70, 110)">
+    <!-- 選択基準 -->
+    <rect x="0" y="0" width="130" height="170" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="65" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      🎯 選択基準
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 競技プログラミング対応</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ Python・アルゴリズム重視</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 個人レベルに応じた指導</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 同世代の参加者がいる</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 講師の競技プログラミング経験</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 通学が継続可能な立地</text>
+    <text x="5" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 自分の目標に合致する教室</text>
+    <text x="5" y="97" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 継続的な成長が期待できる</text>
+    
+    <!-- 費用対効果の考え方 -->
+    <rect x="0" y="110" width="130" height="50" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="65" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e40af">
+      💰 費用対効果の考え方
+    </text>
+    <text x="5" y="137" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 月謝と学習効果のバランス</text>
+    <text x="5" y="147" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 独学では得られない価値があるか</text>
+    <text x="5" y="157" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      家計負担と将来投資のバランス</text>
+    
+    <!-- 教室活用の最大化 -->
+    <rect x="140" y="0" width="140" height="170" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="210" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      📈 教室活用の最大化
+    </text>
+    <text x="145" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 講師に積極的に質問</text>
+    <text x="145" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 他の参加者との情報交換</text>
+    <text x="145" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 自主学習の方向性相談</text>
+    <text x="145" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 競技プログラミング大会相談</text>
+    <text x="145" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 家庭学習との相乗効果</text>
+    <text x="145" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 投資価値の最大化</text>
+    <text x="145" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 総合的な学習効果向上</text>
+    
+    <!-- 体験レッスンでの確認ポイント -->
+    <rect x="140" y="100" width="140" height="60" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="210" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e40af">
+      📝 体験レッスンチェックポイント
+    </text>
+    <text x="145" y="127" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 指導スタイルが自分に合うか</text>
+    <text x="145" y="137" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 質問しやすい雰囲気か</text>
+    <text x="145" y="147" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 他の生徒のレベルと目標</text>
+    <text x="145" y="157" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      カリキュラムの柔軟性</text>
+  </g>
+  
+  <!-- オンライン学習プラットフォーム -->
+  <rect x="410" y="60" width="340" height="250" rx="8" fill="#d1fae5" stroke="#22c55e" stroke-width="3"/>
+  <text x="580" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#047857">
+    🌐 オンライン学習プラットフォーム
+  </text>
+  <text x="580" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    自分のペースで学習できる豊富なリソース
+  </text>
+  
+  <g transform="translate(430, 110)">
+    <!-- 主要なプラットフォーム -->
+    <rect x="0" y="0" width="130" height="120" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="65" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      📚 主要プラットフォーム
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📹 Udemy：動画ベース講座</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎓 Coursera：大学レベルコース</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎮 Progate：インタラクティブ学習</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      💻 paiza：実践プログラミング</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📖 AtCoder Educational DP</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 多様な学習スタイルに対応</text>
+    <text x="5" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 専門分野の深い学習可能</text>
+    
+    <!-- オンライン学習のメリット -->
+    <rect x="140" y="0" width="140" height="120" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="210" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      ✅ オンライン学習のメリット
+    </text>
+    <text x="145" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ⏰ 自分のペースで学習可能</text>
+    <text x="145" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🔄 繰り返し視聴による理解深化</text>
+    <text x="145" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📍 場所を選ばない学習環境</text>
+    <text x="145" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎨 多様な講師・教材から選択</text>
+    <text x="145" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      💡 比較的低コストでの学習</text>
+    <text x="145" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 効率的な学習環境の構築</text>
+    <text x="145" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 継続的な自主学習の実現</text>
+    
+    <!-- 課題と対策 -->
+    <rect x="0" y="130" width="280" height="90" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+    <text x="140" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+      ⚠️ オンライン学習の課題と対策
+    </text>
+    <text x="5" y="157" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🔥 モチベーション維持 → 学習仲間を作る</text>
+    <text x="5" y="167" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ❓ 質問相手がいない → コミュニティ活用</text>
+    <text x="5" y="177" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎯 実践機会不足 → AtCoderでの実践</text>
+    <text x="5" y="187" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📊 進捗管理困難 → 学習記録の習慣化</text>
+    <text x="5" y="197" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      対面学習との組み合わせで課題解決</text>
+  </g>
+  
+  <!-- 効果的な活用戦略 -->
+  <rect x="50" y="330" width="700" height="180" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="352" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d97706">
+    💡 効果的な活用戦略
+  </text>
+  <text x="400" y="368" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+    複数の学習リソースを組み合わせた最適化アプローチ
+  </text>
+  
+  <g transform="translate(70, 380)">
+    <!-- 段階別活用法 -->
+    <rect x="0" y="0" width="200" height="100" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      📊 段階別活用法
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🔰 初心者段階：オンライン基礎学習中心</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📈 中級段階：教室+オンラインの併用</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🚀 上級段階：特定分野の集中学習</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎯 競技志向：メンター+実践中心</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 成長段階に応じた最適化</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 効率的なリソース活用</text>
+    
+    <!-- 組み合わせパターン -->
+    <rect x="220" y="0" width="200" height="100" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="320" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      🔄 組み合わせパターン
+    </text>
+    <text x="225" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📅 週末：プログラミング教室通学</text>
+    <text x="225" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🏠 平日：オンライン学習で補強</text>
+    <text x="225" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎪 長期休暇：集中イベント参加</text>
+    <text x="225" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      💻 定期：AtCoderでの実践練習</text>
+    <text x="225" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → バランスの取れた学習環境</text>
+    <text x="225" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 継続的な成長の実現</text>
+    
+    <!-- 投資効果の最大化 -->
+    <rect x="440" y="0" width="200" height="100" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="540" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      📈 投資効果の最大化
+    </text>
+    <text x="445" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎯 明確な目標設定と定期評価</text>
+    <text x="445" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📊 学習進捗の可視化と記録</text>
+    <text x="445" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🤝 複数のメンター・仲間の確保</text>
+    <text x="445" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🔄 学習方法の定期的な見直し</text>
+    <text x="445" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 最適な学習環境の構築</text>
+    <text x="445" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 確実な成長の実現</text>
+  </g>
+  
+  <!-- 総合メッセージ -->
+  <rect x="50" y="530" width="700" height="100" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">
+    🌟 多様な学習機会を戦略的に活用しよう
+  </text>
+  <text x="400" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0284c7">
+    対面指導 + オンライン学習 + イベント参加 = 最強の学習環境
+  </text>
+  <text x="400" y="582" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    自分の学習スタイル・目標・予算に合わせて最適な組み合わせを見つけよう
+  </text>
+  <text x="400" y="596" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    一つに依存せず、複数のリソースを活用することが継続的成長の鍵
+  </text>
+  
+</svg>

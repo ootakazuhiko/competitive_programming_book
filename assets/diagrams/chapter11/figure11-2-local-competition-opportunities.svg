@@ -1,0 +1,254 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図11-2：身近な競技機会の発見と活用</title>
+  <desc>地域・学校レベルでの競技プログラミング参加機会とその活用方法</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    身近な競技機会の発見と活用
+  </text>
+  
+  <!-- 学校・地域レベルの競技 -->
+  <rect x="50" y="60" width="700" height="180" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="3"/>
+  <text x="400" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e40af">
+    🏫 学校・地域レベルの競技
+  </text>
+  <text x="400" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3730a3">
+    身近な環境でのプログラミング競技体験
+  </text>
+  
+  <g transform="translate(70, 110)">
+    <!-- 校内コンテスト -->
+    <rect x="0" y="0" width="200" height="100" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      🎓 校内プログラミングコンテスト
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 文化祭での企画・展示</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 数学・理科部主催のイベント</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 情報科目の課外活動</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 部活動内でのミニコンテスト</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 気軽に参加できる第一歩</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 同級生との健全な競争</text>
+    <text x="5" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 学校内での認知度向上</text>
+    
+    <!-- 地域コンテスト -->
+    <rect x="220" y="0" width="200" height="100" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="320" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      🏘️ 地域レベルの競技
+    </text>
+    <text x="225" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 市町村主催のプログラミング大会</text>
+    <text x="225" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 図書館でのプログラミング講座</text>
+    <text x="225" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 地域のIT企業主催イベント</text>
+    <text x="225" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 科学館・博物館の体験イベント</text>
+    <text x="225" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 地域コミュニティとの接点</text>
+    <text x="225" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 多様な年齢層との交流</text>
+    <text x="225" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 地元企業との出会い</text>
+    
+    <!-- オンライン中高生大会 -->
+    <rect x="440" y="0" width="200" height="100" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="540" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      🌐 オンライン中高生大会
+    </text>
+    <text x="445" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 企業主催の学生限定コンテスト</text>
+    <text x="445" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 大学主催の体験イベント</text>
+    <text x="445" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • NPO主催の教育プログラム</text>
+    <text x="445" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 学生向け特別コンテスト</text>
+    <text x="445" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 全国の同世代との競争</text>
+    <text x="445" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 企業・大学との接点作り</text>
+    <text x="445" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 将来の進路情報収集</text>
+  </g>
+  
+  <!-- 参加のコツ・心構え -->
+  <rect x="50" y="260" width="340" height="180" rx="8" fill="#d1fae5" stroke="#22c55e" stroke-width="2"/>
+  <text x="220" y="282" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#047857">
+    💡 参加のコツ
+  </text>
+  <text x="220" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    初心者でも楽しく参加する方法
+  </text>
+  
+  <g transform="translate(70, 310)">
+    <!-- 心構え -->
+    <rect x="0" y="0" width="130" height="100" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="65" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">
+      🎯 参加の心構え
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 完璧を求めず、まず参加</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 結果より学習体験を重視</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 同世代との交流を大切に</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 大人からのアドバイス歓迎</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 楽しみながら学ぶ姿勢</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      継続への第一歩を踏み出そう</text>
+    
+    <!-- 準備方法 -->
+    <rect x="140" y="0" width="140" height="100" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="210" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">
+      📚 事前準備のポイント
+    </text>
+    <text x="145" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 基本的なPython文法の復習</text>
+    <text x="145" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 簡単な問題での練習</text>
+    <text x="145" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 競技時間の感覚を掴む</text>
+    <text x="145" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 質問内容を事前に整理</text>
+    <text x="145" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • リラックスできる環境作り</text>
+    <text x="145" y="77" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      無理のない範囲で挑戦</text>
+  </g>
+  
+  <!-- 国際レベルへの道筋 -->
+  <rect x="410" y="260" width="340" height="180" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="580" y="282" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+    🚀 国際レベルへの道筋
+  </text>
+  <text x="580" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    国際情報オリンピックへの長期的な道のり
+  </text>
+  
+  <g transform="translate(430, 310)">
+    <!-- IOI代表の特徴 -->
+    <rect x="0" y="0" width="130" height="100" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="65" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#d97706">
+      🏆 IOI代表中学生の特徴
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • AtCoder青色レーティング以上</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 小学生からプログラミング開始</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 毎日2-3時間の継続学習</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 数学的素養が非常に高い</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 独学力と集中力が抜群</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="7" fill="#d97706">
+      超高いレベルが要求される</text>
+    
+    <!-- 現実的な心構え -->
+    <rect x="140" y="0" width="140" height="100" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="210" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#d97706">
+      💭 現実的な心構え
+    </text>
+    <text x="145" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • IOIは最高峰、到達しなくても価値</text>
+    <text x="145" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 挑戦する過程での成長が重要</text>
+    <text x="145" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 代表になれずとも得るものは大</text>
+    <text x="145" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • JOI予選参加から段階的に</text>
+    <text x="145" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 継続的な学習で実力向上</text>
+    <text x="145" y="77" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      自分のペースで着実に成長</text>
+  </g>
+  
+  <!-- 成長段階の流れ -->
+  <rect x="50" y="460" width="700" height="120" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+  <text x="400" y="482" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">
+    📈 段階的な成長プロセス
+  </text>
+  
+  <g transform="translate(70, 495)">
+    <!-- Stage 1 -->
+    <rect x="0" y="0" width="150" height="60" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="75" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed">
+      Stage 1: 身近な参加
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 校内・地域イベント参加</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 基礎スキルの習得</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 同世代仲間との出会い</text>
+    
+    <!-- Stage 2 -->
+    <rect x="165" y="0" width="150" height="60" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="240" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed">
+      Stage 2: 本格的挑戦
+    </text>
+    <text x="170" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • AtCoder定期参加</text>
+    <text x="170" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • レーティング向上目標</text>
+    <text x="170" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • オンラインコミュニティ参加</text>
+    
+    <!-- Stage 3 -->
+    <rect x="330" y="0" width="150" height="60" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="405" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed">
+      Stage 3: 上級挑戦
+    </text>
+    <text x="335" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • JOI予選への挑戦</text>
+    <text x="335" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 高度なアルゴリズム学習</text>
+    <text x="335" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • メンター・後輩指導</text>
+    
+    <!-- Stage 4 -->
+    <rect x="495" y="0" width="150" height="60" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="570" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed">
+      Stage 4: 国際レベル
+    </text>
+    <text x="500" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • JOI本選・春季合宿</text>
+    <text x="500" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • IOI代表選考</text>
+    <text x="500" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 国際大会への道</text>
+  </g>
+  
+  <!-- フロー矢印 -->
+  <path d="M150 525 L165 525" stroke="#7c3aed" stroke-width="2" fill="none" marker-end="url(#arrowhead-purple)"/>
+  <path d="M315 525 L330 525" stroke="#7c3aed" stroke-width="2" fill="none" marker-end="url(#arrowhead-purple)"/>
+  <path d="M480 525 L495 525" stroke="#7c3aed" stroke-width="2" fill="none" marker-end="url(#arrowhead-purple)"/>
+  
+  <!-- 総合メッセージ -->
+  <rect x="50" y="595" width="700" height="40" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="610" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0284c7">
+    🌟 身近なところから始めて、段階的に成長していこう
+  </text>
+  <text x="400" y="625" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    地域・学校の小さな機会も、将来への大きな一歩になる！
+  </text>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowhead-purple" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#7c3aed"/>
+    </marker>
+  </defs>
+</svg>
