@@ -1,0 +1,156 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-2：一般プログラムと競技プログラムの入出力の違い</title>
+  <desc>一般的なプログラムと競技プログラミングにおける入出力処理のアプローチの違いを対比して示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .feature-title { font: 500 12px Inter, sans-serif; fill: #4B5563; }
+      .feature-desc { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .rule-text { font: 600 12px Inter, sans-serif; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .general-section { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .competitive-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .vs-badge { fill: #EF4444; stroke: #DC2626; stroke-width: 2; }
+      .rule-box { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .example-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-2：一般プログラムと競技プログラムの入出力の違い</text>
+  
+  <!-- General Programming Section -->
+  <g id="general-programming">
+    <rect x="50" y="70" width="300" height="300" rx="12" class="general-section"/>
+    <text x="70" y="95" class="emoji">🖥️</text>
+    <text x="100" y="95" class="section-title" fill="#D97706">一般的なプログラム</text>
+    
+    <!-- Interactive Feature -->
+    <g transform="translate(70, 110)">
+      <text x="0" y="15" class="feature-title" fill="#92400E">ユーザーとの対話形式</text>
+      <text x="0" y="30" class="feature-desc">「名前は？」→入力</text>
+      <text x="0" y="43" class="feature-desc">「年齢は？」→入力</text>
+      <text x="0" y="56" class="feature-desc">「続けますか？」→入力</text>
+    </g>
+    
+    <!-- Error Handling -->
+    <g transform="translate(70, 180)">
+      <text x="0" y="15" class="feature-title" fill="#92400E">エラー時は再入力要求</text>
+      <text x="0" y="30" class="feature-desc">「無効な入力です」</text>
+      <text x="0" y="43" class="feature-desc">「もう一度入力してください」</text>
+      <text x="0" y="56" class="feature-desc">→ ユーザーに親切</text>
+    </g>
+    
+    <!-- User Experience -->
+    <g transform="translate(70, 250)">
+      <text x="0" y="15" class="feature-title" fill="#92400E">ユーザビリティ重視</text>
+      <text x="0" y="30" class="feature-desc">見た目の美しさも重要</text>
+      <text x="0" y="43" class="feature-desc">使いやすさを追求</text>
+      <text x="0" y="56" class="feature-desc">エラーメッセージは親切に</text>
+    </g>
+    
+    <!-- Example Code -->
+    <g transform="translate(70, 320)">
+      <rect x="0" y="0" width="250" height="40" class="example-box"/>
+      <text x="10" y="15" style="font: 400 10px 'Monaco', monospace; fill: #4B5563;">while True:</text>
+      <text x="10" y="28" style="font: 400 10px 'Monaco', monospace; fill: #4B5563;">  age = input("年齢は？")</text>
+      <text x="10" y="40" style="font: 400 10px 'Monaco', monospace; fill: #4B5563;">  if age.isdigit(): break</text>
+    </g>
+  </g>
+  
+  <!-- VS Badge -->
+  <g id="vs-badge">
+    <ellipse cx="400" cy="220" rx="40" ry="25" class="vs-badge"/>
+    <text x="400" y="228" text-anchor="middle" style="font: 700 16px Inter, sans-serif; fill: #FFFFFF;">VS</text>
+  </g>
+  
+  <!-- Competitive Programming Section -->
+  <g id="competitive-programming">
+    <rect x="450" y="70" width="300" height="300" rx="12" class="competitive-section"/>
+    <text x="470" y="95" class="emoji">🏆</text>
+    <text x="500" y="95" class="section-title" fill="#1E40AF">競技プログラミング</text>
+    
+    <!-- One-way Processing -->
+    <g transform="translate(470, 110)">
+      <text x="0" y="15" class="feature-title" fill="#1E40AF">一方通行の処理</text>
+      <text x="0" y="30" class="feature-desc">問題文で形式決定</text>
+      <text x="0" y="43" class="feature-desc">標準入力→計算→標準出力</text>
+      <text x="0" y="56" class="feature-desc">対話は一切なし</text>
+    </g>
+    
+    <!-- No Error Handling -->
+    <g transform="translate(470, 180)">
+      <text x="0" y="15" class="feature-title" fill="#1E40AF">1回で正確に処理</text>
+      <text x="0" y="30" class="feature-desc">エラーハンドリング不要</text>
+      <text x="0" y="43" class="feature-desc">入力は必ず正しい形式</text>
+      <text x="0" y="56" class="feature-desc">→ 効率性を重視</text>
+    </g>
+    
+    <!-- Accuracy Focus -->
+    <g transform="translate(470, 250)">
+      <text x="0" y="15" class="feature-title" fill="#1E40AF">効率と正確性重視</text>
+      <text x="0" y="30" class="feature-desc">結果の正確性のみ重要</text>
+      <text x="0" y="43" class="feature-desc">実行時間も厳格に管理</text>
+      <text x="0" y="56" class="feature-desc">見た目は一切考慮しない</text>
+    </g>
+    
+    <!-- Example Code -->
+    <g transform="translate(470, 320)">
+      <rect x="0" y="0" width="250" height="40" class="example-box"/>
+      <text x="10" y="15" style="font: 400 10px 'Monaco', monospace; fill: #4B5563;">n = int(input())</text>
+      <text x="10" y="28" style="font: 400 10px 'Monaco', monospace; fill: #4B5563;">print(n * n)</text>
+      <text x="10" y="40" style="font: 400 10px 'Monaco', monospace; fill: #4B5563;"># シンプル・高速</text>
+    </g>
+  </g>
+  
+  <!-- Rules Section -->
+  <g id="rules">
+    <rect x="100" y="400" width="600" height="140" rx="12" class="rule-box"/>
+    <text x="120" y="425" class="emoji">🔍</text>
+    <text x="150" y="425" class="rule-text" fill="#059669">競技プログラミングの入出力ルール：</text>
+    
+    <g transform="translate(120, 440)">
+      <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+      <text x="20" y="12" class="feature-desc" fill="#166534">
+        ✅ 問題文で入力形式が完全に指定される（例：「1行目に整数N、2行目にN個の整数」）
+      </text>
+      
+      <circle cx="8" cy="28" r="4" fill="#22C55E"/>
+      <text x="20" y="32" class="feature-desc" fill="#166534">
+        ✅ 出力形式も厳密に指定される（改行、スペースの位置まで完全指定）
+      </text>
+      
+      <circle cx="8" cy="48" r="4" fill="#22C55E"/>
+      <text x="20" y="52" class="feature-desc" fill="#166534">
+        ✅ エラーハンドリングは不要（入力は必ず正しい形式で与えられる）
+      </text>
+      
+      <circle cx="8" cy="68" r="4" fill="#22C55E"/>
+      <text x="20" y="72" class="feature-desc" fill="#166534">
+        ✅ 実行時間制限があるため、効率的な処理が必要
+      </text>
+      
+      <rect x="0" y="85" width="560" height="35" rx="8" fill="#DCFCE7" stroke="#22C55E" stroke-width="1"/>
+      <text x="280" y="105" text-anchor="middle" class="rule-text" fill="#059669">
+        💡 つまり：「正確で高速な入出力処理」が最重要！
+      </text>
+      <text x="280" y="118" text-anchor="middle" style="font: 500 11px Inter, sans-serif; fill: #166534;">
+        ユーザビリティよりも、アルゴリズムの正確性と効率性を追求
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom Example -->
+  <g transform="translate(200, 560)">
+    <text x="0" y="0" style="font: 600 14px Inter, sans-serif; fill: #374151;">
+      📚 この違いを理解することで、競技プログラミング特有の入出力パターンが身につく
+    </text>
+  </g>
+  
+</svg>
