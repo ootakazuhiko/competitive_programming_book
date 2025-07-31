@@ -1,0 +1,162 @@
+<svg viewBox="0 0 800 950" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-13：この本全体で身につけた力と未来への道筋</title>
+  <desc>全12章で学んだスキルと知識の総括、それらが導く三つの未来（教育・キャリア・研究創造）への道筋を示す統合図</desc>
+  
+  <!-- Background -->
+  <rect width="800" height="950" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    この本全体で身につけた力と未来への道筋
+  </text>
+  
+  <!-- Central starting point -->
+  <circle cx="400" cy="120" r="45" fill="#3b82f6" stroke="#1e40af" stroke-width="4"/>
+  <text x="400" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    🌟 中学生の今
+  </text>
+  <text x="400" y="128" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    競技プログラミング
+  </text>
+  <text x="400" y="141" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    との出会い
+  </text>
+  
+  <!-- Chapter progression summary -->
+  <rect x="50" y="190" width="700" height="200" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="400" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#334155">
+    📚 全12章で築いた学習の軌跡
+  </text>
+  
+  <!-- Chapter progression flow -->
+  <text x="70" y="235" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第1章 🌟 競技プログラミングとの出会い</text>
+  <path d="M 340 232 L 360 232" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#smallarrow)"/>
+  <text x="370" y="235" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第2章 🚪 AtCoderでの最初の一歩</text>
+  
+  <text x="70" y="255" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第3章 🛠️ 開発環境の整備</text>
+  <path d="M 240 252 L 260 252" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#smallarrow)"/>
+  <text x="270" y="255" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第4章 📝 入出力処理の習得</text>
+  
+  <text x="70" y="275" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第5章 🧠 基本アルゴリズムの理解</text>
+  <path d="M 280 272 L 300 272" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#smallarrow)"/>
+  <text x="310" y="275" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第6章 📚 データ構造の活用</text>
+  
+  <text x="70" y="295" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第7章 🎯 ABC問題の攻略</text>
+  <path d="M 220 292 L 240 292" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#smallarrow)"/>
+  <text x="250" y="295" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第8章 🔍 体系的問題解決プロセス</text>
+  
+  <text x="70" y="315" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第9章 🔧 エラー対応力の確立</text>
+  <path d="M 250 312 L 270 312" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#smallarrow)"/>
+  <text x="280" y="315" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第10章 🏆 コンテスト参加の実践</text>
+  
+  <text x="70" y="335" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第11章 🤝 仲間との協働成長</text>
+  <path d="M 240 332 L 260 332" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#smallarrow)"/>
+  <text x="270" y="335" font-family="Arial, sans-serif" font-size="11" fill="#475569" font-weight="bold">第12章 🌅 無限の可能性への道筋</text>
+  
+  <text x="400" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🎉 君は今、素晴らしいスタートラインに立っている！
+  </text>
+  
+  <defs>
+    <marker id="smallarrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#64748b"/>
+    </marker>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <!-- Branch lines to three futures -->
+  <path d="M 355 155 L 200 450" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 400 165 L 400 450" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 445 155 L 600 450" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Education path -->
+  <rect x="50" y="470" width="250" height="180" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="175" y="495" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🎓 教育への道
+  </text>
+  <text x="60" y="520" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="60" dy="0">🏫 高校・大学受験：</tspan>
+    <tspan x="70" dy="16">• 情報系学部での有利なスタート</tspan>
+    <tspan x="70" dy="14">• 推薦入試での強み活用</tspan>
+    <tspan x="70" dy="14">• 数学・物理との相乗効果</tspan>
+    <tspan x="60" dy="20">🌍 留学・国際経験：</tspan>
+    <tspan x="70" dy="16">• 海外大学での研究機会</tspan>
+    <tspan x="70" dy="14">• 国際プログラミングコンテスト</tspan>
+    <tspan x="70" dy="14">• グローバル技術コミュニティ</tspan>
+    <tspan x="60" dy="20">📖 継続学習：</tspan>
+    <tspan x="70" dy="16">• 専門分野の深化</tspan>
+    <tspan x="70" dy="14">• 生涯学習習慣の確立</tspan>
+  </text>
+  
+  <!-- Career path -->
+  <rect x="325" y="470" width="250" height="180" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="450" y="495" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#065f46">
+    💼 キャリアへの道
+  </text>
+  <text x="335" y="520" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    <tspan x="335" dy="0">🏢 IT企業就職：</tspan>
+    <tspan x="345" dy="16">• ソフトウェアエンジニア</tspan>
+    <tspan x="345" dy="14">• データサイエンティスト</tspan>
+    <tspan x="345" dy="14">• セキュリティエンジニア</tspan>
+    <tspan x="335" dy="20">🚀 起業・創業：</tspan>
+    <tspan x="345" dy="16">• 技術系スタートアップCTO</tspan>
+    <tspan x="345" dy="14">• 独立技術コンサルタント</tspan>
+    <tspan x="345" dy="14">• プロダクト開発責任者</tspan>
+    <tspan x="335" dy="20">💡 技術顧問：</tspan>
+    <tspan x="345" dy="16">• 企業技術戦略アドバイザー</tspan>
+    <tspan x="345" dy="14">• イノベーション推進役</tspan>
+  </text>
+  
+  <!-- Research/Creation path -->
+  <rect x="600" y="470" width="150" height="180" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="675" y="495" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🔬 研究・創造への道
+  </text>
+  <text x="610" y="520" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+    <tspan x="610" dy="0">🧪 新技術開発：</tspan>
+    <tspan x="620" dy="16">• アルゴリズム研究</tspan>
+    <tspan x="620" dy="14">• AI・機械学習</tspan>
+    <tspan x="620" dy="14">• 量子コンピューティング</tspan>
+    <tspan x="610" dy="20">📋 学術研究：</tspan>
+    <tspan x="620" dy="16">• 大学・研究機関</tspan>
+    <tspan x="620" dy="14">• 論文発表・学会活動</tspan>
+    <tspan x="620" dy="14">• 特許出願・実用化</tspan>
+    <tspan x="610" dy="20">🎨 発明・創造：</tspan>
+    <tspan x="620" dy="16">• 新しい価値創出</tspan>
+    <tspan x="620" dy="14">• 社会課題解決</tspan>
+  </text>
+  
+  <!-- Convergence to social contribution -->
+  <path d="M 175 650 L 400 750" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 450 650 L 400 750" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 675 650 L 400 750" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <circle cx="400" cy="770" r="35" fill="#16a34a" stroke="#15803d" stroke-width="3"/>
+  <text x="400" y="765" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    🌍 社会への貢献
+  </text>
+  <text x="400" y="778" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    より良い未来の創造
+  </text>
+  
+  <!-- Final message -->
+  <rect x="50" y="820" width="700" height="110" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="400" y="845" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    💪 君が今日身につけた最も価値あるスキル
+  </text>
+  
+  <text x="80" y="870" font-family="Arial, sans-serif" font-size="14" fill="#6b21a8">
+    <tspan x="80" dy="0">✨ 問題に直面したときに諦めずに解決策を探し続ける力</tspan>
+    <tspan x="80" dy="18">✨ 複雑なことを整理して段階的に理解する力</tspan>
+    <tspan x="80" dy="18">✨ 新しいことを学び続ける習慣と楽しむ姿勢</tspan>
+  </text>
+  
+  <text x="400" y="915" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    これらは、プログラミングだけでなく、将来どんな道に進んでも必要になる、
+  </text>
+  <text x="400" y="932" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    人生において最も価値のあるスキルです。
+  </text>
+</svg>

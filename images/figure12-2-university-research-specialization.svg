@@ -1,0 +1,164 @@
+<svg viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-2：大学進学時の研究・専門分野選択</title>
+  <desc>大学進学時に選択可能な研究分野、専門性の深化、将来のキャリアとの関連性を示す分岐図</desc>
+  
+  <!-- Background -->
+  <rect width="800" height="750" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    大学進学時の研究・専門分野選択
+  </text>
+  
+  <!-- Central starting point -->
+  <circle cx="400" cy="100" r="35" fill="#3b82f6" stroke="#1e40af" stroke-width="3"/>
+  <text x="400" y="105" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    競技プログラミング
+  </text>
+  <text x="400" y="117" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    基礎力
+  </text>
+  
+  <!-- Branch lines -->
+  <path d="M 365 125 L 150 180" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 400 135 L 400 200" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 435 125 L 650 180" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <!-- Computer Science Branch -->
+  <rect x="50" y="200" width="200" height="180" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="150" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    💻 コンピュータサイエンス
+  </text>
+  <text x="60" y="240" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="60" dy="0">🔬 主な研究分野：</tspan>
+    <tspan x="70" dy="16">• アルゴリズム理論</tspan>
+    <tspan x="70" dy="14">• データ構造・計算複雑性</tspan>
+    <tspan x="70" dy="14">• プログラミング言語理論</tspan>
+    <tspan x="70" dy="14">• 分散システム</tspan>
+    <tspan x="70" dy="14">• データベース理論</tspan>
+    <tspan x="60" dy="20">🎯 進路例：</tspan>
+    <tspan x="70" dy="16">• 研究者・大学教員</tspan>
+    <tspan x="70" dy="14">• IT企業研究職</tspan>
+    <tspan x="70" dy="14">• システムアーキテクト</tspan>
+  </text>
+  
+  <!-- AI/Machine Learning Branch -->
+  <rect x="300" y="220" width="200" height="180" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#065f46">
+    🤖 AI・機械学習
+  </text>
+  <text x="310" y="260" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    <tspan x="310" dy="0">🔬 主な研究分野：</tspan>
+    <tspan x="320" dy="16">• 深層学習・ニューラルネット</tspan>
+    <tspan x="320" dy="14">• 自然言語処理</tspan>
+    <tspan x="320" dy="14">• コンピュータビジョン</tspan>
+    <tspan x="320" dy="14">• 強化学習</tspan>
+    <tspan x="320" dy="14">• データマイニング</tspan>
+    <tspan x="310" dy="20">🎯 進路例：</tspan>
+    <tspan x="320" dy="16">• AIエンジニア</tspan>
+    <tspan x="320" dy="14">• データサイエンティスト</tspan>
+    <tspan x="320" dy="14">• 研究開発職</tspan>
+  </text>
+  
+  <!-- Information Systems Branch -->
+  <rect x="550" y="200" width="200" height="180" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="650" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🏢 情報システム・経営
+  </text>
+  <text x="560" y="240" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+    <tspan x="560" dy="0">🔬 主な研究分野：</tspan>
+    <tspan x="570" dy="16">• 経営情報システム</tspan>
+    <tspan x="570" dy="14">• ビジネス・インテリジェンス</tspan>
+    <tspan x="570" dy="14">• ITマネジメント</tspan>
+    <tspan x="570" dy="14">• システム設計・開発</tspan>
+    <tspan x="570" dy="14">• UI/UXデザイン</tspan>
+    <tspan x="560" dy="20">🎯 進路例：</tspan>
+    <tspan x="570" dy="16">• ITコンサルタント</tspan>
+    <tspan x="570" dy="14">• プロダクトマネージャー</tspan>
+    <tspan x="570" dy="14">• 起業・CTO</tspan>
+  </text>
+  
+  <!-- Secondary branches -->
+  <path d="M 150 380 L 150 450" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 400 400 L 400 450" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 650 380 L 650 450" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <!-- Interdisciplinary fields -->
+  <rect x="50" y="470" width="180" height="100" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="140" y="490" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🔬 理論・数学系
+  </text>
+  <text x="60" y="510" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="60" dy="0">• 計算数学・数理最適化</tspan>
+    <tspan x="60" dy="12">• 暗号理論・セキュリティ</tspan>
+    <tspan x="60" dy="12">• 量子コンピューティング</tspan>
+    <tspan x="60" dy="12">• 形式手法・検証</tspan>
+  </text>
+  
+  <rect x="250" y="470" width="180" height="100" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="340" y="490" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🌐 Web・モバイル
+  </text>
+  <text x="260" y="510" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="260" dy="0">• Web技術・フロントエンド</tspan>
+    <tspan x="260" dy="12">• モバイルアプリ開発</tspan>
+    <tspan x="260" dy="12">• クラウド・インフラ</tspan>
+    <tspan x="260" dy="12">• サービス設計・運用</tspan>
+  </text>
+  
+  <rect x="450" y="470" width="180" height="100" rx="8" fill="#fff1f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="540" y="490" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🎮 エンタメ・ゲーム
+  </text>
+  <text x="460" y="510" font-family="Arial, sans-serif" font-size="11" fill="#dc2626">
+    <tspan x="460" dy="0">• ゲーム開発・エンジン</tspan>
+    <tspan x="460" dy="12">• CG・VR/AR技術</tspan>
+    <tspan x="460" dy="12">• メディア処理・配信</tspan>
+    <tspan x="460" dy="12">• インタラクション設計</tspan>
+  </text>
+  
+  <rect x="650" y="470" width="130" height="100" rx="8" fill="#fefce8" stroke="#eab308" stroke-width="2"/>
+  <text x="715" y="490" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#a16207">
+    ⚡ IoT・組込み
+  </text>
+  <text x="660" y="510" font-family="Arial, sans-serif" font-size="11" fill="#a16207">
+    <tspan x="660" dy="0">• 組込みシステム</tspan>
+    <tspan x="660" dy="12">• IoT・センシング</tspan>
+    <tspan x="660" dy="12">• ロボティクス</tspan>
+    <tspan x="660" dy="12">• リアルタイム制御</tspan>
+  </text>
+  
+  <!-- Selection criteria -->
+  <rect x="50" y="590" width="700" height="140" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="400" y="610" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#334155">
+    🎯 専門分野選択の重要な観点
+  </text>
+  
+  <!-- Criteria grid -->
+  <rect x="70" y="630" width="200" height="90" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="170" y="650" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#475569">🧠 興味・適性</text>
+  <text x="80" y="670" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="80" dy="0">• 理論vs実践の志向</tspan>
+    <tspan x="80" dy="12">• 個人研究vs チーム開発</tspan>
+    <tspan x="80" dy="12">• 短期開発vs 長期研究</tspan>
+    <tspan x="80" dy="12">• 技術志向vs ビジネス志向</tspan>
+  </text>
+  
+  <rect x="290" y="630" width="220" height="90" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="400" y="650" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#475569">📈 将来性・市場性</text>
+  <text x="300" y="670" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="300" dy="0">• 技術トレンドとの整合性</tspan>
+    <tspan x="300" dy="12">• 就職・転職市場での需要</tspan>
+    <tspan x="300" dy="12">• 研究資金・投資の動向</tspan>
+    <tspan x="300" dy="12">• 社会課題との関連性</tspan>
+  </text>
+  
+  <rect x="530" y="630" width="200" height="90" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="630" y="650" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#475569">🏫 学習環境</text>
+  <text x="540" y="670" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="540" dy="0">• 大学・研究室の研究実績</tspan>
+    <tspan x="540" dy="12">• 指導教員との相性</tspan>
+    <tspan x="540" dy="12">• 設備・リソースの充実度</tspan>
+    <tspan x="540" dy="12">• 企業・海外との連携</tspan>
+  </text>
+</svg>
