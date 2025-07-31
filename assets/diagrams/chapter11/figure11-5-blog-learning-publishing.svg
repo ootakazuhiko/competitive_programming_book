@@ -1,0 +1,266 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図11-5：技術ブログ・Qiitaでの学習と発信</title>
+  <desc>情報収集と発信による学習効果の向上と自己成長の促進</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    技術ブログ・Qiitaでの学習と発信
+  </text>
+  
+  <!-- 効果的な情報収集方法 -->
+  <rect x="50" y="60" width="340" height="250" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="3"/>
+  <text x="220" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e40af">
+    🔍 効果的な情報収集方法
+  </text>
+  <text x="220" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3730a3">
+    質の高い学習情報の見つけ方
+  </text>
+  
+  <g transform="translate(70, 110)">
+    <!-- 読むべき記事の種類 -->
+    <rect x="0" y="0" width="130" height="170" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="65" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      📖 読むべき記事の種類
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 問題解説記事</text>
+    <text x="10" y="37" font-family="Arial, sans-serif" font-size="7" fill="#374151">
+      解法の理解・学習</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • アルゴリズム解説</text>
+    <text x="10" y="57" font-family="Arial, sans-serif" font-size="7" fill="#374151">
+      理論の体系的理解</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 学習方法の体験談</text>
+    <text x="10" y="77" font-family="Arial, sans-serif" font-size="7" fill="#374151">
+      モチベーション向上</text>
+    <text x="5" y="87" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • エラー対処法</text>
+    <text x="10" y="97" font-family="Arial, sans-serif" font-size="7" fill="#374151">
+      実践的なTips</text>
+    <text x="5" y="107" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 中学生の成功事例</text>
+    <text x="10" y="117" font-family="Arial, sans-serif" font-size="7" fill="#374151">
+      同世代の体験談</text>
+    <text x="5" y="127" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 多角的な学習情報の収集</text>
+    <text x="5" y="137" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 実践的知識の習得</text>
+    
+    <!-- 効率的な検索方法 -->
+    <rect x="140" y="0" width="140" height="170" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="210" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      🔍 効率的な検索方法
+    </text>
+    <text x="145" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 「AtCoder ABC」でタグ検索</text>
+    <text x="145" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 「競技プログラミング 初心者」</text>
+    <text x="145" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 解けなかった問題番号で検索</text>
+    <text x="145" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 「中学生 プログラミング」</text>
+    <text x="150" y="67" font-family="Arial, sans-serif" font-size="7" fill="#374151">
+      体験談検索</text>
+    <text x="145" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 更新日が新しい記事を優先</text>
+    <text x="145" y="87" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 複数の記事で内容を照合</text>
+    <text x="145" y="97" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • コメント欄で他の人の反応確認</text>
+    <text x="145" y="107" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 実際にコードを試して動作確認</text>
+    <text x="145" y="117" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 信頼性の高い情報の選別</text>
+    <text x="145" y="127" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 効率的な学習リソース発見</text>
+  </g>
+  
+  <!-- 自分でも発信してみよう -->
+  <rect x="410" y="60" width="340" height="250" rx="8" fill="#d1fae5" stroke="#22c55e" stroke-width="3"/>
+  <text x="580" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#047857">
+    ✍️ 自分でも発信してみよう
+  </text>
+  <text x="580" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    アウトプットによる学習効果の向上
+  </text>
+  
+  <g transform="translate(430, 110)">
+    <!-- 初心者でも書けるネタ -->
+    <rect x="0" y="0" width="130" height="170" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="65" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      📝 初心者向けブログネタ
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 解けた問題の解法メモ</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 学習の進捗記録</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • つまづいた点と解決方法</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 使っているツール・環境紹介</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 同じ初心者への励まし</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 中学生の視点での学習体験</text>
+    <text x="5" y="87" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • コンテスト参加感想</text>
+    <text x="5" y="97" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 学習計画と実際の進捗</text>
+    <text x="5" y="107" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 完璧でなくても価値ある発信</text>
+    <text x="5" y="117" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 同レベル学習者への貢献</text>
+    
+    <!-- 発信のメリット -->
+    <rect x="140" y="0" width="140" height="170" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="210" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      📊 発信のメリット
+    </text>
+    <text x="145" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 自分の理解の整理・定着</text>
+    <text x="145" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 他の学習者からのフィードバック</text>
+    <text x="145" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ アウトプット能力の向上</text>
+    <text x="145" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 将来のポートフォリオ活用</text>
+    <text x="145" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 同レベルの仲間との出会い</text>
+    <text x="145" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 文章力・説明力の向上</text>
+    <text x="145" y="87" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 学習モチベーションの維持</text>
+    <text x="145" y="97" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 技術コミュニティでの認知</text>
+    <text x="145" y="107" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 学習効果の大幅な向上</text>
+    <text x="145" y="117" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 多方面での成長機会</text>
+  </g>
+  
+  <!-- 発信時の注意点・継続のコツ -->
+  <rect x="50" y="330" width="340" height="180" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="220" y="352" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">
+    ⚠️ 発信時の注意点
+  </text>
+  <text x="220" y="368" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#b91c1c">
+    安全で建設的な発信のために
+  </text>
+  
+  <g transform="translate(70, 380)">
+    <!-- 注意点 -->
+    <rect x="0" y="0" width="130" height="100" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+    <text x="65" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">
+      🔒 安全な発信のために
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 間違いを恐れず学習過程を共有</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 批判的より建設的な内容を</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 個人的な体験談を中心に</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 写真・スクショの個人情報注意</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 学校名・実名は避ける</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="7" fill="#dc2626">
+      保護者の了解を得て発信</text>
+    
+    <!-- 継続のコツ -->
+    <rect x="140" y="0" width="140" height="100" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+    <text x="210" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">
+      💡 継続のコツ
+    </text>
+    <text x="145" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 完璧な記事を目指さない</text>
+    <text x="145" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 短くても定期的に投稿</text>
+    <text x="145" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 読者の反応に感謝の気持ち</text>
+    <text x="145" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 自分の成長記録として活用</text>
+    <text x="145" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 楽しむことを最優先に</text>
+    <text x="145" y="77" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      無理のない範囲で継続</text>
+  </g>
+  
+  <!-- 実践的な発信プロセス -->
+  <rect x="410" y="330" width="340" height="180" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+  <text x="580" y="352" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">
+    🚀 実践的な発信プロセス
+  </text>
+  <text x="580" y="368" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    段階的なアプローチで発信を開始
+  </text>
+  
+  <g transform="translate(430, 380)">
+    <!-- Step 1 -->
+    <rect x="0" y="0" width="90" height="100" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="45" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed">
+      Step 1: 準備
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 学習記録の習慣化</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 簡単なメモから開始</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 発信テーマを決める</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • アカウント作成</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      基礎固め期間</text>
+    
+    <!-- Step 2 -->
+    <rect x="100" y="0" width="90" height="100" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="145" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed">
+      Step 2: 開始
+    </text>
+    <text x="105" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 短い記事から投稿</text>
+    <text x="105" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 解いた問題の感想</text>
+    <text x="105" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 学習進捗の共有</text>
+    <text x="105" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 週1回ペース目標</text>
+    <text x="105" y="67" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      発信習慣の形成</text>
+    
+    <!-- Step 3 -->
+    <rect x="200" y="0" width="90" height="100" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="245" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed">
+      Step 3: 発展
+    </text>
+    <text x="205" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • より詳細な解説記事</text>
+    <text x="205" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 他の人との交流</text>
+    <text x="205" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • コメントへの返信</text>
+    <text x="205" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 定期的な投稿継続</text>
+    <text x="205" y="67" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      コミュニティ参加</text>
+  </g>
+  
+  <!-- 総合メッセージ -->
+  <rect x="50" y="530" width="700" height="100" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">
+    🌟 インプットとアウトプットの好循環を作ろう
+  </text>
+  <text x="400" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0284c7">
+    学習 → 記録 → 発信 → フィードバック → さらなる学習
+  </text>
+  <text x="400" y="582" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    技術ブログでの発信は、学習効果を大幅に向上させる強力なツール
+  </text>
+  <text x="400" y="596" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    完璧を求めず、小さな一歩から始めてみよう！
+  </text>
+  
+</svg>

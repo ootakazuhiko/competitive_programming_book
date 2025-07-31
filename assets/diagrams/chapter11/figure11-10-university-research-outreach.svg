@@ -1,0 +1,195 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図11-10：大学・研究機関との接点活用</title>
+  <desc>アウトリーチ活動を通じた高等教育機関との接点と将来への展望</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    大学・研究機関との接点活用
+  </text>
+  
+  <!-- 大学主催の中高生向けイベント -->
+  <rect x="50" y="60" width="700" height="230" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="3"/>
+  <text x="400" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e40af">
+    🎓 大学主催の中高生向けイベント
+  </text>
+  <text x="400" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3730a3">
+    高等教育への橋渡しとなる貴重な学習機会
+  </text>
+  
+  <g transform="translate(70, 110)">
+    <!-- オープンキャンパス -->
+    <rect x="0" y="0" width="200" height="150" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      🏫 情報系学部オープンキャンパス
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 最新の研究内容に触れる機会</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 大学生・大学院生との交流</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 研究室見学と実際の研究体験</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 進路選択の具体的イメージ形成</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 入試制度・カリキュラム説明</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • キャンパスライフの体験</text>
+    <text x="5" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 将来の進路選択の指針</text>
+    <text x="5" y="97" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 高いレベルの学習環境体験</text>
+    
+    <!-- プログラミング体験講座 -->
+    <rect x="220" y="0" width="200" height="150" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="320" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      💻 プログラミング体験講座
+    </text>
+    <text x="225" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 大学レベル内容の中高生向け調整</text>
+    <text x="225" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 最新技術（AI、VR、ロボット）体験</text>
+    <text x="225" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 現役研究者・エンジニア直接指導</text>
+    <text x="225" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 質の高い学習資料の提供</text>
+    <text x="225" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 大学での学習内容の予告編</text>
+    <text x="225" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 専門設備・環境での学習体験</text>
+    <text x="225" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 高度な技術への興味喚起</text>
+    <text x="225" y="97" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 専門的な学習への動機形成</text>
+    
+    <!-- 研究室見学・研究者交流 -->
+    <rect x="440" y="0" width="200" height="150" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="540" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      🔬 研究室見学・研究者交流
+    </text>
+    <text x="445" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 最先端の研究環境を見学</text>
+    <text x="445" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 研究者の学習経歴と研究への道</text>
+    <text x="445" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 研究の社会的意義と将来性</text>
+    <text x="445" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 大学院進学や研究キャリア</text>
+    <text x="445" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 実際の研究プロセスの体験</text>
+    <text x="445" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 研究者としての価値観に触れる</text>
+    <text x="445" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 研究者への憧れ・目標形成</text>
+    <text x="445" y="97" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → アカデミックキャリアの理解</text>
+  </g>
+  
+  <!-- 研究機関の一般公開・科学イベント -->
+  <rect x="50" y="310" width="700" height="200" rx="8" fill="#d1fae5" stroke="#22c55e" stroke-width="3"/>
+  <text x="400" y="332" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#047857">
+    🔬 研究機関の一般公開・科学イベント
+  </text>
+  <text x="400" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    最先端科学技術の現場を体験する機会
+  </text>
+  
+  <g transform="translate(70, 360)">
+    <!-- 主要な研究機関とイベント -->
+    <rect x="0" y="0" width="200" height="120" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      🏢 主要な研究機関とイベント
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🧬 理化学研究所：一般公開、科学講演</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🏭 産業技術総合研究所：サイエンスカフェ</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📡 NTT研究所：技術展示・体験イベント</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      💻 情報処理学会：ジュニア会員向け</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🚀 JAXA：宇宙技術の展示・体験</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 日本最高レベルの研究現場</text>
+    <text x="5" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 世界レベルの技術への接触</text>
+    
+    <!-- 参加の意義 -->
+    <rect x="220" y="0" width="200" height="120" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="320" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      🎯 参加の意義
+    </text>
+    <text x="225" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 将来の進路選択の参考</text>
+    <text x="225" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 最先端技術への理解深化</text>
+    <text x="225" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ プロの研究者・エンジニア出会い</text>
+    <text x="225" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 学習モチベーションの向上</text>
+    <text x="225" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 科学技術の社会的役割理解</text>
+    <text x="225" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 広い視野での価値観形成</text>
+    <text x="225" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 社会貢献への意識向上</text>
+    
+    <!-- 企業の技術系イベント -->
+    <rect x="440" y="0" width="200" height="120" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="540" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      💼 企業の技術系イベント
+    </text>
+    <text x="445" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🔍 Google：中高生プログラミング講座</text>
+    <text x="445" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      💻 Microsoft：学生向け技術セミナー</text>
+    <text x="445" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎯 サイバーエージェント：中高生インターン</text>
+    <text x="445" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📱 メルカリ：学生向けエンジニア体験</text>
+    <text x="445" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🚀 各種スタートアップ：技術体験会</text>
+    <text x="445" y="77" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 実業界での技術活用理解</text>
+    <text x="445" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → キャリア選択肢の拡大</text>
+  </g>
+  
+  <!-- 参加申し込みと活用のポイント -->
+  <rect x="50" y="530" width="340" height="100" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="220" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+    📅 参加申し込みのタイミング
+  </text>
+  <text x="220" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    人気イベントを確実に押さえるために
+  </text>
+  
+  <g transform="translate(70, 580)">
+    <rect x="0" y="0" width="250" height="30" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="5" y="12" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🌸 多くは春季・夏季休暇期間に開催</text>
+    <text x="5" y="22" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ⏰ 申し込み開始は1-2ヶ月前・人気イベントは即日満席も</text>
+  </g>
+  
+  <!-- 参加時の心構え -->
+  <rect x="410" y="530" width="340" height="100" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+  <text x="580" y="552" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">
+    📝 参加時の心構え
+  </text>
+  <text x="580" y="568" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    学習効果を最大化するために
+  </text>
+  
+  <g transform="translate(430, 580)">
+    <rect x="0" y="0" width="250" height="30" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="5" y="12" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🤝 積極的な質問と交流・将来への具体的イメージ形成</text>
+    <text x="5" y="22" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      📚 学んだことの記録と振り返り・継続的関心と学習活用</text>
+  </g>
+  
+</svg>
