@@ -1,0 +1,191 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-2：競技プログラミング言語比較表</title>
+  <desc>主要プログラミング言語の学習難易度、コード行数、AtCoder対応、初心者推奨度を比較したマトリックス表</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .table-header { font: 600 14px Inter, sans-serif; fill: #FFFFFF; }
+      .language-name { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .star-rating { font: 400 16px Inter, sans-serif; }
+      .category-desc { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .table-bg { fill: #F8FAFC; stroke: #E2E8F0; stroke-width: 1; }
+      .header-bg { fill: #3B82F6; stroke: #2563EB; stroke-width: 2; }
+      .python-row { fill: #DCFCE7; stroke: #22C55E; stroke-width: 2; }
+      .cpp-row { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 1; }
+      .java-row { fill: #FECACA; stroke: #EF4444; stroke-width: 1; }
+      .js-row { fill: #E0E7FF; stroke: #6366F1; stroke-width: 1; }
+      
+      .cell-border { fill: none; stroke: #CBD5E0; stroke-width: 1; }
+      .highlight-border { stroke: #22C55E; stroke-width: 3; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-2：競技プログラミング言語比較表</text>
+  
+  <!-- Table Container -->
+  <g id="comparison-table">
+    <!-- Table Background -->
+    <rect x="50" y="70" width="700" height="400" rx="12" class="table-bg"/>
+    
+    <!-- Header Row -->
+    <rect x="60" y="80" width="680" height="50" rx="8" class="header-bg"/>
+    
+    <!-- Header Text -->
+    <text x="110" y="108" text-anchor="middle" class="table-header">言語</text>
+    <text x="250" y="108" text-anchor="middle" class="table-header">学習難易度</text>
+    <text x="390" y="108" text-anchor="middle" class="table-header">コード行数</text>
+    <text x="530" y="108" text-anchor="middle" class="table-header">AtCoder対応</text>
+    <text x="670" y="108" text-anchor="middle" class="table-header">初心者推奨度</text>
+    
+    <!-- Column Separators -->
+    <line x1="170" y1="80" x2="170" y2="450" class="cell-border"/>
+    <line x1="320" y1="80" x2="320" y2="450" class="cell-border"/>
+    <line x1="460" y1="80" x2="460" y2="450" class="cell-border"/>
+    <line x1="600" y1="80" x2="600" y2="450" class="cell-border"/>
+    
+    <!-- Python Row (Highlighted) -->
+    <rect x="60" y="140" width="680" height="60" class="python-row highlight-border"/>
+    <text x="85" y="165" class="emoji">🐍</text>
+    <text x="110" y="175" text-anchor="middle" class="language-name" style="fill: #15803D; font-weight: 700;">Python</text>
+    
+    <!-- Python Ratings -->
+    <g transform="translate(200, 155)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★</text>
+      <text x="30" y="0" class="star-rating" fill="#D1D5DB">☆☆☆</text>
+      <text x="0" y="20" class="category-desc">簡単</text>
+    </g>
+    
+    <g transform="translate(340, 155)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★</text>
+      <text x="30" y="0" class="star-rating" fill="#D1D5DB">☆☆☆</text>
+      <text x="0" y="20" class="category-desc">短い</text>
+    </g>
+    
+    <g transform="translate(480, 155)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★★★★</text>
+      <text x="0" y="20" class="category-desc">完全対応</text>
+    </g>
+    
+    <g transform="translate(620, 155)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★★★★</text>
+      <text x="0" y="20" class="category-desc">最適</text>
+    </g>
+    
+    <!-- Row Separator -->
+    <line x1="60" y1="200" x2="740" y2="200" class="cell-border"/>
+    
+    <!-- C++ Row -->
+    <rect x="60" y="210" width="680" height="60" class="cpp-row"/>
+    <text x="85" y="235" class="emoji">⚡</text>
+    <text x="110" y="245" text-anchor="middle" class="language-name">C++</text>
+    
+    <g transform="translate(200, 225)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★★★</text>
+      <text x="50" y="0" class="star-rating" fill="#D1D5DB">☆</text>
+      <text x="0" y="20" class="category-desc">難しい</text>
+    </g>
+    
+    <g transform="translate(340, 225)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★★★</text>
+      <text x="50" y="0" class="star-rating" fill="#D1D5DB">☆</text>
+      <text x="0" y="20" class="category-desc">長い</text>
+    </g>
+    
+    <g transform="translate(480, 225)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★★★★</text>
+      <text x="0" y="20" class="category-desc">完全対応</text>
+    </g>
+    
+    <g transform="translate(620, 225)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★</text>
+      <text x="30" y="0" class="star-rating" fill="#D1D5DB">☆☆☆</text>
+      <text x="0" y="20" class="category-desc">上級者向け</text>
+    </g>
+    
+    <!-- Row Separator -->
+    <line x1="60" y1="270" x2="740" y2="270" class="cell-border"/>
+    
+    <!-- Java Row -->
+    <rect x="60" y="280" width="680" height="60" class="java-row"/>
+    <text x="85" y="305" class="emoji">☕</text>
+    <text x="110" y="315" text-anchor="middle" class="language-name">Java</text>
+    
+    <g transform="translate(200, 295)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★★</text>
+      <text x="40" y="0" class="star-rating" fill="#D1D5DB">☆☆</text>
+      <text x="0" y="20" class="category-desc">普通</text>
+    </g>
+    
+    <g transform="translate(340, 295)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★★★</text>
+      <text x="50" y="0" class="star-rating" fill="#D1D5DB">☆</text>
+      <text x="0" y="20" class="category-desc">長い</text>
+    </g>
+    
+    <g transform="translate(480, 295)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★★★</text>
+      <text x="50" y="0" class="star-rating" fill="#D1D5DB">☆</text>
+      <text x="0" y="20" class="category-desc">良好</text>
+    </g>
+    
+    <g transform="translate(620, 295)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★</text>
+      <text x="30" y="0" class="star-rating" fill="#D1D5DB">☆☆☆</text>
+      <text x="0" y="20" class="category-desc">中級者向け</text>
+    </g>
+    
+    <!-- Row Separator -->
+    <line x1="60" y1="340" x2="740" y2="340" class="cell-border"/>
+    
+    <!-- JavaScript Row -->
+    <rect x="60" y="350" width="680" height="60" class="js-row"/>
+    <text x="85" y="375" class="emoji">🌐</text>
+    <text x="110" y="385" text-anchor="middle" class="language-name">JavaScript</text>
+    
+    <g transform="translate(200, 365)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★</text>
+      <text x="30" y="0" class="star-rating" fill="#D1D5DB">☆☆☆</text>
+      <text x="0" y="20" class="category-desc">簡単</text>
+    </g>
+    
+    <g transform="translate(340, 365)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★★</text>
+      <text x="40" y="0" class="star-rating" fill="#D1D5DB">☆☆</text>
+      <text x="0" y="20" class="category-desc">普通</text>
+    </g>
+    
+    <g transform="translate(480, 365)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★★</text>
+      <text x="40" y="0" class="star-rating" fill="#D1D5DB">☆☆</text>
+      <text x="0" y="20" class="category-desc">限定的</text>
+    </g>
+    
+    <g transform="translate(620, 365)">
+      <text x="0" y="0" class="star-rating" fill="#F59E0B">★★★</text>
+      <text x="40" y="0" class="star-rating" fill="#D1D5DB">☆☆</text>
+      <text x="0" y="20" class="category-desc">Web経験者</text>
+    </g>
+  </g>
+  
+  <!-- Recommendation Section -->
+  <g id="recommendation">
+    <rect x="50" y="490" width="700" height="80" rx="12" fill="#ECFDF5" stroke="#22C55E" stroke-width="2"/>
+    <text x="70" y="515" class="emoji">💡</text>
+    <text x="100" y="515" style="font: 600 16px Inter, sans-serif; fill: #15803D;">中学生への推奨</text>
+    
+    <text x="70" y="535" style="font: 500 14px Inter, sans-serif; fill: #166534;">
+      🐍 Pythonが初心者に最適な理由：読みやすく、短時間で書け、AtCoderで完全対応
+    </text>
+    <text x="70" y="555" style="font: 400 12px Inter, sans-serif; fill: #166534;">
+      他の言語は将来的に学習する価値がありますが、競技プログラミング入門はPythonから始めましょう
+    </text>
+  </g>
+  
+</svg>
