@@ -17,9 +17,7 @@ layout: default
 
 競技プログラミングとは、制限時間内に出題される問題を、プログラムを書いて解く競技だ。パズルを解く楽しさと、プログラミングの技術が組み合わさった、まったく新しい体験ができる。
 
-```
 ![図1-2：競技プログラミングの基本構造]({{ site.baseurl }}/assets/diagrams/chapter1/figure1-2-competitive-programming-structure.svg)
-```
 
 **実際の問題解決プロセス**
 
@@ -63,7 +61,6 @@ layout: default
 
 **パズルゲームとの共通点**
 
-```
 ![図1-4：競技プログラミングの楽しさサイクル]({{ site.baseurl }}/assets/diagrams/chapter1/figure1-4-enjoyment-cycle.svg)
 
 😕 問題を見る
@@ -106,7 +103,6 @@ layout: default
 
 「なんで競技プログラミングなんてやる必要があるの？」と思うかもしれない。でも、競技プログラミングをやることで得られるものは、君の将来にとって本当に価値のあるものばかりなんだ。
 
-```
 ![図1-6：競技プログラミングで身につく4つの力]({{ site.baseurl }}/assets/diagrams/chapter1/figure1-6-four-key-skills.svg)
 
     🧠 論理的思考力           🔧 問題解決能力
@@ -482,7 +478,6 @@ layout: default
 
 競技プログラミングには様々な種類がある。それぞれに特徴があるので、自分に合ったものを選んで段階的にチャレンジしていこう。
 
-```
 ![図1-15：主要な競技プログラミングプラットフォーム比較]({{ site.baseurl }}/assets/diagrams/chapter1/figure1-15-platform-comparison.svg)
 
 🇯🇵 AtCoder (日本)                🌍 Codeforces (ロシア)
@@ -648,7 +643,6 @@ layout: default
 
 ### 学習段階に応じたサイト選択戦略
 
-```
 ![図1-18：中学生のための競技プログラミング学習ロードマップ]({{ site.baseurl }}/assets/diagrams/chapter1/figure1-18-learning-roadmap.svg)
 
 🎯 Phase 1: 基礎固めフェーズ (6ヶ月〜1年)
