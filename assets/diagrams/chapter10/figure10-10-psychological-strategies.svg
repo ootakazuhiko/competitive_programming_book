@@ -1,0 +1,251 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図10-10：競技プログラミング継続のための心理戦略</title>
+  <desc>長期的な学習継続を支える健全な心理的アプローチとマインドセット管理</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    競技プログラミング継続のための心理戦略
+  </text>
+  
+  <!-- 健全なマインドセット (左側) -->
+  <rect x="50" y="70" width="340" height="520" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="3"/>
+  <text x="220" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#16a34a">
+    😊 健全で持続可能なマインドセット
+  </text>
+  
+  <!-- 成長志向マインド -->
+  <g transform="translate(70, 110)">
+    <rect x="0" y="0" width="300" height="100" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="150" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      🌱 成長志向マインド
+    </text>
+    <text x="10" y="32" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 過去の自分と比較して成長を実感する
+    </text>
+    <text x="10" y="44" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 失敗を学習機会として積極的に捉える
+    </text>
+    <text x="10" y="56" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 小さな進歩も価値ある成果として認める
+    </text>
+    <text x="10" y="68" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 「わからない」状態を成長の出発点と考える
+    </text>
+    <text x="10" y="80" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 継続そのものに意味があると理解する
+    </text>
+    <text x="10" y="92" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">
+      → 長期的な成長と学習の楽しさを実現
+    </text>
+  </g>
+  
+  <!-- プロセス重視 -->
+  <g transform="translate(70, 220)">
+    <rect x="0" y="0" width="300" height="100" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="150" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      🎯 プロセス重視アプローチ
+    </text>
+    <text x="10" y="32" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 結果よりも取り組み方を評価する
+    </text>
+    <text x="10" y="44" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 「今日何を学んだか」を毎日振り返る
+    </text>
+    <text x="10" y="56" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 努力の積み重ね自体を成果として認識
+    </text>
+    <text x="10" y="68" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 短期的な結果に一喜一憂しない
+    </text>
+    <text x="10" y="80" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 学習習慣の確立を最優先目標にする
+    </text>
+    <text x="10" y="92" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">
+      → 安定した学習リズムと内発的動機の維持
+    </text>
+  </g>
+  
+  <!-- 適切な目標設定 -->
+  <g transform="translate(70, 330)">
+    <rect x="0" y="0" width="300" height="100" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="150" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      📊 適切な目標設定
+    </text>
+    <text x="10" y="32" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 現在のレベルから少し上の目標を設定
+    </text>
+    <text x="10" y="44" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 短期・中期・長期の目標をバランス良く
+    </text>
+    <text x="10" y="56" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 達成可能性と挑戦性の両立を意識
+    </text>
+    <text x="10" y="68" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 目標達成時は素直に喜び、次を設定
+    </text>
+    <text x="10" y="80" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 未達成でも学びがあれば価値を認める
+    </text>
+    <text x="10" y="92" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">
+      → 継続可能な挑戦レベルの維持
+    </text>
+  </g>
+  
+  <!-- コミュニティとの健全な関係 -->
+  <g transform="translate(70, 440)">
+    <rect x="0" y="0" width="300" height="130" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="150" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      🤝 コミュニティとの健全な関係
+    </text>
+    <text x="10" y="32" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 他者の成功を素直に称賛し学ぶ姿勢
+    </text>
+    <text x="10" y="44" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 質問や相談を積極的に行う
+    </text>
+    <text x="10" y="56" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 自分なりの学習スタイルを尊重する
+    </text>
+    <text x="10" y="68" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 他者と自分の進度を比較しすぎない
+    </text>
+    <text x="10" y="80" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 初心者への支援やアドバイスを提供
+    </text>
+    <text x="10" y="92" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 学習仲間との情報共有を楽しむ
+    </text>
+    <text x="10" y="104" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ コンテストを「交流の場」として活用
+    </text>
+    <text x="10" y="116" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">
+      → 支え合いながら共に成長する環境構築
+    </text>
+  </g>
+  
+  <!-- 危険なマインドセット (右側) -->
+  <rect x="410" y="70" width="340" height="520" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="3"/>
+  <text x="580" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#dc2626">
+    ⚠️ 継続を阻害する危険なマインドセット
+  </text>
+  
+  <!-- 完璧主義 -->
+  <g transform="translate(430, 110)">
+    <rect x="0" y="0" width="300" height="100" rx="6" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="150" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+      😰 完璧主義の罠
+    </text>
+    <text x="10" y="32" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 全問正解しないと参加する意味がない
+    </text>
+    <text x="10" y="44" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ ミスや間違いを許せない
+    </text>
+    <text x="10" y="56" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 「わからない」状態を忌避する
+    </text>
+    <text x="10" y="68" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 小さな進歩を軽視してしまう
+    </text>
+    <text x="10" y="80" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 理想と現実のギャップに苦しむ
+    </text>
+    <text x="10" y="92" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">
+      → 学習停滞と自己嫌悪の悪循環
+    </text>
+  </g>
+  
+  <!-- 比較思考 -->
+  <g transform="translate(430, 220)">
+    <rect x="0" y="0" width="300" height="100" rx="6" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="150" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+      📊 過度な比較思考
+    </text>
+    <text x="10" y="32" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 常に他者のレーティングを気にする
+    </text>
+    <text x="10" y="44" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ SNSでの他者の成果に落ち込む
+    </text>
+    <text x="10" y="56" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 自分の価値を順位でのみ判断する
+    </text>
+    <text x="10" y="68" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 「皆はもっと速く成長している」と焦る
+    </text>
+    <text x="10" y="80" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 自分のペースを見失ってしまう
+    </text>
+    <text x="10" y="92" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">
+      → 劣等感と学習意欲の低下
+    </text>
+  </g>
+  
+  <!-- 短期思考 -->
+  <g transform="translate(430, 330)">
+    <rect x="0" y="0" width="300" height="100" rx="6" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="150" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+      ⏰ 短期的結果重視
+    </text>
+    <text x="10" y="32" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 即座に結果が出ないと諦める
+    </text>
+    <text x="10" y="44" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 「今回ダメだったから向いてない」
+    </text>
+    <text x="10" y="56" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 学習プロセスより順位のみ重視
+    </text>
+    <text x="10" y="68" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 継続の価値を理解できない
+    </text>
+    <text x="10" y="80" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 成長には時間がかかることを受け入れられない
+    </text>
+    <text x="10" y="92" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">
+      → 早期諦めと機会損失
+    </text>
+  </g>
+  
+  <!-- 孤立思考 -->
+  <g transform="translate(430, 440)">
+    <rect x="0" y="0" width="300" height="130" rx="6" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="150" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+      😔 孤立的な学習スタイル
+    </text>
+    <text x="10" y="32" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 質問することを恥ずかしがる
+    </text>
+    <text x="10" y="44" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 他者とのコミュニケーションを避ける
+    </text>
+    <text x="10" y="56" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 「迷惑をかけたくない」と相談を躊躇
+    </text>
+    <text x="10" y="68" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 一人で抱え込んで解決しようとする
+    </text>
+    <text x="10" y="80" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ コミュニティの恩恵を受けられない
+    </text>
+    <text x="10" y="92" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ 学習の楽しさを共有できない
+    </text>
+    <text x="10" y="104" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ❌ モチベーション維持が困難になる
+    </text>
+    <text x="10" y="116" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">
+      → 学習効率低下と孤独感の増大
+    </text>
+  </g>
+  
+  <!-- 中央の推奨メッセージ -->
+  <rect x="50" y="610" width="700" height="30" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="628" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">
+    🌟 健全なマインドセット × 適切な目標設定 × コミュニティ活用 = 持続可能な成長
+  </text>
+  
+</svg>

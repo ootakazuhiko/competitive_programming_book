@@ -1,0 +1,231 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図10-6：コンテスト中の重要な判断ポイント</title>
+  <desc>コンテスト中の戦略的意思決定場面と最適な判断基準</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    コンテスト中の重要な判断ポイント
+  </text>
+  
+  <!-- 判断ポイント1: 問題選択 -->
+  <rect x="50" y="60" width="340" height="260" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="220" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">
+    🎯 判断ポイント1: 問題選択
+  </text>
+  <text x="70" y="98" font-family="Arial, sans-serif" font-size="11" fill="#3730a3">
+    「次にどの問題に取り組むか？」
+  </text>
+  
+  <g transform="translate(70, 110)">
+    <!-- 良い判断 -->
+    <rect x="0" y="0" width="300" height="70" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="150" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      ✅ 良い判断基準
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 現在の実力で解ける可能性が60-80%の問題</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 残り時間と問題の推定難易度を考慮</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • AC済み問題数と目標のバランス</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 過去の類似問題の経験を活かせる問題</text>
+    
+    <!-- 悪い判断 -->
+    <rect x="0" y="80" width="300" height="70" rx="4" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="150" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+      ❌ 避けるべき判断
+    </text>
+    <text x="5" y="107" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 明らかに実力を超える難問への固執</text>
+    <text x="5" y="117" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 時間配分を無視した問題選択</text>
+    <text x="5" y="127" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 感情的な「意地」での問題継続</text>
+    <text x="5" y="137" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 他参加者の進捗に惑わされた焦り判断</text>
+    
+    <!-- 実践例 -->
+    <rect x="0" y="160" width="300" height="70" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="150" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      💡 実践的判断例
+    </text>
+    <text x="5" y="187" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🟢 A,B問題AC済→C問題に挑戦（30分確保）</text>
+    <text x="5" y="197" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🟡 C問題15分悩んで進展なし→一旦保留してD問題確認</text>
+    <text x="5" y="207" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🟢 残り20分でC問題の見通し→集中して取り組む</text>
+    <text x="5" y="217" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🔴 残り10分で新問題開始→時間不足でリスク大</text>
+  </g>
+  
+  <!-- 判断ポイント2: 実装継続 vs 方針転換 -->
+  <rect x="410" y="60" width="340" height="260" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="580" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+    ⚡ 判断ポイント2: 継続 vs 転換
+  </text>
+  <text x="430" y="98" font-family="Arial, sans-serif" font-size="11" fill="#92400e">
+    「この問題を続けるか、別の問題にするか？」
+  </text>
+  
+  <g transform="translate(430, 110)">
+    <!-- 継続すべき場合 -->
+    <rect x="0" y="0" width="300" height="70" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="150" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      ✅ 継続すべき場合
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 解法の方向性が見えている</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 実装の8割以上が完了している</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • サンプルケースが一部通っている</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 十分な時間的余裕がある</text>
+    
+    <!-- 転換すべき場合 -->
+    <rect x="0" y="80" width="300" height="70" rx="4" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="150" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+      ❌ 転換すべき場合
+    </text>
+    <text x="5" y="107" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 30分以上考えても方針が立たない</text>
+    <text x="5" y="117" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • サンプルケースが全く通らない</text>
+    <text x="5" y="127" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 実装が複雑すぎて時間不足が予想される</text>
+    <text x="5" y="137" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 他により確実な得点源がある</text>
+    
+    <!-- 判断の指針 -->
+    <rect x="0" y="160" width="300" height="70" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="150" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      ⚖️ 判断の指針
+    </text>
+    <text x="5" y="187" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ⏰ 時間コスト: 残り時間 ÷ 完成までの予想時間</text>
+    <text x="5" y="197" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🎯 成功確率: 現在の理解度 × 実装の進捗度</text>
+    <text x="5" y="207" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      💰 機会コスト: 他問題への取り組み可能性</text>
+    <text x="5" y="217" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      🧠 精神状態: ストレスレベルと集中力維持</text>
+  </g>
+  
+  <!-- 判断ポイント3: デバッグ vs 見直し -->
+  <rect x="50" y="340" width="340" height="260" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+  <text x="220" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">
+    🔍 判断ポイント3: デバッグ継続
+  </text>
+  <text x="70" y="378" font-family="Arial, sans-serif" font-size="11" fill="#581c87">
+    「WAになった時、デバッグを続けるか？」
+  </text>
+  
+  <g transform="translate(70, 390)">
+    <!-- デバッグ継続 -->
+    <rect x="0" y="0" width="300" height="70" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="150" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      ✅ デバッグ継続の条件
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • アルゴリズムの方針に確信がある</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • サンプルケースは全て通っている</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 明らかな実装ミスの心当たりがある</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • デバッグに十分な時間的余裕</text>
+    
+    <!-- 見直し・転換 -->
+    <rect x="0" y="80" width="300" height="70" rx="4" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="150" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+      ❌ 見直し・転換の場合
+    </text>
+    <text x="5" y="107" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • サンプルケースも通らない</text>
+    <text x="5" y="117" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • アルゴリズム自体に不安がある</text>
+    <text x="5" y="127" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 10分以上デバッグしても進展がない</text>
+    <text x="5" y="137" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 他により確実な問題がある</text>
+    
+    <!-- デバッグ戦略 -->
+    <rect x="0" y="160" width="300" height="70" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="150" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#7c3aed">
+      🛠️ 効率的デバッグ戦略
+    </text>
+    <text x="5" y="187" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      1. 制限時間を設定（10-15分）</text>
+    <text x="5" y="197" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      2. 小さなテストケースで動作確認</text>
+    <text x="5" y="207" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      3. print文で中間結果を出力</text>
+    <text x="5" y="217" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      4. 時間切れなら潔く次の問題へ</text>
+  </g>
+  
+  <!-- 判断ポイント4: 時間配分調整 -->
+  <rect x="410" y="340" width="340" height="260" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="580" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#059669">
+    ⏰ 判断ポイント4: 時間配分調整
+  </text>
+  <text x="430" y="378" font-family="Arial, sans-serif" font-size="11" fill="#065f46">
+    「残り時間でどう行動するか？」
+  </text>
+  
+  <g transform="translate(430, 390)">
+    <!-- 十分な時間 -->
+    <rect x="0" y="0" width="300" height="70" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="150" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      ✅ 十分な時間がある場合（30分以上）
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 新しい問題に挑戦する</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 難易度の高い問題も検討可能</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • じっくりと問題を理解する時間を確保</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 実装の品質を重視できる</text>
+    
+    <!-- 中程度の時間 -->
+    <rect x="0" y="80" width="300" height="70" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+    <text x="150" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      ⚡ 中程度の時間（10-30分）
+    </text>
+    <text x="5" y="107" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 確実にACできそうな問題を優先</text>
+    <text x="5" y="117" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 部分点狙いも選択肢に</text>
+    <text x="5" y="127" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 実装済み問題の見直し</text>
+    <text x="5" y="137" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 時間効率を最優先に判断</text>
+    
+    <!-- 少ない時間 -->
+    <rect x="0" y="160" width="300" height="70" rx="4" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="150" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+      🚨 時間が少ない場合（10分以下）
+    </text>
+    <text x="5" y="187" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 新問題への挑戦は控える</text>
+    <text x="5" y="197" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • AC済み問題の最終確認</text>
+    <text x="5" y="207" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 部分点の可能性を最大化</text>
+    <text x="5" y="217" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 提出タイミングに注意</text>
+  </g>
+  
+  <!-- 総合判断指針 -->
+  <rect x="50" y="620" width="700" height="25" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="638" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0284c7">
+    🎯 判断の原則: 感情的判断より論理的判断 × 時間コストを常に意識 × 柔軟な戦略変更
+  </text>
+  
+</svg>
