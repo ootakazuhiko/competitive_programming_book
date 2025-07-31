@@ -1,0 +1,206 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-5：Windows Python インストール完全ガイド</title>
+  <desc>Windows環境でのPythonインストール手順を段階的に示すフローチャート</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .step-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .step-desc { font: 400 12px Inter, sans-serif; fill: #4B5563; }
+      .warning-text { font: 600 12px Inter, sans-serif; fill: #DC2626; }
+      .success-text { font: 600 12px Inter, sans-serif; fill: #059669; }
+      .button-text { font: 600 12px Inter, sans-serif; fill: #FFFFFF; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .step1 { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .step2 { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .step3 { fill: #D1FAE5; stroke: #10B981; stroke-width: 2; }
+      .step4 { fill: #FCE7F3; stroke: #EC4899; stroke-width: 2; }
+      
+      .warning-box { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .success-box { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .button { fill: #3B82F6; stroke: #2563EB; stroke-width: 2; }
+      .arrow { stroke: #10B981; stroke-width: 3; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-5：Windows Python インストール完全ガイド</text>
+  
+  <!-- Step 1: Download -->
+  <g id="step1">
+    <rect x="50" y="70" width="160" height="120" rx="12" class="step1"/>
+    <text x="70" y="95" class="emoji">🌐</text>
+    <text x="100" y="95" class="step-title">Step 1: ダウンロード</text>
+    
+    <g transform="translate(60, 105)">
+      <text x="0" y="15" class="step-desc">python.org にアクセス</text>
+      <text x="0" y="30" class="step-desc">「Download Python 3.x.x」</text>
+      <text x="0" y="45" class="step-desc">ボタンをクリック</text>
+      
+      <rect x="0" y="55" width="130" height="20" rx="10" class="button"/>
+      <text x="65" y="68" text-anchor="middle" class="button-text">公式サイトへ</text>
+    </g>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M220 130 L270 130" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Step 2: Install -->
+  <g id="step2">
+    <rect x="280" y="70" width="160" height="120" rx="12" class="step2"/>
+    <text x="300" y="95" class="emoji">📦</text>
+    <text x="330" y="95" class="step-title">Step 2: インストール</text>
+    
+    <g transform="translate(290, 105)">
+      <text x="0" y="15" class="step-desc">ダウンロードファイルを</text>
+      <text x="0" y="30" class="step-desc">ダブルクリック</text>
+      
+      <rect x="0" y="40" width="130" height="15" rx="7" class="warning-box"/>
+      <text x="65" y="52" text-anchor="middle" class="warning-text">重要チェック</text>
+      
+      <text x="0" y="70" style="font: 600 10px Inter, sans-serif; fill: #DC2626;">
+        ✓ Add Python to PATH
+      </text>
+    </g>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M450 130 L500 130" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Step 3: Verify -->
+  <g id="step3">
+    <rect x="510" y="70" width="160" height="120" rx="12" class="step3"/>
+    <text x="530" y="95" class="emoji">✅</text>
+    <text x="560" y="95" class="step-title">Step 3: 確認</text>
+    
+    <g transform="translate(520, 105)">
+      <text x="0" y="15" class="step-desc">コマンドプロンプトを開く</text>
+      <text x="0" y="30" class="step-desc">python --version</text>
+      <text x="0" y="45" class="step-desc">を実行</text>
+      
+      <rect x="0" y="55" width="130" height="20" rx="10" class="success-box"/>
+      <text x="65" y="68" text-anchor="middle" class="success-text">成功確認</text>
+    </g>
+  </g>
+  
+  <!-- Detailed Steps Section -->
+  <g id="detailed-steps">
+    <!-- Download Details -->
+    <rect x="50" y="220" width="200" height="140" rx="12" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="2"/>
+    <text x="70" y="245" style="font: 600 14px Inter, sans-serif; fill: #1F2937;">
+      🌐 ダウンロード詳細
+    </text>
+    
+    <g transform="translate(60, 255)">
+      <text x="0" y="15" style="font: 500 11px Inter, sans-serif; fill: #374151;">1. ブラウザでpython.orgを開く</text>
+      <text x="0" y="28" style="font: 500 11px Inter, sans-serif; fill: #374151;">2. 黄色い「Download」ボタンを探す</text>
+      <text x="0" y="41" style="font: 500 11px Inter, sans-serif; fill: #374151;">3. 最新安定版を自動検出</text>
+      <text x="0" y="54" style="font: 500 11px Inter, sans-serif; fill: #374151;">4. .exe ファイルをダウンロード</text>
+      
+      <rect x="0" y="65" width="170" height="25" rx="8" fill="#FEF2F2" stroke="#EF4444" stroke-width="1"/>
+      <text x="10" y="80" style="font: 600 10px Inter, sans-serif; fill: #DC2626;">
+        ⚠️ 必ず公式サイトから！
+      </text>
+      <text x="10" y="90" style="font: 400 9px Inter, sans-serif; fill: #DC2626;">
+        偽サイトや古いバージョンに注意
+      </text>
+    </g>
+    
+    <!-- Install Details -->
+    <rect x="280" y="220" width="200" height="140" rx="12" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="2"/>
+    <text x="300" y="245" style="font: 600 14px Inter, sans-serif; fill: #1F2937;">
+      📦 インストール詳細
+    </text>
+    
+    <g transform="translate(290, 255)">
+      <text x="0" y="15" style="font: 500 11px Inter, sans-serif; fill: #374151;">1. ダウンロードしたファイルを実行</text>
+      <text x="0" y="28" style="font: 500 11px Inter, sans-serif; fill: #374151;">2. UAC（権限確認）で「はい」</text>
+      
+      <rect x="0" y="35" width="170" height="30" rx="8" fill="#FEF2F2" stroke="#EF4444" stroke-width="2"/>
+      <text x="10" y="48" style="font: 600 11px Inter, sans-serif; fill: #DC2626;">
+        ⚠️ 最重要チェック
+      </text>
+      <text x="10" y="60" style="font: 600 10px Inter, sans-serif; fill: #DC2626;">
+        ☑️ Add Python to PATH
+      </text>
+      
+      <text x="0" y="80" style="font: 500 11px Inter, sans-serif; fill: #374151;">3. "Install Now" をクリック</text>
+      <text x="0" y="93" style="font: 500 11px Inter, sans-serif; fill: #374151;">4. インストール完了まで待機</text>
+    </g>
+    
+    <!-- Verification Details -->
+    <rect x="510" y="220" width="200" height="140" rx="12" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="2"/>
+    <text x="530" y="245" style="font: 600 14px Inter, sans-serif; fill: #1F2937;">
+      ✅ 確認詳細
+    </text>
+    
+    <g transform="translate(520, 255)">
+      <text x="0" y="15" style="font: 500 11px Inter, sans-serif; fill: #374151;">1. Win+R → cmd → Enter</text>
+      <text x="0" y="28" style="font: 500 11px Inter, sans-serif; fill: #374151;">2. python --version</text>
+      
+      <rect x="0" y="35" width="170" height="25" rx="8" fill="#F0FDF4" stroke="#22C55E" stroke-width="1"/>
+      <text x="10" y="48" style="font: 600 10px Inter, sans-serif; fill: #059669;">
+        成功例: Python 3.12.1
+      </text>
+      <text x="10" y="60" style="font: 400 9px Inter, sans-serif; fill: #059669;">
+        バージョン番号が表示される
+      </text>
+      
+      <text x="0" y="75" style="font: 500 11px Inter, sans-serif; fill: #374151;">3. pip --version でも確認</text>
+      <text x="0" y="88" style="font: 500 11px Inter, sans-serif; fill: #374151;">4. 両方動けばインストール成功！</text>
+    </g>
+  </g>
+  
+  <!-- Troubleshooting Section -->
+  <g id="troubleshooting">
+    <rect x="100" y="400" width="600" height="100" rx="12" class="warning-box"/>
+    <text x="120" y="425" class="emoji">🚨</text>
+    <text x="150" y="425" style="font: 600 16px Inter, sans-serif; fill: #DC2626;">
+      よくあるトラブルと解決方法
+    </text>
+    
+    <g transform="translate(120, 435)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #991B1B;">
+        ❌ 「pythonが認識されません」エラー
+      </text>
+      <text x="0" y="30" style="font: 500 11px Inter, sans-serif; fill: #991B1B;">
+        → 「Add Python to PATH」のチェックを忘れた可能性
+      </text>
+      <text x="0" y="45" style="font: 500 11px Inter, sans-serif; fill: #991B1B;">
+        → 解決方法：Pythonを再インストール（今度はチェックを忘れずに）
+      </text>
+      
+      <rect x="400" y="0" width="250" height="50" rx="8" fill="#DCFCE7" stroke="#22C55E" stroke-width="1"/>
+      <text x="410" y="15" style="font: 600 11px Inter, sans-serif; fill: #15803D;">
+        💡 予防策：インストール時に必ず確認
+      </text>
+      <text x="410" y="30" style="font: 500 10px Inter, sans-serif; fill: #15803D;">
+        チェックボックスは画面下部にあります
+      </text>
+      <text x="410" y="45" style="font: 500 10px Inter, sans-serif; fill: #15803D;">
+        見落としやすいので要注意！
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom Success Message -->
+  <g transform="translate(200, 530)">
+    <rect x="0" y="0" width="400" height="50" rx="12" class="success-box"/>
+    <text x="20" y="25" class="emoji">🎉</text>
+    <text x="50" y="25" style="font: 600 14px Inter, sans-serif; fill: #15803D;">
+      インストール成功！これで競技プログラミングの準備完了
+    </text>
+    <text x="50" y="40" style="font: 500 12px Inter, sans-serif; fill: #166534;">
+      次はエディタの設定に進みましょう
+    </text>
+  </g>
+  
+</svg>

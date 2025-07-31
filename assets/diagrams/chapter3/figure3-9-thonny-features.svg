@@ -1,0 +1,179 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-9：Thonnyの特徴と利点</title>
+  <desc>初心者向けエディタThonnyの主要機能と競技プログラミング学習における利点を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .feature-title { font: 500 12px Inter, sans-serif; fill: #4B5563; }
+      .feature-desc { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .benefit-text { font: 600 12px Inter, sans-serif; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .thonny-main { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 3; }
+      .feature1 { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .feature2 { fill: #D1FAE5; stroke: #10B981; stroke-width: 2; }
+      .feature3 { fill: #FCE7F3; stroke: #EC4899; stroke-width: 2; }
+      .feature4 { fill: #EDE9FE; stroke: #8B5CF6; stroke-width: 2; }
+      
+      .benefit-box { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .vs-box { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .connector { stroke: #9CA3AF; stroke-width: 2; stroke-dasharray: 4,4; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-9：Thonnyの特徴と利点</text>
+  
+  <!-- Central Thonny Hub -->
+  <g id="thonny-center">
+    <ellipse cx="400" cy="150" rx="140" ry="70" class="thonny-main"/>
+    <text x="400" y="135" text-anchor="middle" style="font: 600 20px Inter, sans-serif; fill: #1E40AF;">
+      Thonny
+    </text>
+    <text x="400" y="155" text-anchor="middle" style="font: 500 14px Inter, sans-serif; fill: #1E40AF;">
+      初心者向けPython IDE
+    </text>
+    <text x="400" y="175" text-anchor="middle" style="font: 400 12px Inter, sans-serif; fill: #1E40AF;">
+      完全無料・簡単セットアップ
+    </text>
+  </g>
+  
+  <!-- Feature 1: Easy Setup -->
+  <g id="feature1">
+    <rect x="50" y="50" width="180" height="100" rx="12" class="feature1"/>
+    <text x="70" y="75" class="emoji">⚡</text>
+    <text x="100" y="75" class="section-title" fill="#D97706">簡単セットアップ</text>
+    
+    <g transform="translate(60, 85)">
+      <text x="0" y="15" class="feature-desc">• ワンクリックインストール</text>
+      <text x="0" y="28" class="feature-desc">• Python本体も同時インストール</text>
+      <text x="0" y="41" class="feature-desc">• 複雑な設定が不要</text>
+      <text x="0" y="54" class="feature-desc">• すぐに使い始められる</text>
+    </g>
+  </g>
+  
+  <!-- Feature 2: Debugging -->
+  <g id="feature2">
+    <rect x="570" y="50" width="180" height="100" rx="12" class="feature2"/>
+    <text x="590" y="75" class="emoji">🔍</text>
+    <text x="620" y="75" class="section-title" fill="#047857">デバッグ機能</text>
+    
+    <g transform="translate(580, 85)">
+      <text x="0" y="15" class="feature-desc">• ステップ実行</text>
+      <text x="0" y="28" class="feature-desc">• 変数の値をリアルタイム表示</text>
+      <text x="0" y="41" class="feature-desc">• エラー箇所の特定が簡単</text>
+      <text x="0" y="54" class="feature-desc">• 初心者にやさしい表示</text>
+    </g>
+  </g>
+  
+  <!-- Feature 3: Simple Interface -->
+  <g id="feature3">
+    <rect x="50" y="250" width="180" height="100" rx="12" class="feature3"/>
+    <text x="70" y="275" class="emoji">🎨</text>
+    <text x="100" y="275" class="section-title" fill="#BE185D">シンプルUI</text>
+    
+    <g transform="translate(60, 285)">
+      <text x="0" y="15" class="feature-desc">• 余計な機能がない</text>
+      <text x="0" y="28" class="feature-desc">• 直感的な操作</text>
+      <text x="0" y="41" class="feature-desc">• 学習に集中できる</text>
+      <text x="0" y="54" class="feature-desc">• 日本語表示対応</text>
+    </g>
+  </g>
+  
+  <!-- Feature 4: Learning Support -->
+  <g id="feature4">
+    <rect x="570" y="250" width="180" height="100" rx="12" class="feature4"/>
+    <text x="590" y="275" class="emoji">📚</text>
+    <text x="620" y="275" class="section-title" fill="#7C3AED">学習支援</text>
+    
+    <g transform="translate(580, 285)">
+      <text x="0" y="15" class="feature-desc">• プログラム実行の可視化</text>
+      <text x="0" y="28" class="feature-desc">• エラーメッセージが親切</text>
+      <text x="0" y="41" class="feature-desc">• 初心者向けヘルプ充実</text>
+      <text x="0" y="54" class="feature-desc">• 段階的学習をサポート</text>
+    </g>
+  </g>
+  
+  <!-- Connection lines to center -->
+  <path d="M230 100 Q315 125 260 150" class="connector"/>
+  <path d="M570 100 Q485 125 540 150" class="connector"/>
+  <path d="M230 300 Q315 275 260 150" class="connector"/>
+  <path d="M570 300 Q485 275 540 150" class="connector"/>
+  
+  <!-- Benefits Section -->
+  <g id="benefits">
+    <rect x="100" y="380" width="600" height="120" rx="12" class="benefit-box"/>
+    <text x="120" y="405" class="emoji">🏆</text>
+    <text x="150" y="405" style="font: 600 16px Inter, sans-serif; fill: #15803D;">
+      競技プログラミング学習での利点
+    </text>
+    
+    <g transform="translate(120, 420)">
+      <g transform="translate(0, 0)">
+        <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+        <text x="20" y="12" class="feature-desc" fill="#166534">
+          🎯 AtCoderの練習問題をすぐに試せる
+        </text>
+      </g>
+      
+      <g transform="translate(0, 20)">
+        <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+        <text x="20" y="12" class="feature-desc" fill="#166534">
+          🔧 エラーが出てもデバッグ機能で原因を特定しやすい
+        </text>
+      </g>
+      
+      <g transform="translate(0, 40)">
+        <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+        <text x="20" y="12" class="feature-desc" fill="#166534">
+          📖 複雑なエディタ設定に時間を取られず、問題解決に集中
+        </text>
+      </g>
+      
+      <g transform="translate(0, 60)">
+        <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+        <text x="20" y="12" class="feature-desc" fill="#166534">
+          🚀 プログラミング学習の「最初の壁」を低くしてくれる
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Comparison Section -->
+  <g id="comparison">
+    <text x="400" y="545" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #374151;">
+      💡 初心者には複雑なVSCodeより、まずThonnyから始めることを推奨
+    </text>
+    
+    <g transform="translate(150, 555)">
+      <rect x="0" y="0" width="120" height="25" rx="12" fill="#22C55E"/>
+      <text x="60" y="17" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #FFFFFF;">
+        Thonny推奨
+      </text>
+      
+      <text x="140" y="17" style="font: 500 12px Inter, sans-serif; fill: #6B7280;">
+        →慣れたら→
+      </text>
+      
+      <rect x="230" y="0" width="120" height="25" rx="12" fill="#6B7280"/>
+      <text x="290" y="17" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #FFFFFF;">
+        VSCode移行
+      </text>
+      
+      <text x="370" y="17" style="font: 500 12px Inter, sans-serif; fill: #6B7280;">
+        →最終的に→
+      </text>
+      
+      <rect x="460" y="0" width="120" height="25" rx="12" fill="#3B82F6"/>
+      <text x="520" y="17" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #FFFFFF;">
+        プロ仕様
+      </text>
+    </g>
+  </g>
+  
+</svg>
