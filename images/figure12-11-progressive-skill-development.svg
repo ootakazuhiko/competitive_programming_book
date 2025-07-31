@@ -1,0 +1,182 @@
+<svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-11：段階的スキルアップ計画</title>
+  <desc>中学3年から大学以降まで、各段階での目標設定、学習内容、実践プロジェクトを示す長期成長プラン</desc>
+  
+  <!-- Background -->
+  <rect width="800" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    段階的スキルアップ計画
+  </text>
+  
+  <!-- Timeline progression -->
+  <path d="M 80 80 L 80 850" stroke="#64748b" stroke-width="4" fill="none"/>
+  
+  <!-- Phase 1: 基礎固め -->
+  <circle cx="80" cy="120" r="12" fill="#3b82f6"/>
+  <rect x="120" y="70" width="650" height="180" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="150" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e40af">
+    📚 基礎固めフェーズ（中学3年〜高校1年）
+  </text>
+  
+  <!-- Technical goals -->
+  <rect x="140" y="110" width="200" height="130" rx="4" fill="#white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="240" y="130" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">🎯 技術的目標</text>
+  <text x="150" y="150" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="150" dy="0">• AtCoder灰〜茶色レーティング</tspan>
+    <tspan x="150" dy="12">• Python以外の言語習得</tspan>
+    <tspan x="150" dy="12">  (C++、Java)</tspan>
+    <tspan x="150" dy="12">• Web開発基礎</tspan>
+    <tspan x="150" dy="12">  (HTML、CSS、JavaScript)</tspan>
+    <tspan x="150" dy="12">• データベース概念理解</tspan>
+    <tspan x="150" dy="12">• Git・GitHubバージョン管理</tspan>
+    <tspan x="150" dy="12">• 基本ライブラリ活用</tspan>
+  </text>
+  
+  <!-- Learning resources -->
+  <rect x="360" y="110" width="200" height="130" rx="4" fill="#white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="460" y="130" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">📖 学習リソース</text>
+  <text x="370" y="150" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="370" dy="0">• 「アルゴリズム図鑑」視覚理解</tspan>
+    <tspan x="370" dy="12">• オンラインコース</tspan>
+    <tspan x="370" dy="12">  (Progate、Udemy)</tspan>
+    <tspan x="370" dy="12">• 技術系YouTubeチャンネル</tspan>
+    <tspan x="370" dy="12">• 技術書の体系的読破</tspan>
+    <tspan x="370" dy="12">• 英語技術文書読解開始</tspan>
+    <tspan x="370" dy="12">• 週10-15時間学習時間確保</tspan>
+  </text>
+  
+  <!-- Projects -->
+  <rect x="580" y="110" width="170" height="130" rx="4" fill="#white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="665" y="130" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">🛠️ 実践プロジェクト</text>
+  <text x="590" y="150" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="590" dy="0">• 個人Webサイト構築</tspan>
+    <tspan x="590" dy="12">• 簡単なWebアプリ開発</tspan>
+    <tspan x="590" dy="12">• GitHub作品公開</tspan>
+    <tspan x="590" dy="12">• ポートフォリオ作成</tspan>
+    <tspan x="590" dy="12">• オープンソース貢献</tspan>
+    <tspan x="590" dy="12">• 学校での技術発表</tspan>
+    <tspan x="590" dy="12">• 学習記録継続</tspan>
+  </text>
+  
+  <!-- Phase 2: 発展・応用 -->
+  <circle cx="80" cy="320" r="12" fill="#10b981"/>
+  <rect x="120" y="270" width="650" height="180" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="150" y="295" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#065f46">
+    🚀 発展・応用フェーズ（高校2年〜3年）
+  </text>
+  
+  <!-- Advanced technical goals -->
+  <rect x="140" y="310" width="200" height="130" rx="4" fill="#white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="240" y="330" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065f46">🎯 技術的目標</text>
+  <text x="150" y="350" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    <tspan x="150" dy="0">• AtCoder茶〜緑色目標</tspan>
+    <tspan x="150" dy="12">• 高度なアルゴリズム学習</tspan>
+    <tspan x="150" dy="12">• JOI本選への挑戦</tspan>
+    <tspan x="150" dy="12">• チーム開発経験</tspan>
+    <tspan x="150" dy="12">• ハッカソン参加</tspan>
+    <tspan x="150" dy="12">• 技術ブログ発信開始</tspan>
+    <tspan x="150" dy="12">• 大学研究室との交流</tspan>
+  </text>
+  
+  <!-- Advanced learning -->
+  <rect x="360" y="310" width="200" height="130" rx="4" fill="#white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="460" y="330" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065f46">📖 学習リソース</text>
+  <text x="370" y="350" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    <tspan x="370" dy="0">• 「プログラミングコンテスト</tspan>
+    <tspan x="370" dy="12">  攻略のための...」</tspan>
+    <tspan x="370" dy="12">• 機械学習系オンラインコース</tspan>
+    <tspan x="370" dy="12">  (Coursera)</tspan>
+    <tspan x="370" dy="12">• 英語技術文書・論文読解</tspan>
+    <tspan x="370" dy="12">• 海外カンファレンス動画</tspan>
+    <tspan x="370" dy="12">• Stack Overflow参加</tspan>
+  </text>
+  
+  <!-- Advanced projects -->
+  <rect x="580" y="310" width="170" height="130" rx="4" fill="#white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="665" y="330" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065f46">🛠️ 実践プロジェクト</text>
+  <text x="590" y="350" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    <tspan x="590" dy="0">• 本格的Webアプリ開発</tspan>
+    <tspan x="590" dy="12">• 機械学習予測システム</tspan>
+    <tspan x="590" dy="12">• チームハッカソン参加</tspan>
+    <tspan x="590" dy="12">• 技術ブログ知識共有</tspan>
+    <tspan x="590" dy="12">• インターンシップ</tspan>
+    <tspan x="590" dy="12">• 企業連携プロジェクト</tspan>
+  </text>
+  
+  <!-- Phase 3: 専門化・創造 -->
+  <circle cx="80" cy="520" r="12" fill="#8b5cf6"/>
+  <rect x="120" y="470" width="650" height="180" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="150" y="495" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6b21a8">
+    🌟 専門化・創造フェーズ（大学生以降）
+  </text>
+  
+  <!-- Specialization goals -->
+  <rect x="140" y="510" width="200" height="130" rx="4" fill="#white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="240" y="530" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">🎯 技術的目標</text>
+  <text x="150" y="550" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="150" dy="0">• 特定分野での深い専門性</tspan>
+    <tspan x="150" dy="12">• 研究・開発での価値創出</tspan>
+    <tspan x="150" dy="12">• 国際コミュニティ活動</tspan>
+    <tspan x="150" dy="12">• 後進指導・メンタリング</tspan>
+    <tspan x="150" dy="12">• 社会課題解決への応用</tspan>
+    <tspan x="150" dy="12">• イノベーション創出</tspan>
+  </text>
+  
+  <!-- Advanced learning resources -->
+  <rect x="360" y="510" width="200" height="130" rx="4" fill="#white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="460" y="530" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">📖 学習リソース</text>
+  <text x="370" y="550" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="370" dy="0">• 最新学術論文・研究動向</tspan>
+    <tspan x="370" dy="12">• 国際カンファレンス参加</tspan>
+    <tspan x="370" dy="12">• 産学連携プロジェクト</tspan>
+    <tspan x="370" dy="12">• 海外研究機関研修</tspan>
+    <tspan x="370" dy="12">• 専門書・技術雑誌購読</tspan>
+    <tspan x="370" dy="12">• 業界エキスパートとの交流</tspan>
+  </text>
+  
+  <!-- Professional projects -->
+  <rect x="580" y="510" width="170" height="130" rx="4" fill="#white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="665" y="530" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">🛠️ 実践プロジェクト</text>
+  <text x="590" y="550" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="590" dy="0">• 独自アルゴリズム開発</tspan>
+    <tspan x="590" dy="12">• OSSメンテナー活動</tspan>
+    <tspan x="590" dy="12">• スタートアップ技術挑戦</tspan>
+    <tspan x="590" dy="12">• 学会発表・特許出願</tspan>
+    <tspan x="590" dy="12">• 技術書執筆・教材開発</tspan>
+    <tspan x="590" dy="12">• 技術による社会貢献</tspan>
+  </text>
+  
+  <!-- Continuous learning principles -->
+  <rect x="120" y="670" width="650" height="180" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="150" y="695" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#dc2626">
+    🔄 全フェーズ共通：生涯学習の原則
+  </text>
+  
+  <!-- Left column principles -->
+  <rect x="140" y="710" width="300" height="130" rx="4" fill="#white" stroke="#fecaca" stroke-width="1"/>
+  <text x="290" y="730" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">🧠 学習マインドセット</text>
+  <text x="150" y="750" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="150" dy="0">✅ 技術トレンドへの敏感性・早期採用</tspan>
+    <tspan x="150" dy="12">✅ 基礎理論への深い理解維持</tspan>
+    <tspan x="150" dy="12">✅ 実験・プロトタイピング検証習慣</tspan>
+    <tspan x="150" dy="12">✅ 成長マインドセット・謙虚な姿勢</tspan>
+    <tspan x="150" dy="12">✅ 失敗を恐れない挑戦的精神</tspan>
+    <tspan x="150" dy="12">✅ 変化を楽しむポジティブ姿勢</tspan>
+    <tspan x="150" dy="12">✅ 継続可能な学習ペース配分</tspan>
+  </text>
+  
+  <!-- Right column community -->
+  <rect x="460" y="710" width="290" height="130" rx="4" fill="#white" stroke="#fecaca" stroke-width="1"/>
+  <text x="605" y="730" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">🤝 コミュニティ参画</text>
+  <text x="470" y="750" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="470" dy="0">✅ 技術コミュニティでの積極参加</tspan>
+    <tspan x="470" dy="12">✅ 知識共有・還元の意識</tspan>
+    <tspan x="470" dy="12">✅ 多様な価値観・アプローチ尊重</tspan>
+    <tspan x="470" dy="12">✅ 次世代育成への貢献</tspan>
+    <tspan x="470" dy="12">✅ ワークライフバランス重視</tspan>
+    <tspan x="470" dy="12">✅ 内発的動機の維持</tspan>
+    <tspan x="470" dy="12">✅ 長期ビジョンの保持</tspan>
+  </text>
+</svg>

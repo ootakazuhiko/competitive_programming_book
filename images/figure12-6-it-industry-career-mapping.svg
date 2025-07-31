@@ -1,0 +1,157 @@
+<svg viewBox="0 0 900 800" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-6：IT業界でのキャリアマッピング</title>
+  <desc>IT業界における各職種とキャリアパス、競技プログラミングスキルを活かせる分野の関係性を示すマップ</desc>
+  
+  <!-- Background -->
+  <rect width="900" height="800" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    IT業界でのキャリアマッピング
+  </text>
+  
+  <!-- Central hub -->
+  <circle cx="450" cy="120" r="40" fill="#3b82f6" stroke="#1e40af" stroke-width="3"/>
+  <text x="450" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    競技プログラミング
+  </text>
+  <text x="450" y="128" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    スキル
+  </text>
+  
+  <!-- Connection lines -->
+  <path d="M 415 145 L 200 230" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 450 160 L 450 230" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 485 145 L 700 230" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 425 155 L 200 400" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 475 155 L 700 400" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 430 160 L 300 550" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 470 160 L 600 550" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <!-- Software Engineer Branch -->
+  <rect x="100" y="250" width="200" height="130" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    💻 ソフトウェアエンジニア
+  </text>
+  <text x="110" y="290" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="110" dy="0">🔧 主な業務：</tspan>
+    <tspan x="120" dy="14">• アプリケーション開発</tspan>
+    <tspan x="120" dy="12">• システム設計・実装</tspan>
+    <tspan x="120" dy="12">• バグ修正・最適化</tspan>
+    <tspan x="110" dy="16">💪 活かせるスキル：</tspan>
+    <tspan x="120" dy="14">• アルゴリズム思考</tspan>
+    <tspan x="120" dy="12">• 効率的コーディング</tspan>
+    <tspan x="120" dy="12">• 問題分解能力</tspan>
+  </text>
+  
+  <!-- Data Scientist Branch -->
+  <rect x="350" y="250" width="200" height="130" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="450" y="270" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#065f46">
+    📊 データサイエンティスト
+  </text>
+  <text x="360" y="290" font-family="Arial, sans-serif" font-size="11" fill="#065f46">
+    <tspan x="360" dy="0">🔧 主な業務：</tspan>
+    <tspan x="370" dy="14">• データ分析・機械学習</tspan>
+    <tspan x="370" dy="12">• 統計的モデリング</tspan>
+    <tspan x="370" dy="12">• 予測・分類システム構築</tspan>
+    <tspan x="360" dy="16">💪 活かせるスキル：</tspan>
+    <tspan x="370" dy="14">• 数学的思考力</tspan>
+    <tspan x="370" dy="12">• 最適化アルゴリズム</tspan>
+    <tspan x="370" dy="12">• 大量データ処理</tspan>
+  </text>
+  
+  <!-- Security Engineer Branch -->
+  <rect x="600" y="250" width="200" height="130" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="270" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🔒 セキュリティエンジニア
+  </text>
+  <text x="610" y="290" font-family="Arial, sans-serif" font-size="11" fill="#92400e">
+    <tspan x="610" dy="0">🔧 主な業務：</tspan>
+    <tspan x="620" dy="14">• セキュリティ設計・監査</tspan>
+    <tspan x="620" dy="12">• 脆弱性調査・対策</tspan>
+    <tspan x="620" dy="12">• 暗号・認証システム</tspan>
+    <tspan x="610" dy="16">💪 活かせるスキル：</tspan>
+    <tspan x="620" dy="14">• 暗号理論・数学</tspan>
+    <tspan x="620" dy="12">• システム解析力</tspan>
+    <tspan x="620" dy="12">• 論理的思考</tspan>
+  </text>
+  
+  <!-- System Architect Branch -->
+  <rect x="100" y="420" width="200" height="130" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="200" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🏗️ システムアーキテクト
+  </text>
+  <text x="110" y="460" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="110" dy="0">🔧 主な業務：</tspan>
+    <tspan x="120" dy="14">• システム全体設計</tspan>
+    <tspan x="120" dy="12">• 技術選定・アーキテクチャ</tspan>
+    <tspan x="120" dy="12">• 性能要件・スケーラビリティ</tspan>
+    <tspan x="110" dy="16">💪 活かせるスキル：</tspan>
+    <tspan x="120" dy="14">• 全体俯瞰力</tspan>
+    <tspan x="120" dy="12">• 複雑度管理</tspan>
+    <tspan x="120" dy="12">• 最適化思考</tspan>
+  </text>
+  
+  <!-- Technical Lead Branch -->
+  <rect x="600" y="420" width="200" height="130" rx="8" fill="#fff1f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="700" y="440" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    👥 テックリード・CTO
+  </text>
+  <text x="610" y="460" font-family="Arial, sans-serif" font-size="11" fill="#dc2626">
+    <tspan x="610" dy="0">🔧 主な業務：</tspan>
+    <tspan x="620" dy="14">• 技術戦略立案・意思決定</tspan>
+    <tspan x="620" dy="12">• チーム技術指導</tspan>
+    <tspan x="620" dy="12">• 技術的課題解決</tspan>
+    <tspan x="610" dy="16">💪 活かせるスキル：</tspan>
+    <tspan x="620" dy="14">• 論理的判断力</tspan>
+    <tspan x="620" dy="12">• 問題解決力</tspan>
+    <tspan x="620" dy="12">• 技術的洞察力</tspan>
+  </text>
+  
+  <!-- Research Engineer Branch -->
+  <rect x="200" y="570" width="200" height="130" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="300" y="590" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🔬 研究開発エンジニア
+  </text>
+  <text x="210" y="610" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="210" dy="0">🔧 主な業務：</tspan>
+    <tspan x="220" dy="14">• 新技術・アルゴリズム開発</tspan>
+    <tspan x="220" dy="12">• 学術研究・論文執筆</tspan>
+    <tspan x="220" dy="12">• プロトタイプ・実証実験</tspan>
+    <tspan x="210" dy="16">💪 活かせるスキル：</tspan>
+    <tspan x="220" dy="14">• 理論的思考力</tspan>
+    <tspan x="220" dy="12">• 新規アルゴリズム設計</tspan>
+    <tspan x="220" dy="12">• 実験設計・検証力</tspan>
+  </text>
+  
+  <!-- Product Manager Branch -->
+  <rect x="500" y="570" width="200" height="130" rx="8" fill="#fefce8" stroke="#eab308" stroke-width="2"/>
+  <text x="600" y="590" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#a16207">
+    📱 プロダクトマネージャー
+  </text>
+  <text x="510" y="610" font-family="Arial, sans-serif" font-size="11" fill="#a16207">
+    <tspan x="510" dy="0">🔧 主な業務：</tspan>
+    <tspan x="520" dy="14">• 製品戦略・要件定義</tspan>
+    <tspan x="520" dy="12">• 技術的実現性評価</tspan>
+    <tspan x="520" dy="12">• 開発チーム調整</tspan>
+    <tspan x="510" dy="16">💪 活かせるスキル：</tspan>
+    <tspan x="520" dy="14">• 技術理解力</tspan>
+    <tspan x="520" dy="12">• 論理的構成力</tspan>
+    <tspan x="520" dy="12">• 効率化思考</tspan>
+  </text>
+  
+  <!-- Career progression paths at bottom -->
+  <rect x="50" y="720" width="800" height="60" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="450" y="740" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#334155">
+    🚀 キャリア発展パターン
+  </text>
+  
+  <text x="80" y="760" font-family="Arial, sans-serif" font-size="12" fill="#475569">
+    <tspan x="80" dy="0">📈 スペシャリスト志向：特定技術分野での深い専門性獲得</tspan>
+    <tspan x="480" dy="0">🌟 ジェネラリスト志向：幅広い技術領域の統合的活用</tspan>
+  </text>
+  <text x="80" y="775" font-family="Arial, sans-serif" font-size="12" fill="#475569">
+    <tspan x="80" dy="0">💼 マネジメント志向：技術的背景を持つリーダーとして組織運営</tspan>
+    <tspan x="480" dy="0">🚀 起業・独立志向：技術力をベースとした新規事業創出</tspan>
+  </text>
+</svg>
