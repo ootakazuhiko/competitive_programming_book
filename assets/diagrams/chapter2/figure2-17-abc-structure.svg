@@ -1,0 +1,194 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-17：AtCoder Beginner Contest（ABC）の構成</title>
+  <desc>ABCコンテストの問題構成と特徴を段階的に示す構造図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .problem-title { font: 600 14px Inter, sans-serif; fill: #FFFFFF; }
+      .problem-subtitle { font: 500 12px Inter, sans-serif; fill: #FFFFFF; }
+      .difficulty-text { font: 600 12px Inter, sans-serif; }
+      .desc-text { font: 400 11px Inter, sans-serif; fill: #4B5563; }
+      .time-text { font: 500 10px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .problem-a { fill: #22C55E; stroke: #16A34A; stroke-width: 2; }
+      .problem-b { fill: #3B82F6; stroke: #2563EB; stroke-width: 2; }
+      .problem-c { fill: #F59E0B; stroke: #D97706; stroke-width: 2; }
+      .problem-d { fill: #EF4444; stroke: #DC2626; stroke-width: 2; }
+      .problem-e { fill: #8B5CF6; stroke: #7C3AED; stroke-width: 2; }
+      .problem-f { fill: #EC4899; stroke: #DB2777; stroke-width: 2; }
+      
+      .progress-arrow { stroke: #10B981; stroke-width: 3; fill: none; }
+      .contest-info { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 2; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-17：AtCoder Beginner Contest（ABC）の構成</text>
+  
+  <!-- Contest Header -->
+  <g id="contest-header">
+    <rect x="200" y="60" width="400" height="60" rx="12" class="contest-info"/>
+    <text x="400" y="85" text-anchor="middle" style="font: 600 18px Inter, sans-serif; fill: #1F2937;">ABC（AtCoder Beginner Contest）</text>
+    <text x="400" y="105" text-anchor="middle" style="font: 500 14px Inter, sans-serif; fill: #4B5563;">毎週土曜・日曜 21:00〜 / 競技時間：100分 / 6問構成</text>
+  </g>
+  
+  <!-- Problem A -->
+  <g id="problem-a">
+    <rect x="50" y="160" width="100" height="120" rx="12" class="problem-a"/>
+    <text x="100" y="185" text-anchor="middle" class="problem-title">A問題</text>
+    <text x="100" y="205" text-anchor="middle" class="problem-subtitle">入門</text>
+    
+    <g transform="translate(60, 215)">
+      <text x="0" y="15" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 基本的な計算</text>
+      <text x="0" y="28" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• if文、for文</text>
+      <text x="0" y="41" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 文字列処理</text>
+      <text x="0" y="54" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 配列の基本</text>
+    </g>
+    
+    <rect x="60" y="255" width="80" height="15" rx="7" fill="#16A34A"/>
+    <text x="100" y="266" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">2-3分</text>
+  </g>
+  
+  <!-- Problem B -->
+  <g id="problem-b">
+    <rect x="170" y="160" width="100" height="120" rx="12" class="problem-b"/>
+    <text x="220" y="185" text-anchor="middle" class="problem-title">B問題</text>
+    <text x="220" y="205" text-anchor="middle" class="problem-subtitle">基礎</text>
+    
+    <g transform="translate(180, 215)">
+      <text x="0" y="15" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• ループ処理</text>
+      <text x="0" y="28" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 条件分岐</text>
+      <text x="0" y="41" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 配列操作</text>
+      <text x="0" y="54" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 簡単な論理</text>
+    </g>
+    
+    <rect x="180" y="255" width="80" height="15" rx="7" fill="#2563EB"/>
+    <text x="220" y="266" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">5-10分</text>
+  </g>
+  
+  <!-- Problem C -->
+  <g id="problem-c">
+    <rect x="290" y="160" width="100" height="120" rx="12" class="problem-c"/>
+    <text x="340" y="185" text-anchor="middle" class="problem-title">C問題</text>
+    <text x="340" y="205" text-anchor="middle" class="problem-subtitle">応用</text>
+    
+    <g transform="translate(300, 215)">
+      <text x="0" y="15" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• アルゴリズム</text>
+      <text x="0" y="28" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 全探索</text>
+      <text x="0" y="41" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• ソート活用</text>
+      <text x="0" y="54" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 貪欲法</text>
+    </g>
+    
+    <rect x="300" y="255" width="80" height="15" rx="7" fill="#D97706"/>
+    <text x="340" y="266" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">10-20分</text>
+  </g>
+  
+  <!-- Problem D -->
+  <g id="problem-d">
+    <rect x="410" y="160" width="100" height="120" rx="12" class="problem-d"/>
+    <text x="460" y="185" text-anchor="middle" class="problem-title">D問題</text>
+    <text x="460" y="205" text-anchor="middle" class="problem-subtitle">発展</text>
+    
+    <g transform="translate(420, 215)">
+      <text x="0" y="15" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• データ構造</text>
+      <text x="0" y="28" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 動的計画法</text>
+      <text x="0" y="41" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• グラフ基礎</text>
+      <text x="0" y="54" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 数学的思考</text>
+    </g>
+    
+    <rect x="420" y="255" width="80" height="15" rx="7" fill="#DC2626"/>
+    <text x="460" y="266" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">20-40分</text>
+  </g>
+  
+  <!-- Problem E -->
+  <g id="problem-e">
+    <rect x="530" y="160" width="100" height="120" rx="12" class="problem-e"/>
+    <text x="580" y="185" text-anchor="middle" class="problem-title">E問題</text>
+    <text x="580" y="205" text-anchor="middle" class="problem-subtitle">上級</text>
+    
+    <g transform="translate(540, 215)">
+      <text x="0" y="15" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 高度DP</text>
+      <text x="0" y="28" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• グラフ探索</text>
+      <text x="0" y="41" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 数論基礎</text>
+      <text x="0" y="54" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 複雑な実装</text>
+    </g>
+    
+    <rect x="540" y="255" width="80" height="15" rx="7" fill="#7C3AED"/>
+    <text x="580" y="266" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">30-60分</text>
+  </g>
+  
+  <!-- Problem F -->
+  <g id="problem-f">
+    <rect x="650" y="160" width="100" height="120" rx="12" class="problem-f"/>
+    <text x="700" y="185" text-anchor="middle" class="problem-title">F問題</text>
+    <text x="700" y="205" text-anchor="middle" class="problem-subtitle">最上級</text>
+    
+    <g transform="translate(660, 215)">
+      <text x="0" y="15" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 専門的知識</text>
+      <text x="0" y="28" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 高度数学</text>
+      <text x="0" y="41" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 難解実装</text>
+      <text x="0" y="54" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">• 研究レベル</text>
+    </g>
+    
+    <rect x="660" y="255" width="80" height="15" rx="7" fill="#DB2777"/>
+    <text x="700" y="266" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">60分+</text>
+  </g>
+  
+  <!-- Difficulty progression arrows -->
+  <path d="M150 220 L165 220" class="progress-arrow" marker-end="url(#arrow)"/>
+  <path d="M270 220 L285 220" class="progress-arrow" marker-end="url(#arrow)"/>
+  <path d="M390 220 L405 220" class="progress-arrow" marker-end="url(#arrow)"/>
+  <path d="M510 220 L525 220" class="progress-arrow" marker-end="url(#arrow)"/>
+  <path d="M630 220 L645 220" class="progress-arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Middle School Target Section -->
+  <g id="middle-school-targets">
+    <rect x="100" y="320" width="600" height="80" rx="12" fill="#F0FDF4" stroke="#22C55E" stroke-width="2"/>
+    <text x="120" y="345" class="emoji">🎯</text>
+    <text x="150" y="345" style="font: 600 16px Inter, sans-serif; fill: #15803D;">中学生の目標設定</text>
+    
+    <g transform="translate(120, 355)">
+      <rect x="0" y="0" width="120" height="25" rx="12" fill="#DCFCE7" stroke="#22C55E" stroke-width="2"/>
+      <text x="60" y="17" text-anchor="middle" style="font: 600 11px Inter, sans-serif; fill: #15803D;">初心者: A・B問題</text>
+      
+      <rect x="140" y="0" width="120" height="25" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+      <text x="200" y="17" text-anchor="middle" style="font: 600 11px Inter, sans-serif; fill: #D97706;">中級者: C問題まで</text>
+      
+      <rect x="280" y="0" width="120" height="25" rx="12" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+      <text x="340" y="17" text-anchor="middle" style="font: 600 11px Inter, sans-serif; fill: #DC2626;">上級者: D問題まで</text>
+      
+      <rect x="420" y="0" width="140" height="25" rx="12" fill="#F3E8FF" stroke="#8B5CF6" stroke-width="2"/>
+      <text x="490" y="17" text-anchor="middle" style="font: 600 11px Inter, sans-serif; fill: #7C3AED;">高校生で E・F は天才級</text>
+    </g>
+    
+    <text x="120" y="390" style="font: 400 12px Inter, sans-serif; fill: #4B5563;">💡 無理せず段階的に挑戦。AとBが確実に解けるようになってから次のレベルへ</text>
+  </g>
+  
+  <!-- Scoring System -->
+  <g id="scoring-system">
+    <rect x="100" y="440" width="600" height="60" rx="12" fill="#FEF7CD" stroke="#F59E0B" stroke-width="2"/>
+    <text x="120" y="465" class="emoji">📊</text>
+    <text x="150" y="465" style="font: 600 16px Inter, sans-serif; fill: #92400E;">配点システム</text>
+    
+    <g transform="translate(120, 475)">
+      <text x="0" y="15" style="font: 500 12px Inter, sans-serif; fill: #92400E;">A: 100点 → B: 200点 → C: 300点 → D: 400点 → E: 500点 → F: 600点</text>
+    </g>
+  </g>
+  
+  <!-- Bottom summary -->
+  <g transform="translate(100, 550)">
+    <text x="0" y="0" style="font: 600 14px Inter, sans-serif; fill: #059669;">
+      🏆 ABCは初心者から上級者まで段階的に成長できる理想的なコンテスト構成
+    </text>
+  </g>
+  
+</svg>

@@ -1,0 +1,175 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-1：AtCoderの全体像</title>
+  <desc>AtCoderプラットフォームの主要機能と特徴を包括的に示す概要図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .main-title { font: 600 18px Inter, sans-serif; fill: #FFFFFF; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .feature-title { font: 500 12px Inter, sans-serif; fill: #4B5563; }
+      .feature-desc { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      .badge { font: 500 10px Inter, sans-serif; fill: #FFFFFF; }
+      
+      .atcoder-main { fill: #FF6B6B; stroke: #E53E3E; stroke-width: 3; }
+      .contests { fill: #4ECDC4; stroke: #38B2AC; stroke-width: 2; }
+      .problems { fill: #45B7D1; stroke: #3182CE; stroke-width: 2; }
+      .community { fill: #96CEB4; stroke: #68D391; stroke-width: 2; }
+      .tools { fill: #FFEAA7; stroke: #F6E05E; stroke-width: 2; }
+      .educational { fill: #DDA0DD; stroke: #B794F6; stroke-width: 2; }
+      
+      .connector { stroke: #9CA3AF; stroke-width: 2; stroke-dasharray: 4,4; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-1：AtCoderの全体像</text>
+  
+  <!-- Central AtCoder Hub -->
+  <g id="atcoder-center">
+    <ellipse cx="400" cy="300" rx="120" ry="60" class="atcoder-main"/>
+    <text x="400" y="290" text-anchor="middle" class="main-title">AtCoder</text>
+    <text x="400" y="310" text-anchor="middle" style="font: 500 14px Inter, sans-serif; fill: #FFFFFF;">日本最大級の</text>
+    <text x="400" y="326" text-anchor="middle" style="font: 500 14px Inter, sans-serif; fill: #FFFFFF;">競技プログラミング</text>
+  </g>
+  
+  <!-- Contest Section (Top Left) -->
+  <g id="contests">
+    <rect x="60" y="80" width="200" height="120" rx="12" class="contests"/>
+    <text x="80" y="105" class="emoji">🏆</text>
+    <text x="110" y="105" class="section-title" fill="white">コンテスト</text>
+    
+    <g transform="translate(70, 115)">
+      <rect x="0" y="0" width="60" height="20" rx="10" fill="#2D3748"/>
+      <text x="30" y="14" text-anchor="middle" class="badge">ABC</text>
+      
+      <rect x="70" y="0" width="60" height="20" rx="10" fill="#2D3748"/>
+      <text x="100" y="14" text-anchor="middle" class="badge">ARC</text>
+      
+      <rect x="140" y="0" width="60" height="20" rx="10" fill="#2D3748"/>
+      <text x="170" y="14" text-anchor="middle" class="badge">AGC</text>
+      
+      <text x="0" y="40" class="feature-desc" fill="white">• 毎週末開催</text>
+      <text x="0" y="55" class="feature-desc" fill="white">• 段階的難易度</text>
+      <text x="0" y="70" class="feature-desc" fill="white">• リアルタイム競技</text>
+      <text x="0" y="85" class="feature-desc" fill="white">• 世界ランキング</text>
+    </g>
+  </g>
+  
+  <!-- Problems Section (Top Right) -->
+  <g id="problems">
+    <rect x="540" y="80" width="200" height="120" rx="12" class="problems"/>
+    <text x="560" y="105" class="emoji">📚</text>
+    <text x="590" y="105" class="section-title" fill="white">練習問題</text>
+    
+    <g transform="translate(550, 115)">
+      <text x="0" y="15" class="feature-desc" fill="white">• 過去問3000+ 問題</text>
+      <text x="0" y="30" class="feature-desc" fill="white">• 難易度別分類</text>
+      <text x="0" y="45" class="feature-desc" fill="white">• 詳細解説付き</text>
+      <text x="0" y="60" class="feature-desc" fill="white">• 段階的学習可能</text>
+      
+      <rect x="0" y="70" width="180" height="20" rx="4" fill="#2B6CB0" opacity="0.8"/>
+      <text x="90" y="83" text-anchor="middle" class="feature-desc" fill="white">AtCoder Problems 連携</text>
+    </g>
+  </g>
+  
+  <!-- Community Section (Bottom Left) -->
+  <g id="community">
+    <rect x="60" y="400" width="200" height="120" rx="12" class="community"/>
+    <text x="80" y="425" class="emoji">👥</text>
+    <text x="110" y="425" class="section-title" fill="white">コミュニティ</text>
+    
+    <g transform="translate(70, 435)">
+      <text x="0" y="15" class="feature-desc" fill="white">• 日本語サポート</text>
+      <text x="0" y="30" class="feature-desc" fill="white">• 質問・解説掲示板</text>
+      <text x="0" y="45" class="feature-desc" fill="white">• ユーザー同士の交流</text>
+      <text x="0" y="60" class="feature-desc" fill="white">• 企業・大学との連携</text>
+      
+      <circle cx="30" cy="80" r="8" fill="#22543D"/>
+      <text x="30" y="85" text-anchor="middle" class="badge">JP</text>
+      <text x="50" y="85" class="feature-desc" fill="white">日本語環境の安心感</text>
+    </g>
+  </g>
+  
+  <!-- Tools Section (Bottom Right) -->
+  <g id="tools">
+    <rect x="540" y="400" width="200" height="120" rx="12" class="tools"/>
+    <text x="560" y="425" class="emoji">🛠️</text>
+    <text x="590" y="425" class="section-title">学習支援ツール</text>
+    
+    <g transform="translate(550, 435)">
+      <text x="0" y="15" class="feature-desc">• レーティング分析</text>
+      <text x="0" y="30" class="feature-desc">• 進捗管理</text>
+      <text x="0" y="45" class="feature-desc">• 弱点診断</text>
+      <text x="0" y="60" class="feature-desc">• カスタマイズ可能</text>
+      
+      <rect x="0" y="70" width="80" height="18" rx="9" fill="#D69E2E"/>
+      <text x="40" y="82" text-anchor="middle" class="badge">分析</text>
+      
+      <rect x="90" y="70" width="80" height="18" rx="9" fill="#D69E2E"/>
+      <text x="130" y="82" text-anchor="middle" class="badge">統計</text>
+    </g>
+  </g>
+  
+  <!-- Educational Section (Middle Left) -->
+  <g id="educational">
+    <rect x="60" y="240" width="200" height="120" rx="12" class="educational"/>
+    <text x="80" y="265" class="emoji">📖</text>
+    <text x="110" y="265" class="section-title" fill="white">教育リソース</text>
+    
+    <g transform="translate(70, 275)">
+      <text x="0" y="15" class="feature-desc" fill="white">• アルゴリズム解説</text>
+      <text x="0" y="30" class="feature-desc" fill="white">• 実装テクニック</text>
+      <text x="0" y="45" class="feature-desc" fill="white">• 学習ロードマップ</text>
+      <text x="0" y="60" class="feature-desc" fill="white">• 動画・記事コンテンツ</text>
+      
+      <rect x="0" y="70" width="180" height="20" rx="4" fill="#553C9A" opacity="0.8"/>
+      <text x="90" y="83" text-anchor="middle" class="feature-desc" fill="white">中学生向けガイダンス充実</text>
+    </g>
+  </g>
+  
+  <!-- Rating System (Middle Right) -->
+  <g id="rating-system">
+    <rect x="540" y="240" width="200" height="120" rx="12" fill="#F7FAFC" stroke="#CBD5E0" stroke-width="2"/>
+    <text x="560" y="265" class="emoji">📊</text>
+    <text x="590" y="265" class="section-title">レーティングシステム</text>
+    
+    <g transform="translate(550, 275)">
+      <!-- Rating colors -->
+      <rect x="0" y="0" width="30" height="12" fill="#808080" rx="2"/>
+      <text x="35" y="10" class="feature-desc">灰色(〜399)</text>
+      
+      <rect x="0" y="16" width="30" height="12" fill="#8B5A2B" rx="2"/>
+      <text x="35" y="26" class="feature-desc">茶色(400〜799)</text>
+      
+      <rect x="0" y="32" width="30" height="12" fill="#008000" rx="2"/>
+      <text x="35" y="42" class="feature-desc">緑色(800〜1199)</text>
+      
+      <rect x="0" y="48" width="30" height="12" fill="#00C0C0" rx="2"/>
+      <text x="35" y="58" class="feature-desc">水色(1200〜1599)</text>
+      
+      <text x="0" y="80" class="feature-desc">成長が見える化される</text>
+      <text x="0" y="95" class="feature-desc">目標設定しやすい</text>
+    </g>
+  </g>
+  
+  <!-- Connection lines -->
+  <path d="M280 140 Q340 200 340 240" class="connector"/>
+  <path d="M520 140 Q460 200 460 240" class="connector"/>
+  <path d="M280 460 Q340 400 340 360" class="connector"/>
+  <path d="M520 460 Q460 400 460 360" class="connector"/>
+  <path d="M280 300 L340 300" class="connector"/>
+  <path d="M520 300 L460 300" class="connector"/>
+  
+  <!-- Bottom description -->
+  <g transform="translate(100, 560)">
+    <text x="0" y="0" style="font: 600 12px Inter, sans-serif; fill: #059669;">
+      🌟 すべてが日本語で、中学生でも安心して始められる包括的プラットフォーム
+    </text>
+  </g>
+  
+</svg>

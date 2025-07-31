@@ -1,0 +1,140 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-5：AtCoderアカウント作成の全体の流れ</title>
+  <desc>AtCoderのアカウント作成プロセスを段階的に示すフローチャート図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .step-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .step-desc { font: 400 12px Inter, sans-serif; fill: #4B5563; }
+      .button-text { font: 600 12px Inter, sans-serif; fill: #FFFFFF; }
+      .note-text { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .step1 { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .step2 { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .step3 { fill: #D1FAE5; stroke: #10B981; stroke-width: 2; }
+      .step4 { fill: #FCE7F3; stroke: #EC4899; stroke-width: 2; }
+      .step5 { fill: #EDE9FE; stroke: #8B5CF6; stroke-width: 2; }
+      
+      .button { fill: #3B82F6; stroke: #2563EB; stroke-width: 2; }
+      .arrow { stroke: #10B981; stroke-width: 3; fill: none; }
+      .warning { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-5：AtCoderアカウント作成の全体の流れ</text>
+  
+  <!-- Step 1: Start -->
+  <g id="step1">
+    <rect x="50" y="80" width="140" height="80" rx="12" class="step1"/>
+    <text x="70" y="105" class="emoji">🌐</text>
+    <text x="100" y="105" class="step-title">1. サイトアクセス</text>
+    <text x="60" y="125" class="step-desc">atcoder.jp</text>
+    <text x="60" y="140" class="step-desc">にアクセス</text>
+    
+    <rect x="70" y="145" width="100" height="25" rx="12" class="button"/>
+    <text x="120" y="161" text-anchor="middle" class="button-text">Sign Up</text>
+  </g>
+  
+  <!-- Step 2: Registration Form -->
+  <g id="step2">
+    <rect x="250" y="60" width="160" height="120" rx="12" class="step2"/>
+    <text x="270" y="85" class="emoji">📝</text>
+    <text x="300" y="85" class="step-title">2. 基本情報入力</text>
+    
+    <g transform="translate(260, 95)">
+      <text x="0" y="15" class="step-desc">• ユーザー名（英数字）</text>
+      <text x="0" y="30" class="step-desc">• メールアドレス</text>
+      <text x="0" y="45" class="step-desc">• パスワード（8文字以上）</text>
+      <text x="0" y="60" class="step-desc">• パスワード確認</text>
+      
+      <rect x="0" y="70" width="120" height="20" rx="10" class="button"/>
+      <text x="60" y="83" text-anchor="middle" class="button-text">Register</text>
+    </g>
+  </g>
+  
+  <!-- Step 3: Email Verification -->
+  <g id="step3">
+    <rect x="470" y="80" width="140" height="80" rx="12" class="step3"/>
+    <text x="490" y="105" class="emoji">📧</text>
+    <text x="520" y="105" class="step-title">3. メール認証</text>
+    <text x="480" y="125" class="step-desc">確認メールを</text>
+    <text x="480" y="140" class="step-desc">チェック</text>
+    
+    <rect x="490" y="145" width="100" height="25" rx="12" class="button"/>
+    <text x="540" y="161" text-anchor="middle" class="button-text">認証完了</text>
+  </g>
+  
+  <!-- Step 4: Profile Setup -->
+  <g id="step4">
+    <rect x="300" y="250" width="160" height="100" rx="12" class="step4"/>
+    <text x="320" y="275" class="emoji">👤</text>
+    <text x="350" y="275" class="step-title">4. プロフィール設定</text>
+    
+    <g transform="translate(310, 285)">
+      <text x="0" y="15" class="step-desc">• 表示名（日本語OK）</text>
+      <text x="0" y="30" class="step-desc">• 所属（任意）</text>
+      <text x="0" y="45" class="step-desc">• 自己紹介（任意）</text>
+      <text x="0" y="60" class="step-desc">• アイコン画像（任意）</text>
+    </g>
+  </g>
+  
+  <!-- Step 5: Complete -->
+  <g id="step5">
+    <rect x="300" y="400" width="160" height="80" rx="12" class="step5"/>
+    <text x="320" y="425" class="emoji">🎉</text>
+    <text x="350" y="425" class="step-title">5. 登録完了</text>
+    <text x="310" y="445" class="step-desc">AtCoderの世界へ</text>
+    <text x="310" y="460" class="step-desc">ようこそ！</text>
+    
+    <rect x="320" y="465" width="120" height="25" rx="12" style="fill: #10B981; stroke: #059669; stroke-width: 2;"/>
+    <text x="380" y="481" text-anchor="middle" class="button-text">開始</text>
+  </g>
+  
+  <!-- Arrows -->
+  <path d="M190 120 L240 120" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M410 120 L460 120" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M540 180 Q540 220 460 280" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M380 350 L380 390" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Warning/Tips Section -->
+  <g id="tips">
+    <rect x="50" y="250" width="200" height="120" rx="12" class="warning"/>
+    <text x="70" y="275" class="emoji">⚠️</text>
+    <text x="100" y="275" class="step-title" style="fill: #DC2626;">注意点とコツ</text>
+    
+    <g transform="translate(60, 285)">
+      <text x="0" y="15" class="note-text">• ユーザー名は後から変更不可</text>
+      <text x="0" y="28" class="note-text">• 短くて覚えやすい名前推奨</text>
+      <text x="0" y="41" class="note-text">• メールアドレスは普段使いを</text>
+      <text x="0" y="54" class="note-text">• パスワードは強固なものを</text>
+      <text x="0" y="67" class="note-text">• 迷惑メールフォルダも確認</text>
+      <text x="0" y="80" class="note-text">• プロフィールは後で編集可能</text>
+    </g>
+  </g>
+  
+  <!-- Time indication -->
+  <g transform="translate(600, 250)">
+    <rect x="0" y="0" width="140" height="60" rx="12" fill="#F3F4F6" stroke="#D1D5DB" stroke-width="2"/>
+    <text x="20" y="25" class="emoji">⏰</text>
+    <text x="50" y="25" class="step-title">所要時間</text>
+    <text x="10" y="45" style="font: 600 14px Inter, sans-serif; fill: #3B82F6;">約5〜10分</text>
+  </g>
+  
+  <!-- Bottom summary -->
+  <g transform="translate(100, 550)">
+    <text x="0" y="0" style="font: 600 14px Inter, sans-serif; fill: #059669;">
+      💡 簡単5ステップで、今すぐAtCoderの競技プログラミングの世界に参加できます
+    </text>
+  </g>
+  
+</svg>
