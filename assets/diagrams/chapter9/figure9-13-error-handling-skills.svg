@@ -1,0 +1,161 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図9-13：この章で身につけたエラー対応力</title>
+  <desc>第9章で習得したエラー対応スキルの体系的まとめ</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    この章で身につけたエラー対応力
+  </text>
+  
+  <!-- 中央の核心スキル -->
+  <ellipse cx="400" cy="180" rx="120" ry="60" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="3"/>
+  <text x="400" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">
+    🎯 エラー対応の
+  </text>
+  <text x="400" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">
+    体系的思考法
+  </text>
+  <text x="400" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    感情的にならず論理的に分析する力
+  </text>
+  
+  <!-- 6つの主要スキル（円周配置） -->
+  
+  <!-- 1. コンパイルエラー対応 (上左) -->
+  <rect x="80" y="60" width="200" height="80" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="180" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🔧 コンパイルエラー対応
+  </text>
+  <text x="85" y="92" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • エラーメッセージの正確な読解
+  </text>
+  <text x="85" y="102" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • 構文エラーの迅速な特定と修正
+  </text>
+  <text x="85" y="112" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • 型の不整合やインポートミスの解決
+  </text>
+  <text x="85" y="122" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+    → 基本的なコードが確実に動く力
+  </text>
+  
+  <!-- 2. Wrong Answer対応 (上右) -->
+  <rect x="520" y="60" width="200" height="80" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="620" y="78" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    📝 Wrong Answer対応
+  </text>
+  <text x="525" y="92" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • 出力形式の厳密な確認
+  </text>
+  <text x="525" y="102" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • デバッグ出力による段階的検証
+  </text>
+  <text x="525" y="112" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • エッジケースの網羅的テスト
+  </text>
+  <text x="525" y="122" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+    → ロジックの正確性を保証する力
+  </text>
+  
+  <!-- 3. TLE対応 (右) -->
+  <rect x="600" y="280" width="180" height="80" rx="8" fill="#d1fae5" stroke="#22c55e" stroke-width="2"/>
+  <text x="690" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    ⚡ TLE対応
+  </text>
+  <text x="605" y="312" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • 計算量の理論的分析
+  </text>
+  <text x="605" y="322" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • アルゴリズムの根本的改善
+  </text>
+  <text x="605" y="332" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • 実装レベルでの最適化
+  </text>
+  <text x="605" y="342" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+    → 効率的な解法を構築する力
+  </text>
+  
+  <!-- 4. MLE/RE対応 (下右) -->
+  <rect x="520" y="480" width="200" height="80" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+  <text x="620" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7c3aed">
+    🧠 MLE/Runtime Error対応
+  </text>
+  <text x="525" y="512" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • メモリ使用量の見積もりと管理
+  </text>
+  <text x="525" y="522" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • 配列の境界チェック
+  </text>
+  <text x="525" y="532" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • 例外処理とエラーハンドリング
+  </text>
+  <text x="525" y="542" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+    → 安全で堅牢なコードを書く力
+  </text>
+  
+  <!-- 5. デバッグ技術 (下左) -->
+  <rect x="80" y="480" width="200" height="80" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="180" y="498" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#059669">
+    🔍 デバッグ技術
+  </text>
+  <text x="85" y="512" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • print文を活用した状態確認
+  </text>
+  <text x="85" y="522" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • 段階的な動作検証
+  </text>
+  <text x="85" y="532" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • 仮説検証による原因特定
+  </text>
+  <text x="85" y="542" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+    → 問題を迅速に発見し修正する力
+  </text>
+  
+  <!-- 6. 問題解決思考 (左) -->
+  <rect x="20" y="280" width="180" height="80" rx="8" fill="#fdf2f8" stroke="#ec4899" stroke-width="2"/>
+  <text x="110" y="298" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#be185d">
+    💡 問題解決思考
+  </text>
+  <text x="25" y="312" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • エラーを学習機会として捉える
+  </text>
+  <text x="25" y="322" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • 体系的なアプローチの実践
+  </text>
+  <text x="25" y="332" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+    • 再発防止策の構築
+  </text>
+  <text x="25" y="342" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+    → 継続的な成長を実現する力
+  </text>
+  
+  <!-- 中央から各スキルへの接続線 -->
+  <path d="M320 140 L250 120" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M480 140 L550 120" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M500 200 L580 280" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M480 220 L550 460" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M320 220 L250 460" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M300 200 L220 280" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 成長のイメージ -->
+  <rect x="50" y="580" width="700" height="60" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="598" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">
+    🌟 エラー対応力の成長プロセス
+  </text>
+  <text x="400" y="614" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    エラーに遭遇 → 体系的分析 → 根本原因特定 → 的確な修正 → 知識として蓄積
+  </text>
+  <text x="400" y="628" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    「エラーは敵」から「エラーは成長の機会」への意識転換が完了！
+  </text>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#374151"/>
+    </marker>
+  </defs>
+</svg>

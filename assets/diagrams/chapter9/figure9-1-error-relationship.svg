@@ -1,0 +1,166 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図9-1：エラーメッセージとの正しい関係</title>
+  <desc>初心者と上級者のエラーメッセージに対するアプローチの違い</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    エラーメッセージとの正しい関係
+  </text>
+  
+  <!-- 初心者の関係（左側） -->
+  <rect x="50" y="70" width="320" height="440" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="210" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#dc2626">
+    😱 初心者の頃のエラーとの関係
+  </text>
+  
+  <!-- 初心者フロー -->
+  <g id="beginner-flow">
+    <!-- ステップ1: エラー発生 -->
+    <rect x="80" y="110" width="260" height="50" rx="6" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="210" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+      💥 エラーが出た！
+    </text>
+    <text x="210" y="144" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+      「なんか赤い文字が出てる...」
+    </text>
+    
+    <!-- 矢印1 -->
+    <path d="M210 160 L210 180" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#arrowhead-red)"/>
+    
+    <!-- ステップ2: パニック -->
+    <rect x="80" y="180" width="260" height="50" rx="6" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="210" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+      😰 パニック・諦めモード
+    </text>
+    <text x="210" y="214" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+      「エラーメッセージは読めない」
+    </text>
+    
+    <!-- 矢印2 -->
+    <path d="M210 230 L210 250" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#arrowhead-red)"/>
+    
+    <!-- ステップ3: なんとなく修正 -->
+    <rect x="80" y="250" width="260" height="50" rx="6" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="210" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+      🔧 なんとなく修正
+    </text>
+    <text x="210" y="284" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+      「とりあえず何か変えてみる」
+    </text>
+    
+    <!-- 矢印3 -->
+    <path d="M210 300 L210 320" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#arrowhead-red)"/>
+    
+    <!-- ステップ4: また別のエラー -->
+    <rect x="80" y="320" width="260" height="50" rx="6" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="210" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+      ❌ また別のエラー...
+    </text>
+    <text x="210" y="354" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+      「修正したのに今度は違うエラー」
+    </text>
+    
+    <!-- 矢印4 -->
+    <path d="M210 370 L210 390" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#arrowhead-red)"/>
+    
+    <!-- ステップ5: 無限ループ -->
+    <rect x="80" y="390" width="260" height="50" rx="6" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="210" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+      😵 無限ループ
+    </text>
+    <text x="210" y="424" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+      「いつまでたっても解決しない」
+    </text>
+    
+    <!-- 戻る矢印 -->
+    <path d="M340 415 Q370 415 370 135 Q370 135 340 135" stroke="#dc2626" stroke-width="2" fill="none" marker-end="url(#arrowhead-red)" stroke-dasharray="4,4"/>
+  </g>
+  
+  <!-- 上級者の関係（右側） -->
+  <rect x="430" y="70" width="320" height="440" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="590" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#16a34a">
+    😊 上級者のエラーとの関係
+  </text>
+  
+  <!-- 上級者フロー -->
+  <g id="expert-flow">
+    <!-- ステップ1: エラー発生 -->
+    <rect x="460" y="110" width="260" height="50" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="590" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      💥 エラーが出た！
+    </text>
+    <text x="590" y="144" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+      「同じエラーはもう見たことがある」
+    </text>
+    
+    <!-- 矢印1 -->
+    <path d="M590 160 L590 180" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)"/>
+    
+    <!-- ステップ2: ポジティブ反応 -->
+    <rect x="460" y="180" width="260" height="50" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="590" y="198" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      💡 「よし、ヒントをもらった！」
+    </text>
+    <text x="590" y="214" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+      「エラーは問題箇所を教えてくれる」
+    </text>
+    
+    <!-- 矢印2 -->
+    <path d="M590 230 L590 250" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)"/>
+    
+    <!-- ステップ3: エラーメッセージ読解 -->
+    <rect x="460" y="250" width="260" height="50" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="590" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      🔍 エラーメッセージを読解
+    </text>
+    <text x="590" y="284" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+      「行番号と原因を特定する」
+    </text>
+    
+    <!-- 矢印3 -->
+    <path d="M590 300 L590 320" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)"/>
+    
+    <!-- ステップ4: 的確な修正 -->
+    <rect x="460" y="320" width="260" height="50" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="590" y="338" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      🎯 原因を特定して的確に修正
+    </text>
+    <text x="590" y="354" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+      「根本原因に対してピンポイント修正」
+    </text>
+    
+    <!-- 矢印4 -->
+    <path d="M590 370 L590 390" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)"/>
+    
+    <!-- ステップ5: 問題解決 -->
+    <rect x="460" y="390" width="260" height="50" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="590" y="408" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      😄 問題解決！スキルアップ！
+    </text>
+    <text x="590" y="424" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+      「同じエラーはもう怖くない」
+    </text>
+  </g>
+  
+  <!-- 比較ポイント -->
+  <rect x="50" y="530" width="700" height="50" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">
+    🔑 違いのポイント
+  </text>
+  <text x="400" y="564" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    感情的反応 vs 論理的分析 | 当て推量 vs 原因究明 | 繰り返し vs 学習による成長
+  </text>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+  </defs>
+</svg>
