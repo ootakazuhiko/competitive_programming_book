@@ -1,0 +1,190 @@
+<svg viewBox="0 0 850 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-4：技術者としての成長パターン</title>
+  <desc>初級から上級まで、技術者として成長する各段階での役割、責任、スキル要件の変化を示すキャリア発展図</desc>
+  
+  <!-- Background -->
+  <rect width="850" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="425" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    技術者としての成長パターン
+  </text>
+  
+  <!-- Timeline arrow -->
+  <path d="M 80 80 L 80 850" stroke="#64748b" stroke-width="4" fill="none"/>
+  <text x="50" y="75" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569" transform="rotate(-90, 50, 75)">経験年数・成長段階</text>
+  
+  <!-- Junior Engineer (0-2 years) -->
+  <circle cx="80" cy="150" r="12" fill="#3b82f6"/>
+  <rect x="120" y="100" width="700" height="160" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="150" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e40af">
+    👶 ジュニアエンジニア（0-2年）
+  </text>
+  
+  <!-- Junior skills and responsibilities -->
+  <rect x="140" y="140" width="220" height="110" rx="4" fill="#white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="250" y="160" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">🛠️ 主な役割・責任</text>
+  <text x="150" y="180" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="150" dy="0">• 指示に従った機能実装</tspan>
+    <tspan x="150" dy="12">• コードレビューでの学習</tspan>
+    <tspan x="150" dy="12">• 基本的なバグ修正</tspan>
+    <tspan x="150" dy="12">• テストコードの作成</tspan>
+    <tspan x="150" dy="12">• 技術の基礎習得</tspan>
+    <tspan x="150" dy="12">• ドキュメント作成・更新</tspan>
+  </text>
+  
+  <rect x="380" y="140" width="220" height="110" rx="4" fill="#white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="490" y="160" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">💪 必要なスキル</text>
+  <text x="390" y="180" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="390" dy="0">• プログラミング言語習得</tspan>
+    <tspan x="390" dy="12">• 基本的なアルゴリズム理解</tspan>
+    <tspan x="390" dy="12">• 開発ツール・環境の操作</tspan>
+    <tspan x="390" dy="12">• バージョン管理（Git）</tspan>
+    <tspan x="390" dy="12">• 学習意欲・好奇心</tspan>
+    <tspan x="390" dy="12">• チームワーク・コミュニケーション</tspan>
+  </text>
+  
+  <rect x="620" y="140" width="180" height="110" rx="4" fill="#white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="710" y="160" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">🎯 成長目標</text>
+  <text x="630" y="180" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="630" dy="0">• 一人で機能実装完了</tspan>
+    <tspan x="630" dy="12">• コードの品質向上</tspan>
+    <tspan x="630" dy="12">• 技術的な質問能力</tspan>
+    <tspan x="630" dy="12">• 効率的な学習習慣</tspan>
+    <tspan x="630" dy="12">• 基本設計の理解</tspan>
+  </text>
+  
+  <!-- Mid-level Engineer (3-5 years) -->
+  <circle cx="80" cy="330" r="12" fill="#10b981"/>
+  <rect x="120" y="280" width="700" height="160" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="150" y="305" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#065f46">
+    🚀 ミドルエンジニア（3-5年）
+  </text>
+  
+  <!-- Mid-level skills and responsibilities -->
+  <rect x="140" y="320" width="220" height="110" rx="4" fill="#white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="250" y="340" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065f46">🛠️ 主な役割・責任</text>
+  <text x="150" y="360" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    <tspan x="150" dy="0">• 要件から設計・実装まで担当</tspan>
+    <tspan x="150" dy="12">• 複雑な機能の開発リード</tspan>
+    <tspan x="150" dy="12">• 後輩の指導・メンタリング</tspan>
+    <tspan x="150" dy="12">• 技術選定への参画</tspan>
+    <tspan x="150" dy="12">• パフォーマンス改善</tspan>
+    <tspan x="150" dy="12">• コードレビューの実施</tspan>
+  </text>
+  
+  <rect x="380" y="320" width="220" height="110" rx="4" fill="#white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="490" y="340" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065f46">💪 必要なスキル</text>
+  <text x="390" y="360" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    <tspan x="390" dy="0">• 複数技術スタックの習得</tspan>
+    <tspan x="390" dy="12">• システム設計・アーキテクチャ</tspan>
+    <tspan x="390" dy="12">• データベース設計・最適化</tspan>
+    <tspan x="390" dy="12">• テスト戦略・品質管理</tspan>
+    <tspan x="390" dy="12">• 指導力・リーダーシップ</tspan>
+    <tspan x="390" dy="12">• プロジェクト管理基礎</tspan>
+  </text>
+  
+  <rect x="620" y="320" width="180" height="110" rx="4" fill="#white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="710" y="340" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065f46">🎯 成長目標</text>
+  <text x="630" y="360" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    <tspan x="630" dy="0">• 技術的な判断力向上</tspan>
+    <tspan x="630" dy="12">• チーム貢献度拡大</tspan>
+    <tspan x="630" dy="12">• 専門分野の確立</tspan>
+    <tspan x="630" dy="12">• 後輩育成スキル</tspan>
+    <tspan x="630" dy="12">• 業務効率化推進</tspan>
+  </text>
+  
+  <!-- Senior Engineer (5-7 years) -->
+  <circle cx="80" cy="510" r="12" fill="#f59e0b"/>
+  <rect x="120" y="460" width="700" height="160" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="150" y="485" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#92400e">
+    🌟 シニアエンジニア（5-7年）
+  </text>
+  
+  <!-- Senior skills and responsibilities -->
+  <rect x="140" y="500" width="220" height="110" rx="4" fill="#white" stroke="#fde68a" stroke-width="1"/>
+  <text x="250" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">🛠️ 主な役割・責任</text>
+  <text x="150" y="540" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="150" dy="0">• システム全体の技術責任</tspan>
+    <tspan x="150" dy="12">• アーキテクチャ設計・技術選定</tspan>
+    <tspan x="150" dy="12">• 複数プロジェクトの横断的支援</tspan>
+    <tspan x="150" dy="12">• 技術的課題の解決リード</tspan>
+    <tspan x="150" dy="12">• 後輩の指導・メンタリング</tspan>
+    <tspan x="150" dy="12">• 技術標準・ベストプラクティス策定</tspan>
+  </text>
+  
+  <rect x="380" y="500" width="220" height="110" rx="4" fill="#white" stroke="#fde68a" stroke-width="1"/>
+  <text x="490" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">💪 必要なスキル</text>
+  <text x="390" y="540" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="390" dy="0">• 深い専門知識・幅広い技術理解</tspan>
+    <tspan x="390" dy="12">• システム全体の俯瞰力</tspan>
+    <tspan x="390" dy="12">• 技術トレンドの把握・評価</tspan>
+    <tspan x="390" dy="12">• リーダーシップ・影響力</tspan>
+    <tspan x="390" dy="12">• ビジネス理解・顧客志向</tspan>
+    <tspan x="390" dy="12">• 組織運営・人材育成</tspan>
+  </text>
+  
+  <rect x="620" y="500" width="180" height="110" rx="4" fill="#white" stroke="#fde68a" stroke-width="1"/>
+  <text x="710" y="520" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">🎯 成長目標</text>
+  <text x="630" y="540" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="630" dy="0">• 技術戦略の立案・推進</tspan>
+    <tspan x="630" dy="12">• 組織全体への影響力</tspan>
+    <tspan x="630" dy="12">• 次世代リーダー育成</tspan>
+    <tspan x="630" dy="12">• イノベーション創出</tspan>
+    <tspan x="630" dy="12">• 外部発信・業界貢献</tspan>
+  </text>
+  
+  <!-- Tech Lead/Architect (7+ years) -->
+  <circle cx="80" cy="690" r="12" fill="#8b5cf6"/>
+  <rect x="120" y="640" width="700" height="160" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="150" y="665" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#6b21a8">
+    👑 テックリード・アーキテクト（7年以上）
+  </text>
+  
+  <!-- Tech Lead skills and responsibilities -->
+  <rect x="140" y="680" width="220" height="110" rx="4" fill="#white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="250" y="700" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">🛠️ 主な役割・責任</text>
+  <text x="150" y="720" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="150" dy="0">• 組織の技術戦略立案・推進</tspan>
+    <tspan x="150" dy="12">• 複数チームの技術的統括</tspan>
+    <tspan x="150" dy="12">• 新技術調査・導入判断</tspan>
+    <tspan x="150" dy="12">• 技術的リスク管理</tspan>
+    <tspan x="150" dy="12">• エンジニア組織の設計・改善</tspan>
+    <tspan x="150" dy="12">• 採用・評価・育成制度構築</tspan>
+  </text>
+  
+  <rect x="380" y="680" width="220" height="110" rx="4" fill="#white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="490" y="700" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">💪 必要なスキル</text>
+  <text x="390" y="720" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="390" dy="0">• 最新技術の深い理解・評価力</tspan>
+    <tspan x="390" dy="12">• 経営・事業戦略の理解</tspan>
+    <tspan x="390" dy="12">• 組織設計・人材マネジメント</tspan>
+    <tspan x="390" dy="12">• ステークホルダー調整力</tspan>
+    <tspan x="390" dy="12">• 長期的視点・戦略思考</tspan>
+    <tspan x="390" dy="12">• 外部発信・業界でのプレゼンス</tspan>
+  </text>
+  
+  <rect x="620" y="680" width="180" height="110" rx="4" fill="#white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="710" y="700" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">🎯 成長目標</text>
+  <text x="630" y="720" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="630" dy="0">• 組織全体の技術力向上</tspan>
+    <tspan x="630" dy="12">• 業界でのソートリーダー</tspan>
+    <tspan x="630" dy="12">• 次世代技術者の輩出</tspan>
+    <tspan x="630" dy="12">• イノベーション創出</tspan>
+    <tspan x="630" dy="12">• 社会貢献・価値創造</tspan>
+  </text>
+  
+  <!-- Career branching paths -->
+  <rect x="120" y="820" width="700" height="60" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="470" y="840" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#334155">
+    🚀 キャリア発展の多様なパス
+  </text>
+  <text x="140" y="860" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    <tspan x="140" dy="0">🎯 スペシャリスト志向：特定技術分野での深い専門性を追求</tspan>
+    <tspan x="450" dy="0">👥 マネジメント志向：組織運営・人材育成にフォーカス</tspan>
+  </text>
+  <text x="140" y="875" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    <tspan x="140" dy="0">🚀 起業・独立志向：技術力をベースとした事業創出</tspan>
+    <tspan x="450" dy="0">🌟 複合型志向：技術・マネジメント・事業を統合的に活用</tspan>
+  </text>
+</svg>

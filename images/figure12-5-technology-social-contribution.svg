@@ -1,0 +1,144 @@
+<svg viewBox="0 0 900 850" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-5：社会貢献への技術活用</title>
+  <desc>競技プログラミングで培った技術力を社会課題解決や価値創造にどのように活用できるかを示すアプリケーション図</desc>
+  
+  <!-- Background -->
+  <rect width="900" height="850" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    社会貢献への技術活用
+  </text>
+  
+  <!-- Central technology core -->
+  <circle cx="450" cy="130" r="50" fill="#16a34a" stroke="#15803d" stroke-width="4"/>
+  <text x="450" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    技術による
+  </text>
+  <text x="450" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    社会価値創造
+  </text>
+  <text x="450" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    Social Impact
+  </text>
+  
+  <!-- Connection lines -->
+  <path d="M 410 165 L 200 280" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 450 180 L 450 280" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 490 165 L 700 280" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 420 175 L 250 500" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 480 175 L 650 500" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <!-- Education & Learning Support -->
+  <rect x="50" y="300" width="250" height="140" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="175" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    📚 教育・学習支援
+  </text>
+  <text x="70" y="350" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="70" dy="0">🎯 解決する課題：</tspan>
+    <tspan x="80" dy="16">• 教育格差・学習機会の不平等</tspan>
+    <tspan x="80" dy="14">• 個別最適化された学習の不足</tspan>
+    <tspan x="80" dy="14">• プログラミング教育の普及</tspan>
+    <tspan x="70" dy="20">💡 技術活用例：</tspan>
+    <tspan x="80" dy="16">• オンライン学習プラットフォーム開発</tspan>
+    <tspan x="80" dy="14">• AI個別指導システム</tspan>
+    <tspan x="80" dy="14">• プログラミング教材・ツール作成</tspan>
+    <tspan x="80" dy="14">• 学習効果測定・分析システム</tspan>
+  </text>
+  
+  <!-- Healthcare & Medical -->
+  <rect x="325" y="300" width="250" height="140" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="450" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#065f46">
+    🏥 医療・ヘルスケア
+  </text>
+  <text x="345" y="350" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    <tspan x="345" dy="0">🎯 解決する課題：</tspan>
+    <tspan x="355" dy="16">• 医療アクセスの地域格差</tspan>
+    <tspan x="355" dy="14">• 診断精度の向上・効率化</tspan>
+    <tspan x="355" dy="14">• 個別最適医療の実現</tspan>
+    <tspan x="345" dy="20">💡 技術活用例：</tspan>
+    <tspan x="355" dy="16">• 画像診断AI・診断支援システム</tspan>
+    <tspan x="355" dy="14">• 遠隔医療プラットフォーム</tspan>
+    <tspan x="355" dy="14">• 薬物相互作用予測システム</tspan>
+    <tspan x="355" dy="14">• 健康データ管理・分析ツール</tspan>
+  </text>
+  
+  <!-- Environment & Sustainability -->
+  <rect x="600" y="300" width="250" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="725" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🌍 環境・持続可能性
+  </text>
+  <text x="620" y="350" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+    <tspan x="620" dy="0">🎯 解決する課題：</tspan>
+    <tspan x="630" dy="16">• 気候変動・環境破壊</tspan>
+    <tspan x="630" dy="14">• エネルギー効率の最適化</tspan>
+    <tspan x="630" dy="14">• 持続可能な社会システム構築</tspan>
+    <tspan x="620" dy="20">💡 技術活用例：</tspan>
+    <tspan x="630" dy="16">• 環境データ監視・予測システム</tspan>
+    <tspan x="630" dy="14">• スマートグリッド・省エネ最適化</tspan>
+    <tspan x="630" dy="14">• 災害予測・早期警報システム</tspan>
+    <tspan x="630" dy="14">• 循環経済支援プラットフォーム</tspan>
+  </text>
+  
+  <!-- Social Welfare & Accessibility -->
+  <rect x="150" y="520" width="250" height="140" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="275" y="545" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🤝 社会福祉・アクセシビリティ
+  </text>
+  <text x="170" y="570" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">
+    <tspan x="170" dy="0">🎯 解決する課題：</tspan>
+    <tspan x="180" dy="16">• 高齢化社会・介護人材不足</tspan>
+    <tspan x="180" dy="14">• 障がい者の社会参加促進</tspan>
+    <tspan x="180" dy="14">• 地域コミュニティの活性化</tspan>
+    <tspan x="170" dy="20">💡 技術活用例：</tspan>
+    <tspan x="180" dy="16">• 高齢者見守り・介護支援システム</tspan>
+    <tspan x="180" dy="14">• 障がい者向け支援技術開発</tspan>
+    <tspan x="180" dy="14">• 地域情報共有プラットフォーム</tspan>
+    <tspan x="180" dy="14">• バリアフリー・UD技術</tspan>
+  </text>
+  
+  <!-- Economic Development & Innovation -->
+  <rect x="450" y="520" width="250" height="140" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="575" y="545" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    💰 経済発展・イノベーション
+  </text>
+  <text x="470" y="570" font-family="Arial, sans-serif" font-size="12" fill="#15803d">
+    <tspan x="470" dy="0">🎯 解決する課題：</tspan>
+    <tspan x="480" dy="16">• 地域経済の活性化</tspan>
+    <tspan x="480" dy="14">• 中小企業のDX支援</tspan>
+    <tspan x="480" dy="14">• 新産業・雇用創出</tspan>
+    <tspan x="470" dy="20">💡 技術活用例：</tspan>
+    <tspan x="480" dy="16">• 地域特産品ECプラットフォーム</tspan>
+    <tspan x="480" dy="14">• 中小企業向けSaaSツール</tspan>
+    <tspan x="480" dy="14">• フィンテック・決済システム</tspan>
+    <tspan x="480" dy="14">• 起業支援・マッチングサービス</tspan>
+  </text>
+  
+  <!-- Implementation approaches -->
+  <rect x="50" y="690" width="800" height="140" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="450" y="715" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#334155">
+    🚀 社会貢献実現のアプローチ
+  </text>
+  
+  <!-- Left column approaches -->
+  <rect x="80" y="735" width="350" height="85" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="255" y="755" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">👥 組織・コミュニティ活動</text>
+  <text x="90" y="775" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="90" dy="0">• NPO・NGOでのボランティア技術支援</tspan>
+    <tspan x="90" dy="12">• オープンソースプロジェクトへの貢献</tspan>
+    <tspan x="90" dy="12">• 技術コミュニティでの知識共有・指導</tspan>
+    <tspan x="90" dy="12">• プログラミング教育・ワークショップ開催</tspan>
+    <tspan x="90" dy="12">• 地域のDX・IT化支援活動</tspan>
+  </text>
+  
+  <!-- Right column approaches -->
+  <rect x="470" y="735" width="350" height="85" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="645" y="755" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">🏢 事業・キャリア活動</text>
+  <text x="480" y="775" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="480" dy="0">• 社会課題解決型スタートアップの創業</tspan>
+    <tspan x="480" dy="12">• 企業のCSR・SDGs推進技術責任者</tspan>
+    <tspan x="480" dy="12">• 社会インパクト投資・評価の技術アドバイザー</tspan>
+    <tspan x="480" dy="12">• 行政・自治体のDX推進コンサルタント</tspan>
+    <tspan x="480" dy="12">• 国際機関・ODAプロジェクトの技術専門家</tspan>
+  </text>
+</svg>
