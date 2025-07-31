@@ -1,59 +1,69 @@
 {
-  "title": "競技プログラミング実践ガイド",
-  "description": "アルゴリズムとデータ構造を実装で学ぶ実戦形式の技術書",
+  "title": "中学生向け競技プログラミング入門書",
+  "description": "Scratchから次のステップへ - 楽しく学ぶ競技プログラミングの世界",
   "author": "ITDO Inc.（株式会社アイティードゥ）",
   "version": "1.0.0",
   "structure": {
     "chapters": [
       {
         "id": "introduction",
-        "title": "第1章：競技プログラミングの世界",
-        "description": "競技プログラミングとは何か、キャリアへの影響と実務での活用法、学習戦略とマインドセット"
+        "title": "第1章：競技プログラミングの世界", 
+        "description": "競技プログラミングとは何か、中学生にとっての価値と魅力"
       },
       {
         "id": "environment-setup",
-        "title": "第2章：環境構築と基本戦略",
-        "description": "開発環境のセットアップ、コンテスト参加の流れ、時間配分と問題選択戦略"
+        "title": "第2章：AtCoderへの第一歩",
+        "description": "AtCoderアカウント作成から最初のコンテスト参加まで"
       },
       {
-        "id": "basic-data-structures",
-        "title": "第3章：基本データ構造の実装",
-        "description": "配列・文字列操作、スタック・キュー、連想配列・集合の実装と活用"
+        "id": "programming-environment",
+        "title": "第3章：プログラミング環境を整えよう",
+        "description": "Pythonのインストールと開発環境の構築"
+      },
+      {
+        "id": "input-output",
+        "title": "第4章：入出力処理を完全マスター",
+        "description": "競技プログラミングの基本となる入出力処理"
       },
       {
         "id": "basic-algorithms",
-        "title": "第4章：基本アルゴリズム",
-        "description": "探索（線形探索・二分探索）、ソート、再帰・分割統治法の実装"
+        "title": "第5章：基本アルゴリズムの道具箱",
+        "description": "探索、ソート、基本的なアルゴリズムの習得"
       },
       {
-        "id": "complexity-analysis",
-        "title": "第5章：計算量とパフォーマンス",
-        "description": "オーダー記法の理解、実際のパフォーマンス測定、最適化技術"
+        "id": "data-structures",
+        "title": "第6章：データ構造を理解して活用しよう",
+        "description": "配列、リスト、辞書などの基本データ構造"
       },
       {
-        "id": "graph-algorithms",
-        "title": "第6章：グラフアルゴリズム入門",
-        "description": "グラフの表現方法、幅優先探索・深さ優先探索、最短経路（ダイクストラ法）"
+        "id": "abc-problems",
+        "title": "第7章：ABC A・B問題を攻略しよう",
+        "description": "AtCoder Beginner Contest A・B問題の解き方"
       },
       {
-        "id": "dynamic-programming",
-        "title": "第7章：動的プログラミング",
-        "description": "DPの基本概念、代表的なDPパターン、実装テクニック"
+        "id": "problem-solving",
+        "title": "第8章：問題解決プロセスを身につけよう",
+        "description": "体系的な問題解決アプローチの習得"
       },
       {
-        "id": "contest-techniques",
-        "title": "第8章：コンテスト実践術",
-        "description": "デバッグ技術、テストケース作成、本番での時間管理"
+        "id": "debugging",
+        "title": "第9章：エラーと上手に付き合おう",
+        "description": "デバッグ技術とエラー対応スキル"
       },
       {
-        "id": "continuous-learning",
-        "title": "第9章：上達のための継続学習",
-        "description": "学習計画の立て方、モチベーション維持、コミュニティ活用"
+        "id": "contest-participation",
+        "title": "第10章：コンテストに参加してみよう",
+        "description": "実際のコンテスト参加と振り返り"
       },
       {
-        "id": "career-application",
-        "title": "第10章：キャリアへの活用",
-        "description": "就職・転職での活用、実務への応用、継続的成長戦略"
+        "id": "community",
+        "title": "第11章：仲間と一緒に成長しよう",
+        "description": "学習コミュニティの活用と継続的な学習"
+      },
+      {
+        "id": "future-career",
+        "title": "第12章：未来への道筋を描こう",
+        "description": "将来展望とキャリア設計"
       }
     ],
     "appendices": [
