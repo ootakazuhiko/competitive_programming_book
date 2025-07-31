@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "中学生向け競技プログラミング入門書"
 description: "Scratchから次のステップへ - 楽しく学ぶ競技プログラミングの世界"
 author: "ITDO Inc.（株式会社アイティードゥ）"

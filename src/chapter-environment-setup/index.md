@@ -1,3 +1,8 @@
+---
+title: "第2章：AtCoderへの第一歩"
+layout: default
+---
+
 # 第2章：AtCoderへの第一歩
 
 ## 2.1 AtCoderってどんなサイト？
