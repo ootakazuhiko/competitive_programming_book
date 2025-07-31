@@ -1,0 +1,166 @@
+<svg viewBox="0 0 950 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-9：プログラミングスキルの分野横断的応用</title>
+  <desc>生命科学、環境科学、医療、社会科学など様々な学問分野でプログラミングスキルがどのように活用されるかを示すマップ</desc>
+  
+  <!-- Background -->
+  <rect width="950" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="475" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    プログラミングスキルの分野横断的応用
+  </text>
+  
+  <!-- Central programming skills -->
+  <circle cx="475" cy="130" r="60" fill="#3b82f6" stroke="#1e40af" stroke-width="4"/>
+  <text x="475" y="115" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    プログラミング
+  </text>
+  <text x="475" y="130" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    コアスキル
+  </text>
+  <text x="475" y="145" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    • アルゴリズム設計
+  </text>
+  <text x="475" y="158" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    • データ処理・解析
+  </text>
+  
+  <!-- Connection lines -->
+  <path d="M 425 175 L 150 280" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 475 190 L 475 280" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 525 175 L 800 280" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 440 185 L 250 500" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 510 185 L 700 500" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <!-- Life Sciences & Bioinformatics -->
+  <rect x="50" y="300" width="250" height="160" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="175" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🧬 生命科学・バイオインフォマティクス
+  </text>
+  <text x="70" y="350" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="70" dy="0">🔬 主な応用分野：</tspan>
+    <tspan x="80" dy="16">• ゲノム解析アルゴリズム開発</tspan>
+    <tspan x="80" dy="14">• タンパク質構造予測・分子シミュレーション</tspan>
+    <tspan x="80" dy="14">• 創薬支援システム・薬物相互作用予測</tspan>
+    <tspan x="80" dy="14">• 遺伝子発現データ解析・バイオマーカー発見</tspan>
+    <tspan x="80" dy="14">• 進化生物学・系統解析</tspan>
+    <tspan x="70" dy="20">💡 活用スキル：</tspan>
+    <tspan x="80" dy="16">• 文字列処理・パターンマッチング</tspan>
+    <tspan x="80" dy="14">• グラフアルゴリズム・ネットワーク解析</tspan>
+    <tspan x="80" dy="14">• 動的プログラミング・最適化</tspan>
+  </text>
+  
+  <!-- Environmental & Earth Sciences -->
+  <rect x="350" y="300" width="250" height="160" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="475" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#065f46">
+    🌍 環境・地球科学
+  </text>
+  <text x="370" y="350" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    <tspan x="370" dy="0">🔬 主な応用分野：</tspan>
+    <tspan x="380" dy="16">• 気候変動シミュレーション・予測モデル</tspan>
+    <tspan x="380" dy="14">• 環境データ分析・可視化システム</tspan>
+    <tspan x="380" dy="14">• 生態系モデリング・生物多様性解析</tspan>
+    <tspan x="380" dy="14">• 災害予測システム・早期警報システム</tspan>
+    <tspan x="380" dy="14">• 持続可能性評価・環境影響解析</tspan>
+    <tspan x="370" dy="20">💡 活用スキル：</tspan>
+    <tspan x="380" dy="16">• 数値解析・微分方程式求解</tspan>
+    <tspan x="380" dy="14">• 時系列データ解析・予測アルゴリズム</tspan>
+    <tspan x="380" dy="14">• 空間データ処理・GIS統合</tspan>
+  </text>
+  
+  <!-- Engineering & Physics -->
+  <rect x="650" y="300" width="250" height="160" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="775" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🏭 工学・物理学
+  </text>
+  <text x="670" y="350" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+    <tspan x="670" dy="0">🔬 主な応用分野：</tspan>
+    <tspan x="680" dy="16">• 構造解析・有限要素法シミュレーション</tspan>
+    <tspan x="680" dy="14">• 流体力学・伝熱解析</tspan>
+    <tspan x="680" dy="14">• 材料設計・最適化アルゴリズム</tspan>
+    <tspan x="680" dy="14">• ロボティクス・制御システム</tspan>
+    <tspan x="680" dy="14">• 量子計算・量子情報処理</tspan>
+    <tspan x="670" dy="20">💡 活用スキル：</tspan>
+    <tspan x="680" dy="16">• 数値計算・線形代数</tspan>
+    <tspan x="680" dy="14">• 最適化アルゴリズム・制約解決</tspan>
+    <tspan x="680" dy="14">• 並列計算・分散処理</tspan>
+  </text>
+  
+  <!-- Healthcare & Medical -->
+  <rect x="150" y="520" width="250" height="160" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="275" y="545" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🏥 医療・ヘルスケア
+  </text>
+  <text x="170" y="570" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">
+    <tspan x="170" dy="0">🔬 主な応用分野：</tspan>
+    <tspan x="180" dy="16">• 画像診断AI（X線、MRI、CT、病理画像）</tspan>
+    <tspan x="180" dy="14">• 診断支援システム・疾患予測モデル</tspan>
+    <tspan x="180" dy="14">• 薬物相互作用予測・個別化医療</tspan>
+    <tspan x="180" dy="14">• 手術支援ロボット・医療機器制御</tspan>
+    <tspan x="180" dy="14">• ウェアラブルデバイス・健康管理システム</tspan>
+    <tspan x="170" dy="20">💡 活用スキル：</tspan>
+    <tspan x="180" dy="16">• 機械学習・深層学習</tspan>
+    <tspan x="180" dy="14">• 画像処理・信号処理</tspan>
+    <tspan x="180" dy="14">• 統計解析・ベイズ推定</tspan>
+  </text>
+  
+  <!-- Social Sciences & Economics -->
+  <rect x="550" y="520" width="250" height="160" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="675" y="545" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    📊 社会科学・経済学
+  </text>
+  <text x="570" y="570" font-family="Arial, sans-serif" font-size="12" fill="#15803d">
+    <tspan x="570" dy="0">🔬 主な応用分野：</tspan>
+    <tspan x="580" dy="16">• 経済データ分析・予測モデル</tspan>
+    <tspan x="580" dy="14">• 社会ネットワーク分析・影響力評価</tspan>
+    <tspan x="580" dy="14">• 政策効果シミュレーション・社会実験</tspan>
+    <tspan x="580" dy="14">• マーケティング分析・消費者行動予測</tspan>
+    <tspan x="580" dy="14">• 都市計画・交通最適化</tspan>
+    <tspan x="570" dy="20">💡 活用スキル：</tspan>
+    <tspan x="580" dy="16">• データマイニング・統計解析</tspan>
+    <tspan x="580" dy="14">• グラフ理論・ネットワーク解析</tspan>
+    <tspan x="580" dy="14">• エージェントベースモデリング</tspan>
+  </text>
+  
+  <!-- Cross-cutting skills and methodologies -->
+  <rect x="50" y="720" width="850" height="150" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="475" y="745" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#334155">
+    🌟 全分野共通の重要スキル・手法
+  </text>
+  
+  <!-- Left column cross-cutting skills -->
+  <rect x="80" y="765" width="250" height="95" rx="6" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="205" y="785" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">🔧 技術的共通スキル</text>
+  <text x="90" y="805" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="90" dy="0">• データ構造・アルゴリズム設計</tspan>
+    <tspan x="90" dy="12">• 大規模データ処理・並列計算</tspan>
+    <tspan x="90" dy="12">• 統計解析・機械学習</tspan>
+    <tspan x="90" dy="12">• 数値計算・シミュレーション</tspan>
+    <tspan x="90" dy="12">• データ可視化・インタラクティブ分析</tspan>
+    <tspan x="90" dy="12">• クラウド・分散コンピューティング</tspan>
+  </text>
+  
+  <!-- Middle column methodologies -->
+  <rect x="350" y="765" width="250" height="95" rx="6" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="475" y="785" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">📋 研究・分析手法</text>
+  <text x="360" y="805" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="360" dy="0">• 実験設計・A/Bテスト・仮説検証</tspan>
+    <tspan x="360" dy="12">• モデリング・シミュレーション設計</tspan>
+    <tspan x="360" dy="12">• パラメータ最適化・感度分析</tspan>
+    <tspan x="360" dy="12">• 予測・分類・クラスタリング</tspan>
+    <tspan x="360" dy="12">• 時系列解析・異常検知</tspan>
+    <tspan x="360" dy="12">• 因果推論・反実仮想分析</tspan>
+  </text>
+  
+  <!-- Right column soft skills -->
+  <rect x="620" y="765" width="250" height="95" rx="6" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="745" y="785" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">🤝 協働・コミュニケーション</text>
+  <text x="630" y="805" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="630" dy="0">• 学際的チームでのプロジェクト推進</tspan>
+    <tspan x="630" dy="12">• 専門知識の分かりやすい説明・教育</tspan>
+    <tspan x="630" dy="12">• 研究成果の効果的な可視化・発表</tspan>
+    <tspan x="630" dy="12">• 異分野専門家との協力・調整</tspan>
+    <tspan x="630" dy="12">• オープンサイエンス・データ共有</tspan>
+    <tspan x="630" dy="12">• 社会実装・産業応用への橋渡し</tspan>
+  </text>
+</svg>

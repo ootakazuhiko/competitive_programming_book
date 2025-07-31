@@ -1,0 +1,194 @@
+<svg viewBox="0 0 900 850" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-8：実務での競技プログラミングスキル活用</title>
+  <desc>競技プログラミングで培ったスキルが実際の職場でどのように直接活用されるかを示す実践活用図</desc>
+  
+  <!-- Background -->
+  <rect width="900" height="850" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    実務での競技プログラミングスキル活用
+  </text>
+  
+  <!-- Central competitive programming skills -->
+  <circle cx="450" cy="120" r="55" fill="#3b82f6" stroke="#1e40af" stroke-width="4"/>
+  <text x="450" y="110" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    競技プログラミング
+  </text>
+  <text x="450" y="125" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    スキルセット
+  </text>
+  <text x="450" y="140" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+    • アルゴリズム思考
+  </text>
+  <text x="450" y="152" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="white">
+    • 問題解決能力
+  </text>
+  
+  <!-- Direct application areas -->
+  <rect x="50" y="200" width="800" height="180" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="450" y="225" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#334155">
+    💼 実務での直接的活用
+  </text>
+  
+  <!-- Coding abilities -->
+  <rect x="80" y="250" width="180" height="120" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="170" y="270" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">🔧 コーディング能力</text>
+  <text x="90" y="290" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="90" dy="0">• 高速で正確な実装</tspan>
+    <tspan x="90" dy="14">• バグの少ない高品質コード</tspan>
+    <tspan x="90" dy="14">• 効率的アルゴリズム選択</tspan>
+    <tspan x="90" dy="14">• 複雑処理の簡潔な実装</tspan>
+    <tspan x="90" dy="14">• エッジケース対応力</tspan>
+    <tspan x="90" dy="14">• 最適化に対する鋭い感覚</tspan>
+  </text>
+  
+  <!-- Problem solving -->
+  <rect x="280" y="250" width="180" height="120" rx="6" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="370" y="270" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#065f46">🧠 問題解決能力</text>
+  <text x="290" y="290" font-family="Arial, sans-serif" font-size="11" fill="#065f46">
+    <tspan x="290" dy="0">• 複雑要件の分析・分解</tspan>
+    <tspan x="290" dy="14">• 制約条件下での最適解発見</tspan>
+    <tspan x="290" dy="14">• パフォーマンス問題解決</tspan>
+    <tspan x="290" dy="14">• 新技術の迅速な習得・応用</tspan>
+    <tspan x="290" dy="14">• 論理的思考による課題整理</tspan>
+    <tspan x="290" dy="14">• 創造的なアプローチ発想</tspan>
+  </text>
+  
+  <!-- Efficiency and productivity -->
+  <rect x="480" y="250" width="180" height="120" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="570" y="270" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">⏰ 効率性と生産性</text>
+  <text x="490" y="290" font-family="Arial, sans-serif" font-size="11" fill="#92400e">
+    <tspan x="490" dy="0">• 短時間での高品質実装</tspan>
+    <tspan x="490" dy="14">• デバッグ・テストの効率化</tspan>
+    <tspan x="490" dy="14">• 技術仕様書の迅速理解</tspan>
+    <tspan x="490" dy="14">• 学習コストの最小化</tspan>
+    <tspan x="490" dy="14">• 集中力の高い作業効率</tspan>
+    <tspan x="490" dy="14">• 時間制約下での最適判断</tspan>
+  </text>
+  
+  <!-- Technical judgment -->
+  <rect x="680" y="250" width="180" height="120" rx="6" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="770" y="270" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">🎯 技術的判断力</text>
+  <text x="690" y="290" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="690" dy="0">• 適切なデータ構造選択</tspan>
+    <tspan x="690" dy="14">• 計算量・メモリ使用量見積</tspan>
+    <tspan x="690" dy="14">• スケーラビリティ考慮設計</tspan>
+    <tspan x="690" dy="14">• 技術的トレードオフ判断</tspan>
+    <tspan x="690" dy="14">• アーキテクチャ選択基準</tspan>
+    <tspan x="690" dy="14">• リスク評価・対策立案</tspan>
+  </text>
+  
+  <!-- Team and organizational value -->
+  <rect x="50" y="410" width="800" height="180" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="450" y="435" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#334155">
+    🌟 チーム・組織での価値発揮
+  </text>
+  
+  <!-- Leadership -->
+  <rect x="80" y="460" width="180" height="120" rx="6" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="170" y="480" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">🏃‍♂️ リーダーシップ</text>
+  <text x="90" y="500" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="90" dy="0">• 技術的に困難な課題へのリード</tspan>
+    <tspan x="90" dy="14">• チーム技術力向上の牽引</tspan>
+    <tspan x="90" dy="14">• 新技術調査・導入のリード</tspan>
+    <tspan x="90" dy="14">• 建設的なコードレビュー</tspan>
+    <tspan x="90" dy="14">• プロジェクト技術方針策定</tspan>
+    <tspan x="90" dy="14">• 危機対応での冷静な判断</tspan>
+  </text>
+  
+  <!-- Knowledge sharing -->
+  <rect x="280" y="460" width="180" height="120" rx="6" fill="#fff1f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="370" y="480" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">📚 知識共有・教育</text>
+  <text x="290" y="500" font-family="Arial, sans-serif" font-size="11" fill="#dc2626">
+    <tspan x="290" dy="0">• 社内勉強会・セミナー講師</tspan>
+    <tspan x="290" dy="14">• 新人技術メンタリング</tspan>
+    <tspan x="290" dy="14">• 技術ブログ・ドキュメント作成</tspan>
+    <tspan x="290" dy="14">• ベストプラクティス標準化</tspan>
+    <tspan x="290" dy="14">• アルゴリズム・設計パターン指導</tspan>
+    <tspan x="290" dy="14">• 技術的課題の教育的解説</tspan>
+  </text>
+  
+  <!-- Recruitment and evaluation -->
+  <rect x="480" y="460" width="180" height="120" rx="6" fill="#fefce8" stroke="#eab308" stroke-width="2"/>
+  <text x="570" y="480" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#a16207">🤝 採用・評価貢献</text>
+  <text x="490" y="500" font-family="Arial, sans-serif" font-size="11" fill="#a16207">
+    <tspan x="490" dy="0">• 技術面接での的確な評価</tspan>
+    <tspan x="490" dy="14">• 競技プログラミング経験者発掘</tspan>
+    <tspan x="490" dy="14">• 採用イベントでの企業代表</tspan>
+    <tspan x="490" dy="14">• 技術力評価基準の策定</tspan>
+    <tspan x="490" dy="14">• エンジニア組織設計への提言</tspan>
+    <tspan x="490" dy="14">• タレント発掘・育成戦略</tspan>
+  </text>
+  
+  <!-- External community -->
+  <rect x="680" y="460" width="180" height="120" rx="6" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="770" y="480" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#0c4a6e">🌍 外部コミュニティ</text>
+  <text x="690" y="500" font-family="Arial, sans-serif" font-size="11" fill="#0c4a6e">
+    <tspan x="690" dy="0">• OSS プロジェクトへの貢献</tspan>
+    <tspan x="690" dy="14">• 技術カンファレンスでの発表</tspan>
+    <tspan x="690" dy="14">• 業界技術レベル向上寄与</tspan>
+    <tspan x="690" dy="14">• 企業技術ブランディング</tspan>
+    <tspan x="690" dy="14">• 業界標準策定への参画</tspan>
+    <tspan x="690" dy="14">• 技術エコシステム構築</tspan>
+  </text>
+  
+  <!-- Career and compensation impact -->
+  <rect x="50" y="620" width="800" height="180" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="450" y="645" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#334155">
+    💰 キャリア・年収への影響
+  </text>
+  
+  <!-- Promotion impact -->
+  <rect x="80" y="670" width="200" height="120" rx="6" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="180" y="690" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">📈 昇進・昇格影響</text>
+  <text x="90" y="710" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="90" dy="0">• 技術力の客観的証明</tspan>
+    <tspan x="90" dy="14">• 難しいプロジェクトへの</tspan>
+    <tspan x="90" dy="12">  優先アサイン</tspan>
+    <tspan x="90" dy="14">• 技術リーダーとしての</tspan>
+    <tspan x="90" dy="12">  早期抜擢</tspan>
+    <tspan x="90" dy="14">• 管理職候補としての</tspan>
+    <tspan x="90" dy="12">  優先的育成</tspan>
+  </text>
+  
+  <!-- Salary impact -->
+  <rect x="300" y="670" width="200" height="120" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="690" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">💸 年収への直接影響</text>
+  <text x="310" y="710" font-family="Arial, sans-serif" font-size="11" fill="#92400e">
+    <tspan x="310" dy="0">• 初任給での優遇</tspan>
+    <tspan x="310" dy="12">  （50-100万円の差）</tspan>
+    <tspan x="310" dy="14">• 昇給・賞与での技術力評価</tspan>
+    <tspan x="310" dy="14">• 転職時の有利な条件交渉</tspan>
+    <tspan x="310" dy="14">• フリーランス時の</tspan>
+    <tspan x="310" dy="12">  高単価受注</tspan>
+    <tspan x="310" dy="14">• ストックオプション等</tspan>
+    <tspan x="310" dy="12">  インセンティブ獲得</tspan>
+  </text>
+  
+  <!-- Career opportunities -->
+  <rect x="520" y="670" width="200" height="120" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="620" y="690" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">🚀 キャリア機会拡大</text>
+  <text x="530" y="710" font-family="Arial, sans-serif" font-size="11" fill="#dc2626">
+    <tspan x="530" dy="0">• 有名企業からのスカウト・</tspan>
+    <tspan x="530" dy="12">  ヘッドハンティング</tspan>
+    <tspan x="530" dy="14">• 海外勤務・海外転職機会</tspan>
+    <tspan x="530" dy="14">• スタートアップでの</tspan>
+    <tspan x="530" dy="12">  CTO候補ポジション</tspan>
+    <tspan x="530" dy="14">• 技術顧問・アドバイザー</tspan>
+    <tspan x="530" dy="12">  としての活動機会</tspan>
+  </text>
+  
+  <!-- Long-term value -->
+  <rect x="740" y="670" width="120" height="120" rx="6" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="800" y="690" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#0c4a6e">🎯 長期価値</text>
+  <text x="750" y="710" font-family="Arial, sans-serif" font-size="11" fill="#0c4a6e">
+    <tspan x="750" dy="0">• 技術変化への</tspan>
+    <tspan x="750" dy="12">  適応力</tspan>
+    <tspan x="750" dy="14">• 継続学習能力</tspan>
+    <tspan x="750" dy="14">• 普遍的問題</tspan>
+    <tspan x="750" dy="12">  解決能力</tspan>
+    <tspan x="750" dy="14">• グローバル</tspan>
+    <tspan x="750" dy="12">  通用スキル</tspan>
+  </text>
+</svg>

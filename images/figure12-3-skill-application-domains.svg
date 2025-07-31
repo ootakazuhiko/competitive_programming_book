@@ -1,0 +1,131 @@
+<svg viewBox="0 0 900 800" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-3：スキルの応用領域展開</title>
+  <desc>競技プログラミングで身につけたスキルが様々な専門分野でどのように活用できるかを示すマッピング図</desc>
+  
+  <!-- Background -->
+  <rect width="900" height="800" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    スキルの応用領域展開
+  </text>
+  
+  <!-- Central core skills -->
+  <circle cx="450" cy="150" r="60" fill="#3b82f6" stroke="#1e40af" stroke-width="4"/>
+  <text x="450" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    競技プログラミング
+  </text>
+  <text x="450" y="150" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    コアスキル
+  </text>
+  <text x="450" y="165" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    • 論理的思考力
+  </text>
+  <text x="450" y="178" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    • 問題解決能力
+  </text>
+  
+  <!-- Connection lines -->
+  <path d="M 400 190 L 150 300" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 450 210 L 450 300" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 500 190 L 750 300" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 390 200 L 200 500" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 510 200 L 700 500" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <!-- Academic Research -->
+  <rect x="50" y="320" width="200" height="140" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="150" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🔬 学術研究・論文執筆
+  </text>
+  <text x="60" y="365" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="60" dy="0">📊 活用できるスキル：</tspan>
+    <tspan x="70" dy="14">• 研究テーマの体系的整理</tspan>
+    <tspan x="70" dy="12">• 仮説設定・検証プロセス設計</tspan>
+    <tspan x="70" dy="12">• データ解析・統計処理</tspan>
+    <tspan x="70" dy="12">• 論理的で説得力のある論証構成</tspan>
+    <tspan x="60" dy="16">🎯 応用例：</tspan>
+    <tspan x="70" dy="14">• 実験設計の最適化</tspan>
+    <tspan x="70" dy="12">• 大量データの効率的処理</tspan>
+    <tspan x="70" dy="12">• アルゴリズム開発・改良</tspan>
+  </text>
+  
+  <!-- Project Management -->
+  <rect x="350" y="320" width="200" height="140" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="450" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#065f46">
+    💼 プロジェクト管理・運営
+  </text>
+  <text x="360" y="365" font-family="Arial, sans-serif" font-size="11" fill="#065f46">
+    <tspan x="360" dy="0">📊 活用できるスキル：</tspan>
+    <tspan x="370" dy="14">• タスクの分解・優先順位付け</tspan>
+    <tspan x="370" dy="12">• リソース配分・最適化</tspan>
+    <tspan x="370" dy="12">• リスク管理・対策立案</tspan>
+    <tspan x="370" dy="12">• 効率的なコミュニケーション</tspan>
+    <tspan x="360" dy="16">🎯 応用例：</tspan>
+    <tspan x="370" dy="14">• スケジュール最適化</tspan>
+    <tspan x="370" dy="12">• 品質管理プロセス設計</tspan>
+    <tspan x="370" dy="12">• チーム効率向上施策</tspan>
+  </text>
+  
+  <!-- Personal Decision Making -->
+  <rect x="650" y="320" width="200" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="750" y="340" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🎯 個人の意思決定・人生設計
+  </text>
+  <text x="660" y="365" font-family="Arial, sans-serif" font-size="11" fill="#92400e">
+    <tspan x="660" dy="0">📊 活用できるスキル：</tspan>
+    <tspan x="670" dy="14">• 目標設定・行動計画体系化</tspan>
+    <tspan x="670" dy="12">• 選択肢の客観的評価・比較</tspan>
+    <tspan x="670" dy="12">• 長期的視点での最適化思考</tspan>
+    <tspan x="670" dy="12">• PDCA サイクルの実践</tspan>
+    <tspan x="660" dy="16">🎯 応用例：</tspan>
+    <tspan x="670" dy="14">• キャリア戦略立案</tspan>
+    <tspan x="670" dy="12">• 投資・資産運用計画</tspan>
+    <tspan x="670" dy="12">• 学習計画の効率化</tspan>
+  </text>
+  
+  <!-- Data Analysis & Marketing -->
+  <rect x="100" y="520" width="200" height="140" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="200" y="540" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📈 データ分析・マーケティング
+  </text>
+  <text x="110" y="565" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="110" dy="0">📊 活用できるスキル：</tspan>
+    <tspan x="120" dy="14">• 大量データのパターン発見</tspan>
+    <tspan x="120" dy="12">• 統計的仮説検定・A/Bテスト</tspan>
+    <tspan x="120" dy="12">• 顧客セグメント・行動予測</tspan>
+    <tspan x="120" dy="12">• 効果測定・ROI分析</tspan>
+    <tspan x="110" dy="16">🎯 応用例：</tspan>
+    <tspan x="120" dy="14">• マーケティング自動化</tspan>
+    <tspan x="120" dy="12">• 顧客行動分析システム</tspan>
+    <tspan x="120" dy="12">• 売上予測モデル構築</tspan>
+  </text>
+  
+  <!-- Content Creation & UX -->
+  <rect x="600" y="520" width="200" height="140" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="540" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🎭 コンテンツ制作・UX設計
+  </text>
+  <text x="610" y="565" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="610" dy="0">📊 活用できるスキル：</tspan>
+    <tspan x="620" dy="14">• ストーリー構成の論理設計</tspan>
+    <tspan x="620" dy="12">• ユーザー体験の最適化</tspan>
+    <tspan x="620" dy="12">• 情報デザイン・可視化</tspan>
+    <tspan x="620" dy="12">• インタラクション設計</tspan>
+    <tspan x="610" dy="16">🎯 応用例：</tspan>
+    <tspan x="620" dy="14">• Webサイト設計最適化</tspan>
+    <tspan x="620" dy="12">• ゲーム・アプリUI設計</tspan>
+    <tspan x="620" dy="12">• 教育コンテンツ開発</tspan>
+  </text>
+  
+  <!-- Cross-domain skills at bottom -->
+  <rect x="50" y="690" width="800" height="80" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="450" y="715" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#334155">
+    🌟 全分野共通の価値あるスキル
+  </text>
+  
+  <text x="80" y="740" font-family="Arial, sans-serif" font-size="12" fill="#475569">
+    <tspan x="80" dy="0">✨ 分析力・洞察力：複雑な問題を体系的に理解し、本質を見抜く力</tspan>
+    <tspan x="80" dy="16">✨ 継続学習力：新しい分野でも効率的に知識・スキルを習得する力</tspan>
+    <tspan x="80" dy="16">✨ 創造性・イノベーション：既存の枠を超えた発想で新しい価值を創出する力</tspan>
+  </text>
+</svg>

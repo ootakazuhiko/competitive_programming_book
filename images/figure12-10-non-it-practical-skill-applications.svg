@@ -1,0 +1,177 @@
+<svg viewBox="0 0 900 850" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-10：IT業界以外での実用的スキル活用</title>
+  <desc>競技プログラミングで培った論理思考力や問題解決能力がIT以外の職業や日常生活でどのように活用されるかを示す応用図</desc>
+  
+  <!-- Background -->
+  <rect width="900" height="850" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    IT業界以外での実用的スキル活用
+  </text>
+  
+  <!-- Central core skills circle -->
+  <circle cx="450" cy="120" r="55" fill="#16a34a" stroke="#15803d" stroke-width="4"/>
+  <text x="450" y="105" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    普遍的スキル
+  </text>
+  <text x="450" y="120" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    • 論理的思考力
+  </text>
+  <text x="450" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    • 問題解決能力
+  </text>
+  <text x="450" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    • 継続学習力
+  </text>
+  
+  <!-- Connection lines -->
+  <path d="M 405 165 L 150 280" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 450 175 L 450 280" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 495 165 L 750 280" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 415 175 L 250 500" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 485 175 L 650 500" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <!-- Business & Finance -->
+  <rect x="50" y="300" width="200" height="140" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="150" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    💼 ビジネス・金融
+  </text>
+  <text x="70" y="350" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="70" dy="0">🎯 活用分野：</tspan>
+    <tspan x="80" dy="16">• 経営戦略の論理的分析</tspan>
+    <tspan x="80" dy="14">• 投資判断・リスク評価</tspan>
+    <tspan x="80" dy="14">• 業務プロセス最適化</tspan>
+    <tspan x="80" dy="14">• データ分析・意思決定</tspan>
+    <tspan x="70" dy="18">💡 具体例：</tspan>
+    <tspan x="80" dy="16">• Excel/Sheets での</tspan>
+    <tspan x="80" dy="12">  高度な分析・自動化</tspan>
+    <tspan x="80" dy="14">• 経営指標の可視化</tspan>
+    <tspan x="80" dy="14">• 効率化ツールの開発</tspan>
+  </text>
+  
+  <!-- Education & Research -->
+  <rect x="350" y="300" width="200" height="140" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="450" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#065f46">
+    📚 教育・研究
+  </text>
+  <text x="370" y="350" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    <tspan x="370" dy="0">🎯 活用分野：</tspan>
+    <tspan x="380" dy="16">• 論理的な教材・カリキュラム設計</tspan>
+    <tspan x="380" dy="14">• 学習効果の分析・改善</tspan>
+    <tspan x="380" dy="14">• 研究手法の体系化</tspan>
+    <tspan x="380" dy="14">• データに基づく教育改善</tspan>
+    <tspan x="370" dy="18">💡 具体例：</tspan>
+    <tspan x="380" dy="16">• 学習管理システム活用</tspan>
+    <tspan x="380" dy="14">• 統計を用いた成績分析</tspan>
+    <tspan x="380" dy="14">• オンライン教材開発</tspan>
+    <tspan x="380" dy="14">• 教育効果測定</tspan>
+  </text>
+  
+  <!-- Healthcare & Medicine -->
+  <rect x="650" y="300" width="200" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="750" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🏥 医療・看護
+  </text>
+  <text x="670" y="350" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+    <tspan x="670" dy="0">🎯 活用分野：</tspan>
+    <tspan x="680" dy="16">• 診断プロセスの体系化</tspan>
+    <tspan x="680" dy="14">• 医療データの分析・活用</tspan>
+    <tspan x="680" dy="14">• 治療計画の最適化</tspan>
+    <tspan x="680" dy="14">• 医療システムの改善</tspan>
+    <tspan x="670" dy="18">💡 具体例：</tspan>
+    <tspan x="680" dy="16">• 電子カルテの効率活用</tspan>
+    <tspan x="680" dy="14">• 医療統計の理解・応用</tspan>
+    <tspan x="680" dy="14">• 業務フロー最適化</tspan>
+    <tspan x="680" dy="14">• 医療機器データ解析</tspan>
+  </text>
+  
+  <!-- Legal & Public Service -->
+  <rect x="150" y="520" width="200" height="140" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="250" y="545" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    ⚖️ 法務・公務
+  </text>
+  <text x="170" y="570" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">
+    <tspan x="170" dy="0">🎯 活用分野：</tspan>
+    <tspan x="180" dy="16">• 法的論理の構築・検証</tspan>
+    <tspan x="180" dy="14">• 事案の体系的分析</tspan>
+    <tspan x="180" dy="14">• 政策効果の予測・評価</tspan>
+    <tspan x="180" dy="14">• 行政事務の効率化</tspan>
+    <tspan x="170" dy="18">💡 具体例：</tspan>
+    <tspan x="180" dy="16">• 判例データベース分析</tspan>
+    <tspan x="180" dy="14">• 契約書レビューの</tspan>
+    <tspan x="180" dy="12">  チェックリスト化</tspan>
+    <tspan x="180" dy="14">• 行政データの可視化</tspan>
+    <tspan x="180" dy="14">• 業務自動化ツール開発</tspan>
+  </text>
+  
+  <!-- Creative & Design -->
+  <rect x="550" y="520" width="200" height="140" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="650" y="545" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🎨 クリエイティブ・デザイン
+  </text>
+  <text x="570" y="570" font-family="Arial, sans-serif" font-size="12" fill="#15803d">
+    <tspan x="570" dy="0">🎯 活用分野：</tspan>
+    <tspan x="580" dy="16">• デザインプロセスの体系化</tspan>
+    <tspan x="580" dy="14">• ユーザー体験の論理的設計</tspan>
+    <tspan x="580" dy="14">• 制作ワークフローの最適化</tspan>
+    <tspan x="580" dy="14">• デジタルツールの高度活用</tspan>
+    <tspan x="570" dy="18">💡 具体例：</tspan>
+    <tspan x="580" dy="16">• デザインシステムの構築</tspan>
+    <tspan x="580" dy="14">• 作業効率化のスクリプト</tspan>
+    <tspan x="580" dy="14">• A/Bテストによる改善</tspan>
+    <tspan x="580" dy="14">• データ分析に基づく</tspan>
+    <tspan x="580" dy="12">  デザイン判断</tspan>
+  </text>
+  
+  <!-- Daily life applications -->
+  <rect x="50" y="690" width="800" height="140" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="450" y="715" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#334155">
+    🏠 日常生活での実用的活用
+  </text>
+  
+  <!-- Personal management -->
+  <rect x="80" y="735" width="200" height="85" rx="6" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="180" y="755" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">📋 個人管理・生活設計</text>
+  <text x="90" y="775" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="90" dy="0">• 家計管理・資産運用の最適化</tspan>
+    <tspan x="90" dy="12">• 時間管理・スケジュール効率化</tspan>
+    <tspan x="90" dy="12">• 目標設定・PDCA サイクル実践</tspan>
+    <tspan x="90" dy="12">• ライフプランの論理的設計</tspan>
+    <tspan x="90" dy="12">• 情報収集・意思決定の体系化</tspan>
+  </text>
+  
+  <!-- Problem solving -->
+  <rect x="300" y="735" width="200" height="85" rx="6" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="400" y="755" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">🔧 日常問題解決</text>
+  <text x="310" y="775" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="310" dy="0">• 家庭の課題を論理的に分析・解決</tspan>
+    <tspan x="310" dy="12">• DIY・修理の体系的アプローチ</tspan>
+    <tspan x="310" dy="12">• 旅行・イベント計画の最適化</tspan>
+    <tspan x="310" dy="12">• 比較検討による賢い買い物</tspan>
+    <tspan x="310" dy="12">• トラブル対応の冷静な判断</tspan>
+  </text>
+  
+  <!-- Learning and growth -->
+  <rect x="520" y="735" width="200" height="85" rx="6" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="620" y="755" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">📈 継続学習・成長</text>
+  <text x="530" y="775" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="530" dy="0">• 新しい趣味・スキルの効率的習得</tspan>
+    <tspan x="530" dy="12">• 学習計画の立案・進捗管理</tspan>
+    <tspan x="530" dy="12">• 情報の整理・知識の体系化</tspan>
+    <tspan x="530" dy="12">• 目標達成のための戦略策定</tspan>
+    <tspan x="530" dy="12">• 失敗から学ぶ振り返り習慣</tspan>
+  </text>
+  
+  <!-- Digital literacy -->
+  <rect x="740" y="735" width="120" height="85" rx="6" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="800" y="755" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">💻 デジタル活用</text>
+  <text x="750" y="775" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="750" dy="0">• スマートフォン・</tspan>
+    <tspan x="750" dy="12">  PCの高度活用</tspan>
+    <tspan x="750" dy="12">• 業務効率化ツール</tspan>
+    <tspan x="750" dy="12">• データ管理・</tspan>
+    <tspan x="750" dy="12">  バックアップ</tspan>
+    <tspan x="750" dy="12">• セキュリティ対策</tspan>
+  </text>
+</svg>
