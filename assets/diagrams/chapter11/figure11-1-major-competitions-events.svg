@@ -1,0 +1,269 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図11-1：中学生が参加できる主要競技・イベント</title>
+  <desc>中学生向けの競技プログラミング参加機会とイベント情報の包括的ガイド</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="700" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    中学生が参加できる主要競技・イベント
+  </text>
+  
+  <!-- AtCoder Junior League (上部メイン) -->
+  <rect x="50" y="60" width="700" height="200" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="3"/>
+  <text x="400" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e40af">
+    🏆 AtCoder Junior League（AJL）
+  </text>
+  <text x="400" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3730a3">
+    中学生専用の競技プログラミングコンテスト
+  </text>
+  
+  <g transform="translate(70, 110)">
+    <!-- 基本情報 -->
+    <rect x="0" y="0" width="200" height="120" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      📋 基本情報
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      対象：中学1年生〜3年生</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      頻度：年4回開催（3・6・9・12月）</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      時間：90分（通常は100分）</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      問題数：4-5問程度</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      難易度：A～D問題（初心者向け）</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      参加費：無料</text>
+    <text x="5" y="87" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      言語：Python・C++・Java等</text>
+    <text x="5" y="97" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 中学生に最適化された設計</text>
+    
+    <!-- 参加メリット -->
+    <rect x="220" y="0" width="220" height="120" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="330" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      🌟 参加メリット
+    </text>
+    <text x="225" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 同世代との健全な競争環境</text>
+    <text x="225" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 年齢に適した問題レベル</text>
+    <text x="225" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 中学生向けの解説とサポート</text>
+    <text x="225" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 専用のランキングシステム</text>
+    <text x="225" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 大学入試で注目される実績</text>
+    <text x="225" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 上位者は賞状・記念品獲得</text>
+    <text x="225" y="87" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 高校での部活動継続への土台</text>
+    <text x="225" y="97" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 将来への確実なステップアップ</text>
+    
+    <!-- 2023年実績 -->
+    <rect x="460" y="0" width="180" height="120" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="550" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      📊 2023年実績
+    </text>
+    <text x="465" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      総参加者数：約1,200名</text>
+    <text x="465" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      年間4回開催：定期的な挑戦機会</text>
+    <text x="465" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      平均AC問題数：2.3問</text>
+    <text x="465" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      完走率：95%以上</text>
+    <text x="465" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      参加継続率：約80%</text>
+    <text x="465" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      満足度：4.7/5.0点</text>
+    <text x="465" y="87" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 高い参加満足度と継続性</text>
+  </g>
+  
+  <!-- JOI（日本情報オリンピック） -->
+  <rect x="50" y="280" width="340" height="200" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="220" y="302" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+    🥇 JOI（日本情報オリンピック）
+  </text>
+  <text x="220" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    国際大会への登竜門
+  </text>
+  
+  <g transform="translate(70, 330)">
+    <!-- スケジュール -->
+    <rect x="0" y="0" width="130" height="120" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="65" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#d97706">
+      📅 年間スケジュール
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      9月：参加登録開始</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      12月：予選（オンライン）</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      2月：本選（会場実施）</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      3月：春季トレーニング合宿</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      7月：IOI日本代表選考</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      8月：IOI国際大会</text>
+    <text x="5" y="87" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      年間を通じた成長機会</text>
+    
+    <!-- 参加レベル -->
+    <rect x="140" y="0" width="140" height="120" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="210" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#d97706">
+      🎯 参加レベル目安
+    </text>
+    <text x="145" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      予選参加：AtCoder茶色以上推奨</text>
+    <text x="145" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      本選進出：AtCoder緑色程度</text>
+    <text x="145" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      春合宿：上位30名程度</text>
+    <text x="145" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      代表候補：上位4名</text>
+    <text x="145" y="67" font-family="Arial, sans-serif" font-size="7" fill="#dc2626">
+      ⚠️ 高いレベルが要求される</text>
+    <text x="145" y="77" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      💡 まずは予選参加から</text>
+    <text x="145" y="87" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      継続的な挑戦で実力向上</text>
+  </g>
+  
+  <!-- その他の参加機会 -->
+  <rect x="410" y="280" width="340" height="200" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+  <text x="580" y="302" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">
+    🎪 その他の参加機会
+  </text>
+  <text x="580" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#581c87">
+    多様な学習・交流イベント
+  </text>
+  
+  <g transform="translate(430, 330)">
+    <!-- 地方大会・イベント -->
+    <rect x="0" y="0" width="140" height="120" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="70" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed">
+      🏛️ 地方大会・イベント
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 都道府県プログラミングコンテスト</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 大学主催のプログラミング体験</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 高専プロコン（見学・体験）</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 地域IT企業のワークショップ</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 科学館のプログラミング教室</text>
+    <text x="5" y="77" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      身近な参加機会</text>
+    <text x="5" y="87" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      地域コミュニティとの接点</text>
+    
+    <!-- オンラインイベント -->
+    <rect x="150" y="0" width="140" height="120" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="220" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed">
+      💻 オンラインイベント
+    </text>
+    <text x="155" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • AtCoder定期コンテスト</text>
+    <text x="155" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • Codeforces（国際）</text>
+    <text x="155" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • プログラミング勉強会</text>
+    <text x="155" y="57" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • オンライン講座・セミナー</text>
+    <text x="155" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • バーチャルコンテスト</text>
+    <text x="155" y="77" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      自宅から気軽に参加</text>
+    <text x="155" y="87" font-family="Arial, sans-serif" font-size="7" fill="#16a34a">
+      継続的な学習機会</text>
+  </g>
+  
+  <!-- 参加へのステップ -->
+  <rect x="50" y="500" width="700" height="120" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="400" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#059669">
+    🚀 参加へのステップ
+  </text>
+  
+  <g transform="translate(70, 535)">
+    <!-- ステップ1 -->
+    <rect x="0" y="0" width="140" height="60" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="70" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">
+      Step 1: 基礎力構築
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • AtCoder Problems でA・B問題練習</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • Pythonの基本文法マスター</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 競技プログラミング慣れ</text>
+    
+    <!-- ステップ2 -->
+    <rect x="150" y="0" width="140" height="60" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="220" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">
+      Step 2: 実戦参加
+    </text>
+    <text x="155" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • AJL（中学生リーグ）デビュー</text>
+    <text x="155" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 定期コンテスト挑戦</text>
+    <text x="155" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • コミュニティ参加</text>
+    
+    <!-- ステップ3 -->
+    <rect x="300" y="0" width="140" height="60" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="370" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">
+      Step 3: 実力向上
+    </text>
+    <text x="305" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • レーティング向上を目指す</text>
+    <text x="305" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • より高難度の問題挑戦</text>
+    <text x="305" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • JOI予選への挑戦準備</text>
+    
+    <!-- ステップ4 -->
+    <rect x="450" y="0" width="140" height="60" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="520" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#16a34a">
+      Step 4: 上級挑戦
+    </text>
+    <text x="455" y="27" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • JOI予選・本選参加</text>
+    <text x="455" y="37" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 国際大会への道筋</text>
+    <text x="455" y="47" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      • 専門的な学習継続</text>
+  </g>
+  
+  <!-- フロー矢印 -->
+  <path d="M140 585 L150 585" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)"/>
+  <path d="M290 585 L300 585" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)"/>
+  <path d="M440 585 L450 585" stroke="#16a34a" stroke-width="2" fill="none" marker-end="url(#arrowhead-green)"/>
+  
+  <!-- 総合メッセージ -->
+  <rect x="50" y="640" width="700" height="50" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="658" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">
+    🌟 中学生から始める競技プログラミング
+  </text>
+  <text x="400" y="672" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#0284c7">
+    AJLでスタート → 継続的な参加 → JOI挑戦 → 国際レベルへの成長
+  </text>
+  <text x="400" y="684" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    年齢に適した段階的な参加機会で、無理なく着実にスキルアップ！
+  </text>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowhead-green" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#16a34a"/>
+    </marker>
+  </defs>
+</svg>

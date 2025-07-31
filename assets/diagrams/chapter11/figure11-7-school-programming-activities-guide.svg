@@ -1,0 +1,242 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図11-7：学校でのプログラミング活動立ち上げガイド</title>
+  <desc>学校内でプログラミング活動・部活動を立ち上げるための段階的ガイド</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="700" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    学校でのプログラミング活動立ち上げガイド
+  </text>
+  
+  <!-- Step 1: 計画・準備段階 -->
+  <rect x="50" y="60" width="700" height="150" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="3"/>
+  <text x="400" y="82" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e40af">
+    📋 Step 1: 計画・準備段階（1-2ヶ月）
+  </text>
+  <text x="400" y="98" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3730a3">
+    活動内容の明確化と学校内での理解獲得
+  </text>
+  
+  <g transform="translate(70, 110)">
+    <!-- 活動内容の決定 -->
+    <rect x="0" y="0" width="200" height="80" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      🎯 活動内容の決定
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 競技プログラミング中心</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • ゲーム・アプリ開発併用</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 週1-2回の定期活動</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 年間目標設定（コンテスト参加等）</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 明確な方向性の確立</text>
+    
+    <!-- 仲間集め -->
+    <rect x="220" y="0" width="200" height="80" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="320" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      👥 仲間集め
+    </text>
+    <text x="225" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 同じクラス・学年から声かけ</text>
+    <text x="225" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 数学・理科好きな友人に相談</text>
+    <text x="225" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 最初は3-5人からスタート</text>
+    <text x="225" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 初心者歓迎の雰囲気作り</text>
+    <text x="225" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 一緒に学ぶ仲間の確保</text>
+    
+    <!-- 先生への相談 -->
+    <rect x="440" y="0" width="200" height="80" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="540" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      👨‍🏫 先生への相談
+    </text>
+    <text x="445" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 数学・技術科の先生に相談</text>
+    <text x="445" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 活動目的と教育効果を説明</text>
+    <text x="445" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 顧問就任の依頼</text>
+    <text x="445" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 必要な支援の明確化</text>
+    <text x="445" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 学校側の理解と協力獲得</text>
+  </g>
+  
+  <!-- Step 2: 申請・承認段階 -->
+  <rect x="50" y="230" width="700" height="150" rx="8" fill="#d1fae5" stroke="#22c55e" stroke-width="3"/>
+  <text x="400" y="252" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#047857">
+    📝 Step 2: 申請・承認段階（1-2ヶ月）
+  </text>
+  <text x="400" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    正式な部活動・同好会としての認可取得
+  </text>
+  
+  <g transform="translate(70, 280)">
+    <!-- 申請書類準備 -->
+    <rect x="0" y="0" width="200" height="80" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+    <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857">
+      📄 申請書類準備
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 部活動設立申請書</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 活動計画書（年間スケジュール）</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 顧問教員の同意書</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 創設メンバーリスト</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 正式な手続きの実行</text>
+    
+    <!-- 必要リソースの確保 -->
+    <rect x="220" y="0" width="200" height="80" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+    <text x="320" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857">
+      💻 リソース確保
+    </text>
+    <text x="225" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • コンピュータ室の利用申請</text>
+    <text x="225" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • インターネット接続環境確認</text>
+    <text x="225" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 必要ソフトウェアの導入相談</text>
+    <text x="225" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 活動時間帯の調整</text>
+    <text x="225" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 活動環境の整備</text>
+    
+    <!-- 学校側との調整 -->
+    <rect x="440" y="0" width="200" height="80" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+    <text x="540" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857">
+      🤝 学校側との調整
+    </text>
+    <text x="445" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 教務主任・生徒指導部との面談</text>
+    <text x="445" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 活動内容の詳細説明</text>
+    <text x="445" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 安全管理体制の構築</text>
+    <text x="445" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 予算・支援要請の相談</text>
+    <text x="445" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 学校全体での承認獲得</text>
+  </g>
+  
+  <!-- Step 3: 活動開始・運営段階 -->
+  <rect x="50" y="400" width="700" height="150" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
+  <text x="400" y="422" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d97706">
+    🚀 Step 3: 活動開始・運営段階（継続）
+  </text>
+  <text x="400" y="438" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+    実際の活動実施と継続的な運営体制構築
+  </text>
+  
+  <g transform="translate(70, 450)">
+    <!-- 初期活動内容 -->
+    <rect x="0" y="0" width="200" height="80" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="100" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      🎮 初期活動内容
+    </text>
+    <text x="5" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • Python基礎学習からスタート</text>
+    <text x="5" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • AtCoder A・B問題挑戦</text>
+    <text x="5" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 週1回のミニコンテスト開催</text>
+    <text x="5" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 相互学習・教え合いの推進</text>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 楽しく学べる雰囲気作り</text>
+    
+    <!-- メンバー募集・拡大 -->
+    <rect x="220" y="0" width="200" height="80" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="320" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      📢 メンバー募集
+    </text>
+    <text x="225" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 体験会・見学会の定期開催</text>
+    <text x="225" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 学校祭での活動発表</text>
+    <text x="225" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 初心者向けワークショップ</text>
+    <text x="225" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 作品展示・デモンストレーション</text>
+    <text x="225" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → 活動の認知度向上</text>
+    
+    <!-- 外部との連携 -->
+    <rect x="440" y="0" width="200" height="80" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="540" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      🌐 外部連携
+    </text>
+    <text x="445" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 近隣中学との交流戦</text>
+    <text x="445" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 地域プログラミング教室見学</text>
+    <text x="445" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 高校情報科部との交流</text>
+    <text x="445" y="57" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • IT企業見学・講演会企画</text>
+    <text x="445" y="67" font-family="Arial, sans-serif" font-size="8" fill="#16a34a">
+      → より広い学習機会の創出</text>
+  </g>
+  
+  <!-- 成功のポイント -->
+  <rect x="50" y="570" width="340" height="110" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+  <text x="220" y="592" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">
+    🌟 成功のポイント
+  </text>
+  
+  <g transform="translate(70, 605)">
+    <text x="0" y="12" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 継続性重視：短期間で結果を求めず長期的視点</text>
+    <text x="0" y="24" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 楽しさ優先：競争より協力・学び合いを重視</text>
+    <text x="0" y="36" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 多様性歓迎：レベル・興味に応じた活動提供</text>
+    <text x="0" y="48" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 記録・発信：活動成果の可視化と共有</text>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      ✅ 外部連携：学校内だけでない広い視野の維持</text>
+    <text x="0" y="72" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#7c3aed">
+      → 持続可能で影響力のある活動の実現</text>
+  </g>
+  
+  <!-- よくある課題と対策 -->
+  <rect x="410" y="570" width="340" height="110" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="580" y="592" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">
+    ⚠️ よくある課題と対策
+  </text>
+  
+  <g transform="translate(430, 605)">
+    <text x="0" y="12" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      🔧 メンバー不足 → 体験会頻開・他部活との協力</text>
+    <text x="0" y="24" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      🔧 設備不足 → 段階的導入・BYOD活用検討</text>
+    <text x="0" y="36" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      🔧 顧問不在 → 外部講師・上級生メンター活用</text>
+    <text x="0" y="48" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      🔧 モチベーション低下 → 目標設定・成果発表機会</text>
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="9" fill="#1f2937">
+      🔧 学習内容マンネリ → 新分野挑戦・外部交流</text>
+    <text x="0" y="72" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">
+      → 柔軟な対応と創意工夫で課題克服</text>
+  </g>
+  
+  <!-- フロー矢印 -->
+  <path d="M400 210 L400 230" stroke="#374151" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M400 380 L400 400" stroke="#374151" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+    </marker>
+  </defs>
+</svg>
