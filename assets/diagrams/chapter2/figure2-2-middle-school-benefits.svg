@@ -129,11 +129,11 @@
   </g>
   
   <!-- Arrows connecting benefits to student -->
-  <path d="M400 180 Q400 220 400 250" class="arrow" marker-end="url(#arrow)"/>
-  <path d="M600 240 Q520 260 480 280" class="arrow" marker-end="url(#arrow)"/>
-  <path d="M600 400 Q520 380 480 320" class="arrow" marker-end="url(#arrow)"/>
-  <path d="M200 400 Q280 380 320 320" class="arrow" marker-end="url(#arrow)"/>
-  <path d="M200 240 Q280 260 320 280" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M400 180 Q400 220 400 250" class="arrow" marker-end="url(#arrow)" fill="none"/>
+  <path d="M600 240 Q520 260 480 280" class="arrow" marker-end="url(#arrow)" fill="none"/>
+  <path d="M600 400 Q520 380 480 320" class="arrow" marker-end="url(#arrow)" fill="none"/>
+  <path d="M200 400 Q280 380 320 320" class="arrow" marker-end="url(#arrow)" fill="none"/>
+  <path d="M200 240 Q280 260 320 280" class="arrow" marker-end="url(#arrow)" fill="none"/>
   
   <!-- Bottom summary -->
   <g transform="translate(150, 560)">

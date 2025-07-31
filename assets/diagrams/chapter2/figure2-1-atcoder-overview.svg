@@ -158,12 +158,12 @@
   </g>
   
   <!-- Connection lines -->
-  <path d="M280 140 Q340 200 340 240" class="connector"/>
-  <path d="M520 140 Q460 200 460 240" class="connector"/>
-  <path d="M280 460 Q340 400 340 360" class="connector"/>
-  <path d="M520 460 Q460 400 460 360" class="connector"/>
-  <path d="M280 300 L340 300" class="connector"/>
-  <path d="M520 300 L460 300" class="connector"/>
+  <path d="M280 140 Q340 200 340 240" class="connector" fill="none"/>
+  <path d="M520 140 Q460 200 460 240" class="connector" fill="none"/>
+  <path d="M280 460 Q340 400 340 360" class="connector" fill="none"/>
+  <path d="M520 460 Q460 400 460 360" class="connector" fill="none"/>
+  <path d="M280 300 L340 300" class="connector" fill="none"/>
+  <path d="M520 300 L460 300" class="connector" fill="none"/>
   
   <!-- Bottom description -->
   <g transform="translate(100, 560)">

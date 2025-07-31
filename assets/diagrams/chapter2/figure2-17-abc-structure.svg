@@ -144,11 +144,11 @@
   </g>
   
   <!-- Difficulty progression arrows -->
-  <path d="M150 220 L165 220" class="progress-arrow" marker-end="url(#arrow)"/>
-  <path d="M270 220 L285 220" class="progress-arrow" marker-end="url(#arrow)"/>
-  <path d="M390 220 L405 220" class="progress-arrow" marker-end="url(#arrow)"/>
-  <path d="M510 220 L525 220" class="progress-arrow" marker-end="url(#arrow)"/>
-  <path d="M630 220 L645 220" class="progress-arrow" marker-end="url(#arrow)"/>
+  <path d="M150 220 L165 220" class="progress-arrow" marker-end="url(#arrow)" fill="none"/>
+  <path d="M270 220 L285 220" class="progress-arrow" marker-end="url(#arrow)" fill="none"/>
+  <path d="M390 220 L405 220" class="progress-arrow" marker-end="url(#arrow)" fill="none"/>
+  <path d="M510 220 L525 220" class="progress-arrow" marker-end="url(#arrow)" fill="none"/>
+  <path d="M630 220 L645 220" class="progress-arrow" marker-end="url(#arrow)" fill="none"/>
   
   <!-- Middle School Target Section -->
   <g id="middle-school-targets">
