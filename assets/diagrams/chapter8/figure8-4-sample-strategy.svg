@@ -1,0 +1,277 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図8-4：サンプル活用の4段階戦略</title>
+  <desc>サンプルを効果的に活用して解法を発見するための4段階アプローチ</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="700" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    サンプル活用の4段階戦略
+  </text>
+  
+  <!-- 段階1: 動作確認 -->
+  <rect x="50" y="60" width="320" height="140" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="80" y="82" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">
+    🔍 段階1：動作確認（基本）
+  </text>
+  <text x="80" y="98" font-family="Arial, sans-serif" font-size="10" fill="#3730a3">
+    目的：問題の動作を正確に理解する
+  </text>
+  
+  <g transform="translate(80, 105)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e40af">
+      ✅ やること：
+    </text>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • サンプル入力を手動で処理
+    </text>
+    <text x="0" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 各ステップの中間結果を計算
+    </text>
+    <text x="0" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 最終出力に至る過程を確認
+    </text>
+    
+    <rect x="0" y="55" width="270" height="30" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      💡 例：[3,1,4,1,5] → 最大値求める → 3→4→4→5 → 出力:5
+    </text>
+    <text x="5" y="78" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      各ステップが要求通りか、計算過程に矛盾がないかを確認
+    </text>
+  </g>
+  
+  <!-- 段階2: パターン発見 -->
+  <rect x="430" y="60" width="320" height="140" rx="8" fill="#d1fae5" stroke="#22c55e" stroke-width="2"/>
+  <text x="460" y="82" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#047857">
+    💡 段階2：パターン発見（応用）
+  </text>
+  <text x="460" y="98" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    目的：サンプルから解法の規則性を発見
+  </text>
+  
+  <g transform="translate(460, 105)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#047857">
+      🔍 パターン発見の技法：
+    </text>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 入力の各要素が出力にどう影響するか
+    </text>
+    <text x="0" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 数値の関係性（比例、逆比例等）
+    </text>
+    <text x="0" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 配列の操作パターン（ソート等）
+    </text>
+    
+    <rect x="0" y="55" width="270" height="30" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      💡 例：[2,3]→6, [4,5]→20 → 仮説: 出力=入力1×入力2
+    </text>
+    <text x="5" y="78" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      複数の仮説を立てて、問題文との整合性を確認
+    </text>
+  </g>
+  
+  <!-- 段階3: 仮説検証 -->
+  <rect x="50" y="220" width="320" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="80" y="242" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+    🧪 段階3：仮説検証（発展）
+  </text>
+  <text x="80" y="258" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    目的：発見したパターンの正しさを検証
+  </text>
+  
+  <g transform="translate(80, 265)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#d97706">
+      🔬 検証方法：
+    </text>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 自分で追加のテストケースを作成
+    </text>
+    <text x="0" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • エッジケース（境界値）での動作確認
+    </text>
+    <text x="0" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 逆算チェック、数学的証明
+    </text>
+    
+    <rect x="0" y="55" width="270" height="30" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      💡 例：仮説「合計÷2」→ [1]で0.5？整数除算？実数除算？
+    </text>
+    <text x="5" y="78" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      特殊ケースで問題が発見されたら問題文を再確認
+    </text>
+  </g>
+  
+  <!-- 段階4: 実装準備 -->
+  <rect x="430" y="220" width="320" height="140" rx="8" fill="#fecaca" stroke="#ef4444" stroke-width="2"/>
+  <text x="460" y="242" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">
+    🎯 段階4：実装準備（完成）
+  </text>
+  <text x="460" y="258" font-family="Arial, sans-serif" font-size="10" fill="#b91c1c">
+    目的：確信を持って実装に移れる状態にする
+  </text>
+  
+  <g transform="translate(460, 265)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#dc2626">
+      ✅ 実装準備完了の条件：
+    </text>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • アルゴリズムが明確に定まっている
+    </text>
+    <text x="0" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • すべてのサンプルで正しい結果
+    </text>
+    <text x="0" y="47" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • エッジケースの処理方法が決定済み
+    </text>
+    
+    <rect x="0" y="55" width="270" height="30" rx="4" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+    <text x="5" y="67" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      🚀 判断基準：入出力・ロジック・計算量・特殊ケース全てOK
+    </text>
+    <text x="5" y="78" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      1つでも「？」があったら問題文を再確認
+    </text>
+  </g>
+  
+  <!-- フロー矢印 -->
+  <path d="M370 130 L430 130" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M590 200 Q620 215 620 220 Q620 225 590 240" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M430 290 L370 290" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M210 200 Q180 215 180 220 Q180 225 210 240" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 成功の鍵 -->
+  <rect x="50" y="380" width="700" height="100" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="404" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0284c7">
+    🔑 成功の鍵
+  </text>
+  
+  <g transform="translate(80, 415)">
+    <rect x="0" y="0" width="200" height="55" rx="4" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="100" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0284c7">
+      ⏰ 適切な時間配分
+    </text>
+    <text x="10" y="28" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 段階1: 2-3分
+    </text>
+    <text x="10" y="38" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 段階2-3: 各2-3分
+    </text>
+    <text x="10" y="48" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 段階4: 1-2分
+    </text>
+    
+    <rect x="220" y="0" width="200" height="55" rx="4" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="320" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0284c7">
+      🎯 段階的思考
+    </text>
+    <text x="230" y="28" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 各段階を丁寧に実行
+    </text>
+    <text x="230" y="38" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 前の段階が不完全なら戻る
+    </text>
+    <text x="230" y="48" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 焦らず確実に進める
+    </text>
+    
+    <rect x="440" y="0" width="200" height="55" rx="4" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="540" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0284c7">
+      🔍 批判的思考
+    </text>
+    <text x="450" y="28" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 思い込みを排除
+    </text>
+    <text x="450" y="38" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 複数の仮説を検討
+    </text>
+    <text x="450" y="48" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 常に検証を心がける
+    </text>
+  </g>
+  
+  <!-- よくある失敗例 -->
+  <rect x="50" y="500" width="700" height="120" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="400" y="524" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#dc2626">
+    ⚠️ よくある失敗例と対策
+  </text>
+  
+  <g transform="translate(80, 535)">
+    <rect x="0" y="0" width="200" height="75" rx="4" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="100" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+      ❌ サンプル軽視
+    </text>
+    <text x="10" y="28" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • サンプルを見ずに実装
+    </text>
+    <text x="10" y="38" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 動作確認を省略
+    </text>
+    <text x="10" y="48" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • パターン発見を怠る
+    </text>
+    <text x="10" y="58" font-family="Arial, sans-serif" font-size="8" fill="#dc2626">
+      → 間違った解法で実装
+    </text>
+    <text x="10" y="68" font-family="Arial, sans-serif" font-size="8" fill="#dc2626">
+      → 大幅な時間ロス
+    </text>
+    
+    <rect x="220" y="0" width="200" height="75" rx="4" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="320" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+      ❌ 早合点
+    </text>
+    <text x="230" y="28" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 1つのサンプルだけで判断
+    </text>
+    <text x="230" y="38" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 検証を省略
+    </text>
+    <text x="230" y="48" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • エッジケースを無視
+    </text>
+    <text x="230" y="58" font-family="Arial, sans-serif" font-size="8" fill="#dc2626">
+      → 部分的にしか動かない
+    </text>
+    <text x="230" y="68" font-family="Arial, sans-serif" font-size="8" fill="#dc2626">
+      → WA (Wrong Answer)
+    </text>
+    
+    <rect x="440" y="0" width="200" height="75" rx="4" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="540" y="16" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+      ❌ 完璧主義
+    </text>
+    <text x="450" y="28" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • サンプル分析に時間をかけすぎ
+    </text>
+    <text x="450" y="38" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 100%確信するまで進まない
+    </text>
+    <text x="450" y="48" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 細部にこだわりすぎ
+    </text>
+    <text x="450" y="58" font-family="Arial, sans-serif" font-size="8" fill="#dc2626">
+      → 実装時間が不足
+    </text>
+    <text x="450" y="68" font-family="Arial, sans-serif" font-size="8" fill="#dc2626">
+      → TLE (Time Limit Exceeded)
+    </text>
+  </g>
+  
+  <!-- 成功への道筋 -->
+  <rect x="50" y="640" width="700" height="30" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="400" y="658" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+    🌟 この4段階をマスターすれば、サンプルから確実に正しい解法を発見できる！
+  </text>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+    </marker>
+  </defs>
+</svg>

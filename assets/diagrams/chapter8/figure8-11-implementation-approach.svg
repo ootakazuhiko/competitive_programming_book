@@ -1,0 +1,177 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図8-11：実装の段階的アプローチ</title>
+  <desc>確実で効率的な実装のための3段階アプローチ</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    実装の段階的アプローチ
+  </text>
+  
+  <!-- Phase 1: 骨組み実装 -->
+  <rect x="50" y="70" width="700" height="160" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="80" y="92" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">
+    🏗️ Phase 1: 骨組み実装（10-15分）
+  </text>
+  <text x="80" y="108" font-family="Arial, sans-serif" font-size="10" fill="#3730a3">
+    目的：確実な基盤を構築する
+  </text>
+  
+  <g transform="translate(80, 115)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e40af">
+      ✅ 最初に実装すること：
+    </text>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 入力処理の完全な実装
+    </text>
+    <text x="0" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 出力処理の雛形
+    </text>
+    <text x="200" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • メイン関数の全体構造
+    </text>
+    <text x="200" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 必要な変数の宣言と初期化
+    </text>
+    
+    <rect x="0" y="50" width="600" height="70" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="5" y="62" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1e40af">
+      💻 骨組みコード例：
+    </text>
+    <text x="5" y="72" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      def main():</text>
+    <text x="5" y="82" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      &nbsp;&nbsp;&nbsp;&nbsp;# 入力処理 → grid = [] → 読み込み処理
+    </text>
+    <text x="5" y="92" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      &nbsp;&nbsp;&nbsp;&nbsp;# メイン処理 → result = check_function(grid)  # TODO実装
+    </text>
+    <text x="5" y="102" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      &nbsp;&nbsp;&nbsp;&nbsp;# 出力処理 → print("Yes" if result else "No")
+    </text>
+    <text x="5" y="112" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      main()
+    </text>
+    
+    <text x="0" y="135" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#1e40af">
+      🧪 この段階での確認：入力が正しく読み込めるか / 基本的な出力ができるか / 構造に問題がないか
+    </text>
+  </g>
+  
+  <!-- Phase 2: 核心機能実装 -->
+  <rect x="50" y="250" width="700" height="180" rx="8" fill="#d1fae5" stroke="#22c55e" stroke-width="2"/>
+  <text x="80" y="272" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#047857">
+    🔧 Phase 2: 核心機能実装（15-25分）
+  </text>
+  <text x="80" y="288" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    目的：主要ロジックを段階的に構築する
+  </text>
+  
+  <g transform="translate(80, 295)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#047857">
+      ✅ 核心機能の段階的実装：
+    </text>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 最重要な処理から順番に実装
+    </text>
+    <text x="0" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 一つずつ動作確認しながら進める
+    </text>
+    <text x="250" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • print文でデバッグ情報を出力
+    </text>
+    <text x="250" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • サンプルケースで随時確認
+    </text>
+    
+    <rect x="0" y="50" width="600" height="90" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+    <text x="5" y="62" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#047857">
+      💻 段階的実装例（魔方陣チェック）：
+    </text>
+    <text x="5" y="72" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      # Step 1: 行の合計チェック → for i in range(3): print(f"Row {i}: {sum(grid[i])}")
+    </text>
+    <text x="5" y="82" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      # Step 2: 列の合計チェック → for j in range(3): print(f"Col {j}: {col_sum}")
+    </text>
+    <text x="5" y="92" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      # Step 3: 対角線の合計チェック → print(f"Diag1: {diag1}, Diag2: {diag2}")
+    </text>
+    <text x="5" y="102" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      # 各ステップで期待値と実際値を比較して動作確認
+    </text>
+    <text x="5" y="112" font-family="Arial, sans-serif" font-size="7" fill="#047857">
+      → 一つずつ確実に動作することを確認してから次のステップへ
+    </text>
+    <text x="5" y="122" font-family="Arial, sans-serif" font-size="7" fill="#047857">
+      → print文でデバッグしながら段階的に機能を追加
+    </text>
+    <text x="5" y="132" font-family="Arial, sans-serif" font-size="7" fill="#047857">
+      → 問題が発生したら直前のステップに戻って原因を特定
+    </text>
+    
+    <text x="0" y="155" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#047857">
+      🧪 各ステップでの確認：各計算が正しい値を返すか / 条件分岐が期待通りか / サンプルで正しい結果か
+    </text>
+  </g>
+  
+  <!-- Phase 3: 完成・最適化 -->
+  <rect x="50" y="450" width="700" height="120" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="80" y="472" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+    🎯 Phase 3: 完成・最適化（5-10分）
+  </text>
+  <text x="80" y="488" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    目的：提出可能な完成品に仕上げる
+  </text>
+  
+  <g transform="translate(80, 495)">
+    <text x="0" y="15" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#d97706">
+      ✅ 最終調整：
+    </text>
+    <text x="0" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • デバッグ用print文の削除
+    </text>
+    <text x="0" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • エラーハンドリングの追加
+    </text>
+    <text x="200" y="27" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • コードの整理と可読性向上
+    </text>
+    <text x="200" y="37" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 最終的な動作確認
+    </text>
+    
+    <rect x="0" y="50" width="600" height="25" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="5" y="62" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#d97706">
+      💻 完成版の特徴：
+    </text>
+    <text x="5" y="72" font-family="Arial, sans-serif" font-size="7" fill="#1f2937">
+      デバッグコード削除 / 変数名の統一 / インデント整理 / 最終テスト完了 → 提出準備完了
+    </text>
+  </g>
+  
+  <!-- フロー矢印 -->
+  <path d="M400 230 L400 250" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M400 430 L400 450" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 成功のポイント -->
+  <rect x="50" y="590" width="700" height="50" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="608" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">
+    🔑 段階的実装の成功ポイント
+  </text>
+  <text x="400" y="622" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    確実な基盤作り × 段階的機能追加 × 継続的テスト = バグの少ない高品質な実装
+  </text>
+  <text x="400" y="634" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    「一度に全部作る」から「少しずつ確実に作る」への意識転換が重要
+  </text>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+    </marker>
+  </defs>
+</svg>
