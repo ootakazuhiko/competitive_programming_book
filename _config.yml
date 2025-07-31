@@ -7,13 +7,14 @@ lang: "ja"
 # Jekyll設定
 markdown: kramdown
 highlighter: rouge
-theme: minima
+remote_theme: pages-themes/minimal@v0.2.0
 
 # プラグイン
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # 除外ファイル
 exclude:
