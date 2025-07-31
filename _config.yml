@@ -1,5 +1,5 @@
-title: "競技プログラミング実践ガイド"
-description: "アルゴリズムとデータ構造を実装で学ぶ実戦形式の技術書"
+title: "中学生向け競技プログラミング入門書"
+description: "Scratchから次のステップへ - 楽しく学ぶ競技プログラミングの世界"
 author: "ITDO Inc.（株式会社アイティードゥ）"
 version: "1.0.0"
 lang: "ja"
@@ -31,6 +31,7 @@ kramdown:
   syntax_highlighter: rouge
   
 # GitHub Pages設定
-
+url: "https://ootakazuhiko.github.io"
+baseurl: "/competitive_programming_book"
 repository: "ootakazuhiko/competitive_programming_book"
 
