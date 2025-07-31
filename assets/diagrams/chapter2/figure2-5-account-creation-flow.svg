@@ -101,10 +101,10 @@
   </g>
   
   <!-- Arrows -->
-  <path d="M190 120 L240 120" class="arrow" marker-end="url(#arrow)"/>
-  <path d="M410 120 L460 120" class="arrow" marker-end="url(#arrow)"/>
-  <path d="M540 180 Q540 220 460 280" class="arrow" marker-end="url(#arrow)"/>
-  <path d="M380 350 L380 390" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M190 120 L240 120" class="arrow" marker-end="url(#arrow)" fill="none"/>
+  <path d="M410 120 L460 120" class="arrow" marker-end="url(#arrow)" fill="none"/>
+  <path d="M540 180 Q540 220 460 280" class="arrow" marker-end="url(#arrow)" fill="none"/>
+  <path d="M380 350 L380 390" class="arrow" marker-end="url(#arrow)" fill="none"/>
   
   <!-- Warning/Tips Section -->
   <g id="tips">

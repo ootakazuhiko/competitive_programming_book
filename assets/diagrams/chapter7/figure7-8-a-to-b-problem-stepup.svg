@@ -1,0 +1,245 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-8：A問題からB問題への段階的ステップアップ</title>
+  <desc>A問題とB問題の違いと、段階的にレベルアップするための比較表</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    A問題からB問題への段階的ステップアップ
+  </text>
+  
+  <!-- 比較表のヘッダー -->
+  <rect x="80" y="70" width="640" height="40" rx="8" fill="#1f2937"/>
+  <text x="140" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    項目
+  </text>
+  <text x="300" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    A問題
+  </text>
+  <text x="580" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    B問題
+  </text>
+  
+  <!-- 配点 -->
+  <rect x="80" y="110" width="120" height="30" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="140" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+    配点
+  </text>
+  <rect x="200" y="110" width="200" height="30" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="300" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    100-200点
+  </text>
+  <rect x="400" y="110" width="320" height="30" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+  <text x="560" y="128" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#047857">
+    200-400点
+  </text>
+  
+  <!-- 解答時間 -->
+  <rect x="80" y="140" width="120" height="30" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="140" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+    解答時間
+  </text>
+  <rect x="200" y="140" width="200" height="30" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="300" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    5-10分
+  </text>
+  <rect x="400" y="140" width="320" height="30" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+  <text x="560" y="158" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#047857">
+    10-20分
+  </text>
+  
+  <!-- データサイズ -->
+  <rect x="80" y="170" width="120" height="30" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="140" y="188" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+    データサイズ
+  </text>
+  <rect x="200" y="170" width="200" height="30" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="300" y="188" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    小（～100）
+  </text>
+  <rect x="400" y="170" width="320" height="30" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+  <text x="560" y="188" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#047857">
+    中（～1000）
+  </text>
+  
+  <!-- 必要スキル -->
+  <rect x="80" y="200" width="120" height="30" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="140" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+    必要スキル
+  </text>
+  <rect x="200" y="200" width="200" height="30" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="300" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    基本文法
+  </text>
+  <rect x="400" y="200" width="320" height="30" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+  <text x="560" y="218" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#047857">
+    基本アルゴリズム
+  </text>
+  
+  <!-- 思考の深さ -->
+  <rect x="80" y="230" width="120" height="30" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="140" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+    思考の深さ
+  </text>
+  <rect x="200" y="230" width="200" height="30" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="300" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    1-2段階
+  </text>
+  <rect x="400" y="230" width="320" height="30" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+  <text x="560" y="248" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#047857">
+    2-4段階
+  </text>
+  
+  <!-- 実装の複雑さ -->
+  <rect x="80" y="260" width="120" height="30" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="140" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">
+    実装の複雑さ
+  </text>
+  <rect x="200" y="260" width="200" height="30" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="300" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    簡単
+  </text>
+  <rect x="400" y="260" width="320" height="30" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+  <text x="560" y="278" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#047857">
+    やや複雑
+  </text>
+  
+  <!-- B問題で新たに求められるスキル -->
+  <rect x="50" y="320" width="700" height="220" rx="8" fill="#fef7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="344" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d97706">
+    🎯 B問題で新たに求められるスキル
+  </text>
+  
+  <!-- スキル1: 繰り返し処理 -->
+  <g id="skill1">
+    <rect x="80" y="360" width="150" height="60" rx="6" fill="#fff7ed" stroke="#f97316" stroke-width="1"/>
+    <text x="155" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ea580c">
+      🔄 繰り返し処理の応用
+    </text>
+    <text x="85" y="394" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • for文の入れ子構造
+    </text>
+    <text x="85" y="406" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • while文の条件制御
+    </text>
+    <text x="85" y="418" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • シミュレーション実装
+    </text>
+  </g>
+  
+  <!-- スキル2: リスト・配列操作 -->
+  <g id="skill2">
+    <rect x="250" y="360" width="150" height="60" rx="6" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+    <text x="325" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#16a34a">
+      📊 リスト・配列操作
+    </text>
+    <text x="255" y="394" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • ソート・検索
+    </text>
+    <text x="255" y="406" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 最大値・最小値
+    </text>
+    <text x="255" y="418" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 重複除去（set）
+    </text>
+  </g>
+  
+  <!-- スキル3: 条件分岐の組み合わせ -->
+  <g id="skill3">
+    <rect x="420" y="360" width="150" height="60" rx="6" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="495" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#9333ea">
+      🔀 条件分岐の組み合わせ
+    </text>
+    <text x="425" y="394" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 複数条件の AND/OR
+    </text>
+    <text x="425" y="406" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 入れ子構造のif文
+    </text>
+    <text x="425" y="418" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 場合分けの網羅
+    </text>
+  </g>
+  
+  <!-- スキル4: 文字列の高度な処理 -->
+  <g id="skill4">
+    <rect x="590" y="360" width="150" height="60" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+    <text x="665" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+      🔤 文字列の高度な処理
+    </text>
+    <text x="595" y="394" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 文字列の変換・置換
+    </text>
+    <text x="595" y="406" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • パターンマッチング
+    </text>
+    <text x="595" y="418" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 文字の出現回数
+    </text>
+  </g>
+  
+  <!-- スキル5: 簡単なアルゴリズム -->
+  <g id="skill5">
+    <rect x="165" y="440" width="150" height="60" rx="6" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="240" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0284c7">
+      🧮 簡単なアルゴリズム
+    </text>
+    <text x="170" y="474" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • ソート（sort関数）
+    </text>
+    <text x="170" y="486" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 線形探索
+    </text>
+    <text x="170" y="498" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 全探索
+    </text>
+  </g>
+  
+  <!-- スキル6: 数学的思考 -->
+  <g id="skill6">
+    <rect x="335" y="440" width="150" height="60" rx="6" fill="#fefce8" stroke="#eab308" stroke-width="1"/>
+    <text x="410" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ca8a04">
+      📐 数学的思考
+    </text>
+    <text x="340" y="474" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 最大公約数・最小公倍数
+    </text>
+    <text x="340" y="486" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 素数判定
+    </text>
+    <text x="340" y="498" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 組み合わせ・場合の数
+    </text>
+  </g>
+  
+  <!-- スキル7: 効率性への意識 -->
+  <g id="skill7">
+    <rect x="505" y="440" width="150" height="60" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1"/>
+    <text x="580" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#475569">
+      ⚡ 効率性への意識
+    </text>
+    <text x="510" y="474" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 計算量の考慮
+    </text>
+    <text x="510" y="486" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • TLE（時間超過）の回避
+    </text>
+    <text x="510" y="498" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • O(N²)程度まで許容
+    </text>
+  </g>
+  
+  <!-- ステップアップのアドバイス -->
+  <rect x="50" y="520" width="700" height="60" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">
+    💡 段階的ステップアップのコツ
+  </text>
+  <text x="70" y="555" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+    • A問題を確実に10分以内で解けるようになってからB問題に挑戦
+  </text>
+  <text x="70" y="570" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+    • B問題は最初解けなくても当然。問題文の理解と解法のアイデアを考えることから始める
+  </text>
+</svg>

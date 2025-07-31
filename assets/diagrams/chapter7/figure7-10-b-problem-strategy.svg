@@ -1,0 +1,275 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-10：B問題を効率的に解くための戦略</title>
+  <desc>B問題を効率的に解くための戦略的アプローチのフェーズ分け</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    B問題を効率的に解くための戦略
+  </text>
+  
+  <!-- Phase 1: 問題理解の深化 -->
+  <g id="phase1">
+    <rect x="50" y="70" width="160" height="120" rx="8" fill="#3b82f6" stroke="#1e40af" stroke-width="2"/>
+    <text x="130" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      🎯 Phase 1
+    </text>
+    <text x="130" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      問題理解の深化
+    </text>
+    <text x="130" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#bfdbfe">
+      (5-8分)
+    </text>
+    
+    <text x="60" y="142" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ 問題文を3回読む
+    </text>
+    <text x="60" y="154" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ 制約条件を詳細確認
+    </text>
+    <text x="60" y="166" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ サンプルの意味理解
+    </text>
+    <text x="60" y="178" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ 解法の方向性検討
+    </text>
+  </g>
+  
+  <!-- Phase 2: 解法設計 -->
+  <g id="phase2">
+    <rect x="230" y="70" width="160" height="120" rx="8" fill="#10b981" stroke="#047857" stroke-width="2"/>
+    <text x="310" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      💡 Phase 2
+    </text>
+    <text x="310" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      解法設計
+    </text>
+    <text x="310" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#bbf7d0">
+      (3-5分)
+    </text>
+    
+    <text x="240" y="142" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ アルゴリズム決定
+    </text>
+    <text x="240" y="154" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ データ構造選択
+    </text>
+    <text x="240" y="166" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ 疑似コード記述
+    </text>
+    <text x="240" y="178" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ 計算量を概算
+    </text>
+  </g>
+  
+  <!-- Phase 3: 確実な実装 -->
+  <g id="phase3">
+    <rect x="410" y="70" width="160" height="120" rx="8" fill="#f59e0b" stroke="#d97706" stroke-width="2"/>
+    <text x="490" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      ⌨️ Phase 3
+    </text>
+    <text x="490" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      確実な実装
+    </text>
+    <text x="490" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#fde68a">
+      (8-12分)
+    </text>
+    
+    <text x="420" y="142" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ 段階的実装
+    </text>
+    <text x="420" y="154" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ 意味のある変数名
+    </text>
+    <text x="420" y="166" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ コメントでメモ
+    </text>
+    <text x="420" y="178" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ print文でデバッグ
+    </text>
+  </g>
+  
+  <!-- Phase 4: 徹底的な検証 -->
+  <g id="phase4">
+    <rect x="590" y="70" width="160" height="120" rx="8" fill="#8b5cf6" stroke="#7c3aed" stroke-width="2"/>
+    <text x="670" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      🧪 Phase 4
+    </text>
+    <text x="670" y="108" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+      徹底的な検証
+    </text>
+    <text x="670" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#ddd6fe">
+      (2-3分)
+    </text>
+    
+    <text x="600" y="142" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ 全サンプル確認
+    </text>
+    <text x="600" y="154" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ エッジケース確認
+    </text>
+    <text x="600" y="166" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ 手動計算照合
+    </text>
+    <text x="600" y="178" font-family="Arial, sans-serif" font-size="8" fill="white">
+      ✅ 計算量再確認
+    </text>
+  </g>
+  
+  <!-- フェーズ間の矢印 -->
+  <path d="M210 130 L230 130" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M390 130 L410 130" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M570 130 L590 130" stroke="#374151" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- 判断基準セクション -->
+  <rect x="50" y="220" width="700" height="100" rx="8" fill="#fef7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="244" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#d97706">
+    💡 B問題での判断基準
+  </text>
+  
+  <!-- 成功パターン -->
+  <g id="success-pattern">
+    <rect x="70" y="260" width="150" height="50" rx="4" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+    <text x="145" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857">
+      ✅ 成功パターン
+    </text>
+    <text x="75" y="290" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 20分で解法が見えた → 実装進行
+    </text>
+    <text x="75" y="302" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 30分で実装完了 → 徹底デバッグ
+    </text>
+  </g>
+  
+  <!-- 見切り判断 -->
+  <g id="abandon-pattern">
+    <rect x="240" y="260" width="150" height="50" rx="4" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="315" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+      ❌ 見切り判断
+    </text>
+    <text x="245" y="290" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 20分で解法見えない → C問題確認
+    </text>
+    <text x="245" y="302" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 35分で動かない → 潔く諦める
+    </text>
+  </g>
+  
+  <!-- 学習重視 -->
+  <g id="learning-pattern">
+    <rect x="410" y="260" width="150" height="50" rx="4" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="485" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#0284c7">
+      🔄 学習パターン
+    </text>
+    <text x="415" y="290" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 解けなくても経験値獲得
+    </text>
+    <text x="415" y="302" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 解説で理解を深める
+    </text>
+  </g>
+  
+  <!-- 時間効率 -->
+  <g id="time-efficiency">
+    <rect x="580" y="260" width="150" height="50" rx="4" fill="#f3e8ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="655" y="276" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#9333ea">
+      ⏰ 時間効率
+    </text>
+    <text x="585" y="290" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • A問題10分+B問題25分=35分
+    </text>
+    <text x="585" y="302" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 残り65分でC問題に集中
+    </text>
+  </g>
+  
+  <!-- 思考プロセス最適化 -->
+  <rect x="50" y="340" width="700" height="120" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="364" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0284c7">
+    🧠 B問題での思考プロセス最適化
+  </text>
+  
+  <!-- 問題分析の高速化 -->
+  <g id="analysis-speedup">
+    <rect x="70" y="380" width="200" height="70" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+    <text x="170" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      🔍 問題分析の高速化
+    </text>
+    <text x="75" y="410" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 核心を素早く把握
+    </text>
+    <text x="75" y="422" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 制約から計算量制限推定
+    </text>
+    <text x="75" y="434" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 類似問題の記憶検索
+    </text>
+    <text x="75" y="446" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 解法候補2-3個リストアップ
+    </text>
+  </g>
+  
+  <!-- 解法選択の判断基準 -->
+  <g id="solution-selection">
+    <rect x="290" y="380" width="200" height="70" rx="4" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+    <text x="390" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857">
+      💭 解法選択の判断基準
+    </text>
+    <text x="295" y="410" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 実装が簡単で確実性が高い
+    </text>
+    <text x="295" y="422" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ 制約に対して十分高速
+    </text>
+    <text x="295" y="434" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      ✅ サンプルで動作確認可能
+    </text>
+    <text x="295" y="446" font-family="Arial, sans-serif" font-size="8" fill="#dc2626">
+      ❌ 複雑すぎて実装ミスリスク高
+    </text>
+  </g>
+  
+  <!-- 検証の重点化 -->
+  <g id="verification-focus">
+    <rect x="510" y="380" width="220" height="70" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+    <text x="620" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      🧪 検証の重点化
+    </text>
+    <text x="515" y="410" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • サンプル以外のテストケース作成
+    </text>
+    <text x="515" y="422" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • エッジケース（最小値、最大値）テスト
+    </text>
+    <text x="515" y="434" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 計算量が制約内か最終確認
+    </text>
+    <text x="515" y="446" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 提出前の最終コードレビュー
+    </text>
+  </g>
+  
+  <!-- 成功への道筋 -->
+  <rect x="50" y="480" width="700" height="80" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="400" y="504" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#16a34a">
+    🎯 B問題成功への道筋
+  </text>
+  <text x="70" y="522" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+    <tspan font-weight="bold">短期目標:</tspan> B問題を20分以内で正解する確率を50%まで向上
+  </text>
+  <text x="70" y="536" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+    <tspan font-weight="bold">中期目標:</tspan> A,B問題をセットで30分以内に安定して正解
+  </text>
+  <text x="70" y="550" font-family="Arial, sans-serif" font-size="10" fill="#1f2937">
+    <tspan font-weight="bold">長期目標:</tspan> 緑色レーティング(800+)到達でB問題安定正解
+  </text>
+  
+  <!-- 矢印マーカー定義 -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#374151"/>
+    </marker>
+  </defs>
+</svg>
