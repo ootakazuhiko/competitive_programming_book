@@ -1,0 +1,178 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図10-3：コンテスト当日の理想的スケジュール</title>
+  <desc>コンテスト当日の時系列に沿った最適なスケジュール管理</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    コンテスト当日の理想的スケジュール
+  </text>
+  
+  <!-- タイムライン軸 -->
+  <line x1="100" y1="70" x2="100" y2="600" stroke="#374151" stroke-width="3" fill="none"/>
+  
+  <!-- 開始2時間前 (例: 19:00開始なら17:00) -->
+  <g transform="translate(120, 80)">
+    <circle cx="-20" cy="0" r="8" fill="#3b82f6"/>
+    <rect x="0" y="-25" width="600" height="100" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="20" y="-8" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">
+      🕕 開始2時間前 (17:00) - 最終準備期間
+    </text>
+    
+    <g transform="translate(20, 0)">
+      <text x="0" y="8" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e40af">
+        システム確認 & 環境整備
+      </text>
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 開発環境・ネットワーク接続の最終確認
+      </text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • テンプレートファイル・チートシートの準備
+      </text>
+      <text x="0" y="40" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 静かな環境の確保・通知オフ設定
+      </text>
+      <text x="300" y="8" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e40af">
+        コンディション調整
+      </text>
+      <text x="300" y="20" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 軽食・水分補給（糖分・カフェイン適量）
+      </text>
+      <text x="300" y="30" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 深呼吸・軽いストレッチで心身を整える
+      </text>
+      <text x="300" y="40" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 今日の目標を明確化（1問AC等）
+      </text>
+    </g>
+  </g>
+  
+  <!-- 開始1時間前 (18:00) -->
+  <g transform="translate(120, 200)">
+    <circle cx="-20" cy="0" r="8" fill="#22c55e"/>
+    <rect x="0" y="-25" width="600" height="100" rx="8" fill="#d1fae5" stroke="#22c55e" stroke-width="2"/>
+    <text x="20" y="-8" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#047857">
+      🕖 開始1時間前 (18:00) - ウォーミングアップ期間
+    </text>
+    
+    <g transform="translate(20, 0)">
+      <text x="0" y="8" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#047857">
+        技術的ウォーミングアップ
+      </text>
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 簡単な過去問A問題を1-2問解く
+      </text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 入出力・提出システムの動作確認
+      </text>
+      <text x="0" y="40" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 手と頭を「競プロモード」に切り替え
+      </text>
+      <text x="300" y="8" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#047857">
+        メンタル調整
+      </text>
+      <text x="300" y="20" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 「楽しむ」「学ぶ」マインドに切り替え
+      </text>
+      <text x="300" y="30" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 不安や緊張は「当然」と受け入れる
+      </text>
+      <text x="300" y="40" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 時間配分・作戦の最終確認
+      </text>
+    </g>
+  </g>
+  
+  <!-- 開始30分前 (18:30) -->
+  <g transform="translate(120, 320)">
+    <circle cx="-20" cy="0" r="8" fill="#f59e0b"/>
+    <rect x="0" y="-25" width="600" height="100" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="20" y="-8" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+      🕗 開始30分前 (18:30) - 待機・最終調整期間
+    </text>
+    
+    <g transform="translate(20, 0)">
+      <text x="0" y="8" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#d97706">
+        コンテストページ準備
+      </text>
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • AtCoderにログイン・コンテストページ確認
+      </text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 問題数・制限時間の最終確認
+      </text>
+      <text x="0" y="40" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 参加登録完了・待機状態で準備完了
+      </text>
+      <text x="300" y="8" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#d97706">
+        心の準備
+      </text>
+      <text x="300" y="20" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 「今日も成長の1日」と前向きに捉える
+      </text>
+      <text x="300" y="30" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 結果より過程を重視する心構え
+      </text>
+      <text x="300" y="40" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • リラックス・深呼吸で心拍数を整える
+      </text>
+    </g>
+  </g>
+  
+  <!-- 開始10分前 (18:50) -->
+  <g transform="translate(120, 440)">
+    <circle cx="-20" cy="0" r="8" fill="#ec4899"/>
+    <rect x="0" y="-25" width="600" height="100" rx="8" fill="#fdf2f8" stroke="#ec4899" stroke-width="2"/>
+    <text x="20" y="-8" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#be185d">
+      🕘 開始10分前 (18:50) - 最終スタンバイ
+    </text>
+    
+    <g transform="translate(20, 0)">
+      <text x="0" y="8" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#be185d">
+        直前チェック
+      </text>
+      <text x="0" y="20" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 時計・タイマーの準備完了
+      </text>
+      <text x="0" y="30" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 水分・軽食を手の届く位置に配置
+      </text>
+      <text x="0" y="40" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • IDEを開いてテンプレート準備完了
+      </text>
+      <text x="300" y="8" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#be185d">
+        メンタル最終調整
+      </text>
+      <text x="300" y="20" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 「準備は完璧、あとは楽しむだけ」
+      </text>
+      <text x="300" y="30" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 自分のペースで取り組む意識
+      </text>
+      <text x="300" y="40" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+        • 今日の学びに期待を込める
+      </text>
+    </g>
+  </g>
+  
+  <!-- 開始時刻 (19:00) -->
+  <g transform="translate(120, 560)">
+    <circle cx="-20" cy="0" r="12" fill="#dc2626"/>
+    <rect x="0" y="-20" width="600" height="60" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="3"/>
+    <text x="300" y="-2" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#dc2626">
+      🚀 19:00 - コンテスト開始！
+    </text>
+    <text x="300" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#dc2626">
+      深呼吸 → A問題から順番に → 自分のペースで → 楽しんで挑戦！
+    </text>
+  </g>
+  
+  <!-- サイドメッセージ -->
+  <rect x="50" y="620" width="700" height="25" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="638" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0284c7">
+    💡 重要: 完璧な準備よりも「楽しむ気持ち」と「学ぶ姿勢」が成功のカギ
+  </text>
+  
+</svg>

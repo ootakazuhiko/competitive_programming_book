@@ -1,0 +1,263 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図10-5：100分コンテストの効率的時間配分</title>
+  <desc>100分間のコンテスト時間を戦略的に配分する最適化モデル</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="650" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1f2937">
+    100分コンテストの効率的時間配分
+  </text>
+  
+  <!-- 時間軸（横軸）-->
+  <line x1="80" y1="580" x2="720" y2="580" stroke="#374151" stroke-width="3" fill="none"/>
+  
+  <!-- 時間目盛り -->
+  <text x="80" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">0分</text>
+  <text x="240" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">25分</text>
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">50分</text>
+  <text x="560" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">75分</text>
+  <text x="720" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#374151">100分</text>
+  
+  <!-- 縦線 -->
+  <line x1="80" y1="570" x2="80" y2="590" stroke="#374151" stroke-width="2" fill="none"/>
+  <line x1="240" y1="570" x2="240" y2="590" stroke="#374151" stroke-width="2" fill="none"/>
+  <line x1="400" y1="570" x2="400" y2="590" stroke="#374151" stroke-width="2" fill="none"/>
+  <line x1="560" y1="570" x2="560" y2="590" stroke="#374151" stroke-width="2" fill="none"/>
+  <line x1="720" y1="570" x2="720" y2="590" stroke="#374151" stroke-width="2" fill="none"/>
+  
+  <!-- Period 1: 序盤 (0-25分) -->
+  <rect x="80" y="60" width="160" height="500" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="3"/>
+  <g transform="translate(90, 80)">
+    <text x="70" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">
+      🚀 序盤戦略 (0-25分)
+    </text>
+    <text x="70" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#3730a3">
+      基盤構築期間
+    </text>
+    
+    <!-- A問題対応 -->
+    <rect x="5" y="40" width="130" height="80" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="70" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      📝 A問題 (10-15分)
+    </text>
+    <text x="10" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 確実にAC を目指す</text>
+    <text x="10" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 丁寧に実装・テスト</text>
+    <text x="10" y="87" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 出力形式を厳密にチェック</text>
+    <text x="10" y="97" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 自信につながる第一歩</text>
+    <text x="10" y="107" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#16a34a">
+      → 必ず取りたい得点源</text>
+    
+    <!-- 全体把握 -->
+    <rect x="5" y="130" width="130" height="80" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="70" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      👀 全体把握 (5-10分)
+    </text>
+    <text x="10" y="157" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 全問題にざっと目を通す</text>
+    <text x="10" y="167" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 難易度・所要時間を推定</text>
+    <text x="10" y="177" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 解く順序を決定</text>
+    <text x="10" y="187" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 100分の戦略を立てる</text>
+    <text x="10" y="197" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#16a34a">
+      → 効率的な攻略順序</text>
+    
+    <!-- ウォーミングアップ -->
+    <rect x="5" y="220" width="130" height="60" rx="4" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+    <text x="70" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+      🔥 メンタル調整
+    </text>
+    <text x="10" y="247" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • A問題ACで自信をつける</text>
+    <text x="10" y="257" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 焦らず自分のペース</text>
+    <text x="10" y="267" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 「楽しむ」気持ちを維持</text>
+    
+    <rect x="5" y="290" width="130" height="40" rx="4" fill="#ecfccb" stroke="#65a30d" stroke-width="1"/>
+    <text x="70" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#365314">
+      🎯 目標: A問題確実AC
+    </text>
+    <text x="70" y="318" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#365314">
+      + 全体戦略確立
+    </text>
+  </g>
+  
+  <!-- Period 2: 前半 (25-50分) -->
+  <rect x="250" y="60" width="140" height="500" rx="8" fill="#d1fae5" stroke="#22c55e" stroke-width="3"/>
+  <g transform="translate(260, 80)">
+    <text x="60" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#047857">
+      ⚡ 前半戦略 (25-50分)
+    </text>
+    <text x="60" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+      得点拡大期間
+    </text>
+    
+    <!-- B問題対応 -->
+    <rect x="5" y="40" width="110" height="100" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+    <text x="55" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857">
+      🎯 B問題 (15-20分)
+    </text>
+    <text x="10" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • A問題より複雑だが解ける</text>
+    <text x="10" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • アルゴリズムを丁寧に検討</text>
+    <text x="10" y="87" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 実装前に十分な設計を</text>
+    <text x="10" y="97" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • サンプルで動作確認</text>
+    <text x="10" y="107" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 自信がなければ後回しも</text>
+    <text x="10" y="117" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#16a34a">
+      → 確実性重視で攻略</text>
+    
+    <!-- C問題検討 -->
+    <rect x="5" y="150" width="110" height="80" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+    <text x="55" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857">
+      🔍 C問題検討 (5-10分)
+    </text>
+    <text x="10" y="177" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 問題文を理解できるか</text>
+    <text x="10" y="187" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 解法の方向性が見えるか</text>
+    <text x="10" y="197" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 実装可能な範囲か判断</text>
+    <text x="10" y="207" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 時間対効果を考慮</text>
+    <text x="10" y="217" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#d97706">
+      → 挑戦するか後回しか判断</text>
+    
+    <rect x="5" y="240" width="110" height="40" rx="4" fill="#ecfccb" stroke="#65a30d" stroke-width="1"/>
+    <text x="55" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#365314">
+      🎯 目標: B問題AC
+    </text>
+    <text x="55" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#365314">
+      + C問題方針決定
+    </text>
+  </g>
+  
+  <!-- Period 3: 後半 (50-75分) -->
+  <rect x="410" y="60" width="140" height="500" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
+  <g transform="translate(420, 80)">
+    <text x="60" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+      🎲 後半戦略 (50-75分)
+    </text>
+    <text x="60" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+      挑戦期間
+    </text>
+    
+    <!-- C問題実装 -->
+    <rect x="5" y="40" width="110" height="120" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="55" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      🚀 C問題挑戦 (20-25分)
+    </text>
+    <text x="10" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 前半で決めた方針で実装</text>
+    <text x="10" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 複雑でも段階的に構築</text>
+    <text x="10" y="87" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • デバッグ時間も考慮</text>
+    <text x="10" y="97" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 詰まったら方針転換も</text>
+    <text x="10" y="107" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 部分点狙いも戦略</text>
+    <text x="10" y="117" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 完璧を求めすぎない</text>
+    <text x="10" y="127" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#dc2626">
+      ⚠️ 時間切れリスクに注意</text>
+    
+    <!-- 戦略判断 -->
+    <rect x="5" y="170" width="110" height="80" rx="4" fill="#fefce8" stroke="#f59e0b" stroke-width="1"/>
+    <text x="55" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+      ⚖️ 戦略的判断
+    </text>
+    <text x="10" y="197" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • C問題が詰まったら撤退</text>
+    <text x="10" y="207" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • A・B問題の見直し</text>
+    <text x="10" y="217" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • D問題への挑戦検討</text>
+    <text x="10" y="227" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 残り時間と相談</text>
+    <text x="10" y="237" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#16a34a">
+      → 柔軟な戦略変更</text>
+    
+    <rect x="5" y="260" width="110" height="40" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+    <text x="55" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#92400e">
+      🎯 目標: C問題挑戦
+    </text>
+    <text x="55" y="288" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#92400e">
+      or 見直し完了
+    </text>
+  </g>
+  
+  <!-- Period 4: 終盤 (75-100分) -->
+  <rect x="570" y="60" width="140" height="500" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="3"/>
+  <g transform="translate(580, 80)">
+    <text x="60" y="15" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">
+      🏁 終盤戦略 (75-100分)
+    </text>
+    <text x="60" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#581c87">
+      最終確認期間
+    </text>
+    
+    <!-- 最終確認 -->
+    <rect x="5" y="40" width="110" height="100" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="55" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#7c3aed">
+      🔍 最終確認 (15-20分)
+    </text>
+    <text x="10" y="67" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • AC済み問題の再チェック</text>
+    <text x="10" y="77" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 出力形式の最終確認</text>
+    <text x="10" y="87" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • エッジケースの再テスト</text>
+    <text x="10" y="97" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 計算ミス・実装ミスチェック</text>
+    <text x="10" y="107" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 提出履歴の確認</text>
+    <text x="10" y="117" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#16a34a">
+      → 得点の確実性向上</text>
+    
+    <!-- ラストスパート -->
+    <rect x="5" y="150" width="110" height="80" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="55" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#7c3aed">
+      🚀 ラストスパート
+    </text>
+    <text x="10" y="177" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 時間があれば難問挑戦</text>
+    <text x="10" y="187" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 部分点でも狙ってみる</text>
+    <text x="10" y="197" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • 最後まで諦めない気持ち</text>
+    <text x="10" y="207" font-family="Arial, sans-serif" font-size="8" fill="#1f2937">
+      • ただし無理はしない</text>
+    <text x="10" y="217" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#dc2626">
+      ⚠️ 確実な得点を優先</text>
+    
+    <rect x="5" y="240" width="110" height="40" rx="4" fill="#faf5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="55" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#581c87">
+      🎯 目標: 見直し完了
+    </text>
+    <text x="55" y="268" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#581c87">
+      + 悔いのない挑戦
+    </text>
+  </g>
+  
+  <!-- 総合戦略メッセージ -->
+  <rect x="50" y="610" width="700" height="35" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="400" y="625" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0284c7">
+    💡 重要: 時間配分は目安 → 状況に応じて柔軟に調整
+  </text>
+  <text x="400" y="638" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#0284c7">
+    「確実にACできる問題」 > 「挑戦的な問題」 → 安定した成績につながる
+  </text>
+  
+</svg>
