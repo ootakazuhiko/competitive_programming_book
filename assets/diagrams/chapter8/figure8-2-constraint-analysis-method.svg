@@ -1,0 +1,211 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図8-2：制約の分析方法</title>
+  <desc>問題の制約から計算量を逆算し、適切なアルゴリズムを選択する方法</desc>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">
+    図8-2：制約の分析方法
+  </text>
+  
+  <!-- Introduction -->
+  <rect x="50" y="50" width="700" height="50" fill="#e8f4fd" stroke="#3498db" stroke-width="2" rx="5"/>
+  <text x="70" y="75" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#2980b9">
+    🎯 制約から計算量を逆算してアルゴリズムを選択する技術
+  </text>
+  <text x="70" y="90" font-family="Inter, sans-serif" font-size="12" fill="#2980b9">
+    制約 → 許容計算量 → アルゴリズム選択の流れを理解しよう
+  </text>
+  
+  <!-- Constraint analysis table -->
+  <text x="50" y="140" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    制約と計算量の対応表
+  </text>
+  
+  <rect x="50" y="150" width="700" height="180" fill="white" stroke="#bdc3c7" stroke-width="2" rx="5"/>
+  
+  <!-- Table headers -->
+  <rect x="70" y="170" width="120" height="30" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+  <text x="130" y="190" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+    制約（N）
+  </text>
+  
+  <rect x="190" y="170" width="120" height="30" fill="#27ae60" stroke="#229954" stroke-width="1"/>
+  <text x="250" y="190" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+    許容計算量
+  </text>
+  
+  <rect x="310" y="170" width="180" height="30" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <text x="400" y="190" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+    適用可能アルゴリズム
+  </text>
+  
+  <rect x="490" y="170" width="120" height="30" fill="#f39c12" stroke="#e67e22" stroke-width="1"/>
+  <text x="550" y="190" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+    実例
+  </text>
+  
+  <rect x="610" y="170" width="120" height="30" fill="#9b59b6" stroke="#8e44ad" stroke-width="1"/>
+  <text x="670" y="190" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+    危険度
+  </text>
+  
+  <!-- Table rows -->
+  <!-- Row 1: N ≤ 10 -->
+  <rect x="70" y="200" width="120" height="25" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="217" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">N ≤ 10</text>
+  
+  <rect x="190" y="200" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="250" y="217" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">すべて可能</text>
+  
+  <rect x="310" y="200" width="180" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="400" y="217" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">全探索、順列・組み合わせ</text>
+  
+  <rect x="490" y="200" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="550" y="217" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">10! = 3.6M</text>
+  
+  <rect x="610" y="200" width="120" height="25" fill="#d5f4e6" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="670" y="217" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#27ae60">安全</text>
+  
+  <!-- Row 2: N ≤ 20 -->
+  <rect x="70" y="225" width="120" height="25" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="242" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">N ≤ 20</text>
+  
+  <rect x="190" y="225" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="250" y="242" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">O(2^N)まで</text>
+  
+  <rect x="310" y="225" width="180" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="400" y="242" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">ビット演算、動的計画法</text>
+  
+  <rect x="490" y="225" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="550" y="242" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">2^20 = 1M</text>
+  
+  <rect x="610" y="225" width="120" height="25" fill="#d5f4e6" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="670" y="242" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#27ae60">安全</text>
+  
+  <!-- Row 3: N ≤ 100 -->
+  <rect x="70" y="250" width="120" height="25" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="267" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">N ≤ 100</text>
+  
+  <rect x="190" y="250" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="250" y="267" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">O(N^3)まで</text>
+  
+  <rect x="310" y="250" width="180" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="400" y="267" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">三重ループ、ワーシャルフロイド</text>
+  
+  <rect x="490" y="250" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="550" y="267" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">100^3 = 1M</text>
+  
+  <rect x="610" y="250" width="120" height="25" fill="#d5f4e6" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="670" y="267" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#27ae60">安全</text>
+  
+  <!-- Row 4: N ≤ 1000 -->
+  <rect x="70" y="275" width="120" height="25" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="292" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">N ≤ 1000</text>
+  
+  <rect x="190" y="275" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="250" y="292" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">O(N^2)まで</text>
+  
+  <rect x="310" y="275" width="180" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="400" y="292" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">二重ループ、単純ソート</text>
+  
+  <rect x="490" y="275" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="550" y="292" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">1000^2 = 1M</text>
+  
+  <rect x="610" y="275" width="120" height="25" fill="#fef9e7" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="670" y="292" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#f39c12">注意</text>
+  
+  <!-- Row 5: N ≤ 100000 -->
+  <rect x="70" y="300" width="120" height="25" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="317" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">N ≤ 100000</text>
+  
+  <rect x="190" y="300" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="250" y="317" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">O(N log N)まで</text>
+  
+  <rect x="310" y="300" width="180" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="400" y="317" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">高速ソート、二分探索</text>
+  
+  <rect x="490" y="300" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="550" y="317" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">1.7M ops</text>
+  
+  <rect x="610" y="300" width="120" height="25" fill="#ffebee" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="670" y="317" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="#e74c3c">危険</text>
+  
+  <!-- Analysis process -->
+  <text x="50" y="370" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    制約分析の実践手順
+  </text>
+  
+  <g transform="translate(50, 390)">
+    <!-- Step 1 -->
+    <rect x="0" y="0" width="130" height="80" fill="#e8f4fd" stroke="#3498db" stroke-width="2" rx="5"/>
+    <text x="65" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#2980b9">
+      Step 1: 制約確認
+    </text>
+    <text x="10" y="40" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• N, M の値を確認</text>
+    <text x="10" y="53" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 時間制限をチェック</text>
+    <text x="10" y="66" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• メモリ制限を確認</text>
+    
+    <!-- Arrow -->
+    <path d="M 140 40 L 170 40" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 2 -->
+    <rect x="180" y="0" width="130" height="80" fill="#e8f5e8" stroke="#27ae60" stroke-width="2" rx="5"/>
+    <text x="245" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#27ae60">
+      Step 2: 計算量推定
+    </text>
+    <text x="190" y="40" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 表から許容計算量</text>
+    <text x="190" y="53" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 安全マージン考慮</text>
+    <text x="190" y="66" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 実装複雑度も加味</text>
+    
+    <!-- Arrow -->
+    <path d="M 320 40 L 350 40" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 3 -->
+    <rect x="360" y="0" width="130" height="80" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="5"/>
+    <text x="425" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#856404">
+      Step 3: 解法選択
+    </text>
+    <text x="370" y="40" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 適用可能解法リスト</text>
+    <text x="370" y="53" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 実装難易度を考慮</text>
+    <text x="370" y="66" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 最適解を決定</text>
+    
+    <!-- Arrow -->
+    <path d="M 500 40 L 530 40" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 4 -->
+    <rect x="540" y="0" width="130" height="80" fill="#ffebee" stroke="#e74c3c" stroke-width="2" rx="5"/>
+    <text x="605" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#c0392b">
+      Step 4: 実装・検証
+    </text>
+    <text x="550" y="40" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 選択解法で実装</text>
+    <text x="550" y="53" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• サンプルで動作確認</text>
+    <text x="550" y="66" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 計算量再チェック</text>
+  </g>
+  
+  <!-- Example -->
+  <text x="50" y="510" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#2c3e50">
+    実践例：「N個の数から2つ選んで和が最大になるペア」
+  </text>
+  
+  <rect x="50" y="520" width="700" height="60" fill="#f8f9fa" stroke="#bdc3c7" stroke-width="1" rx="3"/>
+  
+  <g transform="translate(70, 535)">
+    <text x="0" y="15" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+      制約：N ≤ 1000 → 許容計算量：O(N²) → 解法：二重ループで全探索 → 実装：簡単
+    </text>
+    <text x="0" y="35" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+      制約：N ≤ 100000 → 許容計算量：O(N log N) → 解法：ソート後に端から選択 → 実装：要工夫
+    </text>
+  </g>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+</svg>

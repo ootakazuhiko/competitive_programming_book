@@ -1,0 +1,212 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-17：ABC全体攻略マップ</title>
+  <desc>A問題からC問題まで、段階的な攻略戦略の全体像</desc>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">
+    図7-17：ABC全体攻略マップ
+  </text>
+  
+  <!-- Learning progression path -->
+  <g transform="translate(50, 60)">
+    <!-- A Problem Phase -->
+    <rect x="0" y="0" width="200" height="120" fill="#e8f5e8" stroke="#27ae60" stroke-width="3" rx="10"/>
+    <text x="100" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#27ae60">
+      🅰️ A問題段階
+    </text>
+    <text x="100" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#27ae60">
+      基礎固めフェーズ
+    </text>
+    
+    <text x="20" y="68" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">
+      目標：正答率95%以上
+    </text>
+    <text x="20" y="83" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      • 3分以内での安定正解
+    </text>
+    <text x="20" y="95" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      • 基本文法の完全習得
+    </text>
+    <text x="20" y="107" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      • パターン認識の向上
+    </text>
+    
+    <!-- Progress arrow -->
+    <path d="M 210 60 L 270 60" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="240" y="55" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#27ae60">
+      安定化
+    </text>
+    
+    <!-- B Problem Phase -->
+    <rect x="280" y="0" width="200" height="120" fill="#fff3cd" stroke="#ffc107" stroke-width="3" rx="10"/>
+    <text x="380" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#856404">
+      🅱️ B問題段階
+    </text>
+    <text x="380" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#856404">
+      応用力強化フェーズ
+    </text>
+    
+    <text x="300" y="68" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">
+      目標：正答率70%以上
+    </text>
+    <text x="300" y="83" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      • 15分以内での解答
+    </text>
+    <text x="300" y="95" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      • 全探索・シミュレーション習得
+    </text>
+    <text x="300" y="107" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      • 問題分析力の向上
+    </text>
+    
+    <!-- Progress arrow -->
+    <path d="M 490 60 L 550 60" stroke="#2c3e50" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="520" y="55" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#f39c12">
+      挑戦
+    </text>
+    
+    <!-- C Problem Phase -->
+    <rect x="560" y="0" width="190" height="120" fill="#ffebee" stroke="#e74c3c" stroke-width="3" rx="10"/>
+    <text x="655" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#c0392b">
+      🅲 C問題段階
+    </text>
+    <text x="655" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#c0392b">
+      高度挑戦フェーズ
+    </text>
+    
+    <text x="580" y="68" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#2c3e50">
+      目標：部分点・理解重視
+    </text>
+    <text x="580" y="83" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      • アルゴリズム的思考
+    </text>
+    <text x="580" y="95" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      • 数学的考察力
+    </text>
+    <text x="580" y="107" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      • 複雑な問題への挑戦
+    </text>
+  </g>
+  
+  <!-- Difficulty progression -->
+  <text x="50" y="220" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    難易度とスキル要件の変化
+  </text>
+  
+  <!-- Skill requirements chart -->
+  <g transform="translate(50, 240)">
+    <!-- Chart background -->
+    <rect x="0" y="0" width="700" height="150" fill="white" stroke="#bdc3c7" stroke-width="2" rx="5"/>
+    
+    <!-- Y-axis -->
+    <line x1="50" y1="130" x2="50" y2="20" stroke="#2c3e50" stroke-width="2"/>
+    <text x="20" y="75" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50" transform="rotate(-90, 20, 75)">
+      必要スキルレベル
+    </text>
+    
+    <!-- X-axis -->
+    <line x1="50" y1="130" x2="650" y2="130" stroke="#2c3e50" stroke-width="2"/>
+    <text x="350" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+      問題の種類
+    </text>
+    
+    <!-- Problem categories -->
+    <text x="150" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#27ae60">A問題</text>
+    <text x="350" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#f39c12">B問題</text>
+    <text x="550" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#e74c3c">C問題</text>
+    
+    <!-- Skill level bars -->
+    <!-- A Problem -->
+    <rect x="100" y="100" width="100" height="30" fill="#27ae60" opacity="0.7"/>
+    <text x="150" y="118" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="white">
+      基本文法
+    </text>
+    
+    <!-- B Problem -->
+    <rect x="300" y="70" width="100" height="60" fill="#f39c12" opacity="0.7"/>
+    <text x="350" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="white">
+      論理的思考
+    </text>
+    <text x="350" y="108" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="white">
+      アルゴリズム
+    </text>
+    <text x="350" y="121" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="white">
+      基礎
+    </text>
+    
+    <!-- C Problem -->
+    <rect x="500" y="30" width="100" height="100" fill="#e74c3c" opacity="0.7"/>
+    <text x="550" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="white">
+      高度な
+    </text>
+    <text x="550" y="62" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="white">
+      アルゴリズム
+    </text>
+    <text x="550" y="78" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="white">
+      数学的思考
+    </text>
+    <text x="550" y="94" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="white">
+      問題分析力
+    </text>
+    <text x="550" y="110" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="white">
+      実装力
+    </text>
+    <text x="550" y="122" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="white">
+      忍耐力
+    </text>
+  </g>
+  
+  <!-- Strategy recommendations -->
+  <text x="50" y="430" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    段階別学習戦略
+  </text>
+  
+  <g transform="translate(50, 450)">
+    <!-- Phase 1 -->
+    <rect x="0" y="0" width="220" height="90" fill="#e8f5e8" stroke="#27ae60" stroke-width="2" rx="5"/>
+    <text x="110" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#27ae60">
+      Phase 1: A問題完全攻略
+    </text>
+    <text x="15" y="40" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 50問以上のA問題を解く</text>
+    <text x="15" y="53" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• パターンを暗記するレベルまで</text>
+    <text x="15" y="66" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 3分以内正解を安定化</text>
+    <text x="15" y="79" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 基本文法の完全習得</text>
+    
+    <!-- Phase 2 -->
+    <rect x="240" y="0" width="220" height="90" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="5"/>
+    <text x="350" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#856404">
+      Phase 2: B問題攻略開始
+    </text>
+    <text x="255" y="40" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• B問題の解説を熟読</text>
+    <text x="255" y="53" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 全探索の練習を重点的に</text>
+    <text x="255" y="66" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 時間を気にせず理解重視</text>
+    <text x="255" y="79" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 正答率50%を目指す</text>
+    
+    <!-- Phase 3 -->
+    <rect x="480" y="0" width="220" height="90" fill="#ffebee" stroke="#e74c3c" stroke-width="2" rx="5"/>
+    <text x="590" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="#c0392b">
+      Phase 3: C問題への挑戦
+    </text>
+    <text x="495" y="40" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• アルゴリズムの体系的学習</text>
+    <text x="495" y="53" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 数学的考察力の強化</text>
+    <text x="495" y="66" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 解けなくても解説で学習</text>
+    <text x="495" y="79" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">• 長期的視点での成長</text>
+  </g>
+  
+  <!-- Success metrics -->
+  <rect x="50" y="560" width="700" height="30" fill="#e8f4fd" stroke="#3498db" stroke-width="1" rx="3"/>
+  <text x="70" y="580" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2980b9">
+    🎯 目標設定：A問題3分→B問題15分→C問題は解説理解まで。急がず着実にステップアップ！
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+</svg>
