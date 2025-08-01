@@ -1,0 +1,237 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-8：条件分岐の表による整理</title>
+  <desc>3つの数a, b, cの大小関係判定における全パターンの整理と実装方法の比較図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .pattern-title { font: 600 12px Inter, sans-serif; fill: #7C3AED; }
+      .code-text { font: 500 12px 'Courier New', monospace; fill: #1F2937; }
+      .condition-text { font: 600 11px 'Courier New', monospace; fill: #DC2626; }
+      .result-text { font: 600 11px 'Courier New', monospace; fill: #059669; }
+      .explanation-text { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .insight-text { font: 600 11px Inter, sans-serif; fill: #7C3AED; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .problem-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .pattern-box { fill: #F3E8FF; stroke: #7C3AED; stroke-width: 2; }
+      .method1-box { fill: #FEE2E2; stroke: #EF4444; stroke-width: 2; }
+      .method2-box { fill: #DCFCE7; stroke: #22C55E; stroke-width: 2; }
+      .table-header { fill: #E5E7EB; stroke: #9CA3AF; stroke-width: 1; }
+      .table-cell { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .highlight-cell { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-8：条件分岐の表による整理</text>
+  
+  <!-- Problem Description -->
+  <g id="problem">
+    <rect x="50" y="60" width="700" height="50" rx="8" class="problem-box"/>
+    <text x="70" y="85" class="emoji">📝</text>
+    <text x="100" y="85" class="section-title" fill="#D97706">問題例：「3つの数a, b, cの大小関係を判定」</text>
+  </g>
+  
+  <!-- Pattern Table -->
+  <g id="patterns">
+    <rect x="50" y="130" width="700" height="180" rx="8" class="pattern-box"/>
+    <text x="70" y="155" class="emoji">📊</text>
+    <text x="100" y="155" class="section-title" fill="#7C3AED">可能なパターン（6通り）</text>
+    
+    <!-- Table headers -->
+    <g transform="translate(80, 170)">
+      <rect x="0" y="0" width="120" height="30" class="table-header"/>
+      <text x="60" y="20" text-anchor="middle" class="pattern-title">パターン</text>
+      
+      <rect x="120" y="0" width="200" height="30" class="table-header"/>
+      <text x="220" y="20" text-anchor="middle" class="pattern-title">大小関係</text>
+      
+      <rect x="320" y="0" width="200" height="30" class="table-header"/>
+      <text x="420" y="20" text-anchor="middle" class="pattern-title">出力順序</text>
+      
+      <rect x="520" y="0" width="160" height="30" class="table-header"/>
+      <text x="600" y="20" text-anchor="middle" class="pattern-title">実例 (a=3,b=1,c=5)</text>
+    </g>
+    
+    <!-- Pattern 1 -->
+    <g transform="translate(80, 200)">
+      <rect x="0" y="0" width="120" height="25" class="table-cell"/>
+      <text x="60" y="17" text-anchor="middle" class="pattern-title">パターン1</text>
+      
+      <rect x="120" y="0" width="200" height="25" class="table-cell"/>
+      <text x="220" y="17" text-anchor="middle" class="condition-text">a ≥ b ≥ c</text>
+      
+      <rect x="320" y="0" width="200" height="25" class="table-cell"/>
+      <text x="420" y="17" text-anchor="middle" class="result-text">"a b c"</text>
+      
+      <rect x="520" y="0" width="160" height="25" class="table-cell"/>
+      <text x="600" y="17" text-anchor="middle" class="explanation-text">該当せず</text>
+    </g>
+    
+    <!-- Pattern 2 -->
+    <g transform="translate(80, 225)">
+      <rect x="0" y="0" width="120" height="25" class="table-cell"/>
+      <text x="60" y="17" text-anchor="middle" class="pattern-title">パターン2</text>
+      
+      <rect x="120" y="0" width="200" height="25" class="table-cell"/>
+      <text x="220" y="17" text-anchor="middle" class="condition-text">a ≥ c ≥ b</text>
+      
+      <rect x="320" y="0" width="200" height="25" class="highlight-cell"/>
+      <text x="420" y="17" text-anchor="middle" class="result-text">"a c b"</text>
+      
+      <rect x="520" y="0" width="160" height="25" class="highlight-cell"/>
+      <text x="600" y="17" text-anchor="middle" class="insight-text">3 ≥ 5 ≥ 1 ✗</text>
+    </g>
+    
+    <!-- Pattern 3 -->
+    <g transform="translate(80, 250)">
+      <rect x="0" y="0" width="120" height="25" class="table-cell"/>
+      <text x="60" y="17" text-anchor="middle" class="pattern-title">パターン3</text>
+      
+      <rect x="120" y="0" width="200" height="25" class="table-cell"/>
+      <text x="220" y="17" text-anchor="middle" class="condition-text">b ≥ a ≥ c</text>
+      
+      <rect x="320" y="0" width="200" height="25" class="table-cell"/>
+      <text x="420" y="17" text-anchor="middle" class="result-text">"b a c"</text>
+      
+      <rect x="520" y="0" width="160" height="25" class="table-cell"/>
+      <text x="600" y="17" text-anchor="middle" class="explanation-text">該当せず</text>
+    </g>
+    
+    <!-- Pattern 4 -->
+    <g transform="translate(80, 275)">
+      <rect x="0" y="0" width="120" height="25" class="table-cell"/>
+      <text x="60" y="17" text-anchor="middle" class="pattern-title">パターン4</text>
+      
+      <rect x="120" y="0" width="200" height="25" class="table-cell"/>
+      <text x="220" y="17" text-anchor="middle" class="condition-text">b ≥ c ≥ a</text>
+      
+      <rect x="320" y="0" width="200" height="25" class="table-cell"/>
+      <text x="420" y="17" text-anchor="middle" class="result-text">"b c a"</text>
+      
+      <rect x="520" y="0" width="160" height="25" class="table-cell"/>
+      <text x="600" y="17" text-anchor="middle" class="explanation-text">該当せず</text>
+    </g>
+    
+    <!-- Pattern 5 -->
+    <g transform="translate(80, 300)">
+      <rect x="0" y="0" width="120" height="25" class="highlight-cell"/>
+      <text x="60" y="17" text-anchor="middle" class="pattern-title">パターン5</text>
+      
+      <rect x="120" y="0" width="200" height="25" class="highlight-cell"/>
+      <text x="220" y="17" text-anchor="middle" class="condition-text">c ≥ a ≥ b</text>
+      
+      <rect x="320" y="0" width="200" height="25" class="highlight-cell"/>
+      <text x="420" y="17" text-anchor="middle" class="result-text">"c a b"</text>
+      
+      <rect x="520" y="0" width="160" height="25" class="highlight-cell"/>
+      <text x="600" y="17" text-anchor="middle" class="insight-text">5 ≥ 3 ≥ 1 ✓</text>
+    </g>
+    
+    <!-- Pattern 6 -->
+    <g transform="translate(80, 325)">
+      <rect x="0" y="0" width="120" height="25" class="table-cell"/>
+      <text x="60" y="17" text-anchor="middle" class="pattern-title">パターン6</text>
+      
+      <rect x="120" y="0" width="200" height="25" class="table-cell"/>
+      <text x="220" y="17" text-anchor="middle" class="condition-text">c ≥ b ≥ a</text>
+      
+      <rect x="320" y="0" width="200" height="25" class="table-cell"/>
+      <text x="420" y="17" text-anchor="middle" class="result-text">"c b a"</text>
+      
+      <rect x="520" y="0" width="160" height="25" class="table-cell"/>
+      <text x="600" y="17" text-anchor="middle" class="explanation-text">該当せず</text>
+    </g>
+  </g>
+  
+  <!-- Method 1: All patterns -->
+  <g id="method1">
+    <rect x="50" y="330" width="350" height="160" rx="8" class="method1-box"/>
+    <text x="70" y="355" class="emoji">⚠️</text>
+    <text x="100" y="355" class="section-title" fill="#DC2626">実装方法1: 全パターンを条件分岐</text>
+    
+    <g transform="translate(70, 370)">
+      <rect x="0" y="0" width="310" height="105" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="1"/>
+      <g transform="translate(10, 10)">
+        <text x="0" y="15" class="code-text">a, b, c = map(int, input().split())</text>
+        <text x="0" y="30" class="code-text">if a >= b >= c:</text>
+        <text x="0" y="45" class="code-text">    print(a, b, c)</text>
+        <text x="0" y="60" class="code-text">elif a >= c >= b:</text>
+        <text x="0" y="75" class="code-text">    print(a, c, b)</text>
+        <text x="0" y="90" class="code-text"># ... (残り4パターン)</text>
+      </g>
+    </g>
+    
+    <text x="70" y="465" class="explanation-text" fill="#DC2626">問題点: コードが長くなり、ミスしやすい</text>
+  </g>
+  
+  <!-- Method 2: Sort -->
+  <g id="method2">
+    <rect x="420" y="330" width="330" height="160" rx="8" class="method2-box"/>
+    <text x="440" y="355" class="emoji">✨</text>
+    <text x="470" y="355" class="section-title" fill="#059669">実装方法2: ソートを活用（推奨）</text>
+    
+    <g transform="translate(440, 370)">
+      <rect x="0" y="0" width="290" height="75" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="1"/>
+      <g transform="translate(10, 10)">
+        <text x="0" y="15" class="code-text">a, b, c = map(int, input().split())</text>
+        <text x="0" y="30" class="code-text">numbers = [a, b, c]</text>
+        <text x="0" y="45" class="code-text">numbers.sort(reverse=True)</text>
+        <rect x="240" y="35" width="40" height="20" fill="#DCFCE7" stroke="#22C55E" stroke-width="1"/>
+        <text x="260" y="48" text-anchor="middle" class="explanation-text" fill="#059669">降順</text>
+        <text x="0" y="60" class="code-text">print(*numbers)</text>
+      </g>
+    </g>
+    
+    <text x="440" y="465" class="explanation-text" fill="#059669">利点: シンプルで確実、拡張しやすい</text>
+  </g>
+  
+  <!-- Learning Points -->
+  <g id="learning-points">
+    <rect x="50" y="510" width="700" height="150" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="70" y="535" class="emoji">💡</text>
+    <text x="100" y="535" class="section-title">学習ポイント</text>
+    
+    <g transform="translate(70, 550)">
+      <circle cx="8" cy="8" r="4" fill="#7C3AED"/>
+      <text x="20" y="12" class="explanation-text">複雑な条件分岐は、より簡潔な方法がないか検討する</text>
+      
+      <circle cx="8" cy="28" r="4" fill="#7C3AED"/>
+      <text x="20" y="32" class="explanation-text">ソートなど既存の機能を活用できる場合は積極的に使う</text>
+      
+      <circle cx="8" cy="48" r="4" fill="#7C3AED"/>
+      <text x="20" y="52" class="explanation-text">ただし、条件分岐の練習として敢えて愚直に書くのも良い</text>
+      
+      <!-- Comparison table -->
+      <g transform="translate(0, 70)">
+        <rect x="0" y="0" width="660" height="60" fill="#FFFFFF" stroke="#CBD5E0" stroke-width="1"/>
+        
+        <!-- Headers -->
+        <rect x="0" y="0" width="120" height="30" class="table-header"/>
+        <text x="60" y="20" text-anchor="middle" class="pattern-title">比較項目</text>
+        
+        <rect x="120" y="0" width="270" height="30" class="table-header"/>
+        <text x="255" y="20" text-anchor="middle" class="pattern-title">方法1: 全パターン分岐</text>
+        
+        <rect x="390" y="0" width="270" height="30" class="table-header"/>
+        <text x="525" y="20" text-anchor="middle" class="pattern-title">方法2: ソート活用</text>
+        
+        <!-- Row 1 -->
+        <rect x="0" y="30" width="120" height="30" class="table-cell"/>
+        <text x="60" y="48" text-anchor="middle" class="explanation-text">コード量</text>
+        
+        <rect x="120" y="30" width="270" height="30" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/>
+        <text x="255" y="48" text-anchor="middle" class="explanation-text" fill="#DC2626">多い（6つの条件分岐）</text>
+        
+        <rect x="390" y="30" width="270" height="30" fill="#DCFCE7" stroke="#22C55E" stroke-width="1"/>
+        <text x="525" y="48" text-anchor="middle" class="explanation-text" fill="#059669">少ない（3行）</text>
+      </g>
+    </g>
+  </g>
+  
+</svg>

@@ -1,0 +1,245 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-5：二重ループによる全探索</title>
+  <desc>N個の数から2つ選んで和がKになる組み合わせの個数を求める二重ループアルゴリズムの視覚的説明</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .code-text { font: 500 12px 'Courier New', monospace; fill: #1F2937; }
+      .variable-text { font: 600 12px Inter, sans-serif; fill: #059669; }
+      .index-text { font: 600 11px Inter, sans-serif; fill: #DC2626; }
+      .calculation-text { font: 500 11px Inter, sans-serif; fill: #7C3AED; }
+      .result-text { font: 600 11px Inter, sans-serif; }
+      .explanation-text { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .example-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .approach-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .step-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .success-box { fill: #DCFCE7; stroke: #22C55E; stroke-width: 2; }
+      .failure-box { fill: #FEE2E2; stroke: #EF4444; stroke-width: 1; }
+      .array-cell { fill: #F3F4F6; stroke: #6B7280; stroke-width: 1; }
+      .highlighted-cell { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .connection-line { stroke: #7C3AED; stroke-width: 2; fill: none; }
+    </style>
+    
+    <marker id="connection-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L10,3 z" fill="#7C3AED"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-5：二重ループによる全探索</text>
+  
+  <!-- Problem Description -->
+  <g id="problem">
+    <rect x="50" y="60" width="700" height="80" rx="8" class="example-box"/>
+    <text x="70" y="85" class="emoji">📝</text>
+    <text x="100" y="85" class="section-title" fill="#D97706">問題例：「N個の数から2つ選んで、その和がKになる組み合わせの個数を求める」</text>
+    
+    <g transform="translate(70, 100)">
+      <text x="0" y="15" class="code-text">入力例: 4 7</text>
+      <text x="150" y="15" class="code-text">出力例: 2</text>
+      <text x="0" y="30" class="code-text">        1 3 4 6</text>
+    </g>
+  </g>
+  
+  <!-- Array Visualization -->
+  <g id="array-viz">
+    <text x="70" y="170" class="section-title">配列の要素：</text>
+    
+    <!-- Array cells -->
+    <g transform="translate(200, 150)">
+      <rect x="0" y="0" width="50" height="35" class="array-cell"/>
+      <text x="25" y="22" text-anchor="middle" class="code-text">1</text>
+      <text x="25" y="-8" text-anchor="middle" class="index-text">i=0</text>
+      
+      <rect x="60" y="0" width="50" height="35" class="array-cell"/>
+      <text x="85" y="22" text-anchor="middle" class="code-text">3</text>
+      <text x="85" y="-8" text-anchor="middle" class="index-text">i=1</text>
+      
+      <rect x="120" y="0" width="50" height="35" class="array-cell"/>
+      <text x="145" y="22" text-anchor="middle" class="code-text">4</text>
+      <text x="145" y="-8" text-anchor="middle" class="index-text">i=2</text>
+      
+      <rect x="180" y="0" width="50" height="35" class="array-cell"/>
+      <text x="205" y="22" text-anchor="middle" class="code-text">6</text>
+      <text x="205" y="-8" text-anchor="middle" class="index-text">i=3</text>
+    </g>
+  </g>
+  
+  <!-- Strategy -->
+  <g id="strategy">
+    <rect x="50" y="200" width="700" height="70" rx="8" class="approach-box"/>
+    <text x="70" y="225" class="emoji">🎯</text>
+    <text x="100" y="225" class="section-title" fill="#1E40AF">方針：全ての2つの組み合わせをチェック</text>
+    
+    <g transform="translate(70, 240)">
+      <text x="0" y="15" class="explanation-text">1. i番目とj番目（i &lt; j）の全組み合わせ</text>
+      <text x="0" y="30" class="explanation-text">2. arr[i] + arr[j] == k かチェック → 3. 条件を満たす組み合わせをカウント</text>
+    </g>
+  </g>
+  
+  <!-- Detailed Steps -->
+  <g id="steps">
+    <text x="70" y="300" class="section-title">具体的な実行過程：</text>
+    
+    <!-- Step 1: (0,1) -->
+    <g transform="translate(50, 320)">
+      <rect x="0" y="0" width="120" height="40" class="step-box"/>
+      <text x="60" y="20" text-anchor="middle" class="index-text">(i=0, j=1)</text>
+      <text x="60" y="35" text-anchor="middle" class="calculation-text">1 + 3 = 4</text>
+      
+      <!-- Array highlighting -->
+      <g transform="translate(140, 5)">
+        <rect x="0" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="17.5" y="20" text-anchor="middle" class="code-text">1</text>
+        <rect x="40" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="57.5" y="20" text-anchor="middle" class="code-text">3</text>
+        <path d="M17.5 -10 Q37.5 -20 57.5 -10" class="connection-line" marker-end="url(#connection-arrow)"/>
+      </g>
+      
+      <rect x="200" y="10" width="80" height="20" class="failure-box"/>
+      <text x="240" y="23" text-anchor="middle" class="result-text" fill="#EF4444">4 ≠ 7</text>
+    </g>
+    
+    <!-- Step 2: (0,2) -->
+    <g transform="translate(50, 370)">
+      <rect x="0" y="0" width="120" height="40" class="step-box"/>
+      <text x="60" y="20" text-anchor="middle" class="index-text">(i=0, j=2)</text>
+      <text x="60" y="35" text-anchor="middle" class="calculation-text">1 + 4 = 5</text>
+      
+      <g transform="translate(140, 5)">
+        <rect x="0" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="17.5" y="20" text-anchor="middle" class="code-text">1</text>
+        <rect x="80" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="97.5" y="20" text-anchor="middle" class="code-text">4</text>
+        <path d="M17.5 -10 Q57.5 -25 97.5 -10" class="connection-line" marker-end="url(#connection-arrow)"/>
+      </g>
+      
+      <rect x="200" y="10" width="80" height="20" class="failure-box"/>
+      <text x="240" y="23" text-anchor="middle" class="result-text" fill="#EF4444">5 ≠ 7</text>
+    </g>
+    
+    <!-- Step 3: (0,3) -->
+    <g transform="translate(50, 420)">
+      <rect x="0" y="0" width="120" height="40" class="step-box"/>
+      <text x="60" y="20" text-anchor="middle" class="index-text">(i=0, j=3)</text>
+      <text x="60" y="35" text-anchor="middle" class="calculation-text">1 + 6 = 7</text>
+      
+      <g transform="translate(140, 5)">
+        <rect x="0" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="17.5" y="20" text-anchor="middle" class="code-text">1</text>
+        <rect x="120" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="137.5" y="20" text-anchor="middle" class="code-text">6</text>
+        <path d="M17.5 -10 Q77.5 -30 137.5 -10" class="connection-line" marker-end="url(#connection-arrow)"/>
+      </g>
+      
+      <rect x="200" y="10" width="80" height="20" class="success-box"/>
+      <text x="240" y="23" text-anchor="middle" class="result-text" fill="#22C55E">7 = 7 ✅</text>
+    </g>
+    
+    <!-- Step 4: (1,2) -->
+    <g transform="translate(400, 320)">
+      <rect x="0" y="0" width="120" height="40" class="step-box"/>
+      <text x="60" y="20" text-anchor="middle" class="index-text">(i=1, j=2)</text>
+      <text x="60" y="35" text-anchor="middle" class="calculation-text">3 + 4 = 7</text>
+      
+      <g transform="translate(140, 5)">
+        <rect x="40" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="57.5" y="20" text-anchor="middle" class="code-text">3</text>
+        <rect x="80" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="97.5" y="20" text-anchor="middle" class="code-text">4</text>
+        <path d="M57.5 -10 Q77.5 -20 97.5 -10" class="connection-line" marker-end="url(#connection-arrow)"/>
+      </g>
+      
+      <rect x="200" y="10" width="80" height="20" class="success-box"/>
+      <text x="240" y="23" text-anchor="middle" class="result-text" fill="#22C55E">7 = 7 ✅</text>
+    </g>
+    
+    <!-- Step 5: (1,3) -->
+    <g transform="translate(400, 370)">
+      <rect x="0" y="0" width="120" height="40" class="step-box"/>
+      <text x="60" y="20" text-anchor="middle" class="index-text">(i=1, j=3)</text>
+      <text x="60" y="35" text-anchor="middle" class="calculation-text">3 + 6 = 9</text>
+      
+      <g transform="translate(140, 5)">
+        <rect x="40" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="57.5" y="20" text-anchor="middle" class="code-text">3</text>
+        <rect x="120" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="137.5" y="20" text-anchor="middle" class="code-text">6</text>
+        <path d="M57.5 -10 Q97.5 -25 137.5 -10" class="connection-line" marker-end="url(#connection-arrow)"/>
+      </g>
+      
+      <rect x="200" y="10" width="80" height="20" class="failure-box"/>
+      <text x="240" y="23" text-anchor="middle" class="result-text" fill="#EF4444">9 ≠ 7</text>
+    </g>
+    
+    <!-- Step 6: (2,3) -->
+    <g transform="translate(400, 420)">
+      <rect x="0" y="0" width="120" height="40" class="step-box"/>
+      <text x="60" y="20" text-anchor="middle" class="index-text">(i=2, j=3)</text>
+      <text x="60" y="35" text-anchor="middle" class="calculation-text">4 + 6 = 10</text>
+      
+      <g transform="translate(140, 5)">
+        <rect x="80" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="97.5" y="20" text-anchor="middle" class="code-text">4</text>
+        <rect x="120" y="0" width="35" height="30" class="highlighted-cell"/>
+        <text x="137.5" y="20" text-anchor="middle" class="code-text">6</text>
+        <path d="M97.5 -10 Q117.5 -20 137.5 -10" class="connection-line" marker-end="url(#connection-arrow)"/>
+      </g>
+      
+      <rect x="200" y="10" width="80" height="20" class="failure-box"/>
+      <text x="240" y="23" text-anchor="middle" class="result-text" fill="#EF4444">10 ≠ 7</text>
+    </g>
+  </g>
+  
+  <!-- Implementation -->
+  <g id="implementation">
+    <rect x="50" y="480" width="350" height="150" rx="8" class="step-box"/>
+    <text x="70" y="505" class="section-title">実装コード：</text>
+    
+    <g transform="translate(70, 515)">
+      <text x="0" y="15" class="code-text">n, k = map(int, input().split())</text>
+      <text x="0" y="30" class="code-text">arr = list(map(int, input().split()))</text>
+      <text x="0" y="45" class="code-text">count = 0</text>
+      <text x="0" y="60" class="code-text"></text>
+      <text x="0" y="75" class="code-text">for i in range(n):</text>
+      <text x="0" y="90" class="code-text">    for j in range(i + 1, n):</text>
+      <rect x="250" y="80" width="90" height="20" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/>
+      <text x="295" y="93" text-anchor="middle" class="explanation-text" fill="#DC2626">i &lt; j を保証</text>
+      
+      <text x="0" y="105" class="code-text">        if arr[i] + arr[j] == k:</text>
+      <text x="0" y="120" class="code-text">            count += 1</text>
+      <text x="0" y="135" class="code-text">print(count)</text>
+    </g>
+  </g>
+  
+  <!-- Key Points -->
+  <g id="key-points">
+    <rect x="420" y="480" width="330" height="150" rx="8" fill="#ECFDF5" stroke="#22C55E" stroke-width="2"/>
+    <text x="440" y="505" class="emoji">💡</text>
+    <text x="470" y="505" class="section-title" fill="#059669">重要なポイント</text>
+    
+    <g transform="translate(440, 520)">
+      <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+      <text x="20" y="12" class="explanation-text" fill="#059669">range(i + 1, n) により i &lt; j を保証</text>
+      
+      <circle cx="8" cy="28" r="4" fill="#22C55E"/>
+      <text x="20" y="32" class="explanation-text" fill="#059669">重複や同じ要素の組み合わせを避ける</text>
+      
+      <circle cx="8" cy="48" r="4" fill="#22C55E"/>
+      <text x="20" y="52" class="explanation-text" fill="#059669">計算量は O(N²) - N個から2つ選ぶ</text>
+      
+      <rect x="0" y="65" width="290" height="55" rx="4" fill="#DCFCE7" stroke="#16A34A" stroke-width="1"/>
+      <text x="145" y="82" text-anchor="middle" class="result-text" fill="#059669">結果: 合計 2個の組み合わせが見つかった</text>
+      <text x="145" y="98" text-anchor="middle" class="explanation-text" fill="#16A34A">(0,3): 1+6=7, (1,2): 3+4=7</text>
+      <text x="145" y="115" text-anchor="middle" class="variable-text">答え: 2</text>
+    </g>
+  </g>
+  
+</svg>

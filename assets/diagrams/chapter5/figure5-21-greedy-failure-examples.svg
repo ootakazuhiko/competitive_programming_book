@@ -1,0 +1,127 @@
+<svg viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-21：貪欲法が失敗する例</title>
+  <desc>特殊なコインシステムでのコイン問題とナップサック問題において貪欲法では最適解が得られない例を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .example-title { font: 600 13px Inter, sans-serif; }
+      .warning-title { font: 600 14px Inter, sans-serif; fill: #DC2626; }
+      .code-text { font: 500 11px 'Courier New', monospace; fill: #1F2937; }
+      .greedy-result { font: 600 11px Inter, sans-serif; fill: #DC2626; }
+      .optimal-result { font: 600 11px Inter, sans-serif; fill: #059669; }
+      .explanation-text { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .guideline-text { font: 600 11px Inter, sans-serif; fill: #7C3AED; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .warning-box { fill: #FEE2E2; stroke: #EF4444; stroke-width: 2; }
+      .coin-example-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .knapsack-example-box { fill: #F3E8FF; stroke: #7C3AED; stroke-width: 2; }
+      .guidelines-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .comparison-block { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .greedy-block { fill: #FEE2E2; stroke: #DC2626; stroke-width: 1; }
+      .optimal-block { fill: #DCFCE7; stroke: #22C55E; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="750" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-21：貪欲法が失敗する例</text>
+  
+  <!-- Warning -->
+  <g id="warning">
+    <rect x="50" y="60" width="700" height="50" rx="8" class="warning-box"/>
+    <text x="70" y="85" class="emoji">⚠️</text>
+    <text x="100" y="85" class="warning-title">貪欲法が最適解を保証しない例</text>
+    <text x="100" y="105" class="explanation-text">局所最適解と全体最適解が異なる場合がある</text>
+  </g>
+  
+  <!-- Coin Problem Example -->
+  <g id="coin-example">
+    <rect x="50" y="130" width="700" height="220" rx="8" class="coin-example-box"/>
+    <text x="70" y="155" class="emoji">🪙</text>
+    <text x="100" y="155" class="example-title" fill="#D97706">コイン問題（特殊なコインシステム）</text>
+    
+    <g transform="translate(70, 175)">
+      <rect x="0" y="0" width="330" height="30" class="comparison-block"/>
+      <text x="165" y="20" text-anchor="middle" class="code-text">利用可能コイン：[1, 3, 4] 円　目標：6円を作る</text>
+    </g>
+    
+    <!-- Greedy approach -->
+    <g transform="translate(70, 220)">
+      <rect x="0" y="0" width="330" height="100" class="greedy-block"/>
+      <text x="10" y="20" class="greedy-result">貪欲法の結果：</text>
+      <text x="10" y="35" class="code-text">4円×1 + 1円×2 = 3枚</text>
+      <text x="10" y="55" class="explanation-text">手順：</text>
+      <text x="10" y="70" class="explanation-text">1. 最大のコイン4円を1枚使用（残り2円）</text>
+      <text x="10" y="85" class="explanation-text">2. 1円を2枚使用（残り0円）</text>
+    </g>
+    
+    <!-- Optimal solution -->
+    <g transform="translate(420, 220)">
+      <rect x="0" y="0" width="310" height="100" class="optimal-block"/>
+      <text x="10" y="20" class="optimal-result">最適解：</text>
+      <text x="10" y="35" class="code-text">3円×2 = 2枚</text>
+      <text x="10" y="55" class="explanation-text">より少ないコイン数で実現可能！</text>
+      <text x="10" y="75" class="optimal-result">→ 貪欲法では最適解が得られない！</text>
+    </g>
+  </g>
+  
+  <!-- Knapsack Problem Example -->
+  <g id="knapsack-example">
+    <rect x="50" y="370" width="700" height="220" rx="8" class="knapsack-example-box"/>
+    <text x="70" y="395" class="emoji">🎒</text>
+    <text x="100" y="395" class="example-title" fill="#7C3AED">ナップサック問題（重みと価値がある場合）</text>
+    
+    <g transform="translate(70, 415)">
+      <rect x="0" y="0" width="660" height="50" class="comparison-block"/>
+      <text x="10" y="15" class="code-text">容量10のナップサックに以下の品物を入れる：</text>
+      <text x="10" y="30" class="code-text">品物A: 重み6, 価値30　品物B: 重み3, 価値14　品物C: 重み4, 価値16　品物D: 重み2, 価値9</text>
+      <text x="10" y="45" class="explanation-text">価値/重み比：A(5.0) > D(4.5) > C(4.0) > B(4.67)</text>
+    </g>
+    
+    <!-- Greedy approach -->
+    <g transform="translate(70, 480)">
+      <rect x="0" y="0" width="330" height="80" class="greedy-block"/>
+      <text x="10" y="20" class="greedy-result">貪欲法（価値/重み比で選択）：</text>
+      <text x="10" y="35" class="code-text">→ A を選択（重み6, 価値30）</text>
+      <text x="10" y="50" class="code-text">→ 残り容量4でCまたはBを選択</text>
+      <text x="10" y="65" class="code-text">結果：価値34</text>
+    </g>
+    
+    <!-- Optimal solution -->
+    <g transform="translate(420, 480)">
+      <rect x="0" y="0" width="310" height="80" class="optimal-block"/>
+      <text x="10" y="20" class="optimal-result">最適解：</text>
+      <text x="10" y="35" class="code-text">B + C + D を選択（重み9, 価値39）</text>
+      <text x="10" y="50" class="optimal-result">→ 貪欲法の結果（価値34）より良い</text>
+    </g>
+  </g>
+  
+  <!-- Guidelines -->
+  <g id="guidelines">
+    <rect x="50" y="610" width="700" height="120" rx="8" class="guidelines-box"/>
+    <text x="70" y="635" class="emoji">💡</text>
+    <text x="100" y="635" class="section-title" fill="#1E40AF">貪欲法を使う際の判断基準</text>
+    
+    <g transform="translate(80, 655)">
+      <!-- Good cases -->
+      <rect x="0" y="0" width="300" height="60" class="optimal-block"/>
+      <text x="10" y="15" class="optimal-result">✅ 使って良い場合：</text>
+      <text x="10" y="30" class="explanation-text">• 局所最適解が全体最適解につながる証明</text>
+      <text x="10" y="45" class="explanation-text">• 後の選択が前の選択に影響しない</text>
+      <text x="10" y="60" class="explanation-text">• コイン問題、区間スケジューリングなど</text>
+      
+      <!-- Bad cases -->
+      <rect x="320" y="0" width="340" height="60" class="greedy-block"/>
+      <text x="330" y="15" class="greedy-result">❌ 注意が必要な場合：</text>
+      <text x="330" y="30" class="explanation-text">• ナップサック問題（動的プログラミングが必要）</text>
+      <text x="330" y="45" class="explanation-text">• 最短経路問題（一部を除く）</text>
+      <text x="330" y="60" class="explanation-text">• 複雑な最適化問題</text>
+    </g>
+  </g>
+  
+</svg>
