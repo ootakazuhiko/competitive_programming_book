@@ -51,19 +51,20 @@
         safeExecute(initTheme, 'initTheme');
     }
 
-    // パフォーマンス設定定数（全ページ統一設定）
-    const PROCESSING_DELAY = 1000;           // 処理開始遅延時間（統一）
-    const PROCESSING_TIMEOUT = 100;          // 処理タイムアウト（統一）
-    const MAX_HEADINGS = 20;                 // 見出し処理上限
-    const MAX_LINKS = 50;                    // リンク処理上限
-    const MAX_IMAGES = 50;                   // 画像処理上限
+    // パフォーマンス設定定数（5章ベース最適化）
+    const PROCESSING_DELAY = 1500;           // 処理開始遅延時間（パフォーマンス重視）
+    const PROCESSING_TIMEOUT = 50;           // 処理タイムアウト（高速終了）
+    const MAX_HEADINGS = 10;                 // 見出し処理上限（軽量化）
+    const MAX_LINKS = 20;                    // リンク処理上限（軽量化）
+    const MAX_IMAGES = 20;                   // 画像処理上限（軽量化）
 
-    // 重い処理の遅延初期化（全ページ統一最適化）
+    // 重い処理の遅延初期化（5章と同じ超軽量最適化）
     function initHeavyFeatures() {
-        // 全ページで同じ軽量設定を適用
+        // 5章と全く同じ超軽量設定を全ページに適用
         setTimeout(() => {
-            // 見出しID生成は最小限に制限
+            // 見出しID生成は極小限に制限
             safeExecuteWithTimeout(() => addHeadingIds(), PROCESSING_TIMEOUT, 'addHeadingIds');
+            // 外部リンクとイメージ処理も最小限に
             safeExecuteWithTimeout(() => handleExternalLinks(), PROCESSING_TIMEOUT, 'handleExternalLinks');
             safeExecuteWithTimeout(() => enhanceImages(), PROCESSING_TIMEOUT, 'enhanceImages');
         }, PROCESSING_DELAY);
@@ -140,18 +141,18 @@
         }, 'themeRestore');
     }
 
-    // 見出しIDの安全な生成（全ページ統一軽量バージョン）
+    // 見出しIDの安全な生成（5章と同じ超軽量バージョン）
     function addHeadingIds() {
         const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
         let idCounter = 0;
         
-        // 全ページで統一制限
+        // 5章と同じ極小限制限
         const maxHeadings = Math.min(headings.length, MAX_HEADINGS);
         
         for (let i = 0; i < maxHeadings; i++) {
             const heading = headings[i];
             if (!heading.id) {
-                heading.id = `heading-${++idCounter}`;
+                heading.id = `safe-h${++idCounter}`;  // 衝突回避ID
             }
         }
     }
@@ -190,11 +191,11 @@
         tocContainer.appendChild(tocList);
     }
 
-    // 外部リンクの安全な処理（全ページ統一軽量版）
+    // 外部リンクの安全な処理（5章と同じ超軽量版）
     function handleExternalLinks() {
         const links = document.querySelectorAll('a[href^="http"]');
         
-        // 全ページで統一制限
+        // 5章と同じ極小限制限
         const maxLinks = Math.min(links.length, MAX_LINKS);
         
         for (let i = 0; i < maxLinks; i++) {
@@ -206,11 +207,11 @@
         }
     }
 
-    // 画像の安全な強化（全ページ統一軽量版）
+    // 画像の安全な強化（5章と同じ超軽量版）
     function enhanceImages() {
         const images = document.querySelectorAll('img');
         
-        // 全ページで統一制限
+        // 5章と同じ極小限制限
         const maxImages = Math.min(images.length, MAX_IMAGES);
         
         for (let i = 0; i < maxImages; i++) {
@@ -221,11 +222,11 @@
                 img.setAttribute('loading', 'lazy');
             }
             
-            // エラーハンドリング
-            img.addEventListener('error', function() {
-                this.style.display = 'none';
+            // 軽量エラーハンドリング
+            img.onerror = function() {
                 console.warn('[Safe JS] Image failed to load:', this.src);
-            });
+                this.style.opacity = '0.5';
+            };
         }
     }
 
