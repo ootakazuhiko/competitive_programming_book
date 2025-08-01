@@ -307,78 +307,45 @@ a:hover {
     padding: 0 !important;
   }
 
-  /* Mobile sidebar - NO background by default (hidden state) */
+  /* Mobile sidebar - default hidden state */
   .book-sidebar {
     display: block;
     position: fixed;
     top: var(--header-height);
     left: 0;
-    width: 280px; /* Fixed width for mobile */
+    width: 280px;
     height: calc(100vh - var(--header-height));
-    background: transparent !important;
-    background-color: transparent !important;
+    background: transparent;
     border-right: none;
     padding: var(--space-lg);
     overflow-y: auto;
     z-index: 1000;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
-    opacity: 1 !important;
   }
-  
-  /* Mobile sidebar - no styling by default (transparent/invisible) */
 
-  /* Show sidebar when checkbox is checked - CRITICAL FIX */
+  /* Sidebar when opened via :checked state */
   .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar {
-    transform: translateX(0) !important;
-    background: #ffffff !important;
-    background-color: #ffffff !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    border-right: 1px solid var(--border-color) !important;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15) !important;
+    transform: translateX(0);
+    background-color: var(--background-secondary);
+    border-right: 1px solid var(--border-color);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
   }
 
-  /* Dark mode sidebar when open */
-  @media (prefers-color-scheme: dark) {
-    .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar {
-      background: #1f2937 !important;
-      background-color: #1f2937 !important;
-      border-right: 1px solid #374151 !important;
-    }
-  }
-
-  /* Force sidebar content visibility when open */
-  .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar * {
-    opacity: 1 !important;
-  }
-
+  /* Sidebar content styling when open */
   .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .book-title,
   .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-section-title {
-    color: #111827 !important;
+    color: var(--text-primary);
   }
 
   .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link {
-    color: #6b7280 !important;
+    color: var(--text-secondary);
   }
 
-  /* Dark mode text when sidebar is open */
-  @media (prefers-color-scheme: dark) {
-    .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .book-title,
-    .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-section-title {
-      color: #f9fafb !important;
-    }
-
-    .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link {
-      color: #d1d5db !important;
-    }
-  }
-
-  /* Sidebar link interactions ONLY when sidebar is open */
   .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link:hover,
   .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link.active {
-    background-color: #3b82f6 !important;
-    color: #ffffff !important;
+    background-color: var(--accent-color);
+    color: white;
   }
 
   /* Overlay for mobile */
@@ -395,11 +362,10 @@ a:hover {
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 
-  /* Show overlay when checkbox is checked - CRITICAL FIX */
+  /* Overlay visible when sidebar is open */
   .sidebar-toggle-checkbox:checked ~ .book-sidebar-overlay {
-    opacity: 1 !important;
-    visibility: visible !important;
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    opacity: 1;
+    visibility: visible;
   }
 
   /* Show hamburger menu on mobile */
