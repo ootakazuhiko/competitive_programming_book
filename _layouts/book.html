@@ -54,7 +54,11 @@
                     </svg>
                 </button>
                 <a href="{{ '/' | relative_url }}" class="header-title">
-                    <h1>{{ site.title | escape }}</h1>
+                    {% if page.url == '/' %}
+                        <span class="site-logo">📚</span>
+                    {% else %}
+                        <h1>{{ site.title | escape }}</h1>
+                    {% endif %}
                 </a>
             </div>
             
