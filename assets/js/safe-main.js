@@ -64,8 +64,6 @@
         setTimeout(() => {
             // 見出しID生成は最小限に制限
             safeExecuteWithTimeout(() => addHeadingIds(), PROCESSING_TIMEOUT, 'addHeadingIds');
-            // TOC生成は完全に無効化（パフォーマンス優先）
-            // safeExecuteWithTimeout(() => generateTOC(), PROCESSING_TIMEOUT, 'generateTOC');
             safeExecuteWithTimeout(() => handleExternalLinks(), PROCESSING_TIMEOUT, 'handleExternalLinks');
             safeExecuteWithTimeout(() => enhanceImages(), PROCESSING_TIMEOUT, 'enhanceImages');
         }, PROCESSING_DELAY);
