@@ -265,8 +265,27 @@ a:hover {
   opacity: 0;
 }
 
-/* Mobile sidebar - Hidden by default, shows on small screens only */
+/* Mobile responsive styles */
 @media (max-width: 767px) {
+  /* Mobile content optimization */
+  .book-content {
+    max-width: 100% !important;
+    padding: var(--space-sm) var(--space-md);
+    margin: 0;
+  }
+  
+  /* Mobile main area */
+  .book-main {
+    padding: var(--space-sm) 0;
+    gap: var(--space-md);
+  }
+  
+  /* Container mobile optimization */
+  .container {
+    padding: 0 var(--space-sm);
+  }
+
+  /* Mobile sidebar */
   .book-sidebar {
     display: block;
     position: fixed;
@@ -895,4 +914,34 @@ select {
   .responsive-table table {
     min-width: 600px;
   }
+}
+
+/* Extra small mobile optimization (320px - 480px) */
+@media (max-width: 480px) {
+  .book-content {
+    padding: var(--space-xs) var(--space-sm) !important;
+  }
+  
+  .container {
+    padding: 0 var(--space-xs);
+  }
+  
+  .book-main {
+    padding: var(--space-xs) 0;
+  }
+  
+  /* Smaller sidebar for very small screens */
+  .book-sidebar {
+    width: calc(100vw - 40px); /* Full width minus small margin */
+    max-width: 280px;
+  }
+  
+  /* Adjust text size for readability */
+  body {
+    font-size: 14px;
+  }
+  
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.3rem; }
+  h3 { font-size: 1.1rem; }
 }
