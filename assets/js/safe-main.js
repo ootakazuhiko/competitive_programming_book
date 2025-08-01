@@ -145,7 +145,7 @@
         for (let i = 0; i < maxHeadings; i++) {
             const heading = headings[i];
             if (!heading.id) {
-                heading.id = `h${++idCounter}`;
+                heading.id = `heading-${++idCounter}`;
             }
         }
     }
