@@ -43,31 +43,26 @@
         });
     }
 
-    // 基本機能の初期化
+    // 基本機能の初期化（緊急修正：最小限のみ）
     function initBasicFeatures() {
-        safeExecute(initStyles, 'initStyles');
-        safeExecute(initSmoothScrolling, 'initSmoothScrolling');
-        safeExecute(initSidebar, 'initSidebar');
+        // 基本的なテーマとサイドバーのみ
         safeExecute(initTheme, 'initTheme');
+        safeExecute(initSidebar, 'initSidebar');
+        // 重い処理をすべて無効化
+        // safeExecute(initStyles, 'initStyles');
+        // safeExecute(initSmoothScrolling, 'initSmoothScrolling');
     }
 
-    // パフォーマンス設定定数（5章ベース最適化）
-    const PROCESSING_DELAY = 1500;           // 処理開始遅延時間（パフォーマンス重視）
-    const PROCESSING_TIMEOUT = 50;           // 処理タイムアウト（高速終了）
-    const MAX_HEADINGS = 10;                 // 見出し処理上限（軽量化）
-    const MAX_LINKS = 20;                    // リンク処理上限（軽量化）
-    const MAX_IMAGES = 20;                   // 画像処理上限（軽量化）
-
-    // 重い処理の遅延初期化（5章と同じ超軽量最適化）
+    // 緊急修正：重い処理をすべて無効化
     function initHeavyFeatures() {
-        // 5章と全く同じ超軽量設定を全ページに適用
-        setTimeout(() => {
-            // 見出しID生成は極小限に制限
-            safeExecuteWithTimeout(() => addHeadingIds(), PROCESSING_TIMEOUT, 'addHeadingIds');
-            // 外部リンクとイメージ処理も最小限に
-            safeExecuteWithTimeout(() => handleExternalLinks(), PROCESSING_TIMEOUT, 'handleExternalLinks');
-            safeExecuteWithTimeout(() => enhanceImages(), PROCESSING_TIMEOUT, 'enhanceImages');
-        }, PROCESSING_DELAY);
+        // 全ての重い処理を無効化してページフリーズを防止
+        console.log('[Safe JS] Heavy features disabled to prevent page freeze');
+        // すべての処理をコメントアウト
+        // setTimeout(() => {
+        //     safeExecuteWithTimeout(() => addHeadingIds(), 50, 'addHeadingIds');
+        //     safeExecuteWithTimeout(() => handleExternalLinks(), 50, 'handleExternalLinks');
+        //     safeExecuteWithTimeout(() => enhanceImages(), 50, 'enhanceImages');
+        // }, 1500);
     }
 
     // スタイルの安全な追加
@@ -230,17 +225,19 @@
         }
     }
 
-    // DOMContentLoaded時の初期化
+    // DOMContentLoaded時の初期化（緊急修正：最小限）
     document.addEventListener('DOMContentLoaded', function() {
-        console.log('[Safe JS] Initializing safe JavaScript features...');
+        console.log('[Safe JS] Emergency minimal initialization...');
         
-        // 基本機能をすぐに実行
-        initBasicFeatures();
+        // 最小限の機能のみ実行
+        safeExecute(initTheme, 'initTheme');
+        safeExecute(initSidebar, 'initSidebar');
         
-        // 重い処理は遅延実行
-        initHeavyFeatures();
+        // 重い処理は完全に無効化
+        // initBasicFeatures();
+        // initHeavyFeatures();
         
-        console.log('[Safe JS] Safe JavaScript initialization completed');
+        console.log('[Safe JS] Emergency minimal initialization completed');
     });
 
     // 未処理エラーのキャッチ
