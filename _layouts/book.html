@@ -188,5 +188,31 @@
         // Will be re-enabled after root cause identification
     </script>
     -->
+    
+    <!-- Debug CSS for sidebar testing -->
+    <style>
+    /* Debug styles to ensure CSS-only sidebar works */
+    @media (max-width: 767px) {
+        /* Force visibility for debugging */
+        .sidebar-toggle {
+            background-color: #ff0000 !important; /* Red background for visibility */
+            color: white !important;
+            padding: 10px !important;
+            display: flex !important;
+        }
+        
+        /* Test checkbox functionality */
+        .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar {
+            transform: translateX(0) !important;
+            background-color: #90EE90 !important; /* Light green when open */
+        }
+        
+        .sidebar-toggle-checkbox:checked ~ .book-sidebar-overlay {
+            opacity: 1 !important;
+            visibility: visible !important;
+            background-color: rgba(255, 0, 0, 0.3) !important; /* Red tint for debug */
+        }
+    }
+    </style>
 </body>
 </html>
