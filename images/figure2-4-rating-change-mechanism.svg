@@ -1,0 +1,244 @@
+<svg viewBox="0 0 950 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-4：レーティング変動の仕組み</title>
+  <desc>AtCoderのレーティングがコンテスト結果に基づいてどのように変動するか、具体例とともに解説</desc>
+  
+  <!-- Background -->
+  <rect width="950" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="475" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    レーティング変動の仕組み
+  </text>
+  
+  <!-- Basic Concept -->
+  <rect x="50" y="60" width="850" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="475" y="85" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    📊 基本原理：期待順位と実際の順位の比較
+  </text>
+  
+  <rect x="80" y="105" width="790" height="65" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="475" y="125" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1e40af">
+    現在のレーティングから「期待順位」を計算 → 実際の順位と比較 → レーティング変動
+  </text>
+  <text x="100" y="145" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">🔴 実際の順位 &gt; 期待順位 (期待より悪い成績) → レーティング下降</tspan>
+    <tspan x="100" dy="16">🟡 実際の順位 ≈ 期待順位 (期待通りの成績) → レーティング維持</tspan>
+    <tspan x="100" dy="16">🟢 実際の順位 &lt; 期待順位 (期待より良い成績) → レーティング上昇</tspan>
+  </text>
+  
+  <!-- Example Cases -->
+  <rect x="50" y="200" width="850" height="340" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="475" y="225" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#334155">
+    📈 具体的な変動例（中学生の田中さんの場合）
+  </text>
+  
+  <!-- Case 1: Rating Up -->
+  <rect x="80" y="245" width="250" height="280" rx="4" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="205" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#065f46">
+    📈 ケース1: レーティング上昇
+  </text>
+  
+  <!-- Before contest -->
+  <rect x="90" y="285" width="230" height="60" rx="2" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="205" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065f46">
+    コンテスト参加前
+  </text>
+  <text x="100" y="325" font-family="Arial, sans-serif" font-size="11" fill="#065f46">
+    <tspan x="100" dy="0">現在のレーティング: 420 (茶色)</tspan>
+    <tspan x="100" dy="14">期待順位: 800位 (同レベルの人たちの平均)</tspan>
+  </text>
+  
+  <!-- Contest result -->
+  <rect x="90" y="355" width="230" height="60" rx="2" fill="#ecfdf5" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="205" y="375" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065f46">
+    コンテスト結果
+  </text>
+  <text x="100" y="395" font-family="Arial, sans-serif" font-size="11" fill="#065f46">
+    <tspan x="100" dy="0">実際の順位: 580位 🎉</tspan>
+    <tspan x="100" dy="14">期待より220位も上！</tspan>
+  </text>
+  
+  <!-- Rating change -->
+  <rect x="90" y="425" width="230" height="90" rx="2" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="205" y="445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065f46">
+    レーティング変動
+  </text>
+  <text x="100" y="465" font-family="Arial, sans-serif" font-size="11" fill="#065f46">
+    <tspan x="100" dy="0">420 → 465 (+45)</tspan>
+    <tspan x="100" dy="14">🟤 茶色のまま（でも上昇中！）</tspan>
+    <tspan x="100" dy="14">📊 グラフで成長を実感</tspan>
+    <tspan x="100" dy="14">💪 モチベーション大幅UP</tspan>
+  </text>
+  
+  <!-- Case 2: Rating Stable -->
+  <rect x="350" y="245" width="250" height="280" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="475" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#92400e">
+    📊 ケース2: レーティング維持
+  </text>
+  
+  <!-- Before contest -->
+  <rect x="360" y="285" width="230" height="60" rx="2" fill="white" stroke="#fde68a" stroke-width="1"/>
+  <text x="475" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">
+    コンテスト参加前
+  </text>
+  <text x="370" y="325" font-family="Arial, sans-serif" font-size="11" fill="#92400e">
+    <tspan x="370" dy="0">現在のレーティング: 465 (茶色)</tspan>
+    <tspan x="370" dy="14">期待順位: 720位 (前回より少し上がった)</tspan>
+  </text>
+  
+  <!-- Contest result -->
+  <rect x="360" y="355" width="230" height="60" rx="2" fill="#fffbeb" stroke="#fde68a" stroke-width="1"/>
+  <text x="475" y="375" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">
+    コンテスト結果
+  </text>
+  <text x="370" y="395" font-family="Arial, sans-serif" font-size="11" fill="#92400e">
+    <tspan x="370" dy="0">実際の順位: 735位</tspan>
+    <tspan x="370" dy="14">期待通りの成績（±15位以内）</tspan>
+  </text>
+  
+  <!-- Rating change -->
+  <rect x="360" y="425" width="230" height="90" rx="2" fill="#fefce8" stroke="#fde68a" stroke-width="1"/>
+  <text x="475" y="445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">
+    レーティング変動
+  </text>
+  <text x="370" y="465" font-family="Arial, sans-serif" font-size="11" fill="#92400e">
+    <tspan x="370" dy="0">465 → 463 (-2)</tspan>
+    <tspan x="370" dy="14">🟤 茶色のまま、ほぼ維持</tspan>
+    <tspan x="370" dy="14">📊 実力通りの安定した成績</tspan>
+    <tspan x="370" dy="14">💭 次は上を目指そう</tspan>
+  </text>
+  
+  <!-- Case 3: Rating Down -->
+  <rect x="620" y="245" width="250" height="280" rx="4" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="745" y="270" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    📉 ケース3: レーティング下降
+  </text>
+  
+  <!-- Before contest -->
+  <rect x="630" y="285" width="230" height="60" rx="2" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="745" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    コンテスト参加前
+  </text>
+  <text x="640" y="325" font-family="Arial, sans-serif" font-size="11" fill="#dc2626">
+    <tspan x="640" dy="0">現在のレーティング: 463 (茶色)</tspan>
+    <tspan x="640" dy="14">期待順位: 725位</tspan>
+  </text>
+  
+  <!-- Contest result -->
+  <rect x="630" y="355" width="230" height="60" rx="2" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+  <text x="745" y="375" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    コンテスト結果
+  </text>
+  <text x="640" y="395" font-family="Arial, sans-serif" font-size="11" fill="#dc2626">
+    <tspan x="640" dy="0">実際の順位: 950位 😅</tspan>
+    <tspan x="640" dy="14">期待より225位下... (体調不良？)</tspan>
+  </text>
+  
+  <!-- Rating change -->
+  <rect x="630" y="425" width="230" height="90" rx="2" fill="#fff1f1" stroke="#fecaca" stroke-width="1"/>
+  <text x="745" y="445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    レーティング変動
+  </text>
+  <text x="640" y="465" font-family="Arial, sans-serif" font-size="11" fill="#dc2626">
+    <tspan x="640" dy="0">463 → 428 (-35)</tspan>
+    <tspan x="640" dy="14">🟤 茶色のまま、でも下降</tspan>
+    <tspan x="640" dy="14">💪 これも成長の一部！</tspan>
+    <tspan x="640" dy="14">📚 復習して次回に活かそう</tspan>
+  </text>
+  
+  <!-- Rating Change Factors -->
+  <rect x="50" y="560" width="850" height="160" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="475" y="585" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🧮 レーティング変動に影響する要因
+  </text>
+  
+  <!-- Factor 1 -->
+  <rect x="80" y="605" width="200" height="100" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="180" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    1️⃣ 順位差の大きさ
+  </text>
+  <text x="90" y="645" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="90" dy="0">• 期待順位と実際順位の差</tspan>
+    <tspan x="90" dy="12">• 差が大きいほど変動も大</tspan>
+    <tspan x="90" dy="12">• 上にブレた時の方が</tspan>
+    <tspan x="90" dy="12">  変動量は大きめ</tspan>
+    <tspan x="90" dy="12">• 安定性も考慮される</tspan>
+  </text>
+  
+  <!-- Factor 2 -->
+  <rect x="300" y="605" width="200" height="100" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="400" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    2️⃣ 参加回数と安定性
+  </text>
+  <text x="310" y="645" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="310" dy="0">• 初回参加者：変動大</tspan>
+    <tspan x="310" dy="12">• 参加回数が増えるほど</tspan>
+    <tspan x="310" dy="12">  変動は小さくなる</tspan>
+    <tspan x="310" dy="12">• 実力が安定してくると</tspan>
+    <tspan x="310" dy="12">  変動幅も落ち着く</tspan>
+  </text>
+  
+  <!-- Factor 3 -->
+  <rect x="520" y="605" width="200" height="100" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="620" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    3️⃣ 現在のレーティング
+  </text>
+  <text x="530" y="645" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="530" dy="0">• 低レーティング：変動大</tspan>
+    <tspan x="530" dy="12">• 高レーティング：変動小</tspan>
+    <tspan x="530" dy="12">• 茶色〜緑色では</tspan>
+    <tspan x="530" dy="12">  ±30〜50が目安</tspan>
+    <tspan x="530" dy="12">• 初心者は成長を感じやすい</tspan>
+  </text>
+  
+  <!-- Factor 4 -->
+  <rect x="740" y="605" width="130" height="100" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="805" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    4️⃣ コンテスト規模
+  </text>
+  <text x="750" y="645" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="750" dy="0">• 参加者数の影響</tspan>
+    <tspan x="750" dy="12">• 大きな大会ほど</tspan>
+    <tspan x="750" dy="12">  信頼性が高い</tspan>
+    <tspan x="750" dy="12">• ABCは標準的</tspan>
+    <tspan x="750" dy="12">• AGCは上級者向け</tspan>
+  </text>
+  
+  <!-- Mindset Section -->
+  <rect x="50" y="740" width="850" height="140" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="475" y="765" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🧠 レーティングとの正しい付き合い方
+  </text>
+  
+  <rect x="80" y="785" width="790" height="85" rx="4" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  
+  <text x="100" y="810" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">
+    💡 健全なマインドセット
+  </text>
+  <text x="120" y="830" font-family="Arial, sans-serif" font-size="12" fill="#15803d">
+    <tspan x="120" dy="0">✅ レーティングは「実力の目安」であり「成長の指標」</tspan>
+    <tspan x="500" dy="0">✅ 短期的な変動より長期的な成長を重視</tspan>
+    <tspan x="120" dy="16">✅ 下がった時こそ学習のチャンス！原因分析と改善に集中</tspan>
+    <tspan x="500" dy="16">✅ 他人との比較より、過去の自分との比較</tspan>
+    <tspan x="120" dy="16">✅ レーティングは「目的」ではなく「結果」として捉える</tspan>
+    <tspan x="500" dy="16">✅ 楽しんで続けることが一番大切</tspan>
+  </text>
+  
+  <!-- Arrow indicators for rating changes -->
+  <defs>
+    <marker id="upArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+    <marker id="downArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+    </marker>
+    <marker id="stableArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  
+  <!-- Rating trend arrows -->
+  <path d="M 205 415 L 205 435" stroke="#10b981" stroke-width="4" fill="none" marker-end="url(#upArrow)"/>
+  <path d="M 475 415 L 475 435" stroke="#f59e0b" stroke-width="4" fill="none" marker-end="url(#stableArrow)"/>
+  <path d="M 745 415 L 745 435" stroke="#ef4444" stroke-width="4" fill="none" marker-end="url(#downArrow)"/>
+</svg>

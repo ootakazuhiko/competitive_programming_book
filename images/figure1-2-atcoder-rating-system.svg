@@ -1,0 +1,142 @@
+<svg viewBox="0 0 900 850" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-2：AtCoderレーティングシステム</title>
+  <desc>AtCoderの色別レーティングシステムと各段階の特徴、中学生の現実的な成長目標を示すロードマップ</desc>
+  
+  <!-- Background -->
+  <rect width="900" height="850" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    AtCoderレーティングシステム
+  </text>
+  
+  <!-- Rating scale on the left -->
+  <rect x="50" y="80" width="80" height="700" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="90" y="105" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">
+    レーティング
+  </text>
+  
+  <!-- Rating markers -->
+  <text x="90" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">3200+</text>
+  <text x="90" y="200" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">2800</text>
+  <text x="90" y="260" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">2400</text>
+  <text x="90" y="320" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">2000</text>
+  <text x="90" y="380" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">1600</text>
+  <text x="90" y="440" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">1200</text>
+  <text x="90" y="500" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">800</text>
+  <text x="90" y="560" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">400</text>
+  <text x="90" y="620" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">0</text>
+  
+  <!-- Red: 3200+ -->
+  <rect x="160" y="120" width="680" height="60" rx="8" fill="#dc2626" stroke="#b91c1c" stroke-width="2"/>
+  <text x="200" y="145" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    🔴 赤色 (3200+) - トップコーダー
+  </text>
+  <text x="210" y="165" font-family="Arial, sans-serif" font-size="12" fill="white">
+    世界レベル・プロフェッショナル級・企業研究職・大学教授レベル
+  </text>
+  
+  <!-- Orange: 2800-3199 -->
+  <rect x="160" y="180" width="680" height="60" rx="8" fill="#ea580c" stroke="#dc2626" stroke-width="2"/>
+  <text x="200" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    🟠 橙色 (2800-3199) - エキスパート
+  </text>
+  <text x="210" y="225" font-family="Arial, sans-serif" font-size="12" fill="white">
+    国際競技で上位入賞・IT企業の技術リーダー・研究者レベル
+  </text>
+  
+  <!-- Yellow: 2400-2799 -->
+  <rect x="160" y="240" width="680" height="60" rx="8" fill="#eab308" stroke="#ca8a04" stroke-width="2"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    🟡 黄色 (2400-2799) - 上級者
+  </text>
+  <text x="210" y="285" font-family="Arial, sans-serif" font-size="12" fill="white">
+    IOI日本代表クラス・難関大学情報系で上位・大手IT企業で高評価
+  </text>
+  
+  <!-- Blue: 2000-2399 -->
+  <rect x="160" y="300" width="680" height="60" rx="8" fill="#3b82f6" stroke="#2563eb" stroke-width="2"/>
+  <text x="200" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    🔵 青色 (2000-2399) - エキスパート候補
+  </text>
+  <text x="210" y="345" font-family="Arial, sans-serif" font-size="12" fill="white">
+    JOI本選上位・難関大学受験で大きなアドバンテージ・高い技術力証明
+  </text>
+  
+  <!-- Light Blue: 1600-1999 -->
+  <rect x="160" y="360" width="680" height="60" rx="8" fill="#0ea5e9" stroke="#0284c7" stroke-width="2"/>
+  <text x="200" y="385" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    🩵 水色 (1600-1999) - 上級者
+  </text>
+  <text x="210" y="405" font-family="Arial, sans-serif" font-size="12" fill="white">
+    JOI本選レベル・高校で情報科目トップクラス・優秀な技術力の証明
+  </text>
+  
+  <!-- Green: 1200-1599 -->
+  <rect x="160" y="420" width="680" height="60" rx="8" fill="#22c55e" stroke="#16a34a" stroke-width="2"/>
+  <text x="200" y="445" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    🟢 緑色 (1200-1599) - 中級者上位
+  </text>
+  <text x="210" y="465" font-family="Arial, sans-serif" font-size="12" fill="white">
+    ABC C問題を安定して解答・JOI予選通過レベル・しっかりした実力証明
+  </text>
+  
+  <!-- Brown: 800-1199 -->
+  <rect x="160" y="480" width="680" height="60" rx="8" fill="#a16207" stroke="#92400e" stroke-width="2"/>
+  <text x="200" y="505" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    🤎 茶色 (800-1199) - 中級者
+  </text>
+  <text x="210" y="525" font-family="Arial, sans-serif" font-size="12" fill="white">
+    ABC B問題を安定解答・C問題にも挑戦・基本アルゴリズム習得済み
+  </text>
+  
+  <!-- Gray: 400-799 -->
+  <rect x="160" y="540" width="680" height="60" rx="8" fill="#6b7280" stroke="#4b5563" stroke-width="2"/>
+  <text x="200" y="565" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    ⚫ 灰色 (400-799) - 初級者上位
+  </text>
+  <text x="210" y="585" font-family="Arial, sans-serif" font-size="12" fill="white">
+    ABC A問題を安定解答・B問題にも挑戦・プログラミング基礎は習得
+  </text>
+  
+  <!-- Unrated: 0-399 -->
+  <rect x="160" y="600" width="680" height="60" rx="8" fill="#94a3b8" stroke="#64748b" stroke-width="2"/>
+  <text x="200" y="625" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    ⚪ 無色 (0-399) - 初学者
+  </text>
+  <text x="210" y="645" font-family="Arial, sans-serif" font-size="12" fill="white">
+    プログラミング学習中・AtCoder参加開始・基本文法習得段階
+  </text>
+  
+  <!-- Middle school student realistic goals -->
+  <rect x="160" y="680" width="680" height="140" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="500" y="705" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#334155">
+    🎯 中学生の現実的な成長目標
+  </text>
+  
+  <!-- Timeline for middle school students -->
+  <text x="200" y="735" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569">📅 中学1年生：</text>
+  <text x="340" y="735" font-family="Arial, sans-serif" font-size="12" fill="#64748b">灰色達成（400+）- ABC A問題を安定解答</text>
+  
+  <text x="200" y="755" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569">📅 中学2年生：</text>
+  <text x="340" y="755" font-family="Arial, sans-serif" font-size="12" fill="#64748b">茶色達成（800+）- ABC B問題も解答可能</text>
+  
+  <text x="200" y="775" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569">📅 中学3年生：</text>
+  <text x="340" y="775" font-family="Arial, sans-serif" font-size="12" fill="#64748b">緑色挑戦（1200+）- JOI予選通過レベル</text>
+  
+  <text x="200" y="795" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#475569">📅 高校1年生：</text>
+  <text x="340" y="795" font-family="Arial, sans-serif" font-size="12" fill="#64748b">水色挑戦（1600+）- JOI本選出場レベル</text>
+  
+  <!-- Growth arrows -->
+  <defs>
+    <marker id="growthArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+  </defs>
+  
+  <!-- Highlight realistic path -->
+  <path d="M 140 630 L 140 420" stroke="#10b981" stroke-width="4" fill="none" marker-end="url(#growthArrow)"/>
+  <text x="25" y="530" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#10b981" transform="rotate(-90, 25, 530)">
+    中学生の成長パス
+  </text>
+</svg>

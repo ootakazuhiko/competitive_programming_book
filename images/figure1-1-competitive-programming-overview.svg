@@ -1,0 +1,145 @@
+<svg viewBox="0 0 900 800" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-1：競技プログラミングの全体像</title>
+  <desc>競技プログラミングとは何かを示す包括的な概要図。問題解決プロセス、参加形態、得られるスキル、コミュニティの4つの要素で構成</desc>
+  
+  <!-- Background -->
+  <rect width="900" height="800" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    競技プログラミングの全体像
+  </text>
+  
+  <!-- Central concept -->
+  <circle cx="450" cy="150" r="70" fill="#3b82f6" stroke="#1e40af" stroke-width="4"/>
+  <text x="450" y="135" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+    競技プログラミング
+  </text>
+  <text x="450" y="155" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">
+    Competitive Programming
+  </text>
+  <text x="450" y="175" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    制限時間内にプログラムで
+  </text>
+  <text x="450" y="190" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    問題を解く競技
+  </text>
+  
+  <!-- Connection lines -->
+  <path d="M 385 200 L 200 320" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 450 220 L 450 320" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 515 200 L 700 320" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 400 210 L 300 550" stroke="#64748b" stroke-width="2" fill="none"/>
+  <path d="M 500 210 L 600 550" stroke="#64748b" stroke-width="2" fill="none"/>
+  
+  <!-- Problem Solving Process -->
+  <rect x="50" y="340" width="300" height="180" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="200" y="365" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    📋 問題解決プロセス
+  </text>
+  
+  <!-- Step by step process -->
+  <rect x="70" y="385" width="260" height="130" rx="4" fill="#white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="200" y="405" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">解決の流れ</text>
+  
+  <!-- Process steps -->
+  <circle cx="90" cy="430" r="12" fill="#3b82f6"/>
+  <text x="90" y="435" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">1</text>
+  <text x="120" y="435" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">問題を読んで理解する</text>
+  
+  <circle cx="90" cy="455" r="12" fill="#10b981"/>
+  <text x="90" y="460" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">2</text>
+  <text x="120" y="460" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">解法アルゴリズムを考える</text>
+  
+  <circle cx="90" cy="480" r="12" fill="#f59e0b"/>
+  <text x="90" y="485" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">3</text>
+  <text x="120" y="485" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">プログラムで実装する</text>
+  
+  <circle cx="90" cy="505" r="12" fill="#8b5cf6"/>
+  <text x="90" y="510" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">4</text>
+  <text x="120" y="510" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">テスト・提出・結果確認</text>
+  
+  <!-- Participation Format -->
+  <rect x="400" y="340" width="200" height="180" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="500" y="365" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#065f46">
+    🏆 参加形態
+  </text>
+  
+  <rect x="420" y="385" width="160" height="130" rx="4" fill="#white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="500" y="405" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#065f46">コンテスト例</text>
+  
+  <text x="430" y="430" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    <tspan x="430" dy="0">🇯🇵 AtCoder (日本)</tspan>
+    <tspan x="440" dy="16">• 毎週末開催</tspan>
+    <tspan x="440" dy="14">• 日本語問題文</tspan>
+    <tspan x="440" dy="14">• 初心者歓迎</tspan>
+    <tspan x="430" dy="20">🌍 Codeforces (世界)</tspan>
+    <tspan x="440" dy="16">• 世界最高峰レベル</tspan>
+    <tspan x="440" dy="14">• 英語問題文</tspan>
+    <tspan x="430" dy="20">🏅 JOI (日本情報五輪)</tspan>
+    <tspan x="440" dy="16">• 中高生限定</tspan>
+  </text>
+  
+  <!-- Skills Development -->
+  <rect x="650" y="340" width="200" height="180" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="750" y="365" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#92400e">
+    💪 身につく力
+  </text>
+  
+  <rect x="670" y="385" width="160" height="130" rx="4" fill="#white" stroke="#fde68a" stroke-width="1"/>
+  <text x="750" y="405" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">コアスキル</text>
+  
+  <text x="680" y="430" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+    <tspan x="680" dy="0">🧠 論理的思考力</tspan>
+    <tspan x="690" dy="16">• 複雑な問題の分解</tspan>
+    <tspan x="690" dy="14">• 体系的解決手順</tspan>
+    <tspan x="680" dy="20">🔧 問題解決能力</tspan>
+    <tspan x="690" dy="16">• 困難への挑戦力</tspan>
+    <tspan x="690" dy="14">• 多角的思考</tspan>
+    <tspan x="680" dy="20">💻 プログラミング技術</tspan>
+    <tspan x="690" dy="16">• アルゴリズム知識</tspan>
+    <tspan x="690" dy="14">• 実装力・デバッグ力</tspan>
+  </text>
+  
+  <!-- Learning Environment -->
+  <rect x="200" y="570" width="200" height="180" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="300" y="595" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📚 学習環境
+  </text>
+  
+  <rect x="220" y="615" width="160" height="130" rx="4" fill="#white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="300" y="635" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">必要なもの</text>
+  
+  <text x="230" y="660" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">
+    <tspan x="230" dy="0">💻 パソコン</tspan>
+    <tspan x="240" dy="16">• Windows/Mac/Linux</tspan>
+    <tspan x="240" dy="14">• インターネット接続</tspan>
+    <tspan x="230" dy="20">🐍 プログラミング言語</tspan>
+    <tspan x="240" dy="16">• Python（推奨）</tspan>
+    <tspan x="240" dy="14">• C++、Java等も可</tspan>
+    <tspan x="230" dy="20">🎯 やる気と好奇心</tspan>
+    <tspan x="240" dy="16">• 継続する意欲</tspan>
+    <tspan x="240" dy="14">• 学習を楽しむ心</tspan>
+  </text>
+  
+  <!-- Global Community -->
+  <rect x="500" y="570" width="200" height="180" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="595" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🌍 グローバルコミュニティ
+  </text>
+  
+  <rect x="520" y="615" width="160" height="130" rx="4" fill="#white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="600" y="635" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">つながり</text>
+  
+  <text x="530" y="660" font-family="Arial, sans-serif" font-size="12" fill="#15803d">
+    <tspan x="530" dy="0">👥 年齢・国境を超えた交流</tspan>
+    <tspan x="540" dy="16">• 中学生〜社会人</tspan>
+    <tspan x="540" dy="14">• 世界中の参加者</tspan>
+    <tspan x="530" dy="20">💬 オンラインでの学び合い</tspan>
+    <tspan x="540" dy="16">• 解法の議論・共有</tspan>
+    <tspan x="540" dy="14">• 質問・相談サポート</tspan>
+    <tspan x="530" dy="20">🤝 生涯にわたる仲間関係</tspan>
+    <tspan x="540" dy="16">• 共通の興味・価値観</tspan>
+    <tspan x="540" dy="14">• 将来の協力関係</tspan>
+  </text>
+</svg>

@@ -1,0 +1,237 @@
+<svg viewBox="0 0 950 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-4：中学生参加者の成長事例</title>
+  <desc>実際の中学生競技プログラミング参加者の成長パターンとタイムラインを具体的な事例で示すケーススタディ</desc>
+  
+  <!-- Background -->
+  <rect width="950" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="475" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    中学生参加者の成長事例
+  </text>
+  
+  <!-- Case Study A -->
+  <rect x="50" y="70" width="280" height="380" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="190" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    📚 事例A: 着実成長型
+  </text>
+  <text x="190" y="115" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1e40af">
+    田中さん（14歳・中学2年）
+  </text>
+  
+  <!-- Timeline A -->
+  <rect x="70" y="135" width="240" height="300" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  
+  <!-- Timeline entries A -->
+  <circle cx="90" cy="160" r="8" fill="#6b7280"/>
+  <text x="110" y="155" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中1春</text>
+  <text x="110" y="170" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">プログラミング学習開始</text>
+  
+  <circle cx="90" cy="190" r="8" fill="#a16207"/>
+  <text x="110" y="185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中1夏</text>
+  <text x="110" y="200" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">AtCoder初参加（茶色400）</text>
+  
+  <circle cx="90" cy="220" r="8" fill="#a16207"/>
+  <text x="110" y="215" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中1冬</text>
+  <text x="110" y="230" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">茶色安定（600達成）</text>
+  
+  <circle cx="90" cy="250" r="8" fill="#22c55e"/>
+  <text x="110" y="245" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中2春</text>
+  <text x="110" y="260" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">緑色達成（1200）</text>
+  
+  <circle cx="90" cy="280" r="8" fill="#22c55e"/>
+  <text x="110" y="275" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中2夏</text>
+  <text x="110" y="290" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">JOI予選挑戦・通過</text>
+  
+  <circle cx="90" cy="310" r="8" fill="#0ea5e9"/>
+  <text x="110" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中2冬</text>
+  <text x="110" y="320" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">水色達成（1600）</text>
+  
+  <circle cx="90" cy="340" r="8" fill="#0ea5e9"/>
+  <text x="110" y="335" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中3春</text>
+  <text x="110" y="350" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">JOI本選出場</text>
+  
+  <!-- Key factors A -->
+  <text x="80" y="375" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">成功要因:</text>
+  <text x="85" y="395" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="85" dy="0">• 毎日1時間の継続学習</tspan>
+    <tspan x="85" dy="12">• 解けない問題の復習徹底</tspan>
+    <tspan x="85" dy="12">• オンライン勉強会参加</tspan>
+    <tspan x="85" dy="12">• 学校の数学も得意分野</tspan>
+  </text>
+  
+  <!-- Case Study B -->
+  <rect x="350" y="70" width="280" height="380" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="490" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#065f46">
+    🚀 事例B: 急成長型
+  </text>
+  <text x="490" y="115" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#065f46">
+    鈴木くん（13歳・中学1年）
+  </text>
+  
+  <!-- Timeline B -->
+  <rect x="370" y="135" width="240" height="300" rx="4" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  
+  <!-- Timeline entries B -->
+  <circle cx="390" cy="160" r="8" fill="#6b7280"/>
+  <text x="410" y="155" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中1春</text>
+  <text x="410" y="170" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">プログラミング経験なし</text>
+  
+  <circle cx="390" cy="190" r="8" fill="#6b7280"/>
+  <text x="410" y="185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中1夏</text>
+  <text x="410" y="200" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">Python学習開始</text>
+  
+  <circle cx="390" cy="220" r="8" fill="#a16207"/>
+  <text x="410" y="215" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中1秋</text>
+  <text x="410" y="230" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">AtCoder初参加（茶色500）</text>
+  
+  <circle cx="390" cy="250" r="8" fill="#22c55e"/>
+  <text x="410" y="245" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中1冬</text>
+  <text x="410" y="260" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">緑色達成（1300）</text>
+  
+  <circle cx="390" cy="280" r="8" fill="#0ea5e9"/>
+  <text x="410" y="275" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中1春</text>
+  <text x="410" y="290" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">水色達成（1700）</text>
+  
+  <circle cx="390" cy="310" r="8" fill="#3b82f6"/>
+  <text x="410" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中2夏</text>
+  <text x="410" y="320" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">青色達成（2100）</text>
+  
+  <circle cx="390" cy="340" r="8" fill="#3b82f6"/>
+  <text x="410" y="335" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中2秋</text>
+  <text x="410" y="350" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">JOI本選上位入賞</text>
+  
+  <!-- Key factors B -->
+  <text x="380" y="375" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#065f46">成功要因:</text>
+  <text x="385" y="395" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    <tspan x="385" dy="0">• 集中力と吸収力が高い</tspan>
+    <tspan x="385" dy="12">• 競技性を楽しんでいる</tspan>
+    <tspan x="385" dy="12">• 上級者とのコミュニケーション</tspan>
+    <tspan x="385" dy="12">• 理系科目全般が得意</tspan>
+  </text>
+  
+  <!-- Case Study C -->
+  <rect x="650" y="70" width="280" height="380" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="790" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🎯 事例C: 継続重視型
+  </text>
+  <text x="790" y="115" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#92400e">
+    佐藤さん（15歳・中学3年）
+  </text>
+  
+  <!-- Timeline C -->
+  <rect x="670" y="135" width="240" height="300" rx="4" fill="white" stroke="#fde68a" stroke-width="1"/>
+  
+  <!-- Timeline entries C -->
+  <circle cx="690" cy="160" r="8" fill="#6b7280"/>
+  <text x="710" y="155" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中2春</text>
+  <text x="710" y="170" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">競技プログラミング知る</text>
+  
+  <circle cx="690" cy="190" r="8" fill="#6b7280"/>
+  <text x="710" y="185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中2夏</text>
+  <text x="710" y="200" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">AtCoder初参加（灰色300）</text>
+  
+  <circle cx="690" cy="220" r="8" fill="#a16207"/>
+  <text x="710" y="215" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中2冬</text>
+  <text x="710" y="230" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">茶色達成（800）</text>
+  
+  <circle cx="690" cy="250" r="8" fill="#a16207"/>
+  <text x="710" y="245" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中3春</text>
+  <text x="710" y="260" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">茶色安定（900）</text>
+  
+  <circle cx="690" cy="280" r="8" fill="#22c55e"/>
+  <text x="710" y="275" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中3夏</text>
+  <text x="710" y="290" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">緑色達成（1250）</text>
+  
+  <circle cx="690" cy="310" r="8" fill="#22c55e"/>
+  <text x="710" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中3秋</text>
+  <text x="710" y="320" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">JOI予選初挑戦</text>
+  
+  <circle cx="690" cy="340" r="8" fill="#22c55e"/>
+  <text x="710" y="335" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#374151">中3冬</text>
+  <text x="710" y="350" font-family="Arial, sans-serif" font-size="11" fill="#6b7280">高校でも継続予定</text>
+  
+  <!-- Key factors C -->
+  <text x="680" y="375" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">成功要因:</text>
+  <text x="685" y="395" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="685" dy="0">• 無理をしない学習ペース</tspan>
+    <tspan x="685" dy="12">• 楽しさを重視した取り組み</tspan>
+    <tspan x="685" dy="12">• 友達と一緒に参加</tspan>
+    <tspan x="685" dy="12">• 長期的視野での成長</tspan>
+  </text>
+  
+  <!-- Common Success Patterns -->
+  <rect x="50" y="480" width="850" height="200" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="475" y="505" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#334155">
+    🎉 共通する成功パターン
+  </text>
+  
+  <!-- Success pattern grid -->
+  <rect x="80" y="530" width="200" height="100" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="180" y="550" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">
+    継続性
+  </text>
+  <text x="90" y="570" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="90" dy="0">• 短時間でも毎日取り組む</tspan>
+    <tspan x="90" dy="12">• 解けない問題も諦めない</tspan>
+    <tspan x="90" dy="12">• 長期的な目標設定</tspan>
+    <tspan x="90" dy="12">• 成長の実感を大切にする</tspan>
+  </text>
+  
+  <rect x="300" y="530" width="200" height="100" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="400" y="550" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">
+    学習方法
+  </text>
+  <text x="310" y="570" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="310" dy="0">• 基本アルゴリズムの習得</tspan>
+    <tspan x="310" dy="12">• 過去問の復習</tspan>
+    <tspan x="310" dy="12">• 解説の理解を重視</tspan>
+    <tspan x="310" dy="12">• 実装練習の積み重ね</tspan>
+  </text>
+  
+  <rect x="520" y="530" width="200" height="100" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="620" y="550" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">
+    環境・サポート
+  </text>
+  <text x="530" y="570" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="530" dy="0">• 家族の理解と応援</tspan>
+    <tspan x="530" dy="12">• オンラインコミュニティ</tspan>
+    <tspan x="530" dy="12">• 学校の友達との共有</tspan>
+    <tspan x="530" dy="12">• 適切な学習時間確保</tspan>
+  </text>
+  
+  <rect x="740" y="530" width="160" height="100" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="820" y="550" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">
+    マインドセット
+  </text>
+  <text x="750" y="570" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+    <tspan x="750" dy="0">• 競争より自己成長</tspan>
+    <tspan x="750" dy="12">• 失敗を学習機会に</tspan>
+    <tspan x="750" dy="12">• 楽しさを忘れない</tspan>
+    <tspan x="750" dy="12">• 他者との比較回避</tspan>
+  </text>
+  
+  <!-- Tips for newcomers -->
+  <rect x="80" y="650" width="790" height="100" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="475" y="675" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#475569">
+    💡 これから始める中学生へのアドバイス
+  </text>
+  <text x="100" y="700" font-family="Arial, sans-serif" font-size="12" fill="#64748b">
+    <tspan x="100" dy="0">🎯 目標設定: 最初の1年で茶色、2年で緑色を目指そう（個人差があるので、自分のペースで大丈夫）</tspan>
+    <tspan x="100" dy="16">⏰ 学習時間: 平日30分、休日1-2時間程度から始めて、無理のない範囲で継続</tspan>
+    <tspan x="100" dy="16">🤝 仲間作り: 学校の友達や、オンラインコミュニティで仲間を見つけよう</tspan>
+    <tspan x="100" dy="16">🎉 楽しむ心: 問題が解けた時の達成感と、スキルアップの実感を大切にしよう</tspan>
+  </text>
+  
+  <!-- Timeline connecting lines -->
+  <defs>
+    <marker id="timelineArrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <polygon points="0 0, 6 3, 0 6" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <!-- Vertical timeline lines for each case -->
+  <line x1="90" y1="168" x2="90" y2="332" stroke="#cbd5e1" stroke-width="2" fill="none"/>
+  <line x1="390" y1="168" x2="390" y2="332" stroke="#cbd5e1" stroke-width="2" fill="none"/>
+  <line x1="690" y1="168" x2="690" y2="332" stroke="#cbd5e1" stroke-width="2" fill="none"/>
+</svg>
