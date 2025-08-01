@@ -1,0 +1,571 @@
+<svg viewBox="0 0 1200 1300" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-1：入出力処理パターン</title>
+  <desc>競技プログラミングで頻出する様々な入出力形式とその処理方法の完全ガイド</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="1300" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    入出力処理パターン
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    競技プログラミング必須の入出力技術マスター
+  </text>
+  
+  <!-- Pattern Overview -->
+  <rect x="50" y="80" width="1100" height="120" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📊 入出力パターン分類
+  </text>
+  
+  <!-- Input Types -->
+  <rect x="80" y="120" width="260" height="70" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="210" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📥 入力パターン
+  </text>
+  <text x="90" y="155" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="90" dy="0">• 単一値 (1つの数字/文字列)</tspan>
+    <tspan x="90" dy="12">• 複数値 (空白区切り)</tspan>
+    <tspan x="90" dy="12">• 繰り返し (N行のデータ)</tspan>
+    <tspan x="90" dy="12">• 混在型 (数値+文字列)</tspan>
+  </text>
+  
+  <!-- Processing Types -->
+  <rect x="360" y="120" width="260" height="70" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="490" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    ⚙️ 処理パターン
+  </text>
+  <text x="370" y="155" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="370" dy="0">• データ변換 (str→int, int→str)</tspan>
+    <tspan x="370" dy="12">• リスト操作 (append, map)</tspan>
+    <tspan x="370" dy="12">• ループ処理 (for, while)</tspan>
+    <tspan x="370" dy="12">• 条件分岐 (if文での判定)</tspan>
+  </text>
+  
+  <!-- Output Types -->
+  <rect x="640" y="120" width="260" height="70" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="770" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📤 出力パターン
+  </text>
+  <text x="650" y="155" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="650" dy="0">• 単一行 (1つの答え)</tspan>
+    <tspan x="650" dy="12">• 複数行 (N行の結果)</tspan>
+    <tspan x="650" dy="12">• フォーマット (小数点, Yes/No)</tspan>
+    <tspan x="650" dy="12">• リスト形式 (空白区切り)</tspan>
+  </text>
+  
+  <!-- Common Tips -->
+  <rect x="920" y="120" width="200" height="70" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="1020" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    💡 重要ポイント
+  </text>
+  <text x="930" y="155" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="930" dy="0">• input()は必ず文字列</tspan>
+    <tspan x="930" dy="12">• print()の改行に注意</tspan>
+    <tspan x="930" dy="12">• エラーハンドリング</tspan>
+    <tspan x="930" dy="12">• サンプルで必ずテスト</tspan>
+  </text>
+  
+  <!-- Single Value Input -->
+  <rect x="50" y="220" width="1100" height="160" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="600" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    1️⃣ 単一値入力パターン
+  </text>
+  
+  <!-- Integer Input -->
+  <rect x="80" y="260" width="340" height="110" rx="6" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="250" y="280" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    整数入力
+  </text>
+  
+  <rect x="90" y="290" width="150" height="70" rx="4" fill="#f0f9ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="95" y="305" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    入力例:
+  </text>
+  <text x="95" y="320" font-family="Monaco, monospace" font-size="10" fill="#1e40af">
+    42
+  </text>
+  <text x="95" y="340" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    処理:
+  </text>
+  <text x="95" y="355" font-family="Monaco, monospace" font-size="10" fill="#1e40af">
+    n = int(input())
+  </text>
+  
+  <rect x="260" y="290" width="150" height="70" rx="4" fill="#f0f9ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="265" y="305" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    内部処理:
+  </text>
+  <text x="265" y="320" font-family="Arial, sans-serif" font-size="9" fill="#1e40af">
+    <tspan x="265" dy="0">1. input() → "42"</tspan>
+    <tspan x="265" dy="11">2. int("42") → 42</tspan>
+    <tspan x="265" dy="11">3. n = 42 (整数型)</tspan>
+  </text>
+  
+  <!-- Float Input -->
+  <rect x="440" y="260" width="340" height="110" rx="6" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="610" y="280" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    浮動小数点入力
+  </text>
+  
+  <rect x="450" y="290" width="150" height="70" rx="4" fill="#f0f9ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="455" y="305" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    入力例:
+  </text>
+  <text x="455" y="320" font-family="Monaco, monospace" font-size="10" fill="#1e40af">
+    3.14
+  </text>
+  <text x="455" y="340" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    処理:
+  </text>
+  <text x="455" y="355" font-family="Monaco, monospace" font-size="10" fill="#1e40af">
+    pi = float(input())
+  </text>
+  
+  <rect x="620" y="290" width="150" height="70" rx="4" fill="#f0f9ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="625" y="305" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    注意点:
+  </text>
+  <text x="625" y="320" font-family="Arial, sans-serif" font-size="9" fill="#1e40af">
+    <tspan x="625" dy="0">• float("5") → 5.0</tspan>
+    <tspan x="625" dy="11">• 整数でも使える</tspan>
+    <tspan x="625" dy="11">• 精度に注意</tspan>
+  </text>
+  
+  <!-- String Input -->
+  <rect x="800" y="260" width="320" height="110" rx="6" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="960" y="280" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    文字列入力
+  </text>
+  
+  <rect x="810" y="290" width="150" height="70" rx="4" fill="#f0f9ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="815" y="305" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    入力例:
+  </text>
+  <text x="815" y="320" font-family="Monaco, monospace" font-size="10" fill="#1e40af">
+    Hello
+  </text>
+  <text x="815" y="340" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    処理:
+  </text>
+  <text x="815" y="355" font-family="Monaco, monospace" font-size="10" fill="#1e40af">
+    s = input()
+  </text>
+  
+  <rect x="980" y="290" width="130" height="70" rx="4" fill="#f0f9ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="985" y="305" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    特徴:
+  </text>
+  <text x="985" y="320" font-family="Arial, sans-serif" font-size="9" fill="#1e40af">
+    <tspan x="985" dy="0">• 変換不要</tspan>
+    <tspan x="985" dy="11">• そのまま使用</tspan>
+    <tspan x="985" dy="11">• 改行は除去済み</tspan>
+  </text>
+  
+  <!-- Multiple Values Input -->
+  <rect x="50" y="400" width="1100" height="200" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="425" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    2️⃣ 複数値入力パターン
+  </text>
+  
+  <!-- Two Values -->
+  <rect x="80" y="440" width="350" height="150" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="255" y="460" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    2つの値 (座標、範囲など)
+  </text>
+  
+  <rect x="90" y="470" width="160" height="110" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="95" y="485" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    入力例:
+  </text>
+  <text x="95" y="500" font-family="Monaco, monospace" font-size="10" fill="#15803d">
+    3 5
+  </text>
+  <text x="95" y="520" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    処理:
+  </text>
+  <text x="95" y="535" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    <tspan x="95" dy="0">a, b = map(int,</tspan>
+    <tspan x="95" dy="11">    input().split())</tspan>
+  </text>
+  <text x="95" y="560" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    結果:
+  </text>
+  <text x="95" y="575" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    a = 3, b = 5
+  </text>
+  
+  <rect x="270" y="470" width="150" height="110" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="275" y="485" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    段階的処理:
+  </text>
+  <text x="275" y="500" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    <tspan x="275" dy="0">1. input() → "3 5"</tspan>
+    <tspan x="275" dy="11">2. .split() → ["3", "5"]</tspan>
+    <tspan x="275" dy="11">3. map(int, ...) → [3, 5]</tspan>
+    <tspan x="275" dy="11">4. a, b = 3, 5</tspan>
+  </text>
+  <text x="275" y="550" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    活用例:
+  </text>
+  <text x="275" y="565" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    <tspan x="275" dy="0">print(a + b)  # 8</tspan>
+    <tspan x="275" dy="11">print(a * b)  # 15</tspan>
+  </text>
+  
+  <!-- Multiple Values -->
+  <rect x="450" y="440" width="350" height="150" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="625" y="460" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    複数値 (リスト処理)
+  </text>
+  
+  <rect x="460" y="470" width="160" height="110" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="465" y="485" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    入力例:
+  </text>
+  <text x="465" y="500" font-family="Monaco, monospace" font-size="10" fill="#15803d">
+    1 2 3 4 5
+  </text>
+  <text x="465" y="520" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    処理:
+  </text>
+  <text x="465" y="535" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    <tspan x="465" dy="0">nums = list(map(int,</tspan>
+    <tspan x="465" dy="11">    input().split()))</tspan>
+  </text>
+  <text x="465" y="560" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    結果:
+  </text>
+  <text x="465" y="575" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    nums = [1,2,3,4,5]
+  </text>
+  
+  <rect x="640" y="470" width="150" height="110" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="645" y="485" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    活用方法:
+  </text>
+  <text x="645" y="500" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    <tspan x="645" dy="0">sum(nums)  # 15</tspan>
+    <tspan x="645" dy="11">max(nums)  # 5</tspan>
+    <tspan x="645" dy="11">len(nums)  # 5</tspan>
+  </text>
+  <text x="645" y="540" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    ループ処理:
+  </text>
+  <text x="645" y="555" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    <tspan x="645" dy="0">for num in nums:</tspan>
+    <tspan x="645" dy="11">    print(num * 2)</tspan>
+  </text>
+  
+  <!-- Mixed Input -->
+  <rect x="820" y="440" width="300" height="150" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="970" y="460" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    混在型 (文字列と数値)
+  </text>
+  
+  <rect x="830" y="470" width="140" height="110" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="835" y="485" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    入力例:
+  </text>
+  <text x="835" y="500" font-family="Monaco, monospace" font-size="10" fill="#15803d">
+    Alice 15
+  </text>
+  <text x="835" y="520" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    処理:
+  </text>
+  <text x="835" y="535" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    <tspan x="835" dy="0">data = input().split()</tspan>
+    <tspan x="835" dy="11">name = data[0]</tspan>
+    <tspan x="835" dy="11">age = int(data[1])</tspan>
+  </text>
+  
+  <rect x="980" y="470" width="130" height="110" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="985" y="485" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    注意点:
+  </text>
+  <text x="985" y="500" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    <tspan x="985" dy="0">• 文字列はそのまま</tspan>
+    <tspan x="985" dy="11">• 数値はint()変換</tspan>
+    <tspan x="985" dy="11">• 順序を確認</tspan>
+  </text>
+  <text x="985" y="540" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    使用例:
+  </text>
+  <text x="985" y="555" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    <tspan x="985" dy="0">print(f"{name}は</tspan>
+    <tspan x="985" dy="10">{age}歳です")</tspan>
+  </text>
+  
+  <!-- Loop Input -->
+  <rect x="50" y="620" width="1100" height="200" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="645" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    3️⃣ 繰り返し入力パターン
+  </text>
+  
+  <!-- N Lines -->
+  <rect x="80" y="660" width="350" height="150" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="255" y="680" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    N行データ (基本形)
+  </text>
+  
+  <rect x="90" y="690" width="160" height="110" rx="4" fill="#fffbeb" stroke="#fed7aa" stroke-width="1"/>
+  <text x="95" y="705" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    入力例:
+  </text>
+  <text x="95" y="720" font-family="Monaco, monospace" font-size="9" fill="#d97706">
+    <tspan x="95" dy="0">3</tspan>
+    <tspan x="95" dy="11">10</tspan>
+    <tspan x="95" dy="11">25</tspan>
+    <tspan x="95" dy="11">13</tspan>
+  </text>
+  <text x="95" y="765" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    処理:
+  </text>
+  <text x="95" y="780" font-family="Monaco, monospace" font-size="9" fill="#d97706">
+    <tspan x="95" dy="0">n = int(input())</tspan>
+    <tspan x="95" dy="11">nums = []</tspan>
+    <tspan x="95" dy="11">for _ in range(n):</tspan>
+  </text>
+  
+  <rect x="270" y="690" width="150" height="110" rx="4" fill="#fffbeb" stroke="#fed7aa" stroke-width="1"/>
+  <text x="275" y="705" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    完全版:
+  </text>
+  <text x="275" y="720" font-family="Monaco, monospace" font-size="9" fill="#d97706">
+    <tspan x="275" dy="0">n = int(input())</tspan>
+    <tspan x="275" dy="11">nums = []</tspan>
+    <tspan x="275" dy="11">for _ in range(n):</tspan>
+    <tspan x="275" dy="11">    x = int(input())</tspan>
+    <tspan x="275" dy="11">    nums.append(x)</tspan>
+  </text>
+  <text x="275" y="775" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    内包表記版:
+  </text>
+  <text x="275" y="790" font-family="Monaco, monospace" font-size="9" fill="#d97706">
+    nums = [int(input())
+  </text>
+  
+  <!-- N Lines Multiple -->
+  <rect x="450" y="660" width="350" height="150" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="625" y="680" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    N行複数値 (2次元データ)
+  </text>
+  
+  <rect x="460" y="690" width="160" height="110" rx="4" fill="#fffbeb" stroke="#fed7aa" stroke-width="1"/>
+  <text x="465" y="705" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    入力例:
+  </text>
+  <text x="465" y="720" font-family="Monaco, monospace" font-size="9" fill="#d97706">
+    <tspan x="465" dy="0">3 4</tspan>
+    <tspan x="465" dy="11">1 2 3 4</tspan>
+    <tspan x="465" dy="11">5 6 7 8</tspan>
+    <tspan x="465" dy="11">9 10 11 12</tspan>
+  </text>
+  <text x="465" y="770" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    処理:
+  </text>
+  <text x="465" y="785" font-family="Monaco, monospace" font-size="9" fill="#d97706">
+    n, m = map(int,
+  </text>
+  
+  <rect x="640" y="690" width="150" height="110" rx="4" fill="#fffbeb" stroke="#fed7aa" stroke-width="1"/>
+  <text x="645" y="705" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    完全版:
+  </text>
+  <text x="645" y="720" font-family="Monaco, monospace" font-size="8" fill="#d97706">
+    <tspan x="645" dy="0">n, m = map(int,</tspan>
+    <tspan x="645" dy="10">    input().split())</tspan>
+    <tspan x="645" dy="10">matrix = []</tspan>
+    <tspan x="645" dy="10">for _ in range(n):</tspan>
+    <tspan x="645" dy="10">    row = list(map(int,</tspan>
+    <tspan x="645" dy="10">        input().split()))</tspan>
+    <tspan x="645" dy="10">    matrix.append(row)</tspan>
+  </text>
+  
+  <!-- Dynamic Input -->
+  <rect x="820" y="660" width="300" height="150" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="970" y="680" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    可変長入力
+  </text>
+  
+  <rect x="830" y="690" width="140" height="110" rx="4" fill="#fffbeb" stroke="#fed7aa" stroke-width="1"/>
+  <text x="835" y="705" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    入力例:
+  </text>
+  <text x="835" y="720" font-family="Monaco, monospace" font-size="9" fill="#d97706">
+    <tspan x="835" dy="0">0 (終了条件)</tspan>
+    <tspan x="835" dy="11">5</tspan>
+    <tspan x="835" dy="11">10</tspan>
+    <tspan x="835" dy="11">3</tspan>
+    <tspan x="835" dy="11">0</tspan>
+  </text>
+  <text x="835" y="775" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    処理方針:
+  </text>
+  <text x="835" y="790" font-family="Monaco, monospace" font-size="9" fill="#d97706">
+    while True:
+  </text>
+  
+  <rect x="980" y="690" width="130" height="110" rx="4" fill="#fffbeb" stroke="#fed7aa" stroke-width="1"/>
+  <text x="985" y="705" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    完全版:
+  </text>
+  <text x="985" y="720" font-family="Monaco, monospace" font-size="8" fill="#d97706">
+    <tspan x="985" dy="0">while True:</tspan>
+    <tspan x="985" dy="10">    n = int(input())</tspan>
+    <tspan x="985" dy="10">    if n == 0:</tspan>
+    <tspan x="985" dy="10">        break</tspan>
+    <tspan x="985" dy="10">    # 処理</tspan>
+    <tspan x="985" dy="10">    print(n * 2)</tspan>
+  </text>
+  
+  <!-- Output Patterns -->
+  <rect x="50" y="840" width="1100" height="200" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="600" y="865" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    4️⃣ 出力パターン
+  </text>
+  
+  <!-- Single Output -->
+  <rect x="80" y="880" width="260" height="150" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="210" y="900" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    単一値出力
+  </text>
+  
+  <rect x="90" y="910" width="240" height="110" rx="4" fill="#fef2f2" stroke="#fed7d7" stroke-width="1"/>
+  <text x="95" y="925" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    基本形:
+  </text>
+  <text x="95" y="940" font-family="Monaco, monospace" font-size="10" fill="#dc2626">
+    <tspan x="95" dy="0">print(answer)</tspan>
+    <tspan x="95" dy="14">print(42)</tspan>
+    <tspan x="95" dy="14">print("Hello")</tspan>
+  </text>
+  <text x="95" y="985" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    注意点:
+  </text>
+  <text x="95" y="1000" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">
+    <tspan x="95" dy="0">• 余計な文字を含めない</tspan>
+    <tspan x="95" dy="11">• 自動で改行される</tspan>
+  </text>
+  
+  <!-- List Output -->
+  <rect x="360" y="880" width="260" height="150" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="490" y="900" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    リスト出力
+  </text>
+  
+  <rect x="370" y="910" width="240" height="110" rx="4" fill="#fef2f2" stroke="#fed7d7" stroke-width="1"/>
+  <text x="375" y="925" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    空白区切り:
+  </text>
+  <text x="375" y="940" font-family="Monaco, monospace" font-size="9" fill="#dc2626">
+    <tspan x="375" dy="0">nums = [1, 2, 3, 4, 5]</tspan>
+    <tspan x="375" dy="12">print(*nums)  # 推奨</tspan>
+    <tspan x="375" dy="12"># 出力: 1 2 3 4 5</tspan>
+  </text>
+  <text x="375" y="985" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    1行ずつ:
+  </text>
+  <text x="375" y="1000" font-family="Monaco, monospace" font-size="9" fill="#dc2626">
+    <tspan x="375" dy="0">for num in nums:</tspan>
+    <tspan x="375" dy="11">    print(num)</tspan>
+  </text>
+  
+  <!-- Formatted Output -->
+  <rect x="640" y="880" width="260" height="150" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="770" y="900" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    フォーマット出力
+  </text>
+  
+  <rect x="650" y="910" width="240" height="110" rx="4" fill="#fef2f2" stroke="#fed7d7" stroke-width="1"/>
+  <text x="655" y="925" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    小数点制御:
+  </text>
+  <text x="655" y="940" font-family="Monaco, monospace" font-size="9" fill="#dc2626">
+    <tspan x="655" dy="0">pi = 3.141592653589793</tspan>
+    <tspan x="655" dy="12">print(f"{pi:.2f}")</tspan>
+    <tspan x="655" dy="12"># 出力: 3.14</tspan>
+  </text>
+  <text x="655" y="985" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    Yes/No出力:
+  </text>
+  <text x="655" y="1000" font-family="Monaco, monospace" font-size="9" fill="#dc2626">
+    <tspan x="655" dy="0">print("Yes" if cond</tspan>
+    <tspan x="655" dy="11">    else "No")</tspan>
+  </text>
+  
+  <!-- Custom Output -->
+  <rect x="920" y="880" width="200" height="150" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="1020" y="900" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    カスタム出力
+  </text>
+  
+  <rect x="930" y="910" width="180" height="110" rx="4" fill="#fef2f2" stroke="#fed7d7" stroke-width="1"/>
+  <text x="935" y="925" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    区切り文字指定:
+  </text>
+  <text x="935" y="940" font-family="Monaco, monospace" font-size="9" fill="#dc2626">
+    <tspan x="935" dy="0">print(a, b, sep=", ")</tspan>
+    <tspan x="935" dy="12"># 出力: 1, 2</tspan>
+  </text>
+  <text x="935" y="970" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    改行制御:
+  </text>
+  <text x="935" y="985" font-family="Monaco, monospace" font-size="9" fill="#dc2626">
+    <tspan x="935" dy="0">print(a, end=" ")</tspan>
+    <tspan x="935" dy="12">print(b)  # 同じ行</tspan>
+  </text>
+  
+  <!-- Common Mistakes -->
+  <rect x="50" y="1060" width="1100" height="140" rx="8" fill="#fff1f2" stroke="#f43f5e" stroke-width="2"/>
+  <text x="600" y="1085" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#e11d48">
+    ⚠️ よくある間違いと対策
+  </text>
+  
+  <rect x="80" y="1100" width="340" height="90" rx="4" fill="white" stroke="#fda4af" stroke-width="1"/>
+  <text x="90" y="1120" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e11d48">
+    ❌ 入力の間違い
+  </text>
+  <text x="100" y="1135" font-family="Arial, sans-serif" font-size="10" fill="#e11d48">
+    <tspan x="100" dy="0">• int()変換の忘れ → 文字列のまま計算</tspan>
+    <tspan x="100" dy="12">• split()の忘れ → "1 2"が1つの文字列</tspan>
+    <tspan x="100" dy="12">• 行数の数え間違い → IndexError</tspan>
+    <tspan x="100" dy="12">• 入力順序の勘違い → 値の取り違え</tspan>
+  </text>
+  
+  <rect x="440" y="1100" width="340" height="90" rx="4" fill="white" stroke="#fda4af" stroke-width="1"/>
+  <text x="450" y="1120" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e11d48">
+    ❌ 出力の間違い
+  </text>
+  <text x="460" y="1135" font-family="Arial, sans-serif" font-size="10" fill="#e11d48">
+    <tspan x="460" dy="0">• 余計な説明文字 → "答えは42"</tspan>
+    <tspan x="460" dy="12">• 改行の制御ミス → 複数行・同一行</tspan>
+    <tspan x="460" dy="12">• 大文字小文字 → "yes"ではなく"Yes"</tspan>
+    <tspan x="460" dy="12">• 区切り文字違い → カンマと空白</tspan>
+  </text>
+  
+  <rect x="800" y="1100" width="320" height="90" rx="4" fill="white" stroke="#fda4af" stroke-width="1"/>
+  <text x="810" y="1120" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#e11d48">
+    ✅ 対策・予防法
+  </text>
+  <text x="820" y="1135" font-family="Arial, sans-serif" font-size="10" fill="#e11d48">
+    <tspan x="820" dy="0">• サンプル入出力で必ずテスト</tspan>
+    <tspan x="820" dy="12">• print文デバッグで変数値確認</tspan>
+    <tspan x="820" dy="12">• 問題文の入出力形式を正確に読む</tspan>
+    <tspan x="820" dy="12">• エラーメッセージを注意深く確認</tspan>
+  </text>
+  
+  <!-- Quick Reference -->
+  <rect x="50" y="1220" width="1100" height="60" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="600" y="1245" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    📚 クイックリファレンス
+  </text>
+  
+  <text x="80" y="1265" font-family="Arial, sans-serif" font-size="11" fill="#0369a1">
+    <tspan x="80" dy="0">🔍 単一値: n = int(input()) | 🔍 複数値: a, b = map(int, input().split()) | 🔍 リスト: nums = list(map(int, input().split()))</tspan>
+    <tspan x="80" dy="15">🔍 N行: [int(input()) for _ in range(n)] | 🔍 2次元: [list(map(int, input().split())) for _ in range(n)] | 🔍 出力: print(*list)</tspan>
+  </text>
+</svg>
