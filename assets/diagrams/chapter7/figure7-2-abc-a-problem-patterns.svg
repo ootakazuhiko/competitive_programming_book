@@ -1,0 +1,117 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; fill: #1a365d; }
+      .pattern-title { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; fill: #2d3748; }
+      .percentage { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 700; fill: #e53e3e; }
+      .content-text { font-family: 'Inter', sans-serif; font-size: 11px; fill: #4a5568; line-height: 1.3; }
+      .example-title { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; fill: #2b6cb0; }
+      .code-text { font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace; font-size: 10px; fill: #2d3748; }
+      .point-text { font-family: 'Inter', sans-serif; font-size: 10px; fill: #38a169; font-weight: 500; }
+      .io-text { font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace; font-size: 10px; fill: #805ad5; }
+      .pattern-1 { fill: #fff5f5; stroke: #fed7d7; stroke-width: 2; }
+      .pattern-2 { fill: #fffaf0; stroke: #fbd38d; stroke-width: 2; }
+      .pattern-3 { fill: #f0fff4; stroke: #9ae6b4; stroke-width: 2; }
+      .pattern-4 { fill: #f0f9ff; stroke: #7dd3fc; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">図7-2：ABC A問題の典型パターン（出現頻度順）</text>
+  
+  <!-- Pattern 1: Arithmetic Operations -->
+  <rect x="20" y="50" width="360" height="270" class="pattern-1" rx="8"/>
+  <text x="30" y="70" class="pattern-title">📊 パターン1：四則演算</text>
+  <text x="320" y="70" class="percentage">（約35%）</text>
+  
+  <text x="30" y="90" class="content-text">特徴：数値計算、単位変換、簡単な数式</text>
+  
+  <text x="30" y="110" class="example-title">例：ABC001 A - 積雪深差</text>
+  <text x="30" y="125" class="content-text">問題：雪が積もる前H1cm、積もった後H2cm。積雪量を出力せよ。</text>
+  
+  <text x="30" y="145" class="io-text">入力例：15  20</text>
+  <text x="30" y="160" class="io-text">出力例：5</text>
+  
+  <text x="30" y="180" class="content-text">解法：</text>
+  <text x="30" y="195" class="code-text">h1 = int(input())</text>
+  <text x="30" y="208" class="code-text">h2 = int(input())</text>
+  <text x="30" y="221" class="code-text">print(h2 - h1)</text>
+  
+  <text x="30" y="245" class="point-text">💡 ポイント：</text>
+  <text x="30" y="260" class="content-text">• 問題文を式に翻訳する能力</text>
+  <text x="30" y="275" class="content-text">• 演算子の適切な選択（+, -, *, //, %）</text>
+  <text x="30" y="290" class="content-text">• 入力形式の正確な理解</text>
+  <text x="30" y="305" class="content-text">• 計算順序と括弧の使い方</text>
+  
+  <!-- Pattern 2: Conditional Logic -->
+  <rect x="420" y="50" width="360" height="270" class="pattern-2" rx="8"/>
+  <text x="430" y="70" class="pattern-title">📊 パターン2：条件判定・場合分け</text>
+  <text x="720" y="70" class="percentage">（約30%）</text>
+  
+  <text x="430" y="90" class="content-text">特徴：if文による条件分岐、Yes/No判定</text>
+  
+  <text x="430" y="110" class="example-title">例：ABC086 A - Product</text>
+  <text x="430" y="125" class="content-text">問題：2つの整数A,Bの積が偶数か奇数か判定せよ。</text>
+  
+  <text x="430" y="145" class="io-text">入力例：3 4</text>
+  <text x="430" y="160" class="io-text">出力例：Even</text>
+  
+  <text x="430" y="180" class="content-text">解法：</text>
+  <text x="430" y="195" class="code-text">a, b = map(int, input().split())</text>
+  <text x="430" y="208" class="code-text">if (a * b) % 2 == 0:</text>
+  <text x="430" y="221" class="code-text">    print("Even")</text>
+  <text x="430" y="234" class="code-text">else:</text>
+  <text x="430" y="247" class="code-text">    print("Odd")</text>
+  
+  <text x="430" y="270" class="point-text">💡 ポイント：</text>
+  <text x="430" y="285" class="content-text">• 数学的性質の理解（偶数×何数=偶数）</text>
+  <text x="430" y="300" class="content-text">• 条件分岐の正確な実装</text>
+  <text x="430" y="315" class="content-text">• 出力形式の厳密な遵守</text>
+  
+  <!-- Pattern 3: String Operations -->
+  <rect x="20" y="340" width="360" height="240" class="pattern-3" rx="8"/>
+  <text x="30" y="360" class="pattern-title">📊 パターン3：文字列操作</text>
+  <text x="320" y="360" class="percentage">（約20%）</text>
+  
+  <text x="30" y="380" class="content-text">特徴：文字列の長さ、分割、結合、置換など</text>
+  
+  <text x="30" y="400" class="example-title">例：ABC081 A - Placing Marbles</text>
+  <text x="30" y="415" class="content-text">問題：文字列sの'1'の個数を数えよ。</text>
+  
+  <text x="30" y="435" class="io-text">入力例：101</text>
+  <text x="30" y="450" class="io-text">出力例：2</text>
+  
+  <text x="30" y="470" class="content-text">解法1：</text>
+  <text x="30" y="485" class="code-text">s = input()</text>
+  <text x="30" y="498" class="code-text">print(s.count('1'))</text>
+  
+  <text x="30" y="518" class="content-text">解法2：</text>
+  <text x="30" y="533" class="code-text">s = input()</text>
+  <text x="30" y="546" class="code-text">count = sum(1 for c in s if c == '1')</text>
+  <text x="30" y="559" class="code-text">print(count)</text>
+  
+  <!-- Pattern 4: Array/List Operations -->
+  <rect x="420" y="340" width="360" height="240" class="pattern-4" rx="8"/>
+  <text x="430" y="360" class="pattern-title">📊 パターン4：配列・リストの基本操作</text>
+  <text x="720" y="360" class="percentage">（約15%）</text>
+  
+  <text x="430" y="380" class="content-text">特徴：最大値・最小値、合計、要素数など</text>
+  
+  <text x="430" y="400" class="example-title">例：ABC071 A - Meal Delivery</text>
+  <text x="430" y="415" class="content-text">問題：座標xから、aとbのどちらが近いか判定せよ。</text>
+  
+  <text x="430" y="435" class="io-text">入力例：10 3 8</text>
+  <text x="430" y="450" class="io-text">出力例：B</text>
+  
+  <text x="430" y="470" class="content-text">解法：</text>
+  <text x="430" y="485" class="code-text">x, a, b = map(int, input().split())</text>
+  <text x="430" y="498" class="code-text">if abs(x - a) < abs(x - b):</text>
+  <text x="430" y="511" class="code-text">    print("A")</text>
+  <text x="430" y="524" class="code-text">else:</text>
+  <text x="430" y="537" class="code-text">    print("B")</text>
+  
+  <text x="430" y="560" class="point-text">💡 距離の概念（絶対値）、数学関数の活用</text>
+</svg>

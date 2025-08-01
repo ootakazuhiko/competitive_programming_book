@@ -1,0 +1,98 @@
+<svg viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title7-6 desc7-6">
+  <title id="title7-6">図7-6: ABC088 A問題「Infinite Coins」完全解法</title>
+  <desc id="desc7-6">ABC088のA問題「Infinite Coins」の完全な解法プロセスと問題理解の修正過程を示すダイアグラム</desc>
+  
+  <defs>
+    <style>
+      .title-text { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; fill: #1a365d; }
+      .section-title { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; fill: #2b6cb0; }
+      .problem-title { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; fill: #ffffff; }
+      .body-text { font-family: 'Inter', sans-serif; font-size: 12px; fill: #2d3748; }
+      .code-text { font-family: 'Monaco', monospace; font-size: 11px; fill: #2d3748; }
+      .comment-text { font-family: 'Monaco', monospace; font-size: 10px; fill: #718096; }
+      .highlight-text { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; fill: #c53030; }
+      .success-text { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; fill: #38a169; }
+      .insight-text { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; fill: #d69e2e; }
+      
+      .problem-bg { fill: #3182ce; stroke: #2c5aa0; stroke-width: 2; }
+      .analysis-bg { fill: #e6fffa; stroke: #319795; stroke-width: 2; }
+      .verification-bg { fill: #fef5e7; stroke: #d69e2e; stroke-width: 2; }
+      .implementation-bg { fill: #f7fafc; stroke: #4a5568; stroke-width: 2; }
+      .insight-bg { fill: #fff5f5; stroke: #e53e3e; stroke-width: 2; }
+      .border-line { stroke: #e2e8f0; stroke-width: 1; fill: none; }
+      
+      .check-mark { fill: #38a169; }
+      .warning-mark { fill: #d69e2e; }
+      .emoji { font-family: 'Inter', sans-serif; font-size: 14px; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title-text">図7-6: ABC088 A問題「Infinite Coins」完全解法</text>
+
+  <!-- Problem Statement Section -->
+  <rect x="50" y="50" width="700" height="130" rx="8" class="problem-bg"/>
+  <text x="70" y="75" class="problem-title">📋 問題文</text>
+  
+  <text x="70" y="95" class="body-text" fill="white">あなたは無限に多くの500円玉と、A円を持っています。</text>
+  <text x="70" y="110" class="body-text" fill="white">N円の品物を買うのに十分なお金を持っているかを判定してください。</text>
+  <text x="70" y="125" class="body-text" fill="white">十分な場合は「Yes」、そうでなければ「No」を出力してください。</text>
+  
+  <text x="70" y="145" class="body-text" fill="white">入力：N（必要金額）, A（所持している円）</text>
+  <text x="70" y="160" class="body-text" fill="white">入力例：2018, 218   出力例：Yes</text>
+
+  <!-- Problem Analysis Section -->
+  <rect x="50" y="195" width="700" height="150" rx="8" class="analysis-bg"/>
+  <text x="70" y="220" class="section-title">🔍 問題分析</text>
+  
+  <text x="70" y="240" class="body-text">理解したこと：</text>
+  <text x="90" y="255" class="body-text">• 必要金額：N円</text>
+  <text x="90" y="270" class="body-text">• 所持金：500円玉（無限）+ A円</text>
+  <text x="90" y="285" class="body-text">• 500円玉は何枚でも使える</text>
+  <text x="90" y="300" class="body-text">• A円だけで足りない場合、500円玉で補填</text>
+  
+  <text x="70" y="320" class="body-text">思考プロセス：</text>
+  <text x="90" y="335" class="code-text">if A >= N: "Yes"  # A円だけで足りる</text>
+
+  <!-- Sample Verification Section (with mistake realization) -->
+  <rect x="50" y="360" width="700" height="180" rx="8" class="verification-bg"/>
+  <text x="70" y="385" class="section-title">💡 サンプル検証と気づき</text>
+  
+  <text x="70" y="405" class="body-text">入力：N=2018, A=218</text>
+  <text x="70" y="420" class="body-text">判定：A >= N ? → 218 >= 2018 ? → False</text>
+  <text x="70" y="435" class="body-text">不足額：N - A = 2018 - 218 = 1800円</text>
+  <text x="70" y="450" class="highlight-text">あれ？1800円 > 500円だから払えない...でもサンプルは「Yes」だ</text>
+  
+  <!-- Insight box -->
+  <rect x="90" y="465" width="600" height="65" rx="5" class="insight-bg"/>
+  <text x="110" y="485" class="insight-text">💡 重要な気づき：500円玉は「無限」にある！</text>
+  <text x="110" y="500" class="body-text">つまり、A円 + 500円玉（必要枚数分）でN円払えるかどうかの問題</text>
+  <text x="110" y="515" class="body-text">不足額1800円 → 500円玉4枚で2000円 → 十分支払い可能！</text>
+
+  <!-- Correct Implementation Section -->
+  <rect x="50" y="555" width="700" height="165" rx="8" class="implementation-bg"/>
+  <text x="70" y="580" class="section-title">⌨️ 正しい実装</text>
+  
+  <!-- First approach -->
+  <text x="70" y="600" class="body-text">段階的理解の実装：</text>
+  <text x="90" y="615" class="code-text">n = int(input())</text>
+  <text x="90" y="628" class="code-text">a = int(input())</text>
+  <text x="90" y="641" class="code-text">if a >= n:</text>
+  <text x="110" y="654" class="code-text">print("Yes")  # A円だけで足りる</text>
+  <text x="90" y="667" class="code-text">else:</text>
+  <text x="110" y="680" class="code-text">print("Yes")  # 500円玉で補填可能</text>
+
+  <!-- Final correct approach -->
+  <text x="420" y="600" class="body-text">最終的な正解実装：</text>
+  <text x="440" y="615" class="code-text">n = int(input())</text>
+  <text x="440" y="628" class="code-text">a = int(input())</text>
+  <text x="440" y="641" class="code-text">if n <= a + 500:</text>
+  <text x="460" y="654" class="code-text">print("Yes")</text>
+  <text x="440" y="667" class="code-text">else:</text>
+  <text x="460" y="680" class="code-text">print("No")</text>
+
+  <!-- Key insight box -->
+  <rect x="70" y="695" width="660" height="40" rx="5" fill="#e6fffa" stroke="#319795" stroke-width="1"/>
+  <text x="80" y="710" class="insight-text">💡 重要なポイント：</text>
+  <text x="80" y="725" class="body-text">500円玉1枚とA円で合計(A + 500)円まで支払い可能。N ≤ A + 500なら「Yes」</text>
+</svg>

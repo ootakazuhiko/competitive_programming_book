@@ -1,0 +1,102 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title7-7 desc7-7">
+  <title id="title7-7">図7-7: ABC122 A問題「Double Helix」完全解法</title>
+  <desc id="desc7-7">ABC122のA問題「Double Helix」の完全な解法と複数の実装パターンを示すダイアグラム</desc>
+  
+  <defs>
+    <style>
+      .title-text { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; fill: #1a365d; }
+      .section-title { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; fill: #2b6cb0; }
+      .problem-title { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; fill: #ffffff; }
+      .body-text { font-family: 'Inter', sans-serif; font-size: 12px; fill: #2d3748; }
+      .code-text { font-family: 'Monaco', monospace; font-size: 11px; fill: #2d3748; }
+      .comment-text { font-family: 'Monaco', monospace; font-size: 10px; fill: #718096; }
+      .highlight-text { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; fill: #c53030; }
+      .success-text { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; fill: #38a169; }
+      .method-title { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600; fill: #553c9a; }
+      
+      .problem-bg { fill: #3182ce; stroke: #2c5aa0; stroke-width: 2; }
+      .analysis-bg { fill: #e6fffa; stroke: #319795; stroke-width: 2; }
+      .implementation-bg { fill: #f7fafc; stroke: #4a5568; stroke-width: 2; }
+      .method1-bg { fill: #fef5e7; stroke: #d69e2e; stroke-width: 1; }
+      .method2-bg { fill: #f0fff4; stroke: #38a169; stroke-width: 1; }
+      .method3-bg { fill: #faf5ff; stroke: #805ad5; stroke-width: 1; }
+      .verification-bg { fill: #e6fffa; stroke: #319795; stroke-width: 2; }
+      .border-line { stroke: #e2e8f0; stroke-width: 1; fill: none; }
+      
+      .check-mark { fill: #38a169; }
+      .emoji { font-family: 'Inter', sans-serif; font-size: 14px; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title-text">図7-7: ABC122 A問題「Double Helix」完全解法</text>
+
+  <!-- Problem Statement Section -->
+  <rect x="50" y="50" width="700" height="110" rx="8" class="problem-bg"/>
+  <text x="70" y="75" class="problem-title">📋 問題文</text>
+  
+  <text x="70" y="95" class="body-text" fill="white">DNAは A, T, G, C の4つの塩基からなります。</text>
+  <text x="70" y="110" class="body-text" fill="white">A と T、G と C はそれぞれ対応します。</text>
+  <text x="70" y="125" class="body-text" fill="white">1文字の塩基 b が与えられるので、対応する塩基を出力してください。</text>
+  
+  <text x="70" y="145" class="body-text" fill="white">対応関係：A ↔ T, G ↔ C   入力例：A   出力例：T</text>
+
+  <!-- Problem Analysis Section -->
+  <rect x="50" y="175" width="700" height="105" rx="8" class="analysis-bg"/>
+  <text x="70" y="200" class="section-title">🔍 問題分析</text>
+  
+  <text x="70" y="220" class="body-text">理解したこと：</text>
+  <text x="90" y="235" class="body-text">• 4つの文字（A, T, G, C）の対応関係</text>
+  <text x="90" y="250" class="body-text">• A → T, T → A, G → C, C → G</text>
+  <text x="90" y="265" class="body-text">• 1文字入力して、対応する1文字を出力</text>
+
+  <!-- Multiple Implementation Approaches -->
+  <rect x="50" y="295" width="700" height="275" rx="8" class="implementation-bg"/>
+  <text x="70" y="320" class="section-title">⌨️ 複数の実装パターン</text>
+  
+  <!-- Method 1: if-elif -->
+  <rect x="70" y="335" width="210" height="120" rx="5" class="method1-bg"/>
+  <text x="80" y="355" class="method-title">解法1: if-elif文（最も分かりやすい）</text>
+  <text x="80" y="375" class="code-text">b = input()</text>
+  <text x="80" y="388" class="code-text">if b == 'A':</text>
+  <text x="90" y="401" class="code-text">print('T')</text>
+  <text x="80" y="414" class="code-text">elif b == 'T':</text>
+  <text x="90" y="427" class="code-text">print('A')</text>
+  <text x="80" y="440" class="code-text">elif b == 'G':</text>
+  <text x="90" y="453" class="code-text">print('C')</text>
+
+  <!-- Method 2: Dictionary -->
+  <rect x="295" y="335" width="210" height="120" rx="5" class="method2-bg"/>
+  <text x="305" y="355" class="method-title">解法2: 辞書を使用（スマート）</text>
+  <text x="305" y="375" class="code-text">b = input()</text>
+  <text x="305" y="388" class="code-text">pair = {'A': 'T', 'T': 'A',</text>
+  <text x="315" y="401" class="code-text">'G': 'C', 'C': 'G'}</text>
+  <text x="305" y="414" class="code-text">print(pair[b])</text>
+
+  <!-- Method 3: Mathematical approach -->
+  <rect x="520" y="335" width="210" rx="5" class="method3-bg"/>
+  <text x="530" y="355" class="method-title">解法3: 数学的手法（上級）</text>
+  <text x="530" y="375" class="code-text">b = input()</text>
+  <text x="530" y="388" class="code-text">dna = "ATGC"</text>
+  <text x="530" y="401" class="code-text">pairs = "TACG"</text>
+  <text x="530" y="414" class="code-text">print(pairs[dna.index(b)])</text>
+
+  <!-- Recommendation box -->
+  <rect x="70" y="470" width="660" height="35" rx="5" fill="#fef5e7" stroke="#d69e2e" stroke-width="1"/>
+  <text x="80" y="485" class="highlight-text">💡 A問題では解法1が最も確実で推奨</text>
+  <text x="80" y="498" class="body-text">条件分岐が明確で、ミスが少なく、デバッグしやすい</text>
+
+  <!-- Complete Solution (Method 1) -->
+  <text x="70" y="525" class="body-text">推奨実装（完全版）：</text>
+  <text x="90" y="540" class="code-text">b = input()</text>
+  <text x="90" y="553" class="code-text">if b == 'A': print('T')</text>
+  <text x="90" y="566" class="code-text">elif b == 'T': print('A')</text>
+
+  <!-- Verification Section -->
+  <rect x="50" y="585" width="700" height="90" rx="8" class="verification-bg"/>
+  <text x="70" y="610" class="section-title">🧪 全パターンでの検証</text>
+  
+  <text x="70" y="630" class="body-text">テストケース：</text>
+  <text x="90" y="645" class="success-text">• 入力：A → 出力：T ✅   • 入力：T → 出力：A ✅</text>
+  <text x="90" y="660" class="success-text">• 入力：G → 出力：C ✅   • 入力：C → 出力：G ✅</text>
+</svg>

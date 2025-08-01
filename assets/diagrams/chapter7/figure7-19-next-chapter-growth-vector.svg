@@ -1,0 +1,84 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Inter', sans-serif; font-size: 20px; font-weight: 600; fill: #2563eb; }
+      .section-header { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; fill: #1e40af; }
+      .achievement-text { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; fill: #059669; }
+      .goal-text { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; fill: #7c3aed; }
+      .message-text { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; fill: #ea580c; }
+      .description-text { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 400; fill: #374151; }
+      .chapter7-bg { fill: #f0fdf4; stroke: #22c55e; stroke-width: 2; }
+      .chapter8-bg { fill: #f3e8ff; stroke: #7c3aed; stroke-width: 2; }
+      .arrow-fill { fill: #ea580c; }
+    </style>
+    
+    <!-- Arrow marker -->
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+              refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" class="arrow-fill" />
+      </marker>
+    </defs>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="title-text">次章への成長ベクトル</text>
+  
+  <!-- Chapter 7 Achievements -->
+  <rect x="80" y="100" width="280" height="200" class="chapter7-bg" rx="12"/>
+  <text x="220" y="130" text-anchor="middle" class="section-header">第7章での達成</text>
+  
+  <text x="100" y="160" class="achievement-text">🏆 A・B問題の解法理解</text>
+  <text x="120" y="180" class="achievement-text">• 典型パターンの完全理解</text>
+  <text x="120" y="195" class="achievement-text">• 解法アプローチの体系的習得</text>
+  
+  <text x="100" y="220" class="achievement-text">🏆 実装力の向上</text>
+  <text x="120" y="240" class="achievement-text">• デバッグとエラー対応能力</text>
+  <text x="120" y="255" class="achievement-text">• 効率的な検証手法</text>
+  
+  <text x="100" y="280" class="achievement-text">🏆 時間配分戦略確立</text>
+  <text x="100" y="295" class="achievement-text">🏆 競技マインド形成</text>
+  
+  <!-- Arrow -->
+  <line x1="380" y1="200" x2="420" y2="200" stroke="#ea580c" stroke-width="4" marker-end="url(#arrowhead)"/>
+  
+  <!-- Chapter 8 Goals -->
+  <rect x="440" y="100" width="280" height="200" class="chapter8-bg" rx="12"/>
+  <text x="580" y="130" text-anchor="middle" class="section-header">第8章での目標</text>
+  
+  <text x="460" y="160" class="goal-text">🧠 体系的問題解決法</text>
+  <text x="480" y="180" class="goal-text">• どんな問題にも対応可能な</text>
+  <text x="485" y="195" class="goal-text">汎用的解決プロセス</text>
+  
+  <text x="460" y="220" class="goal-text">🧠 デバッグ技術習得</text>
+  <text x="480" y="240" class="goal-text">• 高度なデバッグ手法</text>
+  <text x="480" y="255" class="goal-text">• エラー予防システム</text>
+  
+  <text x="460" y="280" class="goal-text">🧠 品質保証プロセス</text>
+  <text x="460" y="295" class="goal-text">🧠 継続成長の仕組み</text>
+  
+  <!-- Growth Message -->
+  <rect x="150" y="350" width="500" height="80" fill="#fff7ed" stroke="#ea580c" stroke-width: 2 rx="12"/>
+  <text x="400" y="380" text-anchor="middle" class="message-text">🚀 個別の技術から体系的なプロセスへ！</text>
+  <text x="400" y="405" text-anchor="middle" class="description-text">第7章で学んだ技術を発展させ、より高度で汎用性のある技術を習得</text>
+  
+  <!-- Progress Indicators -->
+  <rect x="100" y="460" width="600" height="100" fill="#f8fafc" stroke="#64748b" stroke-width: 1 rx="8"/>
+  <text x="400" y="485" text-anchor="middle" class="section-header">君の成長の証拠</text>
+  
+  <!-- Progress bars -->
+  <text x="120" y="510" class="description-text">基礎スキル習得:</text>
+  <rect x="250" y="500" width="400" height="8" fill="#e5e7eb" rx="4"/>
+  <rect x="250" y="500" width="360" height="8" fill="#22c55e" rx="4"/>
+  <text x="670" y="508" class="description-text" font-size="12">90%</text>
+  
+  <text x="120" y="535" class="description-text">戦略的思考力:</text>
+  <rect x="250" y="525" width="400" height="8" fill="#e5e7eb" rx="4"/>
+  <rect x="250" y="525" width="320" height="8" fill="#3b82f6" rx="4"/>
+  <text x="670" y="533" class="description-text" font-size="12">80%</text>
+  
+  <text x="120" y="555" class="description-text">総合競技力:</text>
+  <rect x="250" y="545" width="400" height="8" fill="#e5e7eb" rx="4"/>
+  <rect x="250" y="545" width="280" height="8" fill="#7c3aed" rx="4"/>
+  <text x="670" y="553" class="description-text" font-size="12">70%</text>
+</svg>

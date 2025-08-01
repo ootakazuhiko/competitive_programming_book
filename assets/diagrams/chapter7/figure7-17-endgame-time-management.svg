@@ -1,0 +1,90 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; fill: #1a365d; }
+      .section-title { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; fill: #2d3748; }
+      .content-text { font-family: 'Inter', sans-serif; font-size: 13px; fill: #4a5568; line-height: 1.4; }
+      .priority-num { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 700; fill: #ffffff; }
+      .checklist-text { font-family: 'Inter', sans-serif; font-size: 12px; fill: #2d3748; }
+      .time-text { font-family: 'Inter', sans-serif; font-size: 11px; fill: #718096; font-weight: 500; }
+      .priority-1 { fill: #e53e3e; }
+      .priority-2 { fill: #dd6b20; }
+      .priority-3 { fill: #38a169; }
+      .check-bg { fill: #f7fafc; stroke: #e2e8f0; stroke-width: 1; }
+      .target-bg { fill: #fff5f5; stroke: #fed7d7; stroke-width: 1; }
+      .analysis-bg { fill: #f0fff4; stroke: #c6f6d5; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">図7-17：終盤戦での効果的な時間活用</text>
+  
+  <!-- Priority Section Title -->
+  <text x="40" y="70" class="section-title">🔍 優先順位の明確化</text>
+  
+  <!-- Priority 1 -->
+  <rect x="40" y="90" width="720" height="100" fill="#fff5f5" stroke="#fed7d7" stroke-width="2" rx="8"/>
+  <circle cx="70" cy="115" r="18" class="priority-1"/>
+  <text x="70" y="120" text-anchor="middle" class="priority-num">1</text>
+  <text x="100" y="115" class="section-title">最優先：既にACした問題の安全性確保</text>
+  
+  <text x="70" y="140" class="content-text">• A、B問題のコードに明らかなバグがないか確認</text>
+  <text x="70" y="155" class="content-text">• 出力形式が問題文と完全一致するか再確認</text>
+  <text x="70" y="170" class="content-text">• エッジケース（0、負数など）での動作確認</text>
+  
+  <!-- Priority 2 -->
+  <rect x="40" y="200" width="720" height="100" fill="#fffaf0" stroke="#fbd38d" stroke-width="2" rx="8"/>
+  <circle cx="70" cy="225" r="18" class="priority-2"/>
+  <text x="70" y="230" text-anchor="middle" class="priority-num">2</text>
+  <text x="100" y="225" class="section-title">次優先：部分点の可能性がある問題</text>
+  
+  <text x="70" y="250" class="content-text">• C問題で部分的な解法が実装できていれば提出</text>
+  <text x="70" y="265" class="content-text">• 小さなテストケースで正しく動作すれば提出</text>
+  <text x="70" y="280" class="content-text">• 計算量が間に合わなくても、方向性が正しければ提出</text>
+  
+  <!-- Priority 3 -->
+  <rect x="40" y="310" width="720" height="100" fill="#f0fff4" stroke="#9ae6b4" stroke-width="2" rx="8"/>
+  <circle cx="70" cy="335" r="18" class="priority-3"/>
+  <text x="70" y="340" text-anchor="middle" class="priority-num">3</text>
+  <text x="100" y="335" class="section-title">最後：新しい問題への挑戦</text>
+  
+  <text x="70" y="360" class="content-text">• D問題以降は「読むだけ」でも価値がある</text>
+  <text x="70" y="375" class="content-text">• 全く手が出なくても、問題文理解は次への糧</text>
+  <text x="70" y="390" class="content-text">• 無理に実装せず、理解に集中</text>
+  
+  <!-- Final Check Section -->
+  <text x="40" y="450" class="section-title">📝 コンテスト終了前の最終チェック</text>
+  
+  <!-- Check Section -->
+  <rect x="40" y="470" width="230" height="100" class="check-bg" rx="8"/>
+  <text x="50" y="490" class="section-title">✅ 提出済み問題の確認</text>
+  <text x="200" y="490" class="time-text">（5分）</text>
+  
+  <text x="50" y="510" class="checklist-text">• A問題、B問題のACマーク再確認</text>
+  <text x="50" y="525" class="checklist-text">• 提出時刻が制限時間内か確認</text>
+  <text x="50" y="540" class="checklist-text">• 使用言語がPython 3か確認</text>
+  <text x="50" y="555" class="checklist-text">• 提出コードに致命的なバグがないか確認</text>
+  
+  <!-- Target Section -->
+  <rect x="285" y="470" width="230" height="100" class="target-bg" rx="8"/>
+  <text x="295" y="490" class="section-title">🎯 最後の挑戦</text>
+  <text x="465" y="490" class="time-text">（10分）</text>
+  
+  <text x="295" y="510" class="checklist-text">• 解けそうだった問題への最後のトライ</text>
+  <text x="295" y="525" class="checklist-text">• 部分点狙いの提出</text>
+  <text x="295" y="540" class="checklist-text">• 実装途中のコードがあれば整理して提出</text>
+  <text x="295" y="555" class="checklist-text">• 新しい問題は避け、既知の問題に集中</text>
+  
+  <!-- Analysis Section -->
+  <rect x="530" y="470" width="230" height="100" class="analysis-bg" rx="8"/>
+  <text x="540" y="490" class="section-title">📊 振り返りの準備</text>
+  <text x="710" y="490" class="time-text">（5分）</text>
+  
+  <text x="540" y="510" class="checklist-text">• 今回の成果と課題をメモ</text>
+  <text x="540" y="525" class="checklist-text">• 解けなかった問題の分野を記録</text>
+  <text x="540" y="540" class="checklist-text">• 次回に向けた改善点を明確化</text>
+  <text x="540" y="555" class="checklist-text">• 解説を読む問題に優先順位を付ける</text>
+</svg>

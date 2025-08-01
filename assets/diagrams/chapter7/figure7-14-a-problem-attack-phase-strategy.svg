@@ -1,0 +1,95 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; fill: #2563eb; }
+      .phase-header { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; fill: #1e40af; }
+      .time-text { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; fill: #dc2626; }
+      .content-text { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 400; fill: #374151; }
+      .success-text { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500; fill: #059669; }
+      .warning-text { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500; fill: #dc2626; }
+      .section-bg { fill: #f0f9ff; stroke: #3b82f6; stroke-width: 2; }
+      .time-bg { fill: #fef2f2; stroke: #ef4444; stroke-width: 1; }
+      .mindset-bg { fill: #f0fdf4; stroke: #22c55e; stroke-width: 1; }
+      .warning-bg { fill: #fef2f2; stroke: #ef4444; stroke-width: 1; }
+      .action-bg { fill: #fffbeb; stroke: #f59e0b; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title-text">A問題攻略フェーズの詳細戦略</text>
+  
+  <!-- Main Goal -->
+  <rect x="50" y="40" width="700" height="40" class="section-bg" rx="8"/>
+  <text x="400" y="65" text-anchor="middle" class="phase-header">🎯 目標：A問題を確実にAC（正解）する</text>
+  
+  <!-- Time Allocation Section -->
+  <rect x="50" y="100" width="340" height="120" class="time-bg" rx="8"/>
+  <text x="220" y="120" text-anchor="middle" class="time-text">⏱️ 理想的な時間配分</text>
+  
+  <text x="70" y="140" class="content-text">• 0-3分：問題読解とサンプル理解</text>
+  <text x="70" y="155" class="content-text">• 3-8分：実装</text>
+  <text x="70" y="170" class="content-text">• 8-12分：検証と提出</text>
+  <text x="70" y="185" class="content-text">• 12-15分：バッファ時間</text>
+  
+  <!-- Mindset Section -->
+  <rect x="410" y="100" width="340" height="120" class="mindset-bg" rx="8"/>
+  <text x="580" y="120" text-anchor="middle" class="phase-header">🎯 この段階での心構え</text>
+  
+  <text x="430" y="140" class="success-text">✅ 完璧を求めず、確実性を重視</text>
+  <text x="430" y="155" class="success-text">✅ 複雑な解法より、分かりやすい解法を選択</text>
+  <text x="430" y="170" class="success-text">✅ サンプルが通ったら迷わず提出</text>
+  <text x="430" y="185" class="success-text">✅ デバッグに時間をかけすぎない</text>
+  
+  <!-- Warning Signs -->
+  <rect x="50" y="240" width="340" height="100" class="warning-bg" rx="8"/>
+  <text x="220" y="260" text-anchor="middle" class="warning-text">🚨 危険なサイン</text>
+  
+  <text x="70" y="280" class="warning-text">• 10分経ってもコードが書けない</text>
+  <text x="70" y="295" class="warning-text">• サンプルが通らない原因が分からない</text>
+  <text x="70" y="310" class="warning-text">• 問題文の理解があいまい</text>
+  <text x="70" y="325" class="warning-text">→ この場合は一旦飛ばしてB問題へ</text>
+  
+  <!-- Action Pattern Title -->
+  <rect x="410" y="240" width="340" height="30" class="action-bg" rx="8"/>
+  <text x="580" y="260" text-anchor="middle" class="phase-header">📋 効率的な行動パターン</text>
+  
+  <!-- Phase 1: Start -->
+  <rect x="50" y="360" width="160" height="110" class="action-bg" rx="6"/>
+  <text x="130" y="380" text-anchor="middle" class="time-text">開始直後（0-3分）</text>
+  <text x="60" y="400" class="content-text">• 深呼吸して落ち着く</text>
+  <text x="60" y="415" class="content-text">• A問題の問題文を2回読む</text>
+  <text x="60" y="430" class="content-text">• サンプルの意味を理解</text>
+  <text x="60" y="445" class="content-text">• 解法の方向性を決める</text>
+  
+  <!-- Phase 2: Implementation -->
+  <rect x="220" y="360" width="160" height="110" class="action-bg" rx="6"/>
+  <text x="300" y="380" text-anchor="middle" class="time-text">実装段階（3-8分）</text>
+  <text x="230" y="400" class="content-text">• エディタを開いて入力処理から</text>
+  <text x="230" y="415" class="content-text">• 変数名は短くても意味がある</text>
+  <text x="235" y="430" class="content-text">ものを使用</text>
+  <text x="230" y="445" class="content-text">• print文でデバッグしながら進める</text>
+  <text x="230" y="460" class="content-text">• 一行ずつ慎重に書く</text>
+  
+  <!-- Phase 3: Verification -->
+  <rect x="390" y="360" width="160" height="110" class="action-bg" rx="6"/>
+  <text x="470" y="380" text-anchor="middle" class="time-text">検証段階（8-12分）</text>
+  <text x="400" y="400" class="content-text">• サンプル入力で手動テスト</text>
+  <text x="400" y="415" class="content-text">• 出力形式が正確か確認</text>
+  <text x="400" y="430" class="content-text">• エッジケースを1-2個考える</text>
+  <text x="400" y="445" class="content-text">• コードレビュー</text>
+  <text x="405" y="460" class="content-text">(typo、論理エラー)</text>
+  
+  <!-- Phase 4: Submission -->
+  <rect x="560" y="360" width="160" height="110" class="action-bg" rx="6"/>
+  <text x="640" y="380" text-anchor="middle" class="time-text">提出段階（12-15分）</text>
+  <text x="570" y="400" class="content-text">• 言語選択がPython 3か確認</text>
+  <text x="570" y="415" class="content-text">• 不要なprint文を削除</text>
+  <text x="570" y="430" class="content-text">• 提出ボタンをクリック</text>
+  <text x="570" y="445" class="content-text">• ACを確認したらB問題へ移行</text>
+  
+  <!-- Success Message -->
+  <rect x="50" y="490" width="700" height="80" class="section-bg" rx="8"/>
+  <text x="400" y="515" text-anchor="middle" class="phase-header">A問題攻略の成功パターン</text>
+  <text x="400" y="540" text-anchor="middle" class="success-text">✅ 15分以内にA問題をACして、B問題に十分な時間を確保</text>
+  <text x="400" y="555" text-anchor="middle" class="success-text">✅ 確実性を重視した実装で、ケアレスミスを最小化</text>
+</svg>
