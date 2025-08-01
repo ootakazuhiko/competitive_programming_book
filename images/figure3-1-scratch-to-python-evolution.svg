@@ -1,0 +1,220 @@
+<svg viewBox="0 0 950 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-1：ScratchからPythonへの自然な進化</title>
+  <desc>ScratchのビジュアルプログラミングからPythonのテキストプログラミングへの自然な移行過程を示す教育的ガイド</desc>
+  
+  <!-- Background -->
+  <rect width="950" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="475" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    ScratchからPythonへの自然な進化
+  </text>
+  
+  <!-- Evolution Arrow -->
+  <defs>
+    <marker id="evolutionArrow" markerWidth="15" markerHeight="10" refX="14" refY="5" orient="auto">
+      <polygon points="0 0, 15 5, 0 10" fill="#3b82f6"/>
+    </marker>
+  </defs>
+  
+  <!-- Scratch Section -->
+  <rect x="50" y="70" width="380" height="360" rx="8" fill="#ff9f40" stroke="#ff6f00" stroke-width="3"/>
+  <text x="240" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    🧩 Scratch (ビジュアル)
+  </text>
+  <text x="240" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    ブロックを組み合わせてプログラム作成
+  </text>
+  
+  <!-- Scratch Blocks Examples -->
+  <rect x="70" y="145" width="340" height="270" rx="4" fill="white" stroke="#ff6f00" stroke-width="1"/>
+  
+  <!-- Conditional Block -->
+  <rect x="90" y="165" width="300" height="60" rx="8" fill="#ffab19" stroke="#ff6f00" stroke-width="2"/>
+  <text x="240" y="185" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    もし (x > 0) なら
+  </text>
+  <rect x="110" y="195" width="260" height="25" rx="4" fill="#ff9f40"/>
+  <text x="240" y="210" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    "正の数です" と言う
+  </text>
+  
+  <!-- Loop Block -->
+  <rect x="90" y="240" width="300" height="60" rx="8" fill="#ff6f00" stroke="#e55100" stroke-width="2"/>
+  <text x="240" y="260" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    10回繰り返す
+  </text>
+  <rect x="110" y="270" width="260" height="25" rx="4" fill="#ff9f40"/>
+  <text x="240" y="285" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    (カウンター) を表示する
+  </text>
+  
+  <!-- Variable Block -->
+  <rect x="90" y="315" width="300" height="60" rx="8" fill="#ff8f00" stroke="#e65100" stroke-width="2"/>
+  <text x="240" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">
+    変数 (点数) を (100) にする
+  </text>
+  <rect x="110" y="345" width="260" height="25" rx="4" fill="#ff9f40"/>
+  <text x="240" y="360" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    変数 (点数) を表示する
+  </text>
+  
+  <!-- Scratch Characteristics -->
+  <text x="80" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#ff6f00">
+    ✨ Scratchの特徴:
+  </text>
+  <text x="90" y="415" font-family="Arial, sans-serif" font-size="10" fill="#d84315">
+    <tspan x="90" dy="0">• ビジュアルでわかりやすい</tspan>
+    <tspan x="90" dy="12">• ブロックをドラッグ&ドロップ</tspan>
+    <tspan x="90" dy="12">• 文法エラーが起こりにくい</tspan>
+    <tspan x="90" dy="12">• プログラミングの考え方を習得</tspan>
+  </text>
+  
+  <!-- Evolution Arrow -->
+  <path d="M 430 250 L 520 250" stroke="#3b82f6" stroke-width="6" fill="none" marker-end="url(#evolutionArrow)"/>
+  <text x="475" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#3b82f6">
+    自然な進化
+  </text>
+  <text x="475" y="270" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#3b82f6">
+    同じ考え方を
+  </text>
+  <text x="475" y="285" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#3b82f6">
+    文字で表現
+  </text>
+  
+  <!-- Python Section -->
+  <rect x="520" y="70" width="380" height="360" rx="8" fill="#3776ab" stroke="#2565ae" stroke-width="3"/>
+  <text x="710" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    🐍 Python (テキスト)
+  </text>
+  <text x="710" y="125" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">
+    文字でプログラムを記述
+  </text>
+  
+  <!-- Python Code Examples -->
+  <rect x="540" y="145" width="340" height="270" rx="4" fill="#1e293b" stroke="#2565ae" stroke-width="1"/>
+  
+  <!-- Conditional Code -->
+  <rect x="560" y="165" width="300" height="60" rx="4" fill="#374151" stroke="#6b7280" stroke-width="1"/>
+  <text x="570" y="185" font-family="Monaco, monospace" font-size="12" fill="#60a5fa">if</text>
+  <text x="595" y="185" font-family="Monaco, monospace" font-size="12" fill="white">x > 0:</text>
+  <text x="580" y="205" font-family="Monaco, monospace" font-size="12" fill="#fbbf24">print</text>
+  <text x="625" y="205" font-family="Monaco, monospace" font-size="12" fill="white">(</text>
+  <text x="635" y="205" font-family="Monaco, monospace" font-size="12" fill="#34d399">"正の数です"</text>
+  <text x="745" y="205" font-family="Monaco, monospace" font-size="12" fill="white">)</text>
+  
+  <!-- Loop Code -->
+  <rect x="560" y="240" width="300" height="60" rx="4" fill="#374151" stroke="#6b7280" stroke-width="1"/>
+  <text x="570" y="260" font-family="Monaco, monospace" font-size="12" fill="#60a5fa">for</text>
+  <text x="605" y="260" font-family="Monaco, monospace" font-size="12" fill="white">i</text>
+  <text x="620" y="260" font-family="Monaco, monospace" font-size="12" fill="#60a5fa">in</text>
+  <text x="645" y="260" font-family="Monaco, monospace" font-size="12" fill="#fbbf24">range</text>
+  <text x="695" y="260" font-family="Monaco, monospace" font-size="12" fill="white">(10):</text>
+  <text x="580" y="280" font-family="Monaco, monospace" font-size="12" fill="#fbbf24">print</text>
+  <text x="625" y="280" font-family="Monaco, monospace" font-size="12" fill="white">(i)</text>
+  
+  <!-- Variable Code -->
+  <rect x="560" y="315" width="300" height="60" rx="4" fill="#374151" stroke="#6b7280" stroke-width="1"/>
+  <text x="570" y="335" font-family="Monaco, monospace" font-size="12" fill="white">点数 = 100</text>
+  <text x="570" y="355" font-family="Monaco, monospace" font-size="12" fill="#fbbf24">print</text>
+  <text x="615" y="355" font-family="Monaco, monospace" font-size="12" fill="white">(点数)</text>
+  
+  <!-- Python Characteristics -->
+  <text x="550" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#60a5fa">
+    🚀 Pythonの利点:
+  </text>
+  <text x="560" y="415" font-family="Arial, sans-serif" font-size="10" fill="#93c5fd">
+    <tspan x="560" dy="0">• 英語に近い自然な文法</tspan>
+    <tspan x="560" dy="12">• 高速な実行と豊富な機能</tspan>
+    <tspan x="560" dy="12">• 競技プログラミングに最適</tspan>
+    <tspan x="560" dy="12">• 将来性の高いスキル</tspan>
+  </text>
+  
+  <!-- Common Concepts -->
+  <rect x="50" y="450" width="850" height="200" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="475" y="475" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🔄 共通する基本概念
+  </text>
+  
+  <!-- Concept Comparison -->
+  <rect x="80" y="495" width="160" height="140" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="160" y="515" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    条件分岐
+  </text>
+  <text x="90" y="535" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="90" dy="0">Scratch: "もし〜なら"</tspan>
+    <tspan x="90" dy="15">Python: if文</tspan>
+    <tspan x="90" dy="20">共通点:</tspan>
+    <tspan x="90" dy="15">• 条件に基づいて処理を分岐</tspan>
+    <tspan x="90" dy="12">• True/Falseで判定</tspan>
+    <tspan x="90" dy="12">• ネストも可能</tspan>
+  </text>
+  
+  <rect x="260" y="495" width="160" height="140" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="340" y="515" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    繰り返し
+  </text>
+  <text x="270" y="535" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="270" dy="0">Scratch: "〜回繰り返す"</tspan>
+    <tspan x="270" dy="15">Python: for/while文</tspan>
+    <tspan x="270" dy="20">共通点:</tspan>
+    <tspan x="270" dy="15">• 同じ処理を複数回実行</tspan>
+    <tspan x="270" dy="12">• カウンターで回数制御</tspan>
+    <tspan x="270" dy="12">• 効率的な処理が可能</tspan>
+  </text>
+  
+  <rect x="440" y="495" width="160" height="140" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="520" y="515" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    変数
+  </text>
+  <text x="450" y="535" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="450" dy="0">Scratch: オレンジの変数ブロック</tspan>
+    <tspan x="450" dy="15">Python: 変数代入</tspan>
+    <tspan x="450" dy="20">共通点:</tspan>
+    <tspan x="450" dy="15">• データを名前で管理</tspan>
+    <tspan x="450" dy="12">• 値の変更・参照が可能</tspan>
+    <tspan x="450" dy="12">• プログラムの状態保持</tspan>
+  </text>
+  
+  <rect x="620" y="495" width="160" height="140" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="700" y="515" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    関数
+  </text>
+  <text x="630" y="535" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="630" dy="0">Scratch: "〜を定義する"</tspan>
+    <tspan x="630" dy="15">Python: def文</tspan>
+    <tspan x="630" dy="20">共通点:</tspan>
+    <tspan x="630" dy="15">• 処理をまとめて名前付け</tspan>
+    <tspan x="630" dy="12">• 再利用可能な部品</tspan>
+    <tspan x="630" dy="12">• パラメータで動作制御</tspan>
+  </text>
+  
+  <!-- Transition Benefits -->
+  <rect x="50" y="670" width="850" height="140" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="475" y="695" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🎯 Scratchの経験が活かされる理由
+  </text>
+  
+  <rect x="80" y="715" width="790" height="85" rx="4" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  
+  <text x="100" y="740" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">
+    💡 学習の優位性
+  </text>
+  <text x="120" y="760" font-family="Arial, sans-serif" font-size="12" fill="#15803d">
+    <tspan x="120" dy="0">✅ プログラミング的思考は既に身についている</tspan>
+    <tspan x="500" dy="0">✅ アルゴリズムの基本概念を理解済み</tspan>
+    <tspan x="120" dy="16">✅ デバッグ（問題解決）の経験がある</tspan>
+    <tspan x="500" dy="16">✅ 順次・分岐・反復の3つの制御構造を習得済み</tspan>
+    <tspan x="120" dy="16">✅ 変数とデータの概念を直感的に理解</tspan>
+    <tspan x="500" dy="16">✅ 論理的な問題分解ができる</tspan>
+  </text>
+  
+  <!-- Next Steps -->
+  <rect x="50" y="830" width="850" height="60" rx="8" fill="#fff1f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="475" y="855" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🚀 次のステップ：Python環境のセットアップ
+  </text>
+  <text x="475" y="875" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#dc2626">
+    Scratchで培った論理的思考力を、Pythonの文法という新しい「言語」で表現してみよう！
+  </text>
+</svg>

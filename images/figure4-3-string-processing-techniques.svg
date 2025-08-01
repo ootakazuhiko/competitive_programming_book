@@ -1,0 +1,432 @@
+<svg viewBox="0 0 1200 1300" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-3：文字列処理テクニック</title>
+  <desc>競技プログラミングで頻出する文字列操作と処理技術の実践的ガイド</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="1300" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    文字列処理テクニック
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    競技プログラミング必須の文字列操作マスター
+  </text>
+  
+  <!-- String Basics -->
+  <rect x="50" y="80" width="1100" height="140" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📝 文字列の基本概念
+  </text>
+  
+  <!-- String Properties -->
+  <rect x="80" y="125" width="260" height="85" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="210" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    文字列の特徴
+  </text>
+  <text x="90" y="165" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="90" dy="0">• 不変性（immutable）</tspan>
+    <tspan x="90" dy="12">• インデックスでアクセス可能</tspan>
+    <tspan x="90" dy="12">• スライス操作対応</tspan>
+    <tspan x="90" dy="12">• Unicode文字対応</tspan>
+  </text>
+  
+  <!-- String Operations -->
+  <rect x="360" y="125" width="260" height="85" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="490" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    基本操作
+  </text>
+  <text x="370" y="165" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="370" dy="0">• 長さ: len(s)</tspan>
+    <tspan x="370" dy="12">• 結合: s1 + s2</tspan>
+    <tspan x="370" dy="12">• 繰り返し: s * 3</tspan>
+    <tspan x="370" dy="12">• 検索: s.find("abc")</tspan>
+  </text>
+  
+  <!-- String Methods -->
+  <rect x="640" y="125" width="260" height="85" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="770" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    主要メソッド
+  </text>
+  <text x="650" y="165" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="650" dy="0">• split(), join()</tspan>
+    <tspan x="650" dy="12">• upper(), lower()</tspan>
+    <tspan x="650" dy="12">• strip(), replace()</tspan>
+    <tspan x="650" dy="12">• startswith(), endswith()</tspan>
+  </text>
+  
+  <!-- Competitive Uses -->
+  <rect x="920" y="125" width="200" height="85" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="1020" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    競技での活用
+  </text>
+  <text x="930" y="165" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="930" dy="0">• パターン検索</tspan>
+    <tspan x="930" dy="12">• 文字列変換</tspan>
+    <tspan x="930" dy="12">• 回文判定</tspan>
+    <tspan x="930" dy="12">• 文字カウント</tspan>
+  </text>
+  
+  <!-- String Indexing and Slicing -->
+  <rect x="50" y="240" width="1100" height="180" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="600" y="265" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🔍 インデックス・スライス操作
+  </text>
+  
+  <!-- String Example -->
+  <rect x="80" y="290" width="1040" height="40" rx="6" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="100" y="310" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    例文字列: s = "HELLO"
+  </text>
+  
+  <!-- Index Visualization -->
+  <rect x="300" y="295" width="30" height="30" fill="#3b82f6" rx="4"/>
+  <text x="315" y="315" font-family="Monaco, monospace" font-size="12" font-weight="bold" text-anchor="middle" fill="white">H</text>
+  <text x="315" y="340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1e40af">[0]</text>
+  
+  <rect x="340" y="295" width="30" height="30" fill="#3b82f6" rx="4"/>
+  <text x="355" y="315" font-family="Monaco, monospace" font-size="12" font-weight="bold" text-anchor="middle" fill="white">E</text>
+  <text x="355" y="340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1e40af">[1]</text>
+  
+  <rect x="380" y="295" width="30" height="30" fill="#3b82f6" rx="4"/>
+  <text x="395" y="315" font-family="Monaco, monospace" font-size="12" font-weight="bold" text-anchor="middle" fill="white">L</text>
+  <text x="395" y="340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1e40af">[2]</text>
+  
+  <rect x="420" y="295" width="30" height="30" fill="#3b82f6" rx="4"/>
+  <text x="435" y="315" font-family="Monaco, monospace" font-size="12" font-weight="bold" text-anchor="middle" fill="white">L</text>
+  <text x="435" y="340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1e40af">[3]</text>
+  
+  <rect x="460" y="295" width="30" height="30" fill="#3b82f6" rx="4"/>
+  <text x="475" y="315" font-family="Monaco, monospace" font-size="12" font-weight="bold" text-anchor="middle" fill="white">O</text>
+  <text x="475" y="340" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1e40af">[4]</text>
+  
+  <!-- Negative Index -->
+  <text x="315" y="355" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">[-5]</text>
+  <text x="355" y="355" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">[-4]</text>
+  <text x="395" y="355" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">[-3]</text>
+  <text x="435" y="355" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">[-2]</text>
+  <text x="475" y="355" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">[-1]</text>
+  
+  <!-- Slicing Examples -->
+  <rect x="80" y="370" width="340" height="40" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="90" y="385" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    基本スライス:
+  </text>
+  <text x="90" y="400" font-family="Monaco, monospace" font-size="10" fill="#1e40af">
+    <tspan x="90" dy="0">s[1:4] → "ELL"    s[:3] → "HEL"</tspan>
+  </text>
+  
+  <rect x="440" y="370" width="340" height="40" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="450" y="385" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    ステップ指定:
+  </text>
+  <text x="450" y="400" font-family="Monaco, monospace" font-size="10" fill="#1e40af">
+    <tspan x="450" dy="0">s[::2] → "HLO"    s[::-1] → "OLLEH"</tspan>
+  </text>
+  
+  <rect x="800" y="370" width="320" height="40" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="810" y="385" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    負のインデックス:
+  </text>
+  <text x="810" y="400" font-family="Monaco, monospace" font-size="10" fill="#1e40af">
+    <tspan x="810" dy="0">s[-2:] → "LO"    s[:-1] → "HELL"</tspan>
+  </text>
+  
+  <!-- String Methods -->
+  <rect x="50" y="440" width="1100" height="240" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="465" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🛠️ 主要な文字列メソッド
+  </text>
+  
+  <!-- Split and Join -->
+  <rect x="80" y="485" width="350" height="90" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="255" y="505" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    分割・結合 (split/join)
+  </text>
+  
+  <text x="90" y="525" font-family="Monaco, monospace" font-size="10" fill="#15803d">
+    <tspan x="90" dy="0"># 文字列を分割</tspan>
+    <tspan x="90" dy="12">s = "apple,banana,cherry"</tspan>
+    <tspan x="90" dy="12">words = s.split(',')  # ['apple','banana','cherry']</tspan>
+    <tspan x="90" dy="12"># リストを結合</tspan>
+    <tspan x="90" dy="12">result = '-'.join(words)  # "apple-banana-cherry"</tspan>
+  </text>
+  
+  <!-- Case Conversion -->
+  <rect x="450" y="485" width="320" height="90" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="610" y="505" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    大文字・小文字変換
+  </text>
+  
+  <text x="460" y="525" font-family="Monaco, monospace" font-size="10" fill="#15803d">
+    <tspan x="460" dy="0">s = "Hello World"</tspan>
+    <tspan x="460" dy="12">s.upper()      # "HELLO WORLD"</tspan>
+    <tspan x="460" dy="12">s.lower()      # "hello world"</tspan>
+    <tspan x="460" dy="12">s.title()      # "Hello World"</tspan>
+    <tspan x="460" dy="12">s.capitalize() # "Hello world"</tspan>
+  </text>
+  
+  <!-- Strip and Replace -->
+  <rect x="790" y="485" width="330" height="90" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="955" y="505" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    除去・置換 (strip/replace)
+  </text>
+  
+  <text x="800" y="525" font-family="Monaco, monospace" font-size="10" fill="#15803d">
+    <tspan x="800" dy="0">s = "  hello  "</tspan>
+    <tspan x="800" dy="12">s.strip()     # "hello"</tspan>
+    <tspan x="800" dy="12">s.lstrip()    # "hello  "</tspan>
+    <tspan x="800" dy="12">s.rstrip()    # "  hello"</tspan>
+    <tspan x="800" dy="12">s.replace(' ', '_')  # "__hello__"</tspan>
+  </text>
+  
+  <!-- Search Methods -->
+  <rect x="80" y="590" width="350" height="80" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="255" y="610" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    検索メソッド
+  </text>
+  
+  <text x="90" y="630" font-family="Monaco, monospace" font-size="10" fill="#15803d">
+    <tspan x="90" dy="0">s = "programming"</tspan>
+    <tspan x="90" dy="12">s.find("gram")     # 3 (見つからない場合 -1)</tspan>
+    <tspan x="90" dy="12">s.index("gram")    # 3 (見つからない場合 エラー)</tspan>
+    <tspan x="90" dy="12">s.count("m")       # 2 (出現回数)</tspan>
+  </text>
+  
+  <!-- Condition Methods -->
+  <rect x="450" y="590" width="320" height="80" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="610" y="610" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    条件判定メソッド
+  </text>
+  
+  <text x="460" y="630" font-family="Monaco, monospace" font-size="10" fill="#15803d">
+    <tspan x="460" dy="0">s.startswith("pro")  # True</tspan>
+    <tspan x="460" dy="12">s.endswith("ing")    # True</tspan>
+    <tspan x="460" dy="12">s.isdigit()          # False</tspan>
+    <tspan x="460" dy="12">s.isalpha()          # True</tspan>
+  </text>
+  
+  <!-- Format Methods -->
+  <rect x="790" y="590" width="330" height="80" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="955" y="610" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    フォーマット
+  </text>
+  
+  <text x="800" y="630" font-family="Monaco, monospace" font-size="10" fill="#15803d">
+    <tspan x="800" dy="0">name, age = "Alice", 25</tspan>
+    <tspan x="800" dy="12">f"{name} is {age} years old"</tspan>
+    <tspan x="800" dy="12"># "Alice is 25 years old"</tspan>
+    <tspan x="800" dy="12">"{} is {} years old".format(name, age)</tspan>
+  </text>
+  
+  <!-- Competitive Programming Examples -->
+  <rect x="50" y="700" width="1100" height="260" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="725" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🏆 競技プログラミング実践例
+  </text>
+  
+  <!-- Palindrome Check -->
+  <rect x="80" y="745" width="350" height="100" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="255" y="765" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    回文判定
+  </text>
+  
+  <text x="90" y="785" font-family="Monaco, monospace" font-size="10" fill="#d97706">
+    <tspan x="90" dy="0">def is_palindrome(s):</tspan>
+    <tspan x="90" dy="12">    # 大文字小文字を無視して判定</tspan>
+    <tspan x="90" dy="12">    s = s.lower()</tspan>
+    <tspan x="90" dy="12">    return s == s[::-1]</tspan>
+    <tspan x="90" dy="12"></tspan>
+    <tspan x="90" dy="12">print(is_palindrome("Racecar"))  # True</tspan>
+  </text>
+  
+  <!-- Character Count -->
+  <rect x="450" y="745" width="320" height="100" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="610" y="765" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    文字出現回数カウント
+  </text>
+  
+  <text x="460" y="785" font-family="Monaco, monospace" font-size="10" fill="#d97706">
+    <tspan x="460" dy="0">from collections import Counter</tspan>
+    <tspan x="460" dy="12"></tspan>
+    <tspan x="460" dy="12">s = "programming"</tspan>
+    <tspan x="460" dy="12">count = Counter(s)</tspan>
+    <tspan x="460" dy="12">print(count['m'])  # 2</tspan>
+    <tspan x="460" dy="12">print(count.most_common(1))  # [('r', 2)]</tspan>
+  </text>
+  
+  <!-- String Manipulation -->
+  <rect x="790" y="745" width="330" height="100" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="955" y="765" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    文字列変換・加工
+  </text>
+  
+  <text x="800" y="785" font-family="Monaco, monospace" font-size="10" fill="#d97706">
+    <tspan x="800" dy="0">s = "Hello World"</tspan>
+    <tspan x="800" dy="12"># スペースをアンダースコアに</tspan>
+    <tspan x="800" dy="12">s.replace(' ', '_')  # "Hello_World"</tspan>
+    <tspan x="800" dy="12"># 単語の順序を逆に</tspan>
+    <tspan x="800" dy="12">' '.join(s.split()[::-1])  # "World Hello"</tspan>
+  </text>
+  
+  <!-- Pattern Matching -->
+  <rect x="80" y="860" width="350" height="90" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="255" y="880" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    パターンマッチング
+  </text>
+  
+  <text x="90" y="900" font-family="Monaco, monospace" font-size="10" fill="#d97706">
+    <tspan x="90" dy="0">def count_pattern(s, pattern):</tspan>
+    <tspan x="90" dy="12">    count = 0</tspan>
+    <tspan x="90" dy="12">    start = 0</tspan>
+    <tspan x="90" dy="12">    while True:</tspan>
+    <tspan x="90" dy="12">        pos = s.find(pattern, start)</tspan>
+    <tspan x="90" dy="12">        if pos == -1: break</tspan>
+  </text>
+  
+  <!-- Substring Generation -->
+  <rect x="450" y="860" width="320" height="90" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="610" y="880" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    部分文字列生成
+  </text>
+  
+  <text x="460" y="900" font-family="Monaco, monospace" font-size="10" fill="#d97706">
+    <tspan x="460" dy="0">def all_substrings(s):</tspan>
+    <tspan x="460" dy="12">    substrings = []</tspan>
+    <tspan x="460" dy="12">    for i in range(len(s)):</tspan>
+    <tspan x="460" dy="12">        for j in range(i+1, len(s)+1):</tspan>
+    <tspan x="460" dy="12">            substrings.append(s[i:j])</tspan>
+    <tspan x="460" dy="12">    return substrings</tspan>
+  </text>
+  
+  <!-- Advanced Techniques -->
+  <rect x="790" y="860" width="330" height="90" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="955" y="880" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    高度なテクニック
+  </text>
+  
+  <text x="800" y="900" font-family="Monaco, monospace" font-size="10" fill="#d97706">
+    <tspan x="800" dy="0"># 文字列の圧縮</tspan>
+    <tspan x="800" dy="12">def compress(s):</tspan>
+    <tspan x="800" dy="12">    if not s: return ""</tspan>
+    <tspan x="800" dy="12">    result, count = [s[0]], 1</tspan>
+    <tspan x="800" dy="12">    for i in range(1, len(s)):</tspan>
+    <tspan x="800" dy="12">        if s[i] == s[i-1]: count += 1</tspan>
+  </text>
+  
+  <!-- Common Mistakes -->
+  <rect x="50" y="970" width="1100" height="160" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="600" y="995" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ⚠️ よくある間違いと対策
+  </text>
+  
+  <!-- Mistake 1 -->
+  <rect x="80" y="1010" width="350" height="110" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="255" y="1030" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ❌ インデックス範囲外
+  </text>
+  
+  <text x="90" y="1050" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    問題のあるコード:
+  </text>
+  <text x="90" y="1065" font-family="Monaco, monospace" font-size="9" fill="#dc2626">
+    <tspan x="90" dy="0">s = "hello"</tspan>
+    <tspan x="90" dy="11">print(s[10])  # IndexError</tspan>
+  </text>
+  
+  <text x="90" y="1090" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    対策:
+  </text>
+  <text x="90" y="1105" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    <tspan x="90" dy="0">if len(s) > 10:</tspan>
+    <tspan x="90" dy="11">    print(s[10])</tspan>
+  </text>
+  
+  <!-- Mistake 2 -->
+  <rect x="450" y="1010" width="320" height="110" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="610" y="1030" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ❌ 文字列の直接変更
+  </text>
+  
+  <text x="460" y="1050" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    問題のあるコード:
+  </text>
+  <text x="460" y="1065" font-family="Monaco, monospace" font-size="9" fill="#dc2626">
+    <tspan x="460" dy="0">s = "hello"</tspan>
+    <tspan x="460" dy="11">s[0] = 'H'  # TypeError</tspan>
+  </text>
+  
+  <text x="460" y="1090" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    対策:
+  </text>
+  <text x="460" y="1105" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    <tspan x="460" dy="0">s = 'H' + s[1:]  # "Hello"</tspan>
+    <tspan x="460" dy="11"># または list(s) で変換</tspan>
+  </text>
+  
+  <!-- Mistake 3 -->
+  <rect x="790" y="1010" width="330" height="110" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="955" y="1030" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ❌ 非効率な文字列結合
+  </text>
+  
+  <text x="800" y="1050" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    問題のあるコード:
+  </text>
+  <text x="800" y="1065" font-family="Monaco, monospace" font-size="9" fill="#dc2626">
+    <tspan x="800" dy="0">result = ""</tspan>
+    <tspan x="800" dy="11">for word in words:</tspan>
+    <tspan x="800" dy="11">    result += word  # 非効率</tspan>
+  </text>
+  
+  <text x="800" y="1095" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    対策:
+  </text>
+  <text x="800" y="1110" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    result = ''.join(words)  # 効率的
+  </text>
+  
+  <!-- Quick Reference -->
+  <rect x="50" y="1150" width="1100" height="130" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="600" y="1175" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    📚 文字列処理チートシート
+  </text>
+  
+  <!-- Basic Operations -->
+  <rect x="80" y="1195" width="350" height="75" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="90" y="1215" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    基本操作
+  </text>
+  <text x="90" y="1230" font-family="Monaco, monospace" font-size="9" fill="#0369a1">
+    <tspan x="90" dy="0">len(s), s[i], s[i:j], s[::-1]</tspan>
+    <tspan x="90" dy="11">s.upper(), s.lower(), s.strip()</tspan>
+    <tspan x="90" dy="11">s.split(), ''.join(list)</tspan>
+    <tspan x="90" dy="11">s.replace(old, new), s.find(sub)</tspan>
+  </text>
+  
+  <!-- Competitive Patterns -->
+  <rect x="450" y="1195" width="320" height="75" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="460" y="1215" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    競技頻出パターン
+  </text>
+  <text x="460" y="1230" font-family="Monaco, monospace" font-size="9" fill="#0369a1">
+    <tspan x="460" dy="0"># 回文: s == s[::-1]</tspan>
+    <tspan x="460" dy="11"># カウント: Counter(s)</tspan>
+    <tspan x="460" dy="11"># 部分文字列: s[i:j] for i,j in ranges</tspan>
+    <tspan x="460" dy="11"># パターン: s.count(pattern)</tspan>
+  </text>
+  
+  <!-- Advanced Tips -->
+  <rect x="790" y="1195" width="330" height="75" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="800" y="1215" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    高度なテクニック
+  </text>
+  <text x="800" y="1230" font-family="Monaco, monospace" font-size="9" fill="#0369a1">
+    <tspan x="800" dy="0"># ASCII変換: ord('A'), chr(65)</tspan>
+    <tspan x="800" dy="11"># 正規表現: import re, re.findall()</tspan>
+    <tspan x="800" dy="11"># 文字列圧縮: 連続文字をカウント</tspan>
+    <tspan x="800" dy="11"># KMP等: 高速パターンマッチング</tspan>
+  </text>
+</svg>

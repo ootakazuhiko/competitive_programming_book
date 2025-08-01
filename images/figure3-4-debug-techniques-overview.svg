@@ -1,0 +1,384 @@
+<svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-4：デバッグ技法一覧</title>
+  <desc>プログラミング初心者から上級者まで使える実践的なデバッグ技術と手法の完全ガイド</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    デバッグ技法一覧
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    エラーを味方につける実践的デバッグテクニック
+  </text>
+  
+  <!-- Debug Mindset -->
+  <rect x="50" y="80" width="1100" height="100" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🧠 デバッグマインドセット
+  </text>
+  
+  <rect x="80" y="120" width="520" height="50" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ❌ 避けるべき考え方
+  </text>
+  <text x="100" y="155" font-family="Arial, sans-serif" font-size="11" fill="#dc2626">
+    <tspan x="100" dy="0">「また間違えた...」「自分はプログラミングに向いていない」「すぐに答えを見よう」</tspan>
+  </text>
+  
+  <rect x="620" y="120" width="500" height="50" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="630" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    ✅ 推奨される考え方
+  </text>
+  <text x="640" y="155" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="640" dy="0">「新しい発見のチャンス！」「この経験が実力向上につながる」「まず自分で原因を探してみよう」</tspan>
+  </text>
+  
+  <!-- Debug Techniques Overview -->
+  <rect x="50" y="200" width="1100" height="300" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="225" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🛠️ デバッグ技法マップ
+  </text>
+  
+  <!-- Basic Techniques -->
+  <rect x="80" y="250" width="340" height="220" rx="6" fill="white" stroke="#bbf7d0" stroke-width="2"/>
+  <text x="250" y="275" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🔰 基本技法
+  </text>
+  
+  <text x="90" y="295" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    1️⃣ print文デバッグ
+  </text>
+  <text x="100" y="310" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">• 変数の値を確認</tspan>
+    <tspan x="100" dy="12">• プログラムの実行順序を追跡</tspan>
+    <tspan x="100" dy="12">• 条件分岐の動作確認</tspan>
+  </text>
+  
+  <text x="90" y="345" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    2️⃣ エラーメッセージ解読
+  </text>
+  <text x="100" y="360" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">• エラー種類の理解</tspan>
+    <tspan x="100" dy="12">• 行番号の確認</tspan>
+    <tspan x="100" dy="12">• エラー原因の特定</tspan>
+  </text>
+  
+  <text x="90" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    3️⃣ コードレビュー
+  </text>
+  <text x="100" y="410" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">• 論理的な流れの確認</tspan>
+    <tspan x="100" dy="12">• 文法ミスのチェック</tspan>
+    <tspan x="100" dy="12">• 変数名・インデントの確認</tspan>
+  </text>
+  
+  <text x="90" y="445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    4️⃣ テストケース確認
+  </text>
+  <text x="100" y="460" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">• サンプル入力での動作確認</tspan>
+    <tspan x="100" dy="12">• 境界値テスト</tspan>
+  </text>
+  
+  <!-- Intermediate Techniques -->
+  <rect x="440" y="250" width="340" height="220" rx="6" fill="white" stroke="#bbf7d0" stroke-width="2"/>
+  <text x="610" y="275" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    ⚡ 中級技法
+  </text>
+  
+  <text x="450" y="295" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    5️⃣ ステップ実行
+  </text>
+  <text x="460" y="310" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="460" dy="0">• 1行ずつプログラム実行</tspan>
+    <tspan x="460" dy="12">• 変数値の変化を追跡</tspan>
+    <tspan x="460" dy="12">• ブレークポイント活用</tspan>
+  </text>
+  
+  <text x="450" y="345" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    6️⃣ ラバーダッキング
+  </text>
+  <text x="460" y="360" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="460" dy="0">• コードを声に出して説明</tspan>
+    <tspan x="460" dy="12">• 論理的矛盾の発見</tspan>
+    <tspan x="460" dy="12">• 思い込みの排除</tspan>
+  </text>
+  
+  <text x="450" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    7️⃣ 単体テスト
+  </text>
+  <text x="460" y="410" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="460" dy="0">• 関数単位での動作確認</tspan>
+    <tspan x="460" dy="12">• 期待値との比較</tspan>
+    <tspan x="460" dy="12">• エッジケースの検証</tspan>
+  </text>
+  
+  <text x="450" y="445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    8️⃣ ログ出力
+  </text>
+  <text x="460" y="460" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="460" dy="0">• 実行履歴の記録</tspan>
+    <tspan x="460" dy="12">• 処理時間の測定</tspan>
+  </text>
+  
+  <!-- Advanced Techniques -->
+  <rect x="800" y="250" width="320" height="220" rx="6" fill="white" stroke="#bbf7d0" stroke-width="2"/>
+  <text x="960" y="275" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🚀 上級技法
+  </text>
+  
+  <text x="810" y="295" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    9️⃣ プロファイリング
+  </text>
+  <text x="820" y="310" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="820" dy="0">• 実行時間分析</tspan>
+    <tspan x="820" dy="12">• メモリ使用量確認</tspan>
+    <tspan x="820" dy="12">• ボトルネック特定</tspan>
+  </text>
+  
+  <text x="810" y="345" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🔟 バイナリサーチデバッグ
+  </text>
+  <text x="820" y="360" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="820" dy="0">• コードを半分ずつ確認</tspan>
+    <tspan x="820" dy="12">• 効率的な問題箇所特定</tspan>
+    <tspan x="820" dy="12">• 大規模コード対応</tspan>
+  </text>
+  
+  <text x="810" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    1️⃣1️⃣ リバースデバッグ
+  </text>
+  <text x="820" y="410" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="820" dy="0">• 期待する結果から逆算</tspan>
+    <tspan x="820" dy="12">• 必要な条件を特定</tspan>
+    <tspan x="820" dy="12">• 論理的推論活用</tspan>
+  </text>
+  
+  <text x="810" y="445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    1️⃣2️⃣ 協力デバッグ
+  </text>
+  <text x="820" y="460" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="820" dy="0">• ペアプログラミング</tspan>
+    <tspan x="820" dy="12">• オンラインコミュニティ活用</tspan>
+  </text>
+  
+  <!-- Print Debug Detail -->
+  <rect x="50" y="520" width="1100" height="200" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="545" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🖨️ print文デバッグの実践</text>
+  
+  <!-- Before Debug -->
+  <rect x="80" y="560" width="520" height="140" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="580" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    ❌ 問題のあるコード例:
+  </text>
+  
+  <rect x="90" y="590" width="500" height="100" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="100" y="610" font-family="Monaco, monospace" font-size="10" fill="#92400e">
+    <tspan x="100" dy="0">n = int(input())</tspan>
+    <tspan x="100" dy="14">total = 0</tspan>
+    <tspan x="100" dy="14">for i in range(n):</tspan>
+    <tspan x="100" dy="14">    x = int(input())</tspan>
+    <tspan x="100" dy="14">    total += x</tspan>
+    <tspan x="100" dy="14">print(total // 2)  # なぜか答えが違う...</tspan>
+  </text>
+  
+  <!-- With Debug -->
+  <rect x="620" y="560" width="500" height="140" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="630" y="580" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    ✅ デバッグ版（print文追加）:
+  </text>
+  
+  <rect x="630" y="590" width="480" height="100" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+  <text x="640" y="610" font-family="Monaco, monospace" font-size="10" fill="#92400e">
+    <tspan x="640" dy="0">n = int(input())</tspan>
+    <tspan x="640" dy="14">print(f"🔍 n = {n}")  # 👈 確認用</tspan>
+    <tspan x="640" dy="14">total = 0</tspan>
+    <tspan x="640" dy="14">for i in range(n):</tspan>
+    <tspan x="640" dy="14">    x = int(input())</tspan>
+    <tspan x="640" dy="14">    print(f"🔍 i={i}, x={x}")  # 👈 確認用</tspan>
+  </text>
+  
+  <!-- Error Types -->
+  <rect x="50" y="740" width="1100" height="220" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="600" y="765" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🚨 よくあるエラーと対処法
+  </text>
+  
+  <!-- Syntax Error -->
+  <rect x="80" y="780" width="350" height="160" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="255" y="800" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    SyntaxError (文法エラー)
+  </text>
+  
+  <text x="90" y="820" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    よくある原因:
+  </text>
+  <text x="100" y="835" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">• コロン(:)の忘れ → if x > 0:</tspan>
+    <tspan x="100" dy="12">• 括弧の対応ミス → print("Hello")</tspan>
+    <tspan x="100" dy="12">• インデントの間違い → 4つのスペース統一</tspan>
+    <tspan x="100" dy="12">• 全角文字の混入 → 半角英数字を使用</tspan>
+  </text>
+  
+  <text x="90" y="885" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    対策:
+  </text>
+  <text x="100" y="900" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">🔍 エディタの文法チェック機能活用</tspan>
+    <tspan x="100" dy="12">🔍 エラーメッセージの行番号確認</tspan>
+    <tspan x="100" dy="12">🔍 コードの構造を視覚的に確認</tspan>
+  </text>
+  
+  <!-- Name Error -->
+  <rect x="450" y="780" width="350" height="160" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="625" y="800" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    NameError (名前エラー)
+  </text>
+  
+  <text x="460" y="820" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    よくある原因:
+  </text>
+  <text x="470" y="835" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="470" dy="0">• 変数名のタイプミス → num を n と間違い</tspan>
+    <tspan x="470" dy="12">• 変数を定義前に使用 → 定義順序を確認</tspan>
+    <tspan x="470" dy="12">• 大文字小文字の間違い → Python は区別</tspan>
+    <tspan x="470" dy="12">• スコープ外での参照 → 変数の有効範囲</tspan>
+  </text>
+  
+  <text x="460" y="885" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    対策:
+  </text>
+  <text x="470" y="900" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="470" dy="0">📝 変数名は短く、分かりやすく統一</tspan>
+    <tspan x="470" dy="12">📝 定義と使用の順序を確認</tspan>
+    <tspan x="470" dy="12">📝 コード補完機能を活用</tspan>
+  </text>
+  
+  <!-- Logic Error -->
+  <rect x="820" y="780" width="300" height="160" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="970" y="800" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    Logic Error (論理エラー)
+  </text>
+  
+  <text x="830" y="820" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    特徴:
+  </text>
+  <text x="840" y="835" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="840" dy="0">• エラーは出ないが結果が違う</tspan>
+    <tspan x="840" dy="12">• 最も発見が困難</tspan>
+    <tspan x="840" dy="12">• 論理的な間違いが原因</tspan>
+  </text>
+  
+  <text x="830" y="875" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    対策:
+  </text>
+  <text x="840" y="890" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="840" dy="0">🔍 print文で変数値確認</tspan>
+    <tspan x="840" dy="12">🔍 ステップ実行で流れ確認</tspan>
+    <tspan x="840" dy="12">🔍 小さなテストケースで検証</tspan>
+  </text>
+  
+  <!-- Debug Workflow -->
+  <rect x="50" y="980" width="1100" height="180" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="600" y="1005" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🔄 デバッグワークフロー
+  </text>
+  
+  <!-- Debug Steps -->
+  <defs>
+    <marker id="flowArrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#0369a1"/>
+    </marker>
+  </defs>
+  
+  <rect x="80" y="1020" width="140" height="60" rx="6" fill="white" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="150" y="1040" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    1️⃣ 問題発生
+  </text>
+  <text x="150" y="1055" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    エラー・期待結果と違う
+  </text>
+  <text x="150" y="1070" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    動作確認
+  </text>
+  
+  <path d="M 220 1050 L 260 1050" stroke="#0369a1" stroke-width="2" fill="none" marker-end="url(#flowArrow)"/>
+  
+  <rect x="260" y="1020" width="140" height="60" rx="6" fill="white" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="330" y="1040" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    2️⃣ 情報収集
+  </text>
+  <text x="330" y="1055" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    エラーメッセージ確認
+  </text>
+  <text x="330" y="1070" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    再現条件特定
+  </text>
+  
+  <path d="M 400 1050 L 440 1050" stroke="#0369a1" stroke-width="2" fill="none" marker-end="url(#flowArrow)"/>
+  
+  <rect x="440" y="1020" width="140" height="60" rx="6" fill="white" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="510" y="1040" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    3️⃣ 仮説立案
+  </text>
+  <text x="510" y="1055" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    原因の推測
+  </text>
+  <text x="510" y="1070" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    検証方法決定
+  </text>
+  
+  <path d="M 580 1050 L 620 1050" stroke="#0369a1" stroke-width="2" fill="none" marker-end="url(#flowArrow)"/>
+  
+  <rect x="620" y="1020" width="140" height="60" rx="6" fill="white" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="690" y="1040" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    4️⃣ 検証実行
+  </text>
+  <text x="690" y="1055" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    print文追加
+  </text>
+  <text x="690" y="1070" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    ステップ実行
+  </text>
+  
+  <path d="M 760 1050 L 800 1050" stroke="#0369a1" stroke-width="2" fill="none" marker-end="url(#flowArrow)"/>
+  
+  <rect x="800" y="1020" width="140" height="60" rx="6" fill="white" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="870" y="1040" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    5️⃣ 修正・確認
+  </text>
+  <text x="870" y="1055" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    コード修正
+  </text>
+  <text x="870" y="1070" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    動作確認
+  </text>
+  
+  <path d="M 940 1050 L 980 1050" stroke="#0369a1" stroke-width="2" fill="none" marker-end="url(#flowArrow)"/>
+  
+  <rect x="980" y="1020" width="140" height="60" rx="6" fill="white" stroke="#7dd3fc" stroke-width="2"/>
+  <text x="1050" y="1040" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    6️⃣ 学習記録
+  </text>
+  <text x="1050" y="1055" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    原因と解決策記録
+  </text>
+  <text x="1050" y="1070" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#0369a1">
+    同じミス防止
+  </text>
+  
+  <!-- Key Points -->
+  <rect x="80" y="1100" width="1040" height="80" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="100" y="1120" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    💡 デバッグ成功のポイント:
+  </text>
+  <text x="120" y="1140" font-family="Arial, sans-serif" font-size="11" fill="#0369a1">
+    <tspan x="120" dy="0">🔍 小さな変更で段階的に検証 • 🕵️ エラーメッセージを詳しく読む • 📝 仮説と検証結果を記録</tspan>
+    <tspan x="120" dy="16">🤝 困ったときは人に聞く・説明する • ⏰ 適度な休憩で新しい視点を得る • 📚 同じ問題の解決策を蓄積</tspan>
+  </text>
+</svg>

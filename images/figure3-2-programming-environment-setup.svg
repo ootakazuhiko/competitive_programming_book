@@ -1,0 +1,229 @@
+<svg viewBox="0 0 1200 1000" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-2：プログラミング環境設定手順</title>
+  <desc>Python環境のインストールからエディタ設定まで、競技プログラミングに最適な開発環境を構築する完全ガイド</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="1000" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    プログラミング環境設定手順
+  </text>
+  
+  <!-- Setup Process Flow -->
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#3b82f6"/>
+    </marker>
+  </defs>
+  
+  <!-- Step 1: System Check -->
+  <rect x="50" y="80" width="280" height="140" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="190" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    📋 Step 1: システム確認
+  </text>
+  
+  <rect x="70" y="120" width="240" height="90" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="80" y="140" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="80" dy="0">✓ OS確認 (Windows/Mac/Linux)</tspan>
+    <tspan x="80" dy="15">✓ 空き容量チェック (1GB以上推奨)</tspan>
+    <tspan x="80" dy="15">✓ 管理者権限の確認</tspan>
+    <tspan x="80" dy="15">✓ インターネット接続確認</tspan>
+    <tspan x="80" dy="15">✓ セキュリティソフト設定確認</tspan>
+  </text>
+  
+  <!-- Arrow 1 -->
+  <path d="M 330 150 L 370 150" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Step 2: Python Installation -->
+  <rect x="370" y="80" width="280" height="140" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="510" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🐍 Step 2: Python インストール
+  </text>
+  
+  <rect x="390" y="120" width="240" height="90" rx="4" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="400" y="140" font-family="Arial, sans-serif" font-size="12" fill="#15803d">
+    <tspan x="400" dy="0">📥 python.org から最新版取得</tspan>
+    <tspan x="400" dy="15">⚙️ "Add Python to PATH" 必須</tspan>
+    <tspan x="400" dy="15">▶️ インストーラー実行</tspan>
+    <tspan x="400" dy="15">✅ コマンドプロンプトで確認</tspan>
+    <tspan x="400" dy="15">🔍 python --version で動作確認</tspan>
+  </text>
+  
+  <!-- Arrow 2 -->
+  <path d="M 650 150 L 690 150" stroke="#3b82f6" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Step 3: Editor Selection -->
+  <rect x="690" y="80" width="280" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="830" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#d97706">
+    ⚡ Step 3: エディタ選択
+  </text>
+  
+  <rect x="710" y="120" width="240" height="90" rx="4" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="720" y="140" font-family="Arial, sans-serif" font-size="12" fill="#d97706">
+    <tspan x="720" dy="0">🎯 初心者: Thonny (推奨)</tspan>
+    <tspan x="720" dy="15">⚡ 中級者: VSCode</tspan>
+    <tspan x="720" dy="15">📦 インストール・設定実行</tspan>
+    <tspan x="720" dy="15">🔌 必要な拡張機能追加</tspan>
+    <tspan x="720" dy="15">⚙️ 基本設定のカスタマイズ</tspan>
+  </text>
+  
+  <!-- Platform-specific Installation Details -->
+  <rect x="50" y="250" width="1100" height="220" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="600" y="275" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    💻 OS別インストール詳細
+  </text>
+  
+  <!-- Windows Installation -->
+  <rect x="80" y="290" width="340" height="160" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="250" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🪟 Windows
+  </text>
+  
+  <text x="90" y="335" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="90" dy="0">1️⃣ python.org → Downloads → Windows</tspan>
+    <tspan x="90" dy="14">2️⃣ 「Download Python 3.x.x」クリック</tspan>
+    <tspan x="90" dy="14">3️⃣ ダウンロード完了後、.exeファイル実行</tspan>
+    <tspan x="90" dy="14">4️⃣ ⚠️ 重要: 「Add Python to PATH」チェック</tspan>
+    <tspan x="90" dy="14">5️⃣ 「Install Now」で標準インストール</tspan>
+    <tspan x="90" dy="14">6️⃣ 完了後、コマンドプロンプトで確認:</tspan>
+    <tspan x="100" dy="14" font-family="monospace" font-size="10">C:\> python --version</tspan>
+    <tspan x="100" dy="12" font-family="monospace" font-size="10">Python 3.x.x</tspan>
+  </text>
+  
+  <!-- macOS Installation -->
+  <rect x="440" y="290" width="340" height="160" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="610" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🍎 macOS
+  </text>
+  
+  <text x="450" y="335" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="450" dy="0">1️⃣ python.org → Downloads → macOS</tspan>
+    <tspan x="450" dy="14">2️⃣ 「Download Python 3.x.x」クリック</tspan>
+    <tspan x="450" dy="14">3️⃣ .pkgファイルをダブルクリック</tspan>
+    <tspan x="450" dy="14">4️⃣ パスワード入力でインストール実行</tspan>
+    <tspan x="450" dy="14">5️⃣ インストール完了まで待機</tspan>
+    <tspan x="450" dy="14">6️⃣ ターミナルで確認:</tspan>
+    <tspan x="460" dy="14" font-family="monospace" font-size="10">$ python3 --version</tspan>
+    <tspan x="460" dy="12" font-family="monospace" font-size="10">Python 3.x.x</tspan>
+  </text>
+  
+  <!-- Linux Installation -->
+  <rect x="800" y="290" width="340" height="160" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="970" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🐧 Linux (Ubuntu/Debian)
+  </text>
+  
+  <text x="810" y="335" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="810" dy="0">1️⃣ ターミナルを開く</tspan>
+    <tspan x="810" dy="14">2️⃣ パッケージリスト更新:</tspan>
+    <tspan x="820" dy="14" font-family="monospace" font-size="10">$ sudo apt update</tspan>
+    <tspan x="810" dy="14">3️⃣ Pythonインストール:</tspan>
+    <tspan x="820" dy="14" font-family="monospace" font-size="10">$ sudo apt install python3 python3-pip</tspan>
+    <tspan x="810" dy="14">4️⃣ 確認:</tspan>
+    <tspan x="820" dy="14" font-family="monospace" font-size="10">$ python3 --version</tspan>
+  </text>
+  
+  <!-- Editor Comparison -->
+  <rect x="50" y="490" width="1100" height="180" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="515" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🎯 エディタ選択ガイド
+  </text>
+  
+  <!-- Thonny -->
+  <rect x="80" y="535" width="350" height="120" rx="6" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="255" y="555" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🧩 Thonny (初心者最適)
+  </text>
+  
+  <text x="90" y="575" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="90" dy="0">✅ プログラミング教育専用設計</tspan>
+    <tspan x="90" dy="13">✅ 変数の値が視覚的に確認可能</tspan>
+    <tspan x="90" dy="13">✅ ステップ実行で動作理解しやすい</tspan>
+    <tspan x="90" dy="13">✅ エラーメッセージが親切</tspan>
+    <tspan x="90" dy="13">✅ インストール・設定が簡単</tspan>
+    <tspan x="90" dy="13">📥 thonny.org からダウンロード</tspan>
+  </text>
+  
+  <!-- VSCode -->
+  <rect x="450" y="535" width="350" height="120" rx="6" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="625" y="555" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    ⚡ VSCode (中級者向け)
+  </text>
+  
+  <text x="460" y="575" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="460" dy="0">🚀 プロ仕様の高機能エディタ</tspan>
+    <tspan x="460" dy="13">🔌 豊富な拡張機能エコシステム</tspan>
+    <tspan x="460" dy="13">🤖 高度なコード補完・静的解析</tspan>
+    <tspan x="460" dy="13">🔍 強力なデバッグ機能</tspan>
+    <tspan x="460" dy="13">⚙️ カスタマイズ性が高い</tspan>
+    <tspan x="460" dy="13">📥 code.visualstudio.com</tspan>
+  </text>
+  
+  <!-- Other Options -->
+  <rect x="820" y="535" width="320" height="120" rx="6" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="980" y="555" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🔧 その他の選択肢
+  </text>
+  
+  <text x="830" y="575" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="830" dy="0">📝 IDLE: Python標準付属</tspan>
+    <tspan x="830" dy="13">⚡ Sublime Text: 軽量・高速</tspan>
+    <tspan x="830" dy="13">🐍 PyCharm: Python特化IDE</tspan>
+    <tspan x="830" dy="13">☁️ Repl.it: ブラウザ上で実行</tspan>
+    <tspan x="830" dy="13">📋 Jupyter: データ分析向け</tspan>
+    <tspan x="830" dy="13">💻 学校PC制限時の代替案</tspan>
+  </text>
+  
+  <!-- Troubleshooting -->
+  <rect x="50" y="690" width="1100" height="140" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="600" y="715" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🛠️ よくあるトラブルと解決方法
+  </text>
+  
+  <rect x="80" y="735" width="360" height="80" rx="4" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="90" y="755" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ❌ 「python は認識されません」
+  </text>
+  <text x="90" y="770" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="90" dy="0">原因: PATHの設定漏れ</tspan>
+    <tspan x="90" dy="12">解決: 再インストール時に「Add to PATH」チェック</tspan>
+    <tspan x="90" dy="12">確認: コマンドプロンプト再起動後に再実行</tspan>
+  </text>
+  
+  <rect x="460" y="735" width="360" height="80" rx="4" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="470" y="755" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ❌ 管理者権限エラー
+  </text>
+  <text x="470" y="770" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="470" dy="0">原因: インストール権限不足</tspan>
+    <tspan x="470" dy="12">解決: 右クリック→「管理者として実行」</tspan>
+    <tspan x="470" dy="12">学校PC: 先生や情報担当者に相談</tspan>
+  </text>
+  
+  <rect x="840" y="735" width="280" height="80" rx="4" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="850" y="755" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ❌ 古いバージョン起動
+  </text>
+  <text x="850" y="770" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="850" dy="0">原因: 複数Python共存</tspan>
+    <tspan x="850" dy="12">解決: python3 コマンド使用</tspan>
+    <tspan x="850" dy="12">Windows: py -3 コマンド</tspan>
+  </text>
+  
+  <!-- Final Check -->
+  <rect x="50" y="850" width="1100" height="120" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="600" y="875" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    ✅ 環境構築完了チェック
+  </text>
+  
+  <rect x="80" y="890" width="1040" height="70" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="100" y="915" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#0369a1">
+    最終確認事項:
+  </text>
+  <text x="120" y="935" font-family="Arial, sans-serif" font-size="12" fill="#0369a1">
+    <tspan x="120" dy="0">□ ターミナル/コマンドプロンプトで「python --version」または「python3 --version」が正常動作</tspan>
+    <tspan x="120" dy="16">□ 選択したエディタ(Thonny/VSCode)が正常起動し、.pyファイルの作成・保存・実行が可能</tspan>
+    <tspan x="120" dy="16">□ 簡単なPythonコード（例: print("Hello, World!")）が正常実行される</tspan>
+  </text>
+</svg>

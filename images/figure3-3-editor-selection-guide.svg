@@ -1,0 +1,481 @@
+<svg viewBox="0 0 1200 1100" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-3：エディタ選択ガイド</title>
+  <desc>競技プログラミング初心者から上級者まで、レベルに応じた最適なプログラミングエディタの選択指針と特徴比較</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="1100" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    エディタ選択ガイド
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    競技プログラミングに最適な開発環境を見つけよう
+  </text>
+  
+  <!-- Selection Matrix -->
+  <rect x="50" y="80" width="1100" height="200" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📊 エディタ選択マトリックス
+  </text>
+  
+  <!-- Matrix Headers -->
+  <rect x="80" y="120" width="120" height="30" fill="#8b5cf6" rx="4"/>
+  <text x="140" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="white">
+    エディタ
+  </text>
+  
+  <rect x="200" y="120" width="100" height="30" fill="#8b5cf6" rx="4"/>
+  <text x="250" y="140" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    使いやすさ
+  </text>
+  
+  <rect x="300" y="120" width="100" height="30" fill="#8b5cf6" rx="4"/>
+  <text x="350" y="140" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    高機能性
+  </text>
+  
+  <rect x="400" y="120" width="100" height="30" fill="#8b5cf6" rx="4"/>
+  <text x="450" y="140" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    軽量性
+  </text>
+  
+  <rect x="500" y="120" width="100" height="30" fill="#8b5cf6" rx="4"/>
+  <text x="550" y="140" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    学習コスト
+  </text>
+  
+  <rect x="600" y="120" width="100" height="30" fill="#8b5cf6" rx="4"/>
+  <text x="650" y="140" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    総合評価
+  </text>
+  
+  <rect x="700" y="120" width="420" height="30" fill="#8b5cf6" rx="4"/>
+  <text x="910" y="140" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    推奨レベル・特徴
+  </text>
+  
+  <!-- Thonny Row -->
+  <rect x="80" y="150" width="120" height="25" fill="#ddd6fe" rx="2"/>
+  <text x="140" y="167" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🧩 Thonny
+  </text>
+  
+  <rect x="200" y="150" width="100" height="25" fill="white" rx="2"/>
+  <text x="250" y="167" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#22c55e">
+    ★★★★★
+  </text>
+  
+  <rect x="300" y="150" width="100" height="25" fill="white" rx="2"/>
+  <text x="350" y="167" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#f59e0b">
+    ★★☆☆☆
+  </text>
+  
+  <rect x="400" y="150" width="100" height="25" fill="white" rx="2"/>
+  <text x="450" y="167" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#22c55e">
+    ★★★☆☆
+  </text>
+  
+  <rect x="500" y="150" width="100" height="25" fill="white" rx="2"/>
+  <text x="550" y="167" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#22c55e">
+    ★★★★★
+  </text>
+  
+  <rect x="600" y="150" width="100" height="25" fill="#dcfce7" rx="2"/>
+  <text x="650" y="167" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#15803d">
+    ★★★★★
+  </text>
+  
+  <rect x="700" y="150" width="420" height="25" fill="white" rx="2"/>
+  <text x="710" y="167" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    🎯 初心者最優先推奨・プログラミング教育専用設計
+  </text>
+  
+  <!-- VSCode Row -->
+  <rect x="80" y="175" width="120" height="25" fill="#ddd6fe" rx="2"/>
+  <text x="140" y="192" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    ⚡ VSCode
+  </text>
+  
+  <rect x="200" y="175" width="100" height="25" fill="white" rx="2"/>
+  <text x="250" y="192" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#22c55e">
+    ★★★★☆
+  </text>
+  
+  <rect x="300" y="175" width="100" height="25" fill="white" rx="2"/>
+  <text x="350" y="192" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#22c55e">
+    ★★★★★
+  </text>
+  
+  <rect x="400" y="175" width="100" height="25" fill="white" rx="2"/>
+  <text x="450" y="192" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#f59e0b">
+    ★★☆☆☆
+  </text>
+  
+  <rect x="500" y="175" width="100" height="25" fill="white" rx="2"/>
+  <text x="550" y="192" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#f59e0b">
+    ★★★☆☆
+  </text>
+  
+  <rect x="600" y="175" width="100" height="25" fill="#fef3c7" rx="2"/>
+  <text x="650" y="192" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#d97706">
+    ★★★★☆
+  </text>
+  
+  <rect x="700" y="175" width="420" height="25" fill="white" rx="2"/>
+  <text x="710" y="192" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    🚀 中級者向け・世界標準の高機能エディタ
+  </text>
+  
+  <!-- IDLE Row -->
+  <rect x="80" y="200" width="120" height="25" fill="#ddd6fe" rx="2"/>
+  <text x="140" y="217" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📝 IDLE
+  </text>
+  
+  <rect x="200" y="200" width="100" height="25" fill="white" rx="2"/>
+  <text x="250" y="217" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#f59e0b">
+    ★★★☆☆
+  </text>
+  
+  <rect x="300" y="200" width="100" height="25" fill="white" rx="2"/>
+  <text x="350" y="217" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#ef4444">
+    ★★☆☆☆
+  </text>
+  
+  <rect x="400" y="200" width="100" height="25" fill="white" rx="2"/>
+  <text x="450" y="217" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#22c55e">
+    ★★★★☆
+  </text>
+  
+  <rect x="500" y="200" width="100" height="25" fill="white" rx="2"/>
+  <text x="550" y="217" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#22c55e">
+    ★★★★★
+  </text>
+  
+  <rect x="600" y="200" width="100" height="25" fill="#fed7d7" rx="2"/>
+  <text x="650" y="217" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ★★★☆☆
+  </text>
+  
+  <rect x="700" y="200" width="420" height="25" fill="white" rx="2"/>
+  <text x="710" y="217" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    📦 Python標準付属・追加インストール不要
+  </text>
+  
+  <!-- PyCharm Row -->
+  <rect x="80" y="225" width="120" height="25" fill="#ddd6fe" rx="2"/>
+  <text x="140" y="242" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🐍 PyCharm
+  </text>
+  
+  <rect x="200" y="225" width="100" height="25" fill="white" rx="2"/>
+  <text x="250" y="242" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#ef4444">
+    ★★☆☆☆
+  </text>
+  
+  <rect x="300" y="225" width="100" height="25" fill="white" rx="2"/>
+  <text x="350" y="242" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#22c55e">
+    ★★★★★
+  </text>
+  
+  <rect x="400" y="225" width="100" height="25" fill="white" rx="2"/>
+  <text x="450" y="242" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#ef4444">
+    ★☆☆☆☆
+  </text>
+  
+  <rect x="500" y="225" width="100" height="25" fill="white" rx="2"/>
+  <text x="550" y="242" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#ef4444">
+    ★★☆☆☆
+  </text>
+  
+  <rect x="600" y="225" width="100" height="25" fill="#fed7d7" rx="2"/>
+  <text x="650" y="242" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ★★★☆☆
+  </text>
+  
+  <rect x="700" y="225" width="420" height="25" fill="white" rx="2"/>
+  <text x="710" y="242" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    🏢 上級者・プロ向け・Python特化IDE
+  </text>
+  
+  <!-- Sublime Text Row -->
+  <rect x="80" y="250" width="120" height="25" fill="#ddd6fe" rx="2"/>
+  <text x="140" y="267" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    ⚡ Sublime
+  </text>
+  
+  <rect x="200" y="250" width="100" height="25" fill="white" rx="2"/>
+  <text x="250" y="267" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#f59e0b">
+    ★★★☆☆
+  </text>
+  
+  <rect x="300" y="250" width="100" height="25" fill="white" rx="2"/>
+  <text x="350" y="267" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#f59e0b">
+    ★★★☆☆
+  </text>
+  
+  <rect x="400" y="250" width="100" height="25" fill="white" rx="2"/>
+  <text x="450" y="267" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#22c55e">
+    ★★★★☆
+  </text>
+  
+  <rect x="500" y="250" width="100" height="25" fill="white" rx="2"/>
+  <text x="550" y="267" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#f59e0b">
+    ★★★☆☆
+  </text>
+  
+  <rect x="600" y="250" width="100" height="25" fill="#fed7d7" rx="2"/>
+  <text x="650" y="267" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ★★★☆☆
+  </text>
+  
+  <rect x="700" y="250" width="420" height="25" fill="white" rx="2"/>
+  <text x="710" y="267" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    💨 軽量・高速動作・有料ライセンス
+  </text>
+  
+  <!-- Detailed Comparison -->
+  <rect x="50" y="300" width="1100" height="320" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="325" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🔍 詳細比較・選択指針
+  </text>
+  
+  <!-- Thonny Detail -->
+  <rect x="80" y="350" width="350" height="250" rx="6" fill="white" stroke="#bbf7d0" stroke-width="2"/>
+  <text x="255" y="375" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🧩 Thonny - 初心者最優先
+  </text>
+  
+  <text x="90" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    ✅ 最適な理由:
+  </text>
+  <text x="100" y="410" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="100" dy="0">• プログラミング教育のために特別設計</tspan>
+    <tspan x="100" dy="14">• 変数の値変化を視覚的に確認可能</tspan>
+    <tspan x="100" dy="14">• ステップ実行でプログラム動作理解</tspan>
+    <tspan x="100" dy="14">• エラーメッセージが初心者にも親切</tspan>
+    <tspan x="100" dy="14">• インストール・設定が簡単</tspan>
+    <tspan x="100" dy="14">• デバッグ機能が直感的</tspan>
+  </text>
+  
+  <text x="90" y="495" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 推奨対象:
+  </text>
+  <text x="100" y="510" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="100" dy="0">• プログラミング完全初心者</tspan>
+    <tspan x="100" dy="14">• 競技プログラミング入門者</tspan>
+    <tspan x="100" dy="14">• 中学生・高校生</tspan>
+    <tspan x="100" dy="14">• 学習効率を重視したい人</tspan>
+  </text>
+  
+  <text x="90" y="550" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📥 入手方法:
+  </text>
+  <text x="100" y="565" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="100" dy="0">thonny.org から無料ダウンロード</tspan>
+    <tspan x="100" dy="14">Windows/Mac/Linux 全対応</tspan>
+  </text>
+  
+  <!-- VSCode Detail -->
+  <rect x="450" y="350" width="350" height="250" rx="6" fill="white" stroke="#bbf7d0" stroke-width="2"/>
+  <text x="625" y="375" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    ⚡ VSCode - 成長対応型
+  </text>
+  
+  <text x="460" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🚀 優位性:
+  </text>
+  <text x="470" y="410" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="470" dy="0">• 世界標準の高機能エディタ</tspan>
+    <tspan x="470" dy="14">• 豊富な拡張機能エコシステム</tspan>
+    <tspan x="470" dy="14">• 高度なコード補完・静的解析</tspan>
+    <tspan x="470" dy="14">• 強力なデバッグ・検索機能</tspan>
+    <tspan x="470" dy="14">• Git統合・チーム開発対応</tspan>
+    <tspan x="470" dy="14">• 将来的にも長く使える</tspan>
+  </text>
+  
+  <text x="460" y="495" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 推奨対象:
+  </text>
+  <text x="470" y="510" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="470" dy="0">• プログラミング中級者以上</tspan>
+    <tspan x="470" dy="14">• Thonnyから移行したい人</tspan>
+    <tspan x="470" dy="14">• 将来性を重視する人</tspan>
+    <tspan x="470" dy="14">• 高機能エディタを使いたい人</tspan>
+  </text>
+  
+  <text x="460" y="550" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📥 入手方法:
+  </text>
+  <text x="470" y="565" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="470" dy="0">code.visualstudio.com</tspan>
+    <tspan x="470" dy="14">Python Extension Pack必須</tspan>
+  </text>
+  
+  <!-- Other Options -->
+  <rect x="820" y="350" width="300" height="250" rx="6" fill="white" stroke="#bbf7d0" stroke-width="2"/>
+  <text x="970" y="375" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🔧 その他の選択肢
+  </text>
+  
+  <text x="830" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🏢 制約がある場合:
+  </text>
+  <text x="840" y="410" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="840" dy="0">📝 IDLE: Python標準付属</tspan>
+    <tspan x="840" dy="14">   インストール権限不要</tspan>
+    <tspan x="840" dy="14">☁️ Repl.it: ブラウザ上実行</tspan>
+    <tspan x="840" dy="14">   学校PC制限時の代替</tspan>
+  </text>
+  
+  <text x="830" y="465" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💰 予算がある場合:
+  </text>
+  <text x="840" y="480" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="840" dy="0">⚡ Sublime Text: 軽量高速</tspan>
+    <tspan x="840" dy="14">🐍 PyCharm Pro: 最高機能</tspan>
+  </text>
+  
+  <text x="830" y="515" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📊 特殊用途:
+  </text>
+  <text x="840" y="530" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="840" dy="0">📋 Jupyter: データ分析</tspan>
+    <tspan x="840" dy="14">🌐 Web IDE: CodePen等</tspan>
+    <tspan x="840" dy="14">📱 Mobile: Pythonista等</tspan>
+  </text>
+  
+  <!-- Transition Path -->
+  <rect x="50" y="640" width="1100" height="120" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="665" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🎯 推奨学習パス
+  </text>
+  
+  <!-- Learning Path -->
+  <defs>
+    <marker id="pathArrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#d97706"/>
+    </marker>
+  </defs>
+  
+  <rect x="80" y="680" width="200" height="60" rx="6" fill="white" stroke="#fbbf24" stroke-width="2"/>
+  <text x="180" y="700" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🧩 Thonny
+  </text>
+  <text x="180" y="715" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#d97706">
+    プログラミング学習
+  </text>
+  <text x="180" y="730" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#d97706">
+    (0-6ヶ月)
+  </text>
+  
+  <path d="M 280 710 L 340 710" stroke="#d97706" stroke-width="3" fill="none" marker-end="url(#pathArrow)"/>
+  
+  <rect x="340" y="680" width="200" height="60" rx="6" fill="white" stroke="#fbbf24" stroke-width="2"/>
+  <text x="440" y="700" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    ⚡ VSCode
+  </text>
+  <text x="440" y="715" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#d97706">
+    本格的な開発
+  </text>
+  <text x="440" y="730" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#d97706">
+    (6ヶ月-)
+  </text>
+  
+  <path d="M 540 710 L 600 710" stroke="#d97706" stroke-width="3" fill="none" marker-end="url(#pathArrow)"/>
+  
+  <rect x="600" y="680" width="200" height="60" rx="6" fill="white" stroke="#fbbf24" stroke-width="2"/>
+  <text x="700" y="700" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🏢 専門IDE
+  </text>
+  <text x="700" y="715" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#d97706">
+    プロフェッショナル
+  </text>
+  <text x="700" y="730" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#d97706">
+    (1年-)
+  </text>
+  
+  <text x="850" y="710" font-family="Arial, sans-serif" font-size="12" fill="#d97706">
+    <tspan x="850" dy="0">💡 重要なポイント:</tspan>
+    <tspan x="850" dy="15">• 最初はThonnyで基礎固め</tspan>
+    <tspan x="850" dy="15">• 慣れたらVSCodeで拡張</tspan>
+  </text>
+  
+  <!-- Setup Tips -->
+  <rect x="50" y="780" width="1100" height="140" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="600" y="805" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    ⚙️ 初期設定のコツ
+  </text>
+  
+  <rect x="80" y="820" width="350" height="90" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="90" y="840" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🧩 Thonny設定のポイント:
+  </text>
+  <text x="100" y="855" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">• フォントサイズ: 12-14pt (見やすく)</tspan>
+    <tspan x="100" dy="12">• テーマ: Default (慣れ親しみやすい)</tspan>
+    <tspan x="100" dy="12">• 自動保存: 有効 (作業ロス防止)</tspan>
+    <tspan x="100" dy="12">• 行番号表示: 有効 (エラー特定しやすく)</tspan>
+  </text>
+  
+  <rect x="450" y="820" width="350" height="90" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="460" y="840" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    ⚡ VSCode設定のポイント:
+  </text>
+  <text x="470" y="855" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="470" dy="0">• Python Extension Pack: 必須インストール</tspan>
+    <tspan x="470" dy="12">• テーマ: Dark+ (目に優しい)</tspan>
+    <tspan x="470" dy="12">• フォント: Consolas/Fira Code</tspan>
+    <tspan x="470" dy="12">• 自動保存: afterDelay (効率向上)</tspan>
+  </text>
+  
+  <rect x="820" y="820" width="300" height="90" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="830" y="840" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🔧 共通設定項目:
+  </text>
+  <text x="840" y="855" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="840" dy="0">• 文字エンコード: UTF-8</tspan>
+    <tspan x="840" dy="12">• 改行コード: LF (Unix)</tspan>
+    <tspan x="840" dy="12">• タブ幅: 4スペース</tspan>
+    <tspan x="840" dy="12">• 自動インデント: 有効</tspan>
+  </text>
+  
+  <!-- Quick Start -->
+  <rect x="50" y="940" width="1100" height="130" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="600" y="965" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🚀 今すぐ始める3ステップ
+  </text>
+  
+  <rect x="80" y="980" width="340" height="80" rx="4" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="90" y="1000" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    Step 1: ダウンロード
+  </text>
+  <text x="100" y="1015" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">🧩 Thonny: thonny.org</tspan>
+    <tspan x="100" dy="12">⚡ VSCode: code.visualstudio.com</tspan>
+    <tspan x="100" dy="12">📦 インストーラーをダウンロード</tspan>
+  </text>
+  
+  <rect x="440" y="980" width="340" height="80" rx="4" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="450" y="1000" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    Step 2: インストール・設定
+  </text>
+  <text x="460" y="1015" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="460" dy="0">⚙️ 標準設定でインストール実行</tspan>
+    <tspan x="460" dy="12">🔌 VSCodeはPython拡張追加</tspan>
+    <tspan x="460" dy="12">✅ 動作確認とテスト実行</tspan>
+  </text>
+  
+  <rect x="800" y="980" width="320" height="80" rx="4" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="810" y="1000" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    Step 3: 第一歩
+  </text>
+  <text x="820" y="1015" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="820" dy="0">📝 新しいファイル作成(.py)</tspan>
+    <tspan x="820" dy="12">💻 print("Hello, World!")</tspan>
+    <tspan x="820" dy="12">▶️ 実行して成功を確認</tspan>
+  </text>
+</svg>
