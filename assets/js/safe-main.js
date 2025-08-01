@@ -51,15 +51,16 @@
         safeExecute(initTheme, 'initTheme');
     }
 
-    // 重い処理の遅延初期化
+    // 重い処理の遅延初期化（長いページ用最適化）
     function initHeavyFeatures() {
-        // 重い処理は100ms後に実行し、各処理に制限時間を設ける
+        // 長いページでは処理をさらに遅らせ、時間制限を厳しくする
         setTimeout(() => {
-            safeExecuteWithTimeout(() => addHeadingIds(), 500, 'addHeadingIds');
-            safeExecuteWithTimeout(() => generateTOC(), 500, 'generateTOC');
-            safeExecuteWithTimeout(() => handleExternalLinks(), 300, 'handleExternalLinks');
-            safeExecuteWithTimeout(() => enhanceImages(), 300, 'enhanceImages');
-        }, 100);
+            safeExecuteWithTimeout(() => addHeadingIds(), 200, 'addHeadingIds');
+            // TOC生成を無効化（パフォーマンス優先）
+            // safeExecuteWithTimeout(() => generateTOC(), 500, 'generateTOC');
+            safeExecuteWithTimeout(() => handleExternalLinks(), 200, 'handleExternalLinks');
+            safeExecuteWithTimeout(() => enhanceImages(), 200, 'enhanceImages');
+        }, 500); // 遅延時間を増加
     }
 
     // スタイルの安全な追加
@@ -133,24 +134,19 @@
         }, 'themeRestore');
     }
 
-    // 見出しIDの安全な生成（簡素化バージョン）
+    // 見出しIDの安全な生成（超軽量バージョン）
     function addHeadingIds() {
         const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
         let idCounter = 0;
         
-        // 処理件数制限（パフォーマンス保護）
-        const maxHeadings = Math.min(headings.length, 100);
+        // さらに制限を厳しく（長いページ対応）
+        const maxHeadings = Math.min(headings.length, 20);
         
         for (let i = 0; i < maxHeadings; i++) {
             const heading = headings[i];
             if (!heading.id) {
-                // 複雑な正規表現を避けて、シンプルなID生成
-                heading.id = `heading-${++idCounter}`;
+                heading.id = `h${++idCounter}`;
             }
-        }
-        
-        if (headings.length > maxHeadings) {
-            console.warn(`[Safe JS] Processed only ${maxHeadings} headings out of ${headings.length} for performance reasons`);
         }
     }
 
@@ -188,12 +184,12 @@
         tocContainer.appendChild(tocList);
     }
 
-    // 外部リンクの安全な処理
+    // 外部リンクの安全な処理（超軽量版）
     function handleExternalLinks() {
         const links = document.querySelectorAll('a[href^="http"]');
         
-        // 処理件数制限
-        const maxLinks = Math.min(links.length, 200);
+        // さらに厳しい制限（長いページ対応）
+        const maxLinks = Math.min(links.length, 50);
         
         for (let i = 0; i < maxLinks; i++) {
             const link = links[i];
