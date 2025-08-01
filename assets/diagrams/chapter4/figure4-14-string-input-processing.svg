@@ -1,0 +1,153 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-14：文字列入力の処理方法</title>
+  <desc>文字列の基本的な入力処理から文字単位での操作まで様々なパターンを示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .code-text { font: 500 11px 'Monaco', 'Menlo', monospace; fill: #4B5563; }
+      .result-text { font: 600 12px 'Monaco', 'Menlo', monospace; }
+      .comment-text { font: 500 10px Inter, sans-serif; fill: #6B7280; }
+      .example-text { font: 600 11px Inter, sans-serif; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .basic-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .multiple-section { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .char-section { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .result-box { fill: #FFFFFF; stroke: #9CA3AF; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="650" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-14：文字列入力の処理方法</text>
+  
+  <!-- Basic String Input Section -->
+  <g id="basic-section">
+    <rect x="50" y="60" width="700" height="150" rx="12" class="basic-section"/>
+    <text x="70" y="85" class="emoji">📝</text>
+    <text x="100" y="85" class="section-title" fill="#1E40AF">基本的な文字列入力</text>
+    
+    <g transform="translate(70, 105)">
+      <rect x="0" y="0" width="140" height="15" rx="4" class="code-box"/>
+      <text x="5" y="11" class="code-text">s = input()</text>
+      <text x="150" y="11" class="comment-text">1行を文字列として取得</text>
+      
+      <rect x="0" y="25" width="140" height="15" rx="4" class="code-box"/>
+      <text x="5" y="36" class="code-text">print(len(s))</text>
+      <text x="150" y="36" class="comment-text">文字数を出力</text>
+      
+      <rect x="0" y="50" width="160" height="15" rx="4" class="code-box"/>
+      <text x="5" y="61" class="code-text">print(s.upper())</text>
+      <text x="170" y="61" class="comment-text">大文字に変換</text>
+      
+      <rect x="0" y="75" width="160" height="15" rx="4" class="code-box"/>
+      <text x="5" y="86" class="code-text">print(s.lower())</text>
+      <text x="170" y="86" class="comment-text">小文字に変換</text>
+      
+      <rect x="0" y="100" width="140" height="15" rx="4" class="code-box"/>
+      <text x="5" y="111" class="code-text">print(s[::-1])</text>
+      <text x="150" y="111" class="comment-text">文字列を逆順</text>
+      
+      <!-- Example results -->
+      <rect x="350" y="0" width="300" height="120" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1"/>
+      <text x="360" y="20" class="example-text" fill="#0C4A6E">入力: "Hello"の場合</text>
+      <text x="360" y="35" class="result-text" fill="#3B82F6">len(s) → 5</text>
+      <text x="360" y="50" class="result-text" fill="#3B82F6">s.upper() → "HELLO"</text>
+      <text x="360" y="65" class="result-text" fill="#3B82F6">s.lower() → "hello"</text>
+      <text x="360" y="80" class="result-text" fill="#3B82F6">s[::-1] → "olleH"</text>
+    </g>
+  </g>
+  
+  <!-- Multiple Strings Section -->
+  <g id="multiple-section">
+    <rect x="50" y="230" width="700" height="120" rx="12" class="multiple-section"/>
+    <text x="70" y="255" class="emoji">🔤</text>
+    <text x="100" y="255" class="section-title" fill="#059669">複数の文字列を読み込み</text>
+    
+    <g transform="translate(70, 275)">
+      <text x="0" y="15" class="comment-text">"apple banana cherry"のような入力の場合：</text>
+      
+      <rect x="0" y="25" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="36" class="code-text">words = input().split()</text>
+      <text x="210" y="36" class="result-text" fill="#059669">['apple', 'banana', 'cherry']</text>
+      
+      <rect x="0" y="50" width="180" height="15" rx="4" class="code-box"/>
+      <text x="5" y="61" class="code-text">for word in words:</text>
+      
+      <rect x="0" y="70" width="320" height="15" rx="4" class="code-box"/>
+      <text x="5" y="81" class="code-text">    print(f"単語: {word}, 長さ: {len(word)}")</text>
+      
+      <!-- Output example -->
+      <rect x="400" y="45" width="280" height="50" rx="6" class="result-box"/>
+      <text x="410" y="58" class="comment-text">出力例：</text>
+      <text x="410" y="73" style="font: 500 10px 'Monaco', 'Menlo', monospace; fill: #059669;">単語: apple, 長さ: 5</text>
+      <text x="410" y="87" style="font: 500 10px 'Monaco', 'Menlo', monospace; fill: #059669;">単語: banana, 長さ: 6</text>
+    </g>
+  </g>
+  
+  <!-- Character Processing Section -->
+  <g id="char-section">
+    <rect x="50" y="370" width="700" height="180" rx="12" class="char-section"/>
+    <text x="70" y="395" class="emoji">🔍</text>
+    <text x="100" y="395" class="section-title" fill="#D97706">1文字ずつの処理</text>
+    
+    <g transform="translate(70, 415)">
+      <text x="0" y="15" class="comment-text">入力: "hello"の場合</text>
+      
+      <rect x="0" y="25" width="120" height="15" rx="4" class="code-box"/>
+      <text x="5" y="36" class="code-text">s = input()</text>
+      
+      <rect x="0" y="50" width="240" height="15" rx="4" class="code-box"/>
+      <text x="5" y="61" class="code-text">for i, char in enumerate(s):</text>
+      
+      <rect x="0" y="70" width="280" height="15" rx="4" class="code-box"/>
+      <text x="5" y="81" class="code-text">    print(f"{i}番目の文字: {char}")</text>
+      
+      <!-- Output example -->
+      <rect x="350" y="25" width="200" height="120" rx="6" class="result-box"/>
+      <text x="360" y="40" class="comment-text">出力：</text>
+      <text x="360" y="55" style="font: 500 10px 'Monaco', 'Menlo', monospace; fill: #D97706;">0番目の文字: h</text>
+      <text x="360" y="70" style="font: 500 10px 'Monaco', 'Menlo', monospace; fill: #D97706;">1番目の文字: e</text>
+      <text x="360" y="85" style="font: 500 10px 'Monaco', 'Menlo', monospace; fill: #D97706;">2番目の文字: l</text>
+      <text x="360" y="100" style="font: 500 10px 'Monaco', 'Menlo', monospace; fill: #D97706;">3番目の文字: l</text>
+      <text x="360" y="115" style="font: 500 10px 'Monaco', 'Menlo', monospace; fill: #D97706;">4番目の文字: o</text>
+      <text x="360" y="130" style="font: 500 10px 'Monaco', 'Menlo', monospace; fill: #D97706;">(インデックスは0から)</text>
+      
+      <!-- Alternative method -->
+      <text x="0" y="110" class="comment-text">別の方法（インデックスアクセス）：</text>
+      
+      <rect x="0" y="120" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="131" class="code-text">for i in range(len(s)):</text>
+      
+      <rect x="0" y="140" width="240" height="15" rx="4" class="code-box"/>
+      <text x="5" y="151" class="code-text">    print(f"{i}番目: {s[i]}")</text>
+    </g>
+  </g>
+  
+  <!-- Key Points -->
+  <g id="key-points">
+    <rect x="100" y="570" width="600" height="70" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+    <text x="120" y="595" class="emoji">💡</text>
+    <text x="150" y="595" class="example-text" fill="#0C4A6E">重要なポイント</text>
+    
+    <g transform="translate(120, 610)">
+      <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+      <text x="20" y="12" class="comment-text" fill="#0C4A6E">文字列の場合はint()変換は不要</text>
+      
+      <circle cx="8" cy="25" r="4" fill="#22C55E"/>
+      <text x="20" y="29" class="comment-text" fill="#0C4A6E">enumerate()で文字とインデックスを同時取得可能</text>
+      
+      <circle cx="320" cy="8" r="4" fill="#22C55E"/>
+      <text x="332" y="12" class="comment-text" fill="#0C4A6E">split()で単語ごとに分割</text>
+      
+      <circle cx="320" cy="25" r="4" fill="#22C55E"/>
+      <text x="332" y="29" class="comment-text" fill="#0C4A6E">上下大文字変換やスライスが便利</text>
+    </g>
+  </g>
+  
+</svg>

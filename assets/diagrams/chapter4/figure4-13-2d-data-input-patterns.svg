@@ -1,0 +1,207 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-13：2次元データの読み込みパターン</title>
+  <desc>N行M列の数値データの読み込み処理とアクセス方法を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .code-text { font: 500 11px 'Monaco', 'Menlo', monospace; fill: #4B5563; }
+      .input-text { font: 600 12px 'Monaco', 'Menlo', monospace; fill: #059669; }
+      .comment-text { font: 500 10px Inter, sans-serif; fill: #6B7280; }
+      .example-text { font: 600 11px Inter, sans-serif; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .input-section { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .basic-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .concise-section { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .usage-section { fill: #F3E8FF; stroke: #8B5CF6; stroke-width: 2; }
+      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .input-box { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+      .matrix-cell { fill: #FFFFFF; stroke: #94A3B8; stroke-width: 1; }
+      .arrow { stroke: #10B981; stroke-width: 2; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L10,3 z" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-13：2次元データの読み込みパターン</text>
+  
+  <!-- Problem Description -->
+  <text x="70" y="65" class="section-title">問題例：「N行M列の数値が与えられる」</text>
+  
+  <!-- Input Section -->
+  <g id="input-section">
+    <rect x="50" y="80" width="340" height="160" rx="12" class="input-section"/>
+    <text x="70" y="105" class="emoji">📥</text>
+    <text x="100" y="105" class="section-title" fill="#059669">入力例</text>
+    
+    <g transform="translate(70, 120)">
+      <rect x="0" y="0" width="80" height="20" rx="4" class="input-box"/>
+      <text x="40" y="15" text-anchor="middle" class="input-text">3 4</text>
+      <text x="90" y="15" class="comment-text">← N=3行, M=4列</text>
+      
+      <rect x="0" y="30" width="120" height="20" rx="4" class="input-box"/>
+      <text x="60" y="45" text-anchor="middle" class="input-text">1 2 3 4</text>
+      <text x="130" y="45" class="comment-text">← 1行目のデータ</text>
+      
+      <rect x="0" y="55" width="120" height="20" rx="4" class="input-box"/>
+      <text x="60" y="70" text-anchor="middle" class="input-text">5 6 7 8</text>
+      <text x="130" y="70" class="comment-text">← 2行目のデータ</text>
+      
+      <rect x="0" y="80" width="140" height="20" rx="4" class="input-box"/>
+      <text x="70" y="95" text-anchor="middle" class="input-text">9 10 11 12</text>
+      <text x="150" y="95" class="comment-text">← 3行目のデータ</text>
+      
+      <!-- Visual Matrix -->
+      <g transform="translate(200, 30)">
+        <rect x="0" y="0" width="25" height="20" class="matrix-cell"/>
+        <text x="12" y="15" text-anchor="middle" class="input-text" style="font-size: 10px;">1</text>
+        <rect x="25" y="0" width="25" height="20" class="matrix-cell"/>
+        <text x="37" y="15" text-anchor="middle" class="input-text" style="font-size: 10px;">2</text>
+        <rect x="50" y="0" width="25" height="20" class="matrix-cell"/>
+        <text x="62" y="15" text-anchor="middle" class="input-text" style="font-size: 10px;">3</text>
+        <rect x="75" y="0" width="25" height="20" class="matrix-cell"/>
+        <text x="87" y="15" text-anchor="middle" class="input-text" style="font-size: 10px;">4</text>
+        
+        <rect x="0" y="20" width="25" height="20" class="matrix-cell"/>
+        <text x="12" y="35" text-anchor="middle" class="input-text" style="font-size: 10px;">5</text>
+        <rect x="25" y="20" width="25" height="20" class="matrix-cell"/>
+        <text x="37" y="35" text-anchor="middle" class="input-text" style="font-size: 10px;">6</text>
+        <rect x="50" y="20" width="25" height="20" class="matrix-cell"/>
+        <text x="62" y="35" text-anchor="middle" class="input-text" style="font-size: 10px;">7</text>  
+        <rect x="75" y="20" width="25" height="20" class="matrix-cell"/>
+        <text x="87" y="35" text-anchor="middle" class="input-text" style="font-size: 10px;">8</text>
+        
+        <rect x="0" y="40" width="25" height="20" class="matrix-cell"/>
+        <text x="12" y="55" text-anchor="middle" class="input-text" style="font-size: 10px;">9</text>
+        <rect x="25" y="40" width="25" height="20" class="matrix-cell"/>
+        <text x="37" y="55" text-anchor="middle" class="input-text" style="font-size: 10px;">10</text>
+        <rect x="50" y="40" width="25" height="20" class="matrix-cell"/>
+        <text x="62" y="55" text-anchor="middle" class="input-text" style="font-size: 10px;">11</text>
+        <rect x="75" y="40" width="25" height="20" class="matrix-cell"/>
+        <text x="87" y="55" text-anchor="middle" class="input-text" style="font-size: 10px;">12</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M410 160 L460 160" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Basic Code Section -->
+  <g id="basic-section">
+    <rect x="480" y="80" width="270" height="160" rx="12" class="basic-section"/>
+    <text x="500" y="105" class="emoji">💻</text>
+    <text x="530" y="105" class="section-title" fill="#1E40AF">処理コード</text>
+    
+    <g transform="translate(500, 120)">
+      <rect x="0" y="0" width="220" height="12" rx="3" class="code-box"/>
+      <text x="5" y="9" class="code-text">n, m = map(int, input().split())</text>
+      
+      <rect x="0" y="17" width="120" height="12" rx="3" class="code-box"/>
+      <text x="5" y="26" class="code-text">matrix = []</text>
+      
+      <rect x="0" y="34" width="150" height="12" rx="3" class="code-box"/>
+      <text x="5" y="43" class="code-text">for i in range(n):</text>
+      
+      <rect x="0" y="51" width="230" height="12" rx="3" class="code-box"/>
+      <text x="5" y="60" class="code-text">    row = list(map(int, input().split()))</text>
+      
+      <rect x="0" y="68" width="180" height="12" rx="3" class="code-box"/>
+      <text x="5" y="77" class="code-text">    matrix.append(row)</text>
+      
+      <text x="0" y="100" class="comment-text">結果：</text>
+      <text x="0" y="115" class="comment-text">matrix = [[1,2,3,4], [5,6,7,8], [9,10,11,12]]</text>
+    </g>
+  </g>
+  
+  <!-- Concise Version -->
+  <g id="concise-section">
+    <rect x="50" y="260" width="700" height="80" rx="12" class="concise-section"/>
+    <text x="70" y="285" class="emoji">⚡</text>
+    <text x="100" y="285" class="example-text" fill="#D97706">内包表記版</text>
+    
+    <g transform="translate(70, 305)">
+      <rect x="0" y="0" width="220" height="15" rx="4" class="code-box"/>
+      <text x="5" y="11" class="code-text">n, m = map(int, input().split())</text>
+      
+      <rect x="0" y="20" width="480" height="15" rx="4" class="code-box"/>
+      <text x="5" y="31" class="code-text">matrix = [list(map(int, input().split())) for _ in range(n)]</text>
+      
+      <text x="490" y="31" class="comment-text">← より簡潔</text>
+    </g>
+  </g>
+  
+  <!-- Usage Examples -->
+  <g id="usage-section">
+    <rect x="50" y="360" width="700" height="180" rx="12" class="usage-section"/>
+    <text x="70" y="385" class="emoji">🎯</text>
+    <text x="100" y="385" class="example-text" fill="#8B5CF6">アクセス例</text>
+    
+    <g transform="translate(70, 405)">
+      <!-- Access examples -->
+      <rect x="0" y="0" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="11" class="code-text">print(matrix[0][0])</text>
+      <text x="210" y="11" class="comment-text">1行1列目：1</text>
+      
+      <rect x="0" y="20" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="31" class="code-text">print(matrix[1][2])</text>
+      <text x="210" y="31" class="comment-text">2行3列目：7</text>
+      
+      <rect x="0" y="40" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="51" class="code-text">print(matrix[2][3])</text>
+      <text x="210" y="51" class="comment-text">3行4列目：12</text>
+      
+      <!-- Practical examples -->
+      <text x="350" y="15" class="comment-text">実用例：</text>
+      
+      <rect x="350" y="20" width="300" height="15" rx="4" class="code-box"/>
+      <text x="355" y="31" class="code-text">for i, row in enumerate(matrix):</text>
+      
+      <rect x="350" y="40" width="320" height="15" rx="4" class="code-box"/>
+      <text x="355" y="51" class="code-text">    print(f"{i+1}行目の合計: {sum(row)}")</text>
+      
+      <rect x="0" y="80" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="91" class="code-text">max_val = 0</text>
+      
+      <rect x="0" y="100" width="180" height="15" rx="4" class="code-box"/>
+      <text x="5" y="111" class="code-text">for row in matrix:</text>
+      
+      <rect x="0" y="120" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="131" class="code-text">    for val in row:</text>
+      
+      <rect x="0" y="140" width="240" height="15" rx="4" class="code-box"/>
+      <text x="5" y="151" class="code-text">        max_val = max(max_val, val)</text>
+      
+      <text x="250" y="151" class="comment-text">全体の最大値を探索</text>
+    </g>
+  </g>
+  
+  <!-- Key Points -->
+  <g id="key-points">
+    <rect x="100" y="560" width="600" height="120" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+    <text x="120" y="585" class="emoji">💡</text>
+    <text x="150" y="585" class="example-text" fill="#0C4A6E">重要なポイント</text>
+    
+    <g transform="translate(120, 600)">
+      <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+      <text x="20" y="12" class="comment-text" fill="#0C4A6E">matrix[行][列]の順序でアクセス</text>
+      
+      <circle cx="8" cy="28" r="4" fill="#22C55E"/>
+      <text x="20" y="32" class="comment-text" fill="#0C4A6E">インデックスは0から始まる（1行1列目は[0][0]）</text>
+      
+      <circle cx="8" cy="48" r="4" fill="#22C55E"/>
+      <text x="20" y="52" class="comment-text" fill="#0C4A6E">二重ループで全要素にアクセス可能</text>
+      
+      <circle cx="8" cy="68" r="4" fill="#22C55E"/>
+      <text x="20" y="72" class="comment-text" fill="#0C4A6E">enumerate()を使うと行番号も同時に取得できて便利</text>
+    </g>
+  </g>
+  
+</svg>
