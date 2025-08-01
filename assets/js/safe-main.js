@@ -51,16 +51,30 @@
         safeExecute(initTheme, 'initTheme');
     }
 
-    // 重い処理の遅延初期化（長いページ用最適化）
+    // パフォーマンス設定定数
+    const VERY_LONG_PAGE_THRESHOLD = 50000; // 50KB以上は超長いページ
+    const DELAY_LONG = 1000;                 // 長いページ用遅延時間
+    const DELAY_SHORT = 500;                 // 通常ページ用遅延時間
+    const TIMEOUT_SHORT = 100;               // 長いページ用短縮タイムアウト
+    const TIMEOUT_LONG = 200;                // 通常ページ用タイムアウト
+
+    // 重い処理の遅延初期化（超長いページ用最適化）
     function initHeavyFeatures() {
-        // 長いページでは処理をさらに遅らせ、時間制限を厳しくする
+        // ページの長さに応じて処理を調整
+        const contentLength = document.body.textContent.length;
+        const isVeryLongPage = contentLength > VERY_LONG_PAGE_THRESHOLD;
+        
+        const delay = isVeryLongPage ? DELAY_LONG : DELAY_SHORT;
+        const timeout = isVeryLongPage ? TIMEOUT_SHORT : TIMEOUT_LONG;
+        
         setTimeout(() => {
-            safeExecuteWithTimeout(() => addHeadingIds(), 200, 'addHeadingIds');
-            // TOC生成を無効化（パフォーマンス優先）
-            // safeExecuteWithTimeout(() => generateTOC(), 500, 'generateTOC');
-            safeExecuteWithTimeout(() => handleExternalLinks(), 200, 'handleExternalLinks');
-            safeExecuteWithTimeout(() => enhanceImages(), 200, 'enhanceImages');
-        }, 500); // 遅延時間を増加
+            if (!isVeryLongPage) {
+                safeExecuteWithTimeout(() => addHeadingIds(), timeout, 'addHeadingIds');
+            }
+            // TOC生成は完全に無効化（パフォーマンス優先）
+            safeExecuteWithTimeout(() => handleExternalLinks(), timeout, 'handleExternalLinks');
+            safeExecuteWithTimeout(() => enhanceImages(), timeout, 'enhanceImages');
+        }, delay);
     }
 
     // スタイルの安全な追加
