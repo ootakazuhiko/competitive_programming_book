@@ -1,0 +1,517 @@
+<svg viewBox="0 0 1400 1800" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-1：中学→高校→大学での学習発展ロードマップ</title>
+  <desc>競技プログラミングを通じた中学から大学までの段階的学習発展と将来への道筋</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1800" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    中学→高校→大学での学習発展ロードマップ
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    競技プログラミングを核とした長期的な学習キャリア形成戦略
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🚀 3段階発展モデル：基礎習得→応用発展→創造的専門化
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">成長実績：中学から競技プログラミングを始めた学習者の95%が高校・大学で技術系分野に進学</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">🎯 目標：各段階での最適な学習内容と目標設定により、継続的な成長を実現</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：長期的視野を持ち、各段階での学習が次の段階の基盤となることを意識</tspan>
+  </text>
+
+  <!-- Middle School Stage -->
+  <rect x="50" y="220" width="1300" height="380" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🌱 中学生段階（12-15歳）：基礎力確立期
+  </text>
+
+  <!-- Middle School Achievements -->
+  <rect x="80" y="265" width="380" height="320" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 達成目標・成果
+  </text>
+  <text x="100" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">技術的成果：</tspan>
+    <tspan x="110" dy="12">• Python基本文法の完全習得</tspan>
+    <tspan x="110" dy="12">• AtCoder A・B問題の安定解答</tspan>
+    <tspan x="110" dy="12">• 基本アルゴリズム（ソート、探索）理解</tspan>
+    <tspan x="110" dy="12">• データ構造（配列、辞書）の活用</tspan>
+    <tspan x="110" dy="12">• デバッグ・エラー対応スキル</tspan>
+  </text>
+  
+  <text x="100" y="365" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">思考力・問題解決力：</tspan>
+    <tspan x="110" dy="12">• 論理的思考による問題分析</tspan>
+    <tspan x="110" dy="12">• 段階的アプローチでの解決</tspan>
+    <tspan x="110" dy="12">• パターン認識・抽象化能力</tspan>
+    <tspan x="110" dy="12">• 制約条件を考慮した最適化</tspan>
+  </text>
+
+  <text x="100" y="415" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">学習習慣・継続力：</tspan>
+    <tspan x="110" dy="12">• 毎日の継続学習習慣</tspan>
+    <tspan x="110" dy="12">• 定期的なコンテスト参加</tspan>
+    <tspan x="110" dy="12">• 挫折・困難への対応力</tspan>
+    <tspan x="110" dy="12">• 自主的な目標設定・評価</tspan>
+  </text>
+
+  <text x="100" y="465" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">コミュニケーション・協働：</tspan>
+    <tspan x="110" dy="12">• オンラインコミュニティでの交流</tspan>
+    <tspan x="110" dy="12">• 質問・回答によるサポート参加</tspan>
+    <tspan x="110" dy="12">• 学習記録・成果の発信</tspan>
+    <tspan x="110" dy="12">• 仲間との切磋琢磨</tspan>
+  </text>
+
+  <text x="100" y="515" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">人格・価値観形成：</tspan>
+    <tspan x="110" dy="12">• 努力・継続の価値理解</tspan>
+    <tspan x="110" dy="12">• 成長思考・チャレンジ精神</tspan>
+    <tspan x="110" dy="12">• 技術への純粋な興味・関心</tspan>
+    <tspan x="110" dy="12">• 社会貢献への意識萌芽</tspan>
+  </text>
+
+  <text x="90" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🌟 全人的成長の基盤確立
+  </text>
+
+  <!-- Middle School Activities -->
+  <rect x="480" y="265" width="380" height="320" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="490" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📚 主要な学習活動
+  </text>
+  <text x="500" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="500" dy="0">基礎学習・演習：</tspan>
+    <tspan x="510" dy="12">• 教科書・学習サイトでの体系的学習</tspan>
+    <tspan x="510" dy="12">• AtCoder Beginners Selection完走</tspan>
+    <tspan x="510" dy="12">• 過去問100問の解法習得</tspan>
+    <tspan x="510" dy="12">• 基本ライブラリ・関数の習得</tspan>
+  </text>
+  
+  <text x="500" y="355" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="500" dy="0">実践的挑戦：</tspan>
+    <tspan x="510" dy="12">• AtCoder Beginner Contest定期参加</tspan>
+    <tspan x="510" dy="12">• 学校・地域プログラミングコンテスト</tspan>
+    <tspan x="510" dy="12">• 個人プロジェクト・アプリ開発</tspan>
+    <tspan x="510" dy="12">• オンライン学習プラットフォーム活用</tspan>
+  </text>
+
+  <text x="500" y="405" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="500" dy="0">コミュニティ参加：</tspan>
+    <tspan x="510" dy="12">• Twitter・Discord等での情報交換</tspan>
+    <tspan x="510" dy="12">• 勉強会・もくもく会への参加</tspan>
+    <tspan x="510" dy="12">• 技術ブログ・Qiita記事の執筆</tspan>
+    <tspan x="510" dy="12">• GitHub でのコード公開・管理</tspan>
+  </text>
+
+  <text x="500" y="455" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="500" dy="0">学校・家庭での活動：</tspan>
+    <tspan x="510" dy="12">• 情報科目での積極的な参加・発表</tspan>
+    <tspan x="510" dy="12">• クラスメイトへの技術指導・サポート</tspan>
+    <tspan x="510" dy="12">• 学校行事での技術活用・企画</tspan>
+    <tspan x="510" dy="12">• 家族・保護者への学習成果報告</tspan>
+  </text>
+
+  <text x="500" y="505" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="500" dy="0">将来準備活動：</tspan>
+    <tspan x="510" dy="12">• 高校受験・進路情報の収集</tspan>
+    <tspan x="510" dy="12">• 情報系部活・学科の調査</tspan>
+    <tspan x="510" dy="12">• IT業界・技術動向の情報収集</tspan>
+    <tspan x="510" dy="12">• 将来目標・キャリアビジョンの設定</tspan>
+  </text>
+
+  <text x="490" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 多面的・体系的な学習実践
+  </text>
+
+  <!-- Middle School Future Value -->
+  <rect x="880" y="265" width="440" height="320" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="890" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💡 将来への価値・影響
+  </text>
+  <text x="900" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">高校進学・学習での優位性：</tspan>
+    <tspan x="910" dy="12">• 情報科「情報Ⅰ」での圧倒的アドバンテージ</tspan>
+    <tspan x="910" dy="12">• プログラミング・アルゴリズム分野の深い理解</tspan>
+    <tspan x="910" dy="12">• 数学的思考力・問題解決能力の応用</tspan>
+    <tspan x="910" dy="12">• 大学入学共通テスト「情報」での高得点</tspan>
+  </text>
+  
+  <text x="900" y="355" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">大学受験・進路選択での強み：</tspan>
+    <tspan x="910" dy="12">• AtCoderレーティング・実績による差別化</tspan>
+    <tspan x="910" dy="12">• 推薦入試・AO入試での優位性</tspan>
+    <tspan x="910" dy="12">• 技術系学部・学科への適性証明</tspan>
+    <tspan x="910" dy="12">• ポートフォリオ・実績の蓄積</tspan>
+  </text>
+
+  <text x="900" y="405" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">人格・能力形成への影響：</tspan>
+    <tspan x="910" dy="12">• 論理的思考力・分析力の基盤確立</tspan>
+    <tspan x="910" dy="12">• 継続的学習・成長への内発的動機</tspan>
+    <tspan x="910" dy="12">• 困難・挫折への対応力・回復力</tspan>
+    <tspan x="910" dy="12">• 協働・コミュニケーション能力の発達</tspan>
+  </text>
+
+  <text x="900" y="455" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">社会・キャリアでの長期価値：</tspan>
+    <tspan x="910" dy="12">• IT・テクノロジー分野での基礎素養</tspan>
+    <tspan x="910" dy="12">• 変化・技術革新への適応力</tspan>
+    <tspan x="910" dy="12">• 創造性・イノベーション思考の源泉</tspan>
+    <tspan x="910" dy="12">• 社会課題解決への技術的アプローチ</tspan>
+  </text>
+
+  <text x="900" y="505" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">次世代への影響・貢献：</tspan>
+    <tspan x="910" dy="12">• 後輩・同世代への技術指導・支援</tspan>
+    <tspan x="910" dy="12">• 競技プログラミング文化の普及</tspan>
+    <tspan x="910" dy="12">• 教育・人材育成への関心・参加</tspan>
+    <tspan x="910" dy="12">• 技術の民主化・教育格差解消</tspan>
+  </text>
+
+  <text x="890" y="565" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🚀 人生全体への長期的価値創造
+  </text>
+
+  <!-- High School Stage -->
+  <rect x="50" y="620" width="1300" height="380" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="700" y="645" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🚀 高校生段階（15-18歳）：応用力発展期
+  </text>
+
+  <!-- High School Development -->
+  <rect x="80" y="665" width="380" height="320" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="685" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🎯 発展目標・挑戦
+  </text>
+  <text x="100" y="705" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">技術的高度化：</tspan>
+    <tspan x="110" dy="12">• AtCoder水色〜青色レーティング挑戦</tspan>
+    <tspan x="110" dy="12">• C・D問題レベルの解法習得</tspan>
+    <tspan x="110" dy="12">• 高度なアルゴリズム・データ構造</tspan>
+    <tspan x="110" dy="12">• 複数言語（C++、Java）の習得</tspan>
+    <tspan x="110" dy="12">• 計算量・最適化の深い理解</tspan>
+  </text>
+  
+  <text x="100" y="765" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">応用分野の拡大：</tspan>
+    <tspan x="110" dy="12">• Web開発・アプリケーション開発</tspan>
+    <tspan x="110" dy="12">• 機械学習・AI分野の基礎学習</tspan>
+    <tspan x="110" dy="12">• データ分析・統計処理</tspan>
+    <tspan x="110" dy="12">• 他教科（数学、物理、化学）への応用</tspan>
+  </text>
+
+  <text x="100" y="815" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">競技・コンテストでの挑戦：</tspan>
+    <tspan x="110" dy="12">• JOI本選出場・上位入賞</tspan>
+    <tspan x="110" dy="12">• IOI日本代表選考への挑戦</tspan>
+    <tspan x="110" dy="12">• 高校生プログラミングコンテスト</tspan>
+    <tspan x="110" dy="12">• ハッカソン・アイデア系コンテスト</tspan>
+  </text>
+
+  <text x="100" y="865" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">リーダーシップ・指導：</tspan>
+    <tspan x="110" dy="12">• 後輩の指導・メンタリング</tspan>
+    <tspan x="110" dy="12">• 学校プログラミング部・クラブ運営</tspan>
+    <tspan x="110" dy="12">• 勉強会・イベント企画・主催</tspan>
+    <tspan x="110" dy="12">• 技術系ブログ・YouTube での発信</tspan>
+  </text>
+
+  <text x="100" y="915" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">将来準備・キャリア形成：</tspan>
+    <tspan x="110" dy="12">• 大学・学部選択の戦略的判断</tspan>
+    <tspan x="110" dy="12">• インターンシップ・企業見学</tspan>
+    <tspan x="110" dy="12">• 海外大学・留学情報の収集</tspan>
+    <tspan x="110" dy="12">• 技術系キャリアパスの具体化</tspan>
+  </text>
+
+  <text x="90" y="965" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🌟 専門性と応用力の飛躍的向上
+  </text>
+
+  <!-- High School Learning -->
+  <rect x="480" y="665" width="380" height="320" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="490" y="685" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📚 高度な学習・実践活動
+  </text>
+  <text x="500" y="705" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">競技プログラミング強化：</tspan>
+    <tspan x="510" dy="12">• 「プログラミングコンテスト攻略のための...」精読</tspan>
+    <tspan x="510" dy="12">• AtCoder Problems での体系的演習</tspan>
+    <tspan x="510" dy="12">• Codeforces・TopCoder への挑戦</tspan>
+    <tspan x="510" dy="12">• チーム戦・ICPC スタイルの練習</tspan>
+  </text>
+  
+  <text x="500" y="755" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">プログラミング応用：</tspan>
+    <tspan x="510" dy="12">• Webアプリケーション・API開発</tspan>
+    <tspan x="510" dy="12">• データベース・クラウドサービス活用</tspan>
+    <tspan x="510" dy="12">• ゲーム開発・グラフィック処理</tspan>
+    <tspan x="510" dy="12">• IoT・ハードウェア連携プロジェクト</tspan>
+  </text>
+
+  <text x="500" y="805" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">学際的・社会応用：</tspan>
+    <tspan x="510" dy="12">• 科学・研究での計算・シミュレーション</tspan>
+    <tspan x="510" dy="12">• 社会課題解決のためのシステム開発</tspan>
+    <tspan x="510" dy="12">• 文化祭・学校行事での技術活用</tspan>
+    <tspan x="510" dy="12">• 地域・ボランティア活動での技術貢献</tspan>
+  </text>
+
+  <text x="500" y="855" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">国際的・先進的学習：</tspan>
+    <tspan x="510" dy="12">• 英語技術文書・論文の読解</tspan>
+    <tspan x="510" dy="12">• 海外オンライン教育プラットフォーム活用</tspan>
+    <tspan x="510" dy="12">• 国際的コミュニティでの交流・発信</tspan>
+    <tspan x="510" dy="12">• 最新技術動向（AI、ブロックチェーン等）学習</tspan>
+  </text>
+
+  <text x="500" y="905" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">発信・指導活動：</tspan>
+    <tspan x="510" dy="12">• 技術カンファレンス・LT での発表</tspan>
+    <tspan x="510" dy="12">• オープンソースプロジェクトへの貢献</tspan>
+    <tspan x="510" dy="12">• 中学生向け教材・コンテンツ作成</tspan>
+    <tspan x="510" dy="12">• プログラミング教育ボランティア</tspan>
+  </text>
+
+  <text x="490" y="965" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🎯 多領域・実践的な高度学習
+  </text>
+
+  <!-- High School Preparation -->
+  <rect x="880" y="665" width="440" height="320" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="890" y="685" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    💡 大学・将来への戦略的準備
+  </text>
+  <text x="900" y="705" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">大学受験戦略：</tspan>
+    <tspan x="910" dy="12">• 情報系学部・学科の詳細研究</tspan>
+    <tspan x="910" dy="12">• 推薦入試・AO入試での実績アピール</tspan>
+    <tspan x="910" dy="12">• 面接・プレゼンテーション技術の向上</tspan>
+    <tspan x="910" dy="12">• ポートフォリオ・作品集の充実</tspan>
+  </text>
+  
+  <text x="900" y="755" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">海外大学・国際的機会：</tspan>
+    <tspan x="910" dy="12">• TOEFL・IELTS等の英語能力向上</tspan>
+    <tspan x="910" dy="12">• SAT・ACT等の標準テスト対策</tspan>
+    <tspan x="910" dy="12">• MIT・Stanford等への出願準備</tspan>
+    <tspan x="910" dy="12">• 国際的プログラミング実績の蓄積</tspan>
+  </text>
+
+  <text x="900" y="805" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">産業界・実務との接続：</tspan>
+    <tspan x="910" dy="12">• IT企業でのインターンシップ体験</tspan>
+    <tspan x="910" dy="12">• 起業・スタートアップへの関心・挑戦</tspan>
+    <tspan x="910" dy="12">• 業界人・先輩エンジニアとのネットワーク</tspan>
+    <tspan x="910" dy="12">• 実社会課題への技術的アプローチ体験</tspan>
+  </text>
+
+  <text x="900" y="855" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">研究・学術分野への準備：</tspan>
+    <tspan x="910" dy="12">• 大学研究室訪問・共同研究参加</tspan>
+    <tspan x="910" dy="12">• 学会・研究会への参加・発表</tspan>
+    <tspan x="910" dy="12">• 学術論文の読解・執筆技術</tspan>
+    <tspan x="910" dy="12">• 研究テーマ・興味分野の明確化</tspan>
+  </text>
+
+  <text x="900" y="905" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">社会貢献・リーダーシップ：</tspan>
+    <tspan x="910" dy="12">• 教育格差解消・プログラミング普及</tspan>
+    <tspan x="910" dy="12">• 地域・社会課題への技術的貢献</tspan>
+    <tspan x="910" dy="12">• 次世代育成・指導者としての役割</tspan>
+    <tspan x="910" dy="12">• 技術の社会的責任・倫理への意識</tspan>
+  </text>
+
+  <text x="890" y="965" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🚀 社会・世界への影響力拡大準備
+  </text>
+
+  <!-- University Stage -->
+  <rect x="50" y="1020" width="1300" height="380" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="700" y="1045" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🎓 大学生段階（18-22歳）：創造的専門化期
+  </text>
+
+  <!-- University Specialization -->
+  <rect x="80" y="1065" width="380" height="320" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="90" y="1085" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🎯 専門化・創造的発展
+  </text>
+  <text x="100" y="1105" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">学術・研究分野：</tspan>
+    <tspan x="110" dy="12">• コンピュータサイエンスの理論的基盤</tspan>
+    <tspan x="110" dy="12">• アルゴリズム・計算理論の研究</tspan>
+    <tspan x="110" dy="12">• AI・機械学習の最新技術研究</tspan>
+    <tspan x="110" dy="12">• 学会発表・論文執筆・特許出願</tspan>
+    <tspan x="110" dy="12">• 修士・博士課程での深い専門研究</tspan>
+  </text>
+  
+  <text x="100" y="1165" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">実践・開発分野：</tspan>
+    <tspan x="110" dy="12">• 大規模ソフトウェア開発プロジェクト</tspan>
+    <tspan x="110" dy="12">• スタートアップ創業・技術的リーダーシップ</tspan>
+    <tspan x="110" dy="12">• オープンソースプロジェクトのメンテナ</tspan>
+    <tspan x="110" dy="12">• 企業でのインターンシップ・共同研究</tspan>
+  </text>
+
+  <text x="100" y="1215" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">国際的・グローバル活動：</tspan>
+    <tspan x="110" dy="12">• ICPC世界大会での活躍・上位入賞</tspan>
+    <tspan x="110" dy="12">• 海外研究機関での研修・交流</tspan>
+    <tspan x="110" dy="12">• 国際会議・カンファレンスでの発表</tspan>
+    <tspan x="110" dy="12">• グローバル企業での活躍・就職</tspan>
+  </text>
+
+  <text x="100" y="1265" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">社会・教育への貢献：</tspan>
+    <tspan x="110" dy="12">• 次世代教育プログラム・教材開発</tspan>
+    <tspan x="110" dy="12">• 技術の民主化・教育格差解消</tspan>
+    <tspan x="110" dy="12">• 社会課題解決のための技術応用</tspan>
+    <tspan x="110" dy="12">• 競技プログラミング文化の発展・普及</tspan>
+  </text>
+
+  <text x="100" y="1315" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">イノベーション・価値創造：</tspan>
+    <tspan x="110" dy="12">• 新しいアルゴリズム・手法の開発</tspan>
+    <tspan x="110" dy="12">• 産業・社会に変革をもたらす技術</tspan>
+    <tspan x="110" dy="12">• 持続可能な社会への技術的貢献</tspan>
+    <tspan x="110" dy="12">• 人類の知識・文化への貢献</tspan>
+  </text>
+
+  <text x="90" y="1365" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🌟 社会変革・価値創造の実現
+  </text>
+
+  <!-- University Activities -->
+  <rect x="480" y="1065" width="380" height="320" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="490" y="1085" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    📚 高度・専門的学習活動
+  </text>
+  <text x="500" y="1105" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="500" dy="0">学術・理論研究：</tspan>
+    <tspan x="510" dy="12">• 最新学術論文・研究動向の調査</tspan>
+    <tspan x="510" dy="12">• 研究室での専門研究プロジェクト</tspan>
+    <tspan x="510" dy="12">• 国際会議・学会での研究発表</tspan>
+    <tspan x="510" dy="12">• 共同研究・産学連携プロジェクト</tspan>
+  </text>
+  
+  <text x="500" y="1155" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="500" dy="0">実践・応用開発：</tspan>
+    <tspan x="510" dy="12">• 大規模システム・アプリケーション開発</tspan>
+    <tspan x="510" dy="12">• クラウド・分散システムの構築</tspan>
+    <tspan x="510" dy="12">• AI・データサイエンス実践プロジェクト</tspan>
+    <tspan x="510" dy="12">• ハッカソン・アイデアコンテスト主催</tspan>
+  </text>
+
+  <text x="500" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="500" dy="0">コミュニティ・教育活動：</tspan>
+    <tspan x="510" dy="12">• 競技プログラミング部・サークル指導</tspan>
+    <tspan x="510" dy="12">• 中高生向けプログラミング教室運営</tspan>
+    <tspan x="510" dy="12">• オンライン教育コンテンツ・教材作成</tspan>
+    <tspan x="510" dy="12">• 技術系YouTuber・インフルエンサー</tspan>
+  </text>
+
+  <text x="500" y="1255" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="500" dy="0">起業・ビジネス活動：</tspan>
+    <tspan x="510" dy="12">• 技術系スタートアップ創業・経営</tspan>
+    <tspan x="510" dy="12">• VC・投資家との資金調達</tspan>
+    <tspan x="510" dy="12">• プロダクト開発・マーケティング</tspan>
+    <tspan x="510" dy="12">• 技術顧問・アドバイザー活動</tspan>
+  </text>
+
+  <text x="500" y="1305" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="500" dy="0">国際・社会貢献活動：</tspan>
+    <tspan x="510" dy="12">• 開発途上国での技術教育・支援</tspan>
+    <tspan x="510" dy="12">• 国際的な技術標準化・政策提言</tspan>
+    <tspan x="510" dy="12">• 持続可能な開発目標（SDGs）への貢献</tspan>
+    <tspan x="510" dy="12">• 次世代技術者育成プログラム運営</tspan>
+  </text>
+
+  <text x="490" y="1365" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🎯 社会変革・価値創造の実践
+  </text>
+
+  <!-- University Impact -->
+  <rect x="880" y="1065" width="440" height="320" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="890" y="1085" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    💡 社会・人類への長期的影響
+  </text>
+  <text x="900" y="1105" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">技術・イノベーション分野：</tspan>
+    <tspan x="910" dy="12">• 新しいアルゴリズム・計算手法の開発</tspan>
+    <tspan x="910" dy="12">• AI・量子コンピューティング等の革新</tspan>
+    <tspan x="910" dy="12">• 産業・社会システムの変革技術</tspan>
+    <tspan x="910" dy="12">• 人類の知識・技術の限界拡張</tspan>
+  </text>
+  
+  <text x="900" y="1155" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">教育・人材育成分野：</tspan>
+    <tspan x="910" dy="12">• 次世代教育システム・方法論の開発</tspan>
+    <tspan x="910" dy="12">• 世界的な技術教育の質向上</tspan>
+    <tspan x="910" dy="12">• 教育格差・デジタルデバイドの解消</tspan>
+    <tspan x="910" dy="12">• グローバル人材・リーダーの輩出</tspan>
+  </text>
+
+  <text x="900" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">経済・産業分野：</tspan>
+    <tspan x="910" dy="12">• 新産業・市場の創出・発展</tspan>
+    <tspan x="910" dy="12">• 生産性向上・効率化の実現</tspan>
+    <tspan x="910" dy="12">• 雇用創出・経済成長への貢献</tspan>
+    <tspan x="910" dy="12">• グローバル競争力の向上</tspan>
+  </text>
+
+  <text x="900" y="1255" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">社会・環境分野：</tspan>
+    <tspan x="910" dy="12">• 社会課題解決のための技術応用</tspan>
+    <tspan x="910" dy="12">• 持続可能な社会・環境の実現</tspan>
+    <tspan x="910" dy="12">• 医療・福祉・生活品質の向上</tspan>
+    <tspan x="910" dy="12">• 安全・安心な社会システムの構築</tspan>
+  </text>
+
+  <text x="900" y="1305" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">文化・価値創造分野：</tspan>
+    <tspan x="910" dy="12">• 技術と人文・芸術の融合</tspan>
+    <tspan x="910" dy="12">• 新しい文化・価値観の創造</tspan>
+    <tspan x="910" dy="12">• 人類の知識・文化遺産への貢献</tspan>
+    <tspan x="910" dy="12">• 未来社会のビジョン・実現</tspan>
+  </text>
+
+  <text x="890" y="1365" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    🚀 人類・地球全体への価値創造
+  </text>
+
+  <!-- Success Message -->
+  <rect x="50" y="1420" width="1300" height="160" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="1445" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🎉 長期的学習発展による社会変革リーダーの育成！
+  </text>
+  <text x="700" y="1465" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">
+    中学での基礎から大学での専門化まで、段階的成長により社会に変革をもたらす人材へ
+  </text>
+  <text x="700" y="1485" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0369a1">
+    個人の成長が社会・人類全体の発展に寄与する長期的価値創造システムの実現
+  </text>
+
+  <rect x="80" y="1505" width="1240" height="65" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="90" y="1525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    💪 学習発展ロードマップの最終メッセージ
+  </text>
+  <text x="100" y="1545" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">• 段階的成長：各時期での最適な学習により、基礎から専門化まで確実に発展する</tspan>
+    <tspan x="100" dy="12">• 長期的視野：今日の学習が将来の社会貢献・価値創造の基盤となることを意識する</tspan>
+    <tspan x="100" dy="12">• 社会的使命：個人の成長を社会・人類全体の発展に活かす責任と使命を持つ</tspan>
+  </text>
+</svg>

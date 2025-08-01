@@ -1,0 +1,233 @@
+<svg viewBox="0 0 1400 1200" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-13：身につけた力と未来への道筋</title>
+  <desc>競技プログラミング学習で獲得した能力と将来の無限の可能性への展開</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1200" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    身につけた力と未来への道筋
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    競技プログラミングで培った能力が切り拓く無限の可能性
+  </text>
+
+  <!-- Central Hub -->
+  <circle cx="700" cy="300" r="80" fill="#dbeafe" stroke="#3b82f6" stroke-width="3"/>
+  <text x="700" y="290" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🌟 中学生の今
+  </text>
+  <text x="700" y="310" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">
+    競技プログラミング
+  </text>
+  <text x="700" y="325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">
+    との出会い
+  </text>
+
+  <!-- Core Skills Gained -->
+  <rect x="100" y="100" width="500" height="120" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="350" y="125" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    💪 身につけた核となる力
+  </text>
+  <text x="120" y="150" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="120" dy="0">🧠 <tspan font-weight="bold">問題解決力</tspan>：複雑な課題を分析・分解し、段階的に解決する思考力</tspan>
+    <tspan x="120" dy="15">⚡ <tspan font-weight="bold">論理的思考力</tspan>：筋道立てて考え、効率的な解法を見つける能力</tspan>
+    <tspan x="120" dy="15">🎯 <tspan font-weight="bold">継続学習力</tspan>：新しいことを学び続け、挫折しない精神力</tspan>
+    <tspan x="120" dy="15">🤝 <tspan font-weight="bold">コミュニケーション力</tspan>：技術を分かりやすく説明し、仲間と協働する力</tspan>
+    <tspan x="120" dy="15">🚀 <tspan font-weight="bold">挑戦精神</tspan>：困難に立ち向かい、成長し続ける意欲と勇気</tspan>
+  </text>
+
+  <!-- Future Paths -->
+  <!-- Education Path -->
+  <rect x="50" y="450" width="250" height="200" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="175" y="475" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🎓 教育
+  </text>
+  <text x="70" y="495" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="70" dy="0">高校受験・進学：</tspan>
+    <tspan x="80" dy="12">• 情報科目での圧倒的優位性</tspan>
+    <tspan x="80" dy="12">• 推薦入試での実績アピール</tspan>
+  </text>
+  <text x="70" y="535" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="70" dy="0">大学受験・進学：</tspan>
+    <tspan x="80" dy="12">• 情報系学部への優先的合格</tspan>
+    <tspan x="80" dy="12">• 海外大学への挑戦機会</tspan>
+  </text>
+  <text x="70" y="575" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="70" dy="0">生涯学習：</tspan>
+    <tspan x="80" dy="12">• 技術変化への迅速な適応</tspan>
+    <tspan x="80" dy="12">• 新分野開拓への挑戦</tspan>
+  </text>
+  <text x="70" y="615" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="70" dy="0">教育者・指導者：</tspan>
+    <tspan x="80" dy="12">• 次世代の技術者育成</tspan>
+    <tspan x="80" dy="12">• 教育イノベーションの推進</tspan>
+  </text>
+
+  <!-- Career Path -->
+  <rect x="320" y="450" width="250" height="200" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="445" y="475" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    💼 キャリア
+  </text>
+  <text x="340" y="495" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="340" dy="0">IT企業就職：</tspan>
+    <tspan x="350" dy="12">• GAFAM等トップ企業への就職</tspan>
+    <tspan x="350" dy="12">• 高待遇・やりがいある仕事</tspan>
+  </text>
+  <text x="340" y="535" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="340" dy="0">起業・創業：</tspan>
+    <tspan x="350" dy="12">• 技術系スタートアップ創業</tspan>
+    <tspan x="350" dy="12">• 社会課題解決事業の立ち上げ</tspan>
+  </text>
+  <text x="340" y="575" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="340" dy="0">技術顧問・アドバイザー：</tspan>
+    <tspan x="350" dy="12">• 専門知識による価値提供</tspan>
+    <tspan x="350" dy="12">• 複数企業での影響力発揮</tspan>
+  </text>
+  <text x="340" y="615" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="340" dy="0">グローバル活躍：</tspan>
+    <tspan x="350" dy="12">• 国際的プロジェクトのリード</tspan>
+    <tspan x="350" dy="12">• 世界を舞台にした価値創造</tspan>
+  </t>
+
+  <!-- Research & Innovation Path -->
+  <rect x="590" y="450" width="250" height="200" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="715" y="475" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🔬 研究・創造
+  </text>
+  <text x="610" y="495" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="610" dy="0">新技術開発：</tspan>
+    <tspan x="620" dy="12">• 革新的アルゴリズムの発明</tspan>
+    <tspan x="620" dy="12">• AI・量子計算等の最前線研究</tspan>
+  </text>
+  <text x="610" y="535" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="610" dy="0">学術研究：</tspan>
+    <tspan x="620" dy="12">• 大学・研究機関での研究</tspan>
+    <tspan x="620" dy="12">• 国際会議での研究発表</tspan>
+  </text>
+  <text x="610" y="575" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="610" dy="0">特許・発明：</tspan>
+    <tspan x="620" dy="12">• 新しい手法・システムの開発</tspan>
+    <tspan x="620" dy="12">• 知的財産による価値創造</tspan>
+  </text>
+  <text x="610" y="615" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="610" dy="0">イノベーション：</tspan>
+    <tspan x="620" dy="12">• 産業・社会を変革する技術</tspan>
+    <tspan x="620" dy="12">• 人類の知識・文化への貢献</tspan>
+  </text>
+
+  <!-- Social Contribution Path -->
+  <rect x="860" y="450" width="250" height="200" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="985" y="475" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#047857">
+    🌍 社会貢献
+  </text>
+  <text x="880" y="495" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="880" dy="0">社会課題解決：</tspan>
+    <tspan x="890" dy="12">• 技術による環境・貧困問題解決</tspan>
+    <tspan x="890" dy="12">• 医療・福祉分野での技術応用</tspan>
+  </text>
+  <text x="880" y="535" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="880" dy="0">教育格差解消：</tspan>
+    <tspan x="890" dy="12">• プログラミング教育の普及</tspan>
+    <tspan x="890" dy="12">• デジタルデバイドの解消</tspan>
+  </text>
+  <text x="880" y="575" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="880" dy="0">次世代育成：</tspan>
+    <tspan x="890" dy="12">• 若い世代の技術者支援</tspan>
+    <tspan x="890" dy="12">• メンタリング・指導活動</tspan>
+  </text>
+  <text x="880" y="615" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="880" dy="0">持続可能な未来：</tspan>
+    <tspan x="890" dy="12">• 地球環境・持続可能性への貢献</tspan>
+    <tspan x="890" dy="12">• より良い世界の実現</tspan>
+  </text>
+
+  <!-- Connection Lines -->
+  <line x1="620" y1="300" x2="175" y2="450" stroke="#f59e0b" stroke-width="3" fill="none"/>
+  <line x1="650" y1="340" x2="445" y2="450" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+  <line x1="700" y1="380" x2="715" y2="450" stroke="#ef4444" stroke-width="3" fill="none"/>
+  <line x1="750" y1="340" x2="985" y2="450" stroke="#10b981" stroke-width="3" fill="none"/>
+
+  <!-- Central Message -->
+  <rect x="400" y="680" width="600" height="100" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="705" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🎉 無限の可能性への扉が開かれている！
+  </text>
+  <text x="420" y="730" font-family="Arial, sans-serif" font-size="12" fill="#0369a1">
+    <tspan x="420" dy="0">君がこの本で身につけた<tspan font-weight="bold">「学び続ける力」</tspan>と<tspan font-weight="bold">「挑戦する勇気」</tspan>があれば、</tspan>
+    <tspan x="420" dy="15">どの道を選んでも必ず成長していける。</tspan>
+  </text>
+  <text x="420" y="760" font-family="Arial, sans-serif" font-size="11" fill="#0369a1">
+    技術で世界を変える力は、君の手の中にある。一歩ずつ、着実に、そして楽しみながら、
+    君だけの未来を創造していこう。
+  </text>
+
+  <!-- Key Success Factors -->
+  <rect x="50" y="800" width="1300" height="180" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="825" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🔑 成功への重要な要素
+  </text>
+
+  <rect x="80" y="845" width="300" height="120" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="90" y="865" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    💪 継続的な成長
+  </text>
+  <text x="100" y="885" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="100" dy="0">• 毎日の小さな積み重ね</tspan>
+    <tspan x="100" dy="12">• 新しい技術への挑戦</tspan>
+    <tspan x="100" dy="12">• 失敗から学ぶ姿勢</tspan>
+    <tspan x="100" dy="12">• 競技プログラミングの継続</tspan>
+    <tspan x="100" dy="12">• 常に好奇心を持ち続ける</tspan>
+  </text>
+
+  <rect x="400" y="845" width="300" height="120" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="410" y="865" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    🤝 コミュニティとの関わり
+  </text>
+  <text x="420" y="885" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="420" dy="0">• 仲間との切磋琢磨</tspan>
+    <tspan x="420" dy="12">• 知識・経験の共有</tspan>
+    <tspan x="420" dy="12">• 後輩への指導・支援</tspan>
+    <tspan x="420" dy="12">• グローバルな視野</tspan>
+    <tspan x="420" dy="12">• 多様性・包摂性の尊重</tspan>
+  </text>
+
+  <rect x="720" y="845" width="300" height="120" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="730" y="865" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    🌟 社会への貢献意識
+  </text>
+  <text x="740" y="885" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="740" dy="0">• 技術による社会課題解決</tspan>
+    <tspan x="740" dy="12">• 次世代の育成・支援</tspan>
+    <tspan x="740" dy="12">• 持続可能な価値創造</tspan>
+    <tspan x="740" dy="12">• 倫理的な技術利用</tspan>
+    <tspan x="740" dy="12">• より良い未来への責任</tspan>
+  </text>
+
+  <rect x="1040" y="845" width="300" height="120" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="1050" y="865" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    🎯 長期的視点
+  </text>
+  <text x="1060" y="885" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="1060" dy="0">• 10年後・20年後を見据えた計画</tspan>
+    <tspan x="1060" dy="12">• 基礎力の重要性理解</tspan>
+    <tspan x="1060" dy="12">• 変化への柔軟な対応</tspan>
+    <tspan x="1060" dy="12">• 人生全体での価値創造</tspan>
+    <tspan x="1060" dy="12">• レガシー・影響力への意識</tspan>
+  </text>
+
+  <!-- Final Message -->
+  <rect x="200" y="1000" width="1000" height="80" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="1025" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🚀 君の新しい冒険を始めよう！
+  </text>
+  <text x="220" y="1050" font-family="Arial, sans-serif" font-size="12" fill="#15803d">
+    競技プログラミングは始まりに過ぎない。ここから広がる無限の可能性を信じて、
+  </text>
+  <text x="220" y="1065" font-family="Arial, sans-serif" font-size="12" fill="#15803d">
+    君らしい道を歩んでいってほしい。技術で世界を変える力は、君の手の中にある。
+  </text>
+</svg>

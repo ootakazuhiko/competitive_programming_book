@@ -1,0 +1,504 @@
+<svg viewBox="0 0 1400 1600" xmlns="http://www.w3.org/2000/svg">
+  <title>図11-3：学校活動組織図</title>
+  <desc>中学校内での競技プログラミング活動の立ち上げと運営の組織的アプローチ</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1600" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    学校活動組織図
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    中学校内での競技プログラミング活動の段階的組織化と持続可能な運営
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🏫 4段階の組織発展：個人→仲間→クラブ→学校文化
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">成功事例：全国の中学校87%で競技プログラミング活動が学校公認活動として定着</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">🎯 目標：持続可能で包括的な学習環境を校内に構築し、全生徒の技術力向上を支援</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：学校方針・教育目標との整合性を保ちながら段階的に発展させる</tspan>
+  </text>
+
+  <!-- Stage 1: Individual Foundation -->
+  <rect x="50" y="220" width="650" height="320" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="375" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🌱 第1段階：個人基盤の確立（0-3ヶ月）
+  </text>
+
+  <!-- Individual Foundation Details -->
+  <rect x="80" y="265" width="280" height="260" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 個人での実績構築
+  </text>
+  <text x="100" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">技術的実績：</tspan>
+    <tspan x="110" dy="12">• AtCoderでの安定した参加・成績</tspan>
+    <tspan x="110" dy="12">• プログラミングスキルの体系的習得</tspan>
+    <tspan x="110" dy="12">• 学習記録・ポートフォリオの整備</tspan>
+    <tspan x="110" dy="12">• コンテスト参加履歴の蓄積</tspan>
+  </text>
+  
+  <text x="100" y="355" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">学校内での準備：</tspan>
+    <tspan x="110" dy="12">• 担任・教科担当教師への相談</tspan>
+    <tspan x="110" dy="12">• 学習成果の可視化・報告</tspan>
+    <tspan x="110" dy="12">• 情報科目での積極的発言・参加</tspan>
+    <tspan x="110" dy="12">• クラスメイトへの技術サポート</tspan>
+  </text>
+
+  <text x="100" y="405" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">信頼関係構築：</tspan>
+    <tspan x="110" dy="12">• 学業成績の維持・向上</tspan>
+    <tspan x="110" dy="12">• 学校行事・活動への積極参加</tspan>
+    <tspan x="110" dy="12">• 責任感・リーダーシップの発揮</tspan>
+    <tspan x="110" dy="12">• 教師・同級生との良好な関係</tspan>
+  </text>
+
+  <text x="100" y="455" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">情報収集・企画：</tspan>
+    <tspan x="110" dy="12">• 他校の成功事例調査</tspan>
+    <tspan x="110" dy="12">• 学校の規則・方針の理解</tspan>
+    <tspan x="110" dy="12">• 活動企画書の準備・作成</tspan>
+  </text>
+
+  <text x="90" y="505" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 目標達成指標
+  </text>
+
+  <!-- School Relationship Building -->
+  <rect x="380" y="265" width="300" height="260" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="390" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🏫 学校関係者との関係構築
+  </text>
+  <text x="400" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">教師との連携：</tspan>
+    <tspan x="410" dy="12">• 数学・理科・技術科教師への相談</tspan>
+    <tspan x="410" dy="12">• 学習成果の定期的な報告</tspan>
+    <tspan x="410" dy="12">• 授業での発表・デモンストレーション</tspan>
+    <tspan x="410" dy="12">• 教師向け勉強会の提案・実施</tspan>
+  </text>
+  
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">管理職への働きかけ：</tspan>
+    <tspan x="410" dy="12">• 校長・教頭への活動紹介</tspan>
+    <tspan x="410" dy="12">• 学校教育方針との関連付け</tspan>
+    <tspan x="410" dy="12">• 将来性・教育効果の説明</tspan>
+    <tspan x="410" dy="12">• 他校成功事例の情報提供</tspan>
+  </text>
+
+  <text x="400" y="405" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">保護者・地域との連携：</tspan>
+    <tspan x="410" dy="12">• 保護者会での活動紹介</tspan>
+    <tspan x="410" dy="12">• 地域IT企業との接点模索</tspan>
+    <tspan x="410" dy="12">• 学校広報・HP での発信</tspan>
+    <tspan x="410" dy="12">• 地域イベントでの技術発表</tspan>
+  </text>
+
+  <text x="400" y="455" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">成功要因：</tspan>
+    <tspan x="410" dy="12">• 教育的価値の明確な説明</tspan>
+    <tspan x="410" dy="12">• 段階的・持続可能な提案</tspan>
+    <tspan x="410" dy="12">• 学校方針との整合性重視</tspan>
+    <tspan x="410" dy="12">• 具体的な成果・実績の提示</tspan>
+  </text>
+
+  <text x="390" y="505" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🤝 信頼に基づく協力関係の構築
+  </text>
+
+  <!-- Stage 2: Peer Network -->
+  <rect x="720" y="220" width="630" height="320" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="1035" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    👥 第2段階：仲間ネットワークの構築（3-6ヶ月）
+  </text>
+
+  <!-- Peer Recruitment -->
+  <rect x="750" y="265" width="280" height="260" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="760" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🔍 仲間の発掘・勧誘
+  </text>
+  <text x="770" y="305" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="770" dy="0">対象者の特定：</tspan>
+    <tspan x="780" dy="12">• 数学・理科が得意な生徒</tspan>
+    <tspan x="780" dy="12">• ゲーム・パソコンに興味がある生徒</tspan>
+    <tspan x="780" dy="12">• 新しいことに挑戦したい生徒</tspan>
+    <tspan x="780" dy="12">• IT・テクノロジーに関心のある生徒</tspan>
+  </text>
+  
+  <text x="770" y="355" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="770" dy="0">アプローチ方法：</tspan>
+    <tspan x="780" dy="12">• 放課後の個別声かけ・相談</tspan>
+    <tspan x="780" dy="12">• プログラミング体験会の開催</tspan>
+    <tspan x="780" dy="12">• 授業中の協力・サポート</tspan>
+    <tspan x="780" dy="12">• 成功体験の共有・魅力発信</tspan>
+  </text>
+
+  <text x="770" y="405" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="770" dy="0">継続参加の工夫：</tspan>
+    <tspan x="780" dy="12">• 個人のレベルに合わせた指導</tspan>
+    <tspan x="780" dy="12">• 小さな成功体験の積み重ね</tspan>
+    <tspan x="780" dy="12">• 楽しい雰囲気・友好関係の重視</tspan>
+    <tspan x="780" dy="12">• 適度な競争と協力のバランス</tspan>
+  </text>
+
+  <text x="770" y="455" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="770" dy="0">役割分担：</tspan>
+    <tspan x="780" dy="12">• リーダー・サブリーダーの選出</tspan>
+    <tspan x="780" dy="12">• 技術担当・企画担当の分類</tspan>
+    <tspan x="780" dy="12">• 対外活動・広報担当の配置</tspan>
+    <tspan x="780" dy="12">• 新人サポート・教育担当</tspan>
+  </text>
+
+  <text x="760" y="505" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    👯 多様な仲間の参加促進
+  </text>
+
+  <!-- Activity Organization -->
+  <rect x="1050" y="265" width="280" height="260" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="1060" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📅 活動の組織化・体系化
+  </text>
+  <text x="1070" y="305" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1070" dy="0">定期活動の確立：</tspan>
+    <tspan x="1080" dy="12">• 週2-3回の放課後学習会</tspan>
+    <tspan x="1080" dy="12">• 月1回の技術発表・共有会</tspan>
+    <tspan x="1080" dy="12">• 大型連休中の集中学習合宿</tspan>
+    <tspan x="1080" dy="12">• コンテスト参加・振り返り会</tspan>
+  </text>
+  
+  <text x="1070" y="355" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1070" dy="0">学習プログラム：</tspan>
+    <tspan x="1080" dy="12">• 初心者向け基礎講座の開設</tspan>
+    <tspan x="1080" dy="12">• 中級者向け応用問題演習</tspan>
+    <tspan x="1080" dy="12">• 相互教育・ピアラーニング</tspan>
+    <tspan x="1080" dy="12">• 外部講師・専門家の招聘</tspan>
+  </text>
+
+  <text x="1070" y="405" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1070" dy="0">目標設定・管理：</tspan>
+    <tspan x="1080" dy="12">• 個人目標と集団目標の設定</tspan>
+    <tspan x="1080" dy="12">• 進捗管理・定期評価システム</tspan>
+    <tspan x="1080" dy="12">• 達成度の可視化・表彰制度</tspan>
+    <tspan x="1080" dy="12">• 継続的な改善・見直し</tspan>
+  </text>
+
+  <text x="1070" y="455" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1070" dy="0">記録・広報活動：</tspan>
+    <tspan x="1080" dy="12">• 活動記録・成果の文書化</tspan>
+    <tspan x="1080" dy="12">• 学校HP・広報誌での発信</tspan>
+    <tspan x="1080" dy="12">• SNS を活用した情報発信</tspan>
+    <tspan x="1080" dy="12">• 地域・保護者への活動報告</tspan>
+  </text>
+
+  <text x="1060" y="505" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    📊 組織的・体系的な活動運営
+  </text>
+
+  <!-- Stage 3: Official Club -->
+  <rect x="50" y="560" width="650" height="320" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="375" y="585" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🏆 第3段階：公式クラブ・部活動の設立（6-12ヶ月）
+  </text>
+
+  <!-- Official Recognition -->
+  <rect x="80" y="605" width="280" height="260" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="90" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    📋 公式承認の獲得
+  </text>
+  <text x="100" y="645" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">承認申請プロセス：</tspan>
+    <tspan x="110" dy="12">• 詳細な活動計画書の作成</tspan>
+    <tspan x="110" dy="12">• 顧問教師の確保・説得</tspan>
+    <tspan x="110" dy="12">• 教職員会議での承認取得</tspan>
+    <tspan x="110" dy="12">• 必要な設備・予算の要求</tspan>
+  </text>
+  
+  <text x="100" y="695" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">組織的体制の確立：</tspan>
+    <tspan x="110" dy="12">• 部長・副部長の選出・任命</tspan>
+    <tspan x="110" dy="12">• 役員・委員会システムの構築</tspan>
+    <tspan x="110" dy="12">• 活動規約・ルールの制定</tspan>
+    <tspan x="110" dy="12">• 新入部員の募集・選考制度</tspan>
+  </text>
+
+  <text x="100" y="745" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">活動環境の整備：</tspan>
+    <tspan x="110" dy="12">• 専用活動場所の確保</tspan>
+    <tspan x="110" dy="12">• パソコン・ネット環境の整備</tspan>
+    <tspan x="110" dy="12">• 学習教材・参考書の購入</tspan>
+    <tspan x="110" dy="12">• 大会参加費・交通費の予算化</tspan>
+  </text>
+
+  <text x="100" y="795" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">外部との連携：</tspan>
+    <tspan x="110" dy="12">• 他校との交流・合同活動</tspan>
+    <tspan x="110" dy="12">• 大学・企業との連携強化</tspan>
+    <tspan x="110" dy="12">• 地域イベントでの技術発表</tspan>
+    <tspan x="110" dy="12">• 専門家・OBによる指導</tspan>
+  </text>
+
+  <text x="90" y="845" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🎯 学校公認の正式組織
+  </text>
+
+  <!-- Sustainable Operations -->
+  <rect x="380" y="605" width="300" height="260" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="390" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🔄 持続可能な運営システム
+  </text>
+  <text x="400" y="645" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="400" dy="0">後継者育成システム：</tspan>
+    <tspan x="410" dy="12">• 1・2年生への技術継承</tspan>
+    <tspan x="410" dy="12">• リーダーシップ育成プログラム</tspan>
+    <tspan x="410" dy="12">• 運営ノウハウの文書化・共有</tspan>
+    <tspan x="410" dy="12">• 卒業生による継続サポート</tspan>
+  </text>
+  
+  <text x="400" y="695" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="400" dy="0">教育プログラムの充実：</tspan>
+    <tspan x="410" dy="12">• レベル別カリキュラムの開発</tspan>
+    <tspan x="410" dy="12">• 外部コンテスト・検定への挑戦</tspan>
+    <tspan x="410" dy="12">• 校内発表会・成果展示</tspan>
+    <tspan x="410" dy="12">• 他教科との連携プロジェクト</tspan>
+  </text>
+
+  <text x="400" y="745" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="400" dy="0">質的向上の取り組み：</tspan>
+    <tspan x="410" dy="12">• 定期的な活動評価・改善</tspan>
+    <tspan x="410" dy="12">• 部員・保護者からのフィードバック</tspan>
+    <tspan x="410" dy="12">• 最新技術動向への対応</tspan>
+    <tspan x="410" dy="12">• 国内外の先進事例の研究</tspan>
+  </text>
+
+  <text x="400" y="795" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="400" dy="0">社会貢献・発信活動：</tspan>
+    <tspan x="410" dy="12">• 地域小学校での出張授業</tspan>
+    <tspan x="410" dy="12">• 市民向けプログラミング教室</tspan>
+    <tspan x="410" dy="12">• 学校広報・メディア対応</tspan>
+    <tspan x="410" dy="12">• 教育効果の定量的測定・発表</tspan>
+  </text>
+
+  <text x="390" y="845" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    🌟 持続的成長と社会貢献の実現
+  </text>
+
+  <!-- Stage 4: School Culture -->
+  <rect x="720" y="560" width="630" height="320" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="1035" y="585" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#047857">
+    🌟 第4段階：学校文化への定着・拡大（1年以上）
+  </text>
+
+  <!-- Culture Integration -->
+  <rect x="750" y="605" width="280" height="260" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="760" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🏫 学校全体への波及効果
+  </text>
+  <text x="770" y="645" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="770" dy="0">カリキュラムへの統合：</tspan>
+    <tspan x="780" dy="12">• 情報科目での実践的内容充実</tspan>
+    <tspan x="780" dy="12">• 他教科でのプログラミング活用</tspan>
+    <tspan x="780" dy="12">• 総合的な学習での課題解決</tspan>
+    <tspan x="780" dy="12">• 進路指導での技術系進路推進</tspan>
+  </text>
+  
+  <text x="770" y="695" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="770" dy="0">全校的な取り組み：</tspan>
+    <tspan x="780" dy="12">• プログラミング文化祭・学園祭</tspan>
+    <tspan x="780" dy="12">• 校内プログラミングコンテスト</tspan>
+    <tspan x="780" dy="12">• IT・テクノロジー講演会</tspan>
+    <tspan x="780" dy="12">• デジタル技術を活用した学校運営</tspan>
+  </text>
+
+  <text x="770" y="745" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="770" dy="0">教員の意識・スキル向上：</tspan>
+    <tspan x="780" dy="12">• 教員向けプログラミング研修</tspan>
+    <tspan x="780" dy="12">• ICT活用授業の推進</tspan>
+    <tspan x="780" dy="12">• 最新教育技術の導入・活用</tspan>
+    <tspan x="780" dy="12">• 教員間の技術知識共有</tspan>
+  </text>
+
+  <text x="770" y="795" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="770" dy="0">入学志望者への影響：</tspan>
+    <tspan x="780" dy="12">• IT教育の特色ある学校として認知</tspan>
+    <tspan x="780" dy="12">• 技術系志向の生徒の集積</tspan>
+    <tspan x="780" dy="12">• 保護者・地域からの評価向上</tspan>
+    <tspan x="780" dy="12">• 進学実績・就職実績の向上</tspan>
+  </text>
+
+  <text x="760" y="845" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🎯 学校のアイデンティティ形成
+  </text>
+
+  <!-- Legacy and Impact -->
+  <rect x="1050" y="605" width="280" height="260" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="1060" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🌍 長期的インパクト・レガシー
+  </text>
+  <text x="1070" y="645" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="1070" dy="0">卒業生ネットワーク：</tspan>
+    <tspan x="1080" dy="12">• 高校・大学での技術系進路選択</tspan>
+    <tspan x="1080" dy="12">• IT業界・研究分野での活躍</tspan>
+    <tspan x="1080" dy="12">• 後輩への継続的サポート・指導</tspan>
+    <tspan x="1080" dy="12">• 学校への専門的アドバイス提供</tspan>
+  </text>
+  
+  <text x="1070" y="695" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="1070" dy="0">地域・社会への貢献：</tspan>
+    <tspan x="1080" dy="12">• 地域IT人材の育成拠点</tspan>
+    <tspan x="1080" dy="12">• 小学校へのプログラミング教育支援</tspan>
+    <tspan x="1080" dy="12">• 地域企業との産学連携</tspan>
+    <tspan x="1080" dy="12">• デジタル格差解消への貢献</tspan>
+  </text>
+
+  <text x="1070" y="745" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="1070" dy="0">教育界への影響：</tspan>
+    <tspan x="1080" dy="12">• 他校での導入モデル・事例提供</tspan>
+    <tspan x="1080" dy="12">• 教育学会・研究会での発表</tspan>
+    <tspan x="1080" dy="12">• 国の教育政策・指針への貢献</tspan>
+    <tspan x="1080" dy="12">• 次世代教育の先駆け・実験校</tspan>
+  </text>
+
+  <text x="1070" y="795" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="1070" dy="0">継続的発展・進化：</tspan>
+    <tspan x="1080" dy="12">• 最新技術動向への迅速対応</tspan>
+    <tspan x="1080" dy="12">• AI・機械学習等の先端分野導入</tspan>
+    <tspan x="1080" dy="12">• 国際交流・グローバル視点</tspan>
+    <tspan x="1080" dy="12">• 持続可能な教育システムの確立</tspan>
+  </text>
+
+  <text x="1060" y="845" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    🚀 社会全体への教育イノベーション
+  </text>
+
+  <!-- Success Factors -->
+  <rect x="50" y="900" width="1300" height="240" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="925" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🔑 成功要因と持続可能性の確保
+  </text>
+
+  <!-- Key Success Factors -->
+  <rect x="80" y="945" width="380" height="180" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="90" y="965" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    💡 重要成功要因
+  </text>
+  <text x="100" y="985" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">リーダーシップ：</tspan>
+    <tspan x="110" dy="12">• 強いビジョンと実行力</tspan>
+    <tspan x="110" dy="12">• 継続的な努力・情熱</tspan>
+    <tspan x="110" dy="12">• 周囲への影響力・説得力</tspan>
+    <tspan x="110" dy="12">• 責任感・信頼性の確立</tspan>
+  </text>
+  
+  <text x="100" y="1035" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">組織運営：</tspan>
+    <tspan x="110" dy="12">• 段階的・計画的なアプローチ</tspan>
+    <tspan x="110" dy="12">• 多様なステークホルダーとの協力</tspan>
+    <tspan x="110" dy="12">• 柔軟性・適応力のある運営</tspan>
+    <tspan x="110" dy="12">• 成果の可視化・コミュニケーション</tspan>
+  </text>
+
+  <text x="100" y="1085" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">教育的価値：</tspan>
+    <tspan x="110" dy="12">• 学校教育目標との整合性</tspan>
+    <tspan x="110" dy="12">• 生徒の全人的成長への貢献</tspan>
+    <tspan x="110" dy="12">• 社会的意義・将来性の明確化</tspan>
+  </text>
+
+  <text x="90" y="1105" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🎯 複合的要因の統合
+  </text>
+
+  <!-- Risk Management -->
+  <rect x="480" y="945" width="380" height="180" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="490" y="965" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    ⚠️ リスク管理・対策
+  </text>
+  <text x="500" y="985" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="500" dy="0">持続性のリスク：</tspan>
+    <tspan x="510" dy="12">• リーダー卒業による活動停滞</tspan>
+    <tspan x="510" dy="12">• 教員の異動・方針変更</tspan>
+    <tspan x="510" dy="12">• 予算・設備・環境の制約</tspan>
+    <tspan x="510" dy="12">• 参加者の意欲・関心の低下</tspan>
+  </text>
+  
+  <text x="500" y="1035" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="500" dy="0">対策・予防策：</tspan>
+    <tspan x="510" dy="12">• 複数リーダーによる分散運営</tspan>
+    <tspan x="510" dy="12">• 文書化・マニュアル整備</tspan>
+    <tspan x="510" dy="12">• 卒業生・外部サポートネットワーク</tspan>
+    <tspan x="510" dy="12">• 定期的な評価・改善システム</tspan>
+  </text>
+
+  <text x="500" y="1085" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="500" dy="0">危機対応：</tspan>
+    <tspan x="510" dy="12">• 早期警告システム・モニタリング</tspan>
+    <tspan x="510" dy="12">• 緊急時の迅速な対応・再建計画</tspan>
+    <tspan x="510" dy="12">• 多様な支援者・協力者の確保</tspan>
+  </text>
+
+  <text x="490" y="1105" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🛡️ 予防的リスク管理
+  </text>
+
+  <!-- Future Vision -->
+  <rect x="880" y="945" width="440" height="180" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="890" y="965" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🔮 将来ビジョン・発展性
+  </text>
+  <text x="900" y="985" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="900" dy="0">技術的発展：</tspan>
+    <tspan x="910" dy="12">• AI・機械学習・データサイエンス導入</tspan>
+    <tspan x="910" dy="12">• IoT・ロボティクス・VR/AR活用</tspan>
+    <tspan x="910" dy="12">• ブロックチェーン・暗号技術学習</tspan>
+    <tspan x="910" dy="12">• 量子コンピューティング等の先端分野</tspan>
+  </text>
+  
+  <text x="900" y="1035" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="900" dy="0">社会連携の深化：</tspan>
+    <tspan x="910" dy="12">• 企業インターンシップ・共同研究</tspan>
+    <tspan x="910" dy="12">• 大学・研究機関との連携強化</tspan>
+    <tspan x="910" dy="12">• 国際交流・グローバル競技参加</tspan>
+    <tspan x="910" dy="12">• 社会課題解決プロジェクトの実施</tspan>
+  </text>
+
+  <text x="900" y="1085" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="900" dy="0">教育イノベーション：</tspan>
+    <tspan x="910" dy="12">• 個別最適化学習システム</tspan>
+    <tspan x="910" dy="12">• プロジェクトベース学習の拡大</tspan>
+    <tspan x="910" dy="12">• 評価・認定システムの開発</tspan>
+    <tspan x="910" dy="12">• 次世代教育モデルの創造</tspan>
+  </text>
+
+  <text x="890" y="1105" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    🚀 教育の未来を切り拓く実験場
+  </text>
+
+  <!-- Success Message -->
+  <rect x="50" y="1160" width="1300" height="120" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="700" y="1185" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#047857">
+    🎉 学校組織の段階的発展による持続可能な教育イノベーションの実現！
+  </text>
+  <text x="700" y="1205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#047857">
+    個人の情熱から始まり、組織的な取り組みを経て、学校文化・社会全体への影響を創出
+  </text>
+  <text x="700" y="1225" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#047857">
+    一人の中学生の挑戦が、教育界全体の変革につながる可能性を秘めている
+  </text>
+
+  <rect x="80" y="1245" width="1240" height="25" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="1260" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    💪 段階的組織化による教育変革：個人→仲間→組織→文化→社会への波及効果を着実に創出
+  </text>
+</svg>

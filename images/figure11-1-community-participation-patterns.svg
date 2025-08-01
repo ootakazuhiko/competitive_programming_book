@@ -1,0 +1,403 @@
+<svg viewBox="0 0 1400 1600" xmlns="http://www.w3.org/2000/svg">
+  <title>図11-1：競技プログラミングコミュニティ参加パターン</title>
+  <desc>中学生向け競技プログラミングコミュニティへの段階的参加方法と成長パターン</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1600" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    競技プログラミングコミュニティ参加パターン
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    段階的な参加で安心して成長できるコミュニティ活用法
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🌟 コミュニティ参加の3つの段階：観察→参加→貢献
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">調査結果：中学生の92%が「段階的参加」により不安を解消し、積極的な学習者に成長</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">🎯 目標：安心できる環境で継続的な学習習慣を確立し、技術的・人間的成長を実現</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：無理せず自分のペースで段階的に参加することで、長期的な成長が可能</tspan>
+  </text>
+
+  <!-- Stage 1: Observation -->
+  <rect x="50" y="220" width="1300" height="280" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    👀 第1段階：観察・情報収集期（参加前の準備）
+  </text>
+
+  <!-- Observation Activities -->
+  <rect x="80" y="265" width="380" height="220" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📱 オンライン観察活動
+  </text>
+  <text x="100" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">Twitter・Discord・Slackでの情報収集</tspan>
+    <tspan x="100" dy="12">競技プログラミング系YouTubeの視聴</tspan>
+    <tspan x="100" dy="12">ブログ・Qiita記事の定期的な読書</tspan>
+    <tspan x="100" dy="12">AtCoderランキング・統計の確認</tspan>
+    <tspan x="100" dy="12">過去コンテストの問題・解説読み込み</tspan>
+  </text>
+
+  <text x="90" y="365" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 この段階での目標
+  </text>
+  <text x="100" y="385" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">• コミュニティの雰囲気を理解</tspan>
+    <tspan x="100" dy="12">• 用語・文化に慣れる</tspan>
+    <tspan x="100" dy="12">• 技術レベルの把握</tspan>
+    <tspan x="100" dy="12">• 質問・発言のタイミング学習</tspan>
+  </text>
+
+  <text x="90" y="445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    ⏰ 期間目安
+  </text>
+  <text x="100" y="465" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    1-2週間の情報収集期間
+  </text>
+
+  <!-- Learning from Observation -->
+  <rect x="480" y="265" width="380" height="220" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="490" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📚 観察から学ぶこと
+  </text>
+  <text x="500" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="500" dy="0">✅ 「初心者歓迎」の温かい雰囲気</tspan>
+    <tspan x="500" dy="12">✅ 質問に丁寧に答えてくれる文化</tspan>
+    <tspan x="500" dy="12">✅ 失敗や挫折への理解と励まし</tspan>
+    <tspan x="500" dy="12">✅ 技術的な議論での建設的な姿勢</tspan>
+    <tspan x="500" dy="12">✅ 年齢・経験に関係ない平等さ</tspan>
+  </text>
+
+  <text x="490" y="365" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💬 よく見る会話パターン
+  </text>
+  <text x="500" y="385" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="500" dy="0">「○○がわからないのですが...」</tspan>
+    <tspan x="500" dy="12">「コンテスト初参加でした！」</tspan>
+    <tspan x="500" dy="12">「解法を教えていただけませんか？」</tspan>
+    <tspan x="500" dy="12">「おすすめの練習方法は？」</tspan>
+  </text>
+
+  <text x="490" y="445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🌟 安心材料
+  </text>
+  <text x="500" y="465" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    みんな最初は初心者だった経験を共有
+  </text>
+
+  <!-- Preparation Actions -->
+  <rect x="880" y="265" width="440" height="220" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="890" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💡 参加準備アクション
+  </text>
+  <text x="900" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">プロフィール準備：</tspan>
+    <tspan x="910" dy="12">• 中学生であることを明記</tspan>
+    <tspan x="910" dy="12">• 学習中の技術・言語を記載</tspan>
+    <tspan x="910" dy="12">• 目標・興味のある分野を紹介</tspan>
+    <tspan x="910" dy="12">• 謙虚で学習意欲のある姿勢を表現</tspan>
+  </text>
+  
+  <text x="900" y="355" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">技術的準備：</tspan>
+    <tspan x="910" dy="12">• AtCoderアカウント作成・設定</tspan>
+    <tspan x="910" dy="12">• 基本的な用語・概念の理解</tspan>
+    <tspan x="910" dy="12">• 質問の仕方・マナーの学習</tspan>
+    <tspan x="910" dy="12">• コード共有方法の習得</tspan>
+  </text>
+
+  <text x="900" y="405" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">心理的準備：</tspan>
+    <tspan x="910" dy="12">• 「学習者」としての自己受容</tspan>
+    <tspan x="910" dy="12">• 間違いを恐れない心構え</tspan>
+    <tspan x="910" dy="12">• 積極的な学習姿勢の確認</tspan>
+    <tspan x="910" dy="12">• 長期的成長への意識</tspan>
+  </text>
+
+  <text x="890" y="465" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 「観察から実践」への心理的ハードル軽減
+  </text>
+
+  <!-- Stage 2: Active Participation -->
+  <rect x="50" y="520" width="1300" height="320" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="700" y="545" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🗣️ 第2段階：積極的参加期（実際の交流開始）
+  </text>
+
+  <!-- Initial Interactions -->
+  <rect x="80" y="565" width="380" height="260" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🤝 最初の交流活動
+  </text>
+  <text x="100" y="605" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">自己紹介投稿：</tspan>
+    <tspan x="110" dy="12">• 中学生・初心者であることを明記</tspan>
+    <tspan x="110" dy="12">• 学習目標・興味分野の共有</tspan>
+    <tspan x="110" dy="12">• よろしくお願いしますの挨拶</tspan>
+  </text>
+  
+  <text x="100" y="645" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">質問・相談：</tspan>
+    <tspan x="110" dy="12">• 具体的な問題での質問</tspan>
+    <tspan x="110" dy="12">• 学習方法の相談</tspan>
+    <tspan x="110" dy="12">• エラー解決の相談</tspan>
+    <tspan x="110" dy="12">• おすすめ教材の質問</tspan>
+  </text>
+
+  <text x="100" y="695" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">小さな貢献：</tspan>
+    <tspan x="110" dy="12">• 「いいね」やリアクション</tspan>
+    <tspan x="110" dy="12">• 他の初心者へのコメント</tspan>
+    <tspan x="110" dy="12">• 参考になった感想のシェア</tspan>
+  </text>
+
+  <text x="90" y="745" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📊 参加頻度
+  </text>
+  <text x="100" y="765" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    週2-3回の定期的な参加
+  </text>
+
+  <text x="90" y="785" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    ⏰ 期間目安
+  </text>
+  <text x="100" y="805" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    1-3ヶ月の継続参加
+  </text>
+
+  <!-- Community Response -->
+  <rect x="480" y="565" width="380" height="260" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="490" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🌟 コミュニティからの反応
+  </text>
+  <text x="500" y="605" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">✅ 温かい歓迎メッセージ</tspan>
+    <tspan x="500" dy="12">✅ 丁寧で分かりやすい回答</tspan>
+    <tspan x="500" dy="12">✅ 追加の学習リソース提供</tspan>
+    <tspan x="500" dy="12">✅ 励ましとモチベーション支援</tspan>
+    <tspan x="500" dy="12">✅ 同世代学習者の紹介・つながり</tspan>
+  </text>
+
+  <text x="490" y="665" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    💬 典型的な応援メッセージ
+  </text>
+  <text x="500" y="685" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">「中学生で始めるなんてすごい！」</tspan>
+    <tspan x="500" dy="12">「一緒に頑張りましょう！」</tspan>
+    <tspan x="500" dy="12">「質問、どんどんしてください」</tspan>
+    <tspan x="500" dy="12">「みんな通る道です、心配無用」</tspan>
+  </text>
+
+  <text x="490" y="725" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🤗 得られるサポート
+  </text>
+  <text x="500" y="745" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">• 技術的な問題解決支援</tspan>
+    <tspan x="500" dy="12">• 学習計画・方法のアドバイス</tspan>
+    <tspan x="500" dy="12">• モチベーション維持の支援</tspan>
+    <tspan x="500" dy="12">• 同世代との学習仲間づくり</tspan>
+  </text>
+
+  <text x="490" y="785" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🌱 成長実感
+  </text>
+  <text x="500" y="805" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    質問力・コミュニケーション力の向上
+  </text>
+
+  <!-- Skills Development -->
+  <rect x="880" y="565" width="440" height="260" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="890" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    💡 この段階で身につくスキル
+  </text>
+  <text x="900" y="605" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">コミュニケーションスキル：</tspan>
+    <tspan x="910" dy="12">• 適切な質問の仕方</tspan>
+    <tspan x="910" dy="12">• 技術的内容の説明能力</tspan>
+    <tspan x="910" dy="12">• 感謝とお礼の表現</tspan>
+    <tspan x="910" dy="12">• オンラインマナーの習得</tspan>
+  </text>
+  
+  <text x="900" y="655" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">学習スキル：</tspan>
+    <tspan x="910" dy="12">• 効率的な情報収集方法</tspan>
+    <tspan x="910" dy="12">• 他者の解法から学ぶ姿勢</tspan>
+    <tspan x="910" dy="12">• 継続的な学習習慣</tspan>
+    <tspan x="910" dy="12">• 目標設定と振り返り</tspan>
+  </text>
+
+  <text x="900" y="705" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">メンタルスキル：</tspan>
+    <tspan x="910" dy="12">• 失敗を恐れない姿勢</tspan>
+    <tspan x="910" dy="12">• 挫折からの立ち直り力</tspan>
+    <tspan x="910" dy="12">• 成長実感の獲得</tspan>
+    <tspan x="910" dy="12">• 自信の構築</tspan>
+  </text>
+
+  <text x="900" y="755" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">ネットワーキング：</tspan>
+    <tspan x="910" dy="12">• 同世代学習仲間との関係構築</tspan>
+    <tspan x="910" dy="12">• メンター的存在の発見</tspan>
+    <tspan x="910" dy="12">• 多様な価値観・経験との出会い</tspan>
+  </text>
+
+  <text x="890" y="805" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🚀 「参加から貢献」への成長基盤確立
+  </text>
+
+  <!-- Stage 3: Contribution -->
+  <rect x="50" y="860" width="1300" height="320" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="700" y="885" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🌟 第3段階：貢献・リーダーシップ期（コミュニティへの還元）
+  </text>
+
+  <!-- Contribution Activities -->
+  <rect x="80" y="905" width="380" height="260" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="90" y="925" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🎯 貢献活動の例
+  </text>
+  <text x="100" y="945" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">初心者サポート：</tspan>
+    <tspan x="110" dy="12">• 自分が経験した問題の解決法共有</tspan>
+    <tspan x="110" dy="12">• 新規参加者への歓迎・案内</tspan>
+    <tspan x="110" dy="12">• 基本的な質問への回答</tspan>
+    <tspan x="110" dy="12">• 学習リソースの紹介</tspan>
+  </text>
+  
+  <text x="100" y="995" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">知識共有：</tspan>
+    <tspan x="110" dy="12">• 学習ノート・解法の公開</tspan>
+    <tspan x="110" dy="12">• ブログ記事の執筆</tspan>
+    <tspan x="110" dy="12">• 勉強会・LT発表</tspan>
+    <tspan x="110" dy="12">• GitHub でのコード公開</tspan>
+  </text>
+
+  <text x="100" y="1045" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">コミュニティ運営：</tspan>
+    <tspan x="110" dy="12">• 勉強会・もくもく会の企画・運営</tspan>
+    <tspan x="110" dy="12">• 質問・回答の整理・分類</tspan>
+    <tspan x="110" dy="12">• 新人向けガイドの作成</tspan>
+  </text>
+
+  <text x="90" y="1125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ⏰ 期間目安
+  </text>
+  <text x="100" y="1145" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    3ヶ月以上の継続参加後
+  </text>
+
+  <!-- Impact on Community -->
+  <rect x="480" y="905" width="380" height="260" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="490" y="925" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🌈 コミュニティへの影響
+  </text>
+  <text x="500" y="945" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="500" dy="0">✅ 新規参加者の安心感向上</tspan>
+    <tspan x="500" dy="12">✅ 質問・回答の質的向上</tspan>
+    <tspan x="500" dy="12">✅ 学習リソースの充実</tspan>
+    <tspan x="500" dy="12">✅ 中学生目線での情報発信</tspan>
+    <tspan x="500" dy="12">✅ 同世代ネットワークの拡大</tspan>
+  </text>
+
+  <text x="490" y="1005" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    💬 感謝のメッセージ
+  </text>
+  <text x="500" y="1025" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="500" dy="0">「○○さんの説明でわかりました！」</tspan>
+    <tspan x="500" dy="12">「中学生の視点が新鮮です」</tspan>
+    <tspan x="500" dy="12">「いつもありがとうございます」</tspan>
+    <tspan x="500" dy="12">「勉強会、参加したいです！」</tspan>
+  </text>
+
+  <text x="490" y="1065" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🏆 認知・評価
+  </text>
+  <text x="500" y="1085" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="500" dy="0">• コミュニティでの知名度向上</tspan>
+    <tspan x="500" dy="12">• 頼られる存在としての成長</tspan>
+    <tspan x="500" dy="12">• リーダーシップの発揮機会</tspan>
+    <tspan x="500" dy="12">• 将来のメンター候補として期待</tspan>
+  </text>
+
+  <text x="490" y="1125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🌱 持続可能性
+  </text>
+  <text x="500" y="1145" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    与える喜びによる継続的な参加動機
+  </text>
+
+  <!-- Personal Growth -->
+  <rect x="880" y="905" width="440" height="260" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="890" y="925" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    💡 個人的な成長・メリット
+  </text>
+  <text x="900" y="945" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">技術力の向上：</tspan>
+    <tspan x="910" dy="12">• 教えることで理解が深まる</tspan>
+    <tspan x="910" dy="12">• 多様な問題・解法に触れる機会</tspan>
+    <tspan x="910" dy="12">• 新しい技術への早期アクセス</tspan>
+    <tspan x="910" dy="12">• 批判的思考力の向上</tspan>
+  </text>
+  
+  <text x="900" y="995" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">ソフトスキルの発達：</tspan>
+    <tspan x="910" dy="12">• プレゼンテーション能力</tspan>
+    <tspan x="910" dy="12">• リーダーシップ・マネジメント力</tspan>
+    <tspan x="910" dy="12">• 企画・運営スキル</tspan>
+    <tspan x="910" dy="12">• 多様性・包摂性への理解</tspan>
+  </text>
+
+  <text x="900" y="1045" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">将来への準備：</tspan>
+    <tspan x="910" dy="12">• 大学入試での差別化要因</tspan>
+    <tspan x="910" dy="12">• 就職活動でのアピールポイント</tspan>
+    <tspan x="910" dy="12">• 業界人脈の早期構築</tspan>
+    <tspan x="910" dy="12">• 社会人としての基礎力養成</tspan>
+  </text>
+
+  <text x="900" y="1095" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">精神的成長：</tspan>
+    <tspan x="910" dy="12">• 自己肯定感・自信の向上</tspan>
+    <tspan x="910" dy="12">• 責任感・使命感の醸成</tspan>
+    <tspan x="910" dy="12">• 社会貢献への意識</tspan>
+    <tspan x="910" dy="12">• 継続的学習への内発的動機</tspan>
+  </text>
+
+  <text x="890" y="1145" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    🚀 「学習者から指導者」への質的転換
+  </text>
+
+  <!-- Success Message -->
+  <rect x="50" y="1200" width="1300" height="160" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="1225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🎉 段階的参加による持続可能な成長サイクルの確立！
+  </text>
+  <text x="700" y="1245" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">
+    観察→参加→貢献の3段階で、技術力・人間力・社会性を総合的に発達
+  </text>
+  <text x="700" y="1265" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0369a1">
+    コミュニティ参加は単なる情報収集ではなく、人格形成と将来のキャリア形成の重要な基盤
+  </text>
+
+  <rect x="80" y="1285" width="1240" height="65" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="90" y="1305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    💪 コミュニティ参加の最終メッセージ
+  </text>
+  <text x="100" y="1325" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">• 段階的参加：焦らず、自分のペースで確実に成長する</tspan>
+    <tspan x="100" dy="12">• 相互支援：受けた支援を次の世代に還元する循環を作る</tspan>
+    <tspan x="100" dy="12">• 多様性尊重：年齢・経験・背景の違いを学習機会として活用する</tspan>
+  </text>
+</svg>
