@@ -1,0 +1,171 @@
+<svg viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-13：競技プログラミングでよく使う文字列操作</title>
+  <desc>文字の出現回数カウント、文字列の検索・置換、分割・結合など競技プログラミングで頻出の文字列操作パターンを示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .pattern-title { font: 600 13px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Courier New', monospace; fill: #1F2937; }
+      .comment-text { font: 400 10px 'Courier New', monospace; fill: #16A34A; }
+      .method-text { font: 600 11px Inter, sans-serif; fill: #7C3AED; }
+      .result-text { font: 500 10px 'Courier New', monospace; fill: #DC2626; }
+      .explanation-text { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .counting-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .search-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .split-box { fill: #F3E8FF; stroke: #7C3AED; stroke-width: 2; }
+      .code-block { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .method-block { fill: #EEF2FF; stroke: #4F46E5; stroke-width: 1; }
+      .result-block { fill: #FEE2E2; stroke: #DC2626; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="750" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-13：競技プログラミングでよく使う文字列操作</text>
+  
+  <!-- Pattern 1: Character Counting -->
+  <g id="counting">
+    <rect x="50" y="60" width="700" height="180" rx="8" class="counting-box"/>
+    <text x="70" y="85" class="emoji">🔢</text>
+    <text x="100" y="85" class="pattern-title" fill="#D97706">パターン1：文字の出現回数カウント</text>
+    
+    <!-- Method 1: Manual dictionary -->
+    <g transform="translate(70, 105)">
+      <rect x="0" y="0" width="210" height="60" class="method-block"/>
+      <text x="105" y="15" text-anchor="middle" class="method-text">方法1: 辞書を手動作成</text>
+      <g transform="translate(10, 25)">
+        <text x="0" y="0" class="code-text">char_count = {}</text>
+        <text x="0" y="15" class="code-text">for char in s:</text>
+        <text x="0" y="30" class="code-text">  char_count[char] = ...</text>
+      </g>
+    </g>
+    
+    <!-- Method 2: get() method -->
+    <g transform="translate(290, 105)">
+      <rect x="0" y="0" width="210" height="60" class="method-block"/>
+      <text x="105" y="15" text-anchor="middle" class="method-text">方法2: get()メソッド（推奨）</text>
+      <g transform="translate(10, 25)">
+        <text x="0" y="0" class="code-text">char_count = {}</text>
+        <text x="0" y="15" class="code-text">for char in s:</text>
+        <text x="0" y="30" class="code-text">  char_count[char] = </text>
+      </g>
+    </g>
+    
+    <!-- Method 3: Counter -->
+    <g transform="translate(510, 105)">
+      <rect x="0" y="0" width="170" height="60" class="method-block"/>
+      <text x="85" y="15" text-anchor="middle" class="method-text">方法3: Counter（最簡潔）</text>
+      <g transform="translate(10, 25)">
+        <text x="0" y="0" class="code-text">from collections import Counter</text>
+        <text x="0" y="15" class="code-text">char_count = Counter(s)</text>
+      </g>
+    </g>
+    
+    <!-- Example result -->
+    <g transform="translate(70, 175)">
+      <rect x="0" y="0" width="610" height="50" class="result-block"/>
+      <text x="10" y="15" class="comment-text"># 例: s = "programming"</text>
+      <text x="10" y="30" class="result-text">Counter({'r': 2, 'g': 2, 'm': 2, 'p': 1, 'o': 1, 'a': 1, 'i': 1, 'n': 1})</text>
+      <text x="10" y="45" class="explanation-text">結果: 各文字の出現回数が分かる</text>
+    </g>
+  </g>
+  
+  <!-- Pattern 2: Search and Replace -->
+  <g id="search-replace">
+    <rect x="50" y="260" width="700" height="150" rx="8" class="search-box"/>
+    <text x="70" y="285" class="emoji">🔍</text>
+    <text x="100" y="285" class="pattern-title" fill="#1E40AF">パターン2：文字列の検索・置換</text>
+    
+    <g transform="translate(70, 305)">
+      <rect x="0" y="0" width="660" height="90" class="code-block"/>
+      <g transform="translate(15, 15)">
+        <text x="0" y="0" class="code-text">s = "Hello World Hello"</text>
+        <text x="0" y="20" class="comment-text"># 部分文字列の検索</text>
+        <text x="0" y="35" class="code-text">print("Hello" in s)</text>
+        <text x="200" y="35" class="result-text"># True</text>
+        <text x="0" y="50" class="code-text">print(s.find("World"))</text>
+        <text x="200" y="50" class="result-text"># 6（位置）</text>
+        <text x="0" y="65" class="code-text">print(s.count("Hello"))</text>
+        <text x="200" y="65" class="result-text"># 2（出現回数）</text>
+        <text x="0" y="80" class="code-text">s2 = s.replace("Hello", "Hi")</text>
+        <text x="250" y="80" class="result-text"># "Hi World Hi"</text>
+        
+        <g transform="translate(400, 20)">
+          <rect x="0" y="0" width="220" height="55" fill="#E0F2FE" stroke="#0369A1" stroke-width="1"/>
+          <text x="10" y="15" class="method-text">よく使う検索メソッド</text>
+          <text x="10" y="30" class="explanation-text">• in: 存在確認</text>
+          <text x="10" y="45" class="explanation-text">• find(): 位置取得</text>
+          <text x="120" y="30" class="explanation-text">• count(): 回数</text>
+          <text x="120" y="45" class="explanation-text">• replace(): 置換</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Pattern 3: Split and Join -->
+  <g id="split-join">
+    <rect x="50" y="430" width="700" height="150" rx="8" class="split-box"/>
+    <text x="70" y="455" class="emoji">✂️</text>
+    <text x="100" y="455" class="pattern-title" fill="#7C3AED">パターン3：文字列の分割・結合</text>
+    
+    <g transform="translate(70, 475)">
+      <rect x="0" y="0" width="660" height="90" class="code-block"/>
+      <g transform="translate(15, 15)">
+        <text x="0" y="0" class="comment-text"># 分割</text>
+        <text x="0" y="15" class="code-text">sentence = "apple,banana,cherry"</text>
+        <text x="0" y="30" class="code-text">fruits = sentence.split(",")</text>
+        <text x="250" y="30" class="result-text"># ['apple', 'banana', 'cherry']</text>
+        
+        <text x="0" y="50" class="comment-text"># 結合</text>
+        <text x="0" y="65" class="code-text">words = ["Hello", "World", "Python"]</text>
+        <text x="0" y="80" class="code-text">result = " ".join(words)</text>
+        <text x="200" y="80" class="result-text"># "Hello World Python"</text>
+        
+        <g transform="translate(400, 15)">
+          <rect x="0" y="0" width="220" height="70" fill="#FAF5FF" stroke="#7C3AED" stroke-width="1"/>
+          <text x="10" y="15" class="method-text">分割・結合の活用</text>
+          <text x="10" y="30" class="explanation-text">• CSV形式の処理</text>
+          <text x="10" y="45" class="explanation-text">• 単語の抽出と再構成</text>
+          <text x="10" y="60" class="explanation-text">• 区切り文字の変更</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Key Points -->
+  <g id="key-points">
+    <rect x="50" y="600" width="700" height="120" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="70" y="625" class="emoji">💡</text>
+    <text x="100" y="625" class="section-title">文字列操作の重要ポイント</text>
+    
+    <g transform="translate(80, 645)">
+      <!-- Point 1 -->
+      <circle cx="8" cy="8" r="4" fill="#F59E0B"/>
+      <text x="20" y="12" class="explanation-text">文字列は不変オブジェクト → 操作結果は新しい文字列</text>
+      
+      <!-- Point 2 -->
+      <circle cx="8" cy="28" r="4" fill="#3B82F6"/>
+      <text x="20" y="32" class="explanation-text">大量の文字列結合はjoin()を使って効率化</text>
+      
+      <!-- Point 3 -->
+      <circle cx="8" cy="48" r="4" fill="#7C3AED"/>
+      <text x="20" y="52" class="explanation-text">正規表現（re module）も活用できるが、基本操作で十分な場合が多い</text>
+      
+      <!-- Performance tip -->
+      <g transform="translate(400, 0)">
+        <rect x="0" y="0" width="280" height="65" fill="#ECFDF5" stroke="#22C55E" stroke-width="1"/>
+        <text x="10" y="15" class="method-text">パフォーマンスのコツ</text>
+        <text x="10" y="30" class="explanation-text">• Counter > 手動辞書作成</text>
+        <text x="10" y="45" class="explanation-text">• join() > 繰り返し + 演算子</text>
+        <text x="10" y="60" class="explanation-text">• in演算子 > find()で存在確認</text>
+      </g>
+    </g>
+  </g>
+  
+</svg>

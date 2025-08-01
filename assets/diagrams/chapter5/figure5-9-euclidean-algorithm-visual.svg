@@ -1,0 +1,167 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-9：ユークリッドの互除法の視覚的理解</title>
+  <desc>gcd(48, 18)を求める過程を長方形の分割で視覚化し、アルゴリズムの原理を説明する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .step-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .calculation-text { font: 600 12px 'Courier New', monospace; fill: #7C3AED; }
+      .result-text { font: 600 12px Inter, sans-serif; fill: #059669; }
+      .remainder-text { font: 600 11px Inter, sans-serif; fill: #DC2626; }
+      .explanation-text { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .formula-text { font: 600 12px 'Courier New', monospace; fill: #1F2937; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .step-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 2; }
+      .algorithm-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .result-box { fill: #DCFCE7; stroke: #22C55E; stroke-width: 2; }
+      .rectangle-a { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .rectangle-b { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .rectangle-remainder { fill: #FEE2E2; stroke: #DC2626; stroke-width: 2; }
+      .final-rectangle { fill: #DCFCE7; stroke: #22C55E; stroke-width: 3; }
+      .arrow { stroke: #059669; stroke-width: 2; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="#059669"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-9：ユークリッドの互除法の視覚的理解</text>
+  
+  <!-- Example Introduction -->
+  <g id="example-intro">
+    <rect x="50" y="60" width="700" height="50" rx="8" class="algorithm-box"/>
+    <text x="70" y="85" class="emoji">🎯</text>
+    <text x="100" y="85" class="step-title" fill="#1E40AF">例：gcd(48, 18)を求める</text>
+    <text x="400" y="85" class="calculation-text">48 ÷ 18 = 2 余り 12</text>
+  </g>
+  
+  <!-- Step 1 -->
+  <g id="step1">
+    <rect x="50" y="130" width="700" height="120" rx="8" class="step-box"/>
+    <text x="70" y="155" class="step-title">Step 1: 48 ÷ 18 = 2 余り 12</text>
+    
+    <!-- Visual representation with rectangles -->
+    <g transform="translate(80, 170)">
+      <!-- 48 total length rectangle divided into 18s and remainder -->
+      <rect x="0" y="0" width="240" height="40" class="rectangle-a"/>
+      <text x="120" y="25" text-anchor="middle" class="calculation-text">48</text>
+      <text x="120" y="50" text-anchor="middle" class="explanation-text">全体の長さ</text>
+      
+      <!-- Division visualization -->
+      <g transform="translate(0, 60)">
+        <!-- First 18 -->
+        <rect x="0" y="0" width="90" height="25" class="rectangle-b"/>
+        <text x="45" y="17" text-anchor="middle" class="calculation-text">18</text>
+        
+        <!-- Second 18 -->
+        <rect x="90" y="0" width="90" height="25" class="rectangle-b"/>
+        <text x="135" y="17" text-anchor="middle" class="calculation-text">18</text>
+        
+        <!-- Remainder 12 -->
+        <rect x="180" y="0" width="60" height="25" class="rectangle-remainder"/>
+        <text x="210" y="17" text-anchor="middle" class="remainder-text">12</text>
+        
+        <text x="270" y="17" class="explanation-text">← 48を18で割った余り</text>
+      </g>
+    </g>
+    
+    <!-- Formula -->
+    <g transform="translate(450, 180)">
+      <rect x="0" y="0" width="200" height="50" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+      <text x="100" y="20" text-anchor="middle" class="formula-text">gcd(48, 18)</text>
+      <text x="100" y="35" text-anchor="middle" class="formula-text">= gcd(18, 12)</text>
+    </g>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M400 260 L400 280" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Step 2 -->
+  <g id="step2">
+    <rect x="50" y="290" width="700" height="100" rx="8" class="step-box"/>
+    <text x="70" y="315" class="step-title">Step 2: 18 ÷ 12 = 1 余り 6</text>
+    
+    <g transform="translate(80, 330)">
+      <!-- 18 length rectangle -->
+      <rect x="0" y="0" width="180" height="30" class="rectangle-b"/>
+      <text x="90" y="20" text-anchor="middle" class="calculation-text">18</text>
+      
+      <g transform="translate(0, 40)">
+        <!-- 12 part -->
+        <rect x="0" y="0" width="120" height="20" class="rectangle-remainder"/>
+        <text x="60" y="15" text-anchor="middle" class="remainder-text">12</text>
+        
+        <!-- Remainder 6 -->
+        <rect x="120" y="0" width="60" height="20" class="rectangle-remainder"/>
+        <text x="150" y="15" text-anchor="middle" class="remainder-text">6</text>
+        
+        <text x="200" y="15" class="explanation-text">← 18を12で割った余り</text>
+      </g>
+    </g>
+    
+    <g transform="translate(450, 310)">
+      <rect x="0" y="0" width="200" height="50" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+      <text x="100" y="20" text-anchor="middle" class="formula-text">gcd(18, 12)</text>
+      <text x="100" y="35" text-anchor="middle" class="formula-text">= gcd(12, 6)</text>
+    </g>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M400 400 L400 420" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Step 3 -->
+  <g id="step3">
+    <rect x="50" y="430" width="700" height="100" rx="8" class="step-box"/>
+    <text x="70" y="455" class="step-title">Step 3: 12 ÷ 6 = 2 余り 0</text>
+    
+    <g transform="translate(80, 470)">
+      <!-- 12 length rectangle -->
+      <rect x="0" y="0" width="120" height="30" class="rectangle-remainder"/>
+      <text x="60" y="20" text-anchor="middle" class="remainder-text">12</text>
+      
+      <g transform="translate(0, 40)">
+        <!-- First 6 -->
+        <rect x="0" y="0" width="60" height="20" class="final-rectangle"/>
+        <text x="30" y="15" text-anchor="middle" class="result-text">6</text>
+        
+        <!-- Second 6 -->
+        <rect x="60" y="0" width="60" height="20" class="final-rectangle"/>
+        <text x="90" y="15" text-anchor="middle" class="result-text">6</text>
+        
+        <text x="140" y="15" class="explanation-text">← 12を6で割った余り: 0</text>
+      </g>
+    </g>
+    
+    <g transform="translate(450, 450)">
+      <rect x="0" y="0" width="200" height="50" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+      <text x="100" y="20" text-anchor="middle" class="formula-text">gcd(12, 6)</text>
+      <text x="100" y="35" text-anchor="middle" class="formula-text">= gcd(6, 0) = 6</text>
+    </g>
+  </g>
+  
+  <!-- Final Result -->
+  <g id="result">
+    <rect x="150" y="550" width="500" height="60" rx="8" class="result-box"/>
+    <text x="170" y="575" class="emoji">✅</text>
+    <text x="200" y="575" class="step-title" fill="#059669">余りが0になったので、</text>
+    <text x="200" y="595" class="result-text" fill="#059669">gcd(48, 18) = 6</text>
+    <text x="450" y="585" class="result-text" fill="#059669">最大公約数は 6</text>
+  </g>
+  
+  <!-- Algorithm Principle -->  
+  <g id="principle">
+    <rect x="50" y="630" width="700" height="50" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="70" y="655" class="emoji">💡</text>
+    <text x="100" y="655" class="step-title">アルゴリズムの原理</text>
+    <text x="320" y="655" class="formula-text">gcd(a, b) = gcd(b, a % b)</text>
+    <text x="550" y="655" class="explanation-text">この性質を余りが0になるまで繰り返す</text>
+  </g>
+  
+</svg>

@@ -1,0 +1,202 @@
+<svg viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-7：論理演算子の効果的な使用</title>
+  <desc>基本的な論理演算子（and, or, not）とうるう年判定の実例を用いた効果的な使用方法の図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .operator-title { font: 700 14px Inter, sans-serif; }
+      .code-text { font: 500 12px 'Courier New', monospace; fill: #1F2937; }
+      .condition-text { font: 600 12px 'Courier New', monospace; fill: #7C3AED; }
+      .comment-text { font: 400 11px 'Courier New', monospace; fill: #16A34A; }
+      .explanation-text { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .result-text { font: 600 12px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .basics-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .complex-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .simple-box { fill: #DCFCE7; stroke: #22C55E; stroke-width: 2; }
+      .operator-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .truth-cell { fill: #F3F4F6; stroke: #9CA3AF; stroke-width: 1; }
+      .true-cell { fill: #DCFCE7; stroke: #22C55E; stroke-width: 2; }
+      .false-cell { fill: #FEE2E2; stroke: #EF4444; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="750" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-7：論理演算子の効果的な使用</text>
+  
+  <!-- Basic Operators -->
+  <g id="basics">
+    <rect x="50" y="60" width="700" height="120" rx="8" class="basics-box"/>
+    <text x="70" y="85" class="emoji">⚡</text>
+    <text x="100" y="85" class="section-title" fill="#1E40AF">基本的な論理演算子</text>
+    
+    <!-- AND operator -->
+    <g transform="translate(70, 100)">
+      <rect x="0" y="0" width="200" height="60" class="operator-box"/>
+      <text x="100" y="20" text-anchor="middle" class="operator-title" fill="#DC2626">and</text>
+      <text x="100" y="35" text-anchor="middle" class="explanation-text">両方が真の場合に真</text>
+      
+      <!-- Truth table for AND -->
+      <g transform="translate(10, 45)">
+        <rect x="0" y="0" width="30" height="15" class="truth-cell"/>
+        <text x="15" y="10" text-anchor="middle" class="code-text">T</text>
+        <rect x="30" y="0" width="30" height="15" class="truth-cell"/>
+        <text x="45" y="10" text-anchor="middle" class="code-text">T</text>
+        <rect x="60" y="0" width="30" height="15" class="true-cell"/>
+        <text x="75" y="10" text-anchor="middle" class="result-text" fill="#059669">T</text>
+        
+        <rect x="100" y="0" width="30" height="15" class="truth-cell"/>
+        <text x="115" y="10" text-anchor="middle" class="code-text">T</text>
+        <rect x="130" y="0" width="30" height="15" class="truth-cell"/>
+        <text x="145" y="10" text-anchor="middle" class="code-text">F</text>
+        <rect x="160" y="0" width="30" height="15" class="false-cell"/>
+        <text x="175" y="10" text-anchor="middle" class="result-text" fill="#DC2626">F</text>
+      </g>
+    </g>
+    
+    <!-- OR operator -->
+    <g transform="translate(290, 100)">
+      <rect x="0" y="0" width="200" height="60" class="operator-box"/>
+      <text x="100" y="20" text-anchor="middle" class="operator-title" fill="#7C3AED">or</text>
+      <text x="100" y="35" text-anchor="middle" class="explanation-text">どちらかが真の場合に真</text>
+      
+      <g transform="translate(10, 45)">
+        <rect x="0" y="0" width="30" height="15" class="truth-cell"/>
+        <text x="15" y="10" text-anchor="middle" class="code-text">T</text>
+        <rect x="30" y="0" width="30" height="15" class="truth-cell"/>
+        <text x="45" y="10" text-anchor="middle" class="code-text">F</text>
+        <rect x="60" y="0" width="30" height="15" class="true-cell"/>
+        <text x="75" y="10" text-anchor="middle" class="result-text" fill="#059669">T</text>
+        
+        <rect x="100" y="0" width="30" height="15" class="truth-cell"/>
+        <text x="115" y="10" text-anchor="middle" class="code-text">F</text>
+        <rect x="130" y="0" width="30" height="15" class="truth-cell"/>
+        <text x="145" y="10" text-anchor="middle" class="code-text">F</text>
+        <rect x="160" y="0" width="30" height="15" class="false-cell"/>
+        <text x="175" y="10" text-anchor="middle" class="result-text" fill="#DC2626">F</text>
+      </g>
+    </g>
+    
+    <!-- NOT operator -->
+    <g transform="translate(510, 100)">
+      <rect x="0" y="0" width="180" height="60" class="operator-box"/>
+      <text x="90" y="20" text-anchor="middle" class="operator-title" fill="#059669">not</text>
+      <text x="90" y="35" text-anchor="middle" class="explanation-text">真偽を反転</text>
+      
+      <g transform="translate(25, 45)">
+        <rect x="0" y="0" width="30" height="15" class="truth-cell"/>
+        <text x="15" y="10" text-anchor="middle" class="code-text">T</text>
+        <rect x="30" y="0" width="30" height="15" class="false-cell"/>
+        <text x="45" y="10" text-anchor="middle" class="result-text" fill="#DC2626">F</text>
+        
+        <rect x="80" y="0" width="30" height="15" class="truth-cell"/>
+        <text x="95" y="10" text-anchor="middle" class="code-text">F</text>
+        <rect x="110" y="0" width="30" height="15" class="true-cell"/>
+        <text x="125" y="10" text-anchor="middle" class="result-text" fill="#059669">T</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Leap Year Example -->
+  <g id="leap-year">
+    <text x="70" y="210" class="section-title">実践例：うるう年の判定</text>
+    
+    <!-- Rules -->
+    <g transform="translate(70, 225)">
+      <rect x="0" y="0" width="660" height="70" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+      <text x="10" y="20" class="comment-text"># うるう年の条件：</text>
+      <text x="10" y="35" class="comment-text"># 1. 4で割り切れる</text>
+      <text x="10" y="50" class="comment-text"># 2. ただし100で割り切れる年は平年</text>
+      <text x="10" y="65" class="comment-text"># 3. ただし400で割り切れる年はうるう年</text>
+    </g>
+    
+    <!-- Complex Version -->
+    <g transform="translate(50, 310)">
+      <rect x="0" y="0" width="700" height="130" rx="8" class="complex-box"/>
+      <text x="20" y="25" class="emoji">🔍</text>
+      <text x="50" y="25" class="section-title" fill="#D97706">複雑だが正確な条件</text>
+      
+      <g transform="translate(20, 40)">
+        <rect x="0" y="0" width="660" height="75" class="operator-box"/>
+        <g transform="translate(15, 15)">
+          <text x="0" y="15" class="code-text">year = int(input())</text>
+          <text x="0" y="35" class="code-text">if (year % 4 == 0 </text>
+          <text x="150" y="35" class="condition-text">and</text>
+          <text x="185" y="35" class="code-text"> year % 100 != 0) </text>
+          <text x="350" y="35" class="condition-text">or</text>
+          <text x="375" y="35" class="code-text"> (year % 400 == 0):</text>
+          <text x="0" y="50" class="code-text">    print("うるう年")</text>
+          <text x="0" y="65" class="code-text">else:</text>
+          <text x="0" y="80" class="code-text">    print("平年")</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Simple Version -->
+    <g transform="translate(50, 455)">
+      <rect x="0" y="0" width="700" height="140" rx="8" class="simple-box"/>
+      <text x="20" y="25" class="emoji">✨</text>
+      <text x="50" y="25" class="section-title" fill="#059669">より分かりやすい段階的判定</text>
+      
+      <g transform="translate(20, 40)">
+        <rect x="0" y="0" width="660" height="85" class="operator-box"/>
+        <g transform="translate(15, 15)">
+          <text x="0" y="15" class="code-text">if year % 400 == 0:</text>
+          <text x="0" y="30" class="code-text">    print("うるう年")</text>
+          <text x="0" y="45" class="code-text">elif year % 100 == 0:</text>
+          <text x="0" y="60" class="code-text">    print("平年")</text>
+          <text x="0" y="75" class="code-text">elif year % 4 == 0:</text>
+          <text x="0" y="90" class="code-text">    print("うるう年")</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Examples and Results -->
+  <g id="examples">
+    <rect x="50" y="610" width="700" height="120" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="70" y="635" class="emoji">🧮</text>
+    <text x="100" y="635" class="section-title">判定例とその結果</text>
+    
+    <g transform="translate(70, 650)">
+      <!-- 2024 example -->
+      <rect x="0" y="0" width="150" height="60" class="operator-box"/>
+      <text x="75" y="15" text-anchor="middle" class="code-text">2024年</text>
+      <text x="75" y="30" text-anchor="middle" class="explanation-text">4で割り切れる</text>
+      <text x="75" y="45" text-anchor="middle" class="explanation-text">100で割り切れない</text>
+      <rect x="10" y="50" width="130" height="20" class="true-cell"/>
+      <text x="75" y="63" text-anchor="middle" class="result-text" fill="#059669">うるう年</text>
+      
+      <!-- 1900 example -->
+      <rect x="170" y="0" width="150" height="60" class="operator-box"/>
+      <text x="245" y="15" text-anchor="middle" class="code-text">1900年</text>
+      <text x="245" y="30" text-anchor="middle" class="explanation-text">4で割り切れる</text>
+      <text x="245" y="45" text-anchor="middle" class="explanation-text">100で割り切れる</text>
+      <rect x="180" y="50" width="130" height="20" class="false-cell"/>
+      <text x="245" y="63" text-anchor="middle" class="result-text" fill="#DC2626">平年</text>
+      
+      <!-- 2000 example -->
+      <rect x="340" y="0" width="150" height="60" class="operator-box"/>
+      <text x="415" y="15" text-anchor="middle" class="code-text">2000年</text>
+      <text x="415" y="30" text-anchor="middle" class="explanation-text">4で割り切れる</text>
+      <text x="415" y="45" text-anchor="middle" class="explanation-text">400で割り切れる</text>
+      <rect x="350" y="50" width="130" height="20" class="true-cell"/>
+      <text x="415" y="63" text-anchor="middle" class="result-text" fill="#059669">うるう年</text>
+      
+      <!-- 2023 example -->
+      <rect x="510" y="0" width="150" height="60" class="operator-box"/>
+      <text x="585" y="15" text-anchor="middle" class="code-text">2023年</text>
+      <text x="585" y="30" text-anchor="middle" class="explanation-text">4で割り切れない</text>
+      <text x="585" y="45" text-anchor="middle" class="explanation-text">→ 平年確定</text>
+      <rect x="520" y="50" width="130" height="20" class="false-cell"/>
+      <text x="585" y="63" text-anchor="middle" class="result-text" fill="#DC2626">平年</text>
+    </g>
+  </g>
+  
+</svg>

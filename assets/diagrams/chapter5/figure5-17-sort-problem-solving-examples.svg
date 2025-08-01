@@ -1,0 +1,145 @@
+<svg viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-17：ソートによる問題解決の典型例</title>
+  <desc>中央値の求取、最小差分ペアの発見、重複除去などソートを活用した問題解決パターンを示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .pattern-title { font: 600 13px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Courier New', monospace; fill: #1F2937; }
+      .comment-text { font: 400 10px 'Courier New', monospace; fill: #16A34A; }
+      .result-text { font: 500 10px 'Courier New', monospace; fill: #DC2626; }
+      .logic-text { font: 600 11px Inter, sans-serif; fill: #7C3AED; }
+      .explanation-text { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .median-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .diff-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .duplicate-box { fill: #F3E8FF; stroke: #7C3AED; stroke-width: 2; }
+      .code-block { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .logic-block { fill: #EEF2FF; stroke: #4F46E5; stroke-width: 1; }
+      .result-block { fill: #ECFDF5; stroke: #22C55E; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="750" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-17：ソートによる問題解決の典型例</text>
+  
+  <!-- Pattern 1: Median -->
+  <g id="median">
+    <rect x="50" y="60" width="700" height="160" rx="8" class="median-box"/>
+    <text x="70" y="85" class="emoji">📊</text>
+    <text x="100" y="85" class="pattern-title" fill="#1E40AF">パターン1: 中央値の求取</text>
+    
+    <g transform="translate(70, 105)">
+      <rect x="0" y="0" width="350" height="100" class="code-block"/>
+      <g transform="translate(15, 15)">
+        <text x="0" y="0" class="code-text">def find_median(numbers):</text>
+        <text x="0" y="15" class="code-text">    sorted_nums = sorted(numbers)</text>
+        <text x="0" y="30" class="code-text">    n = len(sorted_nums)</text>
+        <text x="0" y="45" class="code-text">    if n % 2 == 1:</text>
+        <text x="0" y="60" class="code-text">        return sorted_nums[n // 2]</text>
+        <text x="0" y="75" class="code-text">    else:</text>
+        <text x="0" y="90" class="code-text">        return (sorted_nums[n//2-1] + ...</text>
+      </g>
+      
+      <!-- Logic explanation -->
+      <g transform="translate(380, 15)">
+        <rect x="0" y="0" width="280" height="85" class="logic-block"/>
+        <text x="10" y="15" class="logic-text">中央値の性質</text>
+        <text x="10" y="30" class="explanation-text">• ソート後の中央の値</text>
+        <text x="10" y="45" class="explanation-text">• 奇数個: 真ん中の1つ</text>
+        <text x="10" y="60" class="explanation-text">• 偶数個: 真ん中2つの平均</text>
+        <text x="10" y="75" class="result-text">例: [3,1,4,1,5] → [1,1,3,4,5] → 3</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Pattern 2: Minimum Difference -->
+  <g id="min-diff">
+    <rect x="50" y="240" width="700" height="180" rx="8" class="diff-box"/>
+    <text x="70" y="265" class="emoji">🔍</text>
+    <text x="100" y="265" class="pattern-title" fill="#D97706">パターン2: 最小差分ペアの発見</text>
+    
+    <g transform="translate(70, 285)">
+      <rect x="0" y="0" width="660" height="120" class="code-block"/>
+      <g transform="translate(15, 15)">
+        <text x="0" y="0" class="code-text">def min_difference_pair(numbers):</text>
+        <text x="0" y="15" class="code-text">    numbers.sort()</text>
+        <text x="0" y="30" class="code-text">    min_diff = float('inf')</text>
+        <text x="0" y="45" class="code-text">    best_pair = None</text>
+        <text x="0" y="65" class="code-text">    for i in range(len(numbers) - 1):</text>
+        <text x="0" y="80" class="code-text">        diff = numbers[i + 1] - numbers[i]</text>
+        <text x="0" y="95" class="code-text">        if diff &lt; min_diff:</text>
+        <text x="0" y="110" class="code-text">            min_diff = diff</text>
+        
+        <g transform="translate(350, 0)">
+          <rect x="0" y="0" width="280" height="120" class="logic-block"/>
+          <text x="10" y="15" class="logic-text">効率化のポイント</text>
+          <text x="10" y="30" class="explanation-text">• ソート後は隣接要素のみチェック</text>
+          <text x="10" y="45" class="explanation-text">• 最小差分は必ず隣接ペア</text>
+          <text x="10" y="60" class="explanation-text">• O(n²) → O(n log n)に改善</text>
+          <text x="10" y="80" class="result-text">例: [4,2,1,3] → [1,2,3,4]</text>
+          <text x="10" y="95" class="result-text">最小差分: (1,2) → 差分1</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Pattern 3: Remove Duplicates -->
+  <g id="duplicates">
+    <rect x="50" y="440" width="700" height="180" rx="8" class="duplicate-box"/>
+    <text x="70" y="465" class="emoji">🗂️</text>
+    <text x="100" y="465" class="pattern-title" fill="#7C3AED">パターン3: 重複の除去（順序保持）</text>
+    
+    <g transform="translate(70, 485)">
+      <rect x="0" y="0" width="330" height="100" class="code-block"/>
+      <g transform="translate(15, 15)">
+        <text x="0" y="0" class="code-text">def remove_duplicates_sorted(numbers):</text>
+        <text x="0" y="15" class="code-text">    numbers.sort()</text>
+        <text x="0" y="30" class="code-text">    if not numbers:</text>
+        <text x="0" y="45" class="code-text">        return []</text>
+        <text x="0" y="65" class="code-text">    result = [numbers[0]]</text>
+        <text x="0" y="80" class="code-text">    for i in range(1, len(numbers)):</text>
+      </g>
+      
+      <!-- Alternative method -->
+      <g transform="translate(350, 0)">
+        <rect x="0" y="0" width="280" height="100" class="result-block"/>
+        <g transform="translate(15, 15)">
+          <text x="0" y="0" class="comment-text"># Pythonらしい書き方</text>
+          <text x="0" y="15" class="code-text">unique = sorted(set(nums))</text>
+          <text x="0" y="30" class="result-text">print(unique)  # [1,2,3,4,5,6,9]</text>
+          
+          <text x="0" y="50" class="logic-text">効率性の比較</text>
+          <text x="0" y="65" class="explanation-text">• set(): O(n) 重複除去</text>
+          <text x="0" y="80" class="explanation-text">• sorted(): O(n log n) ソート</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Example -->
+    <g transform="translate(70, 595)">
+      <rect x="0" y="0" width="660" height="35" class="result-block"/>
+      <text x="15" y="15" class="code-text">nums = [3, 1, 4, 1, 5, 9, 2, 6, 5]</text>
+      <text x="15" y="30" class="result-text">結果: [1, 2, 3, 4, 5, 6, 9]  ← 重複除去 + ソート済み</text>
+    </g>
+  </g>
+  
+  <!-- Key Insight -->
+  <g id="insight">
+    <rect x="50" y="640" width="700" height="80" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="70" y="665" class="emoji">💡</text>
+    <text x="100" y="665" class="section-title">ソート活用の共通パターン</text>
+    
+    <g transform="translate(100, 685)">
+      <text x="0" y="15" class="explanation-text">1. 順序に依存する問題 → ソートで解決　2. 隣接要素の関係性 → ソート後に線形探索</text>
+      <text x="0" y="30" class="explanation-text">3. 重複・ユニーク処理 → set()とsorted()の組み合わせ　4. 二分探索の前準備 → データをソート</text>
+    </g>
+  </g>
+  
+</svg>
