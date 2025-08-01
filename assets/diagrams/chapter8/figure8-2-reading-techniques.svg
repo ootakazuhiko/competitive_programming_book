@@ -1,0 +1,161 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="techniquesGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <linearGradient id="mistakesGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- Icon definitions -->
+    <g id="searchIcon">
+      <circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <line x1="14" y1="14" x2="18" y2="18" stroke="currentColor" stroke-width="1.5"/>
+    </g>
+    
+    <g id="noteIcon">
+      <rect x="4" y="4" width="12" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <line x1="8" y1="8" x2="12" y2="8" stroke="currentColor" stroke-width="1"/>
+      <line x1="8" y1="12" x2="12" y2="12" stroke="currentColor" stroke-width="1"/>
+      <line x1="8" y1="16" x2="10" y2="16" stroke="currentColor" stroke-width="1"/>
+    </g>
+    
+    <g id="refreshIcon">
+      <path d="M3 3v5h5M21 21v-5h-5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M21 12a9 9 0 01-9 9 9 9 0 01-9-9 9 9 0 019-9c2.5 0 4.7 1 6.3 2.6L21 8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </g>
+    
+    <g id="lightbulbIcon">
+      <path d="M9 21h6M12 17v4M12 3a6 6 0 016 6c0 2.5-1.5 4.5-3 5.5a1 1 0 01-1 .5H10a1 1 0 01-1-.5C7.5 13.5 6 11.5 6 9a6 6 0 016-6z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </g>
+    
+    <g id="xIcon">
+      <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2"/>
+      <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2"/>
+    </g>
+    
+    <g id="shieldIcon">
+      <path d="M12 2l8 3v7c0 5.5-3.5 10.5-8 13-4.5-2.5-8-7.5-8-13V5l8-3z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <polyline points="9,12 11,14 15,10" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    </g>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#f8fafc"/>
+  
+  <!-- Main title header -->
+  <rect width="800" height="50" fill="url(#headerGradient)"/>
+  <text x="400" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="white">
+    📖 効果的な問題文読解テクニック
+  </text>
+  
+  <!-- Reading Speed and Accuracy Section -->
+  <rect x="20" y="70" width="760" height="280" rx="8" fill="url(#techniquesGradient)" stroke="#3b82f6" stroke-width="2"/>
+  
+  <!-- Section icons and labels -->
+  <g transform="translate(40, 90)">
+    <use href="#searchIcon" x="0" y="0" color="#1e40af" transform="scale(1.5)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#1e40af">キーワード識別法：</text>
+  </g>
+  
+  <!-- Keyword identification content -->
+  <g font-family="Inter, sans-serif" font-size="14" fill="#1f2937">
+    <text x="60" y="125">• 動詞に注目：「求める」「判定する」「出力する」</text>
+    <text x="60" y="145">• 数量詞に注目：「最大」「最小」「個数」「総和」</text>
+    <text x="60" y="165">• 条件に注目：「以上」「以下」「ちょうど」</text>
+    <text x="60" y="185">• 制約に注目：「N≤」「時間制限」「メモリ制限」</text>
+  </g>
+  
+  <!-- Note-taking strategy -->
+  <g transform="translate(40, 210)">
+    <use href="#noteIcon" x="0" y="0" color="#1e40af" transform="scale(1.5)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#1e40af">メモ取り戦略：</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="14" fill="#1f2937">
+    <text x="60" y="245">• 制約条件は必ずメモに書き出す</text>
+    <text x="60" y="265">• 入出力形式を図解で整理</text>
+    <text x="60" y="285">• 分からない部分は「？」マークを付ける</text>
+    <text x="60" y="305">• 重要な条件は下線やマーカーで強調</text>
+  </g>
+  
+  <!-- Right column -->
+  <!-- Iterative reading -->
+  <g transform="translate(420, 90)">
+    <use href="#refreshIcon" x="0" y="0" color="#1e40af" transform="scale(1.5)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#1e40af">反復読解法：</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="14" fill="#1f2937">
+    <text x="440" y="125">• 1回目：全体の流れを把握</text>
+    <text x="440" y="145">• 2回目：詳細と制約を確認</text>
+    <text x="440" y="165">• 3回目：サンプルとの整合性確認</text>
+  </g>
+  
+  <!-- Self-questioning -->
+  <g transform="translate(420, 190)">
+    <use href="#lightbulbIcon" x="0" y="0" color="#1e40af" transform="scale(1.5)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#1e40af">理解確認の自問自答：</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="14" fill="#1f2937">
+    <text x="440" y="225">• 「この問題は何を求めている？」</text>
+    <text x="440" y="245">• 「入力は何個の値？どんな形式？」</text>
+    <text x="440" y="265">• 「出力は何を、どう表示する？」</text>
+    <text x="440" y="285">• 「制約で一番重要なのは？」</text>
+  </g>
+  
+  <!-- Common mistakes section -->
+  <rect x="20" y="370" width="760" height="290" rx="8" fill="url(#mistakesGradient)" stroke="#dc2626" stroke-width="2"/>
+  
+  <!-- Section header -->
+  <g transform="translate(40, 390)">
+    <use href="#xIcon" x="0" y="0" color="#dc2626" transform="scale(1.2)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#dc2626">よくある読解ミスと対策</text>
+  </g>
+  
+  <!-- Mistakes list -->
+  <g font-family="Inter, sans-serif" font-size="14" fill="#1f2937">
+    <!-- Mistake 1 -->
+    <text x="60" y="425" font-weight="600" fill="#dc2626">❌ ミス1：「以上」と「より大きい」の混同</text>
+    <text x="80" y="445" fill="#059669">対策：記号で明確化（≥ と > を使い分け）</text>
+    
+    <!-- Mistake 2 -->
+    <text x="60" y="475" font-weight="600" fill="#dc2626">❌ ミス2：出力形式の見落とし</text>
+    <text x="80" y="495" fill="#059669">対策：サンプル出力を文字単位で確認</text>
+    
+    <!-- Mistake 3 -->
+    <text x="60" y="525" font-weight="600" fill="#dc2626">❌ ミス3：制約条件の見落とし</text>
+    <text x="80" y="545" fill="#059669">対策：制約を別紙にメモ、実装前に再確認</text>
+    
+    <!-- Right column mistakes -->
+    <!-- Mistake 4 -->
+    <text x="420" y="425" font-weight="600" fill="#dc2626">❌ ミス4：特殊ケースの見落とし</text>
+    <text x="440" y="445" fill="#059669">対策：「もし○○が0だったら？」を常に考える</text>
+    
+    <!-- Mistake 5 -->
+    <text x="420" y="475" font-weight="600" fill="#dc2626">❌ ミス5：用語の誤解</text>
+    <text x="440" y="495" fill="#059669">対策：問題文内の定義を再読、推測で決めない</text>
+  </g>
+  
+  <!-- Prevention rules -->
+  <g transform="translate(40, 565)">
+    <use href="#shieldIcon" x="0" y="0" color="#059669" transform="scale(1.5)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#059669">ミス防止のルール：</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="14" fill="#1f2937">
+    <text x="60" y="600">• 推測で進まず、分からない部分は立ち止まる</text>
+    <text x="60" y="620">• サンプルで必ず動作確認</text>
+    <text x="60" y="640">• 制約条件は実装後にもう一度確認</text>
+  </g>
+</svg>
