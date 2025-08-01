@@ -1,6 +1,7 @@
 ---
 title: "第7章：ABC A・B問題を攻略しよう"
-layout: default
+layout: book
+order: 7
 ---
 
 # 第7章：ABC A・B問題を攻略しよう

@@ -1,6 +1,7 @@
 ---
 title: "第3章：プログラミング環境を整えよう"
-layout: default
+layout: book
+order: 3
 ---
 
 # 第3章：プログラミング環境を整えよう

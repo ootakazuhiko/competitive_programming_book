@@ -1,6 +1,7 @@
 ---
 title: "第1章：競技プログラミングの世界を知ろう"
-layout: default
+layout: book
+order: 1
 ---
 
 # 第1章：競技プログラミングの世界を知ろう

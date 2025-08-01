@@ -1,6 +1,7 @@
 ---
 title: "第8章：問題解決プロセスを身につけよう"
-layout: default
+layout: book
+order: 8
 ---
 
 # 第8章：問題解決プロセスを身につけよう

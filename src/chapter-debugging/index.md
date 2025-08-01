@@ -1,6 +1,7 @@
 ---
 title: "第9章：エラーと上手に付き合おう"
-layout: default
+layout: book
+order: 9
 ---
 
 # 第9章：エラーと上手に付き合おう

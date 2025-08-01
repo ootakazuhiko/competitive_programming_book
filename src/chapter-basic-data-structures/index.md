@@ -1,6 +1,7 @@
 ---
 title: "第6章：データ構造を理解して活用しよう"
-layout: default
+layout: book
+order: 6
 ---
 
 # 第6章：データ構造を理解して活用しよう

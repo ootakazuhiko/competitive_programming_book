@@ -1,6 +1,7 @@
 ---
 title: "第2章：AtCoderへの第一歩"
-layout: default
+layout: book
+order: 2
 ---
 
 # 第2章：AtCoderへの第一歩

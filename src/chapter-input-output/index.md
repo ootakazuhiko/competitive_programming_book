@@ -1,6 +1,7 @@
 ---
 title: "第4章：入出力処理を完全マスター"
-layout: default
+layout: book
+order: 4
 ---
 
 # 第4章：入出力処理を完全マスター

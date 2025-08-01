@@ -1,6 +1,7 @@
 ---
 title: "第10章：コンテストに参加してみよう"
-layout: default
+layout: book
+order: 10
 ---
 
 # 第10章：コンテストに参加してみよう
