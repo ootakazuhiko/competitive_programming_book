@@ -1,0 +1,152 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-21：この章で身につけたスキル</title>
+  <desc>第3章で学習した内容の総まとめと次のステップへの案内</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .skill-text { font: 400 12px Inter, sans-serif; fill: #4B5563; }
+      .check-mark { font: 600 14px Inter, sans-serif; fill: #22C55E; }
+      .next-title { font: 600 13px Inter, sans-serif; fill: #7C3AED; }
+      .next-text { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .icon { font: 400 16px Inter, sans-serif; }
+      .chapter-num { font: 600 16px Inter, sans-serif; fill: #7C3AED; }
+      
+      .completed-bg { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .next-bg { fill: #F3F4F6; stroke: #7C3AED; stroke-width: 2; }
+      .skill-item-bg { fill: #FFFFFF; stroke: #22C55E; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-21：この章で身につけたスキル</text>
+  
+  <!-- Completed Skills Section -->
+  <g id="completed-skills">
+    <rect x="50" y="70" width="700" height="280" rx="12" class="completed-bg"/>
+    <text x="70" y="95" class="icon">🎯</text>
+    <text x="100" y="95" class="section-title">完了したこと</text>
+    
+    <!-- Skill 1: Python Installation -->
+    <g transform="translate(80, 120)">
+      <rect x="0" y="0" width="620" height="35" rx="6" class="skill-item-bg"/>
+      <text x="10" y="15" class="check-mark">✅</text>
+      <text x="35" y="15" class="skill-text">Pythonを選ぶ理由を理解し、適切にインストール</text>
+      <text x="35" y="28" style="font: 400 10px Inter, sans-serif; fill: #6B7280;">
+        競技プログラミングに最適な言語として、WindowsとmacOSでの環境構築を完了
+      </text>
+    </g>
+    
+    <!-- Skill 2: Editor Setup -->
+    <g transform="translate(80, 165)">
+      <rect x="0" y="0" width="620" height="35" rx="6" class="skill-item-bg"/>
+      <text x="10" y="15" class="check-mark">✅</text>
+      <text x="35" y="15" class="skill-text">エディタを設定し、基本操作をマスター</text>
+      <text x="35" y="28" style="font: 400 10px Inter, sans-serif; fill: #6B7280;">
+        ThonnyまたはVSCodeの設定、ファイル操作、コード編集の基本技術を習得
+      </text>
+    </g>
+    
+    <!-- Skill 3: AtCoder Submission -->
+    <g transform="translate(80, 210)">
+      <rect x="0" y="0" width="620" height="35" rx="6" class="skill-item-bg"/>
+      <text x="10" y="15" class="check-mark">✅</text>
+      <text x="35" y="15" class="skill-text">AtCoderで実際にコードを提出する体験</text>
+      <text x="35" y="28" style="font: 400 10px Inter, sans-serif; fill: #6B7280;">
+        Practice Contest参加、提出画面の操作、結果の読み方を理解
+      </text>
+    </g>
+    
+    <!-- Skill 4: Basic Debugging -->
+    <g transform="translate(80, 255)">
+      <rect x="0" y="0" width="620" height="35" rx="6" class="skill-item-bg"/>
+      <text x="10" y="15" class="check-mark">✅</text>
+      <text x="35" y="15" class="skill-text">基本的なデバッグ技術を習得</text>
+      <text x="35" y="28" style="font: 400 10px Inter, sans-serif; fill: #6B7280;">
+        print文デバッグ、エラーメッセージの読み方、ステップ実行の活用方法をマスター
+      </text>
+    </g>
+    
+    <!-- Skill 5: Error Handling -->
+    <g transform="translate(80, 300)">
+      <rect x="0" y="0" width="620" height="35" rx="6" class="skill-item-bg"/>
+      <text x="10" y="15" class="check-mark">✅</text>
+      <text x="35" y="15" class="skill-text">よくあるエラーの対処法を学習</text>
+      <text x="35" y="28" style="font: 400 10px Inter, sans-serif; fill: #6B7280;">
+        SyntaxError、NameError、IndexErrorなど頻出エラーの原因と解決方法を理解
+      </text>
+    </g>
+  </g>
+  
+  <!-- Next Steps Section -->
+  <g id="next-steps">
+    <rect x="50" y="370" width="700" height="200" rx="12" class="next-bg"/>
+    <text x="70" y="395" class="icon">🚀</text>
+    <text x="100" y="395" class="section-title">次のステップ</text>
+    
+    <!-- Chapter 4 Overview -->
+    <g transform="translate(80, 420)">
+      <rect x="0" y="0" width="620" height="130" rx="8" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
+      
+      <text x="20" y="25" class="chapter-num">第4章: 入出力処理の完全マスター</text>
+      
+      <g transform="translate(20, 45)">
+        <text x="0" y="15" class="next-text">• 競技プログラミングで最も重要な基本技術</text>
+        <text x="0" y="30" class="next-text">• 様々な形式のデータ読み込み方法</text>
+        <text x="0" y="45" class="next-text">• 効率的な出力処理のテクニック</text>
+        <text x="0" y="60" class="next-text">• 複雑な入力パターンの対処法</text>
+        <text x="0" y="75" class="next-text">• リアルなコンテスト問題での実践練習</text>
+      </g>
+      
+      <g transform="translate(350, 45)">
+        <text x="0" y="15" class="next-title">学習内容：</text>
+        <text x="0" y="30" class="next-text">✓ 標準入力の完全理解</text>
+        <text x="0" y="45" class="next-text">✓ 文字列・数値の変換技術</text>
+        <text x="0" y="60" class="next-text">✓ 複数行・複数項目の処理</text>
+        <text x="0" y="75" class="next-text">✓ 出力フォーマットの最適化</text>
+        <text x="0" y="90" class="next-text">✓ 実際のコンテスト問題への応用</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Encouragement Message -->
+  <g id="encouragement">
+    <rect x="50" y="590" width="700" height="5" rx="2" fill="#22C55E"/>
+    <text x="400" y="585" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #059669;">
+      🎉 おめでとう！君はもう競技プログラミングを始める準備が整った！
+    </text>
+  </g>
+  
+  <!-- Progress Indicators -->
+  <g id="progress">
+    <!-- Chapter indicators -->
+    <g transform="translate(200, 50)">
+      <circle cx="0" cy="0" r="12" fill="#22C55E"/>
+      <text x="0" y="4" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">3</text>
+      <text x="0" y="-20" text-anchor="middle" style="font: 400 10px Inter, sans-serif; fill: #22C55E;">完了</text>
+      
+      <line x1="12" y1="0" x2="48" y2="0" stroke="#CBD5E0" stroke-width="2"/>
+      
+      <circle cx="60" cy="0" r="12" fill="#7C3AED"/>
+      <text x="60" y="4" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">4</text>
+      <text x="60" y="-20" text-anchor="middle" style="font: 400 10px Inter, sans-serif; fill: #7C3AED;">次回</text>
+      
+      <line x1="72" y1="0" x2="108" y2="0" stroke="#CBD5E0" stroke-width="2"/>
+      
+      <circle cx="120" cy="0" r="12" fill="#CBD5E0"/>
+      <text x="120" y="4" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #6B7280;">5</text>
+      
+      <line x1="132" y1="0" x2="168" y2="0" stroke="#CBD5E0" stroke-width="2"/>
+      
+      <circle cx="180" cy="0" r="12" fill="#CBD5E0"/>
+      <text x="180" y="4" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #6B7280;">6</text>
+      
+      <text x="200" y="4" style="font: 400 10px Inter, sans-serif; fill: #6B7280;">...</text>
+    </g>
+  </g>
+  
+</svg>

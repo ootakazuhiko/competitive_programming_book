@@ -1,0 +1,176 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-11：N行入力処理の基本形</title>
+  <desc>N個のデータが1行ずつ与えられる標準的な入力パターンの処理方法を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .code-text { font: 500 11px 'Monaco', 'Menlo', monospace; fill: #4B5563; }
+      .input-text { font: 600 12px 'Monaco', 'Menlo', monospace; fill: #059669; }
+      .comment-text { font: 500 10px Inter, sans-serif; fill: #6B7280; }
+      .step-text { font: 600 11px Inter, sans-serif; }
+      .result-text { font: 600 11px 'Monaco', 'Menlo', monospace; fill: #3B82F6; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .input-section { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .code-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .result-section { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .input-box { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+      .arrow { stroke: #10B981; stroke-width: 2; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L10,3 z" fill="#10B981"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="650" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-11：N行入力処理の基本形</text>
+  
+  <!-- Problem Description -->
+  <g id="problem-desc">
+    <text x="70" y="65" class="section-title">問題例：「N個の整数が1行ずつ与えられる」</text>
+  </g>
+  
+  <!-- Input Example Section -->
+  <g id="input-section">
+    <rect x="50" y="80" width="300" height="200" rx="12" class="input-section"/>
+    <text x="70" y="105" class="emoji">📥</text>
+    <text x="100" y="105" class="section-title" fill="#059669">入力例</text>
+    
+    <!-- Input data -->
+    <g transform="translate(70, 120)">
+      <rect x="0" y="0" width="60" height="25" rx="6" class="input-box"/>
+      <text x="30" y="17" text-anchor="middle" class="input-text">3</text>
+      <text x="70" y="17" class="comment-text">← N（データの個数）</text>
+      
+      <rect x="0" y="35" width="60" height="25" rx="6" class="input-box"/>
+      <text x="30" y="52" text-anchor="middle" class="input-text">10</text>
+      <text x="70" y="52" class="comment-text">← 1行目の数値</text>
+      
+      <rect x="0" y="70" width="60" height="25" rx="6" class="input-box"/>
+      <text x="30" y="87" text-anchor="middle" class="input-text">25</text>
+      <text x="70" y="87" class="comment-text">← 2行目の数値</text>
+      
+      <rect x="0" y="105" width="60" height="25" rx="6" class="input-box"/>
+      <text x="30" y="122" text-anchor="middle" class="input-text">13</text>
+      <text x="70" y="122" class="comment-text">← 3行目の数値</text>
+    </g>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M370 180 L420 180" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Code Section -->
+  <g id="code-section">
+    <rect x="440" y="80" width="310" height="200" rx="12" class="code-section"/>
+    <text x="460" y="105" class="emoji">💻</text>
+    <text x="490" y="105" class="section-title" fill="#1E40AF">基本コード</text>
+    
+    <!-- Code blocks -->
+    <g transform="translate(460, 120)">
+      <rect x="0" y="0" width="180" height="15" rx="4" class="code-box"/>
+      <text x="5" y="11" class="code-text">n = int(input())</text>
+      <text x="190" y="11" class="comment-text">データ個数を読み込み</text>
+      
+      <rect x="0" y="20" width="120" height="15" rx="4" class="code-box"/>
+      <text x="5" y="31" class="code-text">numbers = []</text>
+      <text x="130" y="31" class="comment-text">結果格納用リスト</text>
+      
+      <rect x="0" y="40" width="180" height="15" rx="4" class="code-box"/>
+      <text x="5" y="51" class="code-text">for i in range(n):</text>
+      <text x="190" y="51" class="comment-text">N回繰り返し</text>
+      
+      <rect x="0" y="60" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="71" class="code-text">    x = int(input())</text>
+      <text x="210" y="71" class="comment-text">1行ずつ読み込み</text>
+      
+      <rect x="0" y="80" width="220" height="15" rx="4" class="code-box"/>
+      <text x="5" y="91" class="code-text">    numbers.append(x)</text>
+      <text x="230" y="91" class="comment-text">リストに追加</text>
+      
+      <!-- Result comment -->
+      <text x="0" y="115" class="comment-text">この時点で numbers = [10, 25, 13]</text>
+    </g>
+  </g>
+  
+  <!-- Results Section -->
+  <g id="results-section">
+    <rect x="50" y="300" width="700" height="140" rx="12" class="result-section"/>
+    <text x="70" y="325" class="emoji">📊</text>
+    <text x="100" y="325" class="section-title" fill="#D97706">処理結果の活用例</text>
+    
+    <!-- Examples -->
+    <g transform="translate(70, 345)">
+      <rect x="0" y="0" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="11" class="code-text">print(max(numbers))</text>
+      <text x="210" y="11" class="comment-text">最大値出力：</text>
+      <text x="290" y="11" class="result-text">25</text>
+      
+      <rect x="0" y="25" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="36" class="code-text">print(sum(numbers))</text>
+      <text x="210" y="36" class="comment-text">合計出力：</text>
+      <text x="290" y="36" class="result-text">48</text>
+      
+      <rect x="0" y="50" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="61" class="code-text">print(len(numbers))</text>
+      <text x="210" y="61" class="comment-text">個数出力：</text>
+      <text x="290" y="61" class="result-text">3</text>
+      
+      <rect x="350" y="0" width="320" height="75" rx="8" fill="#F0FDF4" stroke="#22C55E" stroke-width="1"/>
+      <text x="360" y="20" class="step-text" fill="#059669">処理の流れ：</text>
+      <text x="360" y="35" class="comment-text">1. N（個数）を読み込む</text>
+      <text x="360" y="50" class="comment-text">2. 空のリストを準備</text>
+      <text x="360" y="65" class="comment-text">3. N回ループで1つずつ読み込み</text>
+    </g>
+  </g>
+  
+  <!-- Advanced Pattern -->
+  <g id="advanced-pattern">
+    <rect x="50" y="460" width="700" height="120" rx="12" fill="#F3E8FF" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="70" y="485" class="emoji">⚡</text>
+    <text x="100" y="485" class="section-title" fill="#8B5CF6">応用：処理と同時に読み込み</text>
+    
+    <g transform="translate(70, 505)">
+      <text x="0" y="15" class="comment-text">読み込みながら同時に処理する場合：</text>
+      
+      <rect x="0" y="25" width="180" height="15" rx="4" class="code-box"/>
+      <text x="5" y="36" class="code-text">n = int(input())</text>
+      
+      <rect x="0" y="45" width="120" height="15" rx="4" class="code-box"/>
+      <text x="5" y="56" class="code-text">total = 0</text>
+      
+      <rect x="0" y="65" width="180" height="15" rx="4" class="code-box"/>
+      <text x="5" y="76" class="code-text">for i in range(n):</text>
+      
+      <rect x="200" y="25" width="200" height="15" rx="4" class="code-box"/>
+      <text x="205" y="36" class="code-text">    x = int(input())</text>
+      
+      <rect x="200" y="45" width="160" height="15" rx="4" class="code-box"/>
+      <text x="205" y="56" class="code-text">    total += x</text>
+      
+      <rect x="200" y="65" width="180" height="15" rx="4" class="code-box"/>
+      <text x="205" y="76" class="code-text">print(total)</text>
+      
+      <text x="420" y="50" class="comment-text">メモリ効率が良い（リストを作らない）</text>
+    </g>
+  </g>
+  
+  <!-- Pattern Note -->
+  <g id="pattern-note">
+    <rect x="100" y="600" width="600" height="40" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1"/>
+    <text x="120" y="620" class="emoji">💡</text>
+    <text x="150" y="620" class="comment-text" fill="#0C4A6E">
+      このパターンは競技プログラミングで最も頻出！N行の数値入力は必ずマスターしよう
+    </text>
+    <text x="150" y="635" class="comment-text" fill="#0C4A6E">
+      全て保存が必要な場合はリスト、合計や最大値のみ必要な場合は変数で処理
+    </text>
+  </g>
+  
+</svg>

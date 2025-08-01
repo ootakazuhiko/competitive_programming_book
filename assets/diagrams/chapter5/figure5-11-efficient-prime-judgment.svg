@@ -1,0 +1,153 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-11：効率的な素数判定</title>
+  <desc>素朴な素数判定から効率的な√nまでの判定法への改良過程と、素数の性質を活用した問題例を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .method-title { font: 600 13px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Courier New', monospace; fill: #1F2937; }
+      .comment-text { font: 400 10px 'Courier New', monospace; fill: #16A34A; }
+      .problem-text { font: 600 11px Inter, sans-serif; fill: #DC2626; }
+      .complexity-text { font: 600 11px Inter, sans-serif; fill: #7C3AED; }
+      .improvement-text { font: 600 11px Inter, sans-serif; fill: #059669; }
+      .explanation-text { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .naive-box { fill: #FEE2E2; stroke: #EF4444; stroke-width: 2; }
+      .improved-box { fill: #DCFCE7; stroke: #22C55E; stroke-width: 2; }
+      .application-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .code-block { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .highlight-line { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 1; }
+      .performance-box { fill: #F3E8FF; stroke: #7C3AED; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-11：効率的な素数判定</text>
+  
+  <!-- Naive Implementation -->
+  <g id="naive-impl">
+    <rect x="50" y="60" width="700" height="140" rx="8" class="naive-box"/>
+    <text x="70" y="85" class="emoji">⚠️</text>
+    <text x="100" y="85" class="method-title" fill="#DC2626">素朴な素数判定</text>
+    
+    <g transform="translate(70, 100)">
+      <rect x="0" y="0" width="660" height="85" class="code-block"/>
+      <g transform="translate(15, 15)">
+        <text x="0" y="0" class="code-text">def is_prime_simple(n):</text>
+        <text x="0" y="15" class="code-text">    if n &lt; 2:</text>
+        <text x="0" y="30" class="code-text">        return False</text>
+        <text x="0" y="45" class="code-text">    for i in range(2, n):</text>
+        <rect x="240" y="35" width="120" height="20" class="highlight-line"/>
+        <text x="370" y="48" class="problem-text">2からn-1まで全チェック</text>
+        <text x="0" y="60" class="code-text">        if n % i == 0:</text>
+        <text x="0" y="75" class="code-text">            return False</text>
+        <text x="200" y="75" class="code-text">    return True</text>
+      </g>
+    </g>
+    
+    <g transform="translate(70, 190)">
+      <rect x="0" y="0" width="300" height="25" class="performance-box"/>
+      <text x="150" y="17" text-anchor="middle" class="problem-text">問題：nが大きいと非常に遅い（O(n)）</text>
+    </g>
+  </g>
+  
+  <!-- Improved Implementation -->
+  <g id="improved-impl">
+    <rect x="50" y="230" width="700" height="180" rx="8" class="improved-box"/>
+    <text x="70" y="255" class="emoji">✨</text>
+    <text x="100" y="255" class="method-title" fill="#059669">改良版（√nまでチェック）</text>
+    
+    <g transform="translate(70, 270)">
+      <rect x="0" y="0" width="660" height="125" class="code-block"/>
+      <g transform="translate(15, 15)">
+        <text x="0" y="0" class="code-text">import math</text>
+        <text x="0" y="20" class="code-text">def is_prime(n):</text>
+        <text x="0" y="35" class="code-text">    if n &lt; 2:</text>
+        <text x="0" y="50" class="code-text">        return False</text>
+        <text x="0" y="65" class="code-text">    if n == 2:</text>
+        <text x="0" y="80" class="code-text">        return True</text>
+        <text x="0" y="95" class="code-text">    if n % 2 == 0:</text>
+        <text x="180" y="95" class="comment-text"># 偶数は2以外素数でない</text>
+        <text x="0" y="110" class="code-text">        return False</text>
+        
+        <g transform="translate(350, 20)">
+          <rect x="0" y="0" width="280" height="90" fill="#E0F2FE" stroke="#0369A1" stroke-width="1"/>
+          <text x="10" y="15" class="improvement-text">改良ポイント</text>
+          <text x="10" y="30" class="explanation-text">1. 2は特別扱い</text>
+          <text x="10" y="45" class="explanation-text">2. 偶数は即座に判定</text>
+          <text x="10" y="60" class="explanation-text">3. 3以上の奇数のみチェック</text>
+          <text x="10" y="75" class="explanation-text">4. √nまでのみチェック</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Continued code -->
+    <g transform="translate(70, 400)">
+      <rect x="0" y="0" width="300" height="30" class="code-block"/>
+      <text x="15" y="18" class="code-text">    for i in range(3, int(math.sqrt(n)) + 1, 2):</text>
+      <rect x="320" y="0" width="150" height="30" class="highlight-line"/>
+      <text x="395" y="18" text-anchor="middle" class="improvement-text">奇数のみ、√nまで</text>
+    </g>
+    
+    <g transform="translate(480, 400)">
+      <rect x="0" y="0" width="180" height="30" class="performance-box"/>
+      <text x="90" y="18" text-anchor="middle" class="complexity-text">計算量：O(√n)</text>
+    </g>
+  </g>
+  
+  <!-- Performance Comparison -->
+  <g id="performance">
+    <rect x="50" y="430" width="700" height="80" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="70" y="455" class="emoji">⚡</text>
+    <text x="100" y="455" class="section-title">性能比較例（n = 1000000の場合）</text>
+    
+    <g transform="translate(80, 470)">
+      <!-- Naive method -->
+      <rect x="0" y="0" width="300" height="30" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/>
+      <text x="150" y="20" text-anchor="middle" class="problem-text">素朴法: 999,998回のチェック</text>
+      
+      <!-- Improved method -->
+      <rect x="320" y="0" width="300" height="30" fill="#DCFCE7" stroke="#22C55E" stroke-width="1"/>
+      <text x="470" y="20" text-anchor="middle" class="improvement-text">改良法: 約500回のチェック</text>
+    </g>
+  </g>
+  
+  <!-- Applications -->
+  <g id="applications">
+    <rect x="50" y="530" width="700" height="140" rx="8" class="application-box"/>
+    <text x="70" y="555" class="emoji">🎯</text>
+    <text x="100" y="555" class="method-title" fill="#1E40AF">素数の性質を活用した問題例</text>
+    
+    <!-- Example 1 -->
+    <g transform="translate(70, 575)">
+      <rect x="0" y="0" width="320" height="80" class="code-block"/>
+      <text x="10" y="15" class="comment-text"># 「N以下の素数の個数を求める」</text>
+      <g transform="translate(10, 25)">
+        <text x="0" y="15" class="code-text">n = int(input())</text>
+        <text x="0" y="30" class="code-text">count = 0</text>
+        <text x="0" y="45" class="code-text">for i in range(2, n + 1):</text>
+        <text x="0" y="60" class="code-text">    if is_prime(i):</text>
+        <text x="0" y="75" class="code-text">        count += 1</text>
+      </g>
+    </g>
+    
+    <!-- Example 2 -->
+    <g transform="translate(410, 575)">
+      <rect x="0" y="0" width="270" height="80" class="code-block"/>
+      <text x="10" y="15" class="comment-text"># 「Nを2つの素数の和で表せるか？」</text>
+      <g transform="translate(10, 25)">
+        <text x="0" y="15" class="code-text">n = int(input())</text>
+        <text x="0" y="30" class="code-text">for i in range(2, n // 2 + 1):</text>
+        <text x="0" y="45" class="code-text">    if is_prime(i) and is_prime(n - i):</text>
+        <text x="0" y="60" class="code-text">        print(f"{n} = {i} + {n - i}")</text>
+      </g>
+    </g>
+  </g>
+  
+</svg>

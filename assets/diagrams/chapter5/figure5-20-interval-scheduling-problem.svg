@@ -1,0 +1,163 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-20：区間スケジューリング問題</title>
+  <desc>複数の会議から重複しないよう最大数に参加する区間スケジューリング問題の貪欲法による解法を時間軸で視覚化する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .meeting-title { font: 600 12px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Courier New', monospace; fill: #1F2937; }
+      .comment-text { font: 400 10px 'Courier New', monospace; fill: #16A34A; }
+      .time-text { font: 500 10px Inter, sans-serif; fill: #4B5563; }
+      .strategy-text { font: 600 11px Inter, sans-serif; fill: #7C3AED; }
+      .result-text { font: 600 11px Inter, sans-serif; fill: #059669; }
+      .explanation-text { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .problem-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .strategy-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .implementation-box { fill: #F3E8FF; stroke: #7C3AED; stroke-width: 2; }
+      .timeline-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .meeting-a { fill: #FEE2E2; stroke: #DC2626; stroke-width: 2; }
+      .meeting-b { fill: #DBEAFE; stroke: #2563EB; stroke-width: 2; }
+      .meeting-c { fill: #DCFCE7; stroke: #16A34A; stroke-width: 2; }
+      .meeting-d { fill: #FEF3C7; stroke: #D97706; stroke-width: 2; }
+      .meeting-e { fill: #F3E8FF; stroke: #7C3AED; stroke-width: 2; }
+      .selected-meeting { fill: #DCFCE7; stroke: #16A34A; stroke-width: 3; }
+      .rejected-meeting { fill: #FEE2E2; stroke: #DC2626; stroke-width: 1; opacity: 0.5; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-20：区間スケジューリング問題</text>
+  
+  <!-- Problem Description -->
+  <g id="problem">
+    <rect x="50" y="60" width="700" height="80" rx="8" class="problem-box"/>
+    <text x="70" y="85" class="emoji">📅</text>
+    <text x="100" y="85" class="section-title" fill="#D97706">問題：「重複しないよう最大数の会議に参加したい」</text>
+    
+    <g transform="translate(70, 105)">
+      <text x="0" y="15" class="explanation-text">会議データ例：</text>
+      <text x="120" y="15" class="meeting-title" fill="#DC2626">会議A: 9:00-10:30</text>
+      <text x="250" y="15" class="meeting-title" fill="#2563EB">会議B: 10:00-11:30</text>
+      <text x="380" y="15" class="meeting-title" fill="#16A34A">会議C: 11:00-12:00</text>
+      <text x="120" y="30" class="meeting-title" fill="#D97706">会議D: 11:30-12:30</text>
+      <text x="250" y="30" class="meeting-title" fill="#7C3AED">会議E: 12:00-13:00</text>
+    </g>
+  </g>
+  
+  <!-- Timeline Visualization -->
+  <g id="timeline">
+    <rect x="50" y="160" width="700" height="180" rx="8" class="timeline-box"/>
+    <text x="70" y="185" class="emoji">⏰</text>
+    <text x="100" y="185" class="section-title">時間軸での可視化</text>
+    
+    <!-- Time axis -->
+    <g transform="translate(100, 210)">
+      <!-- Time labels -->
+      <text x="0" y="15" text-anchor="middle" class="time-text">9:00</text>
+      <text x="100" y="15" text-anchor="middle" class="time-text">10:00</text>
+      <text x="200" y="15" text-anchor="middle" class="time-text">11:00</text>
+      <text x="300" y="15" text-anchor="middle" class="time-text">12:00</text>
+      <text x="400" y="15" text-anchor="middle" class="time-text">13:00</text>
+      
+      <!-- Time axis line -->
+      <line x1="0" y1="25" x2="400" y2="25" stroke="#9CA3AF" stroke-width="2"/>
+      
+      <!-- Meeting A: 9:00-10:30 -->
+      <g transform="translate(0, 40)">
+        <rect x="0" y="0" width="150" height="20" class="meeting-a"/>
+        <text x="75" y="14" text-anchor="middle" class="meeting-title" fill="#DC2626">会議A (9:00-10:30)</text>
+      </g>
+      
+      <!-- Meeting B: 10:00-11:30 -->
+      <g transform="translate(100, 70)">
+        <rect x="0" y="0" width="150" height="20" class="meeting-b"/>
+        <text x="75" y="14" text-anchor="middle" class="meeting-title" fill="#2563EB">会議B (10:00-11:30)</text>
+      </g>
+      
+      <!-- Meeting C: 11:00-12:00 -->
+      <g transform="translate(200, 100)">
+        <rect x="0" y="0" width="100" height="20" class="meeting-c"/>
+        <text x="50" y="14" text-anchor="middle" class="meeting-title" fill="#16A34A">会議C (11:00-12:00)</text>
+      </g>
+      
+      <!-- Meeting D: 11:30-12:30 -->
+      <g transform="translate(250, 130)">
+        <rect x="0" y="0" width="100" height="20" class="meeting-d"/>
+        <text x="50" y="14" text-anchor="middle" class="meeting-title" fill="#D97706">会議D (11:30-12:30)</text>
+      </g>
+      
+      <!-- Meeting E: 12:00-13:00 -->
+      <g transform="translate(300, 160)">
+        <rect x="0" y="0" width="100" height="20" class="meeting-e"/>
+        <text x="50" y="14" text-anchor="middle" class="meeting-title" fill="#7C3AED">会議E (12:00-13:00)</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Strategy -->
+  <g id="strategy">
+    <rect x="50" y="360" width="700" height="100" rx="8" class="strategy-box"/>
+    <text x="70" y="385" class="emoji">🎯</text>
+    <text x="100" y="385" class="section-title" fill="#1E40AF">貪欲戦略：「終了時刻が早い会議から選ぶ」</text>
+    
+    <g transform="translate(80, 405)">
+      <text x="0" y="15" class="strategy-text">1. 終了時刻順にソート</text>
+      <text x="0" y="30" class="strategy-text">2. 最初の会議を選択</text>
+      <text x="0" y="45" class="strategy-text">3. 前の会議と重複しない次の会議を選択</text>
+      <text x="0" y="60" class="strategy-text">4. 3を繰り返す</text>
+      
+      <!-- Selection process -->
+      <g transform="translate(300, 0)">
+        <rect x="0" y="0" width="350" height="75" fill="#E0F2FE" stroke="#0369A1" stroke-width="1"/>
+        <text x="10" y="15" class="result-text">選択プロセス</text>
+        <text x="10" y="30" class="explanation-text">終了時刻順: A(10:30) → C(12:00) → D(12:30) → E(13:00) → B(11:30)</text>
+        <text x="10" y="45" class="result-text">選択: A → C → E</text>
+        <text x="10" y="60" class="explanation-text">B は A と重複、D は C と重複のため除外</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Implementation -->
+  <g id="implementation">
+    <rect x="50" y="480" width="700" height="170" rx="8" class="implementation-box"/>
+    <text x="70" y="505" class="emoji">💻</text>
+    <text x="100" y="505" class="section-title" fill="#7C3AED">実装</text>
+    
+    <g transform="translate(70, 525)">
+      <rect x="0" y="0" width="660" height="110" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="1"/>
+      <g transform="translate(15, 15)">
+        <text x="0" y="0" class="code-text">def max_meetings(meetings):</text>
+        <text x="0" y="15" class="comment-text">    # (開始時刻, 終了時刻, 名前) のタプルのリスト</text>
+        <text x="0" y="30" class="code-text">    meetings.sort(key=lambda x: x[1])</text>
+        <text x="300" y="30" class="comment-text"># 終了時刻でソート</text>
+        <text x="0" y="50" class="code-text">    selected = []</text>
+        <text x="0" y="65" class="code-text">    last_end_time = 0</text>
+        <text x="0" y="85" class="code-text">    for start, end, name in meetings:</text>
+        <text x="0" y="100" class="code-text">        if start >= last_end_time:</text>
+        
+        <g transform="translate(350, 45)">
+          <rect x="0" y="0" width="280" height="65" fill="#FAF5FF" stroke="#7C3AED" stroke-width="1"/>
+          <text x="10" y="15" class="result-text">結果: 会議A, 会議C, 会議E</text>
+          <text x="10" y="30" class="explanation-text">3つの会議に参加可能</text>
+          <text x="10" y="45" class="explanation-text">時間: 9:00-10:30, 11:00-12:00, 12:00-13:00</text>
+          <text x="10" y="60" class="explanation-text">重複なし！</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Key Insight -->
+  <g id="insight">
+    <rect x="50" y="670" width="700" height="20" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="70" y="685" class="emoji">💡</text>
+    <text x="100" y="685" class="explanation-text">なぜ「終了時刻順」が最適？ → 早く終わる会議を選ぶことで、後の選択肢を最大化</text>
+  </g>
+  
+</svg>

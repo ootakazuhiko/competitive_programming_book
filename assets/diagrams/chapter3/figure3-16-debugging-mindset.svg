@@ -1,0 +1,153 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-16：デバッグの心構え</title>
+  <desc>プログラミングにおけるデバッグに対する正しい心構えと考え方</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .avoid-text { font: 400 12px Inter, sans-serif; fill: #DC2626; }
+      .recommend-text { font: 400 12px Inter, sans-serif; fill: #059669; }
+      .quote { font: 600 13px Inter, sans-serif; }
+      .description { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .mindset-title { font: 600 12px Inter, sans-serif; fill: #7C3AED; }
+      .icon { font: 400 20px Inter, sans-serif; }
+      
+      .avoid-bg { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .recommend-bg { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .arrow { fill: #059669; }
+      .detective-bg { fill: #F3F4F6; stroke: #7C3AED; stroke-width: 2; }
+      .game-bg { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-16：デバッグの心構え</text>
+  
+  <!-- Comparison Section -->
+  <g id="mindset-comparison">
+    <!-- Avoid Section -->
+    <g id="avoid-mindset">
+      <rect x="50" y="70" width="300" height="200" rx="12" class="avoid-bg"/>
+      <text x="70" y="95" class="section-title">❌ 避けるべき考え方</text>
+      
+      <g transform="translate(70, 115)">
+        <rect x="0" y="0" width="260" height="50" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/>
+        <text x="10" y="18" class="quote" fill="#DC2626">「また間違えた...」</text>
+        <text x="10" y="35" class="avoid-text">自分を責める気持ち</text>
+      </g>
+      
+      <g transform="translate(70, 175)">
+        <rect x="0" y="0" width="260" height="50" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/>
+        <text x="10" y="18" class="quote" fill="#DC2626">「自分はプログラミングに向いていない」</text>
+        <text x="10" y="35" class="avoid-text">能力を疑う思考</text>
+      </g>
+      
+      <g transform="translate(70, 235)">
+        <rect x="0" y="0" width="260" height="50" rx="6" fill="#FEE2E2" stroke="#EF4444" stroke-width="1"/>
+        <text x="10" y="18" class="quote" fill="#DC2626">「すぐに答えを見よう」</text>
+        <text x="10" y="35" class="avoid-text">諦めが早い態度</text>
+      </g>
+    </g>
+    
+    <!-- Arrow -->
+    <g transform="translate(370, 170)">
+      <path d="M 0 0 L 40 0 L 30 -10 M 40 0 L 30 10" stroke="#059669" stroke-width="4" fill="none"/>
+      <text x="20" y="-15" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #059669;">変換</text>
+    </g>
+    
+    <!-- Recommend Section -->
+    <g id="recommend-mindset">
+      <rect x="430" y="70" width="320" height="200" rx="12" class="recommend-bg"/>
+      <text x="450" y="95" class="section-title">✅ 推奨される考え方</text>
+      
+      <g transform="translate(450, 115)">
+        <rect x="0" y="0" width="280" height="50" rx="6" fill="#ECFDF5" stroke="#22C55E" stroke-width="1"/>
+        <text x="10" y="18" class="quote" fill="#059669">「新しい発見のチャンス！」</text>
+        <text x="10" y="35" class="recommend-text">成長の機会として捉える</text>
+      </g>
+      
+      <g transform="translate(450, 175)">
+        <rect x="0" y="0" width="280" height="50" rx="6" fill="#ECFDF5" stroke="#22C55E" stroke-width="1"/>
+        <text x="10" y="18" class="quote" fill="#059669">「この経験が実力向上につながる」</text>
+        <text x="10" y="35" class="recommend-text">長期的な視点で考える</text>
+      </g>
+      
+      <g transform="translate(450, 235)">
+        <rect x="0" y="0" width="280" height="50" rx="6" fill="#ECFDF5" stroke="#22C55E" stroke-width="1"/>
+        <text x="10" y="18" class="quote" fill="#059669">「まず自分で原因を探してみよう」</text>
+        <text x="10" y="35" class="recommend-text">能動的な問題解決</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Detective Game Section -->
+  <g id="detective-game">
+    <rect x="50" y="290" width="700" height="120" rx="12" class="detective-bg"/>
+    <text x="70" y="315" class="icon">🕵️</text>
+    <text x="105" y="315" class="mindset-title">デバッグは探偵ゲーム！</text>
+    
+    <g transform="translate(70, 330)">
+      <text x="0" y="20" class="quote" fill="#7C3AED">「なぜこのプログラムは期待通りに動かないのか？」</text>
+      <text x="0" y="40" style="font: 400 12px Inter, sans-serif; fill: #4B5563;">という謎を解く、とても楽しい知的ゲームだと考えよう。</text>
+    </g>
+    
+    <g transform="translate(70, 370)">
+      <text x="0" y="15" class="description">💡 探偵の心構え：</text>
+      <text x="120" y="15" class="description">• 証拠を集める（print文で変数の値を確認）</text>
+      <text x="120" y="30" class="description">• 仮説を立てる（なぜエラーが起きたか推測）</text>
+      <text x="450" y="15" class="description">• 検証する（修正してテスト）</text>
+      <text x="450" y="30" class="description">• 学習する（同じミスを避ける方法を覚える）</text>
+    </g>
+  </g>
+  
+  <!-- Benefits Section -->
+  <g id="benefits">
+    <rect x="50" y="430" width="700" height="140" rx="12" class="game-bg"/>
+    <text x="70" y="455" class="icon">🎯</text>
+    <text x="105" y="455" class="mindset-title">デバッグで得られるスキル</text>
+    
+    <!-- Skill 1 -->
+    <g transform="translate(80, 475)">
+      <circle cx="8" cy="8" r="8" fill="#F59E0B"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">1</text>
+      <text x="25" y="12" style="font: 600 11px Inter, sans-serif; fill: #92400E;">論理的思考力</text>
+      <text x="25" y="27" class="description">問題を段階的に分解して考える能力</text>
+    </g>
+    
+    <!-- Skill 2 -->
+    <g transform="translate(80, 510)">
+      <circle cx="8" cy="8" r="8" fill="#F59E0B"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">2</text>
+      <text x="25" y="12" style="font: 600 11px Inter, sans-serif; fill: #92400E;">忍耐力・集中力</text>
+      <text x="25" y="27" class="description">複雑な問題に粘り強く取り組む力</text>
+    </g>
+    
+    <!-- Skill 3 -->
+    <g transform="translate(400, 475)">
+      <circle cx="8" cy="8" r="8" fill="#F59E0B"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">3</text>
+      <text x="25" y="12" style="font: 600 11px Inter, sans-serif; fill: #92400E;">仮説検証能力</text>
+      <text x="25" y="27" class="description">原因を推測し、実験で確かめる力</text>
+    </g>
+    
+    <!-- Skill 4 -->
+    <g transform="translate(400, 510)">
+      <circle cx="8" cy="8" r="8" fill="#F59E0B"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">4</text>
+      <text x="25" y="12" style="font: 600 11px Inter, sans-serif; fill: #92400E;">問題解決スキル</text>
+      <text x="25" y="27" class="description">様々な手法を使い分ける柔軟性</text>
+    </g>
+    
+    <!-- Message -->
+    <g transform="translate(70, 545)">
+      <text x="0" y="0" style="font: 600 12px Inter, sans-serif; fill: #D97706;">
+        これらのスキルは、プログラミング以外の勉強や将来の仕事でも大いに役立つ！
+      </text>
+    </g>
+  </g>
+  
+</svg>

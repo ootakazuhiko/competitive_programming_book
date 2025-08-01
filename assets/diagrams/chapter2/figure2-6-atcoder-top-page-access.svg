@@ -1,0 +1,125 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-6：AtCoderトップページへのアクセス</title>
+  <desc>AtCoderのトップページにアクセスする手順を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .step-title { font: 600 14px Inter, sans-serif; }
+      .url-text { font: 600 16px 'Courier New', monospace; }
+      .button-text { font: 600 12px Inter, sans-serif; }
+      .content-text { font: 500 11px Inter, sans-serif; }
+      .desc-text { font: 400 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .browser-bar { fill: #E5E7EB; stroke: #9CA3AF; stroke-width: 2; }
+      .url-bar { fill: #FFFFFF; stroke: #D1D5DB; stroke-width: 1; }
+      .atcoder-page { fill: #FEFEFE; stroke: #E5E7EB; stroke-width: 2; }
+      .header { fill: #FF6B6B; }
+      .button-login { fill: #3B82F6; }
+      .button-register { fill: #10B981; }
+      .content-box { fill: #F3F4F6; stroke: #D1D5DB; stroke-width: 1; }
+      
+      .step-arrow { stroke: #059669; stroke-width: 3; marker-end: url(#arrowhead); }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" 
+            refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#059669" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-6：AtCoderトップページへのアクセス</text>
+  
+  <!-- Step 1: Open Browser -->
+  <g id="step1">
+    <text x="100" y="70" class="emoji">🌐</text>
+    <text x="130" y="70" class="step-title" fill="#374151">ブラウザを開く</text>
+    
+    <!-- Browser Window -->
+    <rect x="100" y="80" width="600" height="40" rx="8" class="browser-bar"/>
+    <!-- URL Bar -->
+    <rect x="120" y="90" width="560" height="20" rx="4" class="url-bar"/>
+    <text x="400" y="103" text-anchor="middle" class="url-text" fill="#1F2937">https://atcoder.jp/</text>
+    
+    <!-- Arrow pointing to URL -->
+    <text x="700" y="103" class="content-text" fill="#059669">← このURLを入力</text>
+  </g>
+  
+  <!-- Arrow down -->
+  <path d="M400 130 L400 160" class="step-arrow" fill="none"/>
+  
+  <!-- Step 2: AtCoder Top Page -->
+  <g id="step2">
+    <text x="100" y="180" class="step-title" fill="#374151">AtCoderトップページ</text>
+    
+    <!-- Page Container -->
+    <rect x="100" y="190" width="600" height="320" rx="12" class="atcoder-page"/>
+    
+    <!-- Header -->
+    <rect x="100" y="190" width="600" height="60" rx="12" class="header"/>
+    <rect x="100" y="235" width="600" height="15" fill="#FF6B6B"/>
+    
+    <text x="130" y="220" style="font: 600 20px Inter, sans-serif; fill: #FFFFFF;">AtCoder</text>
+    <text x="130" y="238" style="font: 400 12px Inter, sans-serif; fill: #FFFFFF;">競技プログラミングサイト</text>
+    
+    <!-- Login/Register Buttons -->
+    <rect x="520" y="205" width="70" height="25" rx="12" class="button-login"/>
+    <text x="555" y="221" text-anchor="middle" class="button-text" fill="#FFFFFF">ログイン</text>
+    
+    <rect x="600" y="205" width="70" height="25" rx="12" class="button-register"/>
+    <text x="635" y="221" text-anchor="middle" class="button-text" fill="#FFFFFF">新規登録</text>
+    
+    <!-- Click indicator -->
+    <text x="635" y="245" text-anchor="middle" class="desc-text" fill="#10B981">← これをクリック</text>
+    
+    <!-- Main Content Areas -->
+    <!-- Contest Info -->
+    <rect x="120" y="270" width="180" height="80" rx="6" class="content-box"/>
+    <text x="130" y="290" class="emoji">📊</text>
+    <text x="155" y="290" class="content-text" fill="#374151">最新のコンテスト情報</text>
+    <text x="130" y="310" class="desc-text" fill="#6B7280">• ABC350 開催予定</text>
+    <text x="130" y="325" class="desc-text" fill="#6B7280">• 2024年XX月XX日</text>
+    <text x="130" y="340" class="desc-text" fill="#6B7280">• 初心者歓迎</text>
+    
+    <!-- User Ranking -->
+    <rect x="320" y="270" width="180" height="80" rx="6" class="content-box"/>
+    <text x="330" y="290" class="emoji">👥</text>
+    <text x="355" y="290" class="content-text" fill="#374151">ユーザーランキング</text>
+    <text x="330" y="310" class="desc-text" fill="#6B7280">• 全国順位</text>
+    <text x="330" y="325" class="desc-text" fill="#6B7280">• 学生ランキング</text>
+    <text x="330" y="340" class="desc-text" fill="#6B7280">• 目標設定に活用</text>
+    
+    <!-- Practice Problems -->
+    <rect x="520" y="270" width="160" height="80" rx="6" class="content-box"/>
+    <text x="530" y="290" class="emoji">📚</text>
+    <text x="555" y="290" class="content-text" fill="#374151">練習問題</text>
+    <text x="530" y="310" class="desc-text" fill="#6B7280">• 過去問3000+</text>
+    <text x="530" y="325" class="desc-text" fill="#6B7280">• 難易度別</text>
+    <text x="530" y="340" class="desc-text" fill="#6B7280">• いつでも挑戦可能</text>
+    
+    <!-- News/Announcements -->
+    <rect x="120" y="370" width="560" height="60" rx="6" class="content-box"/>
+    <text x="130" y="390" class="emoji">📢</text>
+    <text x="155" y="390" class="content-text" fill="#374151">お知らせ・ニュース</text>
+    <text x="130" y="410" class="desc-text" fill="#6B7280">• 新機能の追加情報</text>
+    <text x="300" y="410" class="desc-text" fill="#6B7280">• コンテストの変更点</text>
+    <text x="480" y="410" class="desc-text" fill="#6B7280">• メンテナンス情報</text>
+    <text x="130" y="420" class="desc-text" fill="#6B7280">• プログラミング教育関連ニュース</text>
+  </g>
+  
+  <!-- Bottom Tips -->
+  <g id="tips">
+    <rect x="100" y="540" width="600" height="50" rx="10" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+    <text x="120" y="560" class="emoji">💡</text>
+    <text x="150" y="560" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">初回アクセスのポイント</text>
+    <text x="120" y="575" style="font: 400 11px Inter, sans-serif; fill: #1E40AF;">
+      ブックマークに保存しておくと便利！右上の「新規登録」ボタンから簡単にアカウント作成できます
+    </text>
+  </g>
+  
+</svg>

@@ -1,0 +1,152 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-22：この章で発見した競技プログラミングの価値</title>
+  <desc>第1章のまとめとして、競技プログラミングの本質、中学生にとっての特別な価値、具体的な学習戦略を統合的に視覚化した図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .value-text { font: 400 11px Inter, sans-serif; fill: #4B5563; line-height: 1.4; }
+      .checkmark { font: 600 12px Inter, sans-serif; fill: #059669; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      .arrow { stroke: #10B981; stroke-width: 2; fill: #10B981; }
+      
+      .essence-section { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 2; }
+      .value-section { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .strategy-section { fill: #FFF7ED; stroke: #FB923C; stroke-width: 2; }
+      .flow-box { fill: #F9FAFB; stroke: #D1D5DB; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図1-22：この章で発見した競技プログラミングの価値</text>
+  
+  <!-- Essence Section -->
+  <g id="essence">
+    <rect x="50" y="70" width="700" height="120" rx="12" class="essence-section"/>
+    
+    <text x="70" y="95" class="emoji">🎮</text>
+    <text x="100" y="95" class="section-title">競技プログラミングの本質</text>
+    
+    <!-- Flow -->
+    <g transform="translate(70, 110)">
+      <rect x="0" y="0" width="180" height="35" rx="6" class="flow-box"/>
+      <text x="90" y="20" text-anchor="middle" class="value-text">パズルゲームの楽しさ ＋</text>
+      <text x="90" y="32" text-anchor="middle" class="value-text">プログラミング技術</text>
+      
+      <!-- Arrow -->
+      <g class="arrow">
+        <line x1="190" y1="17" x2="220" y2="17"/>
+        <polygon points="217,12 227,17 217,22" />
+      </g>
+      
+      <rect x="235" y="0" width="180" height="35" rx="6" class="flow-box"/>
+      <text x="325" y="20" text-anchor="middle" class="value-text">論理的思考力・問題解決能力の</text>
+      <text x="325" y="32" text-anchor="middle" class="value-text">飛躍的向上</text>
+      
+      <!-- Arrow -->
+      <g class="arrow">
+        <line x1="425" y1="17" x2="455" y2="17"/>
+        <polygon points="452,12 462,17 452,22" />
+      </g>
+      
+      <rect x="470" y="0" width="180" height="35" rx="6" class="flow-box"/>
+      <text x="560" y="20" text-anchor="middle" class="value-text">将来への具体的な</text>
+      <text x="560" y="32" text-anchor="middle" class="value-text">価値提供</text>
+    </g>
+  </g>
+  
+  <!-- Value Section -->
+  <g id="value">
+    <rect x="50" y="210" width="700" height="120" rx="12" class="value-section"/>
+    
+    <text x="70" y="235" class="emoji">💡</text>
+    <text x="100" y="235" class="section-title">中学生にとっての特別な価値</text>
+    
+    <g transform="translate(70, 250)">
+      <rect x="0" y="0" width="150" height="60" rx="6" class="flow-box"/>
+      <text x="10" y="20" class="emoji">🏆</text>
+      <text x="30" y="20" class="value-text">同世代との</text>
+      <text x="30" y="32" class="value-text">健全な競争環境</text>
+      <text x="30" y="50" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">Junior League</text>
+      
+      <rect x="170" y="0" width="150" height="60" rx="6" class="flow-box"/>
+      <text x="180" y="20" class="emoji">🔄</text>
+      <text x="200" y="20" class="value-text">学習の好循環</text>
+      <text x="200" y="32" class="value-text">（数学・理科の成績向上）</text>
+      <text x="200" y="50" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">教科横断的効果</text>
+      
+      <rect x="340" y="0" width="150" height="60" rx="6" class="flow-box"/>
+      <text x="350" y="20" class="emoji">🚀</text>
+      <text x="370" y="20" class="value-text">将来選択肢の</text>
+      <text x="370" y="32" class="value-text">戦略的拡大</text>
+      <text x="370" y="50" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">複利効果</text>
+      
+      <rect x="510" y="0" width="150" height="60" rx="6" class="flow-box"/>
+      <text x="520" y="20" class="emoji">🌟</text>
+      <text x="540" y="20" class="value-text">早期開始による</text>
+      <text x="540" y="32" class="value-text">複利効果</text>
+      <text x="540" y="50" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">一生の財産</text>
+    </g>
+  </g>
+  
+  <!-- Strategy Section -->
+  <g id="strategy">
+    <rect x="50" y="350" width="700" height="120" rx="12" class="strategy-section"/>
+    
+    <text x="70" y="375" class="emoji">🎯</text>
+    <text x="100" y="375" class="section-title">具体的な学習戦略</text>
+    
+    <g transform="translate(70, 390)">
+      <rect x="0" y="0" width="150" height="60" rx="6" class="flow-box"/>
+      <text x="10" y="15" class="checkmark">✅</text>
+      <text x="30" y="15" class="value-text">AtCoderから始める</text>
+      <text x="30" y="27" class="value-text">理由が明確に</text>
+      <text x="30" y="45" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">日本語・段階的難易度</text>
+      
+      <rect x="170" y="0" width="150" height="60" rx="6" class="flow-box"/>
+      <text x="180" y="15" class="checkmark">✅</text>
+      <text x="200" y="15" class="value-text">段階的な成長</text>
+      <text x="200" y="27" class="value-text">プロセスの理解</text>
+      <text x="200" y="45" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">3ヶ月計画</text>
+      
+      <rect x="340" y="0" width="150" height="60" rx="6" class="flow-box"/>
+      <text x="350" y="15" class="checkmark">✅</text>
+      <text x="370" y="15" class="value-text">現実的な目標</text>
+      <text x="370" y="27" class="value-text">設定ができた</text>
+      <text x="370" y="45" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">レーティング目標</text>
+      
+      <rect x="510" y="0" width="150" height="60" rx="6" class="flow-box"/>
+      <text x="520" y="15" class="checkmark">✅</text>
+      <text x="540" y="15" class="value-text">学習継続のための</text>
+      <text x="540" y="27" class="value-text">心構えを習得</text>
+      <text x="540" y="45" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">健全なマインドセット</text>
+    </g>
+  </g>
+  
+  <!-- Summary Box -->
+  <g id="summary">
+    <rect x="100" y="490" width="600" height="80" rx="12" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+    
+    <text x="400" y="515" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #059669;">🎊 第1章で達成したこと</text>
+    
+    <foreignObject x="120" y="525" width="560" height="40">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <div style="font: 400 11px Inter, sans-serif; color: #059669; text-align: center; line-height: 1.4;">
+          <div>君は今日、単なる知識を得たのではなく、将来を大きく変える可能性のある</div>
+          <div>新しい世界の扉を発見した。次章では、いよいよ実践の世界へ足を踏み入れる。</div>
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Bottom message -->
+  <g transform="translate(50, 580)">
+    <text x="0" y="0" style="font: 500 12px Inter, sans-serif; fill: #059669;">
+      🌟 理論から実践へ！いよいよAtCoderの世界で君の競技プログラミングライフが本格的に始まる
+    </text>
+  </g>
+</svg>

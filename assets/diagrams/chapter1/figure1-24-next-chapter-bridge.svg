@@ -1,0 +1,154 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-24：次章への架け橋</title>
+  <desc>第1章で学んだ理論的内容から第2章の実践的内容への移行を橋のメタファーで視覚化した図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .chapter-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .content-text { font: 400 11px Inter, sans-serif; fill: #4B5563; line-height: 1.4; }
+      .bridge-text { font: 600 12px Inter, sans-serif; fill: #DC2626; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      .arrow { stroke: #10B981; stroke-width: 4; fill: #10B981; }
+      
+      .chapter1-section { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 2; }
+      .chapter2-section { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .bridge-section { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 3; }
+      .bridge-path { stroke: #F59E0B; stroke-width: 8; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図1-24：次章への架け橋</text>
+  
+  <!-- Chapter 1 Section -->
+  <g id="chapter1">
+    <rect x="50" y="80" width="280" height="200" rx="12" class="chapter1-section"/>
+    
+    <text x="190" y="105" text-anchor="middle" class="chapter-title">第1章で学んだこと</text>
+    
+    <foreignObject x="70" y="120" width="240" height="150">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="content-text">
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 16px; margin-right: 8px;">📖</span>
+          <span>競技プログラミングとは</span>
+        </div>
+        <div style="margin-left: 24px; margin-bottom: 8px; font-size: 10px; color: #6B7280;">
+          パズルゲーム + プログラミング技術
+        </div>
+        
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 16px; margin-right: 8px;">📖</span>
+          <span>なぜやるのか</span>
+        </div>
+        <div style="margin-left: 24px; margin-bottom: 8px; font-size: 10px; color: #6B7280;">
+          論理的思考力・問題解決能力の向上
+        </div>
+        
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 16px; margin-right: 8px;">📖</span>
+          <span>中学生のメリット</span>
+        </div>
+        <div style="margin-left: 24px; margin-bottom: 8px; font-size: 10px; color: #6B7280;">
+          同世代競争・学習好循環・将来拡大
+        </div>
+        
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 16px; margin-right: 8px;">📖</span>
+          <span>AtCoderを選ぶ理由</span>
+        </div>
+        <div style="margin-left: 24px; font-size: 10px; color: #6B7280;">
+          日本語対応・段階的難易度・コミュニティ
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Bridge -->
+  <g id="bridge">
+    <!-- Bridge structure -->
+    <path d="M 330 180 Q 400 120 470 180" class="bridge-path" fill="none"/>
+    <path d="M 330 180 Q 400 240 470 180" class="bridge-path" fill="none"/>
+    
+    <!-- Bridge support -->
+    <line x1="400" y1="150" x2="400" y2="210" stroke="#F59E0B" stroke-width="4"/>
+    
+    <!-- Bridge deck -->
+    <rect x="340" y="175" width="120" height="10" rx="5" fill="#F59E0B"/>
+    
+    <!-- Bridge text -->
+    <rect x="350" y="300" width="100" height="40" rx="8" class="bridge-section"/>
+    <text x="400" y="320" text-anchor="middle" class="bridge-text">🎮 理論から実践へ！</text>
+    <text x="400" y="335" text-anchor="middle" style="font: 400 10px Inter, sans-serif; fill: #92400E;">いよいよAtCoderの世界に</text>
+    <text x="400" y="345" text-anchor="middle" style="font: 400 10px Inter, sans-serif; fill: #92400E;">足を踏み入れよう！</text>
+  </g>
+  
+  <!-- Arrow -->
+  <g class="arrow">
+    <line x1="365" y1="180" x2="435" y2="180"/>
+    <polygon points="430,175 445,180 430,185" />
+  </g>
+  
+  <!-- Chapter 2 Section -->
+  <g id="chapter2">
+    <rect x="470" y="80" width="280" height="200" rx="12" class="chapter2-section"/>
+    
+    <text x="610" y="105" text-anchor="middle" class="chapter-title">第2章で学ぶこと</text>
+    
+    <foreignObject x="490" y="120" width="240" height="150">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="content-text">
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 16px; margin-right: 8px;">💻</span>
+          <span>AtCoderの使い方</span>
+        </div>
+        <div style="margin-left: 24px; margin-bottom: 8px; font-size: 10px; color: #6B7280;">
+          サイトの操作方法・機能紹介
+        </div>
+        
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 16px; margin-right: 8px;">💻</span>
+          <span>アカウント作成方法</span>
+        </div>
+        <div style="margin-left: 24px; margin-bottom: 8px; font-size: 10px; color: #6B7280;">
+          登録手順・プロフィール設定
+        </div>
+        
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 16px; margin-right: 8px;">💻</span>
+          <span>サイトの画面構成</span>
+        </div>
+        <div style="margin-left: 24px; margin-bottom: 8px; font-size: 10px; color: #6B7280;">
+          問題一覧・提出・ランキング
+        </div>
+        
+        <div style="display: flex; align-items: center; margin-bottom: 8px;">
+          <span style="font-size: 16px; margin-right: 8px;">💻</span>
+          <span>コンテストの実際</span>
+        </div>
+        <div style="margin-left: 24px; font-size: 10px; color: #6B7280;">
+          参加方法・提出手順・結果確認
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Transition message -->
+  <g id="transition">
+    <rect x="100" y="360" width="600" height="80" rx="12" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+    
+    <text x="400" y="385" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #059669;">🚀 準備完了！実践の世界へ</text>
+    
+    <text x="400" y="405" text-anchor="middle" style="font: 400 11px Inter, sans-serif; fill: #059669;">第1章で学んだ知識を基に、実際にAtCoderを使ってみよう。</text>
+    <text x="400" y="420" text-anchor="middle" style="font: 400 11px Inter, sans-serif; fill: #059669;">君の競技プログラミングライフが、いよいよ本格的に始まる！</text>
+  </g>
+  
+  <!-- Bottom message -->
+  <g transform="translate(50, 460)">
+    <text x="0" y="0" style="font: 500 12px Inter, sans-serif; fill: #059669;">
+      🌟 第1章の理論武装が完了。次章では実際にAtCoderの世界で君の手を動かそう！
+    </text>
+  </g>
+</svg>

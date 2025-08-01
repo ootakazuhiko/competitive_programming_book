@@ -1,0 +1,154 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-5：文字列と数値の違いによる動作の差</title>
+  <desc>input()関数で取得した文字列とint()変換後の数値による動作の違いを比較して示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .code-text { font: 500 12px 'Monaco', 'Menlo', monospace; fill: #4B5563; }
+      .result-text { font: 600 13px 'Monaco', 'Menlo', monospace; }
+      .explanation-text { font: 500 11px Inter, sans-serif; fill: #6B7280; }
+      .warning-text { font: 600 12px Inter, sans-serif; fill: #DC2626; }
+      .success-text { font: 600 12px Inter, sans-serif; fill: #059669; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .string-section { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .number-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .result-box { fill: #FFFFFF; stroke: #9CA3AF; stroke-width: 1; }
+      .error-box { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .success-box { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .comparison-line { stroke: #6B7280; stroke-width: 2; stroke-dasharray: 5,5; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-5：文字列と数値の違いによる動作の差</text>
+  
+  <!-- String Section -->
+  <g id="string-section">
+    <rect x="50" y="70" width="330" height="460" rx="12" class="string-section"/>
+    <text x="70" y="100" class="emoji">❌</text>
+    <text x="100" y="100" class="section-title" fill="#D97706">int()変換なしの場合</text>
+    
+    <!-- Variable Declaration -->
+    <g transform="translate(70, 120)">
+      <rect x="0" y="0" width="290" height="30" rx="6" class="code-box"/>
+      <text x="10" y="20" class="code-text">n = input()  # nは"42"（文字列）</text>
+    </g>
+    
+    <!-- Operation 1: Addition -->
+    <g transform="translate(70, 170)">
+      <text x="0" y="15" class="explanation-text">足し算の場合：</text>
+      <rect x="0" y="20" width="290" height="25" rx="6" class="code-box"/>
+      <text x="10" y="37" class="code-text">print(n + n)</text>
+      
+      <rect x="0" y="50" width="290" height="25" rx="6" class="result-box"/>
+      <text x="10" y="67" class="result-text" fill="#F59E0B">"4242"</text>
+      <text x="80" y="67" class="explanation-text">← 文字列の結合</text>
+    </g>
+    
+    <!-- Operation 2: Multiplication -->
+    <g transform="translate(70, 260)">
+      <text x="0" y="15" class="explanation-text">掛け算の場合：</text>
+      <rect x="0" y="20" width="290" height="25" rx="6" class="code-box"/>
+      <text x="10" y="37" class="code-text">print(n * 2)</text>
+      
+      <rect x="0" y="50" width="290" height="25" rx="6" class="result-box"/>
+      <text x="10" y="67" class="result-text" fill="#F59E0B">"4242"</text>
+      <text x="80" y="67" class="explanation-text">← 文字列の繰り返し</text>
+    </g>
+    
+    <!-- Operation 3: Comparison -->
+    <g transform="translate(70, 350)">
+      <text x="0" y="15" class="explanation-text">比較の場合：</text>
+      <rect x="0" y="20" width="290" height="25" rx="6" class="code-box"/>
+      <text x="10" y="37" class="code-text">print(n > 5)</text>
+      
+      <rect x="0" y="50" width="290" height="40" rx="6" class="error-box"/>
+      <text x="10" y="67" class="warning-text">TypeError!</text>
+      <text x="10" y="82" class="explanation-text">文字列と数値は比較できない</text>
+    </g>
+    
+    <!-- Type Info -->
+    <g transform="translate(70, 420)">
+      <rect x="0" y="0" width="290" height="25" rx="6" class="code-box"/>
+      <text x="10" y="17" class="code-text">print(type(n))</text>
+      <text x="150" y="17" class="result-text" fill="#F59E0B">&lt;class 'str'&gt;</text>
+    </g>
+  </g>
+  
+  <!-- Comparison Line -->
+  <line x1="400" y1="70" x2="400" y2="530" class="comparison-line"/>
+  <text x="400" y="300" text-anchor="middle" class="emoji" style="font-size: 24px;">⚡</text>
+  
+  <!-- Number Section -->
+  <g id="number-section">
+    <rect x="420" y="70" width="330" height="460" rx="12" class="number-section"/>
+    <text x="440" y="100" class="emoji">✅</text>
+    <text x="470" y="100" class="section-title" fill="#1E40AF">int()変換ありの場合</text>
+    
+    <!-- Variable Declaration -->
+    <g transform="translate(440, 120)">
+      <rect x="0" y="0" width="290" height="30" rx="6" class="code-box"/>
+      <text x="10" y="20" class="code-text">n = int(input())  # nは42（整数）</text>
+    </g>
+    
+    <!-- Operation 1: Addition -->
+    <g transform="translate(440, 170)">
+      <text x="0" y="15" class="explanation-text">足し算の場合：</text>
+      <rect x="0" y="20" width="290" height="25" rx="6" class="code-box"/>
+      <text x="10" y="37" class="code-text">print(n + n)</text>
+      
+      <rect x="0" y="50" width="290" height="25" rx="6" class="success-box"/>
+      <text x="10" y="67" class="result-text" fill="#059669">84</text>
+      <text x="50" y="67" class="explanation-text" fill="#059669">← 数値の加算</text>
+    </g>
+    
+    <!-- Operation 2: Multiplication -->
+    <g transform="translate(440, 260)">
+      <text x="0" y="15" class="explanation-text">掛け算の場合：</text>
+      <rect x="0" y="20" width="290" height="25" rx="6" class="code-box"/>
+      <text x="10" y="37" class="code-text">print(n * 2)</text>
+      
+      <rect x="0" y="50" width="290" height="25" rx="6" class="success-box"/>
+      <text x="10" y="67" class="result-text" fill="#059669">84</text>
+      <text x="50" y="67" class="explanation-text" fill="#059669">← 数値の乗算</text>
+    </g>
+    
+    <!-- Operation 3: Comparison -->
+    <g transform="translate(440, 350)">
+      <text x="0" y="15" class="explanation-text">比較の場合：</text>
+      <rect x="0" y="20" width="290" height="25" rx="6" class="code-box"/>
+      <text x="10" y="37" class="code-text">print(n > 5)</text>
+      
+      <rect x="0" y="50" width="290" height="25" rx="6" class="success-box"/>
+      <text x="10" y="67" class="result-text" fill="#059669">True</text>
+      <text x="60" y="67" class="explanation-text" fill="#059669">← 数値の比較</text>
+    </g>
+    
+    <!-- Type Info -->
+    <g transform="translate(440, 420)">
+      <rect x="0" y="0" width="290" height="25" rx="6" class="code-box"/>
+      <text x="10" y="17" class="code-text">print(type(n))</text>
+      <text x="150" y="17" class="result-text" fill="#1E40AF">&lt;class 'int'&gt;</text>
+    </g>
+  </g>
+  
+  <!-- Key Point -->
+  <g id="key-point">
+    <rect x="100" y="550" width="600" height="40" rx="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="2"/>
+    <text x="120" y="570" class="emoji">🎯</text>
+    <text x="150" y="570" class="warning-text" fill="#D97706">
+      覚えるポイント：input()は必ず文字列を返す！数値計算には必ずint()変換が必要
+    </text>
+    <text x="150" y="585" class="explanation-text" fill="#92400E">
+      文字列のままだと予期しない動作になる
+    </text>
+  </g>
+  
+</svg>

@@ -1,0 +1,160 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-19：中学生のための競技プログラミング開始戦略</title>
+  <desc>中学生が競技プログラミングを始めるための具体的な戦略：アカウント作成、環境整備、初回コンテスト参加までのステップを視覚化した図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .step-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .step-desc { font: 400 11px Inter, sans-serif; fill: #4B5563; line-height: 1.4; }
+      .checklist-item { font: 400 10px Inter, sans-serif; fill: #059669; }
+      .goal-text { font: 500 10px Inter, sans-serif; fill: #3B82F6; }
+      .mindset-text { font: 400 10px Inter, sans-serif; fill: #7C3AED; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      .week-label { font: 600 12px Inter, sans-serif; fill: #FFFFFF; }
+      
+      .step1 { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 2; }
+      .step2 { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .step3 { fill: #FFF7ED; stroke: #FB923C; stroke-width: 2; }
+      .arrow { stroke: #10B981; stroke-width: 3; fill: #10B981; }
+      .week-badge { fill: #059669; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="650" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図1-19：中学生のための競技プログラミング開始戦略</text>
+  
+  <!-- Step 1: First Step -->
+  <g id="step1">
+    <rect x="50" y="70" width="680" height="160" rx="12" class="step1"/>
+    
+    <!-- Week badge -->
+    <rect x="70" y="85" width="80" height="25" rx="12" class="week-badge"/>
+    <text x="110" y="100" text-anchor="middle" class="week-label">第1週</text>
+    
+    <text x="170" y="95" class="emoji">🎯</text>
+    <text x="200" y="95" class="step-title">最初の1歩：AtCoderアカウント作成</text>
+    
+    <foreignObject x="70" y="115" width="650" height="110">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="step-desc">
+        <div style="display: flex; gap: 30px;">
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">✅ 今すぐやること：</div>
+            <div class="checklist-item">1. AtCoderのアカウントを作成</div>
+            <div class="checklist-item">2. プロフィールを設定</div>
+            <div class="checklist-item">3. サイトの画面構成を理解</div>
+            <div class="checklist-item">4. 過去問を1-2問見てみる</div>
+          </div>
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">🎯 第1週の目標：</div>
+            <div class="goal-text">• サイトの使い方に慣れる</div>
+            <div class="goal-text">• A問題を1問解いてみる（解けなくてもOK）</div>
+            <div class="goal-text">• コンテストスケジュールを確認</div>
+          </div>
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">💡 心構え：</div>
+            <div class="mindset-text">• 完璧を求めない</div>
+            <div class="mindset-text">• 分からないことがあって当然</div>
+            <div class="mindset-text">• 楽しみながら探検する気持ちで</div>
+          </div>
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Arrow down -->
+  <g class="arrow">
+    <line x1="400" y1="245" x2="400" y2="270"/>
+    <polygon points="395,267 400,277 405,267" />
+  </g>
+  
+  <!-- Step 2: Environment Setup -->
+  <g id="step2">
+    <rect x="50" y="285" width="680" height="160" rx="12" class="step2"/>
+    
+    <!-- Week badge -->
+    <rect x="70" y="300" width="100" height="25" rx="12" class="week-badge"/>
+    <text x="120" y="315" text-anchor="middle" class="week-label">第2-3週</text>
+    
+    <text x="190" y="310" class="emoji">📚</text>
+    <text x="220" y="310" class="step-title">学習環境の整備</text>
+    
+    <foreignObject x="70" y="330" width="650" height="110">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="step-desc">
+        <div style="display: flex; gap: 30px;">
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">🖥️ 技術的準備：</div>
+            <div class="checklist-item">• Pythonの開発環境構築</div>
+            <div class="checklist-item">• コードエディタの設定</div>
+            <div class="checklist-item">• AtCoderでの提出方法習得</div>
+          </div>
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">📖 知識的準備：</div>
+            <div class="checklist-item">• Python基本文法の復習</div>
+            <div class="checklist-item">• 入出力処理の理解</div>
+            <div class="checklist-item">• 基本的なアルゴリズムの概要把握</div>
+          </div>
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">🎯 第2-3週の目標：</div>
+            <div class="goal-text">• 開発環境での快適なプログラミング</div>
+            <div class="goal-text">• ABC A問題を2-3問解答</div>
+            <div class="goal-text">• 解けない問題があっても焦らない</div>
+          </div>
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Arrow down -->
+  <g class="arrow">
+    <line x1="400" y1="460" x2="400" y2="485"/>
+    <polygon points="395,482 400,492 405,482" />
+  </g>
+  
+  <!-- Step 3: First Contest -->
+  <g id="step3">
+    <rect x="50" y="500" width="680" height="160" rx="12" class="step3"/>
+    
+    <!-- Week badge -->
+    <rect x="70" y="515" width="80" height="25" rx="12" class="week-badge"/>
+    <text x="110" y="530" text-anchor="middle" class="week-label">第4週</text>
+    
+    <text x="170" y="525" class="emoji">🏆</text>
+    <text x="200" y="525" class="step-title">初回コンテスト参加</text>
+    
+    <foreignObject x="70" y="545" width="650" height="110">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="step-desc">
+        <div style="display: flex; gap: 30px;">
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">🎪 初回参加の準備：</div>
+            <div class="checklist-item">• コンテスト開始30分前にはPCの前に待機</div>
+            <div class="checklist-item">• 水分補給・トイレを済ませる</div>
+            <div class="checklist-item">• 緊張せず「学習機会」として楽しむ</div>
+          </div>
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">🎯 初回参加の目標：</div>
+            <div class="goal-text">• A問題に挑戦（解けなくても参加したことが重要）</div>
+            <div class="goal-text">• コンテストの雰囲気を体験</div>
+            <div class="goal-text">• 時間内に1つでも提出</div>
+          </div>
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">📝 参加後の振り返り：</div>
+            <div class="mindset-text">• 何が分からなかったかを記録</div>
+            <div class="mindset-text">• 次回に向けた改善点を整理</div>
+            <div class="mindset-text">• 解説を読んで理解を深める</div>
+          </div>
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Bottom message -->
+  <g transform="translate(50, 620)">
+    <text x="0" y="0" style="font: 500 12px Inter, sans-serif; fill: #059669;">
+      🌟 一歩ずつ着実に進むことで、確実に競技プログラミングの世界に足を踏み入れることができる
+    </text>
+  </g>
+</svg>

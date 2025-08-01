@@ -1,0 +1,176 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-13：競技プログラミングが作る教科横断的な学習効果</title>
+  <desc>競技プログラミングが数学、理科、社会科の学習に与える具体的な良い影響を視覚化した図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .subject-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .before-after { font: 500 12px Inter, sans-serif; }
+      .change-text { font: 400 11px Inter, sans-serif; fill: #4B5563; line-height: 1.4; }
+      .result-text { font: 600 11px Inter, sans-serif; fill: #059669; }
+      .emoji { font: 400 20px Inter, sans-serif; }
+      
+      .math-section { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 2; }
+      .science-section { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .social-section { fill: #FFF7ED; stroke: #FB923C; stroke-width: 2; }
+      .before-box { fill: #FEF2F2; stroke: #EF4444; stroke-width: 1; }
+      .after-box { fill: #ECFDF5; stroke: #10B981; stroke-width: 1; }
+      .arrow { stroke: #059669; stroke-width: 2; fill: #059669; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="650" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図1-13：競技プログラミングが作る教科横断的な学習効果</text>
+  
+  <!-- Math Section -->
+  <g id="math-section">
+    <rect x="50" y="80" width="700" height="160" rx="12" class="math-section"/>
+    
+    <text x="70" y="105" class="emoji">📚</text>
+    <text x="100" y="105" class="subject-title">数学への影響</text>
+    
+    <!-- Before -->
+    <rect x="70" y="120" width="280" height="35" rx="6" class="before-box"/>
+    <text x="80" y="135" class="before-after" fill="#DC2626">Before:</text>
+    <text x="130" y="135" style="font: 400 11px Inter, sans-serif; fill: #DC2626;">「最大公約数って何に使うの？」</text>
+    <text x="80" y="150" style="font: 400 11px Inter, sans-serif; fill: #DC2626;">数学が抽象的で実用性が見えない</text>
+    
+    <!-- Arrow -->
+    <g class="arrow">
+      <line x1="370" y1="137" x2="430" y2="137"/>
+      <polygon points="425,132 435,137 425,142" />
+    </g>
+    <text x="400" y="130" text-anchor="middle" style="font: 400 10px Inter, sans-serif; fill: #059669;">競技プログラミングで実際に使用</text>
+    
+    <!-- After -->
+    <rect x="450" y="120" width="280" height="35" rx="6" class="after-box"/>
+    <text x="460" y="135" class="before-after" fill="#059669">After:</text>
+    <text x="500" y="135" style="font: 400 11px Inter, sans-serif; fill: #059669;">「あ！ユークリッドの互除法がここで使える！」</text>
+    <text x="460" y="150" style="font: 400 11px Inter, sans-serif; fill: #059669;">数学の概念が具体的に理解できる</text>
+    
+    <!-- Changes -->
+    <foreignObject x="70" y="165" width="650" height="65">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="change-text">
+        <div style="display: flex; gap: 30px;">
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">具体的な変化：</div>
+            <div>• 抽象的な数学概念の具体的理解</div>
+            <div>• 計算の意味と用途の明確化</div>
+          </div>
+          <div>
+            <div>• 効率的な計算方法への関心</div>
+            <div>• 数学的思考の日常的活用</div>
+          </div>
+          <div>
+            <div class="result-text">結果：数学のテスト点数が20〜30点向上！</div>
+          </div>
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Science Section -->
+  <g id="science-section">
+    <rect x="50" y="260" width="700" height="160" rx="12" class="science-section"/>
+    
+    <text x="70" y="285" class="emoji">🔬</text>
+    <text x="100" y="285" class="subject-title">理科への影響</text>
+    
+    <!-- Before -->
+    <rect x="70" y="300" width="280" height="35" rx="6" class="before-box"/>
+    <text x="80" y="315" class="before-after" fill="#DC2626">Before:</text>
+    <text x="130" y="315" style="font: 400 11px Inter, sans-serif; fill: #DC2626;">「データ分析って面倒...」</text>
+    <text x="80" y="330" style="font: 400 11px Inter, sans-serif; fill: #DC2626;">実験データの処理が苦手</text>
+    
+    <!-- Arrow -->
+    <g class="arrow">
+      <line x1="370" y1="317" x2="430" y2="317"/>
+      <polygon points="425,312 435,317 425,322" />
+    </g>
+    <text x="400" y="310" text-anchor="middle" style="font: 400 10px Inter, sans-serif; fill: #059669;">プログラムでデータ処理を経験</text>
+    
+    <!-- After -->
+    <rect x="450" y="300" width="280" height="35" rx="6" class="after-box"/>
+    <text x="460" y="315" class="before-after" fill="#059669">After:</text>
+    <text x="500" y="315" style="font: 400 11px Inter, sans-serif; fill: #059669;">「Pythonで実験データを分析してみよう！」</text>
+    <text x="460" y="330" style="font: 400 11px Inter, sans-serif; fill: #059669;">データ処理が効率的で楽しい</text>
+    
+    <!-- Changes -->
+    <foreignObject x="70" y="345" width="650" height="65">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="change-text">
+        <div style="display: flex; gap: 30px;">
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">具体的な変化：</div>
+            <div>• 実験データの効率的な処理</div>
+            <div>• グラフ作成・可視化への興味</div>
+          </div>
+          <div>
+            <div>• 統計的思考の自然な習得</div>
+            <div>• 科学的方法への深い理解</div>
+          </div>
+          <div>
+            <div class="result-text">結果：理科の探究活動が格段に充実！</div>
+          </div>
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Social Studies Section -->
+  <g id="social-section">
+    <rect x="50" y="440" width="700" height="160" rx="12" class="social-section"/>
+    
+    <text x="70" y="465" class="emoji">🗾</text>
+    <text x="100" y="465" class="subject-title">社会科への影響</text>
+    
+    <!-- Before -->
+    <rect x="70" y="480" width="280" height="35" rx="6" class="before-box"/>
+    <text x="80" y="495" class="before-after" fill="#DC2626">Before:</text>
+    <text x="130" y="495" style="font: 400 11px Inter, sans-serif; fill: #DC2626;">「統計資料って読むの大変...」</text>
+    <text x="80" y="510" style="font: 400 11px Inter, sans-serif; fill: #DC2626;">データの分析・解釈が苦手</text>
+    
+    <!-- Arrow -->
+    <g class="arrow">
+      <line x1="370" y1="497" x2="430" y2="497"/>
+      <polygon points="425,492 435,497 425,502" />
+    </g>
+    <text x="400" y="490" text-anchor="middle" style="font: 400 10px Inter, sans-serif; fill: #059669;">データ構造・アルゴリズムの知識を活用</text>
+    
+    <!-- After -->
+    <rect x="450" y="480" width="280" height="35" rx="6" class="after-box"/>
+    <text x="460" y="495" class="before-after" fill="#059669">After:</text>
+    <text x="500" y="495" style="font: 400 11px Inter, sans-serif; fill: #059669;">「この統計の傾向をプログラムで分析しよう！」</text>
+    <text x="460" y="510" style="font: 400 11px Inter, sans-serif; fill: #059669;">データから洞察を見つけるのが楽しい</text>
+    
+    <!-- Changes -->
+    <foreignObject x="70" y="525" width="650" height="65">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="change-text">
+        <div style="display: flex; gap: 30px;">
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">具体的な変化：</div>
+            <div>• 大量データの効率的な理解</div>
+            <div>• 論理的な議論構成能力</div>
+          </div>
+          <div>
+            <div>• 問題解決思考の社会問題への応用</div>
+            <div>• 批判的思考力の向上</div>
+          </div>
+          <div>
+            <div class="result-text">結果：レポート・発表の質が大幅向上！</div>
+          </div>
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Bottom message -->
+  <g transform="translate(50, 620)">
+    <text x="0" y="0" style="font: 500 12px Inter, sans-serif; fill: #059669;">
+      🌟 一つのスキルが複数の教科に好影響をもたらす、これが競技プログラミングの教育的価値
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,339 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図6-13：より高度なデータ構造入門</title>
+  <desc>中級者以上が学ぶべき高度なデータ構造の概要</desc>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">
+    図6-13：より高度なデータ構造入門
+  </text>
+  
+  <!-- Introduction -->
+  <rect x="50" y="50" width="700" height="50" fill="#e8f4fd" stroke="#3498db" stroke-width="2" rx="5"/>
+  <text x="70" y="75" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#2980b9">
+    🚀 中級者以上で学習する高度なデータ構造
+  </text>
+  <text x="70" y="90" font-family="Inter, sans-serif" font-size="12" fill="#2980b9">
+    基本のリスト・辞書・セットをマスターした後に挑戦する発展的な内容
+  </text>
+  
+  <!-- Data structures grid -->
+  
+  <!-- Heap -->
+  <g transform="translate(60, 120)">
+    <rect x="0" y="0" width="160" height="120" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="5"/>
+    <text x="80" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#856404">
+      🏔️ ヒープ (Heap)
+    </text>
+    
+    <!-- Heap visualization -->
+    <circle cx="80" cy="50" r="12" fill="#f39c12" stroke="#e67e22" stroke-width="2"/>
+    <text x="80" y="55" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="white">1</text>
+    
+    <circle cx="60" cy="75" r="10" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+    <text x="60" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="white">3</text>
+    
+    <circle cx="100" cy="75" r="10" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+    <text x="100" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="white">2</text>
+    
+    <line x1="73" y1="57" x2="65" y2="68" stroke="#34495e" stroke-width="2"/>
+    <line x1="87" y1="57" x2="95" y2="68" stroke="#34495e" stroke-width="2"/>
+    
+    <text x="80" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#856404">
+      優先度付きキュー
+    </text>
+    <text x="80" y="116" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#7f8c8d">
+      最小/最大値の高速取得
+    </text>
+  </g>
+  
+  <!-- Binary Search Tree -->
+  <g transform="translate(240, 120)">
+    <rect x="0" y="0" width="160" height="120" fill="#e8f5e8" stroke="#27ae60" stroke-width="2" rx="5"/>
+    <text x="80" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#27ae60">
+      🌳 二分探索木
+    </text>
+    
+    <!-- Tree visualization -->
+    <circle cx="80" cy="50" r="12" fill="#27ae60" stroke="#229954" stroke-width="2"/>
+    <text x="80" y="55" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="bold" fill="white">5</text>
+    
+    <circle cx="50" cy="75" r="10" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="50" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="white">3</text>
+    
+    <circle cx="110" cy="75" r="10" fill="#2ecc71" stroke="#27ae60" stroke-width="2"/>
+    <text x="110" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="bold" fill="white">7</text>
+    
+    <line x1="73" y1="57" x2="55" y2="68" stroke="#34495e" stroke-width="2"/>
+    <line x1="87" y1="57" x2="105" y2="68" stroke="#34495e" stroke-width="2"/>
+    
+    <text x="80" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#27ae60">
+      ソート済み高速検索
+    </text>
+    <text x="80" y="116" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#7f8c8d">
+      O(log N)で挿入・検索
+    </text>
+  </g>
+  
+  <!-- Graph -->
+  <g transform="translate(420, 120)">
+    <rect x="0" y="0" width="160" height="120" fill="#ffebee" stroke="#e74c3c" stroke-width="2" rx="5"/>
+    <text x="80" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#c0392b">
+      🕸️ グラフ (Graph)
+    </text>
+    
+    <!-- Graph visualization -->
+    <circle cx="50" cy="45" r="8" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <text x="50" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="bold" fill="white">A</text>
+    
+    <circle cx="110" cy="45" r="8" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <text x="110" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="bold" fill="white">B</text>
+    
+    <circle cx="80" cy="80" r="8" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+    <text x="80" y="85" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="bold" fill="white">C</text>
+    
+    <line x1="58" y1="45" x2="102" y2="45" stroke="#34495e" stroke-width="2"/>
+    <line x1="55" y1="52" x2="75" y2="73" stroke="#34495e" stroke-width="2"/>
+    <line x1="105" y1="52" x2="85" y2="73" stroke="#34495e" stroke-width="2"/>
+    
+    <text x="80" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#c0392b">
+      ネットワーク・関係性
+    </text>
+    <text x="80" y="116" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#7f8c8d">
+      ノードとエッジの構造
+    </text>
+  </g>
+  
+  <!-- Trie -->
+  <g transform="translate(600, 120)">
+    <rect x="0" y="0" width="150" height="120" fill="#f3e5f5" stroke="#9b59b6" stroke-width="2" rx="5"/>
+    <text x="75" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#8e44ad">
+      🌲 トライ (Trie)
+    </text>
+    
+    <!-- Trie visualization -->
+    <circle cx="75" cy="45" r="8" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+    <text x="75" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="bold" fill="white">*</text>
+    
+    <circle cx="55" cy="70" r="6" fill="#ba79b1" stroke="#9b59b6" stroke-width="1"/>
+    <text x="55" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="white">a</text>
+    
+    <circle cx="95" cy="70" r="6" fill="#ba79b1" stroke="#9b59b6" stroke-width="1"/>
+    <text x="95" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="white">b</text>
+    
+    <line x1="70" y1="52" x2="58" y2="64" stroke="#34495e" stroke-width="1"/>
+    <line x1="80" y1="52" x2="92" y2="64" stroke="#34495e" stroke-width="1"/>
+    
+    <text x="75" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#8e44ad">
+      文字列検索特化
+    </text>
+    <text x="75" y="106" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#7f8c8d">
+      プレフィックス検索
+    </text>
+  </g>
+  
+  <!-- Union-Find -->
+  <g transform="translate(60, 260)">
+    <rect x="0" y="0" width="160" height="120" fill="#e1f5fe" stroke="#03a9f4" stroke-width="2" rx="5"/>
+    <text x="80" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0277bd">
+      🔗 Union-Find
+    </text>
+    
+    <!-- Union-Find visualization -->
+    <g transform="translate(20, 35)">
+      <circle cx="20" cy="20" r="8" fill="#03a9f4" stroke="#0277bd" stroke-width="2"/>
+      <text x="20" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="bold" fill="white">1</text>
+      
+      <circle cx="50" cy="20" r="8" fill="#03a9f4" stroke="#0277bd" stroke-width="2"/>
+      <text x="50" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="bold" fill="white">2</text>
+      
+      <circle cx="90" cy="20" r="8" fill="#29b6f6" stroke="#03a9f4" stroke-width="2"/>
+      <text x="90" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="bold" fill="white">3</text>
+      
+      <circle cx="120" cy="20" r="8" fill="#29b6f6" stroke="#03a9f4" stroke-width="2"/>
+      <text x="120" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="bold" fill="white">4</text>
+      
+      <line x1="28" y1="20" x2="42" y2="20" stroke="#0277bd" stroke-width="2"/>
+      <line x1="98" y1="20" x2="112" y2="20" stroke="#0277bd" stroke-width="2"/>
+    </g>
+    
+    <text x="80" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#0277bd">
+      グループ管理
+    </text>
+    <text x="80" y="91" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#7f8c8d">
+      結合・判定の高速化
+    </text>
+  </g>
+  
+  <!-- Segment Tree -->
+  <g transform="translate(240, 260)">
+    <rect x="0" y="0" width="160" height="120" fill="#fff8e1" stroke="#ff9800" stroke-width="2" rx="5"/>
+    <text x="80" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#f57c00">
+      🌳 セグメント木
+    </text>
+    
+    <!-- Segment Tree visualization -->
+    <rect x="30" y="35" width="20" height="15" fill="#ff9800" stroke="#f57c00" stroke-width="1"/>
+    <text x="40" y="46" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">15</text>
+    
+    <rect x="60" y="35" width="20" height="15" fill="#ff9800" stroke="#f57c00" stroke-width="1"/>
+    <text x="70" y="46" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">7</text>
+    
+    <rect x="90" y="35" width="20" height="15" fill="#ff9800" stroke="#f57c00" stroke-width="1"/>
+    <text x="100" y="46" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">9</text>
+    
+    <rect x="120" y="35" width="20" height="15" fill="#ff9800" stroke="#f57c00" stroke-width="1"/>
+    <text x="130" y="46" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">11</text>
+    
+    <rect x="45" y="60" width="30" height="15" fill="#ffb74d" stroke="#ff9800" stroke-width="1"/>
+    <text x="60" y="71" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">22</text>
+    
+    <rect x="105" y="60" width="30" height="15" fill="#ffb74d" stroke="#ff9800" stroke-width="1"/>
+    <text x="120" y="71" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">20</text>
+    
+    <text x="80" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#f57c00">
+      範囲クエリ高速化
+    </text>
+    <text x="80" y="106" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#7f8c8d">
+      区間和・最小値等
+    </text>
+  </g>
+  
+  <!-- Fenwick Tree -->
+  <g transform="translate(420, 260)">
+    <rect x="0" y="0" width="160" height="120" fill="#f1f8e9" stroke="#689f38" stroke-width="2" rx="5"/>
+    <text x="80" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#558b2f">
+      🌲 Fenwick木
+    </text>
+    
+    <!-- Fenwick Tree visualization -->
+    <g transform="translate(20, 35)">
+      <rect x="0" y="0" width="15" height="15" fill="#689f38" stroke="#558b2f" stroke-width="1"/>
+      <text x="7" y="11" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">3</text>
+      
+      <rect x="20" y="0" width="15" height="15" fill="#689f38" stroke="#558b2f" stroke-width="1"/>
+      <text x="27" y="11" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">2</text>
+      
+      <rect x="40" y="0" width="15" height="15" fill="#8bc34a" stroke="#689f38" stroke-width="1"/>
+      <text x="47" y="11" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">5</text>
+      
+      <rect x="60" y="0" width="15" height="15" fill="#689f38" stroke="#558b2f" stroke-width="1"/>
+      <text x="67" y="11" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">1</text>
+      
+      <rect x="80" y="0" width="15" height="15" fill="#8bc34a" stroke="#689f38" stroke-width="1"/>
+      <text x="87" y="11" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">4</text>
+      
+      <rect x="100" y="0" width="15" height="15" fill="#689f38" stroke="#558b2f" stroke-width="1"/>
+      <text x="107" y="11" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="white">6</text>
+    </g>
+    
+    <text x="80" y="75" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#558b2f">
+      Binary Indexed Tree
+    </text>
+    <text x="80" y="86" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#7f8c8d">
+      累積和の更新・取得
+    </text>
+  </g>
+  
+  <!-- Hash Table -->
+  <g transform="translate(600, 260)">
+    <rect x="0" y="0" width="150" height="120" fill="#fce4ec" stroke="#e91e63" stroke-width="2" rx="5"/>
+    <text x="75" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#c2185b">
+      # ハッシュテーブル
+    </text>
+    
+    <!-- Hash table visualization -->
+    <g transform="translate(15, 35)">
+      <rect x="0" y="0" width="120" height="50" fill="white" stroke="#c2185b" stroke-width="2" rx="3"/>
+      
+      <rect x="5" y="5" width="25" height="10" fill="#e91e63" rx="1"/>
+      <rect x="5" y="20" width="25" height="10" fill="#e91e63" rx="1"/>
+      <rect x="5" y="35" width="25" height="10" fill="#e91e63" rx="1"/>
+      
+      <text x="17" y="13" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="white">key1</text>
+      <text x="17" y="28" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="white">key2</text>
+      <text x="17" y="43" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="white">key3</text>
+      
+      <text x="50" y="15" font-family="Inter, sans-serif" font-size="8" fill="#2c3e50">→ value1</text>
+      <text x="50" y="30" font-family="Inter, sans-serif" font-size="8" fill="#2c3e50">→ value2</text>
+      <text x="50" y="45" font-family="Inter, sans-serif" font-size="8" fill="#2c3e50">→ value3</text>
+    </g>
+    
+    <text x="75" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#c2185b">
+      衝突解決手法
+    </text>
+    <text x="75" y="106" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#7f8c8d">
+      チェイン法・開放番地法
+    </text>
+  </g>
+  
+  <!-- Learning path -->
+  <text x="50" y="420" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    学習の進め方
+  </text>
+  
+  <rect x="50" y="430" width="700" height="110" fill="#f8f9fa" stroke="#bdc3c7" stroke-width="1" rx="5"/>
+  
+  <!-- Step progression -->
+  <g transform="translate(80, 450)">
+    <rect x="0" y="0" width="120" height="30" fill="#3498db" stroke="#2980b9" stroke-width="2" rx="3"/>
+    <text x="60" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+      Step 1: 基礎固め
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      リスト・辞書・セット
+    </text>
+  </g>
+  
+  <path d="M 200 465 L 230 465" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <g transform="translate(240, 450)">
+    <rect x="0" y="0" width="120" height="30" fill="#27ae60" stroke="#229954" stroke-width="2" rx="3"/>
+    <text x="60" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+      Step 2: 中級挑戦
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      ヒープ・グラフ
+    </text>
+  </g>
+  
+  <path d="M 360 465 L 390 465" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <g transform="translate(400, 450)">
+    <rect x="0" y="0" width="120" height="30" fill="#e74c3c" stroke="#c0392b" stroke-width="2" rx="3"/>
+    <text x="60" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+      Step 3: 上級習得
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      セグメント木・Union-Find
+    </text>
+  </g>
+  
+  <path d="M 520 465 L 550 465" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <g transform="translate(560, 450)">
+    <rect x="0" y="0" width="120" height="30" fill="#9b59b6" stroke="#8e44ad" stroke-width="2" rx="3"/>
+    <text x="60" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+      Step 4: 専門化
+    </text>
+    <text x="60" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      トライ・特殊構造
+    </text>
+  </g>
+  
+  <!-- Bottom note -->
+  <rect x="50" y="560" width="700" height="30" fill="#e8f4fd" stroke="#3498db" stroke-width="1" rx="3"/>
+  <text x="70" y="580" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2980b9">
+    💡 まずは基本をしっかり固めてから、必要に応じて高度な構造に挑戦しよう
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+</svg>

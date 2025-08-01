@@ -1,0 +1,154 @@
+<svg viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-12：競技プログラミングでよく使う数学的性質</title>
+  <desc>奇数・偶数の性質、約数の性質、組み合わせ計算など競技プログラミングで頻出の数学的性質とその活用例を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .property-title { font: 600 13px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Courier New', monospace; fill: #1F2937; }
+      .comment-text { font: 400 10px 'Courier New', monospace; fill: #16A34A; }
+      .rule-text { font: 600 11px Inter, sans-serif; fill: #7C3AED; }
+      .example-text { font: 500 11px Inter, sans-serif; fill: #DC2626; }
+      .formula-text { font: 600 11px 'Courier New', monospace; fill: #059669; }
+      .explanation-text { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .parity-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .divisor-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .combination-box { fill: #F3E8FF; stroke: #7C3AED; stroke-width: 2; }
+      .code-block { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .rule-block { fill: #EEF2FF; stroke: #4F46E5; stroke-width: 1; }
+      .application-block { fill: #ECFDF5; stroke: #22C55E; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="750" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-12：競技プログラミングでよく使う数学的性質</text>
+  
+  <!-- Parity Properties -->
+  <g id="parity">
+    <rect x="50" y="60" width="700" height="160" rx="8" class="parity-box"/>
+    <text x="70" y="85" class="emoji">🔢</text>
+    <text x="100" y="85" class="property-title" fill="#D97706">奇数・偶数の性質</text>
+    
+    <!-- Rules -->
+    <g transform="translate(80, 105)">
+      <rect x="0" y="0" width="300" height="60" class="rule-block"/>
+      <text x="10" y="18" class="rule-text"># 偶数 + 偶数 = 偶数</text>
+      <text x="10" y="33" class="rule-text"># 奇数 + 奇数 = 偶数</text>
+      <text x="10" y="48" class="rule-text"># 偶数 + 奇数 = 奇数</text>
+    </g>
+    
+    <!-- Application -->
+    <g transform="translate(80, 175)">
+      <rect x="0" y="0" width="640" height="35" class="application-block"/>
+      <text x="10" y="15" class="comment-text"># 活用例：「2つの数の和が偶数になるペア数」</text>
+      <text x="10" y="30" class="code-text">pairs = even_count * (even_count - 1) // 2 + odd_count * (odd_count - 1) // 2</text>
+    </g>
+  </g>
+  
+  <!-- Divisor Properties -->
+  <g id="divisors">
+    <rect x="50" y="240" width="700" height="160" rx="8" class="divisor-box"/>
+    <text x="70" y="265" class="emoji">📐</text>
+    <text x="100" y="265" class="property-title" fill="#1E40AF">約数の性質</text>
+    
+    <!-- Concept -->
+    <g transform="translate(80, 285)">
+      <rect x="0" y="0" width="380" height="25" class="rule-block"/>
+      <text x="190" y="17" text-anchor="middle" class="rule-text">N の約数は √N を境に対になって存在</text>
+    </g>
+    
+    <!-- Implementation -->
+    <g transform="translate(80, 320)">
+      <rect x="0" y="0" width="640" height="70" class="code-block"/>
+      <g transform="translate(10, 15)">
+        <text x="0" y="0" class="code-text">def get_divisors(n):</text>
+        <text x="0" y="15" class="code-text">    divisors = []</text>
+        <text x="0" y="30" class="code-text">    for i in range(1, int(n**0.5) + 1):</text>
+        <text x="380" y="30" class="comment-text"># √nまでのみチェック</text>
+        <text x="0" y="45" class="code-text">        if n % i == 0:</text>
+        <text x="0" y="60" class="code-text">            divisors.append(i)</text>
+        
+        <g transform="translate(400, 0)">
+          <rect x="0" y="0" width="220" height="70" fill="#E0F2FE" stroke="#0369A1" stroke-width="1"/>
+          <text x="10" y="15" class="example-text">例: 12の約数</text>
+          <text x="10" y="30" class="explanation-text">i=1: 1, 12</text>
+          <text x="10" y="45" class="explanation-text">i=2: 2, 6</text>
+          <text x="10" y="60" class="explanation-text">i=3: 3, 4</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Combination Calculation -->
+  <g id="combinations">
+    <rect x="50" y="420" width="700" height="180" rx="8" class="combination-box"/>
+    <text x="70" y="445" class="emoji">🧮</text>
+    <text x="100" y="445" class="property-title" fill="#7C3AED">組み合わせの計算</text>
+    
+    <!-- Formula -->
+    <g transform="translate(80, 465)">
+      <rect x="0" y="0" width="300" height="25" class="rule-block"/>
+      <text x="150" y="17" text-anchor="middle" class="formula-text">nCr = n! / (r! * (n-r)!)</text>
+    </g>
+    
+    <!-- Efficient Implementation -->
+    <g transform="translate(80, 500)">
+      <rect x="0" y="0" width="640" height="90" class="code-block"/>
+      <g transform="translate(10, 15)">
+        <text x="0" y="0" class="code-text">def combination(n, r):</text>
+        <text x="0" y="15" class="code-text">    if r > n or r &lt; 0:</text>
+        <text x="0" y="30" class="code-text">        return 0</text>
+        <text x="0" y="45" class="code-text">    if r == 0 or r == n:</text>
+        <text x="0" y="60" class="code-text">        return 1</text>
+        <text x="0" y="75" class="code-text">    r = min(r, n - r)</text>
+        <text x="200" y="75" class="comment-text"># C(n,r) = C(n,n-r) を利用</text>
+        
+        <g transform="translate(400, 0)">
+          <rect x="0" y="0" width="220" height="90" fill="#FAF5E6" stroke="#D97706" stroke-width="1"/>
+          <text x="10" y="15" class="rule-text">効率化のポイント</text>
+          <text x="10" y="30" class="explanation-text">• 大きな階乗を避ける</text>
+          <text x="10" y="45" class="explanation-text">• 対称性を活用</text>
+          <text x="10" y="60" class="explanation-text">• 順次計算で精度保持</text>
+          <text x="10" y="75" class="example-text">C(5,2) = C(5,3) = 10</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Mathematical Insights -->
+  <g id="insights">
+    <rect x="50" y="620" width="700" height="100" rx="8" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="70" y="645" class="emoji">💡</text>
+    <text x="100" y="645" class="section-title">数学的性質の活用パターン</text>
+    
+    <g transform="translate(80, 665)">
+      <!-- Pattern 1 -->
+      <circle cx="8" cy="8" r="4" fill="#F59E0B"/>
+      <text x="20" y="12" class="explanation-text">余りや割り算の性質を使って計算量を削減</text>
+      
+      <!-- Pattern 2 -->
+      <circle cx="8" cy="28" r="4" fill="#3B82F6"/>
+      <text x="20" y="32" class="explanation-text">対称性や周期性を見つけて問題を簡単化</text>
+      
+      <!-- Pattern 3 -->
+      <circle cx="8" cy="48" r="4" fill="#7C3AED"/>
+      <text x="20" y="52" class="explanation-text">数学の定理や公式を適用して直接計算</text>
+      
+      <!-- Examples box -->
+      <g transform="translate(400, 0)">
+        <rect x="0" y="0" width="280" height="55" fill="#ECFDF5" stroke="#22C55E" stroke-width="1"/>
+        <text x="10" y="15" class="rule-text">よく使われる性質</text>
+        <text x="10" y="30" class="explanation-text">• 素数の判定と性質　• ユークリッドの互除法</text>
+        <text x="10" y="45" class="explanation-text">• 約数・倍数の関係　• 組み合わせと順列</text>
+      </g>
+    </g>
+  </g>
+  
+</svg>

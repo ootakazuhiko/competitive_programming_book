@@ -1,0 +1,135 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-4：事前確認チェックリスト</title>
+  <desc>Pythonインストール前に確認すべき項目のチェックリスト</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .checklist-item { font: 400 13px Inter, sans-serif; fill: #4B5563; }
+      .requirement { font: 400 12px Inter, sans-serif; fill: #6B7280; }
+      .highlight { font: 600 12px Inter, sans-serif; fill: #DC2626; }
+      .success { font: 600 12px Inter, sans-serif; fill: #059669; }
+      
+      .checklist-bg { fill: #F8FAFC; stroke: #E2E8F0; stroke-width: 2; }
+      .hardware-bg { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .permission-bg { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .environment-bg { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .checkmark { fill: #22C55E; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-4：事前確認チェックリスト</text>
+  
+  <!-- Hardware Requirements Section -->
+  <g id="hardware-section">
+    <rect x="50" y="70" width="700" height="150" rx="12" class="hardware-bg"/>
+    <text x="70" y="95" class="section-title">💻 ハードウェア要件</text>
+    
+    <!-- Checkboxes and items -->
+    <g transform="translate(80, 110)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" rx="3"/>
+      <path d="M 3 8 L 7 12 L 13 4" stroke="#22C55E" stroke-width="2" fill="none"/>
+      <text x="25" y="12" class="checklist-item">オペレーティングシステム</text>
+      <text x="45" y="30" class="requirement">Windows 10/11、macOS 10.9以降、またはLinux</text>
+    </g>
+    
+    <g transform="translate(80, 155)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" rx="3"/>
+      <path d="M 3 8 L 7 12 L 13 4" stroke="#22C55E" stroke-width="2" fill="none"/>
+      <text x="25" y="12" class="checklist-item">ストレージ容量</text>
+      <text x="45" y="30" class="requirement">空き容量：最低100MB（推奨1GB以上）</text>
+    </g>
+    
+    <g transform="translate(400, 110)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" rx="3"/>
+      <path d="M 3 8 L 7 12 L 13 4" stroke="#22C55E" stroke-width="2" fill="none"/>
+      <text x="25" y="12" class="checklist-item">メモリ（RAM）</text>
+      <text x="45" y="30" class="requirement">最低512MB（推奨2GB以上）</text>
+    </g>
+    
+    <g transform="translate(400, 155)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" rx="3"/>
+      <path d="M 3 8 L 7 12 L 13 4" stroke="#22C55E" stroke-width="2" fill="none"/>
+      <text x="25" y="12" class="checklist-item">プロセッサ</text>
+      <text x="45" y="30" class="requirement">64bit対応CPU（最近のパソコンなら問題なし）</text>
+    </g>
+  </g>
+  
+  <!-- Permission Requirements Section -->
+  <g id="permission-section">
+    <rect x="50" y="240" width="700" height="150" rx="12" class="permission-bg"/>
+    <text x="70" y="265" class="section-title">🔐 権限の確認</text>
+    
+    <g transform="translate(80, 280)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" rx="3"/>
+      <path d="M 3 8 L 7 12 L 13 4" stroke="#22C55E" stroke-width="2" fill="none"/>
+      <text x="25" y="12" class="checklist-item">管理者権限</text>
+      <text x="45" y="30" class="requirement">パソコンの管理者権限（または保護者の許可）</text>
+    </g>
+    
+    <g transform="translate(80, 325)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" rx="3"/>
+      <path d="M 3 8 L 7 12 L 13 4" stroke="#22C55E" stroke-width="2" fill="none"/>
+      <text x="25" y="12" class="checklist-item">インターネット接続</text>
+      <text x="45" y="30" class="requirement">安定したインターネット環境</text>
+    </g>
+    
+    <g transform="translate(400, 280)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" rx="3"/>
+      <path d="M 3 8 L 7 12 L 13 4" stroke="#22C55E" stroke-width="2" fill="none"/>
+      <text x="25" y="12" class="checklist-item">セキュリティソフト</text>
+      <text x="45" y="30" class="requirement">一時的な無効化が可能か確認</text>
+    </g>
+    
+    <g transform="translate(400, 325)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2" rx="3"/>
+      <text x="25" y="12" class="checklist-item">学校パソコンの場合</text>
+      <text x="45" y="30" class="highlight">先生や管理者に事前相談が必要</text>
+    </g>
+  </g>
+  
+  <!-- Learning Environment Section -->
+  <g id="environment-section">
+    <rect x="50" y="410" width="700" height="140" rx="12" class="environment-bg"/>
+    <text x="70" y="435" class="section-title">📚 学習環境</text>
+    
+    <g transform="translate(80, 450)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" rx="3"/>
+      <path d="M 3 8 L 7 12 L 13 4" stroke="#22C55E" stroke-width="2" fill="none"/>
+      <text x="25" y="12" class="checklist-item">時間の確保</text>
+      <text x="45" y="30" class="requirement">集中できる時間（30分-1時間）</text>
+    </g>
+    
+    <g transform="translate(80, 495)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" rx="3"/>
+      <path d="M 3 8 L 7 12 L 13 4" stroke="#22C55E" stroke-width="2" fill="none"/>
+      <text x="25" y="12" class="checklist-item">メモ準備</text>
+      <text x="45" y="30" class="requirement">紙とペン、またはデジタルメモアプリ</text>
+    </g>
+    
+    <g transform="translate(400, 450)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" rx="3"/>
+      <path d="M 3 8 L 7 12 L 13 4" stroke="#22C55E" stroke-width="2" fill="none"/>
+      <text x="25" y="12" class="checklist-item">静かな環境</text>
+      <text x="45" y="30" class="requirement">集中できる作業スペース</text>
+    </g>
+    
+    <g transform="translate(400, 495)">
+      <rect x="0" y="0" width="16" height="16" fill="#FFFFFF" stroke="#22C55E" stroke-width="2" rx="3"/>
+      <path d="M 3 8 L 7 12 L 13 4" stroke="#22C55E" stroke-width="2" fill="none"/>
+      <text x="25" y="12" class="checklist-item">サポート体制</text>
+      <text x="45" y="30" class="requirement">困った時に相談できる人（先生、保護者、友人）</text>
+    </g>
+  </g>
+  
+  <!-- Success Message -->
+  <g transform="translate(250, 570)">
+    <text x="0" y="0" class="success">✅ すべてチェックできたら、いよいよPythonインストール開始！</text>
+  </g>
+  
+</svg>

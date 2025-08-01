@@ -1,0 +1,146 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-3：世界の競技プログラミングサイト比較</title>
+  <desc>CodeforcesとAtCoderの特徴比較と学習の流れを示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .feature-text { font: 500 12px Inter, sans-serif; }
+      .desc-text { font: 400 11px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      .badge-text { font: 600 10px Inter, sans-serif; fill: #FFFFFF; }
+      .flow-text { font: 500 11px Inter, sans-serif; }
+      
+      .codeforces-box { fill: #1F4E79; stroke: #0F3460; stroke-width: 3; }
+      .atcoder-box { fill: #D32F2F; stroke: #B71C1C; stroke-width: 3; }
+      .vs-circle { fill: #FFD54F; stroke: #FBC02D; stroke-width: 2; }
+      .flow-box { fill: #E8F5E8; stroke: #4CAF50; stroke-width: 2; }
+      .arrow { stroke: #555; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-3：世界の競技プログラミングサイト比較</text>
+  
+  <!-- World Scale Label -->
+  <text x="150" y="70" text-anchor="middle" class="emoji">🌍</text>
+  <text x="150" y="88" text-anchor="middle" class="section-title" fill="#374151">世界規模</text>
+  
+  <!-- Japan Focused Label -->
+  <text x="650" y="70" text-anchor="middle" class="emoji">🇯🇵</text>
+  <text x="650" y="88" text-anchor="middle" class="section-title" fill="#374151">日本特化</text>
+  
+  <!-- Codeforces Box (Left) -->
+  <g id="codeforces">
+    <rect x="50" y="110" width="250" height="200" rx="12" class="codeforces-box"/>
+    <text x="175" y="135" text-anchor="middle" style="font: 600 18px Inter, sans-serif; fill: #FFFFFF;">Codeforces</text>
+    <text x="175" y="155" text-anchor="middle" style="font: 400 12px Inter, sans-serif; fill: #FFFFFF;">(ロシア)</text>
+    
+    <g transform="translate(70, 175)">
+      <text x="0" y="0" class="emoji">👑</text>
+      <text x="25" y="0" class="feature-text" fill="#FFFFFF">世界最高峰</text>
+      
+      <text x="0" y="20" class="emoji">🌐</text>
+      <text x="25" y="20" class="feature-text" fill="#FFFFFF">英語のみ</text>
+      
+      <text x="0" y="40" class="emoji">💪</text>
+      <text x="25" y="40" class="feature-text" fill="#FFFFFF">上級者向け</text>
+      
+      <text x="0" y="60" class="emoji">⚡</text>
+      <text x="25" y="60" class="feature-text" fill="#FFFFFF">高速判定</text>
+      
+      <text x="0" y="85" class="desc-text" fill="#B3E5FC">• 難問揃い</text>
+      <text x="0" y="100" class="desc-text" fill="#B3E5FC">• コンテスト頻度高</text>
+      <text x="0" y="115" class="desc-text" fill="#B3E5FC">• 世界トップ集結</text>
+    </g>
+    
+    <!-- Target Badge -->
+    <rect x="75" y="280" width="150" height="20" rx="10" fill="#4FC3F7"/>
+    <text x="150" y="294" text-anchor="middle" class="badge-text" fill="#0D47A1">🎯 将来の目標</text>
+  </g>
+  
+  <!-- VS Circle -->
+  <g id="vs-section">
+    <circle cx="400" cy="210" r="40" class="vs-circle"/>
+    <text x="400" y="220" text-anchor="middle" style="font: 600 20px Inter, sans-serif; fill: #F57F17;">VS</text>
+  </g>
+  
+  <!-- AtCoder Box (Right) -->
+  <g id="atcoder">
+    <rect x="500" y="110" width="250" height="200" rx="12" class="atcoder-box"/>
+    <text x="625" y="135" text-anchor="middle" style="font: 600 18px Inter, sans-serif; fill: #FFFFFF;">AtCoder</text>
+    <text x="625" y="155" text-anchor="middle" style="font: 400 12px Inter, sans-serif; fill: #FFFFFF;">(日本)</text>
+    
+    <g transform="translate(520, 175)">
+      <text x="0" y="0" class="emoji">🎓</text>
+      <text x="25" y="0" class="feature-text" fill="#FFFFFF">教育重視</text>
+      
+      <text x="0" y="20" class="emoji">🗾</text>
+      <text x="25" y="20" class="feature-text" fill="#FFFFFF">日本語対応</text>
+      
+      <text x="0" y="40" class="emoji">👶</text>
+      <text x="25" y="40" class="feature-text" fill="#FFFFFF">初心者歓迎</text>
+      
+      <text x="0" y="60" class="emoji">📚</text>
+      <text x="25" y="60" class="feature-text" fill="#FFFFFF">詳細解説</text>
+      
+      <text x="0" y="85" class="desc-text" fill="#FFCDD2">• 段階的学習</text>
+      <text x="0" y="100" class="desc-text" fill="#FFCDD2">• 初心者問題豊富</text>
+      <text x="0" y="115" class="desc-text" fill="#FFCDD2">• 日本語サポート</text>
+    </g>
+    
+    <!-- Target Badge -->
+    <rect x="525" y="280" width="150" height="20" rx="10" fill="#FFAB91"/>
+    <text x="600" y="294" text-anchor="middle" class="badge-text" fill="#BF360C">🎯 今から始める場所</text>
+  </g>
+  
+  <!-- Learning Flow Section -->
+  <g id="learning-flow">
+    <rect x="100" y="350" width="600" height="120" rx="15" class="flow-box"/>
+    <text x="120" y="375" class="emoji">🔄</text>
+    <text x="150" y="375" style="font: 600 16px Inter, sans-serif; fill: #2E7D32;">学習の流れ</text>
+    
+    <!-- Step 1: AtCoder -->
+    <rect x="120" y="390" width="140" height="50" rx="10" fill="#FFCDD2" stroke="#F44336" stroke-width="2"/>
+    <text x="190" y="410" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #C62828;">AtCoderで基礎固め</text>
+    <text x="190" y="425" text-anchor="middle" class="desc-text" fill="#D32F2F">• 日本語環境</text>
+    <text x="190" y="435" text-anchor="middle" class="desc-text" fill="#D32F2F">• 段階的成長</text>
+    
+    <!-- Arrow 1 -->
+    <path d="M270 415 L310 415" class="arrow" fill="none"/>
+    
+    <!-- Step 2: Skill Up -->
+    <rect x="320" y="390" width="140" height="50" rx="10" fill="#C8E6C9" stroke="#4CAF50" stroke-width="2"/>
+    <text x="390" y="410" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #2E7D32;">実力向上</text>
+    <text x="390" y="425" text-anchor="middle" class="desc-text" fill="#388E3C">• 緑色以上達成</text>
+    <text x="390" y="435" text-anchor="middle" class="desc-text" fill="#388E3C">• 基礎アルゴリズム習得</text>
+    
+    <!-- Arrow 2 -->
+    <path d="M470 415 L510 415" class="arrow" fill="none"/>
+    
+    <!-- Step 3: Codeforces Challenge -->
+    <rect x="520" y="390" width="140" height="50" rx="10" fill="#BBDEFB" stroke="#2196F3" stroke-width="2"/>
+    <text x="590" y="410" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #1565C0;">Codeforcesに挑戦</text>
+    <text x="590" y="425" text-anchor="middle" class="desc-text" fill="#1976D2">• 世界基準で競技</text>
+    <text x="590" y="435" text-anchor="middle" class="desc-text" fill="#1976D2">• 英語環境に慣れる</text>
+  </g>
+  
+  <!-- Recommendation Box -->
+  <g id="recommendation">
+    <rect x="150" y="500" width="500" height="60" rx="12" fill="#FFF3E0" stroke="#FF9800" stroke-width="2"/>
+    <text x="170" y="525" class="emoji">💡</text>
+    <text x="200" y="525" style="font: 600 14px Inter, sans-serif; fill: #E65100;">中学生へのおすすめ</text>
+    <text x="170" y="545" class="desc-text" fill="#F57C00">まずはAtCoderで日本語環境で安心して基礎を固めよう！</text>
+    <text x="170" y="555" class="desc-text" fill="#F57C00">茶色〜緑色レベルになったら、世界への挑戦を考えても良いかも</text>
+  </g>
+  
+</svg>

@@ -1,0 +1,124 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-21：この章で身につけたスキル</title>
+  <desc>第2章で学習した内容のまとめと次章への準備</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .achievement-title { font: 600 12px Inter, sans-serif; }
+      .skill-text { font: 500 11px Inter, sans-serif; }
+      .next-text { font: 500 11px Inter, sans-serif; }
+      .desc-text { font: 400 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .achievements-box { fill: #ECFDF5; stroke: #10B981; stroke-width: 3; }
+      .next-steps-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 3; }
+      .skill-item { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+      .next-item { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 1; }
+      .celebration-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-21：この章で身につけたスキル</text>
+  
+  <!-- Achievements Section -->
+  <g id="achievements">
+    <rect x="50" y="70" width="700" height="250" rx="12" class="achievements-box"/>
+    <text x="70" y="100" class="emoji">🎯</text>
+    <text x="100" y="100" class="section-title" fill="#047857">達成したこと</text>
+    
+    <g transform="translate(70, 120)">
+      <!-- Achievement 1 -->
+      <rect x="0" y="0" width="320" height="35" rx="6" class="skill-item"/>
+      <text x="10" y="18" class="achievement-title" fill="#047857">✅ AtCoderとは何かを理解</text>
+      <text x="10" y="30" class="desc-text" fill="#047857">日本最大級の競技プログラミングサイトの特徴を把握</text>
+      
+      <!-- Achievement 2 -->
+      <rect x="340" y="0" width="320" height="35" rx="6" class="skill-item"/>
+      <text x="350" y="18" class="achievement-title" fill="#047857">✅ アカウント作成方法をマスター</text>
+      <text x="350" y="30" class="desc-text" fill="#047857">安全で適切なユーザー名・パスワード設定を習得</text>
+      
+      <!-- Achievement 3 -->
+      <rect x="0" y="45" width="320" height="35" rx="6" class="skill-item"/>
+      <text x="10" y="63" class="achievement-title" fill="#047857">✅ サイトの基本的な使い方を習得</text>
+      <text x="10" y="75" class="desc-text" fill="#047857">ナビゲーション、マイページの見方をマスター</text>
+      
+      <!-- Achievement 4 -->
+      <rect x="340" y="45" width="320" height="35" rx="6" class="skill-item"/>
+      <text x="350" y="63" class="achievement-title" fill="#047857">✅ レーティングシステムの仕組みを理解</text>
+      <text x="350" y="75" class="desc-text" fill="#047857">成長の指標と目標設定の方法を把握</text>
+      
+      <!-- Achievement 5 -->  
+      <rect x="0" y="90" width="320" height="35" rx="6" class="skill-item"/>
+      <text x="10" y="108" class="achievement-title" fill="#047857">✅ コンテストの流れと心構えを把握</text>
+      <text x="10" y="120" class="desc-text" fill="#047857">参加前の準備から終了後の振り返りまで</text>
+      
+      <!-- Achievement 6 -->
+      <rect x="340" y="90" width="320" height="35" rx="6" class="skill-item"/>
+      <text x="350" y="108" class="achievement-title" fill="#047857">✅ 初心者の不安解消方法を学習</text>
+      <text x="350" y="120" class="desc-text" fill="#047857">現実的な期待値設定と成功基準の理解</text>
+      
+      <!-- Key Skills Summary -->
+      <rect x="0" y="140" width="660" height="60" rx="8" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+      <text x="20" y="160" class="emoji">🌟</text>
+      <text x="50" y="160" style="font: 600 12px Inter, sans-serif; fill: #047857;">習得した核心スキル</text>
+      <text x="20" y="175" class="desc-text" fill="#047857">• AtCoderの全体像理解　• 安全なアカウント作成　• 基本操作の習得</text>
+      <text x="20" y="188" class="desc-text" fill="#047857">• レーティングシステムの理解　• コンテスト参加の準備　• 継続的学習の基盤作り</text>
+    </g>
+  </g>
+  
+  <!-- Next Steps Section -->
+  <g id="next-steps">
+    <rect x="50" y="340" width="700" height="180" rx="12" class="next-steps-box"/>
+    <text x="70" y="370" class="emoji">🚀</text>
+    <text x="100" y="370" class="section-title" fill="#1E40AF">次のステップ</text>
+    
+    <g transform="translate(70, 390)">
+      <text x="0" y="20" class="achievement-title" fill="#1E40AF">第3章: プログラミング環境の構築</text>
+      
+      <!-- Next Step 1 -->
+      <rect x="0" y="30" width="320" height="30" rx="6" class="next-item"/>
+      <text x="10" y="48" class="next-text" fill="#1E40AF">• Python のインストール</text>
+      <text x="10" y="58" class="desc-text" fill="#1E40AF">開発環境の準備</text>
+      
+      <!-- Next Step 2 -->
+      <rect x="340" y="30" width="320" height="30" rx="6" class="next-item"/>
+      <text x="350" y="48" class="next-text" fill="#1E40AF">• コードエディタの設定</text>
+      <text x="350" y="58" class="desc-text" fill="#1E40AF">効率的な開発環境</text>
+      
+      <!-- Next Step 3 -->
+      <rect x="0" y="70" width="320" height="30" rx="6" class="next-item"/>
+      <text x="10" y="88" class="next-text" fill="#1E40AF">• AtCoder での提出練習</text>
+      <text x="10" y="98" class="desc-text" fill="#1E40AF">実際の問題解決体験</text>
+      
+      <!-- Next Step 4 -->
+      <rect x="340" y="70" width="320" height="30" rx="6" class="next-item"/>
+      <text x="350" y="88" class="next-text" fill="#1E40AF">• デバッグの基本技術</text>
+      <text x="350" y="98" class="desc-text" fill="#1E40AF">問題解決スキルの向上</text>
+    </g>
+  </g>
+  
+  <!-- Celebration & Encouragement -->
+  <g id="celebration">
+    <rect x="100" y="540" width="600" height="50" rx="12" class="celebration-box"/>
+    <text x="120" y="565" class="emoji">🎉</text>
+    <text x="150" y="565" style="font: 600 14px Inter, sans-serif; fill: #D97706;">おめでとう！</text>
+    <text x="120" y="580" class="desc-text" fill="#A16207">
+      君はもうAtCoderの世界に足を踏み入れる準備ができた！次の章では実際にプログラムを書いて提出する環境を整えよう。
+    </text>
+  </g>
+  
+  <!-- Progress Indicator -->
+  <g id="progress">
+    <text x="50" y="30" class="desc-text" fill="#6B7280">第2章完了！</text>
+    <rect x="50" y="35" width="200" height="8" rx="4" fill="#E5E7EB"/>
+    <rect x="50" y="35" width="80" height="8" rx="4" fill="#10B981"/>
+    <text x="260" y="42" class="desc-text" fill="#6B7280">40% 完了</text>
+  </g>
+  
+</svg>

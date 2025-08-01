@@ -1,0 +1,228 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-9：B問題の特徴とアプローチ</title>
+  <desc>A問題との違いとB問題特有の解法アプローチ</desc>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">
+    図7-9：B問題の特徴とアプローチ
+  </text>
+  
+  <!-- Comparison A vs B -->
+  <text x="50" y="70" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    A問題 vs B問題の違い
+  </text>
+  
+  <!-- A Problem characteristics -->
+  <g transform="translate(50, 90)">
+    <rect x="0" y="0" width="320" height="120" fill="#e8f5e8" stroke="#27ae60" stroke-width="2" rx="5"/>
+    <text x="160" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#27ae60">
+      🅰️ A問題の特徴
+    </text>
+    
+    <text x="20" y="50" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#27ae60">
+      ⏱️ 所要時間：1-3分
+    </text>
+    <text x="20" y="70" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • 一直線の思考で解決
+    </text>
+    <text x="20" y="85" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • 基本文法の直接適用
+    </text>
+    <text x="20" y="100" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • ほぼ確実に正解できる
+    </text>
+  </g>
+  
+  <!-- B Problem characteristics -->
+  <g transform="translate(390, 90)">
+    <rect x="0" y="0" width="320" height="120" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="5"/>
+    <text x="160" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#856404">
+      🅱️ B問題の特徴
+    </text>
+    
+    <text x="20" y="50" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#856404">
+      ⏱️ 所要時間：5-15分
+    </text>
+    <text x="20" y="70" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • 少し考える必要がある
+    </text>
+    <text x="20" y="85" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • 複数のステップが必要
+    </text>
+    <text x="20" y="100" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • 慣れないと時間がかかる
+    </text>
+  </g>
+  
+  <!-- B Problem typical patterns -->
+  <text x="50" y="250" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    B問題の典型パターン
+  </text>
+  
+  <!-- Pattern 1: Brute Force -->
+  <g transform="translate(50, 270)">
+    <rect x="0" y="0" width="220" height="130" fill="#ffebee" stroke="#e74c3c" stroke-width="2" rx="5"/>
+    <text x="110" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#c0392b">
+      🔍 全探索パターン
+    </text>
+    
+    <text x="20" y="50" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#c0392b">
+      特徴：
+    </text>
+    <text x="20" y="68" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • 全ての可能性を調べる
+    </text>
+    <text x="20" y="83" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • N ≤ 1000程度なら十分
+    </text>
+    
+    <text x="20" y="105" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#c0392b">
+      例：
+    </text>
+    <text x="20" y="120" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      2つの数の組み合わせ全チェック
+    </text>
+  </g>
+  
+  <!-- Pattern 2: Simulation -->
+  <g transform="translate(290, 270)">
+    <rect x="0" y="0" width="220" height="130" fill="#e8f4fd" stroke="#3498db" stroke-width="2" rx="5"/>
+    <text x="110" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#2980b9">
+      🎮 シミュレーション
+    </text>
+    
+    <text x="20" y="50" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2980b9">
+      特徴：
+    </text>
+    <text x="20" y="68" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • 問題の状況を再現
+    </text>
+    <text x="20" y="83" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • 順番に処理を実行
+    </text>
+    
+    <text x="20" y="105" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2980b9">
+      例：
+    </text>
+    <text x="20" y="120" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      ゲームの進行をプログラムで再現
+    </text>
+  </g>
+  
+  <!-- Pattern 3: String/Array Processing -->
+  <g transform="translate(530, 270)">
+    <rect x="0" y="0" width="220" height="130" fill="#f3e5f5" stroke="#9b59b6" stroke-width="2" rx="5"/>
+    <text x="110" y="25" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#8e44ad">
+      📝 文字列・配列処理
+    </text>
+    
+    <text x="20" y="50" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#8e44ad">
+      特徴：
+    </text>
+    <text x="20" y="68" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • 文字列の加工・変換
+    </text>
+    <text x="20" y="83" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+      • 配列の並び替え・検索
+    </text>
+    
+    <text x="20" y="105" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#8e44ad">
+      例：
+    </text>
+    <text x="20" y="120" font-family="Inter, sans-serif" font-size="10" fill="#2c3e50">
+      文字列のパターンマッチング
+    </text>
+  </g>
+  
+  <!-- Solution approach -->
+  <text x="50" y="440" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    B問題の解法アプローチ
+  </text>
+  
+  <rect x="50" y="450" width="700" height="120" fill="white" stroke="#bdc3c7" stroke-width="2" rx="5"/>
+  
+  <!-- Step by step approach -->
+  <g transform="translate(80, 470)">
+    <!-- Step 1 -->
+    <rect x="0" y="0" width="120" height="25" fill="#3498db" stroke="#2980b9" stroke-width="1" rx="3"/>
+    <text x="60" y="17" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="white">
+      Step 1: 問題理解
+    </text>
+    <text x="60" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#2c3e50">
+      何を求める？
+    </text>
+    <text x="60" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#2c3e50">
+      制約は？
+    </text>
+    
+    <!-- Arrow -->
+    <path d="M 130 12 L 150 12" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 2 -->
+    <rect x="160" y="0" width="120" height="25" fill="#27ae60" stroke="#229954" stroke-width="1" rx="3"/>
+    <text x="220" y="17" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="white">
+      Step 2: 方針決定
+    </text>
+    <text x="220" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#2c3e50">
+      全探索？
+    </text>
+    <text x="220" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#2c3e50">
+      シミュレーション？
+    </text>
+    
+    <!-- Arrow -->
+    <path d="M 290 12 L 310 12" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 3 -->
+    <rect x="320" y="0" width="120" height="25" fill="#f39c12" stroke="#e67e22" stroke-width="1" rx="3"/>
+    <text x="380" y="17" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="white">
+      Step 3: 実装
+    </text>
+    <text x="380" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#2c3e50">
+      丁寧にコード化
+    </text>
+    <text x="380" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#2c3e50">
+      サンプルで確認
+    </text>
+    
+    <!-- Arrow -->
+    <path d="M 450 12 L 470 12" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 4 -->
+    <rect x="480" y="0" width="120" height="25" fill="#e74c3c" stroke="#c0392b" stroke-width="1" rx="3"/>
+    <text x="540" y="17" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="bold" fill="white">
+      Step 4: 検証
+    </text>
+    <text x="540" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#2c3e50">
+      計算量確認
+    </text>
+    <text x="540" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#2c3e50">
+      エラーハンドリング
+    </text>
+  </g>
+  
+  <!-- Time allocation suggestion -->
+  <g transform="translate(80, 530)">
+    <rect x="0" y="0" width="640" height="30" fill="#e8f4fd" stroke="#3498db" stroke-width="1" rx="3"/>
+    <text x="20" y="20" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2980b9">
+      ⏰ 時間配分目安：問題理解(2分) → 方針決定(3分) → 実装(8分) → 検証(2分) = 計15分
+    </text>
+  </g>
+  
+  <!-- Common mistakes -->
+  <rect x="50" y="580" width="700" height="15" fill="transparent"/>
+  <text x="60" y="592" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#e74c3c">
+    ⚠️ よくある失敗：早とちりして実装開始 → 途中で方針変更 → 時間不足
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+</svg>

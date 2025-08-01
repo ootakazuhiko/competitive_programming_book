@@ -1,0 +1,132 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-8：安全な設定のための注意点</title>
+  <desc>メールアドレス設定とパスワード作成の安全なガイドライン</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .item-title { font: 500 12px Inter, sans-serif; }
+      .desc-text { font: 400 10px Inter, sans-serif; }
+      .example-text { font: 500 10px 'Courier New', monospace; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      .warning-text { font: 600 11px Inter, sans-serif; }
+      
+      .email-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .password-section { fill: #ECFDF5; stroke: #10B981; stroke-width: 2; }
+      .good-example { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+      .bad-example { fill: #FEF2F2; stroke: #EF4444; stroke-width: 1; }
+      .strength-indicator { fill: #F3F4F6; stroke: #9CA3AF; stroke-width: 1; }
+      .warning-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-8：安全な設定のための注意点</text>
+  
+  <!-- Email Address Section -->
+  <g id="email-section">
+    <rect x="50" y="60" width="350" height="200" rx="12" class="email-section"/>
+    <text x="70" y="85" class="emoji">📧</text>
+    <text x="100" y="85" class="section-title" fill="#1E40AF">メールアドレス設定</text>
+    
+    <g transform="translate(70, 100)">
+      <text x="0" y="15" class="item-title" fill="#1E40AF">推奨メールサービス：</text>
+      
+      <text x="0" y="35" class="desc-text" fill="#1E40AF">• Gmail（@gmail.com）</text>
+      <text x="0" y="50" class="desc-text" fill="#1E40AF">• Yahoo!メール（@yahoo.co.jp）</text>
+      <text x="0" y="65" class="desc-text" fill="#1E40AF">• Outlook（@outlook.com）</text>
+      <text x="0" y="80" class="desc-text" fill="#1E40AF">• iCloudメール（@icloud.com）</text>
+      
+      <text x="0" y="105" class="warning-text" fill="#B91C1C">⚠️ 注意点：</text>
+      <text x="0" y="125" class="desc-text" fill="#1E40AF">• 長期間使用予定のアドレスを選択</text>
+      <text x="0" y="140" class="desc-text" fill="#1E40AF">• 迷惑メール設定の確認</text>
+      <text x="0" y="155" class="desc-text" fill="#1E40AF">• パスワード再設定に必要</text>
+      <text x="0" y="170" class="desc-text" fill="#1E40AF">• 保護者と共有できるアドレス推奨</text>
+    </g>
+  </g>
+  
+  <!-- Password Section -->
+  <g id="password-section">
+    <rect x="420" y="60" width="330" height="200" rx="12" class="password-section"/>
+    <text x="440" y="85" class="emoji">🔐</text>
+    <text x="470" y="85" class="section-title" fill="#047857">安全なパスワード作成</text>
+    
+    <g transform="translate(440, 100)">
+      <text x="0" y="15" class="item-title" fill="#047857">✅ 良いパスワードの条件：</text>
+      <text x="0" y="35" class="desc-text" fill="#047857">• 8文字以上（12文字以上推奨）</text>
+      <text x="0" y="50" class="desc-text" fill="#047857">• 大文字・小文字・数字・記号を含む</text>
+      <text x="0" y="65" class="desc-text" fill="#047857">• 辞書にない単語の組み合わせ</text>
+      <text x="0" y="80" class="desc-text" fill="#047857">• 個人情報を含まない</text>
+      
+      <rect x="0" y="95" width="280" height="25" rx="4" class="good-example"/>
+      <text x="10" y="110" class="item-title" fill="#047857">例：</text>
+      <text x="35" y="110" class="example-text" fill="#047857">MyAtCoder2024!</text>
+      <text x="10" y="120" class="desc-text" fill="#047857">↑単語 ↑年号 ↑記号</text>
+      
+      <text x="0" y="145" class="warning-text" fill="#DC2626">❌ 危険なパスワード：</text>
+      <text x="0" y="165" class="desc-text" fill="#047857">• 誕生日や電話番号</text>
+      <text x="140" y="165" class="desc-text" fill="#047857">• 辞書にある単語のみ</text>
+    </g>
+  </g>
+  
+  <!-- Password Strength Indicators -->
+  <g id="password-examples">
+    <text x="50" y="295" class="section-title" fill="#374151">パスワード強度の例</text>
+    
+    <!-- Weak Password -->
+    <rect x="50" y="310" width="220" height="80" rx="8" class="bad-example"/>
+    <text x="65" y="330" class="emoji">❌</text>
+    <text x="90" y="330" class="item-title" fill="#DC2626">弱いパスワード</text>
+    <text x="65" y="350" class="example-text" fill="#DC2626">password123</text>
+    <text x="65" y="365" class="desc-text" fill="#B91C1C">• 一般的な単語</text>
+    <text x="65" y="375" class="desc-text" fill="#B91C1C">• 推測されやすい</text>
+    
+    <!-- Medium Password -->
+    <rect x="290" y="310" width="220" height="80" rx="8" class="strength-indicator"/>
+    <text x="305" y="330" class="emoji">⚠️</text>
+    <text x="330" y="330" class="item-title" fill="#F59E0B">普通のパスワード</text>
+    <text x="305" y="350" class="example-text" fill="#D97706">Atcoder123</text>
+    <text x="305" y="365" class="desc-text" fill="#A16207">• 予測可能な構造</text>
+    <text x="305" y="375" class="desc-text" fill="#A16207">• もう少し工夫が必要</text>
+    
+    <!-- Strong Password -->
+    <rect x="530" y="310" width="220" height="80" rx="8" class="good-example"/>
+    <text x="545" y="330" class="emoji">✅</text>
+    <text x="570" y="330" class="item-title" fill="#047857">強いパスワード</text>
+    <text x="545" y="350" class="example-text" fill="#047857">Pr0gr@mm3r_2024</text>
+    <text x="545" y="365" class="desc-text" fill="#047857">• 複雑で予測困難</text>
+    <text x="545" y="375" class="desc-text" fill="#047857">• 安全性が高い</text>
+  </g>
+  
+  <!-- Password Creation Tips -->
+  <g id="password-tips">
+    <rect x="50" y="420" width="700" height="100" rx="12" class="warning-box"/>
+    <text x="70" y="445" class="emoji">💡</text>
+    <text x="100" y="445" class="section-title" fill="#92400E">パスワード作成のコツ</text>
+    
+    <g transform="translate(70, 455)">
+      <text x="0" y="15" class="desc-text" fill="#A16207">1. 好きな単語や文章をベースにして、文字を数字や記号に置き換える</text>
+      <text x="20" y="28" class="desc-text" fill="#A16207">例：「競技プログラミング好き」→ "K0mpetitive_Pr0gr@mming!"</text>
+      
+      <text x="0" y="45" class="desc-text" fill="#A16207">2. パスフレーズ方式：複数の単語を記号でつなぐ</text>
+      <text x="20" y="58" class="desc-text" fill="#A16207">例：「サクラ#咲く#春2024」→ "Sakura#Saku#Spring2024"</text>
+      
+      <text x="0" y="75" class="desc-text" fill="#A16207">3. パスワード管理ツール（保護者と相談）の利用も検討</text>
+    </g>
+  </g>
+  
+  <!-- Bottom Security Warning -->
+  <g id="security-warning">
+    <rect x="100" y="545" width="600" height="45" rx="10" fill="#FEF2F2" stroke="#EF4444" stroke-width="2"/>
+    <text x="120" y="565" class="emoji">🔒</text>
+    <text x="150" y="565" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">セキュリティの基本</text>
+    <text x="120" y="578" style="font: 400 10px Inter, sans-serif; fill: #DC2626;">
+      パスワードは絶対に他人に教えない！同じパスワードを複数のサイトで使い回さない！
+    </text>
+  </g>
+  
+</svg>
