@@ -213,31 +213,56 @@
             background-color: var(--background-secondary) !important;
         }
         
-        /* Mobile sidebar visibility enhancement */
-        .book-sidebar {
-            background-color: var(--background-secondary) !important;
-            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15) !important;
-        }
-        
-        .book-sidebar * {
-            opacity: 1 !important;
-        }
-        
-        .book-sidebar .book-title,
-        .book-sidebar .toc-section-title,
-        .book-sidebar .toc-link {
-            color: var(--text-primary) !important;
-            opacity: 1 !important;
-        }
-        
-        .book-sidebar .toc-link {
-            color: var(--text-secondary) !important;
-        }
-        
-        .book-sidebar .toc-link:hover,
-        .book-sidebar .toc-link.active {
-            background-color: var(--accent-color) !important;
-            color: white !important;
+        /* Mobile sidebar visibility enhancement - CRITICAL FIX */
+        @media (max-width: 767px) {
+            .book-sidebar {
+                background: #ffffff !important;
+                background-color: #ffffff !important;
+                box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15) !important;
+                opacity: 1 !important;
+            }
+            
+            /* Dark mode specific background */
+            @media (prefers-color-scheme: dark) {
+                .book-sidebar {
+                    background: #1f2937 !important;
+                    background-color: #1f2937 !important;
+                }
+            }
+            
+            .book-sidebar * {
+                opacity: 1 !important;
+            }
+            
+            .book-sidebar .book-title,
+            .book-sidebar .toc-section-title {
+                color: #111827 !important;
+                opacity: 1 !important;
+            }
+            
+            .book-sidebar .toc-link {
+                color: #6b7280 !important;
+                opacity: 1 !important;
+                background: transparent !important;
+            }
+            
+            /* Dark mode text colors */
+            @media (prefers-color-scheme: dark) {
+                .book-sidebar .book-title,
+                .book-sidebar .toc-section-title {
+                    color: #f9fafb !important;
+                }
+                
+                .book-sidebar .toc-link {
+                    color: #d1d5db !important;
+                }
+            }
+            
+            .book-sidebar .toc-link:hover,
+            .book-sidebar .toc-link.active {
+                background-color: #3b82f6 !important;
+                color: #ffffff !important;
+            }
         }
         
         /* Production overlay */
