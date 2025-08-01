@@ -1,0 +1,195 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-14：中学生から始める競技プログラミングの戦略的価値</title>
+  <desc>中学1年生から大学生まで時系列での累積効果と、各段階での具体的な価値を視覚化した図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .timeline-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .phase-title { font: 500 12px Inter, sans-serif; fill: #374151; }
+      .phase-content { font: 400 10px Inter, sans-serif; fill: #4B5563; line-height: 1.3; }
+      .rating-text { font: 400 9px Inter, sans-serif; fill: #059669; }
+      .stage-label { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .value-category { font: 500 11px Inter, sans-serif; }
+      .value-item { font: 400 10px Inter, sans-serif; fill: #4B5563; }
+      .key-message { font: 600 12px Inter, sans-serif; fill: #DC2626; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .timeline-line { stroke: #10B981; stroke-width: 3; }
+      .timeline-point { fill: #10B981; stroke: #FFFFFF; stroke-width: 2; }
+      .phase-box { fill: #F9FAFB; stroke: #D1D5DB; stroke-width: 1; }
+      .middle-phase { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 1; }
+      .high-phase { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+      .university-phase { fill: #FFF7ED; stroke: #FB923C; stroke-width: 1; }
+      .value-section { fill: #F3F4F6; stroke: #9CA3AF; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図1-14：中学生から始める競技プログラミングの戦略的価値</text>
+  
+  <!-- Subtitle -->
+  <text x="450" y="55" text-anchor="middle" class="timeline-title">📅 時系列での累積効果</text>
+  
+  <!-- Timeline -->
+  <line x1="100" y1="100" x2="800" y2="100" class="timeline-line"/>
+  
+  <!-- Timeline points and labels -->
+  <g id="middle1">
+    <circle cx="130" cy="100" r="8" class="timeline-point"/>
+    <text x="130" y="85" text-anchor="middle" class="stage-label">中学1年生</text>
+    <text x="130" y="125" text-anchor="middle" class="emoji">📅</text>
+  </g>
+  
+  <g id="middle2">
+    <circle cx="250" cy="100" r="8" class="timeline-point"/>
+    <text x="250" y="85" text-anchor="middle" class="stage-label">中学2年生</text>
+    <text x="250" y="125" text-anchor="middle" class="emoji">📅</text>
+  </g>
+  
+  <g id="middle3">
+    <circle cx="370" cy="100" r="8" class="timeline-point"/>
+    <text x="370" y="85" text-anchor="middle" class="stage-label">中学3年生</text>
+    <text x="370" y="125" text-anchor="middle" class="emoji">📅</text>
+  </g>
+  
+  <g id="high">
+    <circle cx="530" cy="100" r="8" class="timeline-point"/>
+    <text x="530" y="85" text-anchor="middle" class="stage-label">高校生</text>
+    <text x="530" y="125" text-anchor="middle" class="emoji">📅</text>
+  </g>
+  
+  <g id="university">
+    <circle cx="690" cy="100" r="8" class="timeline-point"/>
+    <text x="690" y="85" text-anchor="middle" class="stage-label">大学生</text>
+    <text x="690" y="125" text-anchor="middle" class="emoji">📅</text>
+  </g>
+  
+  <!-- Phase boxes -->
+  <g id="phase-boxes">
+    <!-- Middle School Phase 1 -->
+    <rect x="70" y="145" width="120" height="90" rx="6" class="middle-phase"/>
+    <text x="130" y="165" text-anchor="middle" class="phase-title">AtCoder開始</text>
+    <text x="80" y="180" class="phase-content">茶色目標</text>
+    <text x="80" y="195" class="phase-content">基礎固め</text>
+    <text x="80" y="210" class="phase-content">プログラミング</text>
+    <text x="80" y="225" class="phase-content">への興味定着</text>
+    <text x="130" y="255" text-anchor="middle" class="rating-text">📊 レーティング400達成</text>
+    
+    <!-- Middle School Phase 2 -->
+    <rect x="190" y="145" width="120" height="90" rx="6" class="middle-phase"/>
+    <text x="250" y="165" text-anchor="middle" class="phase-title">ABC A問題安定正解</text>
+    <text x="200" y="180" class="phase-content">緑色目標</text>
+    <text x="200" y="195" class="phase-content">アルゴリズム</text>
+    <text x="200" y="210" class="phase-content">基礎習得</text>
+    <text x="200" y="225" class="phase-content">学習習慣確立</text>
+    <text x="250" y="255" text-anchor="middle" class="rating-text">📊 レーティング800達成</text>
+    
+    <!-- Middle School Phase 3 -->
+    <rect x="310" y="145" width="120" height="90" rx="6" class="middle-phase"/>
+    <text x="370" y="165" text-anchor="middle" class="phase-title">JOI予選挑戦</text>
+    <text x="320" y="180" class="phase-content">青色目標</text>
+    <text x="320" y="195" class="phase-content">応用力強化</text>
+    <text x="320" y="210" class="phase-content">同世代との</text>
+    <text x="320" y="225" class="phase-content">ネットワーク構築</text>
+    <text x="370" y="255" text-anchor="middle" class="rating-text">📊 レーティング1200達成</text>
+    
+    <!-- High School Phase -->
+    <rect x="470" y="145" width="120" height="90" rx="6" class="high-phase"/>
+    <text x="530" y="165" text-anchor="middle" class="phase-title">情報科目最高評価</text>
+    <text x="480" y="180" class="phase-content">JOI本選</text>
+    <text x="480" y="195" class="phase-content">大学受験での</text>
+    <text x="480" y="210" class="phase-content">差別化要素</text>
+    <text x="480" y="225" class="phase-content">推薦入試優位性</text>
+    <text x="530" y="255" text-anchor="middle" class="rating-text">📊 国内大会上位入賞</text>
+    
+    <!-- University Phase -->
+    <rect x="630" y="145" width="120" height="90" rx="6" class="university-phase"/>
+    <text x="690" y="165" text-anchor="middle" class="phase-title">IT企業で高評価</text>
+    <text x="640" y="180" class="phase-content">IOI経験</text>
+    <text x="640" y="195" class="phase-content">技術系インターン</text>
+    <text x="640" y="210" class="phase-content">研究室での</text>
+    <text x="640" y="225" class="phase-content">即戦力</text>
+    <text x="690" y="255" text-anchor="middle" class="rating-text">📊 国際経験・代表候補</text>
+  </g>
+  
+  <!-- Value sections -->
+  <g id="value-sections">
+    <text x="450" y="300" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #374151;">🎯 各段階での具体的な価値：</text>
+    
+    <!-- Middle School Value -->
+    <rect x="50" y="320" width="250" height="120" rx="8" class="value-section"/>
+    <text x="175" y="340" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #3B82F6;">【中学生期の価値】</text>
+    <foreignObject x="60" y="350" width="230" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="value-item">
+        <div>• 基礎的な論理思考力の確立</div>
+        <div>• プログラミングへの興味・関心の定着</div>
+        <div>• 同世代ネットワークの構築</div>
+        <div>• 学習習慣の確立</div>
+      </div>
+    </foreignObject>
+    
+    <!-- High School Value -->
+    <rect x="325" y="320" width="250" height="120" rx="8" class="value-section"/>
+    <text x="450" y="340" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #22C55E;">【高校生期の価値】</text>
+    <foreignObject x="335" y="350" width="230" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="value-item">
+        <div>• 大学受験での差別化要素</div>
+        <div>• 情報系学部への推薦入試優位性</div>
+        <div>• JOI・IOI等での実績作り</div>
+        <div>• 技術的専門性の深化</div>
+      </div>
+    </foreignObject>
+    
+    <!-- University Value -->
+    <rect x="600" y="320" width="250" height="120" rx="8" class="value-section"/>
+    <text x="725" y="340" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #FB923C;">【大学生期の価値】</text>
+    <foreignObject x="610" y="350" width="230" height="80">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="value-item">
+        <div>• IT企業からの早期スカウト</div>
+        <div>• 技術系インターンシップでの高評価</div>
+        <div>• 研究室での即戦力</div>
+        <div>• 起業・創業時の技術的基盤</div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Compound effect visualization -->
+  <g id="compound-effect">
+    <rect x="100" y="480" width="700" height="100" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+    <text x="450" y="505" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #92400E;">複利効果の可視化</text>
+    
+    <!-- Growth curve -->
+    <g transform="translate(120, 520)">
+      <path d="M 0 50 Q 150 45 300 30 Q 450 10 600 0" fill="none" stroke="#059669" stroke-width="3"/>
+      <circle cx="0" cy="50" r="4" fill="#059669"/>
+      <circle cx="150" cy="40" r="4" fill="#059669"/>
+      <circle cx="300" cy="30" r="4" fill="#059669"/>
+      <circle cx="450" cy="15" r="4" fill="#059669"/>
+      <circle cx="600" cy="0" r="4" fill="#059669"/>
+      
+      <text x="0" y="70" text-anchor="middle" style="font: 400 9px Inter, sans-serif; fill: #059669;">基礎レベル</text>
+      <text x="150" y="70" text-anchor="middle" style="font: 400 9px Inter, sans-serif; fill: #059669;">応用レベル</text>
+      <text x="300" y="70" text-anchor="middle" style="font: 400 9px Inter, sans-serif; fill: #059669;">実戦レベル</text>
+      <text x="450" y="70" text-anchor="middle" style="font: 400 9px Inter, sans-serif; fill: #059669;">専門レベル</text>
+      <text x="600" y="70" text-anchor="middle" style="font: 400 9px Inter, sans-serif; fill: #059669;">エキスパート</text>
+    </g>
+  </g>
+  
+  <!-- Key message -->
+  <g transform="translate(50, 620)">
+    <rect x="0" y="0" width="800" height="50" rx="8" fill="#FEF2F2" stroke="#EF4444" stroke-width="2"/>
+    <text x="400" y="25" text-anchor="middle" class="key-message">💡 「早く始めるほど、複利効果で価値が増大」</text>
+    <text x="400" y="40" text-anchor="middle" style="font: 400 11px Inter, sans-serif; fill: #7F1D1D;">今日の一歩が、5年後・10年後の大きな差を生み出す</text>
+  </g>
+  
+  <!-- Bottom message -->
+  <g transform="translate(50, 680)">
+    <text x="0" y="0" style="font: 500 12px Inter, sans-serif; fill: #059669;">
+      🌟 中学生からのスタートが、将来の無限の可能性を開く鍵となる
+    </text>
+  </g>
+</svg>

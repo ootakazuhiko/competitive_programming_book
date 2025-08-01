@@ -1,0 +1,133 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="figure1-7-title" aria-describedby="figure1-7-desc">
+  <title id="figure1-7-title">図1-7：論理的思考力の段階的発達</title>
+  <desc id="figure1-7-desc">Scratchから競技プログラミング、そして他分野への応用まで、論理的思考力の発達段階を示す図</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="700" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">
+    論理的思考力の段階的発達
+  </text>
+  
+  <!-- 基礎レベル：Scratchでの経験 -->
+  <g>
+    <text x="60" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0f172a">
+      🎮 Scratchでの経験（基礎レベル）
+    </text>
+    
+    <rect x="40" y="90" width="720" height="160" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    
+    <text x="60" y="120" font-family="Arial, sans-serif" font-size="14" fill="#92400e">
+      「キャラクターを動かそう」
+    </text>
+    
+    <!-- 矢印 -->
+    <path d="M 60 130 L 60 140" stroke="#92400e" stroke-width="2" marker-end="url(#arrowhead-orange)"/>
+    
+    <text x="60" y="160" font-family="Arial, sans-serif" font-size="14" fill="#92400e">
+      「まず右に10歩動かして...」
+    </text>
+    
+    <path d="M 60 170 L 60 180" stroke="#92400e" stroke-width="2" marker-end="url(#arrowhead-orange)"/>
+    
+    <text x="60" y="200" font-family="Arial, sans-serif" font-size="14" fill="#92400e">
+      「次に敵にぶつかったら...」
+    </text>
+    
+    <path d="M 60 210 L 60 220" stroke="#92400e" stroke-width="2" marker-end="url(#arrowhead-orange)"/>
+    
+    <text x="60" y="240" font-family="Arial, sans-serif" font-size="14" fill="#92400e">
+      「ゲームオーバーにしよう」
+    </text>
+    
+    <text x="400" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#dc2626">
+      💡 基本的な順序立て思考
+    </text>
+  </g>
+  
+  <!-- 発展矢印 -->
+  <path d="M 400 260 L 400 290" stroke="#4f46e5" stroke-width="4" marker-end="url(#arrowhead-blue)"/>
+  <text x="440" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4f46e5">
+    競技プログラミングで発展
+  </text>
+  
+  <!-- 応用レベル：競技プログラミング -->
+  <g>
+    <text x="60" y="320" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0f172a">
+      🏆 競技プログラミングでの成長（応用レベル）
+    </text>
+    
+    <rect x="40" y="330" width="720" height="160" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    
+    <text x="60" y="360" font-family="Arial, sans-serif" font-size="14" fill="#166534">
+      「複雑な問題を解こう」
+    </text>
+    
+    <path d="M 60 370 L 60 380" stroke="#166534" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+    
+    <text x="60" y="400" font-family="Arial, sans-serif" font-size="14" fill="#166534">
+      「問題を小さな部分に分けて...」
+    </text>
+    
+    <path d="M 60 410 L 60 420" stroke="#166534" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+    
+    <text x="60" y="440" font-family="Arial, sans-serif" font-size="14" fill="#166534">
+      「それぞれを順番に解決して...」
+    </text>
+    
+    <path d="M 60 450 L 60 460" stroke="#166534" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+    
+    <text x="60" y="480" font-family="Arial, sans-serif" font-size="14" fill="#166534">
+      「全体として最適な解法を構築」
+    </text>
+    
+    <text x="400" y="470" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#dc2626">
+      💡 高度な分析的思考
+    </text>
+  </g>
+  
+  <!-- 応用矢印 -->
+  <path d="M 400 500 L 400 530" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrowhead-purple)"/>
+  <text x="440" y="520" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">
+    他分野への応用
+  </text>
+  
+  <!-- 発展レベル：他分野での活用 -->
+  <g>
+    <text x="60" y="560" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0f172a">
+      📚 日常生活・他教科での活用（発展レベル）
+    </text>
+    
+    <rect x="40" y="570" width="720" height="110" rx="8" fill="#f3e8ff" stroke="#7c3aed" stroke-width="2"/>
+    
+    <text x="60" y="600" font-family="Arial, sans-serif" font-size="14" fill="#581c87">
+      数学の証明 → 段階的な論理構築
+    </text>
+    <text x="60" y="620" font-family="Arial, sans-serif" font-size="14" fill="#581c87">
+      理科の実験 → 仮説検証の体系的アプローチ
+    </text>
+    <text x="60" y="640" font-family="Arial, sans-serif" font-size="14" fill="#581c87">
+      社会の調査 → データ分析と結論導出
+    </text>
+    <text x="60" y="660" font-family="Arial, sans-serif" font-size="14" fill="#581c87">
+      日常の問題解決 → 原因分析と対策立案
+    </text>
+  </g>
+  
+  <!-- 矢印定義 -->
+  <defs>
+    <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4f46e5"/>
+    </marker>
+    <marker id="arrowhead-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+  </defs>
+</svg>
