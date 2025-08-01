@@ -51,12 +51,12 @@
         safeExecute(initTheme, 'initTheme');
     }
 
-    // パフォーマンス設定定数（5章と同じ超軽量設定）
-    const PROCESSING_DELAY = 2000;           // 処理開始遅延時間（更に増加）
-    const PROCESSING_TIMEOUT = 50;           // 処理タイムアウト（更に短縮）
-    const MAX_HEADINGS = 10;                 // 見出し処理上限（更に削減）
-    const MAX_LINKS = 20;                    // リンク処理上限（更に削減）
-    const MAX_IMAGES = 20;                   // 画像処理上限（更に削減）
+    // パフォーマンス設定定数（5章ベース最適化）
+    const PROCESSING_DELAY = 1500;           // 処理開始遅延時間（パフォーマンス重視）
+    const PROCESSING_TIMEOUT = 50;           // 処理タイムアウト（高速終了）
+    const MAX_HEADINGS = 10;                 // 見出し処理上限（軽量化）
+    const MAX_LINKS = 20;                    // リンク処理上限（軽量化）
+    const MAX_IMAGES = 20;                   // 画像処理上限（軽量化）
 
     // 重い処理の遅延初期化（5章と同じ超軽量最適化）
     function initHeavyFeatures() {
@@ -152,7 +152,7 @@
         for (let i = 0; i < maxHeadings; i++) {
             const heading = headings[i];
             if (!heading.id) {
-                heading.id = `h${++idCounter}`;  // より短いID
+                heading.id = `safe-h${++idCounter}`;  // 衝突回避ID
             }
         }
     }
@@ -217,10 +217,16 @@
         for (let i = 0; i < maxImages; i++) {
             const img = images[i];
             
-            // 遅延読み込みのみ（エラーハンドリング削除でより軽量化）
+            // 遅延読み込み
             if (!img.hasAttribute('loading')) {
                 img.setAttribute('loading', 'lazy');
             }
+            
+            // 軽量エラーハンドリング
+            img.onerror = function() {
+                console.warn('[Safe JS] Image failed to load:', this.src);
+                this.style.opacity = '0.5';
+            };
         }
     }
 
