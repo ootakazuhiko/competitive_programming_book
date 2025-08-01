@@ -1,0 +1,265 @@
+<svg viewBox="0 0 950 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-5：コンテスト種類と特徴</title>
+  <desc>AtCoderで開催される各種コンテストの特徴、難易度、対象者を比較した総合ガイド</desc>
+  
+  <!-- Background -->
+  <rect width="950" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="475" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    コンテスト種類と特徴
+  </text>
+  
+  <!-- ABC Section -->
+  <rect x="50" y="60" width="280" height="240" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="190" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🎯 ABC (AtCoder Beginner Contest)
+  </text>
+  <text x="190" y="105" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">
+    初心者向け・毎週土曜21時開催
+  </text>
+  
+  <rect x="70" y="120" width="240" height="170" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  
+  <text x="80" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">📊 基本情報</text>
+  <text x="90" y="160" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="90" dy="0">• 開催頻度: 毎週土曜日 21:00-22:40</tspan>
+    <tspan x="90" dy="12">• 問題数: 6問 (A, B, C, D, E, F)</tspan>
+    <tspan x="90" dy="12">• 制限時間: 100分</tspan>
+    <tspan x="90" dy="12">• 対象レーティング: 0-1999 (茶色〜水色)</tspan>
+  </text>
+  
+  <text x="80" y="205" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">🎓 中学生へのおすすめ度</text>
+  <text x="90" y="225" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="90" dy="0">★★★★★ 絶対おすすめ！</tspan>
+    <tspan x="90" dy="12">• A,B問題: 基礎固めに最適</tspan>
+    <tspan x="90" dy="12">• C問題: 応用力向上のチャレンジ</tspan>
+    <tspan x="90" dy="12">• 解説が丁寧で学習効果大</tspan>
+    <tspan x="90" dy="12">• 日本語問題文で理解しやすい</tspan>
+  </text>
+  
+  <!-- ARC Section -->
+  <rect x="350" y="60" width="280" height="240" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="490" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#065f46">
+    🚀 ARC (AtCoder Regular Contest)
+  </text>
+  <text x="490" y="105" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#065f46">
+    中級者向け・月2回程度開催
+  </text>
+  
+  <rect x="370" y="120" width="240" height="170" rx="4" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  
+  <text x="380" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#065f46">📊 基本情報</text>
+  <text x="390" y="160" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    <tspan x="390" dy="0">• 開催頻度: 月2回程度（不定期）</tspan>
+    <tspan x="390" dy="12">• 問題数: 6問 (A, B, C, D, E, F)</tspan>
+    <tspan x="390" dy="12">• 制限時間: 120分</tspan>
+    <tspan x="390" dy="12">• 対象レーティング: 1000-2799 (緑色〜橙色)</tspan>
+  </text>
+  
+  <text x="380" y="205" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#065f46">🎓 中学生へのおすすめ度</text>
+  <text x="390" y="225" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    <tspan x="390" dy="0">★★☆☆☆ 上級者になったら</tspan>
+    <tspan x="390" dy="12">• 緑色レーティング到達後に挑戦</tspan>
+    <tspan x="390" dy="12">• A,B問題は解けるようになりたい</tspan>
+    <tspan x="390" dy="12">• 高度なアルゴリズム知識が必要</tspan>
+    <tspan x="390" dy="12">• 中学生には少し難しめ</tspan>
+  </text>
+  
+  <!-- AGC Section -->
+  <rect x="650" y="60" width="280" height="240" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="790" y="85" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#92400e">
+    👑 AGC (AtCoder Grand Contest)
+  </text>
+  <text x="790" y="105" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#92400e">
+    上級者向け・月1回程度開催
+  </text>
+  
+  <rect x="670" y="120" width="240" height="170" rx="4" fill="white" stroke="#fde68a" stroke-width="1"/>
+  
+  <text x="680" y="140" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">📊 基本情報</text>
+  <text x="690" y="160" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="690" dy="0">• 開催頻度: 月1回程度（不定期）</tspan>
+    <tspan x="690" dy="12">• 問題数: 6問 (A, B, C, D, E, F)</tspan>
+    <tspan x="690" dy="12">• 制限時間: 150分</tspan>
+    <tspan x="690" dy="12">• 対象レーティング: 1200+ (水色以上)</tspan>
+  </text>
+  
+  <text x="680" y="205" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">🎓 中学生へのおすすめ度</text>
+  <text x="690" y="225" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="690" dy="0">★☆☆☆☆ 将来の目標として</tspan>
+    <tspan x="690" dy="12">• 高校生以降の長期目標</tspan>
+    <tspan x="690" dy="12">• A問題を眺めて雰囲気を掴む程度</tspan>
+    <tspan x="690" dy="12">• 数学的知識と発想力が重要</tspan>
+    <tspan x="690" dy="12">• プロレベルの難易度</tspan>
+  </text>
+  
+  <!-- Special Contests Section -->
+  <rect x="50" y="320" width="850" height="180" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="475" y="345" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🌟 特別なコンテスト
+  </text>
+  
+  <!-- Practice Contest -->
+  <rect x="70" y="365" width="180" height="120" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="160" y="385" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🔰 Practice Contest
+  </text>
+  <text x="80" y="405" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="80" dy="0">• いつでも参加可能</tspan>
+    <tspan x="80" dy="12">• 初回提出の練習用</tspan>
+    <tspan x="80" dy="12">• レーティング変動なし</tspan>
+    <tspan x="80" dy="12">• Hello World問題</tspan>
+    <tspan x="80" dy="12">• 環境テストに最適</tspan>
+    <tspan x="80" dy="12">★★★★★ 初心者必須</tspan>
+  </text>
+  
+  <!-- Sponsored Contest -->
+  <rect x="270" y="365" width="180" height="120" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="360" y="385" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🏢 企業協賛コンテスト
+  </text>
+  <text x="280" y="405" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="280" dy="0">• 企業がスポンサー</tspan>
+    <tspan x="280" dy="12">• 賞品・賞金あり</tspan>
+    <tspan x="280" dy="12">• 採用に繋がることも</tspan>
+    <tspan x="280" dy="12">• 難易度は様々</tspan>
+    <tspan x="280" dy="12">• 参加するだけでも価値</tspan>
+    <tspan x="280" dy="12">★★★☆☆ 興味があれば</tspan>
+  </text>
+  
+  <!-- Marathon Contest -->
+  <rect x="470" y="365" width="180" height="120" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="560" y="385" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🏃 マラソンコンテスト
+  </text>
+  <text x="480" y="405" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="480" dy="0">• 長期間（数日〜1週間）</tspan>
+    <tspan x="480" dy="12">• 最適化問題中心</tspan>
+    <tspan x="480" dy="12">• より良い解を求める</tspan>
+    <tspan x="480" dy="12">• 創造性が重要</tspan>
+    <tspan x="480" dy="12">• 時間をかけて考察</tspan>
+    <tspan x="480" dy="12">★★☆☆☆ 慣れてから</tspan>
+  </text>
+  
+  <!-- Heuristic Contest -->
+  <rect x="670" y="365" width="180" height="120" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="760" y="385" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🧠 ヒューリスティック
+  </text>
+  <text x="680" y="405" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="680" dy="0">• 近似解を求める</tspan>
+    <tspan x="680" dy="12">• 正解が1つではない</tspan>
+    <tspan x="680" dy="12">• アイデア勝負</tspan>
+    <tspan x="680" dy="12">• 実務に近い問題</tspan>
+    <tspan x="680" dy="12">• 思考力重視</tspan>
+    <tspan x="680" dy="12">★★☆☆☆ 上級者向け</tspan>
+  </text>
+  
+  <!-- Contest Calendar -->
+  <rect x="50" y="520" width="850" height="160" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="475" y="545" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    📅 コンテストカレンダー（中学生向け）
+  </text>
+  
+  <rect x="80" y="565" width="790" height="105" rx="4" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  
+  <!-- Week schedule -->
+  <text x="100" y="585" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">
+    🗓️ 1週間のスケジュール例
+  </text>
+  
+  <rect x="120" y="595" width="100" height="60" rx="2" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="170" y="610" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#1e40af">土曜日 21:00</text>
+  <text x="130" y="625" font-family="Arial, sans-serif" font-size="9" fill="#1e40af">
+    <tspan x="130" dy="0">ABC開催</tspan>
+    <tspan x="130" dy="10">メイン参加</tspan>
+    <tspan x="130" dy="10">絶対参加</tspan>
+  </text>
+  
+  <rect x="240" y="595" width="100" height="60" rx="2" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="1"/>
+  <text x="290" y="610" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#6b21a8">不定期</text>
+  <text x="250" y="625" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    <tspan x="250" dy="0">ARC/AGC</tspan>
+    <tspan x="250" dy="10">様子見参加</tspan>
+    <tspan x="250" dy="10">勉強目的</tspan>
+  </text>
+  
+  <rect x="360" y="595" width="100" height="60" rx="2" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+  <text x="410" y="610" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#065f46">平日</text>
+  <text x="370" y="625" font-family="Arial, sans-serif" font-size="9" fill="#065f46">
+    <tspan x="370" dy="0">過去問練習</tspan>
+    <tspan x="370" dy="10">ABC A,B問題</tspan>
+    <tspan x="370" dy="10">復習メイン</tspan>
+  </text>
+  
+  <rect x="480" y="595" width="100" height="60" rx="2" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="530" y="610" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#92400e">日曜日</text>
+  <text x="490" y="625" font-family="Arial, sans-serif" font-size="9" fill="#92400e">
+    <tspan x="490" dy="0">振り返り</tspan>
+    <tspan x="490" dy="10">解説読み</tspan>
+    <tspan x="490" dy="10">次週準備</tspan>
+  </text>
+  
+  <rect x="600" y="595" width="100" height="60" rx="2" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+  <text x="650" y="610" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#dc2626">特別時</text>
+  <text x="610" y="625" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">
+    <tspan x="610" dy="0">企業協賛</tspan>
+    <tspan x="610" dy="10">興味があれば</tspan>
+    <tspan x="610" dy="10">チャレンジ</tspan>
+  </text>
+  
+  <rect x="720" y="595" width="120" height="60" rx="2" fill="#f1f5f9" stroke="#64748b" stroke-width="1"/>
+  <text x="780" y="610" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#64748b">いつでも</text>
+  <text x="730" y="625" font-family="Arial, sans-serif" font-size="9" fill="#64748b">
+    <tspan x="730" dy="0">Practice Contest</tspan>
+    <tspan x="730" dy="10">環境テスト</tspan>
+    <tspan x="730" dy="10">慣れ親しみ</tspan>
+  </text>
+  
+  <!-- Tips Section -->
+  <rect x="50" y="700" width="850" height="180" rx="8" fill="#fff1f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="475" y="725" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    💡 中学生向けコンテスト参加のコツ
+  </text>
+  
+  <rect x="80" y="745" width="790" height="125" rx="4" fill="white" stroke="#fecaca" stroke-width="1"/>
+  
+  <text x="100" y="770" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">
+    🎯 段階的なステップアップ
+  </text>
+  
+  <text x="120" y="790" font-family="Arial, sans-serif" font-size="12" fill="#dc2626">
+    <tspan x="120" dy="0">1️⃣ まずはPractice Contestで環境に慣れる</tspan>
+    <tspan x="500" dy="0">4️⃣ 茶色達成後、ARCのA問題にも挑戦</tspan>
+    <tspan x="120" dy="16">2️⃣ ABCに毎週参加してA,B問題を安定正解</tspan>
+    <tspan x="500" dy="16">5️⃣ 緑色達成が大きなマイルストーン</tspan>
+    <tspan x="120" dy="16">3️⃣ C問題にチャレンジしてアルゴリズム力向上</tspan>
+    <tspan x="500" dy="16">6️⃣ 高校生になったらAGCも視野に</tspan>
+  </text>
+  
+  <text x="100" y="835" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">
+    🚀 継続参加の重要性
+  </text>
+  <text x="120" y="855" font-family="Arial, sans-serif" font-size="12" fill="#dc2626">
+    <tspan x="120" dy="0">• 毎週のABC参加で確実にスキルアップ</tspan>
+    <tspan x="450" dy="0">• 解けない問題は解説で学習、次回に活かす</tspan>
+    <tspan x="120" dy="14">• レーティングの短期変動に一喜一憂せず長期視点で成長</tspan>
+    <tspan x="450" dy="14">• 同世代の参加者との交流でモチベーション維持</tspan>
+  </text>
+  
+  <!-- Difficulty indicators -->
+  <defs>
+    <linearGradient id="difficultyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="50%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Difficulty scale at the bottom -->
+  <rect x="50" y="25" width="850" height="20" rx="10" fill="url(#difficultyGradient)"/>
+  <text x="80" y="20" font-family="Arial, sans-serif" font-size="10" fill="#374151">初心者向け</text>
+  <text x="450" y="20" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#374151">中級者向け</text>
+  <text x="820" y="20" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#374151">上級者向け</text>
+</svg>

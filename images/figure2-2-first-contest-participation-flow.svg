@@ -1,0 +1,270 @@
+<svg viewBox="0 0 950 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-2：初回コンテスト参加フロー</title>
+  <desc>初心者の中学生がAtCoderコンテストに初めて参加する際の準備から終了後まで、時系列で示した完全ガイド</desc>
+  
+  <!-- Background -->
+  <rect width="950" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="475" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    初回コンテスト参加フロー
+  </text>
+  
+  <!-- Timeline header -->
+  <rect x="50" y="50" width="850" height="40" rx="8" fill="#1e293b"/>
+  <text x="475" y="75" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">
+    ⏰ コンテスト参加タイムライン
+  </text>
+  
+  <!-- Phase 1: 1 Week Before -->
+  <rect x="50" y="110" width="180" height="200" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="140" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    📅 1週間前
+  </text>
+  <text x="140" y="155" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    事前準備フェーズ
+  </text>
+  
+  <rect x="60" y="170" width="160" height="130" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="140" y="190" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    📚 技術的準備
+  </text>
+  <text x="70" y="210" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="70" dy="0">□ ABC過去問A問題10問解く</tspan>
+    <tspan x="70" dy="12">□ 基本入出力パターン復習</tspan>
+    <tspan x="70" dy="12">□ よく使うPython構文整理</tspan>
+    <tspan x="70" dy="12">□ エディタの設定確認</tspan>
+  </text>
+  
+  <text x="140" y="260" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🧠 心理的準備
+  </text>
+  <text x="70" y="280" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="70" dy="0">• 「楽しむ」がメイン目標</tspan>
+    <tspan x="70" dy="12">• 1問解けたら成功の基準</tspan>
+  </text>
+  
+  <!-- Phase 2: Day Before -->
+  <rect x="250" y="110" width="180" height="200" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="340" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#065f46">
+    🎯 前日
+  </text>
+  <text x="340" y="155" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065f46">
+    最終準備フェーズ
+  </text>
+  
+  <rect x="260" y="170" width="160" height="130" rx="4" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="340" y="190" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#065f46">
+    🖥️ 環境整備
+  </text>
+  <text x="270" y="210" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    <tspan x="270" dy="0">□ PC動作確認・再起動</tspan>
+    <tspan x="270" dy="12">□ インターネット接続確認</tspan>
+    <tspan x="270" dy="12">□ Python・エディタ動作テスト</tspan>
+    <tspan x="270" dy="12">□ AtCoderログイン確認</tspan>
+  </text>
+  
+  <text x="340" y="260" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#065f46">
+    📋 物理的準備
+  </text>
+  <text x="270" y="280" font-family="Arial, sans-serif" font-size="10" fill="#065f46">
+    <tspan x="270" dy="0">• 十分な睡眠・水分・軽食準備</tspan>
+    <tspan x="270" dy="12">• 静かな環境確保</tspan>
+  </text>
+  
+  <!-- Phase 3: Contest Day -->
+  <rect x="450" y="110" width="180" height="200" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="540" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🏆 当日 20:45-21:00
+  </text>
+  <text x="540" y="155" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">
+    直前準備フェーズ
+  </text>
+  
+  <rect x="460" y="170" width="160" height="130" rx="4" fill="white" stroke="#fde68a" stroke-width="1"/>
+  <text x="540" y="190" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#92400e">
+    ✅ 最終チェック
+  </text>
+  <text x="470" y="210" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="470" dy="0">□ コンピュータ・ネット動作確認</tspan>
+    <tspan x="470" dy="12">□ AtCoderにログイン</tspan>
+    <tspan x="470" dy="12">□ エディタ・ブラウザ起動</tspan>
+    <tspan x="470" dy="12">□ 必要サイトのブックマーク</tspan>
+  </text>
+  
+  <text x="540" y="260" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🧘 心の準備
+  </text>
+  <text x="470" y="280" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="470" dy="0">• 深呼吸3回・「楽しむぞ！」</tspan>
+    <tspan x="470" dy="12">• 完璧を求めず学習機会として</tspan>
+  </text>
+  
+  <!-- Phase 4: During Contest -->
+  <rect x="650" y="110" width="250" height="200" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="775" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🚀 21:00-22:40
+  </text>
+  <text x="775" y="155" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    コンテスト実行フェーズ
+  </text>
+  
+  <rect x="660" y="170" width="230" height="130" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="775" y="190" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📖 開始直後 (0-15分)
+  </text>
+  <text x="670" y="210" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="670" dy="0">1. A問題を丁寧に読み理解</tspan>
+    <tspan x="670" dy="12">2. サンプル入出力を確認</tspan>
+    <tspan x="670" dy="12">3. 解法のイメージを固める</tspan>
+    <tspan x="670" dy="12">4. 慌てず確実に実装・提出</tspan>
+  </text>
+  
+  <text x="775" y="260" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    💡 中盤以降の戦略
+  </text>
+  <text x="670" y="280" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="670" dy="0">• A問題AC後、B問題に挑戦</tspan>
+    <tspan x="670" dy="12">• わからない問題は潔く諦める判断も重要</tspan>
+  </text>
+  
+  <!-- Contest Action Timeline -->
+  <rect x="50" y="330" width="850" height="180" rx="8" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+  <text x="475" y="355" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#334155">
+    ⚡ コンテスト中の行動パターン
+  </text>
+  
+  <!-- Problem-solving steps -->
+  <rect x="80" y="375" width="150" height="120" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="155" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#475569">
+    📖 問題読解 (3-5分)
+  </text>
+  <text x="90" y="415" font-family="Arial, sans-serif" font-size="10" fill="#64748b">
+    <tspan x="90" dy="0">• 何を求める問題か明確化</tspan>
+    <tspan x="90" dy="12">• 入力・出力形式確認</tspan>
+    <tspan x="90" dy="12">• 制約条件の把握</tspan>
+    <tspan x="90" dy="12">• サンプル分析で解法検討</tspan>
+    <tspan x="90" dy="12">• 最もシンプルな方法選択</tspan>
+  </text>
+  
+  <rect x="250" y="375" width="150" height="120" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="325" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#475569">
+    ⌨️ 実装 (5-10分)
+  </text>
+  <text x="260" y="415" font-family="Arial, sans-serif" font-size="10" fill="#64748b">
+    <tspan x="260" dy="0">• 入出力処理から実装</tspan>
+    <tspan x="260" dy="12">• メインロジックの骨組み</tspan>
+    <tspan x="260" dy="12">• 詳細処理の実装</tspan>
+    <tspan x="260" dy="12">• デバッグ用print文挿入</tspan>
+    <tspan x="260" dy="12">• まず動くものを作る</tspan>
+  </text>
+  
+  <rect x="420" y="375" width="150" height="120" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="495" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#475569">
+    🧪 検証 (2-3分)
+  </text>
+  <text x="430" y="415" font-family="Arial, sans-serif" font-size="10" fill="#64748b">
+    <tspan x="430" dy="0">• サンプル入力で動作確認</tspan>
+    <tspan x="430" dy="12">• 出力形式の正確性確認</tspan>
+    <tspan x="430" dy="12">• 境界値での動作確認</tspan>
+    <tspan x="430" dy="12">• 文法エラーチェック</tspan>
+    <tspan x="430" dy="12">• 手動計算との照合</tspan>
+  </text>
+  
+  <rect x="590" y="375" width="150" height="120" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="665" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#475569">
+    🚀 提出 (1分)
+  </text>
+  <text x="600" y="415" font-family="Arial, sans-serif" font-size="10" fill="#64748b">
+    <tspan x="600" dy="0">• 言語選択確認 (Python)</tspan>
+    <tspan x="600" dy="12">• デバッグprint文削除</tspan>
+    <tspan x="600" dy="12">• コード全体の最終確認</tspan>
+    <tspan x="600" dy="12">• Submit ボタンクリック</tspan>
+    <tspan x="600" dy="12">• ジャッジ結果を冷静に待つ</tspan>
+  </text>
+  
+  <rect x="760" y="375" width="120" height="120" rx="4" fill="#white" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="820" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#475569">
+    📊 結果対応
+  </text>
+  <text x="770" y="415" font-family="Arial, sans-serif" font-size="10" fill="#64748b">
+    <tspan x="770" dy="0">✅ AC → 次の問題へ</tspan>
+    <tspan x="770" dy="12">❌ WA → 原因分析</tspan>
+    <tspan x="770" dy="12">⏰ TLE → 高速化検討</tspan>
+    <tspan x="770" dy="12">🔧 各提出から学習</tspan>
+    <tspan x="770" dy="12">⏱️ 時間配分を意識</tspan>
+  </text>
+  
+  <!-- After Contest -->
+  <rect x="50" y="530" width="850" height="160" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="475" y="555" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    📈 コンテスト終了後の振り返りと成長
+  </text>
+  
+  <!-- Post-contest analysis -->
+  <rect x="80" y="575" width="250" height="100" rx="4" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="205" y="595" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    📊 結果分析 (30分以内)
+  </text>
+  <text x="90" y="615" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="90" dy="0">• 解けた問題数・所要時間記録</tspan>
+    <tspan x="90" dy="12">• 各問題での躓いたポイント分析</tspan>
+    <tspan x="90" dy="12">• 新しく学んだこと・改善点整理</tspan>
+    <tspan x="90" dy="12">• 振り返りシート作成</tspan>
+    <tspan x="90" dy="12">• 達成感と次回への意欲醸成</tspan>
+  </text>
+  
+  <rect x="350" y="575" width="250" height="100" rx="4" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="475" y="595" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    📚 解説活用 (翌日〜3日)
+  </text>
+  <text x="360" y="615" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="360" dy="0">• 解けた問題: 他の解法チェック</tspan>
+    <tspan x="360" dy="12">• 解けなかった問題: 解法理解・類似問題練習</tspan>
+    <tspan x="360" dy="12">• 解説コードの写経・動作確認</tspan>
+    <tspan x="360" dy="12">• 同じアルゴリズムの類似問題検索</tspan>
+    <tspan x="360" dy="12">• 理解度の定着確認</tspan>
+  </text>
+  
+  <rect x="620" y="575" width="250" height="100" rx="4" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="745" y="595" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🎯 次回準備 (1週間以内)
+  </text>
+  <text x="630" y="615" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="630" dy="0">• 弱点分野の集中練習計画立案</tspan>
+    <tspan x="630" dy="12">• 次回コンテストの目標設定</tspan>
+    <tspan x="630" dy="12">• 学習スケジュールの調整</tspan>
+    <tspan x="630" dy="12">• 成功体験の記録・モチベーション維持</tspan>
+    <tspan x="630" dy="12">• 継続参加への意欲確認</tspan>
+  </text>
+  
+  <!-- Success Metrics -->
+  <rect x="50" y="710" width="850" height="100" rx="8" fill="#fff1f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="475" y="735" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🎉 初回参加の成功基準
+  </text>
+  
+  <rect x="80" y="755" width="790" height="45" rx="4" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="475" y="775" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#dc2626">
+    初回参加は「楽しめたか」「学べたか」「続けたいと思えたか」が最重要！
+  </text>
+  <text x="100" y="795" font-family="Arial, sans-serif" font-size="12" fill="#dc2626">
+    <tspan x="100" dy="0">✅ A問題1問でも正解 → 大成功！　　✅ 問題文理解できた → 良いスタート！　　✅ 最後まで参加 → 継続力の証明！</tspan>
+  </text>
+  
+  <!-- Flow arrows -->
+  <defs>
+    <marker id="flowArrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <path d="M 230 210 L 250 210" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#flowArrow)"/>
+  <path d="M 430 210 L 450 210" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#flowArrow)"/>
+  <path d="M 630 210 L 650 210" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#flowArrow)"/>
+  
+  <!-- Vertical flow arrows -->
+  <path d="M 475 310 L 475 330" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#flowArrow)"/>
+  <path d="M 475 510 L 475 530" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#flowArrow)"/>
+  <path d="M 475 690 L 475 710" stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#flowArrow)"/>
+</svg>

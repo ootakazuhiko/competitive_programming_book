@@ -1,0 +1,219 @@
+<svg viewBox="0 0 950 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-1：AtCoder登録・設定手順</title>
+  <desc>AtCoderアカウント作成から初期設定まで、中学生向けに詳細な手順を示したステップバイステップガイド</desc>
+  
+  <!-- Background -->
+  <rect width="950" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="475" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    AtCoder登録・設定手順
+  </text>
+  
+  <!-- Step 1: Access AtCoder -->
+  <rect x="50" y="70" width="180" height="200" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="140" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    📱 Step 1
+  </text>
+  <text x="140" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    AtCoderサイトアクセス
+  </text>
+  
+  <!-- Browser mockup -->
+  <rect x="60" y="130" width="160" height="120" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <rect x="60" y="130" width="160" height="20" rx="4" fill="#e2e8f0"/>
+  <text x="140" y="145" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#64748b">
+    🌐 https://atcoder.jp/
+  </text>
+  <text x="70" y="170" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">AtCoder</text>
+  <text x="70" y="185" font-family="Arial, sans-serif" font-size="9" fill="#64748b">競技プログラミングサイト</text>
+  <rect x="70" y="200" width="40" height="20" rx="2" fill="#3b82f6"/>
+  <text x="90" y="212" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="white">ログイン</text>
+  <rect x="120" y="200" width="40" height="20" rx="2" fill="#10b981"/>
+  <text x="140" y="212" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="white">新規登録</text>
+  <text x="70" y="235" font-family="Arial, sans-serif" font-size="8" fill="#64748b">📊 最新コンテスト情報</text>
+  
+  <!-- Step 2: Click Registration -->
+  <rect x="250" y="70" width="180" height="200" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="340" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#065f46">
+    ✏️ Step 2
+  </text>
+  <text x="340" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#065f46">
+    新規登録をクリック
+  </text>
+  
+  <!-- Registration form mockup -->
+  <rect x="260" y="130" width="160" height="120" rx="4" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="340" y="150" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#065f46">新規登録フォーム</text>
+  
+  <text x="270" y="170" font-family="Arial, sans-serif" font-size="9" fill="#065f46">ユーザー名:</text>
+  <rect x="270" y="175" width="130" height="15" rx="2" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  
+  <text x="270" y="200" font-family="Arial, sans-serif" font-size="9" fill="#065f46">メールアドレス:</text>
+  <rect x="270" y="205" width="130" height="15" rx="2" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  
+  <text x="270" y="230" font-family="Arial, sans-serif" font-size="9" fill="#065f46">パスワード:</text>
+  <rect x="270" y="235" width="130" height="15" rx="2" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  
+  <!-- Step 3: Fill Form -->
+  <rect x="450" y="70" width="180" height="200" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="540" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">
+    📝 Step 3
+  </text>
+  <text x="540" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#92400e">
+    必要情報を入力
+  </text>
+  
+  <!-- Form details -->
+  <rect x="460" y="130" width="160" height="120" rx="4" fill="white" stroke="#fde68a" stroke-width="1"/>
+  <text x="540" y="150" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#92400e">入力のポイント</text>
+  
+  <text x="470" y="170" font-family="Arial, sans-serif" font-size="9" fill="#92400e">✅ ユーザー名:</text>
+  <text x="470" y="182" font-family="Arial, sans-serif" font-size="8" fill="#92400e">覚えやすく、将来も使える名前</text>
+  
+  <text x="470" y="198" font-family="Arial, sans-serif" font-size="9" fill="#92400e">✅ メール:</text>
+  <text x="470" y="210" font-family="Arial, sans-serif" font-size="8" fill="#92400e">長期利用予定のアドレス</text>
+  
+  <text x="470" y="226" font-family="Arial, sans-serif" font-size="9" fill="#92400e">✅ パスワード:</text>
+  <text x="470" y="238" font-family="Arial, sans-serif" font-size="8" fill="#92400e">8文字以上、英数字記号混在</text>
+  
+  <!-- Step 4: Email Verification -->
+  <rect x="650" y="70" width="180" height="200" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="740" y="95" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📧 Step 4
+  </text>
+  <text x="740" y="115" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    メール認証
+  </text>
+  
+  <!-- Email mockup -->
+  <rect x="660" y="130" width="160" height="120" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="740" y="150" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#6b21a8">📬 認証メール</text>
+  
+  <text x="670" y="170" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">From: AtCoder</text>
+  <text x="670" y="185" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">件名: アカウント認証</text>
+  
+  <rect x="670" y="195" width="140" height="25" rx="2" fill="#8b5cf6"/>
+  <text x="740" y="210" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="white">認証リンクをクリック</text>
+  
+  <text x="670" y="235" font-family="Arial, sans-serif" font-size="8" fill="#6b21a8">※迷惑メールフォルダも確認</text>
+  
+  <!-- Arrow connections -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  
+  <path d="M 230 170 L 250 170" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 430 170 L 450 170" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 630 170 L 650 170" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+  
+  <!-- Configuration Section -->
+  <rect x="50" y="300" width="850" height="280" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="475" y="325" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    ⚙️ アカウント設定とプロフィール完成
+  </text>
+  
+  <!-- Profile Setup -->
+  <rect x="80" y="345" width="260" height="220" rx="4" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="210" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    👤 プロフィール設定
+  </text>
+  
+  <text x="90" y="385" font-family="Arial, sans-serif" font-size="12" fill="#15803d">🎯 必須設定項目:</text>
+  <text x="100" y="405" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="100" dy="0">• 表示名の設定</tspan>
+    <tspan x="100" dy="15">• 国/地域の選択 (Japan)</tspan>
+    <tspan x="100" dy="15">• タイムゾーン (JST)</tspan>
+    <tspan x="100" dy="15">• プロフィール画像 (任意)</tspan>
+  </text>
+  
+  <text x="90" y="470" font-family="Arial, sans-serif" font-size="12" fill="#15803d">🎓 推奨設定項目:</text>
+  <text x="100" y="490" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="100" dy="0">• 所属 (中学校名など)</tspan>
+    <tspan x="100" dy="15">• 自己紹介文</tspan>
+    <tspan x="100" dy="15">• SNSリンク (任意)</tspan>
+    <tspan x="100" dy="15">• 得意分野・目標</tspan>
+  </text>
+  
+  <!-- Security Settings -->
+  <rect x="360" y="345" width="260" height="220" rx="4" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="490" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🔐 セキュリティ設定
+  </text>
+  
+  <text x="370" y="385" font-family="Arial, sans-serif" font-size="12" fill="#15803d">🛡️ セキュリティ強化:</text>
+  <text x="380" y="405" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="380" dy="0">• 二段階認証の有効化</tspan>
+    <tspan x="380" dy="15">• パスワードの定期変更</tspan>
+    <tspan x="380" dy="15">• ログイン履歴の確認</tspan>
+    <tspan x="380" dy="15">• セッション管理</tspan>
+  </text>
+  
+  <text x="370" y="470" font-family="Arial, sans-serif" font-size="12" fill="#15803d">📱 通知設定:</text>
+  <text x="380" y="490" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="380" dy="0">• コンテスト開始通知</tspan>
+    <tspan x="380" dy="15">• レーティング変動通知</tspan>
+    <tspan x="380" dy="15">• システムメンテナンス</tspan>
+    <tspan x="380" dy="15">• 重要なお知らせ</tspan>
+  </text>
+  
+  <!-- Language Settings -->
+  <rect x="640" y="345" width="260" height="220" rx="4" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="770" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🌐 言語・環境設定
+  </text>
+  
+  <text x="650" y="385" font-family="Arial, sans-serif" font-size="12" fill="#15803d">💻 プログラミング言語:</text>
+  <text x="660" y="405" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="660" dy="0">• 主要言語: Python 3.x</tspan>
+    <tspan x="660" dy="15">• 補助言語: C++/Java (将来用)</tspan>
+    <tspan x="660" dy="15">• エディタ設定</tspan>
+    <tspan x="660" dy="15">• 文法ハイライト</tspan>
+  </text>
+  
+  <text x="650" y="470" font-family="Arial, sans-serif" font-size="12" fill="#15803d">🎛️ コンテスト設定:</text>
+  <text x="660" y="490" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="660" dy="0">• 自動エントリー設定</tspan>
+    <tspan x="660" dy="15">• 難易度フィルター</tspan>
+    <tspan x="660" dy="15">• 結果表示設定</tspan>
+    <tspan x="660" dy="15">• 統計情報設定</tspan>
+  </text>
+  
+  <!-- Final Steps -->
+  <rect x="50" y="600" width="850" height="120" rx="8" fill="#fff1f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="475" y="625" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🚀 登録完了後の最初のステップ
+  </text>
+  
+  <rect x="80" y="645" width="790" height="65" rx="4" fill="white" stroke="#fecaca" stroke-width="1"/>
+  
+  <!-- First steps checklist -->
+  <text x="100" y="670" font-family="Arial, sans-serif" font-size="14" fill="#dc2626">
+    <tspan x="100" dy="0">🎯 Step 5: 最初にやること</tspan>
+  </text>
+  <text x="120" y="690" font-family="Arial, sans-serif" font-size="12" fill="#dc2626">
+    <tspan x="120" dy="0">□ Practice Contest への参加（Hello World問題に挑戦）</tspan>
+    <tspan x="450" dy="0">□ プロフィール画像・自己紹介の設定</tspan>
+    <tspan x="120" dy="14">□ AtCoder Beginner Contest の確認と参加登録</tspan>
+    <tspan x="450" dy="14">□ 学習計画の策定と最初の目標設定</tspan>
+  </text>
+  
+  <!-- Success celebration -->
+  <rect x="50" y="740" width="850" height="140" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="475" y="765" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🎉 おめでとう！AtCoderデビュー完了！
+  </text>
+  
+  <rect x="80" y="785" width="790" height="85" rx="4" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="475" y="810" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#15803d">
+    これで君もAtCoderの仲間入り！世界中の仲間と一緒に競技プログラミングを楽しもう
+  </text>
+  
+  <text x="100" y="835" font-family="Arial, sans-serif" font-size="12" fill="#15803d">
+    <tspan x="100" dy="0">💪 次のステップ: 第3章でプログラミング環境をセットアップして、実際にコードを書いてみよう！</tspan>
+    <tspan x="100" dy="16">🎯 目標: 最初の1ヶ月でA問題を1問でも解けるようになること</tspan>
+    <tspan x="100" dy="16">🤝 仲間: AtCoderコミュニティで同世代の仲間を見つけよう</tspan>
+  </text>
+</svg>

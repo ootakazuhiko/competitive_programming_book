@@ -1,0 +1,216 @@
+<svg viewBox="0 0 950 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-5：学習環境と必要ツール</title>
+  <desc>競技プログラミングを始めるために必要な学習環境、ソフトウェア、ハードウェアの詳細ガイド</desc>
+  
+  <!-- Background -->
+  <rect width="950" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="475" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    学習環境と必要ツール
+  </text>
+  
+  <!-- Hardware Requirements -->
+  <rect x="50" y="70" width="280" height="340" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="190" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    💻 ハードウェア環境
+  </text>
+  
+  <!-- Computer specs -->
+  <rect x="70" y="115" width="240" height="140" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="190" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    パソコン（必須）
+  </text>
+  
+  <text x="80" y="155" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="80" dy="0">💡 最低スペック:</tspan>
+    <tspan x="85" dy="15">• CPU: Intel Core i3 / AMD相当以上</tspan>
+    <tspan x="85" dy="13">• RAM: 4GB以上（8GB推奨）</tspan>
+    <tspan x="85" dy="13">• ストレージ: 100GB以上の空き</tspan>
+    <tspan x="85" dy="13">• OS: Windows 10/11, macOS, Linux</tspan>
+    <tspan x="80" dy="15">✅ 推奨スペック:</tspan>
+    <tspan x="85" dy="15">• CPU: Intel Core i5 / AMD相当以上</tspan>
+    <tspan x="85" dy="13">• RAM: 8GB以上</tspan>
+    <tspan x="85" dy="13">• SSD: 高速起動とコンパイル</tspan>
+  </text>
+  
+  <!-- Internet connection -->
+  <rect x="70" y="270" width="240" height="60" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="190" y="290" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🌐 インターネット接続
+  </text>
+  <text x="80" y="310" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="80" dy="0">• 安定した接続（Wi-Fi or 有線）</tspan>
+    <tspan x="80" dy="13">• コンテスト中の接続断に注意</tspan>
+  </text>
+  
+  <!-- Alternative devices -->
+  <rect x="70" y="345" width="240" height="55" rx="4" fill="#f1f5f9" stroke="#93c5fd" stroke-width="1"/>
+  <text x="190" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#64748b">
+    📱 代替手段
+  </text>
+  <text x="80" y="385" font-family="Arial, sans-serif" font-size="12" fill="#64748b">
+    <tspan x="80" dy="0">• タブレット: 学習のみ可能</tspan>
+    <tspan x="80" dy="13">• スマートフォン: 問題閲覧のみ</tspan>
+  </text>
+  
+  <!-- Software Environment -->
+  <rect x="350" y="70" width="280" height="340" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="2"/>
+  <text x="490" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#065f46">
+    ⚙️ ソフトウェア環境
+  </text>
+  
+  <!-- Programming language -->
+  <rect x="370" y="115" width="240" height="120" rx="4" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="490" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#065f46">
+    🐍 プログラミング言語
+  </text>
+  
+  <text x="380" y="155" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    <tspan x="380" dy="0">🟢 初心者推奨: Python 3.x</tspan>
+    <tspan x="385" dy="15">• 文法がシンプル</tspan>
+    <tspan x="385" dy="13">• 豊富な標準ライブラリ</tspan>
+    <tspan x="385" dy="13">• AtCoderで公式サポート</tspan>
+    <tspan x="380" dy="15">🔵 上級者向け: C++ / Java</tspan>
+    <tspan x="385" dy="15">• 実行速度が高速</tspan>
+    <tspan x="385" dy="13">• より多くの機能</tspan>
+  </text>
+  
+  <!-- Development environment -->
+  <rect x="370" y="250" width="240" height="100" rx="4" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="490" y="270" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#065f46">
+    🛠️ 開発環境
+  </text>
+  
+  <text x="380" y="290" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    <tspan x="380" dy="0">✨ 初心者におすすめ:</tspan>
+    <tspan x="385" dy="15">• VS Code（無料・高機能）</tspan>
+    <tspan x="385" dy="13">• PyCharm Community（Python用）</tspan>
+    <tspan x="380" dy="15">🏆 上級者向け:</tspan>
+    <tspan x="385" dy="15">• CLion（C++）、IntelliJ（Java）</tspan>
+  </text>
+  
+  <!-- Browser and online tools -->
+  <rect x="370" y="365" width="240" height="40" rx="4" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="490" y="380" font-family="Arial, sans-serif" font-size="12" fill="#065f46">
+    <tspan x="380" dy="0">🌐 ブラウザ: Chrome, Firefox, Safari等</tspan>
+    <tspan x="380" dy="13">📝 オンラインエディタ: Paiza.io等（補助的）</tspan>
+  </text>
+  
+  <!-- Learning Resources -->
+  <rect x="650" y="70" width="280" height="340" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="790" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#92400e">
+    📚 学習リソース
+  </text>
+  
+  <!-- Online platforms -->
+  <rect x="670" y="115" width="240" height="110" rx="4" fill="white" stroke="#fde68a" stroke-width="1"/>
+  <text x="790" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🏆 競技プラットフォーム
+  </text>
+  
+  <text x="680" y="155" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+    <tspan x="680" dy="0">🇯🇵 AtCoder（メイン）</tspan>
+    <tspan x="685" dy="15">• 日本語問題・解説</tspan>
+    <tspan x="685" dy="13">• 初心者向け問題豊富</tspan>
+    <tspan x="680" dy="15">🌍 補助的なサイト:</tspan>
+    <tspan x="685" dy="15">• AOJ: 教育用問題</tspan>
+    <tspan x="685" dy="13">• Codeforces: 世界レベル</tspan>
+  </text>
+  
+  <!-- Learning materials -->
+  <rect x="670" y="240" width="240" height="80" rx="4" fill="white" stroke="#fde68a" stroke-width="1"/>
+  <text x="790" y="260" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">
+    📖 学習教材
+  </text>
+  
+  <text x="680" y="280" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+    <tspan x="680" dy="0">• 競技プログラミング入門書籍</tspan>
+    <tspan x="680" dy="13">• アルゴリズムの参考書</tspan>
+    <tspan x="680" dy="13">• YouTube解説動画</tspan>
+    <tspan x="680" dy="13">• オンライン学習コース</tspan>
+  </text>
+  
+  <!-- Community -->
+  <rect x="670" y="335" width="240" height="70" rx="4" fill="white" stroke="#fde68a" stroke-width="1"/>
+  <text x="790" y="355" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🤝 コミュニティ
+  </text>
+  
+  <text x="680" y="375" font-family="Arial, sans-serif" font-size="12" fill="#92400e">
+    <tspan x="680" dy="0">• Twitter競技プログラミング界隈</tspan>
+    <tspan x="680" dy="13">• Discord/Slackコミュニティ</tspan>
+    <tspan x="680" dy="13">• 勉強会・オフラインイベント</tspan>
+  </text>
+  
+  <!-- Setup Guide -->
+  <rect x="50" y="430" width="850" height="220" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="475" y="455" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🚀 セットアップガイド（初心者向け）
+  </text>
+  
+  <!-- Step by step setup -->
+  <rect x="80" y="475" width="790" height="160" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  
+  <!-- Step 1 -->
+  <circle cx="110" cy="500" r="15" fill="#8b5cf6"/>
+  <text x="110" y="505" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">1</text>
+  <text x="140" y="490" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6b21a8">Python インストール</text>
+  <text x="140" y="510" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">python.org から Python 3.x をダウンロード・インストール</text>
+  
+  <!-- Step 2 -->
+  <circle cx="110" cy="540" r="15" fill="#8b5cf6"/>
+  <text x="110" y="545" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">2</text>
+  <text x="140" y="530" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6b21a8">VS Code インストール</text>
+  <text x="140" y="550" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">code.visualstudio.com から無料でダウンロード、Python拡張機能を追加</text>
+  
+  <!-- Step 3 -->
+  <circle cx="110" cy="580" r="15" fill="#8b5cf6"/>
+  <text x="110" y="585" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">3</text>
+  <text x="140" y="570" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6b21a8">AtCoder アカウント作成</text>
+  <text x="140" y="590" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">atcoder.jp でユーザー登録、プロフィール設定</text>
+  
+  <!-- Step 4 -->
+  <circle cx="500" cy="500" r="15" fill="#8b5cf6"/>
+  <text x="500" y="505" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">4</text>
+  <text x="530" y="490" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6b21a8">テスト実行</text>
+  <text x="530" y="510" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">Hello World プログラムを作成・実行して動作確認</text>
+  
+  <!-- Step 5 -->
+  <circle cx="500" cy="540" r="15" fill="#8b5cf6"/>
+  <text x="500" y="545" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">5</text>
+  <text x="530" y="530" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6b21a8">初回コンテスト参加</text>
+  <text x="530" y="550" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">AtCoder Beginner Contest の A 問題に挑戦</text>
+  
+  <!-- Step 6 -->
+  <circle cx="500" cy="580" r="15" fill="#8b5cf6"/>
+  <text x="500" y="585" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">6</text>
+  <text x="530" y="570" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6b21a8">学習ルーチン確立</text>
+  <text x="530" y="590" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">毎日の学習時間と週末のコンテスト参加</text>
+  
+  <!-- Cost information -->
+  <rect x="50" y="670" width="850" height="120" rx="8" fill="#ecfdf5" stroke="#22c55e" stroke-width="2"/>
+  <text x="475" y="695" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    💰 費用について
+  </text>
+  
+  <rect x="80" y="715" width="790" height="65" rx="4" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="100" y="740" font-family="Arial, sans-serif" font-size="14" fill="#15803d">
+    <tspan x="100" dy="0">✅ 無料で始められるもの:</tspan>
+    <tspan x="120" dy="18">• AtCoder参加費: 完全無料　• Python: 無料　• VS Code: 無料　• 学習リソース: 多くが無料</tspan>
+    <tspan x="100" dy="20">💡 任意の有料オプション:</tspan>
+    <tspan x="120" dy="18">• 専門書籍: 2,000-4,000円　• 有料IDE: 月額1,000-3,000円　• オンラインコース: 月額1,000-5,000円</tspan>
+  </text>
+  
+  <!-- Time investment -->
+  <rect x="50" y="810" width="850" height="80" rx="8" fill="#fff1f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="475" y="835" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ⏰ 学習時間の目安
+  </text>
+  
+  <text x="100" y="860" font-family="Arial, sans-serif" font-size="14" fill="#dc2626">
+    <tspan x="100" dy="0">🎯 最低限: 週3-4時間（平日20分、週末1-2時間）</tspan>
+    <tspan x="500" dy="0">✨ 理想: 週7-10時間（平日30分、週末2-3時間）</tspan>
+    <tspan x="100" dy="18">📅 継続期間: 最初の成果実感まで1-3ヶ月、茶色達成まで6ヶ月-1年</tspan>
+  </text>
+</svg>
