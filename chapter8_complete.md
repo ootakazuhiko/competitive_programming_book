@@ -10,11 +10,11 @@
 
 ### 問題文読解の実践テクニック
 
-![図8-2：効果的な問題文読解テクニック]({{ site.baseurl }}/assets/diagrams/chapter8/figure8-2-reading-techniques.svg)
+![図8-2：効果的な問題文読解テクニック (Effective problem reading techniques including keyword identification, note-taking strategies, and common reading mistakes)]({{ site.baseurl }}/assets/diagrams/chapter8/figure8-2-reading-techniques.svg)
 
 ### 実際の問題での読解実演
 
-![図8-3：ABC問題での読解プロセス実演]({{ site.baseurl }}/assets/diagrams/chapter8/figure8-3-abc-reading-process.svg)
+![図8-3：ABC問題での読解プロセス実演 (Step-by-step demonstration of reading process for ABC programming problems)]({{ site.baseurl }}/assets/diagrams/chapter8/figure8-3-abc-reading-process.svg)
 
 ## 8.2 サンプル入出力を活用しよう
 
@@ -394,11 +394,11 @@
 
 解法が固まったら、いよいよ実装だ。でも、いきなりコードを書き始めるのは効率が悪い。実装前の計画が、その後のすべてを決める。
 
-![図8-8：実装前計画の重要性]({{ site.baseurl }}/assets/diagrams/chapter8/figure8-8-implementation-planning.svg)
+![図8-8：実装前計画の重要性 (Comparison diagram showing the importance of implementation planning versus unplanned coding approaches)]({{ site.baseurl }}/assets/diagrams/chapter8/figure8-8-implementation-planning.svg)
 
 ### 実装計画書テンプレート
 
-![図8-9：効果的な実装計画書の作成方法]({{ site.baseurl }}/assets/diagrams/chapter8/figure8-9-implementation-plan-template.svg)
+![図8-9：効果的な実装計画書の作成方法 (Template diagram for creating effective implementation plans including input design, variable design, and testing strategies)]({{ site.baseurl }}/assets/diagrams/chapter8/figure8-9-implementation-plan-template.svg)
 
 ### 実装計画の具体例
 
