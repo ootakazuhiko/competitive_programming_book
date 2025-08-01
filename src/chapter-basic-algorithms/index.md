@@ -1,6 +1,7 @@
 ---
 title: "第5章：基本アルゴリズムの道具箱"
-layout: default
+layout: book
+order: 5
 ---
 
 # 第5章：基本アルゴリズムの道具箱

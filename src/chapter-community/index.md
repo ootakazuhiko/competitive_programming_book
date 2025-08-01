@@ -1,6 +1,7 @@
 ---
 title: "第11章：仲間と一緒に成長しよう"
-layout: default
+layout: book
+order: 11
 ---
 
 # 第11章：仲間と一緒に成長しよう

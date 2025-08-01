@@ -1,6 +1,7 @@
 ---
 title: "第12章：未来への道筋を描こう"
-layout: default
+layout: book
+order: 12
 ---
 
 # 第12章：未来への道筋を描こう
