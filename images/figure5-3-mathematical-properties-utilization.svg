@@ -1,0 +1,397 @@
+<svg viewBox="0 0 1200 1400" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-3：数学的性質の活用</title>
+  <desc>競技プログラミングにおける数学的性質と公式の効果的な活用方法</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="1400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    数学的性質の活用
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    計算量を劇的に削減する数学の力
+  </text>
+  
+  <!-- Mathematical Power Concept -->
+  <rect x="50" y="80" width="1100" height="100" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🔢 なぜ数学が重要なのか？
+  </text>
+  
+  <text x="600" y="130" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#d97706">
+    全探索では O(N³) かかる問題が、数学的性質を使えば O(log N) で解けることも！
+  </text>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#d97706">
+    💡 数学は「計算の近道」を提供してくれる最強のツール
+  </text>
+  <text x="600" y="170" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    例：10億回の計算 → 30回程度に短縮可能
+  </text>
+  
+  <!-- Core Mathematical Tools -->
+  <!-- GCD/LCM -->
+  <rect x="80" y="200" width="360" height="180" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="260" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    📐 最大公約数・最小公倍数
+  </text>
+  
+  <rect x="100" y="240" width="320" height="130" rx="4" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="110" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 基本公式:
+  </text>
+  <text x="120" y="275" font-family="Monaco, monospace" font-size="10" fill="#15803d">
+    <tspan x="120" dy="0">GCD(a, b) = GCD(b, a % b)  # ユークリッド互除法</tspan>
+    <tspan x="120" dy="12">LCM(a, b) = (a × b) / GCD(a, b)</tspan>
+  </text>
+  
+  <text x="110" y="310" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💡 応用例:
+  </text>
+  <text x="120" y="325" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="120" dy="0">• 分数の約分・通分</tspan>
+    <tspan x="120" dy="12">• 周期性の問題（信号機の同期など）</tspan>
+    <tspan x="120" dy="12">• 互いに素の判定 (GCD = 1)</tspan>
+  </text>
+  
+  <text x="110" y="360" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    計算量: O(log min(a, b)) ← 超高速！
+  </text>
+  
+  <!-- Modular Arithmetic -->
+  <rect x="460" y="200" width="360" height="180" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="640" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🔄 剰余演算
+  </text>
+  
+  <rect x="480" y="240" width="320" height="130" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="490" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    🎯 基本性質:
+  </text>
+  <text x="500" y="275" font-family="Monaco, monospace" font-size="10" fill="#1e40af">
+    <tspan x="500" dy="0">(a + b) % m = ((a % m) + (b % m)) % m</tspan>
+    <tspan x="500" dy="12">(a × b) % m = ((a % m) × (b % m)) % m</tspan>
+  </text>
+  
+  <text x="490" y="310" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    💡 使用場面:
+  </text>
+  <text x="500" y="325" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="500" dy="0">• 大きな数の計算でオーバーフロー回避</tspan>
+    <tspan x="500" dy="12">• 答えを10^9+7で割った余りで出力</tspan>
+    <tspan x="500" dy="12">• 周期性を利用した高速化</tspan>
+  </text>
+  
+  <text x="490" y="360" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    ⚠️ 除算には逆元が必要（フェルマーの小定理）
+  </text>
+  
+  <!-- Prime Numbers -->
+  <rect x="840" y="200" width="280" height="180" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="980" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🔢 素数判定
+  </text>
+  
+  <rect x="860" y="240" width="240" height="130" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="870" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🎯 効率的な判定法:
+  </text>
+  <text x="880" y="275" font-family="Monaco, monospace" font-size="9" fill="#6b21a8">
+    <tspan x="880" dy="0">def is_prime(n):</tspan>
+    <tspan x="880" dy="11">    if n &lt; 2: return False</tspan>
+    <tspan x="880" dy="11">    for i in range(2, int(n**0.5)+1):</tspan>
+    <tspan x="880" dy="11">        if n % i == 0:</tspan>
+    <tspan x="880" dy="11">            return False</tspan>
+    <tspan x="880" dy="11">    return True</tspan>
+  </text>
+  
+  <text x="870" y="345" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    計算量: O(√N) ← √まで調べるだけ！
+  </text>
+  <text x="870" y="360" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    エラトステネスの篩: 複数素数を高速取得
+  </text>
+  
+  <!-- Combinatorics -->
+  <rect x="80" y="400" width="360" height="180" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="260" y="425" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🎲 組み合わせ・順列
+  </text>
+  
+  <rect x="100" y="440" width="320" height="130" rx="4" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="110" y="460" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🎯 基本公式:
+  </text>
+  <text x="120" y="475" font-family="Monaco, monospace" font-size="10" fill="#dc2626">
+    <tspan x="120" dy="0">C(n, r) = n! / (r! × (n-r)!)  # 組み合わせ</tspan>
+    <tspan x="120" dy="12">P(n, r) = n! / (n-r)!         # 順列</tspan>
+  </text>
+  
+  <text x="110" y="510" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    💡 効率的な計算:
+  </text>
+  <text x="120" y="525" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="120" dy="0">• パスカルの三角形: C(n,r) = C(n-1,r-1) + C(n-1,r)</tspan>
+    <tspan x="120" dy="12">• 前計算とメモ化で高速化</tspan>
+    <tspan x="120" dy="12">• 剰余演算での逆元計算</tspan>
+  </text>
+  
+  <text x="110" y="560" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    応用: 道順問題、部分集合選択、確率計算
+  </text>
+  
+  <!-- Fast Exponentiation -->
+  <rect x="460" y="400" width="360" height="180" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="640" y="425" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#047857">
+    ⚡ 高速べき乗
+  </text>
+  
+  <rect x="480" y="440" width="320" height="130" rx="4" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="490" y="460" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🎯 二進法を利用:
+  </text>
+  <text x="500" y="475" font-family="Monaco, monospace" font-size="9" fill="#047857">
+    <tspan x="500" dy="0">def fast_power(base, exp, mod):</tspan>
+    <tspan x="500" dy="11">    result = 1</tspan>
+    <tspan x="500" dy="11">    while exp > 0:</tspan>
+    <tspan x="500" dy="11">        if exp % 2 == 1:</tspan>
+    <tspan x="500" dy="11">            result = (result * base) % mod</tspan>
+    <tspan x="500" dy="11">        base = (base * base) % mod</tspan>
+    <tspan x="500" dy="11">        exp //= 2</tspan>
+    <tspan x="500" dy="11">    return result</tspan>
+  </text>
+  
+  <text x="490" y="555" font-family="Arial, sans-serif" font-size="11" fill="#047857">
+    計算量: O(log N) ← O(N)から劇的改善！
+  </text>
+  <text x="490" y="570" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    例: 2^1000000000 も瞬時に計算可能
+  </text>
+  
+  <!-- Number Theory -->
+  <rect x="840" y="400" width="280" height="180" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="980" y="425" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#c2410c">
+    📊 数論的性質
+  </text>
+  
+  <rect x="860" y="440" width="240" height="130" rx="4" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="870" y="460" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    🎯 重要な性質:
+  </text>
+  <text x="880" y="475" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="880" dy="0">• 約数の個数・和の公式</tspan>
+    <tspan x="880" dy="12">• フィボナッチ数列の性質</tspan>
+    <tspan x="880" dy="12">• カタラン数・ベル数</tspan>
+    <tspan x="880" dy="12">• 包除原理</tspan>
+  </text>
+  
+  <text x="870" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    💡 実用例:
+  </text>
+  <text x="880" y="540" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="880" dy="0">• 約数の個数 = Π(a_i + 1)</tspan>
+    <tspan x="880" dy="12">• 完全数・友愛数の判定</tspan>
+    <tspan x="880" dy="12">• 重複組み合わせ</tspan>
+  </text>
+  
+  <!-- Application Strategy -->
+  <rect x="50" y="600" width="1100" height="200" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="625" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🎯 数学的アプローチの適用戦略
+  </text>
+  
+  <!-- Strategy Steps -->
+  <rect x="80" y="650" width="340" height="140" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="670" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    ステップ1: パターン認識
+  </text>
+  <text x="100" y="690" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">• 「最大公約数」「倍数」「素数」等のキーワード</tspan>
+    <tspan x="100" dy="12">• 「n個から選ぶ」「道順を数える」</tspan>
+    <tspan x="100" dy="12">• 「大きな数」「10^9+7で割った余り」</tspan>
+    <tspan x="100" dy="12">• 「周期性」「繰り返し」</tspan>
+  </text>
+  
+  <text x="90" y="750" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💡 数学的問題の典型的な表現:
+  </text>
+  <text x="100" y="765" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    「N番目の」「場合の数」「最小値」「約数」
+  </text>
+  
+  <rect x="440" y="650" width="340" height="140" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="450" y="670" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    ステップ2: 公式の選択
+  </text>
+  <text x="460" y="690" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="460" dy="0">1️⃣ 制約を確認（計算量見積もり）</tspan>
+    <tspan x="460" dy="12">2️⃣ 問題の性質を数学的に分析</tspan>
+    <tspan x="460" dy="12">3️⃣ 適用可能な公式・定理を特定</tspan>
+    <tspan x="460" dy="12">4️⃣ エッジケース（0, 1, 大きな値）を検討</tspan>
+  </text>
+  
+  <text x="450" y="750" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    ⚠️ 注意点:
+  </text>
+  <text x="460" y="765" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    オーバーフロー対策・剰余演算の適用
+  </text>
+  
+  <rect x="800" y="650" width="320" height="140" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="810" y="670" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    ステップ3: 実装と検証
+  </text>
+  <text x="820" y="690" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="820" dy="0">• 公式を正確に実装（インデックス注意）</tspan>
+    <tspan x="820" dy="12">• 小さなケースで手計算と比較</tspan>
+    <tspan x="820" dy="12">• 境界値での動作確認</tspan>
+    <tspan x="820" dy="12">• 計算量が期待通りか測定</tspan>
+  </text>
+  
+  <text x="810" y="750" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🚀 効果測定:
+  </text>
+  <text x="820" y="765" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    全探索 vs 数学的解法の実行時間比較
+  </text>
+  
+  <!-- Concrete Examples -->
+  <rect x="50" y="820" width="1100" height="280" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="600" y="845" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#c2410c">
+    💡 具体的な問題例と解法
+  </text>
+  
+  <!-- Example 1: GCD Problem -->
+  <rect x="80" y="865" width="360" height="110" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="90" y="885" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    例題1: 分数の約分
+  </text>
+  <text x="100" y="905" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="100" dy="0">問題: 分数 a/b を既約分数にせよ</tspan>
+    <tspan x="100" dy="12">全探索解法: O(min(a,b)) - 1からmin(a,b)まで試行</tspan>
+    <tspan x="100" dy="12">数学的解法: O(log min(a,b)) - ユークリッド互除法</tspan>
+  </text>
+  <text x="100" y="945" font-family="Monaco, monospace" font-size="9" fill="#c2410c">
+    <tspan x="100" dy="0">g = gcd(a, b)</tspan>
+    <tspan x="100" dy="11">result = (a//g, b//g)</tspan>
+  </text>
+  <text x="100" y="970" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#c2410c">
+    効果: 10^6 → 30回程度に短縮！
+  </text>
+  
+  <!-- Example 2: Power Problem -->
+  <rect x="460" y="865" width="320" height="110" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="470" y="885" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    例題2: 巨大べき乗の剰余
+  </text>
+  <text x="480" y="905" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="480" dy="0">問題: 2^1000000000 を 10^9+7 で割った余り</tspan>
+    <tspan x="480" dy="12">単純計算: 不可能（オーバーフロー）</tspan>
+    <tspan x="480" dy="12">高速べき乗: O(log N) で計算可能</tspan>
+  </text>
+  <text x="480" y="945" font-family="Monaco, monospace" font-size="9" fill="#c2410c">
+    <tspan x="480" dy="0">result = fast_power(2, 10**9, 10**9+7)</tspan>
+  </text>
+  <text x="480" y="965" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#c2410c">
+    瞬時に計算完了！
+  </text>
+  
+  <!-- Example 3: Combination -->
+  <rect x="800" y="865" width="320" height="110" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="810" y="885" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    例題3: 組み合わせ計算
+  </text>
+  <text x="820" y="905" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="820" dy="0">問題: C(1000, 500) を計算</tspan>
+    <tspan x="820" dy="12">直接計算: 階乗が巨大すぎて不可能</tspan>
+    <tspan x="820" dy="12">Pascal三角形: 動的プログラミングで効率化</tspan>
+  </text>
+  <text x="820" y="945" font-family="Monaco, monospace" font-size="9" fill="#c2410c">
+    <tspan x="820" dy="0">C[i][j] = C[i-1][j-1] + C[i-1][j]</tspan>
+  </text>
+  <text x="820" y="965" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#c2410c">
+    前計算で高速化
+  </text>
+  
+  <!-- Performance Comparison -->
+  <rect x="80" y="990" width="1040" height="100" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="600" y="1010" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#c2410c">
+    ⚡ 計算量比較：数学的アプローチの威力
+  </text>
+  
+  <text x="100" y="1030" font-family="Arial, sans-serif" font-size="11" fill="#c2410c">
+    <tspan x="100" dy="0">• 素数判定：O(N) → O(√N)　　約1000倍高速化</tspan>
+    <tspan x="100" dy="16">• べき乗計算：O(N) → O(log N)　　約3000万倍高速化（N=10^9の場合）</tspan>
+    <tspan x="100" dy="16">• 最大公約数：O(min(a,b)) → O(log min(a,b))　　約30万倍高速化</tspan>
+  </text>
+  
+  <text x="700" y="1050" font-family="Arial, sans-serif" font-size="11" fill="#c2410c">
+    <tspan x="700" dy="0">• 組み合わせ：階乗計算不要 → 動的プログラミング</tspan>
+    <tspan x="700" dy="16">• 剰余演算：オーバーフロー回避 → 安全な大数計算</tspan>
+  </text>
+  
+  <!-- Best Practices -->
+  <rect x="50" y="1120" width="1100" height="200" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="600" y="1145" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    💡 数学的アプローチを使いこなすコツ
+  </text>
+  
+  <rect x="80" y="1165" width="340" height="145" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="90" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    ✅ 学習のポイント
+  </text>
+  <text x="100" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">• 基本的な数学公式を暗記・理解</tspan>
+    <tspan x="100" dy="12">• 実装パターンをテンプレート化</tspan>
+    <tspan x="100" dy="12">• 小さな例で手計算して動作確認</tspan>
+    <tspan x="100" dy="12">• エッジケース（0, 1, 負数）の処理</tspan>
+    <tspan x="100" dy="12">• 剰余演算の性質を完全に理解</tspan>
+  </text>
+  
+  <text x="90" y="1280" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    📚 必修ライブラリ: GCD, 高速べき乗, 組み合わせ
+  </text>
+  
+  <rect x="440" y="1165" width="340" height="145" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="450" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    ⚠️ よくある落とし穴
+  </text>
+  <text x="460" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="460" dy="0">• オーバーフロー対策を忘れる</tspan>
+    <tspan x="460" dy="12">• 剰余演算で除算の扱いを間違える</tspan>
+    <tspan x="460" dy="12">• 0や1の特殊ケース処理を忘れる</tspan>
+    <tspan x="460" dy="12">• 公式の前提条件を確認しない</tspan>
+    <tspan x="460" dy="12">• 実装時のインデックスエラー</tspan>
+  </text>
+  
+  <text x="450" y="1280" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    🐛 デバッグ: 小さなケースから段階的にテスト
+  </text>
+  
+  <rect x="800" y="1165" width="320" height="145" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="810" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🚀 上達への道筋
+  </text>
+  <text x="820" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="820" dy="0">• 典型問題のパターンを覚える</tspan>
+    <tspan x="820" dy="12">• 全探索から数学的解法への変換練習</tspan>
+    <tspan x="820" dy="12">• 計算量改善の効果を実感する</tspan>
+    <tspan x="820" dy="12">• より高度な数論・組み合わせ論を学習</tspan>
+    <tspan x="820" dy="12">• 他の人の数学的解法を研究</tspan>
+  </text>
+  
+  <text x="810" y="1280" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    💪 数学は競技プログラミング最強の武器！
+  </text>
+  
+  <!-- Success Message -->
+  <rect x="50" y="1340" width="1100" height="50" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="600" y="1365" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#047857">
+    🎯 数学的思考力を身につけよう！
+  </text>
+  <text x="600" y="1385" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#047857">
+    計算量の劇的な改善により、より大きな問題サイズに対応可能になります
+  </text>
+</svg>

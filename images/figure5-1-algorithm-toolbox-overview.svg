@@ -1,0 +1,287 @@
+<svg viewBox="0 0 1200 1000" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-1：アルゴリズム道具箱概観</title>
+  <desc>競技プログラミングで最も重要な6つの基本アルゴリズムの特徴と使い分けを理解する包括的ガイド</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="1000" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    アルゴリズム道具箱概観
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    競技プログラミング必須の6つの基本手法
+  </text>
+  
+  <!-- Toolbox Metaphor -->
+  <rect x="50" y="80" width="1100" height="120" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🧰 プログラマーの道具箱
+  </text>
+  
+  <text x="600" y="130" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6b21a8">
+    大工さんが用途に応じて金槌やのこぎりを使い分けるように、
+  </text>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6b21a8">
+    プログラマーも問題に応じてアルゴリズムという「道具」を選択します
+  </text>
+  
+  <text x="600" y="175" font-family="Arial, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    💡 重要：どの道具をいつ使うかの判断力が競技プログラミング成功の鍵
+  </text>
+  
+  <!-- Algorithm Tools -->
+  <!-- Brute Force -->
+  <rect x="80" y="220" width="340" height="140" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="250" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🔍 全探索 (Brute Force)
+  </text>
+  
+  <rect x="100" y="260" width="300" height="90" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="110" y="280" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    特徴:
+  </text>
+  <text x="120" y="295" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="120" dy="0">• 全ての可能性を試す確実な方法</tspan>
+    <tspan x="120" dy="12">• 実装が簡単で理解しやすい</tspan>
+    <tspan x="120" dy="12">• 計算量は大きいが確実に答えが出る</tspan>
+  </text>
+  
+  <text x="110" y="325" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    使用条件:
+  </text>
+  <text x="120" y="340" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    計算量が制限時間内に収まる場合
+  </text>
+  
+  <!-- Conditional Logic -->
+  <rect x="440" y="220" width="340" height="140" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="610" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🔀 条件分岐
+  </text>
+  
+  <rect x="460" y="260" width="300" height="90" rx="4" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="470" y="280" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    特徴:
+  </text>
+  <text x="480" y="295" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="480" dy="0">• 複雑な場合分けを整理して実装</tspan>
+    <tspan x="480" dy="12">• if-elif-else文の効果的な活用</tspan>
+    <tspan x="480" dy="12">• 論理演算子との組み合わせ</tspan>
+  </text>
+  
+  <text x="470" y="325" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    使用場面:
+  </text>
+  <text x="480" y="340" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    複数の条件が絡む判定問題
+  </text>
+  
+  <!-- Mathematical Approaches -->
+  <rect x="800" y="220" width="320" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="960" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🔢 数学活用
+  </text>
+  
+  <rect x="820" y="260" width="280" height="90" rx="4" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="830" y="280" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    特徴:
+  </text>
+  <text x="840" y="295" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="840" dy="0">• 数学的性質・公式の活用</tspan>
+    <tspan x="840" dy="12">• GCD, 素数判定, 組み合わせ</tspan>
+    <tspan x="840" dy="12">• 計算量を大幅に削減可能</tspan>
+  </text>
+  
+  <text x="830" y="325" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    使用場面:
+  </text>
+  <text x="840" y="340" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    数学的背景がある問題
+  </text>
+  
+  <!-- String Processing -->
+  <rect x="80" y="380" width="340" height="140" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="250" y="405" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📝 文字列処理
+  </text>
+  
+  <rect x="100" y="420" width="300" height="90" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="110" y="440" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    特徴:
+  </text>
+  <text x="120" y="455" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="120" dy="0">• 文字列の検索・置換・変換</tspan>
+    <tspan x="120" dy="12">• パターンマッチング</tspan>
+    <tspan x="120" dy="12">• 回文判定・文字カウント</tspan>
+  </text>
+  
+  <text x="110" y="485" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    使用場面:
+  </text>
+  <text x="120" y="500" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    テキスト処理関連の問題
+  </text>
+  
+  <!-- Sorting -->
+  <rect x="440" y="380" width="340" height="140" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="610" y="405" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    📊 ソート
+  </text>
+  
+  <rect x="460" y="420" width="300" height="90" rx="4" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="470" y="440" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    特徴:
+  </text>
+  <text x="480" y="455" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="480" dy="0">• データを順序通りに並び替え</tspan>
+    <tspan x="480" dy="12">• 中央値・最小差分ペア発見</tspan>
+    <tspan x="480" dy="12">• 問題を簡単化する効果</tspan>
+  </text>
+  
+  <text x="470" y="485" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    使用場面:
+  </text>
+  <text x="480" y="500" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    順序関係が重要な問題
+  </text>
+  
+  <!-- Greedy Algorithm -->
+  <rect x="800" y="380" width="320" height="140" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="960" y="405" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#047857">
+    💰 貪欲法
+  </text>
+  
+  <rect x="820" y="420" width="280" height="90" rx="4" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="830" y="440" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    特徴:
+  </text>
+  <text x="840" y="455" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="840" dy="0">• 局所最適選択で全体最適化</tspan>
+    <tspan x="840" dy="12">• コイン問題・区間スケジューリング</tspan>
+    <tspan x="840" dy="12">• 高速だが適用条件あり</tspan>
+  </text>
+  
+  <text x="830" y="485" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    使用条件:
+  </text>
+  <text x="840" y="500" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    局所最適=全体最適が保証される場合
+  </text>
+  
+  <!-- Decision Flow -->
+  <rect x="50" y="540" width="1100" height="200" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="565" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🎯 アルゴリズム選択の判断フロー
+  </text>
+  
+  <!-- Decision Tree -->
+  <rect x="80" y="580" width="200" height="60" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="180" y="600" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    問題を見る
+  </text>
+  <text x="180" y="620" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#d97706">
+    制約・データサイズ確認
+  </text>
+  
+  <!-- Arrow -->
+  <defs>
+    <marker id="flowArrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#15803d"/>
+    </marker>
+  </defs>
+  
+  <path d="M 280 610 L 320 610" stroke="#15803d" stroke-width="2" fill="none" marker-end="url(#flowArrow)"/>
+  
+  <rect x="320" y="580" width="200" height="60" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="420" y="600" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    全探索で解ける？
+  </text>
+  <text x="420" y="620" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1e40af">
+    計算量を見積もり
+  </text>
+  
+  <path d="M 520 610 L 560 610" stroke="#15803d" stroke-width="2" fill="none" marker-end="url(#flowArrow)"/>
+  
+  <rect x="560" y="580" width="200" height="60" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="660" y="600" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#d97706">
+    数学的性質ある？
+  </text>
+  <text x="660" y="620" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#d97706">
+    公式・定理で簡単化
+  </text>
+  
+  <path d="M 760 610 L 800 610" stroke="#15803d" stroke-width="2" fill="none" marker-end="url(#flowArrow)"/>
+  
+  <rect x="800" y="580" width="280" height="60" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="940" y="600" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#047857">
+    ソート・貪欲法適用可能？
+  </text>
+  <text x="940" y="620" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#047857">
+    問題の性質を分析
+  </text>
+  
+  <!-- Decision Criteria -->
+  <rect x="80" y="660" width="1040" height="70" rx="4" fill="white" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="100" y="680" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    判断基準と優先順位:
+  </text>
+  <text x="120" y="700" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="120" dy="0">1️⃣ 制約確認 → 全探索が間に合うか？ (N≤10^6程度まで)</tspan>
+    <tspan x="120" dy="16">2️⃣ 数学的性質 → GCD, 素数, 組み合わせなどの公式で高速化できるか？</tspan>
+    <tspan x="120" dy="16">3️⃣ データの順序 → ソートすることで問題が簡単になるか？</tspan>
+    <tspan x="650" dy="-32">4️⃣ 最適化問題 → 貪欲法で局所最適=全体最適が成り立つか？</tspan>
+    <tspan x="650" dy="16">5️⃣ 文字列問題 → パターンマッチングや変換処理が必要か？</tspan>
+  </text>
+  
+  <!-- Best Practices -->
+  <rect x="50" y="760" width="1100" height="180" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="600" y="785" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#c2410c">
+    💡 アルゴリズム選択のベストプラクティス
+  </text>
+  
+  <!-- Practice Tips -->
+  <rect x="80" y="800" width="340" height="120" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="90" y="820" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    🎯 初心者向けアプローチ
+  </text>
+  <text x="100" y="840" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="100" dy="0">1. まず全探索で解けないか考える</tspan>
+    <tspan x="100" dy="12">2. 計算量が厳しければ最適化を検討</tspan>
+    <tspan x="100" dy="12">3. 数学的性質がないか問題文を分析</tspan>
+    <tspan x="100" dy="12">4. サンプルケースで動作確認</tspan>
+    <tspan x="100" dy="12">5. 複数のアプローチを比較検討</tspan>
+  </text>
+  
+  <rect x="440" y="800" width="340" height="120" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="450" y="820" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    ⚠️ よくある間違い
+  </text>
+  <text x="460" y="840" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="460" dy="0">• 複雑なアルゴリズムから考え始める</tspan>
+    <tspan x="460" dy="12">• 計算量を正確に見積もらない</tspan>
+    <tspan x="460" dy="12">• 1つの解法にこだわりすぎる</tspan>
+    <tspan x="460" dy="12">• エッジケースを考慮しない</tspan>
+    <tspan x="460" dy="12">• デバッグ・テストを怠る</tspan>
+  </text>
+  
+  <rect x="800" y="800" width="320" height="120" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="810" y="820" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    🚀 上達のコツ
+  </text>
+  <text x="820" y="840" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="820" dy="0">• 同じパターンの問題を繰り返し解く</tspan>
+    <tspan x="820" dy="12">• 他の人の解法を読んで学ぶ</tspan>
+    <tspan x="820" dy="12">• アルゴリズムの計算量を意識する</tspan>
+    <tspan x="820" dy="12">• 実装パターンをライブラリ化</tspan>
+    <tspan x="820" dy="12">• 制限時間内での実装力を鍛える</tspan>
+  </text>
+  
+  <!-- Success Message -->
+  <rect x="50" y="960" width="1100" height="30" rx="6" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="600" y="980" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🎉 これらの道具を使いこなせれば、競技プログラミングの多くの問題が解けるようになります！
+  </text>
+</svg>
