@@ -315,13 +315,41 @@ a:hover {
     left: 0;
     width: 280px; /* Fixed width for mobile */
     height: calc(100vh - var(--header-height));
-    background-color: var(--background-secondary);
+    background-color: var(--background-secondary) !important;
     border-right: 1px solid var(--border-color);
     padding: var(--space-lg);
     overflow-y: auto;
     z-index: 1000;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Mobile sidebar content visibility */
+  .book-sidebar * {
+    color: var(--text-primary) !important;
+    opacity: 1 !important;
+  }
+  
+  /* Mobile sidebar links */
+  .book-sidebar .toc-link {
+    color: var(--text-secondary) !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+  }
+  
+  .book-sidebar .toc-link:hover,
+  .book-sidebar .toc-link.active {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+    opacity: 1 !important;
+  }
+  
+  /* Mobile sidebar headings */
+  .book-sidebar .book-title,
+  .book-sidebar .toc-section-title {
+    color: var(--text-primary) !important;
+    opacity: 1 !important;
   }
 
   /* Show sidebar when checkbox is checked */
