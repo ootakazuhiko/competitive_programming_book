@@ -401,9 +401,47 @@ a:hover {
     }
   }
 
-  /* Show sidebar when checkbox is checked */
+  /* Show sidebar when checkbox is checked - CRITICAL FIX */
   .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar {
-    transform: translateX(0);
+    transform: translateX(0) !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* Dark mode sidebar when open */
+  @media (prefers-color-scheme: dark) {
+    .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar {
+      background: #1f2937 !important;
+      background-color: #1f2937 !important;
+    }
+  }
+
+  /* Force sidebar content visibility when open */
+  .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar * {
+    opacity: 1 !important;
+  }
+
+  .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .book-title,
+  .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-section-title {
+    color: #111827 !important;
+  }
+
+  .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link {
+    color: #6b7280 !important;
+  }
+
+  /* Dark mode text when sidebar is open */
+  @media (prefers-color-scheme: dark) {
+    .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .book-title,
+    .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-section-title {
+      color: #f9fafb !important;
+    }
+
+    .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link {
+      color: #d1d5db !important;
+    }
   }
 
   /* Overlay for mobile */
@@ -420,10 +458,11 @@ a:hover {
     transition: opacity 0.3s ease, visibility 0.3s ease;
   }
 
-  /* Show overlay when checkbox is checked */
+  /* Show overlay when checkbox is checked - CRITICAL FIX */
   .sidebar-toggle-checkbox:checked ~ .book-sidebar-overlay {
-    opacity: 1;
-    visibility: visible;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
   }
 
   /* Show hamburger menu on mobile */
