@@ -51,14 +51,21 @@
         safeExecute(initTheme, 'initTheme');
     }
 
+    // パフォーマンス設定定数
+    const VERY_LONG_PAGE_THRESHOLD = 50000; // 50KB以上は超長いページ
+    const DELAY_LONG = 1000;                 // 長いページ用遅延時間
+    const DELAY_SHORT = 500;                 // 通常ページ用遅延時間
+    const TIMEOUT_SHORT = 100;               // 長いページ用短縮タイムアウト
+    const TIMEOUT_LONG = 200;                // 通常ページ用タイムアウト
+
     // 重い処理の遅延初期化（超長いページ用最適化）
     function initHeavyFeatures() {
         // ページの長さに応じて処理を調整
         const contentLength = document.body.textContent.length;
-        const isVeryLongPage = contentLength > 50000; // 50KB以上は超長いページ
+        const isVeryLongPage = contentLength > VERY_LONG_PAGE_THRESHOLD;
         
-        const delay = isVeryLongPage ? 1000 : 500;
-        const timeout = isVeryLongPage ? 100 : 200;
+        const delay = isVeryLongPage ? DELAY_LONG : DELAY_SHORT;
+        const timeout = isVeryLongPage ? TIMEOUT_SHORT : TIMEOUT_LONG;
         
         setTimeout(() => {
             if (!isVeryLongPage) {
