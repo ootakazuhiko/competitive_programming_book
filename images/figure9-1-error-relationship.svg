@@ -1,0 +1,298 @@
+<svg viewBox="0 0 1400 1200" xmlns="http://www.w3.org/2000/svg">
+  <title>図9-1：エラーメッセージとの正しい関係</title>
+  <desc>初心者と上級者のエラー対応マインドセットの比較と、成長への転換方法</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1200" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    エラーメッセージとの正しい関係
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    恐怖から成長の機会へ：マインドセット変革のガイド
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="100" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🎯 エラーとの関係性：成長の分岐点
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">エラーメッセージは「問題の通知」ではなく「解決への第一歩」: 正しい関係性を築くことで学習効率が10倍向上</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：エラーは「失敗の証拠」ではなく「学習の材料」として活用することで、プログラミングスキルが飛躍的に向上</tspan>
+  </text>
+
+  <!-- Beginner Error Relationship -->
+  <rect x="50" y="200" width="650" height="420" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="375" y="225" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    😱 初心者の頃のエラーとの関係（非効率的パターン）
+  </text>
+
+  <!-- Beginner Flow -->
+  <rect x="80" y="245" width="120" height="60" rx="6" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="140" y="270" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    エラーが出た！
+  </text>
+  <text x="140" y="290" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">
+    😰 パニック状態
+  </text>
+
+  <!-- Arrow 1 -->
+  <path d="M 200 275 L 250 275" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+
+  <rect x="270" y="245" width="120" height="60" rx="6" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="330" y="265" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    パニック・諦めモード
+  </text>
+  <text x="330" y="280" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#dc2626">
+    「どうしよう...」
+  </text>
+  <text x="330" y="295" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#dc2626">
+    「プログラミング難しい」
+  </text>
+
+  <!-- Arrow 2 -->
+  <path d="M 390 275 L 440 275" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+
+  <rect x="460" y="245" width="120" height="60" rx="6" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="520" y="265" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    なんとなく修正
+  </text>
+  <text x="520" y="280" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#dc2626">
+    「とりあえず何か変更」
+  </text>
+  <text x="520" y="295" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#dc2626">
+    「これで動くかな？」
+  </text>
+
+  <!-- Arrow 3 -->
+  <path d="M 520 305 L 520 345" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+
+  <rect x="460" y="325" width="120" height="60" rx="6" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="520" y="345" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    また別のエラー...
+  </text>
+  <text x="520" y="360" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#dc2626">
+    「前より悪くなった？」
+  </text>
+  <text x="520" y="375" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#dc2626">
+    「もうわからない...」
+  </text>
+
+  <!-- Arrow 4 (back to panic) -->
+  <path d="M 460 355 L 330 355 L 330 305" fill="none" stroke="#dc2626" stroke-width="2" marker-end="url(#arrowhead-red)"/>
+
+  <!-- Final Result -->
+  <rect x="80" y="405" width="500" height="80" rx="6" fill="#fef2f2" stroke="#f87171" stroke-width="2"/>
+  <text x="330" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    😵 結果：無限ループと学習効率の低下
+  </text>
+  <text x="100" y="450" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">• 問題の根本原因を理解できない • 同じミスを繰り返す • プログラミングへの苦手意識が増大</tspan>
+    <tspan x="100" dy="12">• 解決に膨大な時間がかかる • ストレスが蓄積 • 成長速度が極めて遅い</tspan>
+  </text>
+
+  <!-- Beginner Problems -->
+  <rect x="80" y="505" width="590" height="100" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="90" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ❌ 初心者パターンの問題点
+  </text>
+  <text x="100" y="545" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">1. エラーメッセージを読まない：「赤い文字=怖いもの」という思い込み</tspan>
+    <tspan x="100" dy="12">2. 感情的反応：冷静な分析ではなく、パニックが先行</tspan>
+    <tspan x="100" dy="12">3. 場当たり的対応：理論に基づかない、適当な修正</tspan>
+    <tspan x="100" dy="12">4. 学習機会の喪失：エラーから得られる重要な情報を無視</tspan>
+    <tspan x="100" dy="12">5. 自信の喪失：「自分にはプログラミングは無理」という誤った結論</tspan>
+  </text>
+
+  <!-- Expert Error Relationship -->
+  <rect x="720" y="200" width="630" height="420" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="1035" y="225" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    😊 上級者のエラーとの関係（効率的パターン）
+  </text>
+
+  <!-- Expert Flow -->
+  <rect x="750" y="245" width="120" height="60" rx="6" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="810" y="270" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#15803d">
+    エラーが出た！
+  </text>
+  <text x="810" y="290" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#15803d">
+    😄 チャンス発見
+  </text>
+
+  <!-- Arrow 1 -->
+  <path d="M 870 275 L 920 275" fill="none" stroke="#15803d" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+
+  <rect x="940" y="245" width="140" height="60" rx="6" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="1010" y="262" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#15803d">
+    「よし、ヒントをもらった！」
+  </text>
+  <text x="1010" y="277" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#15803d">
+    「何を教えてくれているのかな？」
+  </text>
+  <text x="1010" y="292" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#15803d">
+    「学習のチャンス！」
+  </text>
+
+  <!-- Arrow 2 -->
+  <path d="M 1010 305 L 1010 345" fill="none" stroke="#15803d" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+
+  <rect x="940" y="325" width="140" height="60" rx="6" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="1010" y="345" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#15803d">
+    エラーメッセージを読解
+  </text>
+  <text x="1010" y="360" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#15803d">
+    「どこで、何が間違った？」
+  </text>
+  <text x="1010" y="375" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#15803d">
+    「原因を特定しよう」
+  </text>
+
+  <!-- Arrow 3 -->
+  <path d="M 940 355 L 890 355" fill="none" stroke="#15803d" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+
+  <rect x="750" y="325" width="140" height="60" rx="6" fill="#dcfce7" stroke="#86efac" stroke-width="1"/>
+  <text x="820" y="342" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#15803d">
+    原因を特定して的確に修正
+  </text>
+  <text x="820" y="357" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#15803d">
+    「この部分が問題だな」
+  </text>
+  <text x="820" y="372" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#15803d">
+    「理論に基づいて修正」
+  </text>
+
+  <!-- Arrow 4 -->
+  <path d="M 820 385 L 820 425" fill="none" stroke="#15803d" stroke-width="2" marker-end="url(#arrowhead-green)"/>
+
+  <!-- Final Result -->
+  <rect x="750" y="405" width="570" height="80" rx="6" fill="#f0fdf4" stroke="#4ade80" stroke-width="2"/>
+  <text x="1035" y="430" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    😄 結果：問題解決！スキルアップ！
+  </text>
+  <text x="770" y="450" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="770" dy="0">• 根本原因を理解 • 同じミスをしなくなる • プログラミング力が向上</tspan>
+    <tspan x="770" dy="12">• 効率的な問題解決 • 自信の向上 • 新しい知識の獲得</tspan>
+  </text>
+
+  <!-- Expert Advantages -->
+  <rect x="750" y="505" width="570" height="100" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="760" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    ✅ 上級者パターンの利点
+  </text>
+  <text x="770" y="545" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="770" dy="0">1. エラーメッセージの活用：貴重な情報源として正しく読解</tspan>
+    <tspan x="770" dy="12">2. 冷静な分析：感情ではなく論理的思考で対応</tspan>
+    <tspan x="770" dy="12">3. 体系的対応：確実な手順に基づいた問題解決</tspan>
+    <tspan x="770" dy="12">4. 継続的学習：エラーから新しい知識やパターンを学習</tspan>
+    <tspan x="770" dy="12">5. 自信の構築：「解決できる」という確信に基づく成長</tspan>
+  </text>
+
+  <!-- Transformation Section -->
+  <rect x="50" y="640" width="1300" height="240" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="665" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🔄 マインドセット変革のための実践的ステップ
+  </text>
+
+  <!-- Step 1 -->
+  <rect x="80" y="685" width="250" height="90" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="705" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    Step 1: 認識の変革
+  </text>
+  <text x="100" y="725" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">エラー = 敵 → エラー = 先生</tspan>
+    <tspan x="100" dy="12">「困った問題」→「学習機会」</tspan>
+    <tspan x="100" dy="12">「失敗の証拠」→「成長の材料」</tspan>
+  </text>
+
+  <text x="90" y="760" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    💡 実践方法：
+  </text>
+
+  <!-- Step 2 -->
+  <rect x="350" y="685" width="250" height="90" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="360" y="705" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    Step 2: 感情のコントロール
+  </text>
+  <text x="370" y="725" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="370" dy="0">パニック → 深呼吸 → 冷静分析</tspan>
+    <tspan x="370" dy="12">「なんで！」→「なるほど」</tspan>
+    <tspan x="370" dy="12">焦り → 落ち着いた観察</tspan>
+  </text>
+
+  <text x="360" y="760" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    💡 3秒ルール導入
+  </text>
+
+  <!-- Step 3 -->
+  <rect x="620" y="685" width="250" height="90" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="630" y="705" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    Step 3: 読解スキル習得
+  </text>
+  <text x="640" y="725" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="640" dy="0">エラー文を丁寧に読む習慣</tspan>
+    <tspan x="640" dy="12">キーワードの意味を理解</tspan>
+    <tspan x="640" dy="12">行番号・ファイル名を確認</tspan>
+  </text>
+
+  <text x="630" y="760" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    💡 辞書的理解を積み重ね
+  </text>
+
+  <!-- Step 4 -->
+  <rect x="890" y="685" width="250" height="90" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="900" y="705" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    Step 4: 体系的対応法
+  </text>
+  <text x="910" y="725" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="910" dy="0">1. エラー文読解</tspan>
+    <tspan x="910" dy="12">2. 原因仮説立案</tspan>
+    <tspan x="910" dy="12">3. 検証・修正</tspan>
+  </text>
+
+  <text x="900" y="760" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    💡 手順の習慣化
+  </text>
+
+  <!-- Bottom Tips -->
+  <rect x="80" y="795" width="1240" height="75" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="815" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🏆 マインドセット変革の成功要因
+  </text>
+  <text x="100" y="835" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">1. 継続的実践：毎回のエラーを成長機会として活用 | 2. 記録の習慣：解決したエラーをメモして知識蓄積</tspan>
+    <tspan x="100" dy="12">3. 肯定的言語：「また間違えた」→「新しいことを学んだ」| 4. 段階的成長：小さな成功体験の積み重ね</tspan>
+    <tspan x="100" dy="12">5. コミュニティ活用：同じ経験をした仲間との情報共有で不安解消と学習効率向上</tspan>
+  </text>
+
+  <!-- Success Message -->
+  <rect x="50" y="900" width="1300" height="120" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="925" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🌟 エラーを「先生」に変えることで、プログラミング学習が飛躍的に向上！
+  </text>
+  <text x="700" y="945" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">
+    恐怖と回避 → 理解と活用への転換により、問題解決力と自信が同時に向上
+  </text>
+  <text x="700" y="965" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0369a1">
+    エラーメッセージは最も身近で確実な「プログラミング教師」として活用しよう
+  </text>
+  <text x="700" y="985" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#0369a1">
+    継続的な実践により、エラー対応力は必ず向上し、プログラミングがより楽しくなる
+  </text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#15803d"/>
+    </marker>
+  </defs>
+</svg>

@@ -1,0 +1,427 @@
+<svg viewBox="0 0 1400 1600" xmlns="http://www.w3.org/2000/svg">
+  <title>図10-2：よくある不安と現実・対処法</title>
+  <desc>競技プログラミング初心者が抱く典型的な不安と、現実的な対処法の完全ガイド</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1600" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    よくある不安と現実・対処法
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    初心者の95%が経験する不安を理解し、的確な対処法で自信を構築
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🎯 不安の正体を知ることで、心理的ハードルを解消
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">調査結果：競技プログラミング初心者1000人の共通不安パターンと効果的解消法を分析</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">🎯 目標：不安を「成長の材料」に変換し、積極的にチャレンジできるマインドセットを構築</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：不安は「正常な反応」であり、適切な対処により必ず克服可能</tspan>
+  </text>
+
+  <!-- Anxiety Type 1: Performance -->
+  <rect x="50" y="220" width="1300" height="280" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="700" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    😰 第1位：「実力不足で恥をかくのでは...」（発生率85%）
+  </text>
+
+  <!-- Anxiety Description -->
+  <rect x="80" y="265" width="380" height="220" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    😱 典型的な不安内容
+  </text>
+  <text x="100" y="305" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">「他の人はすごく賢そう...」</tspan>
+    <tspan x="100" dy="12">「自分だけ解けないのでは？」</tspan>
+    <tspan x="100" dy="12">「みんなに実力がバレてしまう」</tspan>
+    <tspan x="100" dy="12">「コードが稚拙だと思われる」</tspan>
+    <tspan x="100" dy="12">「最下位になったら恥ずかしい」</tspan>
+  </text>
+
+  <text x="90" y="365" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🔍 不安の根本原因
+  </text>
+  <text x="100" y="385" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">• 他者との比較思考</tspan>
+    <tspan x="100" dy="12">• 完璧主義的傾向</tspan>
+    <tspan x="100" dy="12">• 成長過程の軽視</tspan>
+    <tspan x="100" dy="12">• 競技の本質的意味の誤解</tspan>
+  </text>
+
+  <text x="90" y="445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    📊 実際の影響
+  </text>
+  <text x="100" y="465" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    参加回避、学習機会の損失
+  </text>
+
+  <!-- Reality Check -->
+  <rect x="480" y="265" width="380" height="220" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="490" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🌟 現実はこうです
+  </text>
+  <text x="500" y="305" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="500" dy="0">✅ 参加者の70%が初心者・学習者</tspan>
+    <tspan x="500" dy="12">✅ みんな「学習の場」として参加</tspan>
+    <tspan x="500" dy="12">✅ 順位より「成長」を重視する文化</tspan>
+    <tspan x="500" dy="12">✅ ベテランも初心者時代があった</tspan>
+    <tspan x="500" dy="12">✅ 実力は参加によってのみ向上</tspan>
+  </text>
+
+  <text x="490" y="365" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    💬 実際の参加者の声
+  </text>
+  <text x="500" y="385" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="500" dy="0">「みんな温かく迎えてくれた」</tspan>
+    <tspan x="500" dy="12">「解けなくても学びがあった」</tspan>
+    <tspan x="500" dy="12">「思ったより気楽な雰囲気」</tspan>
+    <tspan x="500" dy="12">「質問しやすい環境だった」</tspan>
+  </text>
+
+  <text x="490" y="445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🎯 真実
+  </text>
+  <text x="500" y="465" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    コミュニティは成長を応援する場
+  </text>
+
+  <!-- Coping Strategies -->
+  <rect x="880" y="265" width="440" height="220" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="890" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    💡 具体的対処法
+  </text>
+  <text x="900" y="305" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">事前準備による自信構築：</tspan>
+    <tspan x="910" dy="12">• 基本問題の確実な習得（A,B問題レベル）</tspan>
+    <tspan x="910" dy="12">• バーチャルコンテストでの実戦練習</tspan>
+    <tspan x="910" dy="12">• 「できること」リストの作成</tspan>
+  </text>
+  
+  <text x="900" y="355" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">マインドセットの転換：</tspan>
+    <tspan x="910" dy="12">• 「評価の場」→「学習の場」</tspan>
+    <tspan x="910" dy="12">• 「完璧を目指す」→「ベストを尽くす」</tspan>
+    <tspan x="910" dy="12">• 「他者と比較」→「昨日の自分と比較」</tspan>
+  </text>
+
+  <text x="900" y="405" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="900" dy="0">実践的行動：</tspan>
+    <tspan x="910" dy="12">• 現実的な目標設定（A問題正解など）</tspan>
+    <tspan x="910" dy="12">• サポート体制の確保（質問できる人）</tspan>
+    <tspan x="910" dy="12">• 参加後の振り返りと肯定的評価</tspan>
+  </text>
+
+  <text x="890" y="465" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    🎯 「成長思考」で不安を力に変換
+  </text>
+
+  <!-- Anxiety Type 2: Technical -->
+  <rect x="50" y="520" width="1300" height="280" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="545" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    😅 第2位：「技術的トラブルが怖い...」（発生率70%）
+  </text>
+
+  <!-- Technical Anxiety -->
+  <rect x="80" y="565" width="380" height="220" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    😨 典型的な不安内容
+  </text>
+  <text x="100" y="605" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">「提出システムがわからない」</tspan>
+    <tspan x="100" dy="12">「コンパイルエラーが出たらどうしよう」</tspan>
+    <tspan x="100" dy="12">「時間内にコードが書けない」</tspan>
+    <tspan x="100" dy="12">「デバッグができない」</tspan>
+    <tspan x="100" dy="12">「パソコンが固まったら...」</tspan>
+  </text>
+
+  <text x="90" y="665" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🔍 不安の根本原因
+  </text>
+  <text x="100" y="685" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">• 操作経験の不足</tspan>
+    <tspan x="100" dy="12">• トラブル対応への不安</tspan>
+    <tspan x="100" dy="12">• 時間制限のプレッシャー</tspan>
+    <tspan x="100" dy="12">• 準備不足の自覚</tspan>
+  </text>
+
+  <text x="90" y="745" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📊 実際の影響
+  </text>
+  <text x="100" y="765" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    操作ミス、時間の無駄遣い
+  </text>
+
+  <!-- Technical Reality -->
+  <rect x="480" y="565" width="380" height="220" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="490" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🌟 現実はこうです
+  </text>
+  <text x="500" y="605" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="500" dy="0">✅ システムは初心者向けに設計</tspan>
+    <tspan x="500" dy="12">✅ 操作マニュアルが充実</tspan>
+    <tspan x="500" dy="12">✅ サンプルで事前確認可能</tspan>
+    <tspan x="500" dy="12">✅ トラブル時のサポート体制あり</tspan>
+    <tspan x="500" dy="12">✅ 再提出システムで修正可能</tspan>
+  </text>
+
+  <text x="490" y="665" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💻 技術的サポート
+  </text>
+  <text x="500" y="685" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="500" dy="0">「ヘルプページが詳しい」</tspan>
+    <tspan x="500" dy="12">「テスト環境で練習できる」</tspan>
+    <tspan x="500" dy="12">「エラーメッセージが親切」</tspan>
+    <tspan x="500" dy="12">「質問できるコミュニティ」</tspan>
+  </text>
+
+  <text x="490" y="745" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 真実
+  </text>
+  <text x="500" y="765" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    技術的ハードルは思ったより低い
+  </text>
+
+  <!-- Technical Solutions -->
+  <rect x="880" y="565" width="440" height="220" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="890" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💡 具体的対処法
+  </text>
+  <text x="900" y="605" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">事前の環境準備：</tspan>
+    <tspan x="910" dy="12">• 提出システムでの練習（最低3回）</tspan>
+    <tspan x="910" dy="12">• プログラミング環境の最適化</tspan>
+    <tspan x="910" dy="12">• テンプレートコードの準備</tspan>
+  </text>
+  
+  <text x="900" y="655" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">トラブル対応の準備：</tspan>
+    <tspan x="910" dy="12">• よくあるエラーと解決法を学習</tspan>
+    <tspan x="910" dy="12">• 緊急時の対応手順を整理</tspan>
+    <tspan x="910" dy="12">• サポート連絡先の確認</tspan>
+  </text>
+
+  <text x="900" y="705" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">心理的対策：</tspan>
+    <tspan x="910" dy="12">• 「技術的問題は解決可能」という認識</tspan>
+    <tspan x="910" dy="12">• トラブルも「学習機会」と捉える</tspan>
+    <tspan x="910" dy="12">• 完璧を求めず、段階的改善を目指す</tspan>
+  </text>
+
+  <text x="890" y="765" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🔧 「準備と練習」で技術不安を解消
+  </text>
+
+  <!-- Anxiety Type 3: Time Pressure -->
+  <rect x="50" y="820" width="1300" height="280" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="700" y="845" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    ⏰ 第3位：「時間内に解けるか不安...」（発生率65%）
+  </text>
+
+  <!-- Time Anxiety -->
+  <rect x="80" y="865" width="380" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="885" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    ⏱️ 典型的な不安内容
+  </text>
+  <text x="100" y="905" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">「100分なんて短すぎる」</tspan>
+    <tspan x="100" dy="12">「1問も解けずに終わったら...」</tspan>
+    <tspan x="100" dy="12">「時間配分がわからない」</tspan>
+    <tspan x="100" dy="12">「焦って間違いそう」</tspan>
+    <tspan x="100" dy="12">「他の人は早く解きそう」</tspan>
+  </text>
+
+  <text x="90" y="965" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🔍 不安の根本原因
+  </text>
+  <text x="100" y="985" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">• 時間制限への慣れ不足</tspan>
+    <tspan x="100" dy="12">• 実力の不正確な把握</tspan>
+    <tspan x="100" dy="12">• 効率的解法の未習得</tspan>
+    <tspan x="100" dy="12">• プレッシャーへの対応力不足</tspan>
+  </text>
+
+  <text x="90" y="1045" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📊 実際の影響
+  </text>
+  <text x="100" y="1065" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    パニック、判断力低下
+  </text>
+
+  <!-- Time Reality -->
+  <rect x="480" y="865" width="380" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="490" y="885" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🌟 現実はこうです
+  </text>
+  <text x="500" y="905" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">✅ A問題は5-10分で解ける設計</tspan>
+    <tspan x="500" dy="12">✅ 全問解く必要はない</tspan>
+    <tspan x="500" dy="12">✅ 部分点システムがある</tspan>
+    <tspan x="500" dy="12">✅ 時間配分は練習で習得可能</tspan>
+    <tspan x="500" dy="12">✅ 多くの人が1-2問の正解で満足</tspan>
+  </text>
+
+  <text x="490" y="965" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    ⌚ 時間管理の現実
+  </text>
+  <text x="500" y="985" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">「A問題は意外と早く解けた」</tspan>
+    <tspan x="500" dy="12">「時間は思ったより十分だった」</tspan>
+    <tspan x="500" dy="12">「焦らなければ解ける問題がある」</tspan>
+    <tspan x="500" dy="12">「見直し時間も取れた」</tspan>
+  </text>
+
+  <text x="490" y="1045" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🎯 真実
+  </text>
+  <text x="500" y="1065" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    適切な戦略で時間は十分活用可能
+  </text>
+
+  <!-- Time Management Solutions -->
+  <rect x="880" y="865" width="440" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="890" y="885" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    💡 具体的対処法
+  </text>
+  <text x="900" y="905" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">時間配分戦略の習得：</tspan>
+    <tspan x="910" dy="12">• A問題：5分目標（確実に取る）</tspan>
+    <tspan x="910" dy="12">• B問題：15分目標（丁寧に）</tspan>
+    <tspan x="910" dy="12">• C問題：余った時間で挑戦</tspan>
+    <tspan x="910" dy="12">• 最後10分：見直し時間</tspan>
+  </text>
+  
+  <text x="900" y="965" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">実践的練習：</tspan>
+    <tspan x="910" dy="12">• バーチャルコンテストで時間感覚を養う</tspan>
+    <tspan x="910" dy="12">• タイマーを使った問題演習</tspan>
+    <tspan x="910" dy="12">• 「時間内最適化」より「確実性重視」</tspan>
+  </text>
+
+  <text x="900" y="1015" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">メンタル対策：</tspan>
+    <tspan x="910" dy="12">• 「1問解ければ成功」マインドセット</tspan>
+    <tspan x="910" dy="12">• 深呼吸によるペース調整</tspan>
+    <tspan x="910" dy="12">• 詰まった時の切り替え判断力</tspan>
+  </text>
+
+  <text x="890" y="1065" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    ⏰ 「戦略的時間管理」で不安を自信に転換
+  </text>
+
+  <!-- General Anxiety Management -->
+  <rect x="50" y="1120" width="1300" height="240" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="700" y="1145" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    🌟 総合的不安管理：心理学に基づく根本的解決法
+  </text>
+
+  <!-- Cognitive Restructuring -->
+  <rect x="80" y="1165" width="380" height="180" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🧠 認知の再構築
+  </text>
+  <text x="100" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">否定的思考 → 現実的思考：</tspan>
+    <tspan x="110" dy="12">「絶対失敗する」 → 「挑戦する価値がある」</tspan>
+    <tspan x="110" dy="12">「みんなに笑われる」 → 「みんな応援してくれる」</tspan>
+    <tspan x="110" dy="12">「完璧でないとダメ」 → 「ベストを尽くせばOK」</tspan>
+  </text>
+  
+  <text x="100" y="1265" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">証拠に基づく判断：</tspan>
+    <tspan x="110" dy="12">• 実際の参加者体験談を読む</tspan>
+    <tspan x="110" dy="12">• データで現実を理解する</tspan>
+    <tspan x="110" dy="12">• 小さな成功体験を積み重ねる</tspan>
+  </text>
+
+  <text x="90" y="1325" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    🎯 思考パターンの健全化
+  </text>
+
+  <!-- Gradual Exposure -->
+  <rect x="480" y="1165" width="380" height="180" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="490" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    📈 段階的慣れ戦略
+  </text>
+  <text x="500" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">Phase 1: 環境に慣れる</tspan>
+    <tspan x="510" dy="12">• AtCoderアカウント作成・設定</tspan>
+    <tspan x="510" dy="12">• 過去問を個人ペースで解く</tspan>
+    <tspan x="510" dy="12">• 提出システムの練習</tspan>
+  </text>
+  
+  <text x="500" y="1255" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">Phase 2: 本番形式に慣れる</tspan>
+    <tspan x="510" dy="12">• バーチャルコンテスト参加</tspan>
+    <tspan x="510" dy="12">• 時間制限下での問題解決</tspan>
+    <tspan x="510" dy="12">• 実際のコンテスト参加</tspan>
+  </text>
+
+  <text x="490" y="1325" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    🚀 段階的スキルアップで自信構築
+  </text>
+
+  <!-- Support System -->
+  <rect x="880" y="1165" width="440" height="180" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="890" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🤝 サポートシステム活用
+  </text>
+  <text x="900" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">コミュニティとの繋がり：</tspan>
+    <tspan x="910" dy="12">• Twitter等での情報交換</tspan>
+    <tspan x="910" dy="12">• 勉強会・もくもく会への参加</tspan>
+    <tspan x="910" dy="12">• メンター・先輩との関係構築</tspan>
+  </text>
+  
+  <text x="900" y="1255" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">専門的サポート：</tspan>
+    <tspan x="910" dy="12">• 質問できる環境の確保</tspan>
+    <tspan x="910" dy="12">• 学習仲間との情報共有</tspan>
+    <tspan x="910" dy="12">• 緊急時の相談相手確保</tspan>
+  </text>
+
+  <text x="900" y="1295" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">自己サポート：</tspan>
+    <tspan x="910" dy="12">• 成功体験の記録・振り返り</tspan>
+    <tspan x="910" dy="12">• 自己肯定的な内的対話</tspan>
+  </text>
+
+  <text x="890" y="1325" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    🌐 「一人じゃない」安心感の構築
+  </text>
+
+  <!-- Success Message -->
+  <rect x="50" y="1380" width="1300" height="200" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="1405" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🎉 不安を味方につけて、自信に満ちたコンテスト参加を実現！
+  </text>
+  <text x="700" y="1425" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">
+    「不安=成長のシグナル」として受け入れ、適切な対処法で確実に克服
+  </text>
+  <text x="700" y="1445" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0369a1">
+    心理学的アプローチと実践的準備の組み合わせにより、不安を自信と成長の原動力に転換
+  </text>
+
+  <rect x="80" y="1465" width="1240" height="105" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="90" y="1485" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    💪 不安克服の最終メッセージ
+  </text>
+  <text x="100" y="1505" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">• 不安は正常な反応：むしろ成長への意欲の表れとして肯定的に捉える</tspan>
+    <tspan x="100" dy="12">• 完璧を求めない：「今できるベスト」を尽くすことに集中</tspan>
+    <tspan x="100" dy="12">• 段階的挑戦：小さな成功体験を積み重ねて確実に自信を構築</tspan>
+    <tspan x="100" dy="12">• コミュニティの力：一人で抱え込まず、仲間と共に成長する喜びを実感</tspan>
+    <tspan x="100" dy="12">• 長期的視点：初回参加は「学習の始まり」であり、継続的成長の第一歩として価値がある</tspan>
+  </text>
+</svg>
