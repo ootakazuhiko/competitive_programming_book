@@ -307,7 +307,7 @@ a:hover {
     padding: 0 !important;
   }
 
-  /* Mobile sidebar */
+  /* Mobile sidebar - NO background by default (hidden state) */
   .book-sidebar {
     display: block;
     position: fixed;
@@ -315,91 +315,18 @@ a:hover {
     left: 0;
     width: 280px; /* Fixed width for mobile */
     height: calc(100vh - var(--header-height));
-    background-color: var(--background-secondary) !important;
-    border-right: 1px solid var(--border-color);
+    background: transparent !important;
+    background-color: transparent !important;
+    border-right: none;
     padding: var(--space-lg);
     overflow-y: auto;
     z-index: 1000;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
     opacity: 1 !important;
-  }
-
-  /* Force background for both light and dark mode */
-  .book-sidebar {
-    background: var(--background-secondary) !important;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .book-sidebar {
-      background: #1f2937 !important;
-    }
-  }
-
-  @media (prefers-color-scheme: light) {
-    .book-sidebar {
-      background: #f9fafb !important;
-    }
   }
   
-  /* Mobile sidebar content visibility - ensure all text is visible */
-  .book-sidebar * {
-    opacity: 1 !important;
-  }
-
-  /* Mobile sidebar text colors for both themes */
-  .book-sidebar *,
-  .book-sidebar .book-title,
-  .book-sidebar .toc-section-title,
-  .book-sidebar .toc-link {
-    color: var(--text-primary) !important;
-  }
-
-  /* Force colors for dark mode */
-  @media (prefers-color-scheme: dark) {
-    .book-sidebar *,
-    .book-sidebar .book-title,
-    .book-sidebar .toc-section-title,
-    .book-sidebar .toc-link {
-      color: #f9fafb !important;
-    }
-  }
-
-  /* Force colors for light mode */  
-  @media (prefers-color-scheme: light) {
-    .book-sidebar *,
-    .book-sidebar .book-title,
-    .book-sidebar .toc-section-title,
-    .book-sidebar .toc-link {
-      color: #111827 !important;
-    }
-  }
-  
-  /* Mobile sidebar links - hover and active states */
-  .book-sidebar .toc-link:hover,
-  .book-sidebar .toc-link.active {
-    background-color: var(--accent-color) !important;
-    color: white !important;
-    opacity: 1 !important;
-  }
-
-  /* Force hover/active colors for both themes */
-  @media (prefers-color-scheme: dark) {
-    .book-sidebar .toc-link:hover,
-    .book-sidebar .toc-link.active {
-      background-color: #3b82f6 !important;
-      color: white !important;
-    }
-  }
-
-  @media (prefers-color-scheme: light) {
-    .book-sidebar .toc-link:hover,
-    .book-sidebar .toc-link.active {
-      background-color: #3b82f6 !important;
-      color: white !important;
-    }
-  }
+  /* Mobile sidebar - no styling by default (transparent/invisible) */
 
   /* Show sidebar when checkbox is checked - CRITICAL FIX */
   .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar {
@@ -408,6 +335,8 @@ a:hover {
     background-color: #ffffff !important;
     opacity: 1 !important;
     visibility: visible !important;
+    border-right: 1px solid var(--border-color) !important;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15) !important;
   }
 
   /* Dark mode sidebar when open */
@@ -415,6 +344,7 @@ a:hover {
     .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar {
       background: #1f2937 !important;
       background-color: #1f2937 !important;
+      border-right: 1px solid #374151 !important;
     }
   }
 
@@ -442,6 +372,13 @@ a:hover {
     .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link {
       color: #d1d5db !important;
     }
+  }
+
+  /* Sidebar link interactions ONLY when sidebar is open */
+  .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link:hover,
+  .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link.active {
+    background-color: #3b82f6 !important;
+    color: #ffffff !important;
   }
 
   /* Overlay for mobile */
