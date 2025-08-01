@@ -213,11 +213,17 @@
             background-color: var(--background-secondary) !important;
         }
         
-        /* Critical inline CSS override - minimal necessary fixes only */
+        /* Critical inline CSS override - transparent by default, solid when open */
         @media (max-width: 767px) {
             .book-sidebar {
                 background: transparent !important;
                 box-shadow: none !important;
+            }
+            
+            /* Override when sidebar is open */
+            .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar {
+                background: var(--background-secondary) !important;
+                box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15) !important;
             }
         }
         
