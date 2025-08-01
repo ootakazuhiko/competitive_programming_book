@@ -1,0 +1,557 @@
+<svg viewBox="0 0 1400 1800" xmlns="http://www.w3.org/2000/svg">
+  <title>図10-3：コンテスト当日の理想的スケジュール</title>
+  <desc>競技プログラミングコンテスト当日の最適な時間配分と行動指針の完全ガイド</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1800" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    コンテスト当日の理想的スケジュール
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    開始2時間前から終了後まで：時間管理で最高のパフォーマンスを実現
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🎯 コンテスト当日の戦略的時間管理
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">最適なパフォーマンスは「計画的な準備」と「戦略的な時間配分」から生まれる</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">🎯 目標：開始前準備から終了後振り返りまで、一日を通した最適化により実力を100%発揮</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：時間管理こそが、限られた実力を最大限活用する最強の武器</tspan>
+  </text>
+
+  <!-- Pre-Contest Phase -->
+  <rect x="50" y="220" width="1300" height="300" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🌅 事前準備フェーズ（開始2時間前〜30分前）
+  </text>
+
+  <!-- 2 Hours Before -->
+  <rect x="80" y="265" width="380" height="240" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    ⏰ 開始2時間前：基盤整備
+  </text>
+  <text x="100" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">🔧 技術的準備：</tspan>
+    <tspan x="110" dy="12">• パソコン・周辺機器の動作確認</tspan>
+    <tspan x="110" dy="12">• インターネット接続の安定性テスト</tspan>
+    <tspan x="110" dy="12">• プログラミング環境の起動・確認</tspan>
+    <tspan x="110" dy="12">• テンプレートファイルの準備</tspan>
+  </text>
+
+  <text x="100" y="360" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">🏠 環境準備：</tspan>
+    <tspan x="110" dy="12">• 集中できる空間の確保</tspan>
+    <tspan x="110" dy="12">• 必要な資料（チートシート等）配置</tspan>
+    <tspan x="110" dy="12">• 飲み物・軽食の準備</tspan>
+    <tspan x="110" dy="12">• スマートフォンをサイレントモード</tspan>
+  </text>
+
+  <text x="100" y="415" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">🧠 メンタル準備：</tspan>
+    <tspan x="110" dy="12">• 軽いストレッチ・深呼吸</tspan>
+    <tspan x="110" dy="12">• 今日の目標を再確認</tspan>
+    <tspan x="110" dy="12">• ポジティブな自己暗示</tspan>
+  </text>
+
+  <text x="90" y="485" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    ✅ 「準備完了」の実感を得る
+  </text>
+
+  <!-- 1 Hour Before -->
+  <rect x="480" y="265" width="380" height="240" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="490" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    ⏰ 開始1時間前：ウォーミングアップ
+  </text>
+  <text x="500" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="500" dy="0">🏃 実技ウォーミングアップ：</tspan>
+    <tspan x="510" dy="12">• 簡単な過去問を1問解く（A問題レベル）</tspan>
+    <tspan x="510" dy="12">• 標準入出力の動作確認</tspan>
+    <tspan x="510" dy="12">• 提出システムでの練習提出</tspan>
+    <tspan x="510" dy="12">• キーボード操作の感覚調整</tspan>
+  </text>
+
+  <text x="500" y="360" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="500" dy="0">📚 知識の最終確認：</tspan>
+    <tspan x="510" dy="12">• よく使うアルゴリズムの復習</tspan>
+    <tspan x="510" dy="12">• 計算量の概算方法確認</tspan>
+    <tspan x="510" dy="12">• エラー対処法の要点整理</tspan>
+    <tspan x="510" dy="12">• 時間配分戦略の再確認</tspan>
+  </text>
+
+  <text x="500" y="415" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="500" dy="0">🎯 集中力調整：</tspan>
+    <tspan x="510" dy="12">• 深い集中状態への移行練習</tspan>
+    <tspan x="510" dy="12">• 雑念を排除する呼吸法</tspan>
+    <tspan x="510" dy="12">• 「いつも通り」の感覚確認</tspan>
+  </text>
+
+  <text x="490" y="485" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    🔥 最適な集中状態にチューニング
+  </text>
+
+  <!-- 30 Minutes Before -->
+  <rect x="880" y="265" width="440" height="240" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="890" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    ⏰ 開始30分前：最終調整
+  </text>
+  <text x="900" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="900" dy="0">🔍 最終確認事項：</tspan>
+    <tspan x="910" dy="12">• AtCoderサイトにログイン</tspan>
+    <tspan x="910" dy="12">• コンテストページの確認</tspan>
+    <tspan x="910" dy="12">• 参加登録の完了確認</tspan>
+    <tspan x="910" dy="12">• 時計・タイマーの準備</tspan>
+  </text>
+
+  <text x="900" y="360" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="900" dy="0">🧘 心理的準備：</tspan>
+    <tspan x="910" dy="12">• 「楽しむ」気持ちの確認</tspan>
+    <tspan x="910" dy="12">• 緊張感の適度な調整</tspan>
+    <tspan x="910" dy="12">• 「できることをやる」マインドセット</tspan>
+    <tspan x="910" dy="12">• 本番での行動計画の最終確認</tspan>
+  </text>
+
+  <text x="900" y="415" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="900" dy="0">⚡ エネルギー管理：</tspan>
+    <tspan x="910" dy="12">• 軽い栄養補給（糖分等）</tspan>
+    <tspan x="910" dy="12">• 水分補給（適量）</tspan>
+    <tspan x="910" dy="12">• 手首・肩の軽いストレッチ</tspan>
+    <tspan x="910" dy="12">• 体調の最終チェック</tspan>
+  </text>
+
+  <text x="890" y="485" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    🎯 「いつでも開始できる」完璧な準備状態
+  </text>
+
+  <!-- Contest Phase -->
+  <rect x="50" y="540" width="1300" height="420" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="565" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🚀 コンテスト実行フェーズ（100分間の戦略的時間配分）
+  </text>
+
+  <!-- First 10 Minutes -->
+  <rect x="80" y="585" width="280" height="360" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📋 開始〜10分：戦略立案
+  </text>
+  <text x="100" y="625" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">🔍 全体把握（5分）：</tspan>
+    <tspan x="110" dy="12">• 全問題をざっと目通し</tspan>
+    <tspan x="110" dy="12">• 各問題の大まかな難易度判定</tspan>
+    <tspan x="110" dy="12">• キーワード・パターンの識別</tspan>
+    <tspan x="110" dy="12">• 見たことある問題タイプの確認</tspan>
+  </text>
+
+  <text x="100" y="685" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">📝 戦略決定（3分）：</tspan>
+    <tspan x="110" dy="12">• 解答順序の決定</tspan>
+    <tspan x="110" dy="12">• 各問題への時間配分計画</tspan>
+    <tspan x="110" dy="12">• 「確実に取る」問題の特定</tspan>
+    <tspan x="110" dy="12">• 「挑戦してみる」問題の選択</tspan>
+  </text>
+
+  <text x="100" y="745" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">🎯 A問題着手（2分）：</tspan>
+    <tspan x="110" dy="12">• 問題文の詳細読解</tspan>
+    <tspan x="110" dy="12">• 入出力例の理解</tspan>
+    <tspan x="110" dy="12">• 解法アイデアの確認</tspan>
+  </text>
+
+  <text x="100" y="795" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">⚠️ 重要な判断基準：</tspan>
+    <tspan x="110" dy="12">• A問題が意外に難しい→B問題確認</tspan>
+    <tspan x="110" dy="12">• 全体的に難しい→時間配分調整</tspan>
+    <tspan x="110" dy="12">• いつもより簡単→積極戦略</tspan>
+  </text>
+
+  <text x="100" y="845" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">🔧 技術的準備：</tspan>
+    <tspan x="110" dy="12">• エディタでテンプレート展開</tspan>
+    <tspan x="110" dy="12">• 変数名・関数名の決定</tspan>
+    <tspan x="110" dy="12">• デバッグ用print文の準備</tspan>
+  </text>
+
+  <text x="90" y="925" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 戦略的スタートで優位に立つ
+  </text>
+
+  <!-- A Problem Phase -->
+  <rect x="380" y="585" width="280" height="360" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="390" y="605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🥇 10分〜20分：A問題確実正解
+  </text>
+  <text x="400" y="625" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">💭 思考プロセス（3分）：</tspan>
+    <tspan x="410" dy="12">• 問題の本質的要求の理解</tspan>
+    <tspan x="410" dy="12">• 解法の複数案検討</tspan>
+    <tspan x="410" dy="12">• 最もシンプルな方法選択</tspan>
+    <tspan x="410" dy="12">• エッジケースの考慮</tspan>
+  </text>
+
+  <text x="400" y="685" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">⌨️ 実装（5分）：</tspan>
+    <tspan x="410" dy="12">• 丁寧で読みやすいコード</tspan>
+    <tspan x="410" dy="12">• 変数名は意味が分かるように</tspan>
+    <tspan x="410" dy="12">• コメントで思考過程を記録</tspan>
+    <tspan x="410" dy="12">• デバッグしやすい構造</tspan>
+  </text>
+
+  <text x="400" y="745" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">🧪 検証（2分）：</tspan>
+    <tspan x="410" dy="12">• サンプル入出力での動作確認</tspan>
+    <tspan x="410" dy="12">• 自作テストケースでの検証</tspan>
+    <tspan x="410" dy="12">• 境界値での動作チェック</tspan>
+    <tspan x="410" dy="12">• 計算量の概算確認</tspan>
+  </text>
+
+  <text x="400" y="805" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">📤 提出・確認：</tspan>
+    <tspan x="410" dy="12">• 提出前の最終コードレビュー</tspan>
+    <tspan x="410" dy="12">• 慎重な提出操作</tspan>
+    <tspan x="410" dy="12">• 結果確認とAC（正解）の喜び</tspan>
+  </text>
+
+  <text x="400" y="845" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">🎉 成功時の対応：</tspan>
+    <tspan x="410" dy="12">• 自信とモチベーション向上</tspan>
+    <tspan x="410" dy="12">• B問題への積極的取り組み</tspan>
+    <tspan x="410" dy="12">• 時間的余裕の有効活用</tspan>
+  </text>
+
+  <text x="400" y="885" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">❌ 失敗時の対応：</tspan>
+    <tspan x="410" dy="12">• 冷静な原因分析</tspan>
+    <tspan x="410" dy="12">• 短時間での修正試行</tspan>
+    <tspan x="410" dy="12">• 時間制限での見切り判断</tspan>
+  </text>
+
+  <text x="390" y="925" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🏆 確実な1問目でリズムを作る
+  </text>
+
+  <!-- B Problem Phase -->
+  <rect x="680" y="585" width="280" height="360" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="690" y="605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🥈 20分〜40分：B問題チャレンジ
+  </text>
+  <text x="700" y="625" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="700" dy="0">🔍 分析フェーズ（5分）：</tspan>
+    <tspan x="710" dy="12">• A問題より複雑な要求の理解</tspan>
+    <tspan x="710" dy="12">• 複数ステップでの解法構想</tspan>
+    <tspan x="710" dy="12">• 必要なアルゴリズム・データ構造特定</tspan>
+    <tspan x="710" dy="12">• 計算量の見積もり</tspan>
+  </text>
+
+  <text x="700" y="685" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="700" dy="0">📝 設計フェーズ（3分）：</tspan>
+    <tspan x="710" dy="12">• 関数・処理の分割</tspan>
+    <tspan x="710" dy="12">• データの流れの整理</tspan>
+    <tspan x="710" dy="12">• 実装順序の決定</tspan>
+    <tspan x="710" dy="12">• デバッグポイントの想定</tspan>
+  </text>
+
+  <text x="700" y="745" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="700" dy="0">⚡ 実装フェーズ（10分）：</tspan>
+    <tspan x="710" dy="12">• 段階的な実装（小さく作って確認）</tspan>
+    <tspan x="710" dy="12">• 各段階でのprint文デバッグ</tspan>
+    <tspan x="710" dy="12">• エラー処理の適切な配置</tspan>
+    <tspan x="710" dy="12">• コードの可読性維持</tspan>
+  </text>
+
+  <text x="700" y="805" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="700" dy="0">🔬 検証フェーズ（2分）：</tspan>
+    <tspan x="710" dy="12">• サンプルケースでの動作確認</tspan>
+    <tspan x="710" dy="12">• 手作りテストケースでの検証</tspan>
+    <tspan x="710" dy="12">• アルゴリズムの正確性確認</tspan>
+  </text>
+
+  <text x="700" y="845" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="700" dy="0">⚖️ 戦略的判断：</tspan>
+    <tspan x="710" dy="12">• 確信がある→即座に提出</tspan>
+    <tspan x="710" dy="12">• 不安がある→もう少し検証</tspan>
+    <tspan x="710" dy="12">• 詰まった→C問題に切り替え検討</tspan>
+  </text>
+
+  <text x="690" y="925" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 計画的アプローチで難易度UP対応
+  </text>
+
+  <!-- C Problem and Final Phase -->
+  <rect x="980" y="585" width="340" height="360" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="990" y="605" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🥉 40分〜90分：C問題・最終調整
+  </text>
+  <text x="1000" y="625" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1000" dy="0">🤔 C問題アプローチ（20分上限）：</tspan>
+    <tspan x="1010" dy="12">• 問題文の詳細理解（5分）</tspan>
+    <tspan x="1010" dy="12">• 解法の複数パターン検討</tspan>
+    <tspan x="1010" dy="12">• 実装可能性の判断</tspan>
+    <tspan x="1010" dy="12">• 部分点戦略の検討</tspan>
+  </text>
+
+  <text x="1000" y="685" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1000" dy="0">⚡ 実装判断基準：</tspan>
+    <tspan x="1010" dy="12">• 見覚えのあるパターン→実装</tspan>
+    <tspan x="1010" dy="12">• 完全に新しい→慎重判断</tspan>
+    <tspan x="1010" dy="12">• 時間不足感→部分点狙い</tspan>
+    <tspan x="1010" dy="12">• 全く分からない→D問題確認</tspan>
+  </text>
+
+  <text x="1000" y="745" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1000" dy="0">🔄 柔軟な戦略転換：</tspan>
+    <tspan x="1010" dy="12">• C問題で詰まった→A,B見直し</tspan>
+    <tspan x="1010" dy="12">• 新しい閃き→積極的挑戦</tspan>
+    <tspan x="1010" dy="12">• 時間切迫→確実性重視</tspan>
+  </text>
+
+  <text x="1000" y="795" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1000" dy="0">🔍 最終10分（90-100分）：</tspan>
+    <tspan x="1010" dy="12">• 提出済み問題の再確認</tspan>
+    <tspan x="1010" dy="12">• 小さなバグの修正可能性</tspan>
+    <tspan x="1010" dy="12">• 部分点問題の最終調整</tspan>
+    <tspan x="1010" dy="12">• 精神的な満足感の確認</tspan>
+  </text>
+
+  <text x="1000" y="845" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1000" dy="0">📊 結果への心構え：</tspan>
+    <tspan x="1010" dy="12">• ベストを尽くした満足感</tspan>
+    <tspan x="1010" dy="12">• 学習した内容の整理</tspan>
+    <tspan x="1010" dy="12">• 次回への改善点発見</tspan>
+  </text>
+
+  <text x="990" y="925" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    💎 チャレンジ精神と現実的判断の両立
+  </text>
+
+  <!-- Post-Contest Phase -->
+  <rect x="50" y="980" width="1300" height="280" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="700" y="1005" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🎊 終了後フェーズ：振り返りと次回準備
+  </text>
+
+  <!-- Immediate Post-Contest -->
+  <rect x="80" y="1025" width="380" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="1045" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📊 終了直後（0-30分）：成果確認
+  </text>
+  <text x="100" y="1065" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">🎯 結果の受け入れ：</tspan>
+    <tspan x="110" dy="12">• 正解数・順位の確認</tspan>
+    <tspan x="110" dy="12">• 自分なりの評価（良かった点）</tspan>
+    <tspan x="110" dy="12">• 結果に関係なく参加した自分を褒める</tspan>
+  </text>
+  
+  <text x="100" y="1115" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">🧠 感情の整理：</tspan>
+    <tspan x="110" dy="12">• 達成感・充実感の味わい</tspan>
+    <tspan x="110" dy="12">• 悔しさがあれば成長の材料に</tspan>
+    <tspan x="110" dy="12">• 他者との比較を避ける</tspan>
+    <tspan x="110" dy="12">• 「経験値を得た」喜び</tspan>
+  </text>
+
+  <text x="100" y="1170" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">📝 速記メモ：</tspan>
+    <tspan x="110" dy="12">• 印象に残った問題・解法</tspan>
+    <tspan x="110" dy="12">• 今日の反省点（簡潔に）</tspan>
+    <tspan x="110" dy="12">• 新しく学んだこと</tspan>
+  </text>
+
+  <text x="90" y="1225" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    💫 達成感と次回への意欲を育む
+  </text>
+
+  <!-- Short-term Review -->
+  <rect x="480" y="1025" width="380" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="490" y="1045" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🔍 当日中（1-3時間後）：詳細分析
+  </text>
+  <text x="500" y="1065" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">🧪 解法の検証：</tspan>
+    <tspan x="510" dy="12">• 正解した問題の別解法探索</tspan>
+    <tspan x="510" dy="12">• 間違えた問題の原因分析</tspan>
+    <tspan x="510" dy="12">• 他者の解法・コードの研究</tspan>
+    <tspan x="510" dy="12">• より良いアプローチの発見</tspan>
+  </text>
+  
+  <text x="500" y="1125" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">⏱️ 時間管理の振り返り：</tspan>
+    <tspan x="510" dy="12">• 各問題にかけた時間の記録</tspan>
+    <tspan x="510" dy="12">• 効率的だった部分の特定</tspan>
+    <tspan x="510" dy="12">• 時間を浪費した場面の分析</tspan>
+    <tspan x="510" dy="12">• 次回の時間配分改善案</tspan>
+  </text>
+
+  <text x="500" y="1185" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="500" dy="0">📈 成長ポイント整理：</tspan>
+    <tspan x="510" dy="12">• 今回クリアできた新しい要素</tspan>
+    <tspan x="510" dy="12">• 実力向上を実感した場面</tspan>
+    <tspan x="510" dy="12">• 次のレベルへの課題明確化</tspan>
+  </text>
+
+  <text x="490" y="1225" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    📚 学習効果を最大化する分析
+  </text>
+
+  <!-- Long-term Planning -->
+  <rect x="880" y="1025" width="440" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="890" y="1045" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🚀 翌日以降：継続的成長計画
+  </text>
+  <text x="900" y="1065" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">📋 学習計画の更新：</tspan>
+    <tspan x="910" dy="12">• 弱点分野の特定と学習計画</tspan>
+    <tspan x="910" dy="12">• 新しく知ったアルゴリズムの習得</tspan>
+    <tspan x="910" dy="12">• 類似問題での実力定着</tspan>
+    <tspan x="910" dy="12">• 次回コンテストまでの目標設定</tspan>
+  </text>
+  
+  <text x="900" y="1125" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">🤝 コミュニティ活用：</tspan>
+    <tspan x="910" dy="12">• 解法記事・ブログの投稿検討</tspan>
+    <tspan x="910" dy="12">• 他参加者との情報交換</tspan>
+    <tspan x="910" dy="12">• 質問・相談できる関係の構築</tspan>
+    <tspan x="910" dy="12">• 勉強会・もくもく会への参加</tspan>
+  </text>
+
+  <text x="900" y="1185" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="900" dy="0">🎯 次回への準備：</tspan>
+    <tspan x="910" dy="12">• 今回の経験を活かした戦略立案</tspan>
+    <tspan x="910" dy="12">• 環境・準備の改善点実施</tspan>
+    <tspan x="910" dy="12">• より高い目標への挑戦計画</tspan>
+  </text>
+
+  <text x="890" y="1225" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🌱 継続的成長サイクルの確立
+  </text>
+
+  <!-- Time Management Tips -->
+  <rect x="50" y="1280" width="1300" height="240" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="700" y="1305" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    ⏰ 時間管理の極意：レベル別最適化戦略
+  </text>
+
+  <!-- Beginner Strategy -->
+  <rect x="80" y="1325" width="380" height="180" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="1345" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🌱 初心者レベル（1-2回目）
+  </text>
+  <text x="100" y="1365" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">🎯 主要目標：</tspan>
+    <tspan x="110" dy="12">• A問題確実正解（30分以内）</tspan>
+    <tspan x="110" dy="12">• システムに慣れる</tspan>
+    <tspan x="110" dy="12">• 最後まで参加する</tspan>
+  </text>
+  
+  <text x="100" y="1415" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">⏱️ 時間配分：</tspan>
+    <tspan x="110" dy="12">• A問題：30分（丁寧に）</tspan>
+    <tspan x="110" dy="12">• B問題：40分（チャレンジ）</tspan>
+    <tspan x="110" dy="12">• 見直し：30分（重要）</tspan>
+  </text>
+
+  <text x="100" y="1465" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">💡 成功の鍵：</tspan>
+    <tspan x="110" dy="12">焦らず確実性を重視</tspan>
+  </text>
+
+  <text x="90" y="1485" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    🎯 基礎固めと慣れが最重要
+  </text>
+
+  <!-- Intermediate Strategy -->
+  <rect x="480" y="1325" width="380" height="180" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="490" y="1345" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🏃 中級者レベル（3-10回目）
+  </text>
+  <text x="500" y="1365" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">🎯 主要目標：</tspan>
+    <tspan x="510" dy="12">• A,B問題確実正解</tspan>
+    <tspan x="510" dy="12">• C問題にチャレンジ</tspan>
+    <tspan x="510" dy="12">• 効率的時間管理</tspan>
+  </text>
+  
+  <text x="500" y="1415" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">⏱️ 時間配分：</tspan>
+    <tspan x="510" dy="12">• A問題：10分（素早く）</tspan>
+    <tspan x="510" dy="12">• B問題：25分（確実に）</tspan>
+    <tspan x="510" dy="12">• C問題：50分（挑戦）</tspan>
+    <tspan x="510" dy="12">• 見直し：15分</tspan>
+  </text>
+
+  <text x="500" y="1465" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">💡 成功の鍵：</tspan>
+    <tspan x="510" dy="12">戦略的判断力の向上</tspan>
+  </text>
+
+  <text x="490" y="1485" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    ⚡ スピードと正確性の両立追求
+  </text>
+
+  <!-- Advanced Strategy -->
+  <rect x="880" y="1325" width="440" height="180" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="890" y="1345" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🚀 上級者レベル（10回以上）
+  </text>
+  <text x="900" y="1365" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">🎯 主要目標：</tspan>
+    <tspan x="910" dy="12">• A,B,C問題確実正解</tspan>
+    <tspan x="910" dy="12">• D問題以降への挑戦</tspan>
+    <tspan x="910" dy="12">• レーティング向上</tspan>
+  </text>
+  
+  <text x="900" y="1415" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">⏱️ 時間配分：</tspan>
+    <tspan x="910" dy="12">• A問題：5分（瞬殺）</tspan>
+    <tspan x="910" dy="12">• B問題：15分（安定）</tspan>
+    <tspan x="910" dy="12">• C問題：30分（確実）</tspan>
+    <tspan x="910" dy="12">• D問題以降：40分（挑戦）</tspan>
+    <tspan x="910" dy="12">• 最適化：10分</tspan>
+  </text>
+
+  <text x="900" y="1465" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">💡 成功の鍵：</tspan>
+    <tspan x="910" dy="12">高度な問題への積極的チャレンジ</tspan>
+  </text>
+
+  <text x="890" y="1485" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    💎 最高レベルの効率性と挑戦精神
+  </text>
+
+  <!-- Final Message -->
+  <rect x="50" y="1540" width="1300" height="240" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="1565" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🎊 時間管理マスターで競技プログラミングの真の楽しさを体験！
+  </text>
+  <text x="700" y="1585" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">
+    戦略的時間配分により、限られた時間で最大限の成果と学びを獲得
+  </text>
+  <text x="700" y="1605" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0369a1">
+    準備→実行→振り返りの完璧なサイクルで、継続的な成長を実現
+  </text>
+
+  <rect x="80" y="1625" width="1240" height="145" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="90" y="1645" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    ⏰ 時間管理の黄金律：最終メッセージ
+  </text>
+  <text x="100" y="1665" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">1. 準備が9割：事前準備の徹底が当日のパフォーマンスを決定する</tspan>
+    <tspan x="100" dy="12">2. 柔軟性も重要：計画は大切だが、状況に応じた臨機応変な判断も必要</tspan>
+    <tspan x="100" dy="12">3. 完璧を求めない：「今日できるベスト」を尽くすことに集中</tspan>
+    <tspan x="100" dy="12">4. 学習の場と認識：結果よりも経験と学びを重視する姿勢</tspan>
+    <tspan x="100" dy="12">5. 継続的改善：毎回の経験から学び、次回に活かす成長サイクル</tspan>
+    <tspan x="100" dy="12">6. 楽しむ心：時間管理を「制約」ではなく「戦略ゲーム」として楽しむ</tspan>
+    <tspan x="100" dy="12">7. 自分なりのリズム：他者との比較ではなく、自分の最適なペースを発見</tspan>
+    <tspan x="100" dy="12">8. 長期的視点：一日の結果にこだわらず、継続的参加による確実な成長を目指す</tspan>
+  </text>
+</svg>

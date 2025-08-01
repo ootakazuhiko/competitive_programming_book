@@ -1,0 +1,402 @@
+<svg viewBox="0 0 1400 1600" xmlns="http://www.w3.org/2000/svg">
+  <title>図9-3：エラーメッセージ解読の技術</title>
+  <desc>Pythonエラーメッセージの構造解析と、効率的な問題解決への道筋</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1600" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    エラーメッセージ解読の技術
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    Traceback（トレースバック）を「暗号」から「解決の地図」に変える読解法
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🎯 エラーメッセージ解読の重要性：効率的デバッグの第一歩
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">エラーメッセージは「問題の詳細報告書」：正しく読解することで解決時間を90%短縮可能</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">🎯 目標：Tracebackを見ただけで、エラーの種類・場所・原因を瞬時に特定できるようになる</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：エラーメッセージは「怖いもの」ではなく「最も頼りになるデバッグパートナー」</tspan>
+  </text>
+
+  <!-- Traceback Structure -->
+  <rect x="50" y="220" width="1300" height="380" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    📖 Traceback（トレースバック）の構造解析
+  </text>
+
+  <!-- Sample Error Message -->
+  <rect x="80" y="265" width="580" height="180" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    📄 実際のエラーメッセージ例
+  </text>
+  
+  <rect x="100" y="300" width="540" height="135" rx="4" fill="#1f2937" stroke="#4b5563" stroke-width="1"/>
+  <text x="110" y="320" font-family="Monaco, monospace" font-size="10" fill="#f3f4f6">
+    Traceback (most recent call last):
+  </text>
+  <text x="110" y="335" font-family="Monaco, monospace" font-size="10" fill="#f59e0b">
+    File "solution.py", line 7, in &lt;module&gt;
+  </text>
+  <text x="110" y="350" font-family="Monaco, monospace" font-size="10" fill="#f3f4f6">
+    result = 10 / zero_value
+  </text>
+  <text x="110" y="365" font-family="Monaco, monospace" font-size="10" fill="#ef4444">
+    ZeroDivisionError: division by zero
+  </text>
+  
+  <!-- Additional example -->
+  <text x="110" y="390" font-family="Monaco, monospace" font-size="9" fill="#6b7280">
+    # より複雑な例：
+  </text>
+  <text x="110" y="405" font-family="Monaco, monospace" font-size="9" fill="#f59e0b">
+    File "game.py", line 15, in calculate_score
+  </text>
+  <text x="110" y="420" font-family="Monaco, monospace" font-size="9" fill="#f3f4f6">
+    total_score = sum(scores) / len(players)
+  </text>
+
+  <!-- Error Analysis -->
+  <rect x="680" y="265" width="640" height="180" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="690" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🔍 メッセージの構成要素解析
+  </text>
+  
+  <!-- Component 1 -->
+  <rect x="700" y="300" width="300" height="25" rx="3" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="710" y="317" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    ① "Traceback (most recent call last):"
+  </text>
+  <text x="710" y="332" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    → エラーの発生経路を辿る開始宣言
+  </text>
+
+  <!-- Component 2 -->
+  <rect x="700" y="340" width="300" height="25" rx="3" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="710" y="357" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    ② "File "solution.py", line 7"
+  </text>
+  <text x="710" y="372" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    → ファイル名と行番号（最重要情報）
+  </text>
+
+  <!-- Component 3 -->
+  <rect x="700" y="380" width="300" height="25" rx="3" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="710" y="397" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    ③ "result = 10 / zero_value"
+  </text>
+  <text x="710" y="412" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    → 問題が発生した具体的なコード行
+  </text>
+
+  <!-- Component 4 -->
+  <rect x="1020" y="300" width="280" height="65" rx="3" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="1030" y="317" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    ④ "ZeroDivisionError: division by zero"
+  </text>
+  <text x="1030" y="332" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    → エラーの種類と詳細説明
+  </text>
+  <text x="1030" y="347" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    → 最も重要な「原因特定」情報
+  </text>
+
+  <!-- Reading Process -->
+  <rect x="80" y="465" width="1240" height="125" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="485" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    📋 効率的な読解順序（下から上に読む！）
+  </text>
+  
+  <text x="100" y="505" font-family="Arial, sans-serif" font-size="11" fill="#d97706">
+    <tspan x="100" dy="0">Step 1: 最下行のエラー種類を確認（ZeroDivisionError, NameError, etc.）</tspan>
+    <tspan x="100" dy="15">Step 2: エラー詳細説明を理解（division by zero, name 'x' is not defined, etc.）</tspan>
+    <tspan x="100" dy="15">Step 3: File行でファイル名と行番号を特定</tspan>
+    <tspan x="100" dy="15">Step 4: 問題のコード行を確認し、Step 1-2の情報と照合</tspan>
+    <tspan x="100" dy="15">Step 5: 複数のFile行がある場合は、最も下（最も直接的な原因）から確認</tspan>
+  </text>
+
+  <!-- Detailed Decoding Steps -->
+  <rect x="50" y="620" width="1300" height="280" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="645" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🎯 エラー種類別：解読と対処のパターン
+  </text>
+
+  <!-- SyntaxError Decoding -->
+  <rect x="80" y="665" width="380" height="110" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="685" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🔧 SyntaxError の解読法
+  </text>
+  <text x="100" y="705" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">メッセージ例：</tspan>
+    <tspan x="100" dy="12">"invalid syntax"</tspan>
+    <tspan x="100" dy="12">"expected ':'"</tspan>
+    <tspan x="100" dy="12">"unmatched ')'"</tspan>
+  </text>
+  
+  <text x="90" y="745" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 対処法：
+  </text>
+  <text x="100" y="765" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    指示された行の前後をチェック
+  </text>
+
+  <!-- NameError Decoding -->
+  <rect x="480" y="665" width="380" height="110" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="490" y="685" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🔧 NameError の解読法
+  </text>
+  <text x="500" y="705" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="500" dy="0">メッセージ例：</tspan>
+    <tspan x="500" dy="12">"name 'variable_name' is not defined"</tspan>
+  </text>
+  
+  <text x="490" y="735" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 対処法：
+  </text>
+  <text x="500" y="750" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    <tspan x="500" dy="0">1. 変数名のスペルチェック</tspan>
+    <tspan x="500" dy="12">2. 定義行の存在確認</tspan>
+  </text>
+
+  <!-- RuntimeError Decoding -->
+  <rect x="880" y="665" width="440" height="110" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="890" y="685" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🔧 実行時エラーの解読法
+  </text>
+  <text x="900" y="705" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">ZeroDivisionError: "division by zero"</tspan>
+    <tspan x="900" dy="12">IndexError: "list index out of range"</tspan>
+    <tspan x="900" dy="12">ValueError: "invalid literal for int()"</tspan>
+  </text>
+  
+  <text x="890" y="745" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 対処法：
+  </text>
+  <text x="900" y="765" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    実行時の変数値をprint()で確認
+  </text>
+
+  <!-- Advanced Examples -->
+  <rect x="80" y="785" width="1240" height="105" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="805" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💡 複雑なTracebackの読み方（関数呼び出しがある場合）
+  </text>
+  
+  <rect x="100" y="820" width="560" height="60" rx="4" fill="#1f2937" stroke="#4b5563" stroke-width="1"/>
+  <text x="110" y="835" font-family="Monaco, monospace" font-size="8" fill="#f59e0b">
+    File "main.py", line 10, in &lt;module&gt;
+  </text>
+  <text x="110" y="847" font-family="Monaco, monospace" font-size="8" fill="#f3f4f6">
+    result = calculate(5, 0)
+  </text>
+  <text x="110" y="859" font-family="Monaco, monospace" font-size="8" fill="#f59e0b">
+    File "main.py", line 3, in calculate
+  </text>
+  <text x="110" y="871" font-family="Monaco, monospace" font-size="8" fill="#f3f4f6">
+    return a / b
+  </text>
+
+  <text x="680" y="835" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="680" dy="0">読解順序：</tspan>
+    <tspan x="690" dy="12">1. 最下行：return a / b でエラー</tspan>
+    <tspan x="690" dy="12">2. line 3, in calculate：calculate関数内</tspan>
+    <tspan x="690" dy="12">3. line 10：main.pyの10行目から呼び出し</tspan>
+    <tspan x="690" dy="12">4. 結論：calculate(5, 0)の呼び出しが原因</tspan>
+  </text>
+
+  <!-- Systematic Error Resolution -->
+  <rect x="50" y="920" width="1300" height="300" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="700" y="945" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🔬 体系的エラー解決プロセス：4ステップメソッド
+  </text>
+
+  <!-- Step 1 -->
+  <rect x="80" y="965" width="300" height="120" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="985" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    Step 1: エラー種類の特定
+  </text>
+  <text x="100" y="1005" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">🎯 実行内容：</tspan>
+    <tspan x="110" dy="12">• 最下行のエラー名を読取</tspan>
+    <tspan x="110" dy="12">• 一般的な原因を思い出す</tspan>
+    <tspan x="110" dy="12">• 解決方向性を決定</tspan>
+  </text>
+  
+  <text x="90" y="1045" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    💡 判断基準：
+  </text>
+  <text x="100" y="1065" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    文法エラー vs 実行時エラーの分類
+  </text>
+
+  <!-- Step 2 -->
+  <rect x="400" y="965" width="300" height="120" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="410" y="985" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    Step 2: エラー発生場所の特定
+  </text>
+  <text x="420" y="1005" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="420" dy="0">🎯 実行内容：</tspan>
+    <tspan x="430" dy="12">• ファイル名と行番号を確認</tspan>
+    <tspan x="430" dy="12">• 該当行をエディタで開く</tspan>
+    <tspan x="430" dy="12">• 前後の行も含めて調査</tspan>
+  </text>
+  
+  <text x="410" y="1045" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    💡 判断基準：
+  </text>
+  <text x="420" y="1065" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    「なぜここでエラーが？」を考える
+  </text>
+
+  <!-- Step 3 -->
+  <rect x="720" y="965" width="300" height="120" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="730" y="985" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    Step 3: 原因仮説の立案
+  </text>
+  <text x="740" y="1005" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="740" dy="0">🎯 実行内容：</tspan>
+    <tspan x="750" dy="12">• エラー詳細と現象を照合</tspan>
+    <tspan x="750" dy="12">• 可能性のある原因をリスト</tspan>
+    <tspan x="750" dy="12">• 最も確率の高い原因を特定</tspan>
+  </text>
+  
+  <text x="730" y="1045" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    💡 判断基準：
+  </text>
+  <text x="740" y="1065" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    仮説の検証可能性
+  </text>
+
+  <!-- Step 4 -->
+  <rect x="1040" y="965" width="280" height="120" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="1050" y="985" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    Step 4: 検証・修正
+  </text>
+  <text x="1060" y="1005" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1060" dy="0">🎯 実行内容：</tspan>
+    <tspan x="1070" dy="12">• print()で変数値確認</tspan>
+    <tspan x="1070" dy="12">• 仮説に基づく修正実施</tspan>
+    <tspan x="1070" dy="12">• 修正結果の動作確認</tspan>
+  </text>
+  
+  <text x="1050" y="1045" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    💡 判断基準：
+  </text>
+  <text x="1060" y="1065" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    根本原因の解決
+  </text>
+
+  <!-- Practical Exercise -->
+  <rect x="80" y="1105" width="1240" height="105" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="1125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🧪 実践演習：エラーメッセージ解読チャレンジ
+  </text>
+  
+  <text x="100" y="1145" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">練習方法：</tspan>
+    <tspan x="110" dy="12">1. 意図的にエラーを作成（SyntaxError, NameError, IndexError各5個）</tspan>
+    <tspan x="110" dy="12">2. エラーメッセージを見て、4ステップメソッドで解決</tspan>
+    <tspan x="110" dy="12">3. 解決時間を測定し、段階的に短縮を目指す（目標：平均2分以内）</tspan>
+    <tspan x="110" dy="12">4. 友達と「エラー解決競争」をして楽しく習熟度向上</tspan>
+  </text>
+
+  <!-- Advanced Techniques -->
+  <rect x="50" y="1240" width="1300" height="200" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="700" y="1265" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    🚀 上級者向け：高度なエラー解読テクニック
+  </text>
+
+  <!-- Advanced Technique 1 -->
+  <rect x="80" y="1285" width="380" height="145" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="1305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🔍 スタックトレース活用法
+  </text>
+  <text x="100" y="1325" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">複数のFile行がある場合：</tspan>
+    <tspan x="110" dy="12">• 最下行：直接的な原因</tspan>
+    <tspan x="110" dy="12">• 上位行：呼び出し経路</tspan>
+    <tspan x="110" dy="12">• 全体：問題の文脈理解</tspan>
+  </text>
+  
+  <text x="90" y="1375" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    💡 活用のコツ：
+  </text>
+  <text x="100" y="1395" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    どの関数から問題が始まったか追跡
+  </text>
+  <text x="100" y="1410" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    データの流れを逆算して原因特定
+  </text>
+
+  <!-- Advanced Technique 2 -->
+  <rect x="480" y="1285" width="380" height="145" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="490" y="1305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    📊 エラーログの体系化
+  </text>
+  <text x="500" y="1325" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">記録すべき情報：</tspan>
+    <tspan x="510" dy="12">• エラー種類と頻度</tspan>
+    <tspan x="510" dy="12">• 解決までの時間</tspan>
+    <tspan x="510" dy="12">• 解決方法のパターン</tspan>
+    <tspan x="510" dy="12">• 再発防止策</tspan>
+  </text>
+  
+  <text x="490" y="1375" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    💡 活用のコツ：
+  </text>
+  <text x="500" y="1395" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    自分専用のエラー対処辞書を作成
+  </text>
+  <text x="500" y="1410" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    パターン分析で弱点を発見・改善
+  </text>
+
+  <!-- Advanced Technique 3 -->
+  <rect x="880" y="1285" width="440" height="145" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="890" y="1305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🧠 予測的デバッグ思考
+  </text>
+  <text x="900" y="1325" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">実装前のエラー予測：</tspan>
+    <tspan x="910" dy="12">• 「この行でエラーが起きそう」の感覚</tspan>
+    <tspan x="910" dy="12">• 事前の防御的プログラミング</tspan>
+    <tspan x="910" dy="12">• 境界値テストの習慣化</tspan>
+  </text>
+  
+  <text x="890" y="1375" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    💡 習得のコツ：
+  </text>
+  <text x="900" y="1395" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    コードレビュー時に「エラー予測」練習
+  </text>
+  <text x="900" y="1410" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    他人のコードでエラー原因を推測する訓練
+  </text>
+
+  <!-- Success Message -->
+  <rect x="50" y="1460" width="1300" height="120" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="1485" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🏆 エラーメッセージ解読技術で、デバッグマスターへの道筋が明確に！
+  </text>
+  <text x="700" y="1505" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">
+    Tracebackを「恐怖の暗号」から「解決の地図」に変換する読解力を獲得
+  </text>
+  <text x="700" y="1525" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0369a1">
+    4ステップメソッドの習慣化により、エラー解決時間を90%短縮し、ストレスフリーなプログラミング環境を実現
+  </text>
+  <text x="700" y="1545" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#0369a1">
+    継続的な実践により、エラーメッセージが「最も頼りになるプログラミングパートナー」として機能するようになる
+  </text>
+</svg>
