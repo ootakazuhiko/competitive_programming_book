@@ -1,0 +1,203 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図6-4：文字列処理におけるデータ構造選択</title>
+  <desc>文字列処理の具体的な場面でのデータ構造選択例</desc>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">
+    図6-4：文字列処理におけるデータ構造選択
+  </text>
+  
+  <!-- Problem scenarios -->
+  <text x="50" y="70" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    文字列処理の典型パターン
+  </text>
+  
+  <!-- Scenario 1: Character counting -->
+  <rect x="50" y="90" width="340" height="140" fill="#fff3cd" stroke="#ffc107" stroke-width="2" rx="5"/>
+  <text x="70" y="115" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#856404">
+    📊 パターン1：文字の出現回数
+  </text>
+  <text x="70" y="135" font-family="Inter, sans-serif" font-size="12" fill="#856404">
+    問題：文字列 "programming" で各文字が何回出現する？
+  </text>
+  <text x="70" y="155" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#e74c3c">
+    最適解：辞書
+  </text>
+  <text x="70" y="175" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    count = {}
+  </text>
+  <text x="70" y="190" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    for char in "programming":
+  </text>
+  <text x="90" y="205" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    count[char] = count.get(char, 0) + 1
+  </text>
+  <text x="70" y="220" font-family="Inter, sans-serif" font-size="11" fill="#27ae60">
+    # 結果: {'p':1, 'r':2, 'o':1, 'g':2, 'a':1, 'm':2, 'i':1, 'n':1}
+  </text>
+  
+  <!-- Scenario 2: Character order -->
+  <rect x="410" y="90" width="340" height="140" fill="#e8f4fd" stroke="#3498db" stroke-width="2" rx="5"/>
+  <text x="430" y="115" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#2980b9">
+    📋 パターン2：文字の順序保持
+  </text>
+  <text x="430" y="135" font-family="Inter, sans-serif" font-size="12" fill="#2980b9">
+    問題：文字列を1文字ずつ処理して変換
+  </text>
+  <text x="430" y="155" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#27ae60">
+    最適解：リスト
+  </text>
+  <text x="430" y="175" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    text = "hello"
+  </text>
+  <text x="430" y="190" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    chars = list(text)  # ['h','e','l','l','o']
+  </text>
+  <text x="430" y="205" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    chars[0] = chars[0].upper()  # 先頭を大文字に
+  </text>
+  <text x="430" y="220" font-family="Inter, sans-serif" font-size="11" fill="#27ae60">
+    # 結果: ['H','e','l','l','o'] → "Hello"
+  </text>
+  
+  <!-- Scenario 3: Character set check -->
+  <rect x="50" y="250" width="340" height="140" fill="#f0f8f0" stroke="#27ae60" stroke-width="2" rx="5"/>
+  <text x="70" y="275" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#27ae60">
+    🔍 パターン3：文字の存在チェック
+  </text>
+  <text x="70" y="295" font-family="Inter, sans-serif" font-size="12" fill="#27ae60">
+    問題：特定の文字が含まれているか高速チェック
+  </text>
+  <text x="70" y="315" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#e74c3c">
+    最適解：セット
+  </text>
+  <text x="70" y="335" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    vowels = set("aeiou")  # 母音の集合
+  </text>
+  <text x="70" y="350" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    for char in "programming":
+  </text>
+  <text x="90" y="365" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    if char in vowels:  # O(1)で高速チェック
+  </text>
+  <text x="110" y="380" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    print(f"{char}は母音")
+  </text>
+  
+  <!-- Scenario 4: Character position mapping -->
+  <rect x="410" y="250" width="340" height="140" fill="#ffebee" stroke="#e74c3c" stroke-width="2" rx="5"/>
+  <text x="430" y="275" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#c0392b">
+    📍 パターン4：文字と位置の対応
+  </text>
+  <text x="430" y="295" font-family="Inter, sans-serif" font-size="12" fill="#c0392b">
+    問題：各文字が最後に出現した位置を記録
+  </text>
+  <text x="430" y="315" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#e74c3c">
+    最適解：辞書
+  </text>
+  <text x="430" y="335" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    text = "programming"
+  </text>
+  <text x="430" y="350" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    last_pos = {}
+  </text>
+  <text x="430" y="365" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    for i, char in enumerate(text):
+  </text>
+  <text x="450" y="380" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    last_pos[char] = i
+  </text>
+  
+  <!-- Performance comparison -->
+  <text x="50" y="430" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    パフォーマンス比較
+  </text>
+  
+  <rect x="50" y="450" width="700" height="100" fill="white" stroke="#bdc3c7" stroke-width="1" rx="5"/>
+  
+  <!-- Table headers -->
+  <rect x="70" y="470" width="120" height="30" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+  <text x="130" y="490" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+    操作
+  </text>
+  
+  <rect x="190" y="470" width="120" height="30" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <text x="250" y="490" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+    リスト
+  </text>
+  
+  <rect x="310" y="470" width="120" height="30" fill="#27ae60" stroke="#229954" stroke-width="1"/>
+  <text x="370" y="490" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+    辞書
+  </text>
+  
+  <rect x="430" y="470" width="120" height="30" fill="#f39c12" stroke="#e67e22" stroke-width="1"/>
+  <text x="490" y="490" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+    セット
+  </text>
+  
+  <rect x="550" y="470" width="120" height="30" fill="#9b59b6" stroke="#8e44ad" stroke-width="1"/>
+  <text x="610" y="490" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="bold" fill="white">
+    文字列
+  </text>
+  
+  <!-- Table rows -->
+  <rect x="70" y="500" width="120" height="25" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="517" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    検索
+  </text>
+  
+  <rect x="190" y="500" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="250" y="517" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e74c3c">
+    O(N)
+  </text>
+  
+  <rect x="310" y="500" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="370" y="517" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#27ae60">
+    O(1)
+  </text>
+  
+  <rect x="430" y="500" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="490" y="517" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#27ae60">
+    O(1)
+  </text>
+  
+  <rect x="550" y="500" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="610" y="517" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e74c3c">
+    O(N)
+  </text>
+  
+  <rect x="70" y="525" width="120" height="25" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="130" y="542" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#2c3e50">
+    順序保持
+  </text>
+  
+  <rect x="190" y="525" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="250" y="542" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#27ae60">
+    ✓
+  </text>
+  
+  <rect x="310" y="525" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="370" y="542" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e74c3c">
+    ✗
+  </text>
+  
+  <rect x="430" y="525" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="490" y="542" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#e74c3c">
+    ✗
+  </text>
+  
+  <rect x="550" y="525" width="120" height="25" fill="white" stroke="#bdc3c7" stroke-width="1"/>
+  <text x="610" y="542" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#27ae60">
+    ✓
+  </text>
+  
+  <!-- Bottom tip -->
+  <rect x="50" y="570" width="700" height="25" fill="#e8f4fd" stroke="#3498db" stroke-width="1" rx="3"/>
+  <text x="70" y="587" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#2980b9">
+    💡 文字列処理では目的に応じてデータ構造を使い分けることが重要
+  </text>
+</svg>

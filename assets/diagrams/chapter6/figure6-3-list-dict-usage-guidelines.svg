@@ -1,0 +1,141 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図6-3：リストと辞書の使い分け指針</title>
+  <desc>リストと辞書をどのような場面で使い分けるかの判断フロー</desc>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="bold" fill="#2c3e50">
+    図6-3：リストと辞書の使い分け指針
+  </text>
+  
+  <!-- Decision flow -->
+  <g transform="translate(0, 60)">
+    <!-- Start -->
+    <rect x="300" y="0" width="200" height="50" fill="#3498db" stroke="#2980b9" stroke-width="2" rx="25"/>
+    <text x="400" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">
+      どのデータ構造を使う？
+    </text>
+    
+    <!-- First decision -->
+    <path d="M 400 50 L 400 80" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <rect x="300" y="80" width="200" height="60" fill="#f39c12" stroke="#e67e22" stroke-width="2" rx="10"/>
+    <text x="400" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="white">
+      データに順序が
+    </text>
+    <text x="400" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="white">
+      重要？
+    </text>
+    
+    <!-- Left branch - Order important (List) -->
+    <path d="M 350 140 L 200 180" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="270" y="165" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#27ae60">
+      YES
+    </text>
+    
+    <rect x="100" y="180" width="200" height="80" fill="#27ae60" stroke="#229954" stroke-width="2" rx="10"/>
+    <text x="200" y="205" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="white">
+      リスト
+    </text>
+    <text x="200" y="225" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="white">
+      順序を保持
+    </text>
+    <text x="200" y="240" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="white">
+      インデックスアクセス
+    </text>
+    <text x="200" y="255" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="white">
+      順次処理に適している
+    </text>
+    
+    <!-- Right branch - Order not important -->
+    <path d="M 450 140 L 600 180" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="530" y="165" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#e74c3c">
+      NO
+    </text>
+    
+    <!-- Second decision -->
+    <rect x="500" y="180" width="200" height="60" fill="#f39c12" stroke="#e67e22" stroke-width="2" rx="10"/>
+    <text x="600" y="205" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="white">
+      高速検索・更新が
+    </text>
+    <text x="600" y="225" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="white">
+      必要？
+    </text>
+    
+    <!-- Dictionary path -->
+    <path d="M 600 240 L 600 280" stroke="#2c3e50" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="620" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#27ae60">
+      YES
+    </text>
+    
+    <rect x="500" y="280" width="200" height="80" fill="#e74c3c" stroke="#c0392b" stroke-width="2" rx="10"/>
+    <text x="600" y="305" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="white">
+      辞書
+    </text>
+    <text x="600" y="325" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="white">
+      キー・値のペア
+    </text>
+    <text x="600" y="340" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="white">
+      高速検索 O(1)
+    </text>
+    <text x="600" y="355" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="white">
+      カウント・分類に最適
+    </text>
+  </g>
+  
+  <!-- Usage examples -->
+  <text x="50" y="440" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">
+    使用例
+  </text>
+  
+  <!-- List examples -->
+  <rect x="50" y="450" width="340" height="120" fill="#e8f5e8" stroke="#27ae60" stroke-width="2" rx="5"/>
+  <text x="70" y="475" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#27ae60">
+    📋 リストが適している場面
+  </text>
+  <text x="70" y="495" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+    • 成績の一覧表示（順位が重要）
+  </text>
+  <text x="70" y="510" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+    • アルゴリズムの手順（順序が重要）
+  </text>
+  <text x="70" y="525" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+    • 入力データの保持
+  </text>
+  <text x="70" y="540" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+    • ソートが必要なデータ
+  </text>
+  <text x="70" y="555" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+    • インデックスでのアクセス
+  </text>
+  
+  <!-- Dictionary examples -->
+  <rect x="410" y="450" width="340" height="120" fill="#ffebee" stroke="#e74c3c" stroke-width="2" rx="5"/>
+  <text x="430" y="475" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#e74c3c">
+    📚 辞書が適している場面
+  </text>
+  <text x="430" y="495" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+    • 要素の出現回数をカウント
+  </text>
+  <text x="430" y="510" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+    • 名前と値の対応関係
+  </text>
+  <text x="430" y="525" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+    • 高速な存在チェック
+  </text>
+  <text x="430" y="540" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+    • グループ分け・分類
+  </text>
+  <text x="430" y="555" font-family="Inter, sans-serif" font-size="12" fill="#2c3e50">
+    • 値の更新・累積
+  </text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50"/>
+    </marker>
+  </defs>
+</svg>
