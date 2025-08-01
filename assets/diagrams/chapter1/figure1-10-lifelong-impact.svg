@@ -1,0 +1,114 @@
+<svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="figure1-10-title" aria-describedby="figure1-10-desc">
+  <title id="figure1-10-title">図1-10：競技プログラミングスキルの人生への影響</title>
+  <desc id="figure1-10-desc">中学生から始めた競技プログラミングが人生にもたらす長期的な効果を時系列で示した図</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="900" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">
+    競技プログラミングスキルの人生への影響
+  </text>
+  
+  <!-- 現在：中学生 -->
+  <g>
+    <ellipse cx="400" cy="90" rx="120" ry="40" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="400" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e">
+      👦 中学生の今
+    </text>
+    <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e">
+      🏆 競技プログラミング開始
+    </text>
+    
+    <!-- 基礎スキル -->
+    <rect x="250" y="140" width="300" height="120" rx="8" fill="#fef9e7" stroke="#eab308" stroke-width="2"/>
+    
+    <text x="270" y="165" font-family="Arial, sans-serif" font-size="13" fill="#a16207">• 論理的思考力の基盤</text>
+    <text x="270" y="185" font-family="Arial, sans-serif" font-size="13" fill="#a16207">• 問題解決への自信</text>
+    <text x="270" y="205" font-family="Arial, sans-serif" font-size="13" fill="#a16207">• プログラミング技術</text>
+    <text x="270" y="225" font-family="Arial, sans-serif" font-size="13" fill="#a16207">• 数学的知識の深化</text>
+    <text x="270" y="245" font-family="Arial, sans-serif" font-size="13" fill="#a16207">• 継続学習の習慣</text>
+  </g>
+  
+  <!-- 矢印1 -->
+  <path d="M 400 260 L 400 300" stroke="#4f46e5" stroke-width="4" marker-end="url(#arrowhead-blue)"/>
+  <text x="450" y="285" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4f46e5">
+    3-5年後の効果
+  </text>
+  
+  <!-- 高校・大学時代 -->
+  <g>
+    <text x="400" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
+      高校・大学時代の優位性
+    </text>
+    
+    <rect x="40" y="340" width="720" height="200" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+    
+    <!-- 学習面 -->
+    <text x="60" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">📚 学習面での効果：</text>
+    <text x="80" y="385" font-family="Arial, sans-serif" font-size="13" fill="#0369a1">• 情報科目で圧倒的高得点</text>
+    <text x="80" y="405" font-family="Arial, sans-serif" font-size="13" fill="#0369a1">• 数学・理科の理解力向上</text>
+    <text x="80" y="425" font-family="Arial, sans-serif" font-size="13" fill="#0369a1">• 論文・レポートの論理構成力</text>
+    
+    <!-- 受験・進学 -->
+    <text x="280" y="365" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">🎓 受験・進学での効果：</text>
+    <text x="300" y="385" font-family="Arial, sans-serif" font-size="13" fill="#0369a1">• 推薦入試でのアピール材料</text>
+    <text x="300" y="405" font-family="Arial, sans-serif" font-size="13" fill="#0369a1">• 情報系学部での即戦力</text>
+    <text x="300" y="425" font-family="Arial, sans-serif" font-size="13" fill="#0369a1">• 海外大学への出願時の差別化</text>
+    
+    <!-- 課外活動 -->
+    <text x="60" y="465" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0c4a6e">🏅 課外活動での効果：</text>
+    <text x="80" y="485" font-family="Arial, sans-serif" font-size="13" fill="#0369a1">• JOI・IOI等での成績</text>
+    <text x="80" y="505" font-family="Arial, sans-serif" font-size="13" fill="#0369a1">• プログラミングコンテストでの入賞</text>
+    <text x="80" y="525" font-family="Arial, sans-serif" font-size="13" fill="#0369a1">• 技術系インターンシップへの参加</text>
+  </g>
+  
+  <!-- 矢印2 -->
+  <path d="M 400 550 L 400 590" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrowhead-purple)"/>
+  <text x="450" y="575" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">
+    10年後の効果
+  </text>
+  
+  <!-- 社会人時代 -->
+  <g>
+    <text x="400" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
+      社会人としての圧倒的アドバンテージ
+    </text>
+    
+    <rect x="40" y="630" width="720" height="200" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    
+    <!-- キャリア -->
+    <text x="60" y="655" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#14532d">💼 キャリア面での効果：</text>
+    <text x="80" y="675" font-family="Arial, sans-serif" font-size="13" fill="#166534">• IT企業での高評価・好待遇</text>
+    <text x="80" y="695" font-family="Arial, sans-serif" font-size="13" fill="#166534">• 技術的リーダーシップの発揮</text>
+    <text x="80" y="715" font-family="Arial, sans-serif" font-size="13" fill="#166534">• 問題解決能力の職場での活用</text>
+    
+    <!-- 起業・創造 -->
+    <text x="280" y="655" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#14532d">🚀 起業・創造での効果：</text>
+    <text x="300" y="675" font-family="Arial, sans-serif" font-size="13" fill="#166534">• 技術的実現可能性の正確な判断</text>
+    <text x="300" y="695" font-family="Arial, sans-serif" font-size="13" fill="#166534">• システム設計・開発の指揮</text>
+    <text x="300" y="715" font-family="Arial, sans-serif" font-size="13" fill="#166534">• 論理的な戦略立案・実行</text>
+    
+    <!-- 人生全般 -->
+    <text x="60" y="755" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#14532d">🌟 人生全般への効果：</text>
+    <text x="80" y="775" font-family="Arial, sans-serif" font-size="13" fill="#166534">• 困難な状況での冷静な判断</text>
+    <text x="80" y="795" font-family="Arial, sans-serif" font-size="13" fill="#166534">• 新しい技術・知識への適応力</text>
+    <text x="80" y="815" font-family="Arial, sans-serif" font-size="13" fill="#166534">• 次世代への知識伝承・指導力</text>
+  </g>
+  
+  <!-- 結論メッセージ -->
+  <rect x="150" y="850" width="500" height="40" rx="20" fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="875" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#92400e">
+    🔑 一度身につけたスキルは、一生の財産！
+  </text>
+  
+  <!-- 矢印定義 -->
+  <defs>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4f46e5"/>
+    </marker>
+    <marker id="arrowhead-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+  </defs>
+</svg>

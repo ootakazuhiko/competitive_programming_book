@@ -1,0 +1,135 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-12：AtCoder Junior Leagueでの成長体験</title>
+  <desc>AtCoder Junior LeagueとAtCoder一般コンテストの比較、および同世代での健全な競争環境を視覚化した図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .participant-text { font: 400 11px Inter, sans-serif; fill: #4B5563; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      .vs-text { font: 600 20px Inter, sans-serif; fill: #DC2626; }
+      .comment-text { font: 400 10px Inter, sans-serif; fill: #059669; }
+      .value-text { font: 400 11px Inter, sans-serif; fill: #374151; }
+      
+      .general-contest { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .junior-league { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .comment-bubble { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+      .value-box { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図1-12：AtCoder Junior Leagueでの成長体験</text>
+  
+  <!-- General Contest Section -->
+  <g id="general-contest">
+    <rect x="50" y="80" width="300" height="200" rx="12" class="general-contest"/>
+    <text x="200" y="105" text-anchor="middle" class="section-title">一般のAtCoderコンテスト</text>
+    
+    <!-- Participants -->
+    <g transform="translate(70, 120)">
+      <text x="0" y="0" class="emoji">👨‍💼</text>
+      <text x="25" y="4" class="participant-text">社会人 (30代) - 10年の経験</text>
+      
+      <text x="0" y="25" class="emoji">👨‍🎓</text>
+      <text x="25" y="29" class="participant-text">大学生 (20代) - 5年の経験</text>
+      
+      <text x="0" y="50" class="emoji">👨‍🎓</text>
+      <text x="25" y="54" class="participant-text">高校生 (17歳) - 3年の経験</text>
+      
+      <text x="0" y="75" class="emoji">👦</text>
+      <text x="25" y="79" class="participant-text">中学生 (君!) - 1年の経験</text>
+    </g>
+    
+    <!-- Result -->
+    <rect x="70" y="220" width="240" height="35" rx="6" fill="#FEF2F2" stroke="#EF4444" stroke-width="1"/>
+    <text x="190" y="240" text-anchor="middle" style="font: 400 12px Inter, sans-serif; fill: #DC2626;">😅「経験差が大きすぎる...」</text>
+  </g>
+  
+  <!-- VS -->
+  <text x="400" y="190" text-anchor="middle" class="vs-text">VS</text>
+  
+  <!-- Junior League Section -->
+  <g id="junior-league">
+    <rect x="450" y="80" width="300" height="200" rx="12" class="junior-league"/>
+    <text x="600" y="105" text-anchor="middle" class="section-title">Junior League限定コンテスト</text>
+    
+    <!-- Participants -->
+    <g transform="translate(470, 120)">
+      <text x="0" y="0" class="emoji">👦</text>
+      <text x="25" y="4" class="participant-text">中学1年生 - 1年の経験</text>
+      
+      <text x="0" y="25" class="emoji">👧</text>
+      <text x="25" y="29" class="participant-text">中学2年生 - 2年の経験</text>
+      
+      <text x="0" y="50" class="emoji">👦</text>
+      <text x="25" y="54" class="participant-text">中学3年生 - 3年の経験</text>
+      
+      <text x="0" y="75" class="emoji">👧</text>
+      <text x="25" y="79" class="participant-text">小学6年生 - 1年の経験</text>
+      
+      <text x="0" y="100" class="emoji">👦</text>
+      <text x="25" y="104" class="participant-text">小学5年生 - 1年の経験</text>
+    </g>
+    
+    <!-- Result -->
+    <rect x="470" y="235" width="240" height="35" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+    <text x="590" y="255" text-anchor="middle" style="font: 400 12px Inter, sans-serif; fill: #059669;">😊「みんな同じくらい！」</text>
+  </g>
+  
+  <!-- Comments section -->
+  <g id="comments">
+    <text x="400" y="320" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #374151;">💬 参加者の声：</text>
+    
+    <rect x="80" y="340" width="640" height="80" rx="8" class="comment-bubble"/>
+    
+    <g transform="translate(100, 360)">
+      <text x="0" y="0" class="emoji">👦</text>
+      <text x="25" y="4" class="comment-text">「○○君、今回のコンテストで△△点取ったって！すごいな〜」</text>
+      
+      <text x="0" y="25" class="emoji">👧</text>
+      <text x="25" y="29" class="comment-text">「今度一緒に問題を解いてみない？教え合いっこしよう！」</text>
+      
+      <text x="0" y="50" class="emoji">👦</text>
+      <text x="25" y="54" class="comment-text">「次回は君に勝ちたいな！お互い頑張ろう！」</text>
+    </g>
+  </g>
+  
+  <!-- Value section -->
+  <g id="value">
+    <text x="400" y="460" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #374151;">🎯 Junior Leagueの特別な価値：</text>
+    
+    <g transform="translate(50, 480)">
+      <rect x="0" y="0" width="160" height="70" rx="6" class="value-box"/>
+      <text x="10" y="20" class="value-text">• 同世代のロールモデル</text>
+      <text x="10" y="35" class="value-text">  を見つけられる</text>
+      <text x="10" y="55" style="font: 400 10px Inter, sans-serif; fill: #6B7280;">憧れの先輩が身近に</text>
+      
+      <rect x="180" y="0" width="160" height="70" rx="6" class="value-box"/>
+      <text x="190" y="20" class="value-text">• 「自分にもできる」</text>
+      <text x="190" y="35" class="value-text">  という実感を得られる</text>
+      <text x="190" y="55" style="font: 400 10px Inter, sans-serif; fill: #6B7280;">成功体験の積み重ね</text>
+      
+      <rect x="360" y="0" width="160" height="70" rx="6" class="value-box"/>
+      <text x="370" y="20" class="value-text">• 健全な競争で</text>
+      <text x="370" y="35" class="value-text">  互いを高め合える</text>
+      <text x="370" y="55" style="font: 400 10px Inter, sans-serif; fill: #6B7280;">切磋琢磨の環境</text>
+      
+      <rect x="540" y="0" width="160" height="70" rx="6" class="value-box"/>
+      <text x="550" y="20" class="value-text">• 将来の仲間・友人</text>
+      <text x="550" y="35" class="value-text">  関係を築ける</text>
+      <text x="550" y="55" style="font: 400 10px Inter, sans-serif; fill: #6B7280;">一生の友達づくり</text>
+    </g>
+  </g>
+  
+  <!-- Bottom message -->
+  <g transform="translate(50, 580)">
+    <text x="0" y="0" style="font: 500 12px Inter, sans-serif; fill: #059669;">
+      🌟 同じ年代だからこそ生まれる、特別な成長体験がここにある
+    </text>
+  </g>
+</svg>

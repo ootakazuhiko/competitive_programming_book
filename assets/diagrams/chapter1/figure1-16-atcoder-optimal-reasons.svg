@@ -1,0 +1,169 @@
+<svg viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg">
+  <title>図1-16：AtCoderが中学生に最適な理由</title>
+  <desc>AtCoderが中学生の競技プログラミング学習に最適な理由：日本語対応、段階的難易度設計、レーティングシステム、活発なコミュニティを視覚化した図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .reason-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .reason-desc { font: 400 11px Inter, sans-serif; fill: #4B5563; line-height: 1.4; }
+      .example-text { font: 400 10px Inter, sans-serif; fill: #059669; }
+      .rating-label { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 20px Inter, sans-serif; }
+      .code-text { font: 400 10px monospace; fill: #1F2937; }
+      
+      .reason1 { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 2; }
+      .reason2 { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .reason3 { fill: #FFF7ED; stroke: #FB923C; stroke-width: 2; }
+      .reason4 { fill: #FDF2F8; stroke: #EC4899; stroke-width: 2; }
+      .example-box { fill: #F9FAFB; stroke: #D1D5DB; stroke-width: 1; }
+      .rating-box { fill: #FFFFFF; stroke: #6B7280; stroke-width: 1; }
+      .difficulty-bar { fill: #10B981; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="750" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図1-16：AtCoderが中学生に最適な理由</text>
+  
+  <!-- Reason 1: Japanese Support -->
+  <g id="reason1">
+    <rect x="50" y="60" width="700" height="140" rx="12" class="reason1"/>
+    
+    <text x="70" y="85" class="emoji">🗾</text>
+    <text x="100" y="85" class="reason-title">日本語完全対応の安心感</text>
+    
+    <rect x="70" y="100" width="650" height="60" rx="6" class="example-box"/>
+    <text x="80" y="120" style="font: 500 11px Inter, sans-serif; fill: #374151;">問題文例：</text>
+    <text x="80" y="135" class="code-text">「N個の整数が与えられます。この中で最大値を出力しなさい。」</text>
+    <text x="80" y="150" class="example-text">↓ 📖 理解しやすい！</text>
+    
+    <foreignObject x="70" y="170" width="650" height="25">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="reason-desc">
+        <div style="display: flex; gap: 40px;">
+          <div>• 専門用語も日本語で説明</div>
+          <div>• 文化的な表現も自然</div>
+          <div>• 読解に集中力を奪われない</div>
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Reason 2: Gradual Difficulty -->
+  <g id="reason2">
+    <rect x="50" y="220" width="700" height="160" rx="12" class="reason2"/>
+    
+    <text x="70" y="245" class="emoji">🏆</text>
+    <text x="100" y="245" class="reason-title">段階的な難易度設計</text>
+    
+    <text x="80" y="265" style="font: 500 11px Inter, sans-serif; fill: #374151;">コンテスト構成：</text>
+    
+    <!-- Difficulty bars -->
+    <g transform="translate(80, 280)">
+      <!-- ABC A -->
+      <rect x="0" y="0" width="60" height="15" class="difficulty-bar" opacity="0.3"/>
+      <text x="70" y="12" class="rating-label">ABC A問題：★☆☆☆ (100-200点)</text>
+      <text x="70" y="25" style="font: 400 9px Inter, sans-serif; fill: #059669;">「中学生でも確実に解ける基本問題」</text>
+      
+      <!-- ABC B -->
+      <rect x="0" y="35" width="120" height="15" class="difficulty-bar" opacity="0.5"/>
+      <text x="130" y="47" class="rating-label">ABC B問題：★★☆☆ (200-300点)</text>
+      <text x="130" y="60" style="font: 400 9px Inter, sans-serif; fill: #059669;">「少し頑張れば解ける応用問題」</text>
+      
+      <!-- ABC C -->
+      <rect x="0" y="70" width="180" height="15" class="difficulty-bar" opacity="0.7"/>
+      <text x="190" y="82" class="rating-label">ABC C問題：★★★☆ (300-500点)</text>
+      <text x="190" y="95" style="font: 400 9px Inter, sans-serif; fill: #059669;">「アルゴリズムの知識が必要な問題」</text>
+      
+      <!-- ABC D+ -->
+      <rect x="0" y="105" width="240" height="15" class="difficulty-bar" opacity="0.9"/>
+      <text x="250" y="117" class="rating-label">ABC D問題以降：★★★★ (500点以上)</text>
+      <text x="250" y="130" style="font: 400 9px Inter, sans-serif; fill: #059669;">「高校生・大学生レベルの高難度問題」</text>
+      
+      <text x="320" y="150" style="font: 500 11px Inter, sans-serif; fill: #059669;">💡 自分のレベルに合わせて段階的に成長！</text>
+    </g>
+  </g>
+  
+  <!-- Reason 3: Rating System -->
+  <g id="reason3">
+    <rect x="50" y="400" width="700" height="140" rx="12" class="reason3"/>
+    
+    <text x="70" y="425" class="emoji">📈</text>
+    <text x="100" y="425" class="reason-title">レーティングシステムによる成長実感</text>
+    
+    <text x="80" y="445" style="font: 500 11px Inter, sans-serif; fill: #374151;">色別レーティング：</text>
+    
+    <!-- Rating progression -->
+    <g transform="translate(80, 460)">
+      <rect x="0" y="0" width="120" height="20" rx="4" fill="#9CA3AF" stroke="#6B7280" stroke-width="1"/>
+      <text x="60" y="12" text-anchor="middle" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">グレー(0-399)</text>
+      <text x="60" y="30" text-anchor="middle" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">プログラミング初心者</text>
+      
+      <text x="130" y="15" style="font: 400 12px Inter, sans-serif; fill: #6B7280;">↓ 基本的な入出力処理をマスター</text>
+      
+      <rect x="150" y="0" width="120" height="20" rx="4" fill="#A16207" stroke="#92400E" stroke-width="1"/>
+      <text x="210" y="12" text-anchor="middle" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">茶色(400-799)</text>
+      <text x="210" y="30" text-anchor="middle" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">基礎ができた初級者</text>
+      
+      <text x="280" y="15" style="font: 400 12px Inter, sans-serif; fill: #6B7280;">↓ アルゴリズムの基本を理解</text>
+      
+      <rect x="300" y="0" width="120" height="20" rx="4" fill="#059669" stroke="#047857" stroke-width="1"/>
+      <text x="360" y="12" text-anchor="middle" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">緑色(800-1199)</text>
+      <text x="360" y="30" text-anchor="middle" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">しっかりした中級者</text>
+      
+      <text x="430" y="15" style="font: 400 12px Inter, sans-serif; fill: #6B7280;">↓ 複雑な問題も解けるように</text>
+      
+      <rect x="450" y="0" width="120" height="20" rx="4" fill="#0EA5E9" stroke="#0284C7" stroke-width="1"/>
+      <text x="510" y="12" text-anchor="middle" style="font: 400 10px Inter, sans-serif; fill: #FFFFFF;">水色(1200-1599)</text>
+      <text x="510" y="30" text-anchor="middle" style="font: 400 9px Inter, sans-serif; fill: #6B7280;">優秀な上級者</text>
+    </g>
+    
+    <rect x="80" y="500" width="600" height="25" rx="4" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+    <text x="380" y="515" text-anchor="middle" style="font: 600 11px Inter, sans-serif; fill: #92400E;">🎯 中学生の現実的な目標： 1年目：茶色達成  2年目：緑色達成  3年目：水色挑戦</text>
+  </g>
+  
+  <!-- Reason 4: Community -->
+  <g id="reason4">
+    <rect x="50" y="560" width="700" height="140" rx="12" class="reason4"/>
+    
+    <text x="70" y="585" class="emoji">👥</text>
+    <text x="100" y="585" class="reason-title">活発な日本語コミュニティ</text>
+    
+    <foreignObject x="70" y="600" width="650" height="95">
+      <div xmlns="http://www.w3.org/1999/xhtml" class="reason-desc">
+        <div style="display: flex; gap: 30px;">
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">🗨️ 情報交換の場：</div>
+            <div>• Discord：リアルタイムでの質問・議論</div>
+            <div>• Twitter：解法シェア・学習状況共有</div>
+            <div>• ブログ：詳細な解法解説・学習体験談</div>
+            <div>• YouTube：動画での解法説明</div>
+          </div>
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">👨‍🏫 質問しやすい環境：</div>
+            <div>• 初心者向けの質問チャンネル</div>
+            <div>• 優しく教えてくれる先輩たち</div>
+            <div>• 日本語での丁寧なサポート</div>
+            <div></div>
+          </div>
+          <div>
+            <div style="font-weight: 500; margin-bottom: 4px;">🤝 同世代との交流：</div>
+            <div>• 中学生・高校生の参加者多数</div>
+            <div>• オフラインイベントでの実際の交流</div>
+            <div>• 一緒に成長できる仲間作り</div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </foreignObject>
+  </g>
+  
+  <!-- Bottom message -->
+  <g transform="translate(50, 720)">
+    <text x="0" y="0" style="font: 500 12px Inter, sans-serif; fill: #059669;">
+      🌟 これらの特徴が組み合わさることで、中学生が無理なく着実に成長できる最適な環境が整っている
+    </text>
+  </g>
+</svg>
