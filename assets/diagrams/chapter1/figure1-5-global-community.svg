@@ -1,103 +1,121 @@
-<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="figure1-5-title" aria-describedby="figure1-5-desc">
-  <title id="figure1-5-title">図1-5：競技プログラミングのグローバルコミュニティ</title>
-  <desc id="figure1-5-desc">世界中のプログラマーが参加する競技プログラミングコミュニティの多様性を示す図</desc>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" 
+     style="max-width: 100%; height: auto;">
   
-  <!-- 背景 -->
-  <rect width="800" height="500" fill="#f8fafc"/>
-  
-  <!-- タイトル -->
-  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">
-    競技プログラミングのグローバルコミュニティ
-  </text>
-  
-  <!-- 地球アイコンと説明 -->
-  <circle cx="400" cy="80" r="20" fill="#3b82f6"/>
-  <text x="400" y="87" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white">🌍</text>
-  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1f2937">
-    世界中のプログラマーが参加
-  </text>
-  
-  <!-- 接続線 -->
-  <path d="M 350 120 L 200 160" stroke="#6b7280" stroke-width="2"/>
-  <path d="M 400 120 L 400 160" stroke="#6b7280" stroke-width="2"/>
-  <path d="M 450 120 L 600 160" stroke="#6b7280" stroke-width="2"/>
-  
-  <!-- 日本のボックス -->
-  <g>
-    <rect x="80" y="170" width="240" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
-    <text x="200" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#92400e">
-      🇯🇵 日本
-    </text>
-    <text x="200" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">
-      AtCoder
-    </text>
-    
-    <!-- 参加者リスト -->
-    <text x="100" y="240" font-family="Arial, sans-serif" font-size="14" fill="#451a03">👦 中学生</text>
-    <text x="100" y="260" font-family="Arial, sans-serif" font-size="14" fill="#451a03">👧 高校生</text>
-    <text x="100" y="280" font-family="Arial, sans-serif" font-size="14" fill="#451a03">👨‍🎓 大学生</text>
-  </g>
-  
-  <!-- アメリカのボックス -->
-  <g>
-    <rect x="280" y="170" width="240" height="140" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
-    <text x="400" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#166534">
-      🇺🇸 アメリカ
-    </text>
-    <text x="400" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">
-      Codeforces
-    </text>
-    
-    <!-- 参加者リスト -->
-    <text x="300" y="240" font-family="Arial, sans-serif" font-size="14" fill="#14532d">👨‍🎓 大学生</text>
-    <text x="300" y="260" font-family="Arial, sans-serif" font-size="14" fill="#14532d">👩‍🎓 大学院生</text>
-    <text x="300" y="280" font-family="Arial, sans-serif" font-size="14" fill="#14532d">👨‍💼 社会人</text>
-  </g>
-  
-  <!-- ロシアのボックス -->
-  <g>
-    <rect x="480" y="170" width="240" height="140" rx="8" fill="#e0e7ff" stroke="#3b82f6" stroke-width="2"/>
-    <text x="600" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1e40af">
-      🇷🇺 ロシア
-    </text>
-    <text x="600" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">
-      Codeforces
-    </text>
-    
-    <!-- 参加者リスト -->
-    <text x="500" y="240" font-family="Arial, sans-serif" font-size="14" fill="#1e3a8a">👨‍💼 社会人</text>
-    <text x="500" y="260" font-family="Arial, sans-serif" font-size="14" fill="#1e3a8a">👩‍🔬 研究者</text>
-    <text x="500" y="280" font-family="Arial, sans-serif" font-size="14" fill="#1e3a8a">🚀 起業家</text>
-  </g>
-  
-  <!-- 矢印定義 -->
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    <style>
+      .bg { fill: var(--svg-bg); }
+      .bg-alt { fill: var(--svg-bg-alt); }
+      .text { fill: var(--svg-text); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+      .text-sm { font-size: 12px; }
+      .text-md { font-size: 14px; font-weight: 500; }
+      .text-lg { font-size: 16px; font-weight: 600; }
+      .border { stroke: var(--svg-border); fill: none; stroke-width: 1; }
+      .primary { fill: var(--svg-primary); }
+      .primary-stroke { stroke: var(--svg-primary); stroke-width: 2; }
+      .success { fill: var(--svg-success); }
+      .warning { fill: var(--svg-warning); }
+      .region-box { fill: var(--svg-bg-alt); stroke: var(--svg-primary); stroke-width: 2; rx: 4; }
+      .connection-line { stroke: var(--svg-primary); stroke-width: 1.5; stroke-dasharray: 5,5; }
+      .flag-bg { fill: var(--svg-bg); stroke: var(--svg-border); stroke-width: 1; rx: 2; }
+    </style>
+    
+    <!-- Arrow marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="3" 
+            markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" class="primary"/>
     </marker>
   </defs>
   
-  <!-- 相互接続の矢印 -->
-  <path d="M 320 240 L 280 240" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <path d="M 280 260 L 320 260" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Background -->
+  <rect width="100%" height="100%" class="bg"/>
   
-  <path d="M 520 240 L 480 240" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
-  <path d="M 480 260 L 520 260" stroke="#6b7280" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="text text-lg">競技プログラミングのグローバルコミュニティ</text>
   
-  <!-- コミュニティの特徴 -->
-  <g>
-    <rect x="80" y="340" width="640" height="120" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <!-- Global participation header -->
+  <text x="400" y="70" text-anchor="middle" class="text text-md primary">🌍 世界中のプログラマーが参加</text>
+  
+  <!-- Japan Region -->
+  <g class="japan-region">
+    <!-- Flag and platform -->
+    <rect x="60" y="100" width="80" height="20" class="flag-bg"/>
+    <text x="100" y="115" text-anchor="middle" class="text text-sm">🇯🇵 日本</text>
+    <text x="100" y="140" text-anchor="middle" class="text text-sm">AtCoder</text>
     
-    <text x="120" y="370" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0c4a6e">
-      💬 オンラインで解法を議論！
-    </text>
-    
-    <text x="120" y="400" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0c4a6e">
-      📚 お互いの知識をシェア！
-    </text>
-    
-    <text x="120" y="430" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0c4a6e">
-      🤝 年齢や国境を超えた友情！
-    </text>
+    <!-- Participants box -->
+    <rect x="50" y="160" width="140" height="120" class="region-box"/>
+    <text x="70" y="185" class="text text-sm">👦 中学生</text>
+    <text x="70" y="205" class="text text-sm">👧 高校生</text>
+    <text x="70" y="225" class="text text-sm">👨‍🎓 大学生</text>
+    <text x="70" y="245" class="text text-sm">👨‍💼 社会人</text>
+    <text x="70" y="265" class="text text-sm">🧑‍🔬 研究者</text>
   </g>
+  
+  <!-- USA Region -->
+  <g class="usa-region">
+    <!-- Flag and platform -->
+    <rect x="280" y="100" width="80" height="20" class="flag-bg"/>
+    <text x="320" y="115" text-anchor="middle" class="text text-sm">🇺🇸 アメリカ</text>
+    <text x="320" y="140" text-anchor="middle" class="text text-sm">Codeforces</text>
+    
+    <!-- Participants box -->
+    <rect x="270" y="160" width="140" height="120" class="region-box"/>
+    <text x="290" y="185" class="text text-sm">👨‍🎓 大学生</text>
+    <text x="290" y="205" class="text text-sm">👩‍🎓 大学院生</text>
+    <text x="290" y="225" class="text text-sm">👨‍💼 社会人</text>
+    <text x="290" y="245" class="text text-sm">🧑‍💼 エンジニア</text>
+    <text x="290" y="265" class="text text-sm">🚀 起業家</text>
+  </g>
+  
+  <!-- Russia Region -->
+  <g class="russia-region">
+    <!-- Flag and platform -->
+    <rect x="500" y="100" width="80" height="20" class="flag-bg"/>
+    <text x="540" y="115" text-anchor="middle" class="text text-sm">🇷🇺 ロシア</text>
+    <text x="540" y="140" text-anchor="middle" class="text text-sm">Codeforces</text>
+    
+    <!-- Participants box -->
+    <rect x="490" y="160" width="140" height="120" class="region-box"/>
+    <text x="510" y="185" class="text text-sm">👨‍💼 社会人</text>
+    <text x="510" y="205" class="text text-sm">👩‍🔬 研究者</text>
+    <text x="510" y="225" class="text text-sm">🚀 起業家</text>
+    <text x="510" y="245" class="text text-sm">🧑‍🏫 教授</text>
+    <text x="510" y="265" class="text text-sm">🏆 チャンピオン</text>
+  </g>
+  
+  <!-- Connection lines between regions -->
+  <line x1="190" y1="220" x2="270" y2="220" class="connection-line"/>
+  <line x1="410" y1="220" x2="490" y2="220" class="connection-line"/>
+  
+  <!-- Additional regions indicator -->
+  <g class="other-regions">
+    <rect x="660" y="160" width="100" height="120" class="region-box"/>
+    <text x="710" y="185" text-anchor="middle" class="text text-sm">🌏 その他</text>
+    <text x="710" y="205" text-anchor="middle" class="text text-sm">アジア</text>
+    <text x="710" y="225" text-anchor="middle" class="text text-sm">ヨーロッパ</text>
+    <text x="710" y="245" text-anchor="middle" class="text text-sm">南米</text>
+    <text x="710" y="265" text-anchor="middle" class="text text-sm">アフリカ</text>
+  </g>
+  
+  <line x1="630" y1="220" x2="660" y2="220" class="connection-line"/>
+  
+  <!-- Community benefits -->
+  <g class="benefits">
+    <rect x="150" y="330" width="500" height="120" class="bg-alt" rx="8"/>
+    <text x="400" y="360" text-anchor="middle" class="text text-md primary">コミュニティの力</text>
+    
+    <text x="180" y="385" class="text text-sm">💬 オンラインで解法を議論！</text>
+    <text x="180" y="405" class="text text-sm">📚 お互いの知識をシェア！</text>
+    <text x="180" y="425" class="text text-sm">🤝 年齢や国境を超えた友情！</text>
+    <text x="180" y="445" class="text text-sm">🌟 互いに刺激し合って成長！</text>
+  </g>
+  
+  <!-- Connecting lines to benefits -->
+  <path d="M 120 280 Q 120 300 180 330" class="connection-line" fill="none"/>
+  <path d="M 340 280 Q 340 300 400 330" class="connection-line" fill="none"/>
+  <path d="M 560 280 Q 560 300 620 330" class="connection-line" fill="none"/>
+  
+  <!-- Accessibility -->
+  <title>競技プログラミングのグローバルコミュニティ</title>
+  <desc>世界中の競技プログラマーが参加する国際的なコミュニティの構成と交流を示す図表</desc>
 </svg>

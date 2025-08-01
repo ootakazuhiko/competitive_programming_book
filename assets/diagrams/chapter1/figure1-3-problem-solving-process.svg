@@ -1,115 +1,97 @@
-<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="figure1-3-title" aria-describedby="figure1-3-desc">
-  <title id="figure1-3-title">図1-3：問題解決の思考プロセス（詳細版）</title>
-  <desc id="figure1-3-desc">競技プログラミングの問題解決における3段階のプロセスを示す図：Step1問題理解、Step2解法考察、Step3プログラム実装</desc>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" 
+     style="max-width: 100%; height: auto;">
   
-  <!-- 背景 -->
-  <rect width="800" height="600" fill="#f8fafc"/>
-  
-  <!-- タイトル -->
-  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">
-    問題解決の思考プロセス（詳細版）
-  </text>
-  
-  <!-- Step 1: 問題を理解する -->
-  <g>
-    <!-- アイコンと見出し -->
-    <text x="60" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0f172a">
-      📋 Step 1: 問題を理解する
-    </text>
-    
-    <!-- Step1のボックス -->
-    <rect x="40" y="90" width="720" height="120" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
-    
-    <!-- Step1の内容 -->
-    <text x="60" y="115" font-family="Arial, sans-serif" font-size="14" fill="#334155">
-      入力：1から100までの数
-    </text>
-    <text x="60" y="135" font-family="Arial, sans-serif" font-size="14" fill="#334155">
-      条件：3で割り切れる数のみ選ぶ
-    </text>
-    <text x="60" y="155" font-family="Arial, sans-serif" font-size="14" fill="#334155">
-      出力：選んだ数の合計
-    </text>
-    
-    <text x="60" y="180" font-family="Arial, sans-serif" font-size="14" fill="#64748b">
-      具体例：3, 6, 9, 12, ..., 96, 99
-    </text>
-    
-    <text x="60" y="200" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">
-      これらを全部足した値を求めればいい！
-    </text>
-  </g>
-  
-  <!-- Step 2: 解法を考える -->
-  <g>
-    <!-- アイコンと見出し -->
-    <text x="60" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0f172a">
-      💡 Step 2: 解法を考える
-    </text>
-    
-    <!-- Step2のボックス -->
-    <rect x="40" y="260" width="720" height="120" rx="8" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="2"/>
-    
-    <!-- 方法1 -->
-    <text x="60" y="285" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#065f46">
-      🔍 方法1: 全部チェック
-    </text>
-    <text x="80" y="305" font-family="Arial, sans-serif" font-size="13" fill="#064e3b">
-      1から100まで順番に見て、3で割り切れるかチェック
-    </text>
-    
-    <!-- 方法2 -->
-    <text x="60" y="330" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#065f46">
-      🧮 方法2: 数学的に計算
-    </text>
-    <text x="80" y="350" font-family="Arial, sans-serif" font-size="13" fill="#064e3b">
-      3, 6, 9, ... 99 = 3×(1+2+3+...+33)
-    </text>
-    
-    <text x="60" y="375" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937">
-      💭 どちらでも正解！まずは方法1で実装してみよう
-    </text>
-  </g>
-  
-  <!-- Step 3: プログラムで実現 -->
-  <g>
-    <!-- アイコンと見出し -->
-    <text x="60" y="420" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0f172a">
-      ⌨️ Step 3: プログラムで実現
-    </text>
-    
-    <!-- Step3のボックス -->
-    <rect x="40" y="430" width="720" height="140" rx="8" fill="#f0f9ff" stroke="#7dd3fc" stroke-width="2"/>
-    
-    <!-- コード -->
-    <rect x="60" y="450" width="680" height="90" rx="4" fill="#1e293b" stroke="#475569" stroke-width="1"/>
-    
-    <text x="80" y="470" font-family="Monaco, monospace" font-size="12" fill="#f1f5f9">total = 0</text>
-    <text x="80" y="485" font-family="Monaco, monospace" font-size="12" fill="#f1f5f9">for i in range(1, 101):</text>
-    <text x="100" y="500" font-family="Monaco, monospace" font-size="12" fill="#f1f5f9">if i % 3 == 0:</text>
-    <text x="300" y="500" font-family="Monaco, monospace" font-size="12" fill="#94a3b8"># 3で割り切れるか？</text>
-    <text x="120" y="515" font-family="Monaco, monospace" font-size="12" fill="#f1f5f9">total += i</text>
-    <text x="250" y="515" font-family="Monaco, monospace" font-size="12" fill="#94a3b8"># 合計に足す</text>
-    <text x="80" y="530" font-family="Monaco, monospace" font-size="12" fill="#f1f5f9">print(total)</text>
-    <text x="250" y="530" font-family="Monaco, monospace" font-size="12" fill="#94a3b8"># 答えを出力</text>
-    
-    <!-- 実行結果 -->
-    <text x="60" y="560" font-family="Arial, sans-serif" font-size="14" fill="#0f172a">
-      実行結果: 1683
-    </text>
-    <text x="60" y="580" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#16a34a">
-      ✅ 正解！
-    </text>
-  </g>
-  
-  <!-- 矢印定義 -->
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    <style>
+      .bg { fill: var(--svg-bg); }
+      .bg-alt { fill: var(--svg-bg-alt); }
+      .text { fill: var(--svg-text); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+      .text-sm { font-size: 12px; }
+      .text-md { font-size: 14px; font-weight: 500; }
+      .text-lg { font-size: 16px; font-weight: 600; }
+      .border { stroke: var(--svg-border); fill: none; stroke-width: 1; }
+      .primary { fill: var(--svg-primary); }
+      .primary-stroke { stroke: var(--svg-primary); stroke-width: 2; }
+      .success { fill: var(--svg-success); }
+      .warning { fill: var(--svg-warning); }
+      .step-box { fill: var(--svg-bg-alt); stroke: var(--svg-primary); stroke-width: 2; rx: 4; }
+      .code-box { fill: var(--svg-bg); stroke: var(--svg-border); stroke-width: 1; rx: 4; }
+      .mono { font-family: 'SF Mono', 'Monaco', 'Consolas', monospace; font-size: 11px; }
+    </style>
+    
+    <!-- Arrow marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="3" 
+            markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" class="primary"/>
     </marker>
   </defs>
   
-  <!-- Step間の矢印 -->
-  <path d="M 400 210 L 400 240" stroke="#6b7280" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <path d="M 400 380 L 400 410" stroke="#6b7280" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <!-- Background -->
+  <rect width="100%" height="100%" class="bg"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="text text-lg">問題解決の思考プロセス（詳細版）</text>
+  
+  <!-- Step 1: Problem Understanding -->
+  <g class="step1">
+    <!-- Step label -->
+    <text x="80" y="75" class="text text-md primary">📋 Step 1: 問題を理解する</text>
+    
+    <!-- Content box -->
+    <rect x="50" y="85" width="320" height="140" class="step-box"/>
+    
+    <!-- Content text -->
+    <text x="70" y="110" class="text text-sm">入力：1から100までの数</text>
+    <text x="70" y="130" class="text text-sm">条件：3で割り切れる数のみ選ぶ</text>
+    <text x="70" y="150" class="text text-sm">出力：選んだ数の合計</text>
+    
+    <text x="70" y="180" class="text text-sm">具体例：3, 6, 9, 12, ..., 96, 99</text>
+    <text x="70" y="200" class="text text-sm">↓</text>
+    <text x="70" y="220" class="text text-sm success">これらを全部足した値を求めればいい！</text>
+  </g>
+  
+  <!-- Step 2: Solution Planning -->
+  <g class="step2">
+    <!-- Step label -->
+    <text x="480" y="75" class="text text-md primary">💡 Step 2: 解法を考える</text>
+    
+    <!-- Content box -->
+    <rect x="430" y="85" width="320" height="140" class="step-box"/>
+    
+    <!-- Content text -->
+    <text x="450" y="110" class="text text-sm">🔍 方法1: 全部チェック</text>
+    <text x="450" y="130" class="text text-sm">1から100まで順番に見て、3で割り切れるかチェック</text>
+    
+    <text x="450" y="160" class="text text-sm">🧮 方法2: 数学的に計算</text>
+    <text x="450" y="180" class="text text-sm mono">3, 6, 9, ... 99 = 3×(1+2+3+...+33)</text>
+    
+    <text x="450" y="210" class="text text-sm warning">💭 どちらでも正解！まずは方法1で実装してみよう</text>
+  </g>
+  
+  <!-- Step 3: Implementation -->
+  <g class="step3">
+    <!-- Step label -->
+    <text x="280" y="280" class="text text-md primary">⌨️ Step 3: プログラムで実現</text>
+    
+    <!-- Content box -->
+    <rect x="150" y="290" width="500" height="180" class="step-box"/>
+    
+    <!-- Code content -->
+    <text x="170" y="320" class="text mono">total = 0</text>
+    <text x="170" y="340" class="text mono">for i in range(1, 101):</text>
+    <text x="190" y="360" class="text mono">if i % 3 == 0:  # 3で割り切れるか？</text>
+    <text x="210" y="380" class="text mono">total += i  # 合計に足す</text>
+    <text x="170" y="400" class="text mono">print(total)        # 答えを出力</text>
+    
+    <text x="170" y="430" class="text text-sm">実行結果: 1683</text>
+    <text x="170" y="450" class="text text-sm success">✅ 正解！</text>
+  </g>
+  
+  <!-- Connecting arrows -->
+  <line x1="370" y1="155" x2="430" y2="155" class="primary-stroke" marker-end="url(#arrow)"/>
+  <line x1="400" y1="225" x2="400" y2="290" class="primary-stroke" marker-end="url(#arrow)"/>
+  
+  <!-- Accessibility -->
+  <title>問題解決の思考プロセス</title>
+  <desc>競技プログラミングにおける問題解決の3段階プロセス：問題理解、解法検討、実装の流れを示す図表</desc>
 </svg>

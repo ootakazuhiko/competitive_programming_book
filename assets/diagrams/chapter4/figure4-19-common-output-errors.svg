@@ -1,0 +1,91 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --success-color: #27ae60;
+        --warning-color: #f39c12;
+        --background-light: #ecf0f1;
+        --text-dark: #2c3e50;
+        --border-color: #bdc3c7;
+      }
+      
+      .container { font-family: 'Inter', sans-serif; }
+      .title { font-size: 18px; font-weight: 600; fill: var(--primary-color); }
+      .subtitle { font-size: 14px; font-weight: 500; fill: var(--text-dark); }
+      .text { font-size: 12px; fill: var(--text-dark); }
+      .code { font-family: 'Consolas', 'Monaco', monospace; font-size: 11px; fill: var(--text-dark); }
+      .error-box { fill: #fff5f5; stroke: var(--accent-color); stroke-width: 2; rx: 8; }
+      .checklist-box { fill: #f0fff0; stroke: var(--success-color); stroke-width: 2; rx: 8; }
+      .error-text { fill: var(--accent-color); font-weight: 500; }
+      .success-text { fill: var(--success-color); font-weight: 500; }
+    </style>
+  </defs>
+  
+  <title>図4-19：出力の典型的な間違いパターン</title>
+  <desc>競技プログラミングでよくある出力エラーパターンとその対策を示した図</desc>
+  
+  <g class="container">
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" class="title">図4-19：出力の典型的な間違いパターン</text>
+    
+    <!-- Error 1: Extra text -->
+    <rect x="50" y="60" width="350" height="100" class="error-box"/>
+    <text x="70" y="85" class="subtitle error-text">❌ ミス1: 余分な文字・説明の出力</text>
+    <text x="70" y="110" class="code"># 問題：「答えを出力しなさい」</text>
+    <text x="70" y="130" class="code">answer = 42</text>
+    <text x="70" y="150" class="code error-text">print("答えは", answer)    # ❌ 余分な説明</text>
+    
+    <rect x="420" y="60" width="330" height="100" class="checklist-box"/>
+    <text x="440" y="85" class="subtitle success-text">✅ 正しい出力</text>
+    <text x="440" y="110" class="code">answer = 42</text>
+    <text x="440" y="130" class="code success-text">print(answer)             # ✅ 正解</text>
+    <text x="440" y="150" class="text">問題文で指定された形式通りに出力</text>
+    
+    <!-- Error 2: Newline control -->
+    <rect x="50" y="180" width="350" height="100" class="error-box"/>
+    <text x="70" y="205" class="subtitle error-text">❌ ミス2: 改行の制御ミス</text>
+    <text x="70" y="230" class="code"># 問題：「a bを1行で出力」</text>
+    <text x="70" y="250" class="code">a, b = 1, 2</text>
+    <text x="70" y="270" class="code error-text">print(a); print(b)  # ❌ 2行になってしまう</text>
+    
+    <rect x="420" y="180" width="330" height="100" class="checklist-box"/>
+    <text x="440" y="205" class="subtitle success-text">✅ 正しい出力</text>
+    <text x="440" y="230" class="code">a, b = 1, 2</text>
+    <text x="440" y="250" class="code success-text">print(a, b)               # ✅ 正解: "1 2"</text>
+    <text x="440" y="270" class="text">1行で出力される</text>
+    
+    <!-- Error 3: Case sensitivity -->
+    <rect x="50" y="300" width="350" height="100" class="error-box"/>
+    <text x="70" y="325" class="subtitle error-text">❌ ミス3: 大文字小文字の間違い</text>
+    <text x="70" y="350" class="code"># 問題文で"Yes"と指定されている場合</text>
+    <text x="70" y="370" class="code error-text">print("yes")          # ❌ 小文字</text>
+    <text x="70" y="390" class="code error-text">print("YES")          # ❌ 大文字</text>
+    
+    <rect x="420" y="300" width="330" height="100" class="checklist-box"/>
+    <text x="440" y="325" class="subtitle success-text">✅ 正しい出力</text>
+    <text x="440" y="350" class="code success-text">print("Yes")          # ✅ 正解</text>
+    <text x="440" y="370" class="text">問題文と完全に一致させる</text>
+    <text x="440" y="390" class="text">大文字小文字を正確に確認</text>
+    
+    <!-- Error 4: Separator mistakes -->
+    <rect x="50" y="420" width="350" height="100" class="error-box"/>
+    <text x="70" y="445" class="subtitle error-text">❌ ミス4: 区切り文字の間違い</text>
+    <text x="70" y="470" class="code"># 問題：「カンマ区切りで出力」</text>
+    <text x="70" y="490" class="code">numbers = [1, 2, 3]</text>
+    <text x="70" y="510" class="code error-text">print(*numbers)  # ❌ "1 2 3"（空白区切り）</text>
+    
+    <rect x="420" y="420" width="330" height="100" class="checklist-box"/>
+    <text x="440" y="445" class="subtitle success-text">✅ 正しい出力</text>
+    <text x="440" y="470" class="code">numbers = [1, 2, 3]</text>
+    <text x="440" y="490" class="code success-text">print(','.join(map(str, numbers)))</text>
+    <text x="440" y="510" class="text">結果: "1,2,3"（カンマ区切り）</text>
+    
+    <!-- Checklist -->
+    <rect x="50" y="540" width="700" height="50" class="checklist-box"/>
+    <text x="70" y="565" class="subtitle">🛡️ 出力ミス防止チェックリスト：</text>
+    <text x="90" y="585" class="text">1. サンプル出力を文字単位で確認　2. 余計な説明文字がないか確認　3. 改行・スペース・区切り文字が正確か確認　4. 大文字小文字が問題文と一致するか確認</text>
+  </g>
+</svg>

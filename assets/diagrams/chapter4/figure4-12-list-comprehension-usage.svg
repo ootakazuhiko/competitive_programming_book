@@ -1,146 +1,67 @@
-<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
-  <title>図4-12：リスト内包表記の活用</title>
-  <desc>基本的なfor文からリスト内包表記への変換と活用方法を示す図</desc>
-  
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style>
-      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
-      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
-      .code-text { font: 500 11px 'Monaco', 'Menlo', monospace; fill: #4B5563; }
-      .comment-text { font: 500 10px Inter, sans-serif; fill: #6B7280; }
-      .explanation-text { font: 600 11px Inter, sans-serif; }
-      .warning-text { font: 600 11px Inter, sans-serif; fill: #DC2626; }
-      .success-text { font: 600 11px Inter, sans-serif; fill: #059669; }
-      .emoji { font: 400 18px Inter, sans-serif; }
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --success-color: #27ae60;
+        --warning-color: #f39c12;
+        --background-light: #ecf0f1;
+        --text-dark: #2c3e50;
+        --border-color: #bdc3c7;
+      }
       
-      .verbose-section { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
-      .concise-section { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
-      .advanced-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
-      .note-section { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
-      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
-      .arrow { stroke: #10B981; stroke-width: 3; fill: none; }
+      .container { font-family: 'Inter', sans-serif; }
+      .title { font-size: 18px; font-weight: 600; fill: var(--primary-color); }
+      .subtitle { font-size: 14px; font-weight: 500; fill: var(--text-dark); }
+      .text { font-size: 12px; fill: var(--text-dark); }
+      .code { font-family: 'Consolas', 'Monaco', monospace; font-size: 11px; fill: var(--text-dark); }
+      .verbose-box { fill: #fff5f5; stroke: var(--accent-color); stroke-width: 2; rx: 8; }
+      .concise-box { fill: #f0fff0; stroke: var(--success-color); stroke-width: 2; rx: 8; }
+      .advanced-box { fill: #f0f8ff; stroke: var(--secondary-color); stroke-width: 2; rx: 8; }
+      .info-box { fill: #fff8f0; stroke: var(--warning-color); stroke-width: 2; rx: 8; }
     </style>
-    
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L12,3 z" fill="#10B981"/>
-    </marker>
   </defs>
   
-  <!-- Background -->
-  <rect width="800" height="650" fill="#FFFFFF"/>
+  <title>図4-12：リスト内包表記の活用</title>
+  <desc>リスト内包表記を使用した効率的なコード記述方法を示した図</desc>
   
-  <!-- Title -->
-  <text x="400" y="32" text-anchor="middle" class="title">図4-12：リスト内包表記の活用</text>
-  
-  <!-- Verbose Section -->
-  <g id="verbose-section">
-    <rect x="50" y="60" width="330" height="140" rx="12" class="verbose-section"/>
-    <text x="70" y="85" class="emoji">❌</text>
-    <text x="100" y="85" class="warning-text">冗長な書き方</text>
+  <g class="container">
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" class="title">図4-12：リスト内包表記の活用</text>
     
-    <g transform="translate(70, 100)">
-      <rect x="0" y="0" width="180" height="15" rx="4" class="code-box"/>
-      <text x="5" y="11" class="code-text">n = int(input())</text>
-      
-      <rect x="0" y="20" width="120" height="15" rx="4" class="code-box"/>
-      <text x="5" y="31" class="code-text">numbers = []</text>
-      
-      <rect x="0" y="40" width="180" height="15" rx="4" class="code-box"/>
-      <text x="5" y="51" class="code-text">for i in range(n):</text>
-      
-      <rect x="0" y="60" width="280" height="15" rx="4" class="code-box"/>
-      <text x="5" y="71" class="code-text">    numbers.append(int(input()))</text>
-      
-      <text x="0" y="95" class="comment-text">• 4行必要</text>
-      <text x="0" y="110" class="comment-text">• 一時変数が必要</text>
-      <text x="0" y="125" class="comment-text">• 処理が分散している</text>
-    </g>
+    <!-- Subtitle -->
+    <text x="400" y="55" text-anchor="middle" class="subtitle">基本形 → 内包表記への変換</text>
+    
+    <!-- Verbose way -->
+    <rect x="50" y="80" width="700" height="100" class="verbose-box"/>
+    <text x="70" y="105" class="subtitle">❌ 冗長な書き方：</text>
+    <text x="70" y="130" class="code">n = int(input())</text>
+    <text x="70" y="150" class="code">numbers = []</text>
+    <text x="70" y="170" class="code">for i in range(n):</text>
+    <text x="90" y="190" class="code">numbers.append(int(input()))</text>
+    
+    <!-- Concise way -->
+    <rect x="50" y="200" width="700" height="80" class="concise-box"/>
+    <text x="70" y="225" class="subtitle">✅ 内包表記（推奨）：</text>
+    <text x="70" y="250" class="code">n = int(input())</text>
+    <text x="70" y="270" class="code">numbers = [int(input()) for _ in range(n)]</text>
+    
+    <!-- Advanced examples -->
+    <rect x="50" y="300" width="700" height="140" class="advanced-box"/>
+    <text x="70" y="325" class="subtitle">さらなる応用例：</text>
+    <text x="70" y="350" class="code"># 条件付きの読み込み</text>
+    <text x="70" y="370" class="code">n = int(input())</text>
+    <text x="70" y="390" class="code">positive_nums = [int(input()) for _ in range(n) if int(input()) > 0]</text>
+    <text x="70" y="420" class="code"># 複数行の座標データ / points = [list(map(int, input().split())) for _ in range(n)]</text>
+    
+    <!-- Underscore explanation -->
+    <rect x="50" y="460" width="700" height="120" class="info-box"/>
+    <text x="70" y="485" class="subtitle">💡 "_"（アンダースコア）の意味：</text>
+    <text x="90" y="510" class="text">• 変数名として"_"を使うのは「値を使わない」という慣習</text>
+    <text x="90" y="530" class="text">• range(n)のカウンタは必要だが、実際の値は使わない場合</text>
+    <text x="90" y="550" class="text">• "i"でも動作するが、"_"の方がPython的で推奨される</text>
+    <text x="90" y="570" class="text">• より簡潔で読みやすいコードになる</text>
   </g>
-  
-  <!-- Arrow -->
-  <path d="M400 130 L450 130" class="arrow" marker-end="url(#arrow)"/>
-  
-  <!-- Concise Section -->
-  <g id="concise-section">
-    <rect x="470" y="60" width="280" height="140" rx="12" class="concise-section"/>
-    <text x="490" y="85" class="emoji">✅</text>
-    <text x="520" y="85" class="success-text">内包表記（推奨）</text>
-    
-    <g transform="translate(490, 100)">
-      <rect x="0" y="0" width="180" height="15" rx="4" class="code-box"/>
-      <text x="5" y="11" class="code-text">n = int(input())</text>
-      
-      <rect x="0" y="20" width="240" height="15" rx="4" class="code-box"/>
-      <text x="5" y="31" class="code-text">numbers = [int(input()) for _ in range(n)]</text>
-      
-      <text x="0" y="55" class="comment-text">• 2行で完結</text>
-      <text x="0" y="70" class="comment-text">• 一時変数不要</text>
-      <text x="0" y="85" class="comment-text">• 処理が集約</text>
-      <text x="0" y="100" class="comment-text">• Pythonらしい書き方</text>
-    </g>
-  </g>
-  
-  <!-- Advanced Examples Section -->
-  <g id="advanced-section">
-    <rect x="50" y="220" width="700" height="180" rx="12" class="advanced-section"/>
-    <text x="70" y="245" class="emoji">⚡</text>
-    <text x="100" y="245" class="explanation-text" fill="#1E40AF">さらなる応用例</text>
-    
-    <!-- Example 1: Conditional -->
-    <g transform="translate(70, 260)">
-      <text x="0" y="15" class="comment-text">条件付きの読み込み：</text>
-      <rect x="0" y="20" width="180" height="15" rx="4" class="code-box"/>
-      <text x="5" y="31" class="code-text">n = int(input())</text>
-      <rect x="0" y="40" width="420" height="15" rx="4" class="code-box"/>
-      <text x="5" y="51" class="code-text">positive_nums = [x for x in [int(input()) for _ in range(n)] if x > 0]</text>
-      <text x="0" y="70" class="comment-text">正の数のみをリストに格納</text>
-    </g>
-    
-    <!-- Example 2: 2D data -->
-    <g transform="translate(70, 340)">
-      <text x="0" y="15" class="comment-text">複数行の座標データ：</text>
-      <rect x="0" y="20" width="180" height="15" rx="4" class="code-box"/>
-      <text x="5" y="31" class="code-text">n = int(input())</text>
-      <rect x="0" y="40" width="460" height="15" rx="4" class="code-box"/>
-      <text x="5" y="51" class="code-text">points = [list(map(int, input().split())) for _ in range(n)]</text>
-      <text x="0" y="70" class="comment-text">結果例：points = [[1, 2], [3, 4], [5, 6]]</text>
-    </g>
-  </g>
-  
-  <!-- Underscore Explanation -->
-  <g id="note-section">
-    <rect x="50" y="420" width="700" height="100" rx="12" class="note-section"/>
-    <text x="70" y="445" class="emoji">💡</text>
-    <text x="100" y="445" class="explanation-text" fill="#D97706">"_"（アンダースコア）の意味</text>
-    
-    <g transform="translate(70, 465)">
-      <circle cx="8" cy="8" r="4" fill="#22C55E"/>
-      <text x="20" y="12" class="comment-text">変数名として"_"を使うのは「値を使わない」という慣習</text>
-      
-      <circle cx="8" cy="28" r="4" fill="#22C55E"/>
-      <text x="20" y="32" class="comment-text">range(n)のカウンタは必要だが、実際の値は使わない場合</text>
-      
-      <circle cx="8" cy="48" r="4" fill="#22C55E"/>
-      <text x="20" y="52" class="comment-text">"i"でも動作するが、"_"の方がPython的で推奨される</text>
-      
-      <rect x="420" y="-10" width="250" height="75" rx="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1"/>
-      <text x="430" y="10" class="explanation-text" fill="#D97706">比較例：</text>
-      <text x="430" y="25" class="code-text">for i in range(n):  # iは使わない</text>
-      <text x="430" y="40" class="code-text">for _ in range(n):  # 使わないことが明確</text>
-      <text x="430" y="55" class="comment-text">下の方が意図が伝わりやすい</text>
-    </g>
-  </g>
-  
-  <!-- Benefits Section -->
-  <g id="benefits">
-    <rect x="100" y="540" width="600" height="80" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
-    <text x="120" y="565" class="emoji">🎯</text>
-    <text x="150" y="565" class="explanation-text" fill="#0C4A6E">リスト内包表記の利点</text>
-    
-    <g transform="translate(120, 580)">
-      <text x="0" y="15" class="comment-text" fill="#0C4A6E">• コードが短くて読みやすい　• Pythonらしい書き方　• 実行速度が速い</text>
-      <text x="0" y="30" class="comment-text" fill="#0C4A6E">• 一時変数が不要で名前空間を汚さない　• 処理の意図が明確</text>
-    </g>
-  </g>
-  
 </svg>

@@ -1,135 +1,130 @@
-<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="figure1-9-title" aria-describedby="figure1-9-desc">
-  <title id="figure1-9-title">図1-9：解法の多様性による創造性の育成</title>
-  <desc id="figure1-9-desc">同じ問題に対する複数の異なる解法アプローチを示し、創造性の育成を表現した図</desc>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" 
+     style="max-width: 100%; height: auto;">
   
-  <!-- 背景 -->
-  <rect width="800" height="700" fill="#f8fafc"/>
-  
-  <!-- タイトル -->
-  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">
-    解法の多様性による創造性の育成
-  </text>
-  
-  <!-- 問題設定 -->
-  <text x="400" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
-    同じ問題「1から100の和を求める」でも...
-  </text>
-  
-  <!-- 解法A: 直接計算アプローチ -->
-  <g>
-    <text x="40" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">
-      解法A: 直接計算アプローチ
-    </text>
-    
-    <rect x="40" y="110" width="350" height="130" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
-    
-    <!-- コード -->
-    <rect x="60" y="130" width="310" height="70" rx="4" fill="#1e293b"/>
-    <text x="70" y="150" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">total = 0</text>
-    <text x="70" y="165" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">for i in range(1, 101):</text>
-    <text x="90" y="180" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">total += i</text>
-    <text x="70" y="195" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">print(total)</text>
-    
-    <!-- 特徴 -->
-    <text x="60" y="220" font-family="Arial, sans-serif" font-size="12" fill="#7f1d1d">特徴：確実だけど少し遅い</text>
-    <text x="60" y="235" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#991b1b">思考：基本に忠実、堅実</text>
-  </g>
-  
-  <!-- 解法B: 数学的アプローチ -->
-  <g>
-    <text x="410" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2563eb">
-      解法B: 数学的アプローチ
-    </text>
-    
-    <rect x="410" y="110" width="350" height="130" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
-    
-    <!-- コード -->
-    <rect x="430" y="130" width="310" height="70" rx="4" fill="#1e293b"/>
-    <text x="440" y="150" font-family="Monaco, monospace" font-size="11" fill="#94a3b8"># ガウスの公式を使用</text>
-    <text x="440" y="165" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">n = 100</text>
-    <text x="440" y="180" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">total = n * (n + 1) // 2</text>
-    <text x="440" y="195" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">print(total)</text>
-    
-    <!-- 特徴 -->
-    <text x="430" y="220" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">特徴：高速で数学的にエレガント</text>
-    <text x="430" y="235" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8">思考：理論活用、効率性重視</text>
-  </g>
-  
-  <!-- 解法C: Pythonらしいアプローチ -->
-  <g>
-    <text x="40" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#16a34a">
-      解法C: Pythonらしいアプローチ
-    </text>
-    
-    <rect x="40" y="290" width="350" height="110" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
-    
-    <!-- コード -->
-    <rect x="60" y="310" width="310" height="50" rx="4" fill="#1e293b"/>
-    <text x="70" y="330" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">total = sum(range(1, 101))</text>
-    <text x="70" y="345" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">print(total)</text>
-    
-    <!-- 特徴 -->
-    <text x="60" y="380" font-family="Arial, sans-serif" font-size="12" fill="#166534">特徴：簡潔で読みやすい</text>
-    <text x="60" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">思考：言語の特性活用、可読性重視</text>
-  </g>
-  
-  <!-- 解法D: 再帰的アプローチ -->
-  <g>
-    <text x="410" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">
-      解法D: 再帰的アプローチ
-    </text>
-    
-    <rect x="410" y="290" width="350" height="110" rx="8" fill="#faf5ff" stroke="#8b5cf6" stroke-width="2"/>
-    
-    <!-- コード -->
-    <rect x="430" y="310" width="310" height="50" rx="4" fill="#1e293b"/>
-    <text x="440" y="330" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">def sum_to_n(n):</text>
-    <text x="460" y="345" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">return 1 if n==1 else n+sum_to_n(n-1)</text>
-    
-    <!-- 特徴 -->
-    <text x="430" y="380" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">特徴：プログラミング的思考</text>
-    <text x="430" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7c2d12">思考：関数型、再帰的発想</text>
-  </g>
-  
-  <!-- 中央の創造性メッセージ -->
-  <g>
-    <ellipse cx="400" cy="480" rx="180" ry="60" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
-    <text x="400" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#92400e">
-      🎨 君だけの解法を見つけよう！
-    </text>
-    <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#78350f">
-      「同じ答えでも、アプローチは無限大」
-    </text>
-  </g>
-  
-  <!-- 創造性の流れを示す矢印 -->
-  <g stroke="#f59e0b" stroke-width="2" fill="none" marker-end="url(#arrowhead-orange)">
-    <path d="M 200 250 Q 400 350 200 450"/>
-    <path d="M 600 250 Q 400 350 600 450"/>
-    <path d="M 200 420 Q 400 350 600 420"/>
-    <path d="M 600 420 Q 400 350 200 420"/>
-  </g>
-  
-  <!-- 創造性の広がりを示すポイント -->
-  <circle cx="150" cy="550" r="4" fill="#f59e0b"/>
-  <circle cx="300" cy="580" r="4" fill="#f59e0b"/>
-  <circle cx="500" cy="580" r="4" fill="#f59e0b"/>
-  <circle cx="650" cy="550" r="4" fill="#f59e0b"/>
-  
-  <text x="400" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-style="italic" fill="#6b7280">
-    さらなる解法の可能性...
-  </text>
-  
-  <!-- 多様性を示すアイコン -->
-  <text x="150" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="20">🔄</text>
-  <text x="300" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="20">💡</text>
-  <text x="500" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="20">⚡</text>
-  <text x="650" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="20">🚀</text>
-  
-  <!-- 矢印定義 -->
   <defs>
-    <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
-    </marker>
+    <style>
+      .bg { fill: var(--svg-bg); }
+      .bg-alt { fill: var(--svg-bg-alt); }
+      .text { fill: var(--svg-text); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+      .text-sm { font-size: 12px; }
+      .text-md { font-size: 14px; font-weight: 500; }
+      .text-lg { font-size: 16px; font-weight: 600; }
+      .border { stroke: var(--svg-border); fill: none; stroke-width: 1; }
+      .primary { fill: var(--svg-primary); }
+      .success { fill: var(--svg-success); }
+      .warning { fill: var(--svg-warning); }
+      .solution-box { fill: var(--svg-bg-alt); stroke: var(--svg-primary); stroke-width: 2; rx: 6; }
+      .code-bg { fill: #F8F9FA; stroke: var(--svg-border); stroke-width: 1; rx: 4; }
+      .mono { font-family: 'SF Mono', 'Monaco', 'Consolas', monospace; font-size: 10px; }
+      .feature-text { font-size: 11px; }
+    </style>
   </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" class="bg"/>
+  
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="text text-lg">解法の多様性による創造性の育成</text>
+  
+  <!-- Problem statement -->
+  <text x="400" y="50" text-anchor="middle" class="text text-md primary">同じ問題「1から100の和を求める」でも...</text>
+  
+  <!-- Solution A: Direct Calculation -->
+  <g class="solution-a">
+    <text x="130" y="85" text-anchor="middle" class="text text-md">解法A: 直接計算アプローチ</text>
+    
+    <rect x="40" y="95" width="180" height="120" class="solution-box"/>
+    
+    <!-- Code block -->
+    <rect x="50" y="105" width="160" height="65" class="code-bg"/>
+    <text x="60" y="120" class="text mono">total = 0</text>
+    <text x="60" y="135" class="text mono">for i in range(1, 101):</text>
+    <text x="70" y="150" class="text mono">total += i</text>
+    <text x="60" y="165" class="text mono">print(total)</text>
+    
+    <!-- Features -->
+    <text x="60" y="190" class="text feature-text">特徴：確実だけど少し遅い</text>
+    <text x="60" y="205" class="text feature-text warning">思考：基本に忠実、堅実</text>
+  </g>
+  
+  <!-- Solution B: Mathematical Approach -->
+  <g class="solution-b">
+    <text x="400" y="85" text-anchor="middle" class="text text-md">解法B: 数学的アプローチ</text>
+    
+    <rect x="310" y="95" width="180" height="120" class="solution-box"/>
+    
+    <!-- Code block -->
+    <rect x="320" y="105" width="160" height="65" class="code-bg"/>
+    <text x="330" y="120" class="text mono"># ガウスの公式を使用</text>
+    <text x="330" y="135" class="text mono">n = 100</text>
+    <text x="330" y="150" class="text mono">total = n * (n + 1) // 2</text>
+    <text x="330" y="165" class="text mono">print(total)</text>
+    
+    <!-- Features -->
+    <text x="330" y="190" class="text feature-text">特徴：高速で数学的にエレガント</text>
+    <text x="330" y="205" class="text feature-text success">思考：理論活用、効率性重視</text>
+  </g>
+  
+  <!-- Solution C: Pythonic Approach -->
+  <g class="solution-c">
+    <text x="670" y="85" text-anchor="middle" class="text text-md">解法C: Pythonらしいアプローチ</text>
+    
+    <rect x="580" y="95" width="180" height="120" class="solution-box"/>
+    
+    <!-- Code block -->
+    <rect x="590" y="105" width="160" height="45" class="code-bg"/>
+    <text x="600" y="120" class="text mono">total = sum(range(1, 101))</text>
+    <text x="600" y="135" class="text mono">print(total)</text>
+    
+    <!-- Features -->
+    <text x="600" y="170" class="text feature-text">特徴：簡潔で読みやすい</text>
+    <text x="600" y="185" class="text feature-text primary">思考：言語の特性活用、可読性重視</text>
+  </g>
+  
+  <!-- Creativity benefits section -->
+  <g class="creativity-benefits">
+    <rect x="80" y="260" width="640" height="180" class="bg-alt" rx="8"/>
+    <text x="400" y="285" text-anchor="middle" class="text text-md primary">🌟 多様な解法から得られる創造性</text>
+    
+    <!-- Benefits grid -->
+    <g class="benefits-grid">
+      <!-- Row 1 -->
+      <text x="100" y="315" class="text text-sm">💡 問題への多角的アプローチ</text>
+      <text x="100" y="335" class="text text-sm">→ 一つの正解にとらわれない柔軟な思考</text>
+      
+      <text x="420" y="315" class="text text-sm">🔧 最適化への意識</text>
+      <text x="420" y="335" class="text text-sm">→ より良い解法を求める探究心</text>
+      
+      <!-- Row 2 -->
+      <text x="100" y="365" class="text text-sm">📚 知識の統合活用</text>
+      <text x="100" y="385" class="text text-sm">→ 数学・論理・プログラミングの融合</text>
+      
+      <text x="420" y="365" class="text text-sm">🎨 表現力の向上</text>
+      <text x="420" y="385" class="text text-sm">→ 自分らしい解法スタイルの確立</text>
+      
+      <!-- Row 3 -->
+      <text x="100" y="415" class="text text-sm success">✨ 創造的な問題解決習慣の形成</text>
+      <text x="420" y="415" class="text text-sm success">🚀 将来の研究・開発への応用力</text>
+    </g>
+  </g>
+  
+  <!-- Growth path arrows -->
+  <g class="growth-arrows">
+    <!-- From solutions to benefits -->
+    <path d="M 130 215 Q 130 235 150 250" stroke="var(--svg-primary)" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 400 215 Q 400 235 400 250" stroke="var(--svg-primary)" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 670 215 Q 670 235 650 250" stroke="var(--svg-primary)" stroke-width="2" fill="none" opacity="0.6"/>
+  </g>
+  
+  <!-- Key insight -->
+  <g class="key-insight">
+    <rect x="200" y="470" width="400" height="80" fill="#FFF7ED" stroke="#F59E0B" stroke-width="2" rx="8"/>
+    <text x="400" y="495" text-anchor="middle" class="text text-md warning">🔑 重要なポイント</text>
+    <text x="220" y="520" class="text text-sm">「正解は一つだが、そこに至る道は無数にある」</text>
+    <text x="220" y="540" class="text text-sm">この気づきこそが、創造性を育む最大の要素！</text>
+  </g>
+  
+  <!-- Accessibility -->
+  <title>解法の多様性による創造性の育成</title>
+  <desc>同一問題に対する複数の解法アプローチと、それらから得られる創造性・表現力の育成効果を示す図表</desc>
 </svg>
