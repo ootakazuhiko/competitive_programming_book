@@ -1,0 +1,151 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-7：新規登録画面とユーザー名の考え方</title>
+  <desc>AtCoderの新規登録フォームとユーザー名選択のガイドライン</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .form-title { font: 600 14px Inter, sans-serif; }
+      .label-text { font: 500 12px Inter, sans-serif; }
+      .input-text { font: 400 11px 'Courier New', monospace; }
+      .tip-title { font: 600 12px Inter, sans-serif; }
+      .tip-text { font: 400 10px Inter, sans-serif; }
+      .example-text { font: 500 10px 'Courier New', monospace; }
+      .emoji { font: 400 14px Inter, sans-serif; }
+      
+      .form-bg { fill: #FFFFFF; stroke: #D1D5DB; stroke-width: 2; }
+      .input-field { fill: #F9FAFB; stroke: #D1D5DB; stroke-width: 1; }
+      .submit-button { fill: #3B82F6; }
+      .good-example { fill: #ECFDF5; stroke: #10B981; stroke-width: 2; }
+      .bad-example { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .checkbox { fill: #FFFFFF; stroke: #9CA3AF; stroke-width: 1; }
+      .tips-box { fill: #FEF3C7; stroke: #D97706; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-7：新規登録画面とユーザー名の考え方</text>
+  
+  <!-- Registration Form Section -->
+  <g id="registration-form">
+    <text x="50" y="65" class="emoji">📝</text>
+    <text x="75" y="65" class="form-title" fill="#374151">新規登録フォーム</text>
+    
+    <!-- Form Container -->
+    <rect x="50" y="75" width="350" height="200" rx="12" class="form-bg"/>
+    
+    <!-- Form Fields -->
+    <g transform="translate(70, 95)">
+      <!-- Username Field -->
+      <text x="0" y="15" class="label-text" fill="#374151">ユーザー名:</text>
+      <rect x="80" y="0" width="200" height="22" rx="4" class="input-field"/>
+      <text x="85" y="14" class="input-text" fill="#6B7280">[_______________]</text>
+      <text x="290" y="14" class="tip-text" fill="#DC2626">← 重要！慎重に決めよう</text>
+      
+      <!-- Email Field -->
+      <text x="0" y="45" class="label-text" fill="#374151">メールアドレス:</text>
+      <rect x="110" y="30" width="200" height="22" rx="4" class="input-field"/>
+      <text x="115" y="44" class="input-text" fill="#6B7280">[________________]</text>
+      
+      <!-- Password Field -->
+      <text x="0" y="75" class="label-text" fill="#374151">パスワード:</text>
+      <rect x="80" y="60" width="200" height="22" rx="4" class="input-field"/>
+      <text x="85" y="74" class="input-text" fill="#6B7280">[__________________]</text>
+      
+      <!-- Password Confirmation -->
+      <text x="0" y="105" class="label-text" fill="#374151">パスワード確認:</text>
+      <rect x="120" y="90" width="200" height="22" rx="4" class="input-field"/>
+      <text x="125" y="104" class="input-text" fill="#6B7280">[________________]</text>
+      
+      <!-- Checkbox -->
+      <rect x="0" y="125" width="12" height="12" class="checkbox"/>
+      <text x="20" y="135" class="label-text" fill="#374151">利用規約に同意する</text>
+      
+      <!-- Submit Button -->
+      <rect x="110" y="155" width="80" height="30" rx="15" class="submit-button"/>
+      <text x="150" y="174" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #FFFFFF;">登録する</text>
+    </g>
+  </g>
+  
+  <!-- Username Selection Guide -->
+  <g id="username-guide">
+    <text x="450" y="65" class="emoji">💡</text>
+    <text x="475" y="65" class="form-title" fill="#374151">ユーザー名選択の重要ポイント</text>
+    
+    <!-- Good Examples -->
+    <rect x="450" y="85" width="300" height="120" rx="8" class="good-example"/>
+    <text x="465" y="105" class="emoji">✅</text>
+    <text x="490" y="105" class="tip-title" fill="#047857">良いユーザー名の例：</text>
+    
+    <g transform="translate(465, 115)">
+      <text x="0" y="15" class="example-text" fill="#059669">• programming_taro</text>
+      <text x="150" y="15" class="tip-text" fill="#047857">← 分かりやすい</text>
+      
+      <text x="0" y="30" class="example-text" fill="#059669">• student2024</text>
+      <text x="100" y="30" class="tip-text" fill="#047857">← 年度入り</text>
+      
+      <text x="0" y="45" class="example-text" fill="#059669">• coder_hanako</text>
+      <text x="110" y="45" class="tip-text" fill="#047857">← 趣味が分かる</text>
+      
+      <text x="0" y="60" class="example-text" fill="#059669">• algorithm_lover</text>
+      <text x="130" y="60" class="tip-text" fill="#047857">← 興味の方向性</text>
+      
+      <text x="0" y="80" class="example-text" fill="#059669">• competitive_coder</text>
+      <text x="150" y="80" class="tip-text" fill="#047857">← 分野明確</text>
+    </g>
+    
+    <!-- Bad Examples -->
+    <rect x="450" y="220" width="300" height="120" rx="8" class="bad-example"/>
+    <text x="465" y="240" class="emoji">❌</text>
+    <text x="490" y="240" class="tip-title" fill="#DC2626">避けるべきユーザー名：</text>
+    
+    <g transform="translate(465, 250)">
+      <text x="0" y="15" class="example-text" fill="#DC2626">• 本名フルネーム</text>
+      <text x="120" y="15" class="tip-text" fill="#B91C1C">← プライバシー問題</text>
+      
+      <text x="0" y="30" class="example-text" fill="#DC2626">• 学校名＋本名</text>
+      <text x="110" y="30" class="tip-text" fill="#B91C1C">← 個人特定可能</text>
+      
+      <text x="0" y="45" class="example-text" fill="#DC2626">• 生年月日含む</text>
+      <text x="110" y="45" class="tip-text" fill="#B91C1C">← セキュリティリスク</text>
+      
+      <text x="0" y="60" class="example-text" fill="#DC2626">• 意味不明な文字列</text>
+      <text x="140" y="60" class="tip-text" fill="#B91C1C">← 覚えにくい</text>
+      
+      <text x="0" y="80" class="example-text" fill="#DC2626">• aaaa1234</text>
+      <text x="80" y="80" class="tip-text" fill="#B91C1C">← 安易すぎる</text>
+    </g>
+  </g>
+  
+  <!-- Username Selection Tips -->
+  <g id="username-tips">
+    <rect x="50" y="360" width="700" height="120" rx="12" class="tips-box"/>
+    <text x="70" y="385" class="emoji">🎯</text>
+    <text x="100" y="385" class="tip-title" fill="#92400E">ユーザー名選択のコツ</text>
+    
+    <g transform="translate(70, 395)">
+      <text x="0" y="15" class="tip-text" fill="#A16207">• 将来就職活動で使うことを想定して選ぶ</text>
+      <text x="0" y="30" class="tip-text" fill="#A16207">• 覚えやすく、タイプしやすい文字列にする</text>
+      <text x="0" y="45" class="tip-text" fill="#A16207">• プログラミングへの興味・情熱が伝わるものを選ぶ</text>
+      <text x="0" y="60" class="tip-text" fill="#A16207">• 長すぎず、短すぎず（5-15文字程度が理想）</text>
+      <text x="0" y="75" class="tip-text" fill="#A16207">• 英数字とアンダースコア（_）のみ使用可能</text>
+    </g>
+  </g>
+  
+  <!-- Bottom Warning -->
+  <g id="bottom-warning">
+    <rect x="100" y="510" width="600" height="60" rx="10" fill="#FEF2F2" stroke="#EF4444" stroke-width="2"/>
+    <text x="120" y="535" class="emoji">⚠️</text>
+    <text x="150" y="535" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">重要な注意点</text>
+    <text x="120" y="550" style="font: 400 11px Inter, sans-serif; fill: #DC2626;">
+      ユーザー名は後から変更できません！慎重に決めて、一度決めたら大切に使い続けましょう。
+    </text>
+    <text x="120" y="563" style="font: 400 11px Inter, sans-serif; fill: #DC2626;">
+      迷ったときは、シンプルで覚えやすく、プログラミングに関連する名前を選ぶのがおすすめです。
+    </text>
+  </g>
+  
+</svg>

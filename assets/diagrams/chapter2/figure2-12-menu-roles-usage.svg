@@ -1,0 +1,118 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-12：各メニューの役割と使い方</title>
+  <desc>AtCoderの各ナビゲーションメニューの機能と利用場面を説明する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .menu-title { font: 600 14px Inter, sans-serif; }
+      .function-text { font: 500 11px Inter, sans-serif; }
+      .usage-text { font: 400 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      .point-text { font: 600 10px Inter, sans-serif; }
+      
+      .home-menu { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .contest-menu { fill: #ECFDF5; stroke: #10B981; stroke-width: 2; }
+      .problems-menu { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .ranking-menu { fill: #FECACA; stroke: #EF4444; stroke-width: 2; }
+      .usage-indicator { fill: #F3F4F6; stroke: #9CA3AF; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-12：各メニューの役割と使い方</text>
+  
+  <!-- Home Menu -->
+  <g id="home-menu">
+    <rect x="50" y="70" width="320" height="200" rx="12" class="home-menu"/>
+    <text x="70" y="100" class="emoji">🏠</text>
+    <text x="100" y="100" class="menu-title" fill="#1E40AF">ホーム</text>
+    <text x="70" y="118" class="point-text" fill="#1E40AF">👆 最初に見る場所</text>
+    
+    <g transform="translate(70, 135)">
+      <text x="0" y="15" class="function-text" fill="#1E40AF">• 最新コンテスト情報</text>
+      <text x="0" y="30" class="function-text" fill="#1E40AF">• 自分の成績サマリー</text>
+      <text x="0" y="45" class="function-text" fill="#1E40AF">• おすすめ問題</text>
+      <text x="0" y="60" class="function-text" fill="#1E40AF">• お知らせ</text>
+      
+      <rect x="0" y="75" width="270" height="50" rx="6" class="usage-indicator"/>
+      <text x="10" y="90" class="usage-text" fill="#4B5563">いつ使う？</text>
+      <text x="10" y="105" class="usage-text" fill="#4B5563">• AtCoderにログインしたとき</text>
+      <text x="10" y="118" class="usage-text" fill="#4B5563">• 全体の状況を把握したいとき</text>
+    </g>
+  </g>
+  
+  <!-- Contest Menu -->
+  <g id="contest-menu">
+    <rect x="400" y="70" width="320" height="200" rx="12" class="contest-menu"/>
+    <text x="420" y="100" class="emoji">🏆</text>
+    <text x="450" y="100" class="menu-title" fill="#047857">コンテスト</text>
+    <text x="420" y="118" class="point-text" fill="#047857">👆 競技の中心！</text>
+    
+    <g transform="translate(420, 135)">
+      <text x="0" y="15" class="function-text" fill="#047857">• 今後の予定</text>
+      <text x="0" y="30" class="function-text" fill="#047857">• 過去のコンテスト</text>
+      <text x="0" y="45" class="function-text" fill="#047857">• 結果・順位</text>
+      <text x="0" y="60" class="function-text" fill="#047857">• 問題一覧</text>
+      
+      <rect x="0" y="75" width="270" height="50" rx="6" class="usage-indicator"/>
+      <text x="10" y="90" class="usage-text" fill="#4B5563">いつ使う？</text>
+      <text x="10" y="105" class="usage-text" fill="#4B5563">• コンテストに参加するとき</text>
+      <text x="10" y="118" class="usage-text" fill="#4B5563">• 過去の成績を確認するとき</text>
+    </g>
+  </g>
+  
+  <!-- Problems Menu -->
+  <g id="problems-menu">
+    <rect x="50" y="300" width="320" height="200" rx="12" class="problems-menu"/>
+    <text x="70" y="330" class="emoji">📚</text>
+    <text x="100" y="330" class="menu-title" fill="#D97706">問題</text>
+    <text x="70" y="348" class="point-text" fill="#D97706">👆 練習の場所</text>
+    
+    <g transform="translate(70, 365)">
+      <text x="0" y="15" class="function-text" fill="#D97706">• 過去問の検索</text>
+      <text x="0" y="30" class="function-text" fill="#D97706">• 難易度別表示</text>
+      <text x="0" y="45" class="function-text" fill="#D97706">• 分野別分類</text>
+      <text x="0" y="60" class="function-text" fill="#D97706">• 提出状況確認</text>
+      
+      <rect x="0" y="75" width="270" height="50" rx="6" class="usage-indicator"/>
+      <text x="10" y="90" class="usage-text" fill="#4B5563">いつ使う？</text>
+      <text x="10" y="105" class="usage-text" fill="#4B5563">• 練習問題を探すとき</text>
+      <text x="10" y="118" class="usage-text" fill="#4B5563">• 苦手分野を強化したいとき</text>
+    </g>
+  </g>
+  
+  <!-- Ranking Menu -->
+  <g id="ranking-menu">
+    <rect x="400" y="300" width="320" height="200" rx="12" class="ranking-menu"/>
+    <text x="420" y="330" class="emoji">👥</text>
+    <text x="450" y="330" class="menu-title" fill="#DC2626">ランキング</text>
+    <text x="420" y="348" class="point-text" fill="#DC2626">👆 モチベーション源</text>
+    
+    <g transform="translate(420, 365)">
+      <text x="0" y="15" class="function-text" fill="#DC2626">• 全体ランキング</text>
+      <text x="0" y="30" class="function-text" fill="#DC2626">• 国別ランキング</text>
+      <text x="0" y="45" class="function-text" fill="#DC2626">• 学校別ランキング</text>
+      <text x="0" y="60" class="function-text" fill="#DC2626">• 友達との比較</text>
+      
+      <rect x="0" y="75" width="270" height="50" rx="6" class="usage-indicator"/>
+      <text x="10" y="90" class="usage-text" fill="#4B5563">いつ使う？</text>
+      <text x="10" y="105" class="usage-text" fill="#4B5563">• 自分のレベルを知りたいとき</text>
+      <text x="10" y="118" class="usage-text" fill="#4B5563">• ライバルを見つけたいとき</text>
+    </g>
+  </g>
+  
+  <!-- Usage Flow -->
+  <g id="usage-flow">
+    <rect x="100" y="530" width="600" height="50" rx="10" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+    <text x="120" y="550" class="emoji">🔄</text>
+    <text x="150" y="550" style="font: 600 12px Inter, sans-serif; fill: #047857;">効果的な使い方の流れ</text>
+    <text x="120" y="565" style="font: 400 10px Inter, sans-serif; fill: #047857;">
+      ホームで全体確認 → 問題で練習 → コンテストに参加 → ランキングで成長実感 → 繰り返し
+    </text>
+  </g>
+  
+</svg>

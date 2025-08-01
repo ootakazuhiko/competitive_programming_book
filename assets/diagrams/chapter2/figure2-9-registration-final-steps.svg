@@ -1,0 +1,143 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-9：登録完了までの最終ステップ</title>
+  <desc>利用規約確認から登録完了までの最終段階の手順</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .item-text { font: 500 11px Inter, sans-serif; }
+      .desc-text { font: 400 10px Inter, sans-serif; }
+      .highlight-text { font: 600 11px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .terms-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .completion-section { fill: #ECFDF5; stroke: #10B981; stroke-width: 2; }
+      .important-note { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .success-box { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .arrow { stroke: #059669; stroke-width: 3; marker-end: url(#arrowhead); }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" 
+            refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#059669" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-9：登録完了までの最終ステップ</text>
+  
+  <!-- Terms of Service Section -->
+  <g id="terms-section">
+    <rect x="50" y="60" width="340" height="220" rx="12" class="terms-section"/>
+    <text x="70" y="85" class="emoji">📋</text>
+    <text x="100" y="85" class="section-title" fill="#1E40AF">利用規約のポイント</text>
+    
+    <g transform="translate(70, 100)">
+      <text x="0" y="15" class="item-text" fill="#1E40AF">主な内容：</text>
+      <text x="0" y="35" class="desc-text" fill="#1E40AF">• アカウントは1人1つまで</text>
+      <text x="0" y="50" class="desc-text" fill="#1E40AF">• 不正行為の禁止</text>
+      <text x="0" y="65" class="desc-text" fill="#1E40AF">• 他者への迷惑行為禁止</text>
+      <text x="0" y="80" class="desc-text" fill="#1E40AF">• コンテスト中のルールを守る</text>
+      <text x="0" y="95" class="desc-text" fill="#1E40AF">• 適切な言語使用</text>
+      
+      <text x="0" y="120" class="highlight-text" fill="#B91C1C">📝 中学生として特に注意：</text>
+      <text x="0" y="140" class="desc-text" fill="#1E40AF">• 保護者の同意があることが前提</text>
+      <text x="0" y="155" class="desc-text" fill="#1E40AF">• 個人情報の取り扱いに注意</text>
+      <text x="0" y="170" class="desc-text" fill="#1E40AF">• 健全な利用を心がける</text>
+      <text x="0" y="185" class="desc-text" fill="#1E40AF">• 学習目的での利用</text>
+      <text x="0" y="200" class="desc-text" fill="#1E40AF">• 時間管理を適切に行う</text>
+    </g>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M400 170 L420 170" class="arrow" fill="none"/>
+  
+  <!-- Registration Completion Section -->
+  <g id="completion-section">
+    <rect x="430" y="60" width="320" height="220" rx="12" class="completion-section"/>
+    <text x="450" y="85" class="emoji">🎉</text>
+    <text x="480" y="85" class="section-title" fill="#047857">登録完了画面</text>
+    
+    <!-- Success Message -->
+    <rect x="450" y="100" width="280" height="120" rx="8" class="success-box"/>
+    <text x="590" y="125" text-anchor="middle" style="font: 600 16px Inter, sans-serif; fill: #047857;">✅ アカウント作成完了！</text>
+    
+    <g transform="translate(470, 140)">
+      <text x="100" y="15" text-anchor="middle" class="item-text" fill="#047857">認証メールを送信しました。</text>
+      <text x="100" y="35" text-anchor="middle" class="item-text" fill="#047857">メールボックスを確認して、</text>
+      <text x="100" y="55" text-anchor="middle" class="item-text" fill="#047857">リンクをクリックしてください。</text>
+    </g>
+    
+    <!-- Button -->
+    <rect x="530" y="240" width="120" height="30" rx="15" fill="#10B981"/>
+    <text x="590" y="259" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #FFFFFF;">マイページに移動</text>
+  </g>
+  
+  <!-- Email Verification Process -->
+  <g id="email-verification">
+    <rect x="50" y="310" width="700" height="140" rx="12" class="important-note"/>
+    <text x="70" y="335" class="emoji">📧</text>
+    <text x="100" y="335" class="section-title" fill="#92400E">メール認証の手順</text>
+    
+    <g transform="translate(70, 350)">
+      <!-- Step 1 -->
+      <rect x="0" y="0" width="150" height="70" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1"/>
+      <text x="75" y="20" text-anchor="middle" class="highlight-text" fill="#92400E">1. メール確認</text>
+      <text x="10" y="35" class="desc-text" fill="#A16207">メールボックスを開く</text>
+      <text x="10" y="48" class="desc-text" fill="#A16207">AtCoderから</text>
+      <text x="10" y="61" class="desc-text" fill="#A16207">メールが届いているか確認</text>
+      
+      <!-- Arrow 1 -->
+      <path d="M160 35 L180 35" stroke="#D97706" stroke-width="2" marker-end="url(#arrow-orange)" fill="none"/>
+      
+      <!-- Step 2 -->
+      <rect x="190" y="0" width="150" height="70" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1"/>
+      <text x="265" y="20" text-anchor="middle" class="highlight-text" fill="#92400E">2. リンククリック</text>
+      <text x="200" y="35" class="desc-text" fill="#A16207">メール内の</text>
+      <text x="200" y="48" class="desc-text" fill="#A16207">「認証リンク」を</text>
+      <text x="200" y="61" class="desc-text" fill="#A16207">クリック</text>
+      
+      <!-- Arrow 2 -->
+      <path d="M350 35 L370 35" stroke="#D97706" stroke-width="2" marker-end="url(#arrow-orange)" fill="none"/>
+      
+      <!-- Step 3 -->
+      <rect x="380" y="0" width="150" height="70" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="1"/>
+      <text x="455" y="20" text-anchor="middle" class="highlight-text" fill="#92400E">3. 認証完了</text>
+      <text x="390" y="35" class="desc-text" fill="#A16207">ブラウザが開いて</text>
+      <text x="390" y="48" class="desc-text" fill="#A16207">「認証完了」の</text>
+      <text x="390" y="61" class="desc-text" fill="#A16207">画面が表示される</text>
+      
+      <!-- Step 4 -->
+      <rect x="550" y="0" width="130" height="70" rx="8" fill="#F0FDF4" stroke="#22C55E" stroke-width="2"/>
+      <text x="615" y="20" text-anchor="middle" class="highlight-text" fill="#047857">4. ログイン</text>
+      <text x="560" y="35" class="desc-text" fill="#047857">AtCoderに</text>
+      <text x="560" y="48" class="desc-text" fill="#047857">ログインして</text>
+      <text x="560" y="61" class="desc-text" fill="#047857">利用開始！</text>
+    </g>
+    
+    <marker id="arrow-orange" markerWidth="8" markerHeight="6" 
+            refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#D97706" />
+    </marker>
+  </g>
+  
+  <!-- Final Success Message -->
+  <g id="final-message">
+    <rect x="100" y="480" width="600" height="80" rx="12" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+    <text x="120" y="505" class="emoji">🌟</text>
+    <text x="150" y="505" style="font: 600 14px Inter, sans-serif; fill: #047857;">おめでとう！AtCoderデビュー完了</text>
+    
+    <g transform="translate(120, 515)">
+      <text x="0" y="15" class="desc-text" fill="#047857">✅ アカウント作成が完了しました</text>
+      <text x="220" y="15" class="desc-text" fill="#047857">✅ メール認証も完了</text>
+      <text x="0" y="30" class="desc-text" fill="#047857">✅ いつでもAtCoderにログイン可能</text>
+      <text x="220" y="30" class="desc-text" fill="#047857">✅ コンテスト参加準備OK</text>
+      <text x="0" y="45" class="desc-text" fill="#047857">次は実際にAtCoderの画面を探検してみよう！</text>
+    </g>
+  </g>
+  
+</svg>

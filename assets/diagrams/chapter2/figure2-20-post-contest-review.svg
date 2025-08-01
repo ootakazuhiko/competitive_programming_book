@@ -1,0 +1,95 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-20：コンテスト後の効果的な振り返り方法</title>
+  <desc>コンテスト終了後の分析と学習の進め方</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .phase-title { font: 600 14px Inter, sans-serif; }
+      .section-title { font: 600 12px Inter, sans-serif; }
+      .action-text { font: 500 10px Inter, sans-serif; }
+      .example-text { font: 400 9px 'Courier New', monospace; }
+      .desc-text { font: 400 9px Inter, sans-serif; }
+      .timing-text { font: 500 11px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .immediate-phase { fill: #FECACA; stroke: #EF4444; stroke-width: 2; }
+      .review-phase { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .example-sheet { fill: #F3F4F6; stroke: #9CA3AF; stroke-width: 1; }
+      .learning-tips { fill: #ECFDF5; stroke: #10B981; stroke-width: 2; }
+      .timeline-marker { fill: #6B7280; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-20：コンテスト後の効果的な振り返り方法</text>
+  
+  <!-- Immediate Analysis Phase -->
+  <g id="immediate-analysis">
+    <rect x="50" y="60" width="700" height="180" rx="12" class="immediate-phase"/>
+    <text x="70" y="85" class="emoji">📊</text>
+    <text x="100" y="85" class="phase-title" fill="#DC2626">結果分析 (コンテスト終了後30分以内)</text>
+    
+    <g transform="translate(70, 100)">
+      <text x="0" y="20" class="section-title" fill="#DC2626">✅ 記録すること:</text>
+      <text x="0" y="35" class="action-text" fill="#B91C1C">• 解けた問題数と所要時間</text>
+      <text x="200" y="35" class="action-text" fill="#B91C1C">• 各問題での躓いたポイント</text>
+      <text x="0" y="50" class="action-text" fill="#B91C1C">• 新しく学んだこと</text>
+      <text x="200" y="50" class="action-text" fill="#B91C1C">• 次回改善したいこと</text>
+      
+      <text x="0" y="80" class="section-title" fill="#DC2626">📝 振り返りシート例:</text>
+      <rect x="0" y="90" width="630" height="90" rx="6" class="example-sheet"/>
+      <g transform="translate(10, 105)">
+        <text x="0" y="15" class="example-text" fill="#047857">A問題: 解けた (15分) ✅</text>
+        <text x="0" y="30" class="example-text" fill="#DC2626">B問題: 解けなかった ❌</text>
+        <text x="0" y="45" class="example-text" fill="#6B7280">→ 文字列処理が苦手と判明</text>
+        
+        <text x="250" y="15" class="desc-text" fill="#374151">改善点:</text>
+        <text x="250" y="30" class="desc-text" fill="#374151">• 文字列メソッドの復習</text>
+        <text x="250" y="45" class="desc-text" fill="#374151">• 類似問題の練習</text>
+        <text x="250" y="60" class="desc-text" fill="#374151">• 基本的な実装パターンの確認</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Review Phase -->
+  <g id="review-phase">
+    <rect x="50" y="260" width="700" height="200" rx="12" class="review-phase"/>
+    <text x="70" y="285" class="emoji">📚</text>
+    <text x="100" y="285" class="phase-title" fill="#1E40AF">解説の活用 (翌日〜3日以内)</text>
+    
+    <g transform="translate(70, 300)">
+      <text x="0" y="20" class="section-title" fill="#1E40AF">🔍 解説を読むときのポイント:</text>
+      <text x="0" y="35" class="action-text" fill="#1E40AF">• 解けた問題: 他の解法があるかチェック</text>
+      <text x="0" y="50" class="action-text" fill="#1E40AF">• 解けなかった問題: 解法を理解し、類似問題で練習</text>
+      <text x="0" y="65" class="action-text" fill="#1E40AF">• 全く手が出なかった問題: 今は飛ばしてもOK</text>
+      
+      <text x="0" y="95" class="section-title" fill="#1E40AF">💻 実践的な学習:</text>
+      <text x="0" y="110" class="action-text" fill="#1E40AF">• 解説のコードを自分で写経</text>
+      <text x="0" y="125" class="action-text" fill="#1E40AF">• 少し数値を変えて動作確認</text>
+      <text x="0" y="140" class="action-text" fill="#1E40AF">• 同じアルゴリズムを使う類似問題を探して練習</text>
+      
+      <text x="0" y="170" class="desc-text" fill="#1E40AF">
+        ⚠️ 注意：解説を読んだだけでは身につきません。必ず自分の手で実装して確認しましょう！
+      </text>
+    </g>
+  </g>
+  
+  <!-- Learning Enhancement Tips -->
+  <g id="learning-tips">
+    <rect x="50" y="480" width="700" height="100" rx="12" class="learning-tips"/>
+    <text x="70" y="505" class="emoji">🎯</text>
+    <text x="100" y="505" class="phase-title" fill="#047857">継続的な学習のコツ</text>
+    
+    <g transform="translate(70, 520)">
+      <text x="0" y="15" class="action-text" fill="#047857">1. 振り返りノートを作成して、毎回の成長を記録</text>
+      <text x="0" y="30" class="action-text" fill="#047857">2. 苦手分野は次のコンテストまでに1つずつ克服</text>
+      <text x="0" y="45" class="action-text" fill="#047857">3. 解けた問題も別の解法がないか調べる習慣をつける</text>
+      <text x="0" y="60" class="action-text" fill="#047857">4. 友達や先輩と解法について議論する機会を作る</text>
+    </g>
+  </g>
+  
+</svg>

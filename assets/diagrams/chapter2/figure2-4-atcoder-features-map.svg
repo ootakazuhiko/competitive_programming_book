@@ -1,0 +1,144 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-4：AtCoderでできることマップ</title>
+  <desc>AtCoderプラットフォームの主要機能と各機能の詳細を示すマップ</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .main-title { font: 600 18px Inter, sans-serif; fill: #FFFFFF; }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .feature-text { font: 500 12px Inter, sans-serif; }
+      .desc-text { font: 400 11px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      .outcome-text { font: 500 11px Inter, sans-serif; }
+      
+      .home-center { fill: #FF6B6B; stroke: #E53E3E; stroke-width: 3; }
+      .contests { fill: #4ECDC4; stroke: #38B2AC; stroke-width: 2; }
+      .practice { fill: #45B7D1; stroke: #3182CE; stroke-width: 2; }
+      .community { fill: #96CEB4; stroke: #68D391; stroke-width: 2; }
+      .outcome-box { fill: #F0F9FF; stroke: #0369A1; stroke-width: 2; }
+      
+      .connector { stroke: #9CA3AF; stroke-width: 2; stroke-dasharray: 4,4; }
+      .outcome-arrow { stroke: #0369A1; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0369A1" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-4：AtCoderでできることマップ</text>
+  
+  <!-- Central AtCoder Home -->
+  <g id="atcoder-home">
+    <ellipse cx="400" cy="180" rx="80" ry="40" class="home-center"/>
+    <text x="400" y="175" text-anchor="middle" class="emoji">🏠</text>
+    <text x="400" y="188" text-anchor="middle" class="main-title">AtCoderホーム</text>
+  </g>
+  
+  <!-- Contest Section (Top Left) -->
+  <g id="contests">
+    <rect x="80" y="60" width="180" height="120" rx="12" class="contests"/>
+    <text x="100" y="85" class="emoji">🏆</text>
+    <text x="130" y="85" class="section-title" fill="white">コンテスト</text>
+    
+    <g transform="translate(90, 95)">
+      <text x="0" y="15" class="feature-text" fill="white">土日に開催</text>
+      <text x="0" y="30" class="feature-text" fill="white">リアルタイム</text>
+      <text x="0" y="45" class="feature-text" fill="white">他の人と競争</text>
+      <text x="0" y="60" class="feature-text" fill="white">成績が反映</text>
+      
+      <rect x="0" y="75" width="160" height="18" rx="9" fill="#2D3748"/>
+      <text x="80" y="87" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #FFFFFF;">ABC・ARC・AGC</text>
+    </g>
+  </g>
+  
+  <!-- Practice Section (Top Right) -->
+  <g id="practice">
+    <rect x="540" y="60" width="180" height="120" rx="12" class="practice"/>
+    <text x="560" y="85" class="emoji">📚</text>
+    <text x="590" y="85" class="section-title" fill="white">過去問練習</text>
+    
+    <g transform="translate(550, 95)">
+      <text x="0" y="15" class="feature-text" fill="white">いつでも利用可能</text>
+      <text x="0" y="30" class="feature-text" fill="white">自分のペースで</text>
+      <text x="0" y="45" class="feature-text" fill="white">苦手分野を集中</text>
+      <text x="0" y="60" class="feature-text" fill="white">的に練習可能</text>
+      
+      <rect x="0" y="75" width="160" height="18" rx="9" fill="#2D3748"/>
+      <text x="80" y="87" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #FFFFFF;">3000+ 問題</text>
+    </g>
+  </g>
+  
+  <!-- Community Section (Bottom Right) -->
+  <g id="community">
+    <rect x="540" y="260" width="180" height="120" rx="12" class="community"/>
+    <text x="560" y="285" class="emoji">👥</text>
+    <text x="590" y="285" class="section-title" fill="white">コミュニティ</text>
+    
+    <g transform="translate(550, 295)">
+      <text x="0" y="15" class="feature-text" fill="white">他の参加者との</text>
+      <text x="0" y="30" class="feature-text" fill="white">情報交換</text>
+      <text x="0" y="45" class="feature-text" fill="white">解法の議論</text>
+      <text x="0" y="60" class="feature-text" fill="white">友達作り</text>
+      
+      <rect x="0" y="75" width="160" height="18" rx="9" fill="#2D3748"/>
+      <text x="80" y="87" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #FFFFFF;">Twitter・ブログ</text>
+    </g>
+  </g>
+  
+  <!-- Connection lines from center -->
+  <path d="M340 160 Q280 120 260 120" class="connector" fill="none"/>
+  <path d="M460 160 Q520 120 540 120" class="connector" fill="none"/>
+  <path d="M460 200 Q520 240 540 280" class="connector" fill="none"/>
+  
+  <!-- Outcome Section (Bottom) -->
+  <g id="outcomes">
+    <!-- Rating Up -->
+    <rect x="80" y="420" width="150" height="80" rx="10" class="outcome-box"/>
+    <text x="100" y="445" class="emoji">📈</text>
+    <text x="125" y="445" class="section-title" fill="#0369A1">レーティング上昇</text>
+    <text x="90" y="465" class="desc-text" fill="#1E40AF">実力の客観的評価</text>
+    <text x="90" y="478" class="desc-text" fill="#1E40AF">成長の実感</text>
+    <text x="90" y="491" class="desc-text" fill="#1E40AF">目標達成の喜び</text>
+    
+    <!-- Skill Up -->
+    <rect x="280" y="420" width="150" height="80" rx="10" class="outcome-box"/>
+    <text x="300" y="445" class="emoji">💪</text>
+    <text x="325" y="445" class="section-title" fill="#0369A1">スキルアップ</text>
+    <text x="290" y="465" class="desc-text" fill="#1E40AF">基礎から応用まで</text>
+    <text x="290" y="478" class="desc-text" fill="#1E40AF">論理的思考力向上</text>
+    <text x="290" y="491" class="desc-text" fill="#1E40AF">問題解決能力強化</text>
+    
+    <!-- Networking -->
+    <rect x="480" y="420" width="150" height="80" rx="10" class="outcome-box"/>
+    <text x="500" y="445" class="emoji">🤝</text>
+    <text x="525" y="445" class="section-title" fill="#0369A1">ネットワーキング</text>
+    <text x="490" y="465" class="desc-text" fill="#1E40AF">将来の仲間発見</text>
+    <text x="490" y="478" class="desc-text" fill="#1E40AF">情報交換の場</text>
+    <text x="490" y="491" class="desc-text" fill="#1E40AF">切磋琢磨できる環境</text>
+  </g>
+  
+  <!-- Outcome arrows -->
+  <path d="M170 380 L155 420" class="outcome-arrow" fill="none"/>
+  <path d="M400 220 L355 420" class="outcome-arrow" fill="none"/>
+  <path d="M630 380 L555 420" class="outcome-arrow" fill="none"/>
+  
+  <!-- Bottom summary -->
+  <g transform="translate(100, 530)">
+    <rect x="0" y="0" width="600" height="50" rx="10" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+    <text x="20" y="25" class="emoji">🌟</text>
+    <text x="50" y="25" style="font: 600 14px Inter, sans-serif; fill: #047857;">
+      AtCoderは単なる競技サイトではなく、総合的な学習プラットフォーム
+    </text>
+    <text x="20" y="42" style="font: 400 12px Inter, sans-serif; fill: #059669;">
+      コンテスト・練習・コミュニティの3つが相互に作用して、継続的な成長をサポート
+    </text>
+  </g>
+  
+</svg>

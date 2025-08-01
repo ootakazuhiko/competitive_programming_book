@@ -1,0 +1,124 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-16：中学生のための現実的なレーティング目標</title>
+  <desc>中学生向けの段階的なレーティング目標設定とロードマップ</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .year-title { font: 600 14px Inter, sans-serif; }
+      .goal-title { font: 600 13px Inter, sans-serif; }
+      .period-text { font: 500 11px Inter, sans-serif; }
+      .content-text { font: 400 10px Inter, sans-serif; }
+      .milestone-text { font: 500 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .year1-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 3; }
+      .year2-box { fill: #ECFDF5; stroke: #10B981; stroke-width: 3; }
+      .year3-box { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 3; }
+      .brown-badge { fill: #92400E; }
+      .green-badge { fill: #047857; }
+      .cyan-badge { fill: #0891B2; }
+      .progress-bg { fill: #E5E7EB; }
+      .progress-fill { fill: #10B981; }
+      .tip-box { fill: #F0F9FF; stroke: #0369A1; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-16：中学生のための現実的なレーティング目標</text>
+  
+  <!-- Year 1 Goal -->
+  <g id="year1">
+    <rect x="50" y="70" width="700" height="140" rx="12" class="year1-box"/>
+    <text x="70" y="100" class="emoji">🎯</text>
+    <text x="100" y="100" class="year-title" fill="#D97706">1年目の目標: 茶色達成 (400以上)</text>
+    
+    <g transform="translate(70, 115)">
+      <text x="0" y="20" class="period-text" fill="#D97706">期間: 開始から6-12ヶ月</text>
+      
+      <text x="0" y="45" class="goal-title" fill="#D97706">学習内容:</text>
+      <text x="0" y="60" class="content-text" fill="#A16207">• Python基本文法の習得</text>
+      <text x="200" y="60" class="content-text" fill="#A16207">• ABC A問題を安定して解答</text>
+      <text x="0" y="75" class="content-text" fill="#A16207">• 基本的なアルゴリズムの理解</text>
+      <text x="200" y="75" class="content-text" fill="#A16207">• 入出力処理に慣れる</text>
+      
+      <text x="420" y="45" class="goal-title" fill="#D97706">📈 成長の目安:</text>
+      <text x="420" y="60" class="content-text" fill="#A16207">• 月1-2回のコンテスト参加</text>
+      <text x="420" y="75" class="content-text" fill="#A16207">• A問題正答率80%以上</text>
+      <text x="420" y="90" class="content-text" fill="#A16207">• B問題にも時々挑戦</text>
+      
+      <!-- Progress Bar -->
+      <rect x="0" y="100" width="300" height="15" rx="7" class="progress-bg"/>
+      <rect x="0" y="100" width="120" height="15" rx="7" class="progress-fill"/>
+      <text x="310" y="112" class="content-text" fill="#A16207">基礎固めの段階</text>
+    </g>
+  </g>
+  
+  <!-- Year 2 Goal -->
+  <g id="year2">
+    <rect x="50" y="230" width="700" height="140" rx="12" class="year2-box"/>
+    <text x="70" y="260" class="emoji">🎯</text>
+    <text x="100" y="260" class="year-title" fill="#047857">2年目の目標: 緑色達成 (800以上)</text>
+    
+    <g transform="translate(70, 275)">
+      <text x="0" y="20" class="period-text" fill="#047857">期間: 2年目</text>
+      
+      <text x="0" y="45" class="goal-title" fill="#047857">学習内容:</text>
+      <text x="0" y="60" class="content-text" fill="#047857">• データ構造の理解と活用</text>
+      <text x="200" y="60" class="content-text" fill="#047857">• ABC B問題を安定して解答</text>
+      <text x="0" y="75" class="content-text" fill="#047857">• C問題にも挑戦開始</text>
+      <text x="200" y="75" class="content-text" fill="#047857">• 動的計画法の基礎</text>
+      
+      <text x="420" y="45" class="goal-title" fill="#047857">📈 成長の目安:</text>
+      <text x="420" y="60" class="content-text" fill="#047857">• A,B問題をセットで解答</text>
+      <text x="420" y="75" class="content-text" fill="#047857">• C問題正答率30%以上</text>
+      <text x="420" y="90" class="content-text" fill="#047857">• 解法の幅が広がる</text>
+      
+      <!-- Progress Bar -->
+      <rect x="0" y="100" width="300" height="15" rx="7" class="progress-bg"/>
+      <rect x="0" y="100" width="180" height="15" rx="7" class="progress-fill"/>
+      <text x="310" y="112" class="content-text" fill="#047857">中級者への道筋</text>
+    </g>
+  </g>
+  
+  <!-- Year 3 Goal -->
+  <g id="year3">
+    <rect x="50" y="390" width="700" height="140" rx="12" class="year3-box"/>
+    <text x="70" y="420" class="emoji">🎯</text>
+    <text x="100" y="420" class="year-title" fill="#1E40AF">3年目の目標: 水色達成 (1200以上)</text>
+    
+    <g transform="translate(70, 435)">
+      <text x="0" y="20" class="period-text" fill="#1E40AF">期間: 3年目</text>
+      
+      <text x="0" y="45" class="goal-title" fill="#1E40AF">学習内容:</text>
+      <text x="0" y="60" class="content-text" fill="#1E40AF">• 高度なアルゴリズムの習得</text>
+      <text x="200" y="60" class="content-text" fill="#1E40AF">• ABC C問題を安定して解答</text>
+      <text x="0" y="75" class="content-text" fill="#1E40AF">• D問題にも挑戦</text>
+      <text x="200" y="75" class="content-text" fill="#1E40AF">• グラフ理論の理解</text>
+      
+      <text x="420" y="45" class="goal-title" fill="#1E40AF">📈 成長の目安:</text>
+      <text x="420" y="60" class="content-text" fill="#1E40AF">• A,B,C問題をセットで解答</text>
+      <text x="420" y="75" class="content-text" fill="#1E40AF">• JOI予選通過レベル</text>
+      <text x="420" y="90" class="content-text" fill="#1E40AF">• 高校でも継続する基盤</text>
+      
+      <!-- Progress Bar -->
+      <rect x="0" y="100" width="300" height="15" rx="7" class="progress-bg"/>
+      <rect x="0" y="100" width="240" height="15" rx="7" class="progress-fill"/>
+      <text x="310" y="112" class="content-text" fill="#1E40AF">上級者への仲間入り</text>
+    </g>
+  </g>
+  
+  <!-- Tips Section -->
+  <g id="tips">
+    <rect x="100" y="550" width="600" height="40" rx="10" class="tip-box"/>
+    <text x="120" y="570" class="emoji">💡</text>
+    <text x="150" y="570" style="font: 600 12px Inter, sans-serif; fill: #0369A1;">重要なポイント</text>
+    <text x="120" y="583" class="content-text" fill="#1E40AF">
+      無理をせず、着実に一歩ずつ。継続が最も大切！目標は達成のためのガイドであり、楽しく学習することが一番重要です。
+    </text>
+  </g>
+  
+</svg>

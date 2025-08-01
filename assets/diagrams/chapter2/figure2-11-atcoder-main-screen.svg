@@ -1,0 +1,117 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-11：AtCoderメイン画面の構成</title>
+  <desc>AtCoderのメイン画面レイアウトと各セクションの説明</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .header-title { font: 600 18px Inter, sans-serif; fill: #FFFFFF; }
+      .nav-text { font: 500 12px Inter, sans-serif; }
+      .section-title { font: 600 13px Inter, sans-serif; }
+      .content-text { font: 500 11px Inter, sans-serif; }
+      .desc-text { font: 400 10px Inter, sans-serif; }
+      .button-text { font: 600 10px Inter, sans-serif; }
+      .emoji { font: 400 14px Inter, sans-serif; }
+      
+      .header { fill: #FF6B6B; }
+      .nav-bar { fill: #F3F4F6; stroke: #D1D5DB; stroke-width: 1; }
+      .nav-active { fill: #3B82F6; }
+      .nav-item { fill: #FFFFFF; }
+      .contest-box { fill: #FFF7ED; stroke: #FB923C; stroke-width: 2; }
+      .stats-box { fill: #EFF6FF; stroke: #3B82F6; stroke-width: 2; }
+      .problems-box { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .button-register { fill: #10B981; }
+      .button-detail { fill: #6366F1; }
+      .user-info { fill: #E5E7EB; stroke: #9CA3AF; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-11：AtCoderメイン画面の構成</text>
+  
+  <!-- Browser Frame -->
+  <rect x="50" y="50" width="700" height="500" rx="12" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="700" height="60" rx="12" class="header"/>
+  <rect x="50" y="95" width="700" height="15" fill="#FF6B6B"/>
+  
+  <text x="80" y="80" class="header-title">🏠 AtCoder</text>
+  
+  <!-- Search and User Info -->
+  <rect x="500" y="65" width="80" height="25" rx="4" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>
+  <text x="540" y="80" text-anchor="middle" class="desc-text" fill="#6B7280">🔍 [検索]</text>
+  
+  <rect x="590" y="65" width="100" height="25" rx="4" class="user-info"/>
+  <text x="640" y="80" text-anchor="middle" class="desc-text" fill="#374151">[ユーザー名]</text>
+  
+  <!-- Navigation Bar -->
+  <rect x="50" y="110" width="700" height="40" class="nav-bar"/>
+  
+  <!-- Nav Items -->
+  <rect x="70" y="120" width="60" height="20" rx="4" class="nav-active"/>
+  <text x="100" y="133" text-anchor="middle" class="nav-text" fill="#FFFFFF">📊 ホーム</text>
+  
+  <text x="180" y="133" class="nav-text" fill="#4B5563">🏆 コンテスト</text>
+  <text x="280" y="133" class="nav-text" fill="#4B5563">📚 問題</text>
+  <text x="350" y="133" class="nav-text" fill="#4B5563">👥 ランキング</text>
+  
+  <!-- Main Content Area -->
+  <g id="main-content">
+    <!-- Upcoming Contest Section -->
+    <rect x="80" y="170" width="320" height="120" rx="8" class="contest-box"/>
+    <text x="100" y="195" class="emoji">🎯</text>
+    <text x="125" y="195" class="section-title" fill="#EA580C">今度のコンテスト</text>
+    
+    <rect x="100" y="210" width="280" height="60" rx="6" fill="#FFFFFF"/>
+    <text x="120" y="230" class="content-text" fill="#374151">AtCoder Beginner Contest 350</text>
+    <text x="120" y="245" class="desc-text" fill="#6B7280">2024年XX月XX日 21:00-22:40</text>
+    
+    <rect x="120" y="255" width="60" height="20" rx="10" class="button-register"/>
+    <text x="150" y="267" text-anchor="middle" class="button-text" fill="#FFFFFF">登録する</text>
+    
+    <rect x="190" y="255" width="60" height="20" rx="10" class="button-detail"/>
+    <text x="220" y="267" text-anchor="middle" class="button-text" fill="#FFFFFF">詳細を見る</text>
+    
+    <!-- User Stats Section -->
+    <rect x="420" y="170" width="300" height="120" rx="8" class="stats-box"/>
+    <text x="440" y="195" class="emoji">📈</text>
+    <text x="465" y="195" class="section-title" fill="#1D4ED8">あなたの成績</text>
+    
+    <rect x="440" y="210" width="260" height="60" rx="6" fill="#FFFFFF"/>
+    <text x="460" y="230" class="content-text" fill="#374151">レーティング: 未参加</text>
+    <text x="460" y="245" class="content-text" fill="#374151">参加回数: 0回</text>
+    <text x="460" y="260" class="content-text" fill="#374151">最高順位: ---</text>
+    
+    <!-- Practice Problems Section -->
+    <rect x="80" y="310" width="640" height="120" rx="8" class="problems-box"/>
+    <text x="100" y="335" class="emoji">📚</text>
+    <text x="125" y="335" class="section-title" fill="#047857">おすすめ練習問題</text>
+    
+    <rect x="100" y="350" width="600" height="60" rx="6" fill="#FFFFFF"/>
+    <g transform="translate(120, 365)">
+      <text x="0" y="15" class="desc-text" fill="#047857">• ABC001 A - 積雪深差</text>
+      <text x="200" y="15" class="desc-text" fill="#047857">• ABC001 B - 視程の通報</text>
+      <text x="400" y="15" class="desc-text" fill="#047857">• ABC002 A - 正直者</text>
+      
+      <text x="0" y="30" class="desc-text" fill="#047857">• ABC002 B - 罠</text>
+      <text x="200" y="30" class="desc-text" fill="#047857">• ABC003 A - AtCoder社の冬</text>
+      <text x="400" y="30" class="desc-text" fill="#047857">• ABC003 B - AtCoderトランプ</text>
+      
+      <text x="0" y="45" class="desc-text" fill="#6B7280">初心者向けA問題から始めよう！</text>
+    </g>
+  </g>
+  
+  <!-- Bottom Layout Info -->
+  <g id="layout-info">
+    <rect x="100" y="460" width="600" height="60" rx="8" fill="#F0F9FF" stroke="#0369A1" stroke-width="2"/>
+    <text x="120" y="480" class="emoji">💡</text>
+    <text x="150" y="480" style="font: 600 12px Inter, sans-serif; fill: #0369A1;">画面の見方のコツ</text>
+    <text x="120" y="495" class="desc-text" fill="#1E40AF">• 上部のナビゲーションで目的の機能に移動</text>
+    <text x="120" y="508" class="desc-text" fill="#1E40AF">• 「今度のコンテスト」で次回参加予定を確認　• 「あなたの成績」で現在の実力を把握</text>
+  </g>
+  
+</svg>

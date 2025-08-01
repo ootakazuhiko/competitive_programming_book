@@ -1,0 +1,146 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-15：レーティング変動のメカニズム</title>
+  <desc>AtCoderのレーティング変動の仕組みとケース別の変動例</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .case-title { font: 600 12px Inter, sans-serif; }
+      .rating-text { font: 600 14px Inter, sans-serif; }
+      .desc-text { font: 400 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      .point-text { font: 500 10px Inter, sans-serif; }
+      
+      .before-box { fill: #F3F4F6; stroke: #9CA3AF; stroke-width: 2; }
+      .good-result { fill: #ECFDF5; stroke: #10B981; stroke-width: 2; }
+      .normal-result { fill: #FFFBEB; stroke: #F59E0B; stroke-width: 2; }
+      .bad-result { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .arrow-up { stroke: #10B981; stroke-width: 3; marker-end: url(#arrow-green); }
+      .arrow-neutral { stroke: #F59E0B; stroke-width: 3; marker-end: url(#arrow-orange); }
+      .arrow-down { stroke: #EF4444; stroke-width: 3; marker-end: url(#arrow-red); }
+      .rating-change { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+    </style>
+    
+    <marker id="arrow-green" markerWidth="12" markerHeight="8" 
+            refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#10B981" />
+    </marker>
+    
+    <marker id="arrow-orange" markerWidth="12" markerHeight="8" 
+            refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#F59E0B" />
+    </marker>
+    
+    <marker id="arrow-red" markerWidth="12" markerHeight="8" 
+            refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#EF4444" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-15：レーティング変動のメカニズム</text>
+  
+  <!-- Before Contest -->
+  <g id="before-contest">
+    <text x="400" y="65" text-anchor="middle" class="emoji">📊</text>
+    <text x="400" y="82" text-anchor="middle" class="section-title" fill="#374151">コンテスト参加前</text>
+    
+    <rect x="250" y="100" width="300" height="100" rx="12" class="before-box"/>
+    <g transform="translate(270, 125)">
+      <text x="0" y="20" class="desc-text" fill="#374151">現在のレーティング:</text>
+      <text x="100" y="20" class="rating-text" fill="#92400E">420 (茶色)</text>
+      
+      <text x="0" y="50" class="desc-text" fill="#374151">期待順位: 800位</text>
+      <text x="0" y="65" class="desc-text" fill="#6B7280">(同レベルの人たちと</text>
+      <text x="0" y="78" class="desc-text" fill="#6B7280"> 同じくらいの成績)</text>
+    </g>
+  </g>
+  
+  <!-- Contest Participation Arrow -->
+  <text x="400" y="235" text-anchor="middle" class="desc-text" fill="#059669">↓ コンテスト参加</text>
+  
+  <!-- Results Title -->
+  <text x="400" y="265" text-anchor="middle" class="emoji">🏆</text>
+  <text x="400" y="280" text-anchor="middle" class="section-title" fill="#374151">コンテスト結果による変動</text>
+  
+  <!-- Case 1: Better than Expected -->
+  <g id="case1">
+    <text x="150" y="310" text-anchor="middle" class="case-title" fill="#047857">ケース1: 期待より良い成績</text>
+    
+    <rect x="50" y="320" width="200" height="80" rx="8" class="good-result"/>
+    <g transform="translate(70, 340)">
+      <text x="0" y="15" class="desc-text" fill="#047857">実際の順位: 600位</text>
+      <text x="0" y="30" class="desc-text" fill="#047857">(期待800位より上)</text>
+      <text x="0" y="50" class="point-text" fill="#047857">実力 ＜ 成績</text>
+    </g>
+    
+    <!-- Arrow -->
+    <path d="M150 410 L150 440" class="arrow-up" fill="none"/>
+    
+    <rect x="50" y="450" width="200" height="80" rx="8" class="rating-change"/>
+    <g transform="translate(70, 470)">
+      <text x="0" y="15" class="desc-text" fill="#1E40AF">レーティング上昇</text>
+      <text x="0" y="30" class="rating-text" fill="#047857">420 → 450</text>
+      <text x="0" y="50" class="desc-text" fill="#047857">+30ポイント!</text>
+    </g>
+  </g>
+  
+  <!-- Case 2: As Expected -->
+  <g id="case2">
+    <text x="400" y="310" text-anchor="middle" class="case-title" fill="#D97706">ケース2: 期待通りの成績</text>
+    
+    <rect x="300" y="320" width="200" height="80" rx="8" class="normal-result"/>
+    <g transform="translate(320, 340)">
+      <text x="0" y="15" class="desc-text" fill="#D97706">実際の順位: 800位</text>
+      <text x="0" y="30" class="desc-text" fill="#D97706">(期待通り)</text>
+      <text x="0" y="50" class="point-text" fill="#D97706">実力 ＝ 成績</text>
+    </g>
+    
+    <!-- Arrow -->
+    <path d="M400 410 L400 440" class="arrow-neutral" fill="none"/>
+    
+    <rect x="300" y="450" width="200" height="80" rx="8" class="rating-change"/>
+    <g transform="translate(320, 470)">
+      <text x="0" y="15" class="desc-text" fill="#1E40AF">レーティング維持</text>
+      <text x="0" y="30" class="rating-text" fill="#D97706">420 → 420</text>
+      <text x="0" y="50" class="desc-text" fill="#D97706">変動なし</text>
+    </g>
+  </g>
+  
+  <!-- Case 3: Worse than Expected -->
+  <g id="case3">
+    <text x="650" y="310" text-anchor="middle" class="case-title" fill="#DC2626">ケース3: 期待より悪い成績</text>
+    
+    <rect x="550" y="320" width="200" height="80" rx="8" class="bad-result"/>
+    <g transform="translate(570, 340)">
+      <text x="0" y="15" class="desc-text" fill="#DC2626">実際の順位: 1000位</text>
+      <text x="0" y="30" class="desc-text" fill="#DC2626">(期待800位より下)</text>
+      <text x="0" y="50" class="point-text" fill="#DC2626">実力 ＞ 成績</text>
+    </g>
+    
+    <!-- Arrow -->
+    <path d="M650 410 L650 440" class="arrow-down" fill="none"/>
+    
+    <rect x="550" y="450" width="200" height="80" rx="8" class="rating-change"/>
+    <g transform="translate(570, 470)">
+      <text x="0" y="15" class="desc-text" fill="#1E40AF">レーティング下降</text>
+      <text x="0" y="30" class="rating-text" fill="#DC2626">420 → 390</text>
+      <text x="0" y="50" class="desc-text" fill="#DC2626">-30ポイント...</text>
+    </g>
+  </g>
+  
+  <!-- Key Points -->
+  <g id="key-points">
+    <rect x="100" y="550" width="600" height="40" rx="10" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+    <text x="120" y="570" class="emoji">💡</text>
+    <text x="150" y="570" style="font: 600 12px Inter, sans-serif; fill: #92400E;">ポイント：</text>
+    <text x="220" y="570" class="desc-text" fill="#A16207">
+      実力より上の成績 → レーティング上昇　•　実力通りの成績 → レーティング維持　•　実力より下の成績 → レーティング下降
+    </text>
+  </g>
+  
+</svg>
