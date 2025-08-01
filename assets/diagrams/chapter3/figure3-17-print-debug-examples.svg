@@ -1,0 +1,124 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-17：print文デバッグの実践例</title>
+  <desc>print文を使ったデバッグ技法の具体的な実践例と分析結果</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .code-text { font: 400 11px 'SF Mono', Consolas, monospace; fill: #1F2937; }
+      .debug-text { font: 400 11px 'SF Mono', Consolas, monospace; fill: #7C3AED; }
+      .output-text { font: 400 11px 'SF Mono', Consolas, monospace; fill: #059669; }
+      .analysis-text { font: 400 11px Inter, sans-serif; fill: #4B5563; }
+      .highlight { font: 600 11px Inter, sans-serif; fill: #DC2626; }
+      .insight { font: 600 11px Inter, sans-serif; fill: #059669; }
+      .comment { font: 400 10px Inter, sans-serif; fill: #7C3AED; }
+      
+      .problem-bg { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .debug-bg { fill: #F3F4F6; stroke: #6B7280; stroke-width: 2; }
+      .output-bg { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+      .analysis-bg { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .code-bg { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-17：print文デバッグの実践例</text>
+  
+  <!-- Problematic Code Section -->
+  <g id="problem-code">
+    <rect x="50" y="60" width="700" height="100" rx="12" class="problem-bg"/>
+    <text x="70" y="80" class="section-title">問題のあるコード例：</text>
+    
+    <rect x="70" y="90" width="400" height="60" rx="4" class="code-bg"/>
+    <text x="80" y="105" class="code-text">n = int(input())</text>
+    <text x="80" y="120" class="code-text">total = 0</text>
+    <text x="80" y="135" class="code-text">for i in range(n):</text>
+    <text x="80" y="150" class="code-text">    x = int(input())</text>
+    <text x="490" y="105" class="code-text">    total += x</text>
+    <text x="490" y="120" class="code-text">print(total // 2)  # なぜか答えが違う...</text>
+    
+    <text x="520" y="140" class="highlight">🤔 期待した結果と違う！</text>
+  </g>
+  
+  <!-- Debug Version Section -->
+  <g id="debug-version">
+    <rect x="50" y="180" width="700" height="140" rx="12" class="debug-bg"/>
+    <text x="70" y="200" class="section-title">デバッグ版（print文追加）：</text>
+    
+    <rect x="70" y="210" width="500" height="100" rx="4" class="code-bg"/>
+    <text x="80" y="225" class="code-text">n = int(input())</text>
+    <text x="80" y="240" class="debug-text">print(f"🔍 n = {n}")  </text>
+    <text x="250" y="240" class="comment"># 👈 確認用</text>
+    <text x="80" y="255" class="code-text">total = 0</text>
+    <text x="80" y="270" class="code-text">for i in range(n):</text>
+    <text x="80" y="285" class="code-text">    x = int(input())</text>
+    <text x="80" y="300" class="debug-text">    print(f"🔍 i={i}, x={x}")  </text>
+    <text x="280" y="300" class="comment"># 👈 確認用</text>
+    
+    <text x="380" y="225" class="code-text">    total += x</text>
+    <text x="380" y="240" class="debug-text">    print(f"🔍 total={total}")  </text>
+    <text x="550" y="240" class="comment"># 👈 確認用</text>
+    <text x="380" y="255" class="debug-text">print(f"🔍 最終total = {total}")  </text>
+    <text x="580" y="255" class="comment"># 👈 確認用</text>
+    <text x="380" y="270" class="code-text">print(total // 2)</text>
+  </g>
+  
+  <!-- Debug Output Section -->
+  <g id="debug-output">
+    <rect x="50" y="340" width="350" height="160" rx="12" class="output-bg"/>
+    <text x="70" y="360" class="section-title">デバッグ実行例：</text>
+    
+    <rect x="70" y="370" width="310" height="120" rx="4" fill="#FFFFFF" stroke="#22C55E" stroke-width="1"/>
+    <text x="80" y="385" class="output-text">🔍 n = 3</text>
+    <text x="80" y="400" class="output-text">🔍 i=0, x=10</text>
+    <text x="80" y="415" class="output-text">🔍 total=10</text>
+    <text x="80" y="430" class="output-text">🔍 i=1, x=20</text>
+    <text x="80" y="445" class="output-text">🔍 total=30</text>
+    <text x="80" y="460" class="output-text">🔍 i=2, x=30</text>
+    <text x="80" y="475" class="output-text">🔍 total=60</text>
+    <text x="250" y="400" class="output-text">🔍 最終total = 60</text>
+    <text x="250" y="415" class="output-text">30</text>
+  </g>
+  
+  <!-- Analysis Section -->
+  <g id="analysis">
+    <rect x="420" y="340" width="330" height="160" rx="12" class="analysis-bg"/>
+    <text x="440" y="360" class="section-title">💡 分析結果：</text>
+    
+    <g transform="translate(440, 375)">
+      <text x="0" y="15" class="analysis-text">📊 デバッグで分かったこと：</text>
+      <text x="0" y="30" class="analysis-text">• n = 3（正しく読み込めている）</text>
+      <text x="0" y="45" class="analysis-text">• ループも3回正常に動作</text>
+      <text x="0" y="60" class="analysis-text">• total = 60（計算も正しい）</text>
+    </g>
+    
+    <g transform="translate(440, 440)">
+      <text x="0" y="15" class="highlight">🎯 真の問題：</text>
+      <text x="0" y="30" class="analysis-text">totalの計算は正しい。</text>
+      <text x="0" y="45" class="analysis-text">問題は「total // 2」の部分。</text>
+      <text x="0" y="60" class="insight">問題文を再確認すると、平均値ではなく</text>
+      <text x="0" y="75" class="insight">合計値を求める問題だった！</text>
+    </g>
+  </g>
+  
+  <!-- Best Practices -->
+  <g id="best-practices">
+    <rect x="50" y="520" width="700" height="70" rx="12" fill="#F3F4F6" stroke="#6B7280" stroke-width="1"/>
+    <text x="70" y="540" class="section-title">🔧 print文デバッグのコツ：</text>
+    
+    <g transform="translate(80, 555)">
+      <text x="0" y="0" class="analysis-text">• 🔍 絵文字を使って見やすくする</text>
+      <text x="0" y="15" class="analysis-text">• 変数名と値をセットで表示：print(f"変数名={変数}")</text>
+      <text x="0" y="30" class="analysis-text">• ループでは回数と各ステップの値を確認</text>
+      
+      <text x="400" y="0" class="analysis-text">• 重要な計算の前後で値をチェック</text>
+      <text x="400" y="15" class="analysis-text">• 提出前には必ずデバッグ用print文を削除</text>
+      <text x="400" y="30" class="analysis-text">• 段階的にprint文を追加して原因を絞り込む</text>
+    </g>
+  </g>
+  
+</svg>

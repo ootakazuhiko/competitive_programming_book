@@ -1,0 +1,109 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-1：ScratchからPythonへの自然な進化</title>
+  <desc>ScratchのビジュアルブロックプログラミングからPythonのテキストベースプログラミングへの自然な移行過程を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .code-text { font: 400 13px 'SF Mono', Consolas, monospace; fill: #1F2937; }
+      .description { font: 400 12px Inter, sans-serif; fill: #6B7280; }
+      .arrow-text { font: 500 14px Inter, sans-serif; fill: #059669; }
+      .highlight { font: 600 12px Inter, sans-serif; fill: #DC2626; }
+      
+      .scratch-bg { fill: #FFF3CD; stroke: #F59E0B; stroke-width: 2; }
+      .python-bg { fill: #DCFCE7; stroke: #22C55E; stroke-width: 2; }
+      .arrow { fill: #059669; }
+      .block { fill: #4F46E5; stroke: #3730A3; stroke-width: 2; rx: 8; }
+      .block-text { font: 500 12px Inter, sans-serif; fill: #FFFFFF; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-1：ScratchからPythonへの自然な進化</text>
+  
+  <!-- Scratch Section -->
+  <g id="scratch-section">
+    <rect x="50" y="70" width="320" height="480" rx="12" class="scratch-bg"/>
+    <text x="210" y="100" text-anchor="middle" class="section-title">🎨 Scratch（ビジュアル）</text>
+    
+    <!-- If Block Example -->
+    <g transform="translate(70, 130)">
+      <text x="0" y="15" class="description">条件分岐（もし～なら）</text>
+      <rect x="0" y="25" width="280" height="40" class="block"/>
+      <text x="10" y="45" class="block-text">もし x > 0 なら</text>
+      
+      <rect x="20" y="75" width="240" height="30" fill="#8B5CF6" stroke="#7C3AED" stroke-width="2" rx="6"/>
+      <text x="30" y="95" class="block-text">「正の数です」と言う</text>
+    </g>
+    
+    <!-- Loop Block Example -->
+    <g transform="translate(70, 260)">
+      <text x="0" y="15" class="description">繰り返し処理</text>
+      <rect x="0" y="25" width="280" height="40" class="block"/>
+      <text x="10" y="45" class="block-text">10 回繰り返す</text>
+      
+      <rect x="20" y="75" width="240" height="30" fill="#8B5CF6" stroke="#7C3AED" stroke-width="2" rx="6"/>
+      <text x="30" y="95" class="block-text">"Hello" と言う</text>
+    </g>
+    
+    <!-- Features -->
+    <g transform="translate(70, 370)">
+      <text x="0" y="15" class="section-title">特徴:</text>
+      <text x="0" y="35" class="description">• ドラッグ&ドロップで直感的</text>
+      <text x="0" y="50" class="description">• 文法エラーが起きにくい</text>
+      <text x="0" y="65" class="description">• 視覚的に理解しやすい</text>
+      <text x="0" y="80" class="description">• 論理思考力を育成</text>
+    </g>
+  </g>
+  
+  <!-- Arrow -->
+  <g transform="translate(385, 300)">
+    <path d="M 0 0 L 40 0 L 30 -10 M 40 0 L 30 10" stroke="#059669" stroke-width="3" fill="none"/>
+    <text x="20" y="-15" text-anchor="middle" class="arrow-text">自然な進化</text>
+  </g>
+  
+  <!-- Python Section -->
+  <g id="python-section">
+    <rect x="430" y="70" width="320" height="480" rx="12" class="python-bg"/>
+    <text x="590" y="100" text-anchor="middle" class="section-title">🐍 Python（テキスト）</text>
+    
+    <!-- If Statement Example -->
+    <g transform="translate(450, 130)">
+      <text x="0" y="15" class="description">条件分岐（同じ論理構造）</text>
+      <rect x="0" y="25" width="280" height="60" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="1" rx="4"/>
+      <text x="10" y="45" class="code-text">if x > 0:</text>
+      <text x="30" y="65" class="code-text">print("正の数です")</text>
+    </g>
+    
+    <!-- Loop Example -->
+    <g transform="translate(450, 240)">
+      <text x="0" y="15" class="description">繰り返し処理（同じ概念）</text>
+      <rect x="0" y="25" width="280" height="60" fill="#F8FAFC" stroke="#CBD5E0" stroke-width="1" rx="4"/>
+      <text x="10" y="45" class="code-text">for i in range(10):</text>
+      <text x="30" y="65" class="code-text">print("Hello")</text>
+    </g>
+    
+    <!-- Features -->
+    <g transform="translate(450, 350)">
+      <text x="0" y="15" class="section-title">特徴:</text>
+      <text x="0" y="35" class="description">• 英語のように読める文法</text>
+      <text x="0" y="50" class="description">• インデントで構造が明確</text>
+      <text x="0" y="65" class="description">• Scratchの概念がそのまま適用</text>
+      <text x="0" y="80" class="description">• より柔軟で強力</text>
+    </g>
+    
+    <!-- Advantage Box -->
+    <g transform="translate(450, 450)">
+      <rect x="0" y="0" width="280" height="80" fill="#ECFDF5" stroke="#22C55E" stroke-width="2" rx="8"/>
+      <text x="10" y="20" class="highlight">✨ 移行が簡単な理由</text>
+      <text x="10" y="35" class="description">同じプログラミング概念を</text>
+      <text x="10" y="50" class="description">文字で表現するだけ！</text>
+      <text x="10" y="70" class="description">論理的思考力がそのまま活用できる</text>
+    </g>
+  </g>
+  
+</svg>

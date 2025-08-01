@@ -1,0 +1,186 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-10：VSCode セットアップ完全ガイド</title>
+  <desc>Visual Studio Codeの基本インストールから競技プログラミング向け設定までの完全ガイド</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .step-title { font: 600 12px Inter, sans-serif; fill: #4B5563; }
+      .step-text { font: 400 11px Inter, sans-serif; fill: #6B7280; }
+      .setting-item { font: 400 11px Inter, sans-serif; fill: #4B5563; }
+      .shortcut { font: 400 10px 'SF Mono', Consolas, monospace; fill: #7C3AED; }
+      .extension-name { font: 600 11px Inter, sans-serif; fill: #059669; }
+      .icon { font: 400 16px Inter, sans-serif; }
+      
+      .install-bg { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .extension-bg { fill: #DCFCE7; stroke: #22C55E; stroke-width: 2; }
+      .settings-bg { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .step-number { fill: #3B82F6; }
+      .bullet { fill: #6B7280; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-10：VSCode セットアップ完全ガイド</text>
+  
+  <!-- Basic Installation Section -->
+  <g id="basic-install">
+    <rect x="50" y="60" width="220" height="160" rx="12" class="install-bg"/>
+    <text x="70" y="80" class="section-title">📥 基本インストール</text>
+    
+    <g transform="translate(60, 95)">
+      <circle cx="8" cy="8" r="8" class="step-number"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">1</text>
+      <text x="25" y="12" class="step-text">https://code.visualstudio.com</text>
+      <text x="25" y="25" class="step-text">にアクセス</text>
+    </g>
+    
+    <g transform="translate(60, 130)">
+      <circle cx="8" cy="8" r="8" class="step-number"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">2</text>
+      <text x="25" y="12" class="step-text">"Download for Windows/Mac/Linux"</text>
+      <text x="25" y="25" class="step-text">をクリック</text>
+    </g>
+    
+    <g transform="translate(60, 165)">
+      <circle cx="8" cy="8" r="8" class="step-number"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">3</text>
+      <text x="25" y="12" class="step-text">インストーラーを実行</text>
+    </g>
+    
+    <g transform="translate(60, 190)">
+      <circle cx="8" cy="8" r="8" class="step-number"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">4</text>
+      <text x="25" y="12" class="step-text">初回起動時に日本語化の設定</text>   
+    </g>
+  </g>
+  
+  <!-- Essential Extensions Section -->
+  <g id="extensions">
+    <rect x="290" y="60" width="460" height="160" rx="12" class="extension-bg"/>
+    <text x="310" y="80" class="section-title">🔌 必須拡張機能のインストール</text>
+    
+    <!-- Python Extension Pack -->
+    <g transform="translate(310, 95)">
+      <text x="0" y="12" class="extension-name">Python Extension Pack:</text>
+      <text x="20" y="27" class="step-text">• Python言語サポート</text>
+      <text x="20" y="40" class="step-text">• IntelliSense（コード補完）</text>
+      <text x="20" y="53" class="step-text">• Linting（エラー検出）</text>
+      <text x="20" y="66" class="step-text">• Debugging（デバッグ機能）</text>
+    </g>
+    
+    <!-- Other Extensions -->
+    <g transform="translate(500, 95)">
+      <text x="0" y="12" class="extension-name">その他の有用な拡張機能：</text>
+      <text x="20" y="27" class="step-text">• Bracket Pair Colorizer</text>
+      <text x="30" y="40" class="step-text">（括弧の色分け）</text>
+      <text x="20" y="53" class="step-text">• indent-rainbow</text>
+      <text x="30" y="66" class="step-text">（インデントの視覚化）</text>
+      <text x="20" y="79" class="step-text">• Code Runner</text>
+      <text x="30" y="92" class="step-text">（ワンクリック実行）</text>
+    </g>
+  </g>
+  
+  <!-- Competitive Programming Settings -->
+  <g id="cp-settings">
+    <rect x="50" y="240" width="700" height="200" rx="12" class="settings-bg"/>
+    <text x="70" y="260" class="section-title">⚙️ 競技プログラミング向け設定</text>
+    
+    <!-- Basic Settings -->
+    <g transform="translate(70, 275)">
+      <text x="0" y="15" class="step-title">基本設定項目：</text>
+      
+      <g transform="translate(0, 30)">
+        <circle cx="3" cy="3" r="3" class="bullet"/>
+        <text x="15" y="7" class="setting-item">ファイル自動保存：有効</text>
+        <text x="200" y="7" class="step-text">編集時に自動的に保存</text>
+      </g>
+      
+      <g transform="translate(0, 45)">
+        <circle cx="3" cy="3" r="3" class="bullet"/>
+        <text x="15" y="7" class="setting-item">フォントサイズ：14px</text>
+        <text x="200" y="7" class="step-text">見やすさ重視</text>
+      </g>
+      
+      <g transform="translate(0, 60)">
+        <circle cx="3" cy="3" r="3" class="bullet"/>
+        <text x="15" y="7" class="setting-item">テーマ：Dark+</text>
+        <text x="200" y="7" class="step-text">目に優しいダークテーマ</text>
+      </g>
+      
+      <g transform="translate(0, 75)">
+        <circle cx="3" cy="3" r="3" class="bullet"/>
+        <text x="15" y="7" class="setting-item">行番号表示：有効</text>
+        <text x="200" y="7" class="step-text">デバッグ時に便利</text>
+      </g>
+      
+      <g transform="translate(0, 90)">
+        <circle cx="3" cy="3" r="3" class="bullet"/>
+        <text x="15" y="7" class="setting-item">ミニマップ表示：無効</text>
+        <text x="200" y="7" class="step-text">画面スペース確保</text>
+      </g>
+    </g>
+    
+    <!-- Shortcut Settings -->
+    <g transform="translate(400, 275)">
+      <text x="0" y="15" class="step-title">ショートカットキー設定：</text>
+      
+      <g transform="translate(0, 35)">
+        <rect x="0" y="-8" width="45" height="16" rx="3" fill="#7C3AED" opacity="0.1"/>
+        <text x="7" y="2" class="shortcut">F5</text>
+        <text x="55" y="2" class="setting-item">プログラム実行</text>
+      </g>
+      
+      <g transform="translate(0, 55)">
+        <rect x="0" y="-8" width="60" height="16" rx="3" fill="#7C3AED" opacity="0.1"/>
+        <text x="7" y="2" class="shortcut">Ctrl+S</text>
+        <text x="70" y="2" class="setting-item">ファイル保存</text>
+      </g>
+      
+      <g transform="translate(0, 75)">
+        <rect x="0" y="-8" width="60" height="16" rx="3" fill="#7C3AED" opacity="0.1"/>
+        <text x="7" y="2" class="shortcut">Ctrl+/</text>
+        <text x="70" y="2" class="setting-item">コメントアウト</text>
+      </g>
+      
+      <g transform="translate(0, 95)">
+        <rect x="0" y="-8" width="65" height="16" rx="3" fill="#7C3AED" opacity="0.1"/>
+        <text x="7" y="2" class="shortcut">Ctrl+`</text>
+        <text x="73" y="2" class="setting-item">ターミナル表示</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Workspace Setup -->
+  <g id="workspace-setup">
+    <rect x="50" y="460" width="330" height="120" rx="12" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="70" y="480" class="section-title">📁 ワークスペース設定</text>
+    
+    <g transform="translate(70, 495)">
+      <text x="0" y="15" class="step-title">推奨フォルダ構成：</text>
+      <text x="0" y="30" class="step-text">📁 competitive-programming/</text>
+      <text x="20" y="45" class="step-text">├── 📁 atcoder/</text>
+      <text x="20" y="60" class="step-text">├── 📁 practice/</text>
+      <text x="20" y="75" class="step-text">└── 📁 templates/</text>
+    </g>
+  </g>
+  
+  <!-- Tips Section -->
+  <g id="tips">
+    <rect x="400" y="460" width="350" height="120" rx="12" fill="#ECFDF5" stroke="#22C55E" stroke-width="1"/>
+    <text x="420" y="480" class="section-title">💡 効率化のコツ</text>
+    
+    <g transform="translate(420, 495)">
+      <text x="0" y="15" class="step-text">• Ctrl+Shift+P でコマンドパレット活用</text>
+      <text x="0" y="30" class="step-text">• スニペット機能でテンプレート自動入力</text>
+      <text x="0" y="45" class="step-text">• Zen Mode（Ctrl+K Z）で集中モード</text>
+      <text x="0" y="60" class="step-text">• Git統合でコード管理</text>
+      <text x="0" y="75" class="step-text">• 複数ファイル同時編集で効率アップ</text>
+    </g>
+  </g>
+  
+</svg>
