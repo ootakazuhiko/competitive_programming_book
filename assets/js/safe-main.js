@@ -43,15 +43,11 @@
         });
     }
 
-    // 基本機能の初期化（緊急修正：最小限のみ）
-    function initBasicFeatures() {
-        // 基本的なテーマとサイドバーのみ
-        safeExecute(initTheme, 'initTheme');
-        safeExecute(initSidebar, 'initSidebar');
-        // 重い処理をすべて無効化
-        // safeExecute(initStyles, 'initStyles');
-        // safeExecute(initSmoothScrolling, 'initSmoothScrolling');
-    }
+    // 基本機能の初期化（緊急修正により一時的に削除）
+    // function initBasicFeatures() {
+    //     // この関数は緊急修正により一時的に無効化
+    //     // 将来的にページフリーズ問題が解決次第、段階的に復活予定
+    // }
 
     // 緊急修正：重い処理をすべて無効化
     function initHeavyFeatures() {
@@ -229,13 +225,14 @@
     document.addEventListener('DOMContentLoaded', function() {
         console.log('[Safe JS] Emergency minimal initialization...');
         
-        // 最小限の機能のみ実行
+        // 最小限の機能のみ実行（テーマとサイドバーのみ）
         safeExecute(initTheme, 'initTheme');
         safeExecute(initSidebar, 'initSidebar');
         
-        // 重い処理は完全に無効化
-        // initBasicFeatures();
-        // initHeavyFeatures();
+        // 全ての重い処理は完全に無効化（ページフリーズ防止のため）
+        // 将来的に段階的復活予定：
+        // - initBasicFeatures() // 基本機能
+        // - initHeavyFeatures() // 重い機能
         
         console.log('[Safe JS] Emergency minimal initialization completed');
     });
