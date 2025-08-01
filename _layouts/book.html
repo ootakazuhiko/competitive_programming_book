@@ -213,64 +213,11 @@
             background-color: var(--background-secondary) !important;
         }
         
-        /* Mobile sidebar - TRANSPARENT by default, background ONLY when open */
+        /* Critical inline CSS override - minimal necessary fixes only */
         @media (max-width: 767px) {
             .book-sidebar {
                 background: transparent !important;
-                background-color: transparent !important;
                 box-shadow: none !important;
-                opacity: 1 !important;
-            }
-            
-            /* Background ONLY when sidebar is checked/open */
-            .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar {
-                background: #ffffff !important;
-                background-color: #ffffff !important;
-                box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15) !important;
-            }
-            
-            /* Dark mode background ONLY when open */
-            @media (prefers-color-scheme: dark) {
-                .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar {
-                    background: #1f2937 !important;
-                    background-color: #1f2937 !important;
-                }
-            }
-            
-            /* Text styling ONLY when sidebar is open */
-            .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar * {
-                opacity: 1 !important;
-            }
-            
-            .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .book-title,
-            .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-section-title {
-                color: #111827 !important;
-                opacity: 1 !important;
-            }
-            
-            .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link {
-                color: #6b7280 !important;
-                opacity: 1 !important;
-                background: transparent !important;
-            }
-            
-            /* Dark mode text colors ONLY when open */
-            @media (prefers-color-scheme: dark) {
-                .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .book-title,
-                .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-section-title {
-                    color: #f9fafb !important;
-                }
-                
-                .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link {
-                    color: #d1d5db !important;
-                }
-            }
-            
-            /* Hover/active states ONLY when sidebar is open */
-            .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link:hover,
-            .sidebar-toggle-checkbox:checked ~ .book-layout .book-sidebar .toc-link.active {
-                background-color: #3b82f6 !important;
-                color: #ffffff !important;
             }
         }
         
