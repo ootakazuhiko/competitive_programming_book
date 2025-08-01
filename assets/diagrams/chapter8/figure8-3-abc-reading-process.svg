@@ -1,0 +1,208 @@
+<svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="problemGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#065f46;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <linearGradient id="stage1Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#60a5fa;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <linearGradient id="stage2Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <linearGradient id="stage3Gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- Icon definitions -->
+    <g id="clipboardIcon">
+      <rect x="4" y="2" width="12" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <rect x="8" y="0" width="4" height="4" rx="1" fill="currentColor"/>
+      <line x1="8" y1="8" x2="12" y2="8" stroke="currentColor" stroke-width="1"/>
+      <line x1="8" y1="12" x2="12" y2="12" stroke="currentColor" stroke-width="1"/>
+    </g>
+    
+    <g id="searchIcon">
+      <circle cx="8" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <line x1="14" y1="14" x2="18" y2="18" stroke="currentColor" stroke-width="1.5"/>
+    </g>
+    
+    <g id="testTubeIcon">
+      <path d="M14.5 3a1 1 0 00-1 1v8.5l-6.5 6.5a2 2 0 002.8 2.8L16 15V4a1 1 0 00-1-1h-.5z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="10.5" cy="7.5" r="1" fill="currentColor"/>
+    </g>
+    
+    <g id="lightbulbIcon">
+      <path d="M9 21h6M12 17v4M12 3a6 6 0 016 6c0 2.5-1.5 4.5-3 5.5a1 1 0 01-1 .5H10a1 1 0 01-1-.5C7.5 13.5 6 11.5 6 9a6 6 0 016-6z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </g>
+    
+    <g id="checkIcon">
+      <polyline points="20,6 9,17 4,12" stroke="currentColor" stroke-width="2" fill="none"/>
+    </g>
+    
+    <g id="xIcon">
+      <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2"/>
+      <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2"/>
+    </g>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="900" fill="#f8fafc"/>
+  
+  <!-- Main title header -->
+  <rect width="800" height="50" fill="url(#headerGradient)"/>
+  <text x="400" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="white">
+    📋 ABC問題での読解プロセス実演
+  </text>
+  
+  <!-- Problem statement section -->
+  <rect x="20" y="70" width="760" height="200" rx="8" fill="url(#problemGradient)" stroke="#059669" stroke-width="2"/>
+  
+  <g transform="translate(40, 90)">
+    <use href="#clipboardIcon" x="0" y="0" color="#065f46" transform="scale(1.5)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#065f46">例題：ABC100 C -「Three Dice」（架空の問題）</text>
+  </g>
+  
+  <!-- Problem description -->
+  <g font-family="Monaco, monospace" font-size="13" fill="#1f2937">
+    <text x="60" y="125">高橋君は3つのサイコロを振ります。</text>
+    <text x="60" y="145">サイコロの目をa, b, cとします。</text>
+    <text x="60" y="165">以下の条件を満たすとき、「Lucky」と出力し、</text>
+    <text x="60" y="185">そうでなければ「Unlucky」と出力してください。</text>
+    
+    <text x="60" y="215" font-weight="600">条件：3つの目の合計が10以上かつ、</text>
+    <text x="100" y="235" font-weight="600">少なくとも1つの目が6である。</text>
+  </g>
+  
+  <!-- Input/Output format -->
+  <g font-family="Monaco, monospace" font-size="12" fill="#1f2937">
+    <text x="400" y="125" font-weight="600" fill="#059669">制約：1 ≤ a, b, c ≤ 6</text>
+    
+    <text x="400" y="155" font-weight="600" fill="#1e40af">入力：</text>
+    <text x="400" y="175">a b c</text>
+    
+    <text x="400" y="205" font-weight="600" fill="#7c2d12">出力：</text>
+    <text x="400" y="225">Lucky または Unlucky</text>
+  </g>
+  
+  <!-- Sample cases -->
+  <g font-family="Monaco, monospace" font-size="12" fill="#1f2937">
+    <text x="60" y="255" font-weight="600" fill="#dc2626">サンプル1：入力 6 2 3 → 出力 Lucky</text>
+    <text x="400" y="255" font-weight="600" fill="#dc2626">サンプル2：入力 1 2 3 → 出力 Unlucky</text>
+  </g>
+  
+  <!-- Stage 1: Overall understanding -->
+  <rect x="20" y="290" width="760" height="140" rx="8" fill="url(#stage1Gradient)" stroke="#3b82f6" stroke-width="2"/>
+  
+  <g transform="translate(40, 310)">
+    <use href="#searchIcon" x="0" y="0" color="#1e40af" transform="scale(1.5)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#1e40af">第1段階：全体把握の実演</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="14" fill="#1f2937">
+    <text x="60" y="345" font-weight="600" fill="#1e40af">読み取れること：</text>
+    <text x="60" y="365">• 判定問題（LuckyかUnluckyか）</text>
+    <text x="60" y="385">• 入力：3つの整数</text>
+    <text x="60" y="405">• 条件：合計 AND 最大値の複合条件</text>
+    
+    <text x="400" y="345" font-weight="600" fill="#1e40af">分類と難易度：</text>
+    <text x="400" y="365">• 数学系の簡単な問題</text>
+    <text x="400" y="385">• 条件判定問題（if文メイン）</text>
+    <text x="400" y="405">• 難易度予測：A問題レベル</text>
+  </g>
+  
+  <!-- Stage 2: Detailed analysis -->
+  <rect x="20" y="450" width="760" height="180" rx="8" fill="url(#stage2Gradient)" stroke="#8b5cf6" stroke-width="2"/>
+  
+  <g transform="translate(40, 470)">
+    <use href="#searchIcon" x="0" y="0" color="#7c3aed" transform="scale(1.5)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#7c3aed">第2段階：詳細理解の実演</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="14" fill="#1f2937">
+    <text x="60" y="505" font-weight="600" fill="#7c3aed">📋 制約の詳細確認：</text>
+    <text x="60" y="525">• a, b, c: 各1～6（サイコロの目）</text>
+    <text x="60" y="545">• 入力：1行に3つの整数、スペース区切り</text>
+    <text x="60" y="565">• 出力：文字列「Lucky」または「Unlucky」</text>
+    
+    <text x="400" y="505" font-weight="600" fill="#7c3aed">📋 条件の詳細分析：</text>
+    <text x="400" y="525">• 条件1：a + b + c ≥ 10</text>
+    <text x="400" y="545">• 条件2：max(a, b, c) = 6</text>
+    <text x="400" y="565">• 両方満たす → 「Lucky」</text>
+    <text x="400" y="585">• どちらか満たさない → 「Unlucky」</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="14" fill="#1f2937">
+    <text x="60" y="605" font-weight="600" fill="#7c3aed">📋 エッジケースの想定：</text>
+    <text x="60" y="620" font-family="Monaco, monospace" font-size="12">最小合計：1+1+1 = 3    最大合計：6+6+6 = 18</text>
+  </g>
+  
+  <!-- Stage 3: Sample verification -->
+  <rect x="20" y="650" width="760" height="230" rx="8" fill="url(#stage3Gradient)" stroke="#f59e0b" stroke-width="2"/>
+  
+  <g transform="translate(40, 670)">
+    <use href="#testTubeIcon" x="0" y="0" color="#d97706" transform="scale(1.5)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#d97706">第3段階：サンプル分析の実演</text>
+  </g>
+  
+  <!-- Sample 1 verification -->
+  <g font-family="Monaco, monospace" font-size="13" fill="#1f2937">
+    <text x="60" y="705" font-weight="600" fill="#d97706">🧪 サンプル1の検証：</text>
+    <text x="60" y="725">入力：a=6, b=2, c=3</text>
+    <text x="60" y="745">条件1：6+2+3 = 11 ≥ 10 </text>
+    <g transform="translate(250, 735)">
+      <use href="#checkIcon" x="0" y="0" color="#059669" transform="scale(0.8)"/>
+    </g>
+    <text x="60" y="765">条件2：max(6,2,3) = 6 </text>
+    <g transform="translate(220, 755)">
+      <use href="#checkIcon" x="0" y="0" color="#059669" transform="scale(0.8)"/>
+    </g>
+    <text x="60" y="785">結果：両方満たす → 「Lucky」</text>
+    <g transform="translate(280, 775)">
+      <use href="#checkIcon" x="0" y="0" color="#059669" transform="scale(0.8)"/>
+    </g>
+  </g>
+  
+  <!-- Sample 2 verification -->
+  <g font-family="Monaco, monospace" font-size="13" fill="#1f2937">
+    <text x="400" y="705" font-weight="600" fill="#d97706">🧪 サンプル2の検証：</text>
+    <text x="400" y="725">入力：a=1, b=2, c=3</text>
+    <text x="400" y="745">条件1：1+2+3 = 6 ≥ 10 </text>
+    <g transform="translate(590, 735)">
+      <use href="#xIcon" x="0" y="0" color="#dc2626" transform="scale(0.6)"/>
+    </g>
+    <text x="400" y="765">条件2：max(1,2,3) = 3 ≠ 6 </text>
+    <g transform="translate(590, 755)">
+      <use href="#xIcon" x="0" y="0" color="#dc2626" transform="scale(0.6)"/>
+    </g>
+    <text x="400" y="785">結果：両方満たさない → 「Unlucky」</text>
+    <g transform="translate(640, 775)">
+      <use href="#checkIcon" x="0" y="0" color="#059669" transform="scale(0.8)"/>
+    </g>
+  </g>
+  
+  <!-- Algorithm solution -->
+  <g transform="translate(60, 810)">
+    <use href="#lightbulbIcon" x="0" y="0" color="#d97706" transform="scale(1.5)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#d97706">💡 解法アルゴリズム：</text>
+  </g>
+  
+  <g font-family="Monaco, monospace" font-size="12" fill="#1f2937">
+    <text x="80" y="845">1. a, b, c を入力</text>
+    <text x="80" y="865">2. if sum >= 10 and max == 6: print("Lucky")</text>
+    <text x="400" y="845">3. sum = a + b + c を計算</text>
+    <text x="400" y="865">4. else: print("Unlucky")</text>
+  </g>
+</svg>

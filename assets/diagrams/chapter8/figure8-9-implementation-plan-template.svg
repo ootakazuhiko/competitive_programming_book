@@ -1,0 +1,197 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="templateGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- Icon definitions -->
+    <g id="clipboardIcon">
+      <rect x="4" y="2" width="12" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <rect x="8" y="0" width="4" height="4" rx="1" fill="currentColor"/>
+      <line x1="8" y1="8" x2="12" y2="8" stroke="currentColor" stroke-width="1"/>
+      <line x1="8" y1="12" x2="12" y2="12" stroke="currentColor" stroke-width="1"/>
+    </g>
+    
+    <g id="targetIcon">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="12" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="12" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    </g>
+    
+    <g id="inboxIcon">
+      <polyline points="22,12 16,12 14,15 10,15 8,12 2,12" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M5.45 5.11l-.7-.7a2 2 0 00-2.83 0L.79 5.54A2 2 0 001.5 9H4l1.41 1.41A2 2 0 007.83 11H20a2 2 0 001.92-1.46l1.33-4A2 2 0 0021.33 3H5.45z" fill="none" stroke="currentColor" stroke-width="2"/>
+    </g>
+    
+    <g id="outboxIcon">
+      <polyline points="6,9 12,15 18,9" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" fill="none" stroke="currentColor" stroke-width="2"/>
+    </g>
+    
+    <g id="variableIcon">
+      <path d="M6 3h12l4 6-4 6H6l-4-6 4-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="12" cy="9" r="1" fill="currentColor"/>
+    </g>
+    
+    <g id="settingsIcon">
+      <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path d="M12 1v6m0 8v6M5.6 5.6l4.2 4.2m8.4 8.4l4.2 4.2M1 12h6m8 0h6M5.6 18.4l4.2-4.2m8.4-8.4l4.2-4.2" fill="none" stroke="currentColor" stroke-width="2"/>
+    </g>
+    
+    <g id="listIcon">
+      <line x1="8" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="2"/>
+      <line x1="8" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="2"/>
+      <line x1="8" y1="18" x2="21" y2="18" stroke="currentColor" stroke-width="2"/>
+      <line x1="3" y1="6" x2="3.01" y2="6" stroke="currentColor" stroke-width="2"/>
+      <line x1="3" y1="12" x2="3.01" y2="12" stroke="currentColor" stroke-width="2"/>
+      <line x1="3" y1="18" x2="3.01" y2="18" stroke="currentColor" stroke-width="2"/>
+    </g>
+    
+    <g id="alertIcon">
+      <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" fill="none" stroke="currentColor" stroke-width="2"/>
+      <line x1="12" y1="9" x2="12" y2="13" stroke="currentColor" stroke-width="2"/>
+      <dot cx="12" cy="17" r="1" fill="currentColor"/>
+    </g>
+    
+    <g id="testTubeIcon">
+      <path d="M14.5 3a1 1 0 00-1 1v8.5l-6.5 6.5a2 2 0 002.8 2.8L16 15V4a1 1 0 00-1-1h-.5z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="10.5" cy="7.5" r="1" fill="currentColor"/>
+    </g>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#f8fafc"/>
+  
+  <!-- Main title header -->
+  <rect width="800" height="50" fill="url(#headerGradient)"/>
+  <text x="400" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="white">
+    📋 効果的な実装計画書の作成方法
+  </text>
+  
+  <!-- Template container -->
+  <rect x="20" y="70" width="760" height="610" rx="8" fill="url(#templateGradient)" stroke="#7c3aed" stroke-width="2"/>
+  
+  <!-- Template title -->
+  <text x="40" y="100" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#7c3aed">📋 実装計画書テンプレート</text>
+  
+  <!-- Problem section -->
+  <g transform="translate(50, 120)">
+    <use href="#targetIcon" x="0" y="0" color="#7c3aed" transform="scale(1.2)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#7c3aed">🎯 問題：[問題番号と簡潔な説明]</text>
+  </g>
+  
+  <!-- Input design section -->
+  <g transform="translate(50, 150)">
+    <use href="#inboxIcon" x="0" y="0" color="#1e40af" transform="scale(1.2)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#1e40af">📥 入力設計：</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="12" fill="#4b5563">
+    <text x="70" y="180">• 行1: [形式と変数名]</text>
+    <text x="70" y="195">• 行2: [形式と変数名]</text>
+    <text x="70" y="210">• 制約: [重要な制約条件]</text>
+  </g>
+  
+  <!-- Output design section -->
+  <g transform="translate(50, 230)">
+    <use href="#outboxIcon" x="0" y="0" color="#dc2626" transform="scale(1.2)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#dc2626">📤 出力設計：</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="12" fill="#4b5563">
+    <text x="70" y="260">• [出力内容と形式]</text>
+    <text x="70" y="275">• [注意事項：改行、区切り文字など]</text>
+  </g>
+  
+  <!-- Variable design section -->
+  <g transform="translate(50, 295)">
+    <use href="#variableIcon" x="0" y="0" color="#059669" transform="scale(1.2)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#059669">🔢 変数設計：</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="12" fill="#4b5563">
+    <text x="70" y="325">• 入力用変数: [型と名前と用途]</text>
+    <text x="70" y="340">• 作業用変数: [型と名前と用途]</text>
+    <text x="70" y="355">• 出力用変数: [型と名前と用途]</text>
+    
+    <!-- Right column for variable design -->
+    <text x="420" y="325">• 入力処理: input(), map(), split()</text>
+    <text x="420" y="340">• データ構造: list, dict, set</text>
+    <text x="420" y="355">• 計算処理: sum(), max(), min()</text>
+  </g>
+  
+  <!-- Function design section -->
+  <g transform="translate(50, 375)">
+    <use href="#settingsIcon" x="0" y="0" color="#f59e0b" transform="scale(1.2)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#f59e0b">🏗️ 関数設計：</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="12" fill="#4b5563">
+    <text x="70" y="405">• main(): メイン処理</text>
+    <text x="70" y="420">• [関数名](): [機能説明]</text>
+    
+    <text x="420" y="405">• 入力関数: read_input()</text>
+    <text x="420" y="420">• 計算関数: solve(), calculate()</text>
+  </g>
+  
+  <!-- Process steps section -->
+  <g transform="translate(50, 440)">
+    <use href="#listIcon" x="0" y="0" color="#8b5cf6" transform="scale(1.2)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#8b5cf6">📋 処理手順：</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="12" fill="#4b5563">
+    <text x="70" y="470">1. [ステップ1の詳細]</text>
+    <text x="70" y="485">2. [ステップ2の詳細]</text>
+    <text x="70" y="500">3. [...]</text>
+    
+    <text x="420" y="470">例：1. 入力の読み込みと検証</text>
+    <text x="420" y="485">　　2. メインロジックの実行</text>
+    <text x="420" y="500">　　3. 結果の出力と後処理</text>
+  </g>
+  
+  <!-- Notes section -->
+  <g transform="translate(50, 520)">
+    <use href="#alertIcon" x="0" y="0" color="#dc2626" transform="scale(1.2)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#dc2626">⚠️ 注意点：</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="12" fill="#4b5563">
+    <text x="70" y="550">• [実装時の注意事項]</text>
+    <text x="70" y="565">• [エッジケースの処理]</text>
+    <text x="70" y="580">• [パフォーマンス上の考慮点]</text>
+    
+    <text x="420" y="550">例：0での除算、配列の範囲外</text>
+    <text x="420" y="565">　　空データ、最大・最小値</text>
+    <text x="420" y="580">　　時間計算量、メモリ使用量</text>
+  </g>
+  
+  <!-- Test plan section -->
+  <g transform="translate(50, 600)">
+    <use href="#testTubeIcon" x="0" y="0" color="#059669" transform="scale(1.5)"/>
+    <text x="35" y="15" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#059669">🧪 テスト計画：</text>
+  </g>
+  
+  <g font-family="Inter, sans-serif" font-size="12" fill="#4b5563">
+    <text x="70" y="630">• [サンプルケース]</text>
+    <text x="70" y="645">• [エッジケース]</text>
+    <text x="70" y="660">• [自作テストケース]</text>
+    
+    <text x="420" y="630">例：問題提供サンプル1,2,3</text>
+    <text x="420" y="645">　　最小値、最大値、境界値</text>
+    <text x="420" y="660">　　特殊パターン、応答時間</text>
+  </g>
+  
+  <!-- Bottom note -->
+  <rect x="50" y="675" width="700" height="20" rx="10" fill="#e0e7ff" stroke="#6366f1" stroke-width="1"/>
+  <text x="400" y="687" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#4338ca">
+    💡 この計画書を5分で作成すれば、実装が30分短縮される！
+  </text>
+</svg>
