@@ -51,16 +51,23 @@
         safeExecute(initTheme, 'initTheme');
     }
 
-    // 重い処理の遅延初期化（長いページ用最適化）
+    // 重い処理の遅延初期化（超長いページ用最適化）
     function initHeavyFeatures() {
-        // 長いページでは処理をさらに遅らせ、時間制限を厳しくする
+        // ページの長さに応じて処理を調整
+        const contentLength = document.body.textContent.length;
+        const isVeryLongPage = contentLength > 50000; // 50KB以上は超長いページ
+        
+        const delay = isVeryLongPage ? 1000 : 500;
+        const timeout = isVeryLongPage ? 100 : 200;
+        
         setTimeout(() => {
-            safeExecuteWithTimeout(() => addHeadingIds(), 200, 'addHeadingIds');
-            // TOC生成を無効化（パフォーマンス優先）
-            // safeExecuteWithTimeout(() => generateTOC(), 500, 'generateTOC');
-            safeExecuteWithTimeout(() => handleExternalLinks(), 200, 'handleExternalLinks');
-            safeExecuteWithTimeout(() => enhanceImages(), 200, 'enhanceImages');
-        }, 500); // 遅延時間を増加
+            if (!isVeryLongPage) {
+                safeExecuteWithTimeout(() => addHeadingIds(), timeout, 'addHeadingIds');
+            }
+            // TOC生成は完全に無効化（パフォーマンス優先）
+            safeExecuteWithTimeout(() => handleExternalLinks(), timeout, 'handleExternalLinks');
+            safeExecuteWithTimeout(() => enhanceImages(), timeout, 'enhanceImages');
+        }, delay);
     }
 
     // スタイルの安全な追加
