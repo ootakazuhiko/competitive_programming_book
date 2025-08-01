@@ -145,10 +145,31 @@
     </div>
 
     <!-- Overlay for mobile sidebar -->
-    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    <div class="book-sidebar-overlay" id="sidebar-overlay"></div>
 
-    <!-- Scripts - Emergency fix: JavaScript complete isolation test (page freeze root cause identification) -->
-    <!-- All JavaScript files temporarily disabled -->
+    <!-- 
+    =======================================================================
+    JAVASCRIPT ISOLATION TEST - Phase 1: Complete JavaScript Disable
+    =======================================================================
+    Purpose: Identify if JavaScript is the root cause of page freeze issues
+    
+    Current state: ALL JavaScript completely disabled for isolation testing
+    - All external JS files disabled
+    - All inline JavaScript disabled
+    - Basic HTML/CSS functionality only
+    
+    Expected results if JS is the cause:
+    ✓ Pages load faster
+    ✓ No page freezing after load
+    ✓ Navigation works (CSS-only)
+    ✓ Theme toggle non-functional (expected)
+    ✓ Mobile sidebar non-functional (expected)
+    
+    Note: This will temporarily disable ALL interactive features
+    =======================================================================
+    -->
+    
+    <!-- All JavaScript files disabled for isolation test -->
     <!-- 
     <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
@@ -156,58 +177,12 @@
     <script src="{{ '/assets/js/safe-main.js' | relative_url }}"></script>
     -->
     
-    <!-- Minimal theme switching and sidebar toggle (inline implementation) -->
+    <!-- All inline JavaScript disabled for isolation test -->
+    <!-- 
     <script>
-        (function() {
-            'use strict';
-            
-            console.log('[Emergency JS] Minimal inline JavaScript loading...');
-            
-            document.addEventListener('DOMContentLoaded', function() {
-                // テーマ切り替え機能
-                const themeToggle = document.querySelector('.theme-toggle');
-                if (themeToggle) {
-                    themeToggle.addEventListener('click', function() {
-                        const currentTheme = document.documentElement.getAttribute('data-theme');
-                        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                        document.documentElement.setAttribute('data-theme', newTheme);
-                        localStorage.setItem('theme', newTheme);
-                        console.log('[Emergency JS] Theme switched to:', newTheme);
-                    });
-                }
-                
-                // サイドバートグル機能
-                const sidebarToggle = document.querySelector('.sidebar-toggle');
-                const sidebar = document.querySelector('.book-sidebar');
-                const overlay = document.querySelector('.sidebar-overlay');
-                
-                if (sidebarToggle && sidebar) {
-                    sidebarToggle.addEventListener('click', function() {
-                        sidebar.classList.toggle('open');
-                        if (overlay) {
-                            overlay.classList.toggle('active');
-                        }
-                        console.log('[Emergency JS] Sidebar toggled');
-                    });
-                }
-                
-                // オーバーレイクリックでサイドバーを閉じる
-                if (overlay) {
-                    overlay.addEventListener('click', function() {
-                        sidebar.classList.remove('open');
-                        overlay.classList.remove('active');
-                    });
-                }
-                
-                console.log('[Emergency JS] Minimal initialization completed successfully');
-            });
-            
-            // エラーハンドリング
-            window.addEventListener('error', function(event) {
-                console.warn('[Emergency JS] Error caught:', event.error);
-            });
-            
-        })();
+        // This section intentionally disabled for JavaScript isolation testing
+        // Will be re-enabled after root cause identification
     </script>
+    -->
 </body>
 </html>
