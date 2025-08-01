@@ -1,0 +1,312 @@
+<svg viewBox="0 0 1400 1400" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-14：12章すべてで学んだ成長の軌跡</title>
+  <desc>全12章を通じた学習の軌跡と総合的な成長プロセス</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1400" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    12章すべてで学んだ成長の軌跡
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    競技プログラミング学習による総合的な人格・能力形成の完全ガイド
+  </text>
+
+  <!-- Chapter Journey -->
+  <rect x="50" y="80" width="1300" height="100" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🌟 12章の学習軌跡：出会い→習得→実践→成長→未来
+  </text>
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    各章での学習が積み重なり、中学生から社会で活躍する技術者への成長を実現
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    🎯 総合目標：技術力だけでなく、人間力・社会貢献力を備えた次世代リーダーの育成
+  </text>
+
+  <!-- Chapter Progress Flow -->
+  <g id="chapter-flow">
+    <!-- Phase 1: Foundation (Chapters 1-4) -->
+    <rect x="50" y="200" width="300" height="280" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text x="200" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+      📖 Phase 1: 基礎確立期
+    </text>
+    <text x="200" y="245" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#15803d">
+      第1-4章
+    </text>
+
+    <text x="70" y="270" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">第1章 🌟 競技プログラミングとの出会い</text>
+    <text x="80" y="285" font-family="Arial, sans-serif" font-size="9" fill="#15803d">→ 新しい世界への扉を開く</text>
+
+    <text x="70" y="305" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">第2章 🚪 AtCoderでの最初の一歩</text>
+    <text x="80" y="320" font-family="Arial, sans-serif" font-size="9" fill="#15803d">→ 実践的な挑戦の開始</text>
+
+    <text x="70" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">第3章 🛠️ 開発環境の整備</text>
+    <text x="80" y="355" font-family="Arial, sans-serif" font-size="9" fill="#15803d">→ 学習基盤の構築</text>
+
+    <text x="70" y="375" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">第4章 📝 入出力処理の習得</text>
+    <text x="80" y="390" font-family="Arial, sans-serif" font-size="9" fill="#15803d">→ プログラミング基礎の確立</text>
+
+    <rect x="70" y="410" width="250" height="55" rx="4" fill="white" stroke="#86efac" stroke-width="1"/>
+    <text x="80" y="430" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">獲得した力：</text>
+    <text x="80" y="445" font-family="Arial, sans-serif" font-size="9" fill="#15803d">• プログラミングへの興味・関心</text>
+    <text x="80" y="455" font-family="Arial, sans-serif" font-size="9" fill="#15803d">• 基本的な技術スキル・環境構築力</text>
+
+    <!-- Phase 2: Skill Development (Chapters 5-8) -->
+    <rect x="370" y="200" width="300" height="280" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="520" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+      🚀 Phase 2: 技術習得期
+    </text>
+    <text x="520" y="245" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6b21a8">
+      第5-8章
+    </text>
+
+    <text x="390" y="270" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">第5章 🧠 基本アルゴリズムの理解</text>
+    <text x="400" y="285" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">→ 論理的思考力の発達</text>
+
+    <text x="390" y="305" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">第6章 📚 データ構造の活用</text>
+    <text x="400" y="320" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">→ 効率的な問題解決手法</text>
+
+    <text x="390" y="340" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">第7章 🎯 ABC問題の攻略</text>
+    <text x="400" y="355" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">→ 実践的解法能力の習得</text>
+
+    <text x="390" y="375" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">第8章 🔍 体系的問題解決プロセス</text>
+    <text x="400" y="390" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">→ 戦略的思考の確立</t>
+
+    <rect x="390" y="410" width="250" height="55" rx="4" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+    <text x="400" y="430" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">獲得した力：</text>
+    <text x="400" y="445" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">• 高度な技術力・アルゴリズム理解</text>
+    <text x="400" y="455" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">• 体系的・効率的な学習手法</text>
+
+    <!-- Phase 3: Practical Application (Chapters 9-10) -->
+    <rect x="690" y="200" width="300" height="280" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+    <text x="840" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#dc2626">
+      ⚡ Phase 3: 実践強化期
+    </text>
+    <text x="840" y="245" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#dc2626">
+      第9-10章
+    </text>
+
+    <text x="710" y="280" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">第9章 🔧 エラー対応力の確立</text>
+    <text x="720" y="295" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">→ 困難克服・回復力の強化</text>
+
+    <text x="710" y="325" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">第10章 🏆 コンテスト参加の実践</text>
+    <text x="720" y="340" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">→ 本格的な挑戦・成果の実現</text>
+
+    <rect x="710" y="370" width="250" height="95" rx="4" fill="white" stroke="#fca5a5" stroke-width="1"/>
+    <text x="720" y="390" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">獲得した力：</text>
+    <text x="720" y="405" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">• 実践的な問題解決・対応力</text>
+    <text x="720" y="415" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">• 挫折・困難への耐性・回復力</text>
+    <text x="720" y="425" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">• 目標達成・成果創出能力</text>
+    <text x="720" y="435" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">• 自信・達成感・成長実感</text>
+    <text x="720" y="445" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">• 継続的挑戦への意欲</text>
+
+    <!-- Phase 4: Community & Future (Chapters 11-12) -->
+    <rect x="1010" y="200" width="300" height="280" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    <text x="1160" y="225" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#047857">
+      🌟 Phase 4: 成長・貢献期
+    </text>
+    <text x="1160" y="245" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#047857">
+      第11-12章
+    </text>
+
+    <text x="1030" y="280" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">第11章 🤝 仲間との協働成長</text>
+    <text x="1040" y="295" font-family="Arial, sans-serif" font-size="9" fill="#047857">→ コミュニティ・協働の価値実感</text>
+
+    <text x="1030" y="325" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">第12章 🌅 無限の可能性への道筋</text>
+    <text x="1040" y="340" font-family="Arial, sans-serif" font-size="9" fill="#047857">→ 将来ビジョン・人生設計</text>
+
+    <rect x="1030" y="370" width="250" height="95" rx="4" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+    <text x="1040" y="390" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#047857">獲得した力：</text>
+    <text x="1040" y="405" font-family="Arial, sans-serif" font-size="9" fill="#047857">• コミュニケーション・協働力</text>
+    <text x="1040" y="415" font-family="Arial, sans-serif" font-size="9" fill="#047857">• リーダーシップ・指導力</text>
+    <text x="1040" y="425" font-family="Arial, sans-serif" font-size="9" fill="#047857">• 社会貢献・価値創造意識</text>
+    <text x="1040" y="435" font-family="Arial, sans-serif" font-size="9" fill="#047857">• 長期的視野・人生設計力</text>
+    <text x="1040" y="445" font-family="Arial, sans-serif" font-size="9" fill="#047857">• 次世代育成・継承意識</text>
+  </g>
+
+  <!-- Arrows showing progression -->
+  <path d="M 350 340 L 370 340" stroke="#4b5563" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 670 340 L 690 340" stroke="#4b5563" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 990 340 L 1010 340" stroke="#4b5563" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4b5563"/>
+    </marker>
+  </defs>
+
+  <!-- Comprehensive Growth Summary -->
+  <rect x="50" y="500" width="1300" height="300" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="525" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🎉 総合的な成長の成果：全人的な発達の実現
+  </text>
+
+  <!-- Technical Skills -->
+  <rect x="80" y="545" width="300" height="240" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="90" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    💻 技術的能力
+  </text>
+  <text x="100" y="585" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">プログラミング技術：</tspan>
+    <tspan x="110" dy="12">• Python・C++等の言語習得</tspan>
+    <tspan x="110" dy="12">• アルゴリズム・データ構造理解</tspan>
+    <tspan x="110" dy="12">• 効率的なコード実装能力</tspan>
+  </text>
+  <text x="100" y="635" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">問題解決技術：</tspan>
+    <tspan x="110" dy="12">• 複雑な問題の分析・分解</tspan>
+    <tspan x="110" dy="12">• 最適化・効率化の思考</tspan>
+    <tspan x="110" dy="12">• デバッグ・エラー対応</tspan>
+  </text>
+  <text x="100" y="685" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">学習・開発環境：</tspan>
+    <tspan x="110" dy="12">• 効率的な学習システム</tspan>
+    <tspan x="110" dy="12">• GitHub・ツール活用</tspan>
+    <tspan x="110" dy="12">• 継続的な技術向上</tspan>
+  </text>
+
+  <!-- Intellectual Skills -->
+  <rect x="400" y="545" width="300" height="240" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="410" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🧠 知的能力
+  </text>
+  <text x="420" y="585" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="420" dy="0">思考力：</tspan>
+    <tspan x="430" dy="12">• 論理的・体系的思考</tspan>
+    <tspan x="430" dy="12">• 抽象化・一般化能力</tspan>
+    <tspan x="430" dy="12">• 批判的思考・分析力</tspan>
+  </text>
+  <text x="420" y="635" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="420" dy="0">学習能力：</tspan>
+    <tspan x="430" dy="12">• 効率的な学習方法</tspan>
+    <tspan x="430" dy="12">• 新しい概念の習得力</tspan>
+    <tspan x="430" dy="12">• 知識の体系化・応用</tspan>
+  </text>
+  <text x="420" y="685" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="420" dy="0">創造力：</tspan>
+    <tspan x="430" dy="12">• 新しいアプローチ発見</tspan>
+    <tspan x="430" dy="12">• 独創的な解法開発</tspan>
+    <tspan x="430" dy="12">• イノベーション思考</tspan>
+  </text>
+
+  <!-- Personal Skills -->
+  <rect x="720" y="545" width="300" height="240" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="730" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    💪 人格・精神力
+  </text>
+  <text x="740" y="585" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="740" dy="0">継続力・忍耐力：</tspan>
+    <tspan x="750" dy="12">• 長期的な努力継続</tspan>
+    <tspan x="750" dy="12">• 困難・挫折への対応</tspan>
+    <tspan x="750" dy="12">• 目標達成への執念</tspan>
+  </text>
+  <text x="740" y="635" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="740" dy="0">成長思考・挑戦精神：</tspan>
+    <tspan x="750" dy="12">• 失敗を恐れない勇気</tspan>
+    <tspan x="750" dy="12">• 常に向上を目指す姿勢</tspan>
+    <tspan x="750" dy="12">• 新しいことへの好奇心</tspan>
+  </text>
+  <text x="740" y="685" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="740" dy="0">自己管理・計画力：</tspan>
+    <tspan x="750" dy="12">• 時間・リソース管理</tspan>
+    <tspan x="750" dy="12">• 目標設定・進捗評価</tspan>
+    <tspan x="750" dy="12">• 自律的な学習習慣</tspan>
+  </text>
+
+  <!-- Social Skills -->
+  <rect x="1040" y="545" width="300" height="240" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="1050" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🤝 社会・協働力
+  </text>
+  <text x="1060" y="585" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="1060" dy="0">コミュニケーション：</tspan>
+    <tspan x="1070" dy="12">• 技術的内容の説明力</tspan>
+    <tspan x="1070" dy="12">• オンライン・対面交流</tspan>
+    <tspan x="1070" dy="12">• 多様な人との協働</tspan>
+  </text>
+  <text x="1060" y="635" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="1060" dy="0">リーダーシップ：</tspan>
+    <tspan x="1070" dy="12">• 後輩・仲間の指導</tspan>
+    <tspan x="1070" dy="12">• チーム・組織運営</tspan>
+    <tspan x="1070" dy="12">• イニシアティブの発揮</tspan>
+  </text>
+  <text x="1060" y="685" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="1060" dy="0">社会貢献意識：</tspan>
+    <tspan x="1070" dy="12">• 知識・経験の共有還元</tspan>
+    <tspan x="1070" dy="12">• 次世代育成への責任</tspan>
+    <tspan x="1070" dy="12">• 社会課題解決への関心</tspan>
+  </text>
+
+  <!-- Final Achievement -->
+  <rect x="50" y="820" width="1300" height="200" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="700" y="845" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    🎓 最終到達点：素晴らしいスタートラインに到達！
+  </text>
+  
+  <text x="100" y="875" font-family="Arial, sans-serif" font-size="14" fill="#047857">
+    君はこの本を通じて、単なる技術習得を超えた<tspan font-weight="bold">「人生の基盤となる力」</tspan>を身につけた：
+  </text>
+  
+  <text x="120" y="900" font-family="Arial, sans-serif" font-size="12" fill="#047857">
+    • <tspan font-weight="bold">困難に立ち向かう勇気</tspan>：どんな挑戦も恐れずに取り組む精神力
+  </text>
+  <text x="120" y="920" font-family="Arial, sans-serif" font-size="12" fill="#047857">
+    • <tspan font-weight="bold">継続的に学び成長する力</tspan>：変化する世界に適応し続ける能力
+  </text>
+  <text x="120" y="940" font-family="Arial, sans-serif" font-size="12" fill="#047857">
+    • <tspan font-weight="bold">論理的に考え解決する思考</tspan>：複雑な問題を整理し解決する頭脳
+  </text>
+  <text x="120" y="960" font-family="Arial, sans-serif" font-size="12" fill="#047857">
+    • <tspan font-weight="bold">他者と協働し貢献する心</tspan>：仲間と共に成長し社会に価値を提供する精神
+  </text>
+  <text x="120" y="980" font-family="Arial, sans-serif" font-size="12" fill="#047857">
+    • <tspan font-weight="bold">未来を創造するビジョン</tspan>：技術で世界をより良くする使命感
+  </text>
+
+  <!-- Congratulations Message -->
+  <rect x="200" y="1040" width="1000" height="120" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
+  <text x="700" y="1070" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#92400e">
+    🎉 おめでとう！君は今、素晴らしいスタートラインに立っている！
+  </text>
+  <text x="220" y="1100" font-family="Arial, sans-serif" font-size="14" fill="#92400e">
+    この本で学んだ技術や知識は、君がこれから歩む人生の大きな財産になる。
+  </text>
+  <text x="220" y="1120" font-family="Arial, sans-serif" font-size="14" fill="#92400e">
+    でも何より大切なのは、<tspan font-weight="bold">「学び続ける力」</tspan>と<tspan font-weight="bold">「挑戦する勇気」</tspan>を身につけたことだ。
+  </text>
+  <text x="220" y="1140" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#92400e">
+    君の成功を心から応援している。頑張れ、未来のエンジニア！🚀
+  </text>
+
+  <!-- Final Journey Continues -->
+  <rect x="400" y="1180" width="600" height="80" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="1205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🌅 新しい冒険の始まり
+  </text>
+  <text x="420" y="1230" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">
+    競技プログラミングは始まりに過ぎない。ここから広がる無限の可能性を信じて、
+  </text>
+  <text x="420" y="1245" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">
+    君らしい道を歩んでいってほしい。技術で世界を変える力は、君の手の中にある。
+  </text>
+
+  <!-- Success indicators at bottom -->
+  <rect x="50" y="1280" width="1300" height="100" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="1" stroke-dasharray="5,5"/>
+  <text x="700" y="1305" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#475569">
+    📈 成長の証拠：目に見える変化
+  </text>
+  <text x="100" y="1330" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    • AtCoderでの安定した成績 • 継続的な学習習慣の確立 • 技術的な質問・発信ができる
+  </text>
+  <text x="100" y="1345" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    • 後輩・仲間をサポートできる • 将来への明確なビジョンがある • 挑戦を楽しめる
+  </text>
+  <text x="100" y="1360" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+    <tspan font-weight="bold">最も重要な成長：「できない」が「まだできない」に変わった思考の転換</tspan>
+  </text>
+</svg>

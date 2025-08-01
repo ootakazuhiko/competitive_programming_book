@@ -1,0 +1,511 @@
+<svg viewBox="0 0 1400 1700" xmlns="http://www.w3.org/2000/svg">
+  <title>図11-4：メンターシップ関係図</title>
+  <desc>競技プログラミング学習におけるメンター・メンティ関係の構築と効果的な活用方法</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1700" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    メンターシップ関係図
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    効果的なメンター・メンティ関係による加速的な学習成長システム
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🤝 3層構造のメンターシップ：先輩→自分→後輩の連鎖的成長
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">効果実証：メンターシップを活用した学習者の成長速度は通常の2.5倍、継続率93%</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">🎯 目標：相互支援による持続可能な学習コミュニティを構築し、全員の成長を加速</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：「教えることで学ぶ」相乗効果により、メンター・メンティ双方が成長</tspan>
+  </text>
+
+  <!-- Mentor Types -->
+  <rect x="50" y="220" width="1300" height="320" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    👨‍🏫 メンターの種類と特徴：多様な指導者からの学び
+  </text>
+
+  <!-- Senior Students -->
+  <rect x="80" y="265" width="300" height="260" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎓 先輩学生メンター
+  </text>
+  <text x="100" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">特徴・強み：</tspan>
+    <tspan x="110" dy="12">• 年齢が近く親しみやすい関係</tspan>
+    <tspan x="110" dy="12">• 最近の学習体験・失敗談を共有</tspan>
+    <tspan x="110" dy="12">• 学校生活・進路相談も可能</tspan>
+    <tspan x="110" dy="12">• 気軽に質問・相談しやすい環境</tspan>
+  </text>
+  
+  <text x="100" y="355" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">提供価値：</tspan>
+    <tspan x="110" dy="12">• 基礎的な概念・解法の説明</tspan>
+    <tspan x="110" dy="12">• 学習方法・時間管理のアドバイス</tspan>
+    <tspan x="110" dy="12">• モチベーション維持の支援</tspan>
+    <tspan x="110" dy="12">• 同世代の悩み・課題への共感</tspan>
+  </text>
+
+  <text x="100" y="405" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">発見・つながり方：</tspan>
+    <tspan x="110" dy="12">• 学校・塾の先輩との関係構築</tspan>
+    <tspan x="110" dy="12">• コンテスト会場での交流</tspan>
+    <tspan x="110" dy="12">• オンラインコミュニティでの出会い</tspan>
+    <tspan x="110" dy="12">• 勉強会・もくもく会での参加</tspan>
+  </text>
+
+  <text x="100" y="455" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">効果的な関係維持：</tspan>
+    <tspan x="110" dy="12">• 定期的な学習報告・相談</tspan>
+    <tspan x="110" dy="12">• 感謝の気持ちを表現</tspan>
+    <tspan x="110" dy="12">• 小さな成長・成果の共有</tspan>
+  </text>
+
+  <text x="90" y="505" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 身近で継続的なサポート
+  </text>
+
+  <!-- Professional Mentors -->
+  <rect x="400" y="265" width="300" height="260" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="410" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💼 社会人・専門家メンター
+  </text>
+  <text x="420" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="420" dy="0">特徴・強み：</tspan>
+    <tspan x="430" dy="12">• 豊富な実務経験・専門知識</tspan>
+    <tspan x="430" dy="12">• 業界動向・将来展望の情報</tspan>
+    <tspan x="430" dy="12">• キャリア・進路の具体的アドバイス</tspan>
+    <tspan x="430" dy="12">• 高度な技術・理論の指導</tspan>
+  </text>
+  
+  <text x="420" y="355" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="420" dy="0">提供価値：</tspan>
+    <tspan x="430" dy="12">• 実践的な問題解決手法</tspan>
+    <tspan x="430" dy="12">• 業界で求められるスキル情報</tspan>
+    <tspan x="430" dy="12">• 長期的なキャリア形成支援</tspan>
+    <tspan x="430" dy="12">• プロフェッショナルな視点・思考</tspan>
+  </text>
+
+  <text x="420" y="405" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="420" dy="0">発見・つながり方：</tspan>
+    <tspan x="430" dy="12">• 企業主催のイベント・セミナー</tspan>
+    <tspan x="430" dy="12">• インターンシップ・職場体験</tspan>
+    <tspan x="430" dy="12">• オンライン技術コミュニティ</tspan>
+    <tspan x="430" dy="12">• 学校のOB・保護者ネットワーク</tspan>
+  </text>
+
+  <text x="420" y="455" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="420" dy="0">効果的な関係維持：</tspan>
+    <tspan x="430" dy="12">• 相手の時間を尊重した相談</tspan>
+    <tspan x="430" dy="12">• 具体的・準備された質問</tspan>
+    <tspan x="430" dy="12">• 学習成果・進捗の定期報告</tspan>
+  </text>
+
+  <text x="410" y="505" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 専門的知識・将来視点の獲得
+  </text>
+
+  <!-- Teacher Mentors -->
+  <rect x="720" y="265" width="300" height="260" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="730" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🏫 教師・指導者メンター
+  </text>
+  <text x="740" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="740" dy="0">特徴・強み：</tspan>
+    <tspan x="750" dy="12">• 教育のプロとしての指導力</tspan>
+    <tspan x="750" dy="12">• 体系的・段階的な学習支援</tspan>
+    <tspan x="750" dy="12">• 学習者の成長段階の理解</tspan>
+    <tspan x="750" dy="12">• 長期的・継続的な関係性</tspan>
+  </text>
+  
+  <text x="740" y="355" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="740" dy="0">提供価値：</tspan>
+    <tspan x="750" dy="12">• 個人に最適化された学習計画</tspan>
+    <tspan x="750" dy="12">• 弱点・課題の客観的分析</tspan>
+    <tspan x="750" dy="12">• 学習習慣・方法の改善指導</tspan>
+    <tspan x="750" dy="12">• 総合的な人格形成支援</tspan>
+  </text>
+
+  <text x="740" y="405" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="740" dy="0">発見・つながり方：</tspan>
+    <tspan x="750" dy="12">• 学校の数学・情報科教師</tspan>
+    <tspan x="750" dy="12">• 塾・予備校の講師</tspan>
+    <tspan x="750" dy="12">• プログラミングスクールの指導者</tspan>
+    <tspan x="750" dy="12">• 教育系NPO・ボランティア</tspan>
+  </text>
+
+  <text x="740" y="455" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="740" dy="0">効果的な関係維持：</tspan>
+    <tspan x="750" dy="12">• 授業・指導への積極的参加</tspan>
+    <tspan x="750" dy="12">• 学習計画の共同作成・見直し</tspan>
+    <tspan x="750" dy="12">• 定期的な進捗確認・面談</tspan>
+  </text>
+
+  <text x="730" y="505" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 体系的・継続的な成長支援
+  </text>
+
+  <!-- Online Mentors -->
+  <rect x="1040" y="265" width="300" height="260" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="1050" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🌐 オンラインメンター
+  </text>
+  <text x="1060" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1060" dy="0">特徴・強み：</tspan>
+    <tspan x="1070" dy="12">• 地理的制約を超えた出会い</tspan>
+    <tspan x="1070" dy="12">• 多様な専門分野・バックグラウンド</tspan>
+    <tspan x="1070" dy="12">• 24時間対応・非同期コミュニケーション</tspan>
+    <tspan x="1070" dy="12">• グローバルな視点・情報</tspan>
+  </text>
+  
+  <text x="1060" y="355" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1060" dy="0">提供価値：</tspan>
+    <tspan x="1070" dy="12">• 最新技術動向・トレンド情報</tspan>
+    <tspan x="1070" dy="12">• 国際的な競技・機会の紹介</tspan>
+    <tspan x="1070" dy="12">• 多様な学習リソース・ツール</tspan>
+    <tspan x="1070" dy="12">• 24時間の学習サポート</tspan>
+  </text>
+
+  <text x="1060" y="405" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1060" dy="0">発見・つながり方：</tspan>
+    <tspan x="1070" dy="12">• Twitter・Discord等のSNS</tspan>
+    <tspan x="1070" dy="12">• GitHub・Stack Overflow</tspan>
+    <tspan x="1070" dy="12">• オンライン勉強会・セミナー</tspan>
+    <tspan x="1070" dy="12">• ブログ・YouTube等の発信者</tspan>
+  </text>
+
+  <text x="1060" y="455" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1060" dy="0">効果的な関係維持：</tspan>
+    <tspan x="1070" dy="12">• オンラインマナーの遵守</tspan>
+    <tspan x="1070" dy="12">• 相手のプライバシー尊重</tspan>
+    <tspan x="1070" dy="12">• 価値ある情報・感想の共有</tspan>
+  </text>
+
+  <text x="1050" y="505" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 グローバル・多様性からの学び
+  </text>
+
+  <!-- Mentee Responsibilities -->
+  <rect x="50" y="560" width="650" height="300" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="375" y="585" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📚 効果的なメンティとしての心構え・行動
+  </text>
+
+  <!-- Mentee Mindset -->
+  <rect x="80" y="605" width="280" height="240" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🧠 基本的な心構え
+  </text>
+  <text x="100" y="645" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">学習姿勢：</tspan>
+    <tspan x="110" dy="12">• 謙虚で積極的な学習意欲</tspan>
+    <tspan x="110" dy="12">• 失敗・間違いを恐れない姿勢</tspan>
+    <tspan x="110" dy="12">• 「なぜ？」「どうして？」の追求</tspan>
+    <tspan x="110" dy="12">• 自主的・能動的な学習行動</tspan>
+  </text>
+  
+  <text x="100" y="695" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">コミュニケーション：</tspan>
+    <tspan x="110" dy="12">• 相手の時間・労力への感謝</tspan>
+    <tspan x="110" dy="12">• 具体的で明確な質問・相談</tspan>
+    <tspan x="110" dy="12">• 学習進捗・成果の定期報告</tspan>
+    <tspan x="110" dy="12">• 建設的なフィードバックの受容</tspan>
+  </text>
+
+  <text x="100" y="745" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">成長意識：</tspan>
+    <tspan x="110" dy="12">• 短期・長期目標の明確化</tspan>
+    <tspan x="110" dy="12">• 継続的な自己評価・振り返り</tspan>
+    <tspan x="110" dy="12">• 挑戦・改善への意欲</tspan>
+    <tspan x="110" dy="12">• 他者への貢献・還元の意識</tspan>
+  </text>
+
+  <text x="90" y="825" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    💪 主体的学習者としての成長
+  </text>
+
+  <!-- Effective Practices -->
+  <rect x="380" y="605" width="300" height="240" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="390" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    💡 効果的な実践方法
+  </text>
+  <text x="400" y="645" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="400" dy="0">質問・相談の準備：</tspan>
+    <tspan x="410" dy="12">• 事前の自分なりの調査・検討</tspan>
+    <tspan x="410" dy="12">• 具体的な問題・状況の整理</tspan>
+    <tspan x="410" dy="12">• 期待する回答・アドバイスの明確化</tspan>
+    <tspan x="410" dy="12">• 適切なタイミング・方法での相談</tspan>
+  </text>
+  
+  <text x="400" y="695" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="400" dy="0">学習記録・共有：</tspan>
+    <tspan x="410" dy="12">• 学習内容・進捗の定期的な記録</tspan>
+    <tspan x="410" dy="12">• 成功・失敗体験の振り返り</tspan>
+    <tspan x="410" dy="12">• 学んだことの要点整理・言語化</tspan>
+    <tspan x="410" dy="12">• メンターとの共有・相談材料活用</tspan>
+  </text>
+
+  <text x="400" y="745" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="400" dy="0">継続的な関係構築：</tspan>
+    <tspan x="410" dy="12">• 定期的なコミュニケーション</tspan>
+    <tspan x="410" dy="12">• 感謝の気持ち・成果の共有</tspan>
+    <tspan x="410" dy="12">• 相手の状況・都合への配慮</tspan>
+    <tspan x="410" dy="12">• Win-Win関係の意識・構築</tspan>
+  </text>
+
+  <text x="400" y="785" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="400" dy="0">自立への準備：</tspan>
+    <tspan x="410" dy="12">• 段階的な自主性・独立性の向上</tspan>
+    <tspan x="410" dy="12">• 他者を支援するスキルの習得</tspan>
+    <tspan x="410" dy="12">• 次世代メンターとしての準備</tspan>
+  </text>
+
+  <text x="390" y="825" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🎯 相互成長を促進する関係性
+  </text>
+
+  <!-- Becoming a Mentor -->
+  <rect x="720" y="560" width="630" height="300" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="1035" y="585" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🌟 メンターとしての成長：教えることで深まる理解
+  </text>
+
+  <!-- Mentor Development -->
+  <rect x="750" y="605" width="280" height="240" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="760" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🎯 メンター役割への移行
+  </text>
+  <text x="770" y="645" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="770" dy="0">準備段階：</tspan>
+    <tspan x="780" dy="12">• 十分な基礎知識・経験の蓄積</tspan>
+    <tspan x="780" dy="12">• 他者への教える意欲・責任感</tspan>
+    <tspan x="780" dy="12">• コミュニケーション能力の向上</tspan>
+    <tspan x="780" dy="12">• 継続的な学習・成長への意識</tspan>
+  </text>
+  
+  <text x="770" y="695" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="770" dy="0">最初のステップ：</tspan>
+    <tspan x="780" dy="12">• 身近な友人・後輩への簡単な支援</tspan>
+    <tspan x="780" dy="12">• オンラインコミュニティでの回答</tspan>
+    <tspan x="780" dy="12">• 学習記録・経験談の共有</tspan>
+    <tspan x="780" dy="12">• 勉強会・もくもく会での発表</tspan>
+  </text>
+
+  <text x="770" y="745" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="770" dy="0">本格的なメンター活動：</tspan>
+    <tspan x="780" dy="12">• 定期的な指導・相談対応</tspan>
+    <tspan x="780" dy="12">• 個別化された学習支援</tspan>
+    <tspan x="780" dy="12">• グループ指導・ワークショップ運営</tspan>
+    <tspan x="780" dy="12">• 教材・コンテンツの作成・共有</tspan>
+  </text>
+
+  <text x="770" y="795" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="770" dy="0">継続的な向上：</tspan>
+    <tspan x="780" dy="12">• 指導方法・技術の研究・改善</tspan>
+    <tspan x="780" dy="12">• メンティからのフィードバック活用</tspan>
+    <tspan x="780" dy="12">• 他のメンターとの情報交換</tspan>
+  </text>
+
+  <text x="760" y="825" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🚀 指導者としての段階的成長
+  </text>
+
+  <!-- Mentor Benefits -->
+  <rect x="1050" y="605" width="280" height="240" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="1060" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🌟 メンターとしてのメリット
+  </text>
+  <text x="1070" y="645" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="1070" dy="0">学習効果の向上：</tspan>
+    <tspan x="1080" dy="12">• 教えることで理解が深まる</tspan>
+    <tspan x="1080" dy="12">• 知識の整理・体系化が進む</tspan>
+    <tspan x="1080" dy="12">• 新しい視点・アプローチの発見</tspan>
+    <tspan x="1080" dy="12">• 説明・表現力の向上</tspan>
+  </text>
+  
+  <text x="1070" y="695" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="1070" dy="0">人間的成長：</tspan>
+    <tspan x="1080" dy="12">• リーダーシップ・責任感の発達</tspan>
+    <tspan x="1080" dy="12">• 他者への共感・理解力の向上</tspan>
+    <tspan x="1080" dy="12">• コミュニケーション能力の強化</tspan>
+    <tspan x="1080" dy="12">• 社会貢献への意識・満足感</tspan>
+  </text>
+
+  <text x="1070" y="745" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="1070" dy="0">将来への価値：</tspan>
+    <tspan x="1080" dy="12">• 大学入試・就職活動での差別化</tspan>
+    <tspan x="1080" dy="12">• 将来のキャリアでの指導力</tspan>
+    <tspan x="1080" dy="12">• ネットワーク・人脈の拡大</tspan>
+    <tspan x="1080" dy="12">• 業界・コミュニティでの認知度</tspan>
+  </text>
+
+  <text x="1070" y="795" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="1070" dy="0">精神的報酬：</tspan>
+    <tspan x="1080" dy="12">• メンティの成長を見る喜び</tspan>
+    <tspan x="1080" dy="12">• 感謝・評価による自己肯定感</tspan>
+    <tspan x="1080" dy="12">• 継続的な学習動機の維持</tspan>
+  </text>
+
+  <text x="1060" y="825" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    🎯 相互成長による価値創造
+  </text>
+
+  <!-- Mentorship Ecosystem -->
+  <rect x="50" y="880" width="1300" height="280" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="700" y="905" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    🔄 メンターシップエコシステム：持続可能な学習コミュニティ
+  </text>
+
+  <!-- Ecosystem Structure -->
+  <rect x="80" y="925" width="380" height="220" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="945" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🌐 エコシステムの構造
+  </text>
+  <text x="100" y="965" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">多層的な関係性：</tspan>
+    <tspan x="110" dy="12">• 初心者 ← 中級者 ← 上級者 ← 専門家</tspan>
+    <tspan x="110" dy="12">• 各層が教える・学ぶの両方を経験</tspan>
+    <tspan x="110" dy="12">• 知識・経験の段階的な伝承</tspan>
+    <tspan x="110" dy="12">• 全員が成長・貢献する循環構造</tspan>
+  </text>
+  
+  <text x="100" y="1015" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">相互支援の仕組み：</tspan>
+    <tspan x="110" dy="12">• ピアラーニング・協働学習</tspan>
+    <tspan x="110" dy="12">• 問題解決での協力・議論</tspan>
+    <tspan x="110" dy="12">• 情報・リソースの共有</tspan>
+    <tspan x="110" dy="12">• モチベーション・励ましの提供</tspan>
+  </text>
+
+  <text x="100" y="1065" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">多様性・包摂性：</tspan>
+    <tspan x="110" dy="12">• 年齢・経験・背景の違いを価値化</tspan>
+    <tspan x="110" dy="12">• 異なる学習スタイル・ペースを尊重</tspan>
+    <tspan x="110" dy="12">• 全員が貢献できる役割・機会の提供</tspan>
+  </text>
+
+  <text x="100" y="1105" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">成長の見える化：</tspan>
+    <tspan x="110" dy="12">• 定期的な成果・進捗の共有</tspan>
+    <tspan x="110" dy="12">• 成功事例・ベストプラクティス蓄積</tspan>
+    <tspan x="110" dy="12">• 表彰・認定によるモチベーション</tspan>
+  </text>
+
+  <text x="90" y="1125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🎯 自律的・持続的な学習文化
+  </text>
+
+  <!-- Community Benefits -->
+  <rect x="480" y="925" width="380" height="220" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="490" y="945" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🌟 コミュニティ全体への効果
+  </text>
+  <text x="500" y="965" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">学習効率の向上：</tspan>
+    <tspan x="510" dy="12">• 個人学習の限界を超えた成長</tspan>
+    <tspan x="510" dy="12">• 多様な解法・アプローチの学習</tspan>
+    <tspan x="510" dy="12">• 効果的な学習方法の共有・伝播</tspan>
+    <tspan x="510" dy="12">• 継続的なモチベーション維持</tspan>
+  </text>
+  
+  <text x="500" y="1015" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">知識・文化の蓄積：</tspan>
+    <tspan x="510" dy="12">• ベストプラクティスの体系化</tspan>
+    <tspan x="510" dy="12">• 失敗・困難の経験共有</tspan>
+    <tspan x="510" dy="12">• 学習リソース・ツールの充実</tspan>
+    <tspan x="510" dy="12">• コミュニティ独自の文化・伝統</tspan>
+  </text>
+
+  <text x="500" y="1065" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">社会への影響：</tspan>
+    <tspan x="510" dy="12">• 高い技術力を持つ人材の輩出</tspan>
+    <tspan x="510" dy="12">• 協働・支援の精神を持つ人材育成</tspan>
+    <tspan x="510" dy="12">• 学習コミュニティの文化拡散</tspan>
+    <tspan x="510" dy="12">• 社会全体の技術レベル向上</tspan>
+  </text>
+
+  <text x="500" y="1105" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">持続可能性：</tspan>
+    <tspan x="510" dy="12">• 自己再生産する学習システム</tspan>
+    <tspan x="510" dy="12">• 外部依存しない内発的成長</tspan>
+    <tspan x="510" dy="12">• 長期的な価値創造・社会貢献</tspan>
+  </text>
+
+  <text x="490" y="1125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🎯 社会全体への正の循環
+  </text>
+
+  <!-- Success Strategies -->
+  <rect x="880" y="925" width="440" height="220" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="890" y="945" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    💡 成功するメンターシップの条件
+  </text>
+  <text x="900" y="965" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">信頼関係の構築：</tspan>
+    <tspan x="910" dy="12">• 相互尊重・理解に基づく関係</tspan>
+    <tspan x="910" dy="12">• 継続的・安定したコミュニケーション</tspan>
+    <tspan x="910" dy="12">• 約束・責任の履行と信頼性</tspan>
+    <tspan x="910" dy="12">• プライバシー・秘密の尊重</tspan>
+  </text>
+  
+  <text x="900" y="1015" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">明確な目標・期待設定：</tspan>
+    <tspan x="910" dy="12">• 学習目標・成果指標の共有</tspan>
+    <tspan x="910" dy="12">• 役割・責任の明確化</tspan>
+    <tspan x="910" dy="12">• 期間・頻度・方法の合意</tspan>
+    <tspan x="910" dy="12">• 定期的な評価・見直し</tspan>
+  </text>
+
+  <text x="900" y="1065" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">柔軟性・適応性：</tspan>
+    <tspan x="910" dy="12">• 個人の特性・ニーズに応じた調整</tspan>
+    <tspan x="910" dy="12">• 成長段階に応じた関係性の変化</tspan>
+    <tspan x="910" dy="12">• 新しい状況・課題への対応</tspan>
+    <tspan x="910" dy="12">• 継続的な改善・学習</tspan>
+  </text>
+
+  <text x="900" y="1115" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">持続可能性の工夫：</tspan>
+    <tspan x="910" dy="12">• 負担・リソースの適切な管理</tspan>
+    <tspan x="910" dy="12">• 外的動機と内発的動機のバランス</tspan>
+    <tspan x="910" dy="12">• 成果・価値の実感・共有</tspan>
+  </text>
+
+  <text x="890" y="1125" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    🚀 Win-Win関係による長期的価値創造
+  </text>
+
+  <!-- Success Message -->
+  <rect x="50" y="1180" width="1300" height="160" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="1205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🎉 メンターシップによる相互成長エコシステムの構築！
+  </text>
+  <text x="700" y="1225" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">
+    「教えることで学ぶ」「支援されることで成長し、支援する」循環により全員が成長
+  </text>
+  <text x="700" y="1245" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0369a1">
+    個人の学習を超えて、持続可能な学習コミュニティ・社会への貢献を実現
+  </text>
+
+  <rect x="80" y="1265" width="1240" height="65" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="90" y="1285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    💪 メンターシップの最終メッセージ
+  </text>
+  <text x="100" y="1305" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">• 相互成長：メンター・メンティ双方が成長し、Win-Winの関係を構築する</tspan>
+    <tspan x="100" dy="12">• 循環的価値創造：受けた支援を次世代に還元し、持続可能な学習コミュニティを形成する</tspan>
+    <tspan x="100" dy="12">• 社会貢献：個人の成長が社会全体の技術力向上・人材育成に寄与することを意識する</tspan>
+  </text>
+</svg>

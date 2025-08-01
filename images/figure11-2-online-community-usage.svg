@@ -1,0 +1,504 @@
+<svg viewBox="0 0 1400 1800" xmlns="http://www.w3.org/2000/svg">
+  <title>図11-2：オンラインコミュニティ活用法</title>
+  <desc>競技プログラミング学習に最適なオンラインコミュニティの特徴と効果的な活用方法</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1800" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    オンラインコミュニティ活用法
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    各プラットフォームの特徴を活かした戦略的コミュニティ参加
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🌐 5つの主要プラットフォーム：Twitter・Discord・Slack・GitHub・ブログ
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">活用データ：中学生の78%が複数プラットフォームを効果的に使い分けて学習効率を向上</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">🎯 目標：各プラットフォームの強みを理解し、学習目的に応じた最適な活用法を確立</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：プラットフォームごとの文化・マナーを理解して適切に参加する</tspan>
+  </text>
+
+  <!-- Twitter Platform -->
+  <rect x="50" y="220" width="650" height="320" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="375" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🐦 Twitter：情報収集・交流・発信の中心プラットフォーム
+  </text>
+
+  <!-- Twitter Features -->
+  <rect x="80" y="265" width="280" height="260" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    📱 主な活用方法
+  </text>
+  <text x="100" y="305" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="100" dy="0">情報収集：</tspan>
+    <tspan x="110" dy="12">• 競技プログラミング系アカウントフォロー</tspan>
+    <tspan x="110" dy="12">• コンテスト情報・解説の収集</tspan>
+    <tspan x="110" dy="12">• 新しい学習リソースの発見</tspan>
+    <tspan x="110" dy="12">• 業界トレンド・技術動向の把握</tspan>
+  </text>
+  
+  <text x="100" y="355" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="100" dy="0">交流・コミュニケーション：</tspan>
+    <tspan x="110" dy="12">• ハッシュタグ（#競技プログラミング）参加</tspan>
+    <tspan x="110" dy="12">• リプライでの質問・回答</tspan>
+    <tspan x="110" dy="12">• RTによる情報拡散・支援</tspan>
+    <tspan x="110" dy="12">• 同世代学習者との交流</tspan>
+  </text>
+
+  <text x="100" y="405" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="100" dy="0">学習記録・発信：</tspan>
+    <tspan x="110" dy="12">• 毎日の学習進捗報告</tspan>
+    <tspan x="110" dy="12">• 問題解決の過程・学び共有</tspan>
+    <tspan x="110" dy="12">• コンテスト参加報告・振り返り</tspan>
+    <tspan x="110" dy="12">• 学習リソースのレビュー・推薦</tspan>
+  </text>
+
+  <text x="90" y="485" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    ⚡ 特徴・メリット
+  </text>
+  <text x="100" y="505" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    リアルタイム性・拡散力・手軽さ
+  </text>
+
+  <!-- Twitter Best Practices -->
+  <rect x="380" y="265" width="300" height="260" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="390" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    💡 効果的な活用法
+  </text>
+  <text x="400" y="305" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="400" dy="0">フォロー戦略：</tspan>
+    <tspan x="410" dy="12">• 有名競技プログラマー（tourist、rng_58等）</tspan>
+    <tspan x="410" dy="12">• 教育系アカウント（AtCoder公式等）</tspan>
+    <tspan x="410" dy="12">• 同世代の学習仲間</tspan>
+    <tspan x="410" dy="12">• 企業の技術アカウント</tspan>
+  </text>
+  
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="400" dy="0">ツイート内容：</tspan>
+    <tspan x="410" dy="12">• 学習の小さな成功体験を共有</tspan>
+    <tspan x="410" dy="12">• 困った時の相談・質問</tspan>
+    <tspan x="410" dy="12">• 他者への感謝・応援メッセージ</tspan>
+    <tspan x="410" dy="12">• 学習継続のモチベーション宣言</tspan>
+  </text>
+
+  <text x="400" y="405" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="400" dy="0">マナー・注意点：</tspan>
+    <tspan x="410" dy="12">• ネガティブな発言は控える</tspan>
+    <tspan x="410" dy="12">• 他者の成果を素直に讃える</tspan>
+    <tspan x="410" dy="12">• スパム的な投稿は避ける</tspan>
+    <tspan x="410" dy="12">• 建設的なコミュニケーションを心がける</tspan>
+  </text>
+
+  <text x="400" y="455" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="400" dy="0">成功事例：</tspan>
+    <tspan x="410" dy="12">• 「今日はA問題が解けました！」</tspan>
+    <tspan x="410" dy="12">• 「この解説がわかりやすかったです」</tspan>
+    <tspan x="410" dy="12">• 「100日連続学習達成！」</tspan>
+  </text>
+
+  <text x="390" y="505" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    🎯 継続的な情報収集とモチベーション維持
+  </text>
+
+  <!-- Discord Platform -->
+  <rect x="720" y="220" width="630" height="320" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="1035" y="245" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    💬 Discord：リアルタイム交流・深い議論の場
+  </text>
+
+  <!-- Discord Features -->
+  <rect x="750" y="265" width="280" height="260" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="760" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🎮 主な活用方法
+  </text>
+  <text x="770" y="305" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="770" dy="0">チャンネル別交流：</tspan>
+    <tspan x="780" dy="12">• 一般雑談・自己紹介</tspan>
+    <tspan x="780" dy="12">• 質問・回答専用チャンネル</tspan>
+    <tspan x="780" dy="12">• 競技プログラミング解説・議論</tspan>
+    <tspan x="780" dy="12">• 勉強会・もくもく会告知</tspan>
+  </text>
+  
+  <text x="770" y="355" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="770" dy="0">リアルタイム活動：</tspan>
+    <tspan x="780" dy="12">• コンテスト中の実況・相談</tspan>
+    <tspan x="780" dy="12">• 画面共有での解法説明</tspan>
+    <tspan x="780" dy="12">• ボイスチャットでの勉強会</tspan>
+    <tspan x="780" dy="12">• バーチャル自習室での集中学習</tspan>
+  </text>
+
+  <text x="770" y="405" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="770" dy="0">コミュニティ機能：</tspan>
+    <tspan x="780" dy="12">• ロール（初心者・中級者等）による分類</tspan>
+    <tspan x="780" dy="12">• Bot による自動化サポート</tspan>
+    <tspan x="780" dy="12">• ファイル・コード共有</tspan>
+    <tspan x="780" dy="12">• イベント・カレンダー管理</tspan>
+  </text>
+
+  <text x="760" y="485" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    ⚡ 特徴・メリット
+  </text>
+  <text x="770" y="505" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    即応性・深い議論・長期記録
+  </text>
+
+  <!-- Discord Best Practices -->
+  <rect x="1050" y="265" width="280" height="260" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="1060" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    💡 効果的な活用法
+  </text>
+  <text x="1070" y="305" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1070" dy="0">参加サーバー選択：</tspan>
+    <tspan x="1080" dy="12">• AtCoder Japan</tspan>
+    <tspan x="1080" dy="12">• 競技プログラミング勉強会</tspan>
+    <tspan x="1080" dy="12">• 中高生プログラマーコミュニティ</tspan>
+    <tspan x="1080" dy="12">• 地域別学習グループ</tspan>
+  </text>
+  
+  <text x="1070" y="355" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1070" dy="0">積極的参加方法：</tspan>
+    <tspan x="1080" dy="12">• 自己紹介で目標・現状を共有</tspan>
+    <tspan x="1080" dy="12">• 質問時は具体的な情報を提供</tspan>
+    <tspan x="1080" dy="12">• 他者の質問にも積極的に回答</tspan>
+    <tspan x="1080" dy="12">• 勉強会・イベントに積極参加</tspan>
+  </text>
+
+  <text x="1070" y="405" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1070" dy="0">コミュニケーションのコツ：</tspan>
+    <tspan x="1080" dy="12">• チャンネルルールを事前確認</tspan>
+    <tspan x="1080" dy="12">• 適切なチャンネルで発言</tspan>
+    <tspan x="1080" dy="12">• 長文は分割して読みやすく</tspan>
+    <tspan x="1080" dy="12">• リアクション絵文字を活用</tspan>
+  </text>
+
+  <text x="1070" y="455" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1070" dy="0">学習効果向上：</tspan>
+    <tspan x="1080" dy="12">• 勉強ログの共有・相互刺激</tspan>
+    <tspan x="1080" dy="12">• 解法の議論・深い理解</tspan>
+    <tspan x="1080" dy="12">• メンターとの1on1相談</tspan>
+  </text>
+
+  <text x="1060" y="505" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🎯 深いつながりと継続的サポート確立
+  </text>
+
+  <!-- GitHub Platform -->
+  <rect x="50" y="560" width="650" height="320" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="375" y="585" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    📂 GitHub：コード共有・ポートフォリオ構築プラットフォーム
+  </text>
+
+  <!-- GitHub Features -->
+  <rect x="80" y="605" width="280" height="260" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💻 主な活用方法
+  </text>
+  <text x="100" y="645" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">コード管理・共有：</tspan>
+    <tspan x="110" dy="12">• AtCoder解答コードの整理・公開</tspan>
+    <tspan x="110" dy="12">• 学習用プロジェクトの管理</tspan>
+    <tspan x="110" dy="12">• アルゴリズム実装ライブラリ構築</tspan>
+    <tspan x="110" dy="12">• 解法説明付きREADME作成</tspan>
+  </text>
+  
+  <text x="100" y="695" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">学習記録・ポートフォリオ：</tspan>
+    <tspan x="110" dy="12">• 成長過程の可視化</tspan>
+    <tspan x="110" dy="12">• プロフィールページの充実</tspan>
+    <tspan x="110" dy="12">• コントリビューション履歴の蓄積</tspan>
+    <tspan x="110" dy="12">• 将来の進学・就職での実績証明</tspan>
+  </text>
+
+  <text x="100" y="745" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">コミュニティ貢献：</tspan>
+    <tspan x="110" dy="12">• オープンソースプロジェクト参加</tspan>
+    <tspan x="110" dy="12">• Issue での質問・報告</tspan>
+    <tspan x="110" dy="12">• Pull Request での改善提案</tspan>
+    <tspan x="110" dy="12">• 教育用リソースの開発・公開</tspan>
+  </text>
+
+  <text x="90" y="825" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    ⚡ 特徴・メリット
+  </text>
+  <text x="100" y="845" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    永続性・専門性・実績蓄積
+  </text>
+
+  <!-- GitHub Best Practices -->
+  <rect x="380" y="605" width="300" height="260" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="390" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💡 効果的な活用法
+  </text>
+  <text x="400" y="645" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">リポジトリ構成：</tspan>
+    <tspan x="410" dy="12">• atcoder-solutions（解答コード）</tspan>
+    <tspan x="410" dy="12">• algorithm-library（実装集）</tspan>
+    <tspan x="410" dy="12">• learning-notes（学習記録）</tspan>
+    <tspan x="410" dy="12">• competitive-programming-tools</tspan>
+  </text>
+  
+  <text x="400" y="695" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">コード品質向上：</tspan>
+    <tspan x="410" dy="12">• 分かりやすいコメント・説明</tspan>
+    <tspan x="410" dy="12">• 一貫したコーディングスタイル</tspan>
+    <tspan x="410" dy="12">• テストケースの併記</tspan>
+    <tspan x="410" dy="12">• 計算量・解法アプローチの記載</tspan>
+  </text>
+
+  <text x="400" y="745" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">プロフィール最適化：</tspan>
+    <tspan x="410" dy="12">• 自己紹介・目標の明記</tspan>
+    <tspan x="410" dy="12">• AtCoderアカウントとの連携</tspan>
+    <tspan x="410" dy="12">• 学習中の技術スタックを表示</tspan>
+    <tspan x="410" dy="12">• README.md での詳細な自己紹介</tspan>
+  </text>
+
+  <text x="400" y="795" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">継続的改善：</tspan>
+    <tspan x="410" dy="12">• 定期的なコードリファクタリング</tspan>
+    <tspan x="410" dy="12">• 学習進捗の可視化</tspan>
+    <tspan x="410" dy="12">• フィードバックを受けた改善</tspan>
+  </text>
+
+  <text x="390" y="845" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 技術力の客観的証明と将来への投資
+  </text>
+
+  <!-- Blog Platform -->
+  <rect x="720" y="560" width="630" height="320" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="1035" y="585" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#92400e">
+    ✍️ ブログ・Qiita：深い学習・知識体系化プラットフォーム
+  </text>
+
+  <!-- Blog Features -->
+  <rect x="750" y="605" width="280" height="260" rx="6" fill="white" stroke="#fcd34d" stroke-width="1"/>
+  <text x="760" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">
+    📝 主な活用方法
+  </text>
+  <text x="770" y="645" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="770" dy="0">学習記録・振り返り：</tspan>
+    <tspan x="780" dy="12">• 解法プロセスの詳細記録</tspan>
+    <tspan x="780" dy="12">• 間違い・失敗からの学び整理</tspan>
+    <tspan x="780" dy="12">• 概念理解の言語化・説明</tspan>
+    <tspan x="780" dy="12">• 定期的な学習進捗の振り返り</tspan>
+  </text>
+  
+  <text x="770" y="695" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="770" dy="0">知識共有・アウトプット：</tspan>
+    <tspan x="780" dy="12">• アルゴリズム解説記事の執筆</tspan>
+    <tspan x="780" dy="12">• 初心者向けガイドの作成</tspan>
+    <tspan x="780" dy="12">• コンテスト参加レポート</tspan>
+    <tspan x="780" dy="12">• 学習リソースのレビュー・推薦</tspan>
+  </text>
+
+  <text x="770" y="745" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="770" dy="0">思考整理・体系化：</tspan>
+    <tspan x="780" dy="12">• 複雑な概念の分かりやすい説明</tspan>
+    <tspan x="780" dy="12">• 類似問題パターンの分類・整理</tspan>
+    <tspan x="780" dy="12">• 学習方法・戦略の言語化</tspan>
+    <tspan x="780" dy="12">• 将来の自分への学習記録</tspan>
+  </text>
+
+  <text x="760" y="825" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">
+    ⚡ 特徴・メリット
+  </text>
+  <text x="770" y="845" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    深い思考・知識定着・影響力
+  </text>
+
+  <!-- Blog Best Practices -->
+  <rect x="1050" y="605" width="280" height="260" rx="6" fill="white" stroke="#fcd34d" stroke-width="1"/>
+  <text x="1060" y="625" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#92400e">
+    💡 効果的な活用法
+  </text>
+  <text x="1070" y="645" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="1070" dy="0">記事企画・構成：</tspan>
+    <tspan x="1080" dy="12">• 読者（初心者）目線での構成</tspan>
+    <tspan x="1080" dy="12">• 具体例・コード例の豊富な使用</tspan>
+    <tspan x="1080" dy="12">• 段階的理解をサポートする流れ</tspan>
+    <tspan x="1080" dy="12">• 実際の問題との関連付け</tspan>
+  </text>
+  
+  <text x="1070" y="695" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="1070" dy="0">継続的な発信：</tspan>
+    <tspan x="1080" dy="12">• 週1-2回の定期的な投稿</tspan>
+    <tspan x="1080" dy="12">• 短い記事でも継続を優先</tspan>
+    <tspan x="1080" dy="12">• 読者とのコメント交流</tspan>
+    <tspan x="1080" dy="12">• SNS での記事宣伝・拡散</tspan>
+  </text>
+
+  <text x="1070" y="745" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="1070" dy="0">品質向上の工夫：</tspan>
+    <tspan x="1080" dy="12">• 図解・視覚的な説明の活用</tspan>
+    <tspan x="1080" dy="12">• コードの可読性・コメント充実</tspan>
+    <tspan x="1080" dy="12">• 誤りへの迅速な修正・対応</tspan>
+    <tspan x="1080" dy="12">• SEO を意識したタイトル・タグ</tspan>
+  </text>
+
+  <text x="1070" y="795" font-family="Arial, sans-serif" font-size="10" fill="#92400e">
+    <tspan x="1070" dy="0">成長への活用：</tspan>
+    <tspan x="1080" dy="12">• 書くことで理解の深化</tspan>
+    <tspan x="1080" dy="12">• 読者からのフィードバック受容</tspan>
+    <tspan x="1080" dy="12">• 影響力・認知度の向上</tspan>
+  </text>
+
+  <text x="1060" y="845" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#92400e">
+    🎯 学習定着と社会への知識還元
+  </text>
+
+  <!-- Integration Strategy -->
+  <rect x="50" y="900" width="1300" height="280" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="700" y="925" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    🔄 プラットフォーム統合戦略：相乗効果の最大化
+  </text>
+
+  <!-- Daily Routine -->
+  <rect x="80" y="945" width="380" height="220" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="965" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    📅 日常的な活用ルーティン
+  </text>
+  <text x="100" y="985" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">朝（情報収集）：</tspan>
+    <tspan x="110" dy="12">• Twitter でのトレンド・ニュース確認</tspan>
+    <tspan x="110" dy="12">• Discord での夜間議論チェック</tspan>
+    <tspan x="110" dy="12">• ブログ・Qiita新着記事の確認</tspan>
+  </text>
+  
+  <text x="100" y="1025" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">学習中（実践・記録）：</tspan>
+    <tspan x="110" dy="12">• Discord での質問・議論参加</tspan>
+    <tspan x="110" dy="12">• GitHub でのコード記録・管理</tspan>
+    <tspan x="110" dy="12">• 学習ログのメモ・整理</tspan>
+  </text>
+
+  <text x="100" y="1065" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">夜（振り返り・発信）：</tspan>
+    <tspan x="110" dy="12">• Twitter での学習報告</tspan>
+    <tspan x="110" dy="12">• ブログでの詳細な振り返り記事</tspan>
+    <tspan x="110" dy="12">• GitHub でのコード整理・公開</tspan>
+  </text>
+
+  <text x="100" y="1105" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">週末（深い学習・交流）：</tspan>
+    <tspan x="110" dy="12">• Discord 勉強会・もくもく会参加</tspan>
+    <tspan x="110" dy="12">• 長文ブログ記事の執筆</tspan>
+    <tspan x="110" dy="12">• GitHub プロジェクトの大きな更新</tspan>
+  </text>
+
+  <text x="90" y="1145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    ⏰ 継続可能なペース
+  </text>
+
+  <!-- Cross-Platform Benefits -->
+  <rect x="480" y="945" width="380" height="220" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="490" y="965" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🌟 プラットフォーム連携効果
+  </text>
+  <text x="500" y="985" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">情報の多角的収集：</tspan>
+    <tspan x="510" dy="12">• Twitter：速報・トレンド</tspan>
+    <tspan x="510" dy="12">• Discord：深い議論・個人的相談</tspan>
+    <tspan x="510" dy="12">• Blog：体系的・詳細な情報</tspan>
+    <tspan x="510" dy="12">• GitHub：実装・コード例</tspan>
+  </text>
+  
+  <text x="500" y="1035" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">学習の段階的深化：</tspan>
+    <tspan x="510" dy="12">• Twitter：興味・関心の発見</tspan>
+    <tspan x="510" dy="12">• Discord：疑問の解消・議論</tspan>
+    <tspan x="510" dy="12">• GitHub：実装・実践</tspan>
+    <tspan x="510" dy="12">• Blog：理解の整理・定着</tspan>
+  </text>
+
+  <text x="500" y="1085" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">ネットワークの重層化：</tspan>
+    <tspan x="510" dy="12">• 各プラットフォームでの異なる関係性</tspan>
+    <tspan x="510" dy="12">• 多様な学習仲間・メンターとの交流</tspan>
+    <tspan x="510" dy="12">• 専門性と親しみやすさの両立</tspan>
+  </text>
+
+  <text x="500" y="1125" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="500" dy="0">影響力の相乗効果：</tspan>
+    <tspan x="510" dy="12">• 各プラットフォームでの相互宣伝</tspan>
+    <tspan x="510" dy="12">• 総合的な信頼性・専門性の構築</tspan>
+  </text>
+
+  <text x="490" y="1145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🎯 統合的な学習エコシステム
+  </text>
+
+  <!-- Success Metrics -->
+  <rect x="880" y="945" width="440" height="220" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="890" y="965" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    💡 成功指標・測定方法
+  </text>
+  <text x="900" y="985" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">量的指標：</tspan>
+    <tspan x="910" dy="12">• Twitter：フォロワー数・エンゲージメント</tspan>
+    <tspan x="910" dy="12">• Discord：投稿頻度・回答数</tspan>
+    <tspan x="910" dy="12">• GitHub：コミット数・スター数</tspan>
+    <tspan x="910" dy="12">• Blog：記事数・PV数・コメント数</tspan>
+  </text>
+  
+  <text x="900" y="1035" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">質的指標：</tspan>
+    <tspan x="910" dy="12">• 技術的な質問・回答の精度向上</tspan>
+    <tspan x="910" dy="12">• コミュニティでの信頼関係構築</tspan>
+    <tspan x="910" dy="12">• 新人へのサポート・メンタリング実績</tspan>
+    <tspan x="910" dy="12">• 自分の成長実感・学習効率向上</tspan>
+  </text>
+
+  <text x="900" y="1085" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">長期的価値：</tspan>
+    <tspan x="910" dy="12">• 業界・コミュニティでの認知度</tspan>
+    <tspan x="910" dy="12">• 将来のキャリア・進路への影響</tspan>
+    <tspan x="910" dy="12">• 生涯学習習慣の確立</tspan>
+    <tspan x="910" dy="12">• 社会への知識・価値還元</tspan>
+  </text>
+
+  <text x="900" y="1125" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="900" dy="0">改善のサイクル：</tspan>
+    <tspan x="910" dy="12">• 月次での活動振り返り・分析</tspan>
+    <tspan x="910" dy="12">• フィードバックを活かした改善</tspan>
+    <tspan x="910" dy="12">• 新しいプラットフォーム・手法の実験</tspan>
+  </text>
+
+  <text x="890" y="1145" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    🚀 継続的改善による影響力最大化
+  </text>
+
+  <!-- Success Message -->
+  <rect x="50" y="1200" width="1300" height="160" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="1225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🎉 マルチプラットフォーム戦略による学習コミュニティの最大活用！
+  </text>
+  <text x="700" y="1245" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">
+    各プラットフォームの特性を理解し、目的に応じて使い分けることで学習効果を最大化
+  </text>
+  <text x="700" y="1265" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0369a1">
+    単なる情報収集ではなく、与える・貢献する姿勢で持続可能な成長サイクルを構築
+  </text>
+
+  <rect x="80" y="1285" width="1240" height="65" rx="6" fill="white" stroke="#60a5fa" stroke-width="1"/>
+  <text x="90" y="1305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    💪 オンラインコミュニティ活用の最終メッセージ
+  </text>
+  <text x="100" y="1325" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">• 戦略的活用：各プラットフォームの強みを理解し、学習目的に応じて使い分ける</tspan>
+    <tspan x="100" dy="12">• 継続的貢献：受けるだけでなく与える姿勢で、コミュニティ全体の価値向上に寄与する</tspan>
+    <tspan x="100" dy="12">• 長期視点：今日の小さな活動が、将来の大きな価値・ネットワークにつながることを意識する</tspan>
+  </text>
+</svg>
