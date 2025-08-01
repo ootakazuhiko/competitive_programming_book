@@ -1,0 +1,182 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-7：よくあるトラブルと解決方法</title>
+  <desc>Pythonインストール時によく遭遇するトラブルとその具体的な解決方法</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .problem-title { font: 600 13px Inter, sans-serif; fill: #DC2626; }
+      .solution-title { font: 600 12px Inter, sans-serif; fill: #059669; }
+      .cause-title { font: 600 12px Inter, sans-serif; fill: #B45309; }
+      .step-text { font: 400 11px Inter, sans-serif; fill: #4B5563; }
+      .number { font: 600 12px Inter, sans-serif; fill: #FFFFFF; }
+      .general-title { font: 600 14px Inter, sans-serif; fill: #7C3AED; }
+      .general-step { font: 400 12px Inter, sans-serif; fill: #6B7280; }
+      
+      .problem-bg { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .solution-bg { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+      .general-bg { fill: #F3F4F6; stroke: #6B7280; stroke-width: 2; }
+      .step-circle { fill: #3B82F6; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-7：よくあるトラブルと解決方法</text>
+  
+  <!-- Problem 1 -->
+  <g id="problem1">
+    <rect x="50" y="60" width="220" height="150" rx="8" class="problem-bg"/>
+    <text x="60" y="80" class="problem-title">❌ 問題1: 「'python'は認識されません」</text>
+    
+    <text x="60" y="100" class="cause-title">原因：PATHの設定漏れ</text>
+    
+    <rect x="55" y="110" width="210" height="90" rx="4" class="solution-bg"/>
+    <text x="65" y="125" class="solution-title">解決：</text>
+    
+    <g transform="translate(65, 135)">
+      <circle cx="5" cy="5" r="5" class="step-circle"/>
+      <text x="6" y="9" text-anchor="middle" class="number">1</text>
+      <text x="15" y="9" class="step-text">Pythonを再インストール</text>
+    </g>
+    
+    <g transform="translate(65, 150)">
+      <circle cx="5" cy="5" r="5" class="step-circle"/>
+      <text x="6" y="9" text-anchor="middle" class="number">2</text>
+      <text x="15" y="9" class="step-text">「Add Python to PATH」に必ずチェック</text>
+    </g>
+    
+    <g transform="translate(65, 165)">
+      <circle cx="5" cy="5" r="5" class="step-circle"/>
+      <text x="6" y="9" text-anchor="middle" class="number">3</text>
+      <text x="15" y="9" class="step-text">コマンドプロンプトを再起動</text>
+    </g>
+  </g>
+  
+  <!-- Problem 2 -->
+  <g id="problem2">
+    <rect x="290" y="60" width="220" height="150" rx="8" class="problem-bg"/>
+    <text x="300" y="80" class="problem-title">❌ 問題2: 管理者権限がないエラー</text>
+    
+    <text x="300" y="100" class="cause-title">原因：インストールに管理者権限が必要</text>
+    
+    <rect x="295" y="110" width="210" height="90" rx="4" class="solution-bg"/>
+    <text x="305" y="125" class="solution-title">解決：</text>
+    
+    <g transform="translate(305, 135)">
+      <circle cx="5" cy="5" r="5" class="step-circle"/>
+      <text x="6" y="9" text-anchor="middle" class="number">1</text>
+      <text x="15" y="9" class="step-text">保護者にインストールを依頼</text>
+    </g>
+    
+    <g transform="translate(305, 150)">
+      <circle cx="5" cy="5" r="5" class="step-circle"/>
+      <text x="6" y="9" text-anchor="middle" class="number">2</text>
+      <text x="15" y="9" class="step-text">学校のパソコンの場合は先生に相談</text>
+    </g>
+    
+    <g transform="translate(305, 165)">
+      <circle cx="5" cy="5" r="5" class="step-circle"/>
+      <text x="6" y="9" text-anchor="middle" class="number">3</text>
+      <text x="15" y="9" class="step-text">ポータブル版Pythonの検討</text>
+    </g>
+  </g>
+  
+  <!-- Problem 3 -->
+  <g id="problem3">
+    <rect x="530" y="60" width="220" height="150" rx="8" class="problem-bg"/>
+    <text x="540" y="80" class="problem-title">❌ 問題3: 古いバージョンが起動</text>
+    
+    <text x="540" y="100" class="cause-title">原因：複数のPythonがインストール済み</text>
+    
+    <rect x="535" y="110" width="210" height="90" rx="4" class="solution-bg"/>
+    <text x="545" y="125" class="solution-title">解決：</text>
+    
+    <g transform="translate(545, 135)">
+      <circle cx="5" cy="5" r="5" class="step-circle"/>
+      <text x="6" y="9" text-anchor="middle" class="number">1</text>
+      <text x="15" y="9" class="step-text">python3 コマンドを使用（macOS/Linux）</text>
+    </g>
+    
+    <g transform="translate(545, 150)">
+      <circle cx="5" cy="5" r="5" class="step-circle"/>
+      <text x="6" y="9" text-anchor="middle" class="number">2</text>
+      <text x="15" y="9" class="step-text">py -3 コマンドを使用（Windows）</text>
+    </g>
+    
+    <g transform="translate(545, 165)">
+      <circle cx="5" cy="5" r="5" class="step-circle"/>
+      <text x="6" y="9" text-anchor="middle" class="number">3</text>
+      <text x="15" y="9" class="step-text">フルパス指定での実行</text>
+    </g>
+  </g>
+  
+  <!-- Additional Problems -->
+  <g id="problem4">
+    <rect x="50" y="230" width="340" height="120" rx="8" class="problem-bg"/>
+    <text x="60" y="250" class="problem-title">❌ 問題4: セキュリティソフトがブロック</text>
+    
+    <text x="60" y="270" class="cause-title">原因：ウイルス対策ソフトが誤検知</text>
+    
+    <rect x="55" y="280" width="330" height="60" rx="4" class="solution-bg"/>
+    <text x="65" y="295" class="solution-title">解決：</text>
+    <text x="65" y="310" class="step-text">• セキュリティソフトを一時的に無効化してインストール</text>
+    <text x="65" y="325" class="step-text">• python.orgを信頼できるサイトに追加</text>
+  </g>
+  
+  <g id="problem5">
+    <rect x="410" y="230" width="340" height="120" rx="8" class="problem-bg"/>
+    <text x="420" y="250" class="problem-title">❌ 問題5: ダウンロードが途中で止まる</text>
+    
+    <text x="420" y="270" class="cause-title">原因：ネットワーク接続の問題</text>
+    
+    <rect x="415" y="280" width="330" height="60" rx="4" class="solution-bg"/>
+    <text x="425" y="295" class="solution-title">解決：</text>
+    <text x="425" y="310" class="step-text">• 安定したWi-Fi環境で再ダウンロード</text>
+    <text x="425" y="325" class="step-text">• ミラーサイトからのダウンロードを試す</text>
+  </g>
+  
+  <!-- General Troubleshooting -->
+  <g id="general-steps">
+    <rect x="50" y="370" width="700" height="180" rx="12" class="general-bg"/>
+    <text x="70" y="395" class="general-title">🔧 総合的なトラブル解決手順</text>
+    
+    <g transform="translate(70, 410)">
+      <circle cx="10" cy="10" r="10" fill="#7C3AED"/>
+      <text x="10" y="15" text-anchor="middle" class="number">1</text>
+      <text x="30" y="15" class="general-step">インストーラーを管理者権限で再実行</text>
+      <text x="30" y="30" class="step-text">右クリック → 管理者として実行</text>
+    </g>
+    
+    <g transform="translate(400, 410)">
+      <circle cx="10" cy="10" r="10" fill="#7C3AED"/>
+      <text x="10" y="15" text-anchor="middle" class="number">2</text>
+      <text x="30" y="15" class="general-step">セキュリティソフトの一時無効化</text>
+      <text x="30" y="30" class="step-text">インストール中のみ無効にする</text>
+    </g>
+    
+    <g transform="translate(70, 470)">
+      <circle cx="10" cy="10" r="10" fill="#7C3AED"/>
+      <text x="10" y="15" text-anchor="middle" class="number">3</text>
+      <text x="30" y="15" class="general-step">公式ドキュメントの確認</text>
+      <text x="30" y="30" class="step-text">python.org のインストールガイド参照</text>
+    </g>
+    
+    <g transform="translate(400, 470)">
+      <circle cx="10" cy="10" r="10" fill="#7C3AED"/>
+      <text x="10" y="15" text-anchor="middle" class="number">4</text>
+      <text x="30" y="15" class="general-step">コミュニティフォーラムで質問</text>
+      <text x="30" y="30" class="step-text">具体的なエラーメッセージを添えて質問</text>
+    </g>
+    
+    <!-- Emergency Option -->
+    <g transform="translate(70, 520)">
+      <text x="0" y="0" class="general-title">🚨 どうしても解決しない場合</text>
+      <text x="0" y="20" class="step-text">• オンライン開発環境（Replit、Google Colabなど）の使用を検討</text>
+      <text x="0" y="35" class="step-text">• 別のパソコンでの作業環境準備</text>
+    </g>
+  </g>
+  
+</svg>

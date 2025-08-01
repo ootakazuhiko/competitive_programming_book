@@ -1,0 +1,133 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-18：エラーメッセージ解読ガイド</title>
+  <desc>Pythonのエラーメッセージの構造と読み方の詳細ガイド</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .error-text { font: 400 11px 'SF Mono', Consolas, monospace; fill: #DC2626; }
+      .explanation-text { font: 400 11px Inter, sans-serif; fill: #4B5563; }
+      .step-text { font: 600 11px Inter, sans-serif; fill: #7C3AED; }
+      .code-text { font: 400 11px 'SF Mono', Consolas, monospace; fill: #1F2937; }
+      .solution-text { font: 400 11px Inter, sans-serif; fill: #059669; }
+      .number { font: 600 12px Inter, sans-serif; fill: #FFFFFF; }
+      .highlight { font: 600 11px Inter, sans-serif; fill: #DC2626; }
+      
+      .error-bg { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .reading-bg { fill: #F3F4F6; stroke: #6B7280; stroke-width: 2; }
+      .solution-bg { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .step-number { fill: #7C3AED; }
+      .code-bg { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-18：エラーメッセージ解読ガイド</text>
+  
+  <!-- Typical Error Message Section -->
+  <g id="error-example">
+    <rect x="50" y="60" width="700" height="120" rx="12" class="error-bg"/>
+    <text x="70" y="80" class="section-title">典型的なエラーメッセージ：</text>
+    
+    <rect x="70" y="90" width="660" height="80" rx="4" fill="#FFFFFF" stroke="#EF4444" stroke-width="1"/>
+    <text x="80" y="105" class="error-text">Traceback (most recent call last):</text>
+    <text x="80" y="120" class="error-text">  File "abc001_a.py", line 4, in &lt;module&gt;</text>
+    <text x="80" y="135" class="error-text">    result = x / y</text>
+    <text x="80" y="150" class="error-text">ZeroDivisionError: division by zero</text>
+  </g>
+  
+  <!-- Reading Guide Section -->
+  <g id="reading-guide">
+    <rect x="50" y="200" width="700" height="220" rx="12" class="reading-bg"/>
+    <text x="70" y="220" class="section-title">📖 読み方：</text>
+    
+    <!-- Step 1: Error Type -->
+    <g transform="translate(70, 235)">
+      <circle cx="10" cy="10" r="10" class="step-number"/>
+      <text x="10" y="15" text-anchor="middle" class="number">1</text>
+      <text x="30" y="15" class="step-text">エラーの種類：ZeroDivisionError</text>
+      <text x="50" y="30" class="explanation-text">→ ゼロ除算エラー（0で割ろうとした）</text>
+    </g>
+    
+    <!-- Step 2: Location -->
+    <g transform="translate(70, 275)">
+      <circle cx="10" cy="10" r="10" class="step-number"/>
+      <text x="10" y="15" text-anchor="middle" class="number">2</text>
+      <text x="30" y="15" class="step-text">エラーが起きた場所：</text>
+      <text x="50" y="30" class="explanation-text">→ ファイル名：abc001_a.py</text>
+      <text x="50" y="45" class="explanation-text">→ 行番号：4行目</text>
+    </g>
+    
+    <!-- Step 3: Problem Code -->
+    <g transform="translate(70, 335)">
+      <circle cx="10" cy="10" r="10" class="step-number"/>
+      <text x="10" y="15" text-anchor="middle" class="number">3</text>
+      <text x="30" y="15" class="step-text">エラーが起きたコード：</text>
+      <text x="50" y="30" class="explanation-text">→ result = x / y</text>
+    </g>
+    
+    <!-- Step 4: Specific Cause -->
+    <g transform="translate(70, 375)">
+      <circle cx="10" cy="10" r="10" class="step-number"/>
+      <text x="10" y="15" text-anchor="middle" class="number">4</text>
+      <text x="30" y="15" class="step-text">具体的な原因：</text>
+      <text x="50" y="30" class="explanation-text">→ division by zero（ゼロによる除算）</text>
+    </g>
+    
+    <!-- Visual Guide -->
+    <g transform="translate(400, 240)">
+      <rect x="0" y="0" width="280" height="150" rx="6" fill="#FFFFFF" stroke="#6B7280" stroke-width="1"/>
+      <text x="10" y="20" style="font: 600 11px Inter, sans-serif; fill: #7C3AED;">エラーメッセージの構造</text>
+      
+      <!-- Error message breakdown -->
+      <text x="10" y="40" style="font: 400 9px 'SF Mono', Consolas, monospace; fill: #DC2626;">ZeroDivisionError: division by zero</text>
+      <path d="M 10 45 L 90 45 L 90 55 L 120 55" stroke="#7C3AED" stroke-width="1" fill="none"/>
+      <text x="125" y="58" style="font: 400 8px Inter, sans-serif; fill: #7C3AED;">エラーの種類</text>
+      
+      <path d="M 150 45 L 220 45 L 220 70 L 120 70" stroke="#7C3AED" stroke-width="1" fill="none"/>
+      <text x="125" y="73" style="font: 400 8px Inter, sans-serif; fill: #7C3AED;">詳細な説明</text>
+      
+      <text x="10" y="95" style="font: 400 9px 'SF Mono', Consolas, monospace; fill: #DC2626;">File "abc001_a.py", line 4</text>
+      <path d="M 10 100 L 60 100 L 60 110 L 120 110" stroke="#059669" stroke-width="1" fill="none"/>
+      <text x="125" y="113" style="font: 400 8px Inter, sans-serif; fill: #059669;">ファイル名</text>
+      
+      <path d="M 120 100 L 160 100 L 160 125 L 120 125" stroke="#059669" stroke-width="1" fill="none"/>
+      <text x="125" y="128" style="font: 400 8px Inter, sans-serif; fill: #059669;">行番号</text>
+    </g>
+  </g>
+  
+  <!-- Solution Section -->
+  <g id="solution">
+    <rect x="50" y="440" width="700" height="120" rx="12" class="solution-bg"/>
+    <text x="70" y="460" class="section-title">🔧 解決方法：</text>
+    
+    <g transform="translate(70, 475)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #059669;"># エラー回避版</text>
+      <rect x="0" y="20" width="400" height="70" rx="4" class="code-bg"/>
+      <text x="10" y="35" class="code-text">if y != 0:</text>
+      <text x="30" y="50" class="code-text">    result = x / y</text>
+      <text x="10" y="65" class="code-text">else:</text>
+      <text x="30" y="80" class="code-text">    print("エラー：ゼロで割ることはできません")</text>
+    </g>
+    
+    <g transform="translate(450, 475)">
+      <text x="0" y="15" class="solution-text">💡 解決のポイント：</text>
+      <text x="0" y="30" class="explanation-text">1. yが0でないことを事前に確認</text>
+      <text x="0" y="45" class="explanation-text">2. 条件分岐でエラーを回避</text>
+      <text x="0" y="60" class="explanation-text">3. ユーザーに分かりやすい</text>
+      <text x="20" y="75" class="explanation-text">メッセージを表示</text>
+    </g>
+  </g>
+  
+  <!-- Tips Section -->
+  <g id="tips">
+    <rect x="50" y="580" width="700" height="15" rx="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+    <text x="70" y="590" style="font: 600 11px Inter, sans-serif; fill: #D97706;">💡 コツ：</text>
+    <text x="120" y="590" style="font: 400 10px Inter, sans-serif; fill: #92400E;">エラーメッセージは敵ではなく、問題解決のヒント！最後の行から読むと理解しやすい</text>
+  </g>
+  
+</svg>

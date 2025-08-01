@@ -1,0 +1,162 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-19：Python初心者の頻出エラー辞典</title>
+  <desc>Python初心者が遭遇しやすい主要なエラーとその対策方法</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .error-title { font: 600 13px Inter, sans-serif; fill: #DC2626; }
+      .error-type { font: 600 12px 'SF Mono', Consolas, monospace; fill: #DC2626; }
+      .cause-text { font: 400 10px Inter, sans-serif; fill: #4B5563; }
+      .solution-text { font: 400 10px Inter, sans-serif; fill: #059669; }
+      .example-text { font: 400 9px 'SF Mono', Consolas, monospace; fill: #7C3AED; }
+      .icon { font: 400 16px Inter, sans-serif; }
+      
+      .syntax-bg { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .name-bg { fill: #FFF7ED; stroke: #F97316; stroke-width: 2; }
+      .index-bg { fill: #FEFCE8; stroke: #EAB308; stroke-width: 2; }
+      .cause-bg { fill: #FEE2E2; stroke: #EF4444; stroke-width: 1; }
+      .solution-bg { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-19：Python初心者の頻出エラー辞典</text>
+  
+  <!-- SyntaxError Section -->
+  <g id="syntax-error">
+    <rect x="50" y="60" width="700" height="160" rx="12" class="syntax-bg"/>
+    <text x="70" y="80" class="icon">🚨</text>
+    <text x="95" y="80" class="error-title">SyntaxError（文法エラー）</text>
+    
+    <g transform="translate(70, 95)">
+      <text x="0" y="15" class="error-type">エラー例：SyntaxError: invalid syntax</text>
+    </g>
+    
+    <g transform="translate(70, 120)">
+      <text x="0" y="15" style="font: 600 11px Inter, sans-serif; fill: #B91C1C;">よくある原因：</text>
+      
+      <!-- Cause 1 -->
+      <g transform="translate(0, 30)">
+        <text x="0" y="0" class="cause-text">• コロン(:)の忘れ</text>
+        <text x="120" y="0" class="example-text">→ if x > 0:</text>
+      </g>
+      
+      <!-- Cause 2 -->
+      <g transform="translate(0, 45)">
+        <text x="0" y="0" class="cause-text">• 括弧の対応ミス</text>
+        <text x="120" y="0" class="example-text">→ print("Hello")</text>
+      </g>
+      
+      <!-- Cause 3 -->
+      <g transform="translate(350, 30)">
+        <text x="0" y="0" class="cause-text">• インデントの間違い</text>
+        <text x="140" y="0" class="example-text">→ 4つのスペースで統一</text>
+      </g>
+      
+      <!-- Cause 4 -->
+      <g transform="translate(350, 45)">
+        <text x="0" y="0" class="cause-text">• 全角文字の混入</text>
+        <text x="140" y="0" class="example-text">→ 半角英数字を使用</text>
+      </g>
+    </g>
+    
+    <g transform="translate(70, 180)">
+      <rect x="0" y="0" width="630" height="25" rx="4" class="solution-bg"/>
+      <text x="10" y="15" class="solution-text">対策：エディタの文法チェック機能を活用、コードの書き方を確認</text>
+    </g>
+  </g>
+  
+  <!-- NameError Section -->
+  <g id="name-error">
+    <rect x="50" y="240" width="700" height="160" rx="12" class="name-bg"/>
+    <text x="70" y="260" class="icon">🚨</text>
+    <text x="95" y="260" class="error-title">NameError（名前エラー）</text>
+    
+    <g transform="translate(70, 275)">
+      <text x="0" y="15" class="error-type">エラー例：NameError: name 'n' is not defined</text>
+    </g>
+    
+    <g transform="translate(70, 300)">
+      <text x="0" y="15" style="font: 600 11px Inter, sans-serif; fill: #C2410C;">よくある原因：</text>
+      
+      <!-- Cause 1 -->
+      <g transform="translate(0, 30)">
+        <text x="0" y="0" class="cause-text">• 変数名のタイプミス</text>
+        <text x="140" y="0" class="example-text">→ num を n と間違い</text>
+      </g>
+      
+      <!-- Cause 2 -->
+      <g transform="translate(0, 45)">
+        <text x="0" y="0" class="cause-text">• 変数を定義前に使用</text>
+        <text x="140" y="0" class="example-text">→ 定義順序を確認</text>
+      </g>
+      
+      <!-- Cause 3 -->
+      <g transform="translate(350, 30)">
+        <text x="0" y="0" class="cause-text">• 大文字小文字の間違い</text>
+        <text x="160" y="0" class="example-text">→ Python は区別する</text>
+      </g>
+      
+      <!-- Cause 4 -->
+      <g transform="translate(350, 45)">
+        <text x="0" y="0" class="cause-text">• スコープの問題</text>
+        <text x="160" y="0" class="example-text">→ 変数の有効範囲を確認</text>
+      </g>
+    </g>
+    
+    <g transform="translate(70, 360)">
+      <rect x="0" y="0" width="630" height="25" rx="4" class="solution-bg"/>
+      <text x="10" y="15" class="solution-text">対策：変数名は短く、分かりやすく統一、定義してから使用</text>
+    </g>
+  </g>
+  
+  <!-- IndexError Section -->
+  <g id="index-error">
+    <rect x="50" y="420" width="700" height="140" rx="12" class="index-bg"/>
+    <text x="70" y="440" class="icon">🚨</text>
+    <text x="95" y="440" class="error-title">IndexError（インデックスエラー）</text>
+    
+    <g transform="translate(70, 455)">
+      <text x="0" y="15" class="error-type">エラー例：IndexError: list index out of range</text>
+    </g>
+    
+    <g transform="translate(70, 480)">
+      <text x="0" y="15" style="font: 600 11px Inter, sans-serif; fill: #A16207;">よくある原因：</text>
+      
+      <!-- Cause 1 -->
+      <g transform="translate(0, 30)">
+        <text x="0" y="0" class="cause-text">• リストの範囲外アクセス</text>
+        <text x="160" y="0" class="example-text">→ arr[5] だが配列は4要素</text>
+      </g>
+      
+      <!-- Cause 2 -->
+      <g transform="translate(0, 45)">
+        <text x="0" y="0" class="cause-text">• 空リストへのアクセス</text>
+        <text x="160" y="0" class="example-text">→ 事前にlen()でチェック</text>
+      </g>
+      
+      <!-- Cause 3 -->
+      <g transform="translate(400, 30)">
+        <text x="0" y="0" class="cause-text">• 0から始まるインデックスの勘違い</text>
+      </g>
+      
+    </g>
+    
+    <g transform="translate(70, 540)">
+      <rect x="0" y="0" width="630" height="25" rx="4" class="solution-bg"/>
+      <text x="10" y="15" class="solution-text">対策：配列操作前にサイズを確認する習慣、インデックスの範囲に注意</text>
+    </g>
+  </g>
+  
+  <!-- Additional Tips -->
+  <g id="additional-tips">
+    <rect x="50" y="580" width="700" height="15" rx="6" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="70" y="590" style="font: 600 11px Inter, sans-serif; fill: #6B7280;">💡 エラー解決の基本手順：</text>
+    <text x="220" y="590" style="font: 400 10px Inter, sans-serif; fill: #6B7280;">1. エラーメッセージを最後まで読む → 2. 行番号を確認 → 3. エラーの種類を理解 → 4. 原因を推測して修正</text>
+  </g>
+  
+</svg>

@@ -1,0 +1,145 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-15：初心者の典型的な提出ミス</title>
+  <desc>競技プログラミング初心者がよく犯す提出ミスとその対策方法</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .mistake-title { font: 600 13px Inter, sans-serif; fill: #DC2626; }
+      .correct-title { font: 600 13px Inter, sans-serif; fill: #059669; }
+      .code-text { font: 400 11px 'SF Mono', Consolas, monospace; fill: #1F2937; }
+      .description { font: 400 10px Inter, sans-serif; fill: #6B7280; }
+      .problem-text { font: 600 11px Inter, sans-serif; fill: #4B5563; }
+      .checklist-title { font: 600 12px Inter, sans-serif; fill: #7C3AED; }
+      .checklist-item { font: 400 11px Inter, sans-serif; fill: #4B5563; }
+      .number { font: 600 12px Inter, sans-serif; fill: #FFFFFF; }
+      
+      .mistake-bg { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .correct-bg { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+      .code-wrong { fill: #FECACA; stroke: #EF4444; stroke-width: 1; }
+      .code-right { fill: #DCFCE7; stroke: #22C55E; stroke-width: 1; }
+      .checklist-bg { fill: #F3F4F6; stroke: #7C3AED; stroke-width: 2; }
+      .mistake-number { fill: #EF4444; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-15：初心者の典型的な提出ミス</text>
+  
+  <!-- Mistake 1: Output Format -->
+  <g id="mistake1">
+    <rect x="50" y="60" width="700" height="120" rx="12" class="mistake-bg"/>
+    
+    <g transform="translate(70, 80)">
+      <circle cx="10" cy="10" r="10" class="mistake-number"/>
+      <text x="10" y="15" text-anchor="middle" class="number">1</text>
+      <text x="30" y="15" class="mistake-title">❌ ミス1: 出力形式の間違い</text>
+    </g>
+    
+    <g transform="translate(70, 105)">
+      <text x="0" y="15" class="problem-text">問題：「a bを出力しなさい」</text>
+      
+      <!-- Wrong Code -->
+      <rect x="0" y="25" width="200" height="40" rx="4" class="code-wrong"/>
+      <text x="10" y="40" class="code-text">print(str(a) + str(b))</text>
+      <text x="10" y="55" class="description">間違い: 「12」と出力</text>
+      
+      <!-- Right Code -->
+      <rect x="220" y="25" width="200" height="40" rx="4" class="code-right"/>
+      <text x="230" y="40" class="code-text">print(a, b)</text>
+      <text x="230" y="55" class="description">正解: 「1 2」と出力</text>
+    </g>
+  </g>
+  
+  <!-- Mistake 2: Unnecessary Output -->
+  <g id="mistake2">
+    <rect x="50" y="200" width="700" height="120" rx="12" class="mistake-bg"/>
+    
+    <g transform="translate(70, 220)">
+      <circle cx="10" cy="10" r="10" class="mistake-number"/>
+      <text x="10" y="15" text-anchor="middle" class="number">2</text>
+      <text x="30" y="15" class="mistake-title">❌ ミス2: 不要な出力</text>
+    </g>
+    
+    <g transform="translate(70, 245)">
+      <!-- Wrong Code -->
+      <text x="0" y="15" class="description">間違いコード：</text>
+      <rect x="0" y="20" width="220" height="50" rx="4" class="code-wrong"/>
+      <text x="10" y="35" class="code-text">a = int(input())</text>
+      <text x="10" y="50" class="code-text">print("aの値は", a)  # ← これが余計</text>
+      <text x="10" y="65" class="code-text">print(a * 2)</text>
+      
+      <!-- Right Code -->
+      <text x="250" y="15" class="description">正しいコード：</text>
+      <rect x="250" y="20" width="200" height="50" rx="4" class="code-right"/>
+      <text x="260" y="35" class="code-text">a = int(input())</text>
+      <text x="260" y="50" class="code-text">print(a * 2)  # 答えのみ出力</text>
+    </g>
+  </g>
+  
+  <!-- Mistake 3: Input Count Error -->
+  <g id="mistake3">
+    <rect x="50" y="340" width="700" height="120" rx="12" class="mistake-bg"/>
+    
+    <g transform="translate(70, 360)">
+      <circle cx="10" cy="10" r="10" class="mistake-number"/>
+      <text x="10" y="15" text-anchor="middle" class="number">3</text>
+      <text x="30" y="15" class="mistake-title">❌ ミス3: input()の数の間違い</text>
+    </g>
+    
+    <g transform="translate(70, 385)">
+      <text x="0" y="15" class="problem-text">問題：「2行にわたってN、Mが与えられる」</text>
+      
+      <!-- Wrong Code -->
+      <text x="0" y="35" class="description">間違い：</text>
+      <rect x="0" y="40" width="250" height="25" rx="4" class="code-wrong"/>
+      <text x="10" y="55" class="code-text">n, m = map(int, input().split())</text>
+      
+      <!-- Right Code -->
+      <text x="270" y="35" class="description">正解：</text>
+      <rect x="270" y="40" width="200" height="40" rx="4" class="code-right"/>
+      <text x="280" y="55" class="code-text">n = int(input())</text>
+      <text x="280" y="70" class="code-text">m = int(input())</text>
+    </g>
+  </g>
+  
+  <!-- Prevention Checklist -->
+  <g id="checklist">
+    <rect x="50" y="480" width="700" height="100" rx="12" class="checklist-bg"/>
+    <text x="70" y="500" class="checklist-title">🛡️ ミス防止のチェックリスト：</text>
+    
+    <g transform="translate(80, 515)">
+      <circle cx="5" cy="5" r="5" fill="#7C3AED"/>
+      <text x="6" y="9" text-anchor="middle" style="font: 600 8px Inter, sans-serif; fill: #FFFFFF;">1</text>
+      <text x="20" y="9" class="checklist-item">サンプル入出力で必ずテスト</text>
+    </g>
+    
+    <g transform="translate(280, 515)">
+      <circle cx="5" cy="5" r="5" fill="#7C3AED"/>
+      <text x="6" y="9" text-anchor="middle" style="font: 600 8px Inter, sans-serif; fill: #FFFFFF;">2</text>
+      <text x="20" y="9" class="checklist-item">出力に余計な文字が含まれていないか確認</text>
+    </g>
+    
+    <g transform="translate(80, 540)">
+      <circle cx="5" cy="5" r="5" fill="#7C3AED"/>
+      <text x="6" y="9" text-anchor="middle" style="font: 600 8px Inter, sans-serif; fill: #FFFFFF;">3</text>
+      <text x="20" y="9" class="checklist-item">改行・スペースが問題文通りか確認</text>
+    </g>
+    
+    <g transform="translate(280, 540)">
+      <circle cx="5" cy="5" r="5" fill="#7C3AED"/>
+      <text x="6" y="9" text-anchor="middle" style="font: 600 8px Inter, sans-serif; fill: #FFFFFF;">4</text>
+      <text x="20" y="9" class="checklist-item">デバッグ用のprint文を削除したか確認</text>
+    </g>
+    
+    <g transform="translate(80, 565)">
+      <circle cx="5" cy="5" r="5" fill="#7C3AED"/>
+      <text x="6" y="9" text-anchor="middle" style="font: 600 8px Inter, sans-serif; fill: #FFFFFF;">5</text>
+      <text x="20" y="9" class="checklist-item">input()の回数が問題の入力行数と一致するか確認</text>
+    </g>
+  </g>
+  
+</svg>

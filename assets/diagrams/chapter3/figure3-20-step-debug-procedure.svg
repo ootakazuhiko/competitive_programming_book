@@ -1,0 +1,193 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図3-20：ステップ実行デバッグ手順</title>
+  <desc>ThonnyとVSCodeでのステップ実行デバッグの詳細手順</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .tool-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .step-text { font: 400 11px Inter, sans-serif; fill: #4B5563; }
+      .number { font: 600 12px Inter, sans-serif; fill: #FFFFFF; }
+      .shortcut { font: 600 10px 'SF Mono', Consolas, monospace; fill: #7C3AED; }
+      .benefit-text { font: 400 11px Inter, sans-serif; fill: #059669; }
+      .icon { font: 400 16px Inter, sans-serif; }
+      .feature { font: 600 10px Inter, sans-serif; fill: #4B5563; }
+      
+      .thonny-bg { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .vscode-bg { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .benefits-bg { fill: #F0FDF4; stroke: #22C55E; stroke-width: 2; }
+      .step-number-thonny { fill: #F59E0B; }
+      .step-number-vscode { fill: #3B82F6; }
+      .shortcut-bg { fill: #7C3AED; opacity: 0.1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図3-20：ステップ実行デバッグ手順</text>
+  
+  <!-- Thonny Section -->
+  <g id="thonny-debug">
+    <rect x="50" y="60" width="340" height="220" rx="12" class="thonny-bg"/>
+    <text x="70" y="80" class="icon">🔍</text>
+    <text x="95" y="80" class="tool-title">Thonnyでのステップ実行</text>
+    
+    <!-- Step 1 -->
+    <g transform="translate(70, 100)">
+      <circle cx="10" cy="10" r="10" class="step-number-thonny"/>
+      <text x="10" y="15" text-anchor="middle" class="number">1</text>
+      <text x="30" y="15" class="step-text">コードを開いた状態で「Debug」メニューを選択</text>
+    </g>
+    
+    <!-- Step 2 -->
+    <g transform="translate(70, 130)">
+      <circle cx="10" cy="10" r="10" class="step-number-thonny"/>
+      <text x="10" y="15" text-anchor="middle" class="number">2</text>
+      <text x="30" y="15" class="step-text">「Step by step」をクリック</text>
+    </g>
+    
+    <!-- Step 3 -->
+    <g transform="translate(70, 160)">
+      <circle cx="10" cy="10" r="10" class="step-number-thonny"/>
+      <text x="10" y="15" text-anchor="middle" class="number">3</text>
+      <text x="30" y="15" class="step-text">「Step into」ボタンで1行ずつ実行</text>
+    </g>
+    
+    <!-- Step 4 -->
+    <g transform="translate(70, 190)">
+      <circle cx="10" cy="10" r="10" class="step-number-thonny"/>
+      <text x="10" y="15" text-anchor="middle" class="number">4</text>
+      <text x="30" y="15" class="step-text">右側の「Variables」で変数の値を確認</text>
+    </g>
+    
+    <!-- Step 5 -->
+    <g transform="translate(70, 220)">
+      <circle cx="10" cy="10" r="10" class="step-number-thonny"/>
+      <text x="10" y="15" text-anchor="middle" class="number">5</text>
+      <text x="30" y="15" class="step-text">問題のある行で何が起きているか分析</text>
+    </g>
+    
+    <!-- Features -->
+    <g transform="translate(70, 250)">
+      <text x="0" y="15" class="feature">特徴：初心者に優しいUI、直感的な操作</text>
+    </g>
+  </g>
+  
+  <!-- VSCode Section -->
+  <g id="vscode-debug">
+    <rect x="410" y="60" width="340" height="220" rx="12" class="vscode-bg"/>
+    <text x="430" y="80" class="icon">🔍</text>
+    <text x="455" y="80" class="tool-title">VSCodeでのステップ実行</text>
+    
+    <!-- Step 1 -->
+    <g transform="translate(430, 100)">
+      <circle cx="10" cy="10" r="10" class="step-number-vscode"/>
+      <text x="10" y="15" text-anchor="middle" class="number">1</text>
+      <text x="30" y="15" class="step-text">行番号の左をクリックしてブレークポイント設定</text>
+    </g>
+    
+    <!-- Step 2 -->
+    <g transform="translate(430, 130)">
+      <circle cx="10" cy="10" r="10" class="step-number-vscode"/>
+      <text x="10" y="15" text-anchor="middle" class="number">2</text>
+      <text x="30" y="15" class="step-text">F5キーを押してデバッグ開始</text>
+      <rect x="115" y="3" width="20" height="15" rx="3" class="shortcut-bg"/>
+      <text x="120" y="12" class="shortcut">F5</text>
+    </g>
+    
+    <!-- Step 3 -->
+    <g transform="translate(430, 160)">
+      <circle cx="10" cy="10" r="10" class="step-number-vscode"/>
+      <text x="10" y="15" text-anchor="middle" class="number">3</text>
+      <text x="30" y="15" class="step-text">F10キーで次の行へステップ実行</text>
+      <rect x="170" y="3" width="25" height="15" rx="3" class="shortcut-bg"/>
+      <text x="177" y="12" class="shortcut">F10</text>
+    </g>
+    
+    <!-- Step 4 -->
+    <g transform="translate(430, 190)">
+      <circle cx="10" cy="10" r="10" class="step-number-vscode"/>
+      <text x="10" y="15" text-anchor="middle" class="number">4</text>
+      <text x="30" y="15" class="step-text">左側の「VARIABLES」で変数の値を確認</text>
+    </g>
+    
+    <!-- Step 5 -->
+    <g transform="translate(430, 220)">
+      <circle cx="10" cy="10" r="10" class="step-number-vscode"/>
+      <text x="10" y="15" text-anchor="middle" class="number">5</text>
+      <text x="30" y="15" class="step-text">「CALL STACK」で関数の呼び出し状況を確認</text>
+    </g>
+    
+    <!-- Features -->
+    <g transform="translate(430, 250)">
+      <text x="0" y="15" class="feature">特徴：プロ仕様の高機能、詳細な情報表示</text>
+    </g>
+  </g>
+  
+  <!-- Benefits Section -->
+  <g id="benefits">
+    <rect x="50" y="300" width="700" height="180" rx="12" class="benefits-bg"/>
+    <text x="70" y="320" class="icon">💡</text>
+    <text x="95" y="320" class="tool-title">ステップ実行の利点：</text>
+    
+    <!-- Benefit 1 -->
+    <g transform="translate(80, 340)">
+      <circle cx="8" cy="8" r="8" fill="#22C55E"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">1</text>
+      <text x="25" y="12" class="benefit-text">変数の値の変化を追跡できる</text>
+      <text x="25" y="27" class="step-text">各ステップで変数がどう変わるか確認</text>
+    </g>
+    
+    <!-- Benefit 2 -->
+    <g transform="translate(400, 340)">
+      <circle cx="8" cy="8" r="8" fill="#22C55E"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">2</text>
+      <text x="25" y="12" class="benefit-text">どの行で問題が起きるか特定できる</text>
+      <text x="25" y="27" class="step-text">エラーの発生箇所を正確に把握</text>
+    </g>
+    
+    <!-- Benefit 3 -->
+    <g transform="translate(80, 385)">
+      <circle cx="8" cy="8" r="8" fill="#22C55E"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">3</text>
+      <text x="25" y="12" class="benefit-text">プログラムの動作を深く理解できる</text>
+      <text x="25" y="27" class="step-text">コードがどのように実行されるか学習</text>
+    </g>
+    
+    <!-- Benefit 4 -->
+    <g transform="translate(400, 385)">
+      <circle cx="8" cy="8" r="8" fill="#22C55E"/>
+      <text x="8" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: #FFFFFF;">4</text>
+      <text x="25" y="12" class="benefit-text">複雑なロジックも段階的に検証できる</text>
+      <text x="25" y="27" class="step-text">アルゴリズムの各段階を確認</text>
+    </g>
+    
+    <!-- When to Use -->
+    <g transform="translate(70, 430)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #059669;">🎯 いつ使う？</text>
+      <text x="0" y="30" class="step-text">• print文だけでは原因が分からない場合</text>
+      <text x="0" y="45" class="step-text">• ループや条件分岐が複雑な場合</text>
+      <text x="350" y="30" class="step-text">• 変数の値が期待と異なる場合</text>
+      <text x="350" y="45" class="step-text">• アルゴリズムの動作を詳細に理解したい場合</text>
+    </g>
+  </g>
+  
+  <!-- Tips Section -->
+  <g id="tips">
+    <rect x="50" y="500" width="700" height="80" rx="12" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="1"/>
+    <text x="70" y="520" style="font: 600 12px Inter, sans-serif; fill: #6B7280;">🔧 効果的な使い方のコツ：</text>
+    
+    <g transform="translate(70, 535)">
+      <text x="0" y="15" class="step-text">• 問題が起きそうな箇所にブレークポイントを設定</text>
+      <text x="0" y="30" class="step-text">• 変数の値を予想してから実際の値と比較</text>
+      <text x="0" y="45" class="step-text">• 大きなループでは適度に飛ばし実行も活用</text>
+      
+      <text x="400" y="15" class="step-text">• watch機能で特定の変数を監視</text>
+      <text x="400" y="30" class="step-text">• 慣れてきたら条件付きブレークポイントも活用</text>
+      <text x="400" y="45" class="step-text">• 最初はThonny、慣れたらVSCodeにステップアップ</text>
+    </g>
+  </g>
+  
+</svg>
