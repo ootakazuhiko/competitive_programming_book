@@ -51,30 +51,22 @@
         safeExecute(initTheme, 'initTheme');
     }
 
-    // パフォーマンス設定定数
-    const VERY_LONG_PAGE_THRESHOLD = 50000; // 50KB以上は超長いページ
-    const DELAY_LONG = 1000;                 // 長いページ用遅延時間
-    const DELAY_SHORT = 500;                 // 通常ページ用遅延時間
-    const TIMEOUT_SHORT = 100;               // 長いページ用短縮タイムアウト
-    const TIMEOUT_LONG = 200;                // 通常ページ用タイムアウト
+    // パフォーマンス設定定数（全ページ統一設定）
+    const PROCESSING_DELAY = 1000;           // 処理開始遅延時間（統一）
+    const PROCESSING_TIMEOUT = 100;          // 処理タイムアウト（統一）
+    const MAX_HEADINGS = 20;                 // 見出し処理上限
+    const MAX_LINKS = 50;                    // リンク処理上限
+    const MAX_IMAGES = 50;                   // 画像処理上限
 
-    // 重い処理の遅延初期化（超長いページ用最適化）
+    // 重い処理の遅延初期化（全ページ統一最適化）
     function initHeavyFeatures() {
-        // ページの長さに応じて処理を調整
-        const contentLength = document.body.textContent.length;
-        const isVeryLongPage = contentLength > VERY_LONG_PAGE_THRESHOLD;
-        
-        const delay = isVeryLongPage ? DELAY_LONG : DELAY_SHORT;
-        const timeout = isVeryLongPage ? TIMEOUT_SHORT : TIMEOUT_LONG;
-        
+        // 全ページで同じ軽量設定を適用
         setTimeout(() => {
-            if (!isVeryLongPage) {
-                safeExecuteWithTimeout(() => addHeadingIds(), timeout, 'addHeadingIds');
-            }
-            // TOC生成は完全に無効化（パフォーマンス優先）
-            safeExecuteWithTimeout(() => handleExternalLinks(), timeout, 'handleExternalLinks');
-            safeExecuteWithTimeout(() => enhanceImages(), timeout, 'enhanceImages');
-        }, delay);
+            // 見出しID生成は最小限に制限
+            safeExecuteWithTimeout(() => addHeadingIds(), PROCESSING_TIMEOUT, 'addHeadingIds');
+            safeExecuteWithTimeout(() => handleExternalLinks(), PROCESSING_TIMEOUT, 'handleExternalLinks');
+            safeExecuteWithTimeout(() => enhanceImages(), PROCESSING_TIMEOUT, 'enhanceImages');
+        }, PROCESSING_DELAY);
     }
 
     // スタイルの安全な追加
@@ -148,13 +140,13 @@
         }, 'themeRestore');
     }
 
-    // 見出しIDの安全な生成（超軽量バージョン）
+    // 見出しIDの安全な生成（全ページ統一軽量バージョン）
     function addHeadingIds() {
         const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
         let idCounter = 0;
         
-        // さらに制限を厳しく（長いページ対応）
-        const maxHeadings = Math.min(headings.length, 20);
+        // 全ページで統一制限
+        const maxHeadings = Math.min(headings.length, MAX_HEADINGS);
         
         for (let i = 0; i < maxHeadings; i++) {
             const heading = headings[i];
@@ -198,12 +190,12 @@
         tocContainer.appendChild(tocList);
     }
 
-    // 外部リンクの安全な処理（超軽量版）
+    // 外部リンクの安全な処理（全ページ統一軽量版）
     function handleExternalLinks() {
         const links = document.querySelectorAll('a[href^="http"]');
         
-        // さらに厳しい制限（長いページ対応）
-        const maxLinks = Math.min(links.length, 50);
+        // 全ページで統一制限
+        const maxLinks = Math.min(links.length, MAX_LINKS);
         
         for (let i = 0; i < maxLinks; i++) {
             const link = links[i];
@@ -214,12 +206,12 @@
         }
     }
 
-    // 画像の安全な強化
+    // 画像の安全な強化（全ページ統一軽量版）
     function enhanceImages() {
         const images = document.querySelectorAll('img');
         
-        // 処理件数制限
-        const maxImages = Math.min(images.length, 100);
+        // 全ページで統一制限
+        const maxImages = Math.min(images.length, MAX_IMAGES);
         
         for (let i = 0; i < maxImages; i++) {
             const img = images[i];
