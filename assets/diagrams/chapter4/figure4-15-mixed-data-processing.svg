@@ -1,0 +1,150 @@
+<svg viewBox="0 0 800 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-15：混在データの処理パターン</title>
+  <desc>文字列と数値が混在するデータの入力処理方法を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .code-text { font: 500 11px 'Monaco', 'Menlo', monospace; fill: #4B5563; }
+      .comment-text { font: 500 10px Inter, sans-serif; fill: #6B7280; }
+      .example-text { font: 600 11px Inter, sans-serif; }
+      .warning-text { font: 600 11px Inter, sans-serif; fill: #DC2626; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .simple-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .complex-section { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .warning-section { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .input-box { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="650" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-15：混在データの処理パターン</text>
+  
+  <!-- Simple Mixed Data Section -->
+  <g id="simple-section">
+    <rect x="50" y="60" width="700" height="180" rx="12" class="simple-section"/>
+    <text x="70" y="85" class="emoji">👤</text>
+    <text x="100" y="85" class="section-title" fill="#1E40AF">問題例：「名前と年齢が空白区切りで与えられる」</text>
+    
+    <g transform="translate(70, 105)">
+      <text x="0" y="15" class="comment-text">入力例：</text>
+      <rect x="0" y="20" width="100" height="20" rx="4" class="input-box"/>
+      <text x="50" y="35" text-anchor="middle" class="example-text" fill="#059669">"Alice 15"</text>
+      
+      <!-- Method 1 -->
+      <text x="0" y="60" class="comment-text">方法1：split()で分割してから個別に変換</text>
+      
+      <rect x="0" y="70" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="81" class="code-text">line = input().split()</text>
+      
+      <rect x="0" y="90" width="150" height="15" rx="4" class="code-box"/>
+      <text x="5" y="101" class="code-text">name = line[0]</text>
+      <text x="160" y="101" class="comment-text">文字列のまま</text>
+      
+      <rect x="0" y="110" width="180" height="15" rx="4" class="code-box"/>
+      <text x="5" y="121" class="code-text">age = int(line[1])</text>
+      <text x="190" y="121" class="comment-text">整数に変換</text>
+      
+      <rect x="0" y="130" width="280" height="15" rx="4" class="code-box"/>
+      <text x="5" y="141" class="code-text">print(f"{name}さんは{age}歳です")</text>
+      
+      <!-- Method 2 -->
+      <text x="350" y="60" class="comment-text">方法2：直接代入（型が確定している場合）</text>
+      
+      <rect x="350" y="70" width="260" height="15" rx="4" class="code-box"/>
+      <text x="355" y="81" class="code-text">name, age_str = input().split()</text>
+      
+      <rect x="350" y="90" width="180" height="15" rx="4" class="code-box"/>
+      <text x="355" y="101" class="code-text">age = int(age_str)</text>
+      
+      <rect x="350" y="110" width="280" height="15" rx="4" class="code-box"/>
+      <text x="355" y="121" class="code-text">print(f"{name}さんは{age}歳です")</text>
+    </g>
+  </g>
+  
+  <!-- Complex Mixed Data Section -->
+  <g id="complex-section">
+    <rect x="50" y="260" width="700" height="150" rx="12" class="complex-section"/>
+    <text x="70" y="285" class="emoji">📊</text>
+    <text x="100" y="285" class="section-title" fill="#059669">複雑な混在パターン</text>
+    
+    <g transform="translate(70, 305)">
+      <text x="0" y="15" class="comment-text">"3 Alice Bob Charlie" のような入力</text>
+      <text x="0" y="30" class="comment-text">最初が個数、後ろが名前のリスト</text>
+      
+      <rect x="0" y="40" width="200" height="15" rx="4" class="code-box"/>
+      <text x="5" y="51" class="code-text">data = input().split()</text>
+      
+      <rect x="0" y="60" width="160" height="15" rx="4" class="code-box"/>
+      <text x="5" y="71" class="code-text">n = int(data[0])</text>
+      <text x="170" y="71" class="comment-text">最初の要素は個数</text>
+      
+      <rect x="0" y="80" width="140" height="15" rx="4" class="code-box"/>
+      <text x="5" y="91" class="code-text">names = data[1:]</text>
+      <text x="150" y="91" class="comment-text">2番目以降は名前</text>
+      
+      <rect x="0" y="105" width="180" height="15" rx="4" class="code-box"/>
+      <text x="5" y="116" class="code-text">print(f"人数: {n}")</text>
+      
+      <!-- Usage example -->
+      <rect x="350" y="40" width="300" height="85" rx="6" fill="#F0FDF4" stroke="#22C55E" stroke-width="1"/>
+      <text x="360" y="55" class="comment-text">使用例：</text>
+      <rect x="360" y="60" width="240" height="12" rx="3" class="code-box"/>
+      <text x="365" y="69" class="code-text" style="font-size: 10px;">for i, name in enumerate(names):</text>
+      <rect x="360" y="75" width="220" height="12" rx="3" class="code-box"/>
+      <text x="365" y="84" class="code-text" style="font-size: 10px;">    print(f"{i+1}番目: {name}")</text>
+      <text x="360" y="105" class="comment-text" style="font-size: 10px;">出力例：1番目: Alice, 2番目: Bob...</text>
+    </g>
+  </g>
+  
+  <!-- Warning Section -->
+  <g id="warning-section">
+    <rect x="50" y="430" width="700" height="120" rx="12" class="warning-section"/>
+    <text x="70" y="455" class="emoji">⚠️</text>
+    <text x="100" y="455" class="warning-text">注意が必要なパターン</text>
+    
+    <g transform="translate(70, 475)">
+      <text x="0" y="15" class="comment-text">文字列に空白が含まれる場合：</text>
+      <text x="0" y="30" class="comment-text">「"Hello World" 25」のような入力</text>
+      
+      <rect x="0" y="40" width="400" height="15" rx="4" class="code-box"/>
+      <text x="5" y="51" class="code-text"># この場合、split()だけでは正しく分割できない</text>
+      
+      <text x="0" y="75" class="warning-text">→ 問題文で入力形式を必ず確認すること</text>
+      
+      <rect x="450" y="10" width="220" height="65" rx="6" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1"/>
+      <text x="460" y="25" class="example-text" fill="#D97706">対処法：</text>
+      <text x="460" y="40" class="comment-text">• 問題文の制約を確認</text>
+      <text x="460" y="55" class="comment-text">• サンプル入力を詳しく調べる</text>
+      <text x="460" y="70" class="comment-text">• 特殊な区切り文字を使う場合も</text>
+    </g>
+  </g>
+  
+  <!-- Best Practices -->
+  <g id="best-practices">
+    <rect x="100" y="570" width="600" height="70" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+    <text x="120" y="595" class="emoji">💡</text>
+    <text x="150" y="595" class="example-text" fill="#0C4A6E">混在データ処理のコツ</text>
+    
+    <g transform="translate(120, 610)">
+      <circle cx="8" cy="8" r="4" fill="#22C55E"/>
+      <text x="20" y="12" class="comment-text" fill="#0C4A6E">まずsplit()で分割、その後必要な部分だけint()変換</text>
+      
+      <circle cx="8" cy="25" r="4" fill="#22C55E"/>
+      <text x="20" y="29" class="comment-text" fill="#0C4A6E">データの形式を問題文で確認してから処理方法を決める</text>
+      
+      <circle cx="350" cy="8" r="4" fill="#22C55E"/>
+      <text x="362" y="12" class="comment-text" fill="#0C4A6E">リストの[0], [1:]などで適切に分割</text>
+      
+      <circle cx="350" cy="25" r="4" fill="#22C55E"/>
+      <text x="362" y="29" class="comment-text" fill="#0C4A6E">型変換は必要な部分のみ</text>
+    </g>
+  </g>
+  
+</svg>

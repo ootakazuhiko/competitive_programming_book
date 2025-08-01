@@ -1,0 +1,152 @@
+<svg viewBox="0 0 800 750" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-19：出力の典型的な間違いパターン</title>
+  <desc>競技プログラミングでよくある出力ミスとその修正方法を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .code-text { font: 500 10px 'Monaco', 'Menlo', monospace; fill: #4B5563; }
+      .wrong-text { font: 600 10px 'Monaco', 'Menlo', monospace; fill: #DC2626; }
+      .correct-text { font: 600 10px 'Monaco', 'Menlo', monospace; fill: #059669; }
+      .comment-text { font: 500 9px Inter, sans-serif; fill: #6B7280; }
+      .mistake-text { font: 600 11px Inter, sans-serif; fill: #DC2626; }
+      .correct-label { font: 600 11px Inter, sans-serif; fill: #059669; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .mistake-section { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .wrong-box { fill: #FECACA; stroke: #EF4444; stroke-width: 1; }
+      .correct-box { fill: #D1FAE5; stroke: #10B981; stroke-width: 1; }
+      .checklist-box { fill: #F0F9FF; stroke: #0EA5E9; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="750" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-19：出力の典型的な間違いパターン</text>
+  
+  <!-- Mistake 1: Extra Text -->
+  <g id="mistake1">
+    <rect x="50" y="60" width="700" height="120" rx="12" class="mistake-section"/>
+    <text x="70" y="85" class="emoji">❌</text>
+    <text x="95" y="85" class="mistake-text">ミス1：余分な文字・説明の出力</text>
+    
+    <g transform="translate(70, 105)">
+      <text x="0" y="15" class="comment-text">問題：「答えを出力しなさい」</text>
+      <rect x="0" y="25" width="120" height="12" rx="3" class="code-box"/>
+      <text x="5" y="34" class="code-text">answer = 42</text>
+      
+      <rect x="0" y="42" width="160" height="12" rx="3" class="wrong-box"/>
+      <text x="5" y="51" class="wrong-text">print("答えは", answer)</text>
+      <text x="170" y="51" class="comment-text">❌ 余分な説明</text>
+      
+      <rect x="0" y="59" width="180" height="12" rx="3" class="wrong-box"/>
+      <text x="5" y="68" class="wrong-text">print(f"答え: {answer}")</text>
+      <text x="190" y="68" class="comment-text">❌ 余分な説明</text>
+      
+      <rect x="0" y="76" width="120" height="12" rx="3" class="correct-box"/>
+      <text x="5" y="85" class="correct-text">print(answer)</text>
+      <text x="130" y="85" class="comment-text">✅ 正解</text>
+    </g>
+  </g>
+  
+  <!-- Mistake 2: Line Control -->
+  <g id="mistake2">
+    <rect x="50" y="200" width="700" height="120" rx="12" class="mistake-section"/>
+    <text x="70" y="225" class="emoji">❌</text>
+    <text x="95" y="225" class="mistake-text">ミス2：改行の制御ミス</text>
+    
+    <g transform="translate(70, 245)">
+      <text x="0" y="15" class="comment-text">問題：「a bを1行で出力」</text>
+      <rect x="0" y="25" width="100" height="12" rx="3" class="code-box"/>
+      <text x="5" y="34" class="code-text">a, b = 1, 2</text>
+      
+      <rect x="0" y="42" width="80" height="12" rx="3" class="wrong-box"/>
+      <text x="5" y="51" class="wrong-text">print(a)</text>
+      
+      <rect x="0" y="59" width="80" height="12" rx="3" class="wrong-box"/>
+      <text x="5" y="68" class="wrong-text">print(b)</text>
+      <text x="90" y="68" class="comment-text">❌ 2行になってしまう</text>
+      
+      <rect x="250" y="42" width="100" height="12" rx="3" class="correct-box"/>
+      <text x="255" y="51" class="correct-text">print(a, b)</text>
+      <text x="360" y="51" class="comment-text">✅ 正解: "1 2"</text>
+    </g>
+  </g>
+  
+  <!-- Mistake 3: Case Sensitivity -->
+  <g id="mistake3">
+    <rect x="50" y="340" width="700" height="120" rx="12" class="mistake-section"/>
+    <text x="70" y="365" class="emoji">❌</text>
+    <text x="95" y="365" class="mistake-text">ミス3：大文字小文字の間違い</text>
+    
+    <g transform="translate(70, 385)">
+      <text x="0" y="15" class="comment-text">問題文で"Yes"と指定されている場合</text>
+      <rect x="0" y="25" width="120" height="12" rx="3" class="code-box"/>
+      <text x="5" y="34" class="code-text">if condition:</text>
+      
+      <rect x="0" y="42" width="120" height="12" rx="3" class="wrong-box"/>
+      <text x="5" y="51" class="wrong-text">    print("yes")</text>
+      <text x="130" y="51" class="comment-text">❌ 小文字</text>
+      
+      <rect x="0" y="59" width="120" height="12" rx="3" class="wrong-box"/>
+      <text x="5" y="68" class="wrong-text">    print("YES")</text>
+      <text x="130" y="68" class="comment-text">❌ 大文字</text>
+      
+      <rect x="0" y="76" width="120" height="12" rx="3" class="correct-box"/>
+      <text x="5" y="85" class="correct-text">    print("Yes")</text>
+      <text x="130" y="85" class="comment-text">✅ 正解</text>
+    </g>
+  </g>
+  
+  <!-- Mistake 4: Separator -->
+  <g id="mistake4">
+    <rect x="50" y="480" width="700" height="140" rx="12" class="mistake-section"/>
+    <text x="70" y="505" class="emoji">❌</text>
+    <text x="95" y="505" class="mistake-text">ミス4：区切り文字の間違い</text>
+    
+    <g transform="translate(70, 525)">
+      <text x="0" y="15" class="comment-text">問題：「カンマ区切りで出力」</text>
+      <rect x="0" y="25" width="160" height="12" rx="3" class="code-box"/>
+      <text x="5" y="34" class="code-text">numbers = [1, 2, 3]</text>
+      
+      <rect x="0" y="42" width="140" height="12" rx="3" class="wrong-box"/>
+      <text x="5" y="51" class="wrong-text">print(*numbers)</text>
+      <text x="150" y="51" class="comment-text">❌ "1 2 3"</text>
+      
+      <rect x="0" y="59" width="280" height="12" rx="3" class="correct-box"/>
+      <text x="5" y="68" class="correct-text">print(','.join(map(str, numbers)))</text>
+      <text x="290" y="68" class="comment-text">✅ "1,2,3"</text>
+      
+      <text x="350" y="30" class="comment-text">問題：「空白区切りで出力」</text>
+      <rect x="350" y="42" width="280" height="12" rx="3" class="wrong-box"/>
+      <text x="355" y="51" class="wrong-text">print(','.join(map(str, numbers)))</text>
+      <text x="640" y="51" class="comment-text">❌ "1,2,3"</text>
+      
+      <rect x="350" y="59" width="140" height="12" rx="3" class="correct-box"/>
+      <text x="355" y="68" class="correct-text">print(*numbers)</text>
+      <text x="500" y="68" class="comment-text">✅ "1 2 3"</text>
+    </g>
+  </g>
+  
+  <!-- Checklist -->
+  <g id="checklist">
+    <rect x="50" y="640" width="700" height="100" rx="12" class="checklist-box"/>
+    <text x="70" y="665" class="emoji">🛡️</text>
+    <text x="95" y="665" class="correct-label">出力ミス防止チェックリスト</text>
+    
+    <g transform="translate(70, 685)">
+      <text x="0" y="12" class="comment-text" fill="#0C4A6E">1. サンプル出力を文字単位で確認</text>
+      <text x="0" y="24" class="comment-text" fill="#0C4A6E">2. 余計な説明文字がないか確認</text>
+      <text x="0" y="36" class="comment-text" fill="#0C4A6E">3. 改行・スペース・区切り文字が正確か確認</text>
+      
+      <text x="300" y="12" class="comment-text" fill="#0C4A6E">4. 大文字小文字が問題文と一致するか確認</text>
+      <text x="300" y="24" class="comment-text" fill="#0C4A6E">5. 小数点以下の桁数が指定通りか確認</text>
+      <text x="300" y="36" class="comment-text" fill="#0C4A6E">6. 実際にサンプルケースで動作確認</text>
+    </g>
+  </g>
+  
+</svg>

@@ -1,0 +1,133 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-20：この章で身につけたスキル</title>
+  <desc>第4章で習得した入出力処理のスキルと次のステップを総括する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; fill: #374151; }
+      .skill-text { font: 600 12px Inter, sans-serif; }
+      .item-text { font: 500 11px Inter, sans-serif; fill: #4B5563; }
+      .code-text { font: 500 10px 'Monaco', 'Menlo', monospace; fill: #6B7280; }
+      .next-text { font: 600 12px Inter, sans-serif; }
+      .description-text { font: 500 11px Inter, sans-serif; fill: #6B7280; }
+      .emoji { font: 400 18px Inter, sans-serif; }
+      
+      .skills-section { fill: #ECFDF5; stroke: #22C55E; stroke-width: 2; }
+      .next-section { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .skill-box { fill: #F0FDF4; stroke: #22C55E; stroke-width: 1; }
+      .code-box { fill: #F8FAFC; stroke: #CBD5E0; stroke-width: 1; }
+      .next-box { fill: #F0F9FF; stroke: #3B82F6; stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-20：この章で身につけたスキル</text>
+  
+  <!-- Skills Acquired Section -->
+  <g id="skills-section">
+    <rect x="50" y="60" width="700" height="400" rx="12" class="skills-section"/>
+    <text x="70" y="85" class="emoji">🎯</text>
+    <text x="100" y="85" class="skill-text" fill="#059669">習得したスキル</text>
+    
+    <!-- Skill 1: Basic Input -->
+    <g transform="translate(70, 105)">
+      <rect x="0" y="0" width="320" height="70" rx="8" class="skill-box"/>
+      <text x="10" y="20" class="emoji" style="font-size: 14px;">✅</text>
+      <text x="35" y="20" class="skill-text" fill="#059669">単一数値・複数数値の正確な読み込み</text>
+      <text x="10" y="35" class="item-text">• int()変換の必要性を理解</text>
+      <text x="10" y="48" class="item-text">• split()とmap()の組み合わせをマスター</text>
+      <text x="10" y="61" class="item-text">• 個別変数とリストの使い分けが可能</text>
+    </g>
+    
+    <!-- Skill 2: N-lines Input -->
+    <g transform="translate(410, 105)">
+      <rect x="0" y="0" width="320" height="70" rx="8" class="skill-box"/>
+      <text x="10" y="20" class="emoji" style="font-size: 14px;">✅</text>
+      <text x="35" y="20" class="skill-text" fill="#059669">繰り返し入力・2次元データの処理</text>
+      <text x="10" y="35" class="item-text">• N行入力の標準パターンを習得</text>
+      <text x="10" y="48" class="item-text">• リスト内包表記による効率化</text>
+      <text x="10" y="61" class="item-text">• 2次元配列の読み込みとアクセス</text>
+    </g>
+    
+    <!-- Skill 3: String Processing -->
+    <g transform="translate(70, 185)">
+      <rect x="0" y="0" width="320" height="70" rx="8" class="skill-box"/>
+      <text x="10" y="20" class="emoji" style="font-size: 14px;">✅</text>
+      <text x="35" y="20" class="skill-text" fill="#059669">文字列入力と数値の混在データの処理</text>
+      <text x="10" y="35" class="item-text">• 文字列操作の基本をマスター</text>
+      <text x="10" y="48" class="item-text">• 混在データの適切な分割・変換</text>
+      <text x="10" y="61" class="item-text">• よく使う文字列関数を理解</text>
+    </g>
+    
+    <!-- Skill 4: Output -->
+    <g transform="translate(410, 185)">
+      <rect x="0" y="0" width="320" height="70" rx="8" class="skill-box"/>
+      <text x="10" y="20" class="emoji" style="font-size: 14px;">✅</text>
+      <text x="35" y="20" class="skill-text" fill="#059669">様々な出力形式への対応</text>
+      <text x="10" y="35" class="item-text">• print()関数の完全活用</text>
+      <text x="10" y="48" class="item-text">• リスト出力・条件出力・小数制御</text>
+      <text x="10" y="61" class="item-text">• 出力形式の厳密な指定に対応</text>
+    </g>
+    
+    <!-- Skill 5: Error Prevention -->
+    <g transform="translate(70, 265)">
+      <rect x="0" y="0" width="660" height="50" rx="8" class="skill-box"/>
+      <text x="10" y="20" class="emoji" style="font-size: 14px;">✅</text>
+      <text x="35" y="20" class="skill-text" fill="#059669">よくある入出力エラーの回避と対処</text>
+      <text x="10" y="35" class="item-text">• 型変換ミス、区切り文字ミス、大小文字ミスなどの典型的パターンを理解し、予防策を習得</text>
+    </g>
+    
+    <!-- Essential Patterns -->
+    <g transform="translate(70, 330)">
+      <text x="0" y="20" class="skill-text" fill="#059669">頻出パターン（必ず覚える）：</text>
+      
+      <rect x="0" y="30" width="320" height="50" rx="6" class="code-box"/>
+      <text x="10" y="45" class="code-text">n = int(input())</text>
+      <text x="10" y="58" class="code-text">a, b = map(int, input().split())</text>
+      <text x="10" y="71" class="item-text">単一・複数整数の読み込み</text>
+      
+      <rect x="340" y="30" width="320" height="50" rx="6" class="code-box"/>
+      <text x="350" y="45" class="code-text">numbers = [int(input()) for _ in range(n)]</text>
+      <text x="350" y="58" class="code-text">print(*list)</text>
+      <text x="350" y="71" class="item-text">N行読み込み・リスト出力</text>
+    </g>
+  </g>
+  
+  <!-- Next Steps Section -->
+  <g id="next-section">
+    <rect x="50" y="480" width="700" height="160" rx="12" class="next-section"/>
+    <text x="70" y="505" class="emoji">🚀</text>
+    <text x="100" y="505" class="next-text" fill="#1E40AF">次のステップ</text>
+    
+    <g transform="translate(70, 525)">
+      <rect x="0" y="0" width="660" height="100" rx="8" class="next-box"/>
+      <text x="10" y="20" class="next-text" fill="#1E40AF">第5章：基本アルゴリズムの道具箱</text>
+      
+      <text x="10" y="40" class="emoji" style="font-size: 14px;">•</text>
+      <text x="25" y="40" class="description-text">問題解決のための基本的な手法を学習</text>
+      
+      <text x="10" y="55" class="emoji" style="font-size: 14px;">•</text>
+      <text x="25" y="55" class="description-text">全探索・ソート・貪欲法などの習得</text>
+      
+      <text x="10" y="70" class="emoji" style="font-size: 14px;">•</text>
+      <text x="25" y="70" class="description-text">実際の問題での活用方法を理解</text>
+      
+      <text x="10" y="85" class="emoji" style="font-size: 14px;">•</text>
+      <text x="25" y="85" class="description-text">計算量の概念とアルゴリズムの効率性を学ぶ</text>
+    </g>
+  </g>
+  
+  <!-- Motivational Message -->
+  <g id="motivation">
+    <rect x="100" y="660" width="600" height="30" rx="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1"/>
+    <text x="120" y="680" class="emoji">💪</text>
+    <text x="150" y="680" class="skill-text" fill="#D97706">
+      入出力処理は競技プログラミングの「基礎の基礎」！この章の技術は今後すべての問題で使います
+    </text>
+  </g>
+  
+</svg>
