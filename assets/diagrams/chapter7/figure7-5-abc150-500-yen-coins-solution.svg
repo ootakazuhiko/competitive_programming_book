@@ -1,0 +1,98 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title7-5 desc7-5">
+  <title id="title7-5">図7-5: ABC150 A問題「500 Yen Coins」完全解法</title>
+  <desc id="desc7-5">ABC150のA問題「500 Yen Coins」の完全な解法プロセスを示すダイアグラム</desc>
+  
+  <defs>
+    <style>
+      .title-text { font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; fill: #1a365d; }
+      .section-title { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; fill: #2b6cb0; }
+      .problem-title { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; fill: #ffffff; }
+      .body-text { font-family: 'Inter', sans-serif; font-size: 12px; fill: #2d3748; }
+      .code-text { font-family: 'Monaco', monospace; font-size: 11px; fill: #2d3748; }
+      .comment-text { font-family: 'Monaco', monospace; font-size: 10px; fill: #718096; }
+      .highlight-text { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; fill: #c53030; }
+      .success-text { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; fill: #38a169; }
+      
+      .problem-bg { fill: #3182ce; stroke: #2c5aa0; stroke-width: 2; }
+      .analysis-bg { fill: #e6fffa; stroke: #319795; stroke-width: 2; }
+      .verification-bg { fill: #fef5e7; stroke: #d69e2e; stroke-width: 2; }
+      .implementation-bg { fill: #f7fafc; stroke: #4a5568; stroke-width: 2; }
+      .border-line { stroke: #e2e8f0; stroke-width: 1; fill: none; }
+      
+      .check-mark { fill: #38a169; }
+      .emoji { font-family: 'Inter', sans-serif; font-size: 14px; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title-text">図7-5: ABC150 A問題「500 Yen Coins」完全解法</text>
+
+  <!-- Problem Statement Section -->
+  <rect x="50" y="50" width="700" height="120" rx="8" class="problem-bg"/>
+  <text x="70" y="75" class="problem-title">📋 問題文</text>
+  
+  <text x="70" y="95" class="body-text" fill="white">高橋君は500円玉をK枚持っています。</text>
+  <text x="70" y="110" class="body-text" fill="white">X円の品物を買うことができるでしょうか？</text>
+  <text x="70" y="125" class="body-text" fill="white">買える場合は「Yes」、買えない場合は「No」を出力してください。</text>
+  
+  <text x="70" y="145" class="body-text" fill="white">入力：K X  （K: 500円玉の枚数, X: 品物の値段）</text>
+  <text x="70" y="160" class="body-text" fill="white">入力例：2 900   出力例：Yes</text>
+
+  <!-- Problem Analysis Section -->
+  <rect x="50" y="185" width="700" height="140" rx="8" class="analysis-bg"/>
+  <text x="70" y="210" class="section-title">🔍 問題分析</text>
+  
+  <text x="70" y="230" class="body-text">理解したこと：</text>
+  <text x="90" y="245" class="body-text">• 所持金：500円 × K枚 = 500K円</text>
+  <text x="90" y="260" class="body-text">• 必要金額：X円</text>
+  <text x="90" y="275" class="body-text">• 判定：500K ≥ X なら「Yes」、そうでなければ「No」</text>
+  
+  <text x="70" y="295" class="body-text">数式化：</text>
+  <text x="90" y="310" class="code-text">if 500 * K >= X: print("Yes")</text>
+  <text x="90" y="323" class="code-text">else: print("No")</text>
+
+  <!-- Sample Verification Section -->
+  <rect x="50" y="340" width="700" height="135" rx="8" class="verification-bg"/>
+  <text x="70" y="365" class="section-title">💡 サンプル検証</text>
+  
+  <text x="70" y="385" class="body-text">入力：K=2, X=900</text>
+  <text x="70" y="400" class="body-text">計算：500 × 2 = 1000円</text>
+  <text x="70" y="415" class="body-text">判定：1000 ≥ 900 → True</text>
+  <text x="70" y="430" class="success-text">出力：「Yes」 ✅</text>
+  
+  <text x="400" y="385" class="body-text">他のケースも考えてみる：</text>
+  <text x="420" y="400" class="body-text">• K=1, X=600 → 500 ≥ 600 → False → "No"</text>
+  <text x="420" y="415" class="body-text">• K=3, X=1500 → 1500 ≥ 1500 → True → "Yes"</text>
+  <text x="420" y="430" class="body-text">• K=0, X=1 → 0 ≥ 1 → False → "No"</text>
+
+  <!-- Implementation Section -->
+  <rect x="50" y="490" width="700" height="180" rx="8" class="implementation-bg"/>
+  <text x="70" y="515" class="section-title">⌨️ 実装</text>
+  
+  <!-- Implementation 1: Clear and readable -->
+  <text x="70" y="535" class="body-text">明確で読みやすい実装：</text>
+  <text x="90" y="550" class="code-text">k, x = map(int, input().split())</text>
+  <text x="90" y="563" class="code-text">total_money = 500 * k</text>
+  <text x="90" y="576" class="code-text">if total_money >= x:</text>
+  <text x="110" y="589" class="code-text">print("Yes")</text>
+  <text x="90" y="602" class="code-text">else:</text>
+  <text x="110" y="615" class="code-text">print("No")</text>
+
+  <!-- Implementation 2: Concise -->
+  <text x="420" y="535" class="body-text">より簡潔な実装：</text>
+  <text x="440" y="550" class="code-text">k, x = map(int, input().split())</text>
+  <text x="440" y="563" class="code-text">if 500 * k >= x:</text>
+  <text x="460" y="576" class="code-text">print("Yes")</text>
+  <text x="440" y="589" class="code-text">else:</text>
+  <text x="460" y="602" class="code-text">print("No")</text>
+
+  <!-- Implementation 3: Ternary operator -->
+  <text x="70" y="635" class="body-text">三項演算子を使った実装：</text>
+  <text x="90" y="650" class="code-text">k, x = map(int, input().split())</text>
+  <text x="90" y="663" class="code-text">print("Yes" if 500 * k >= x else "No")</text>
+
+  <!-- Recommendation -->
+  <rect x="420" y="620" width="310" height="40" rx="5" fill="#e6fffa" stroke="#319795" stroke-width="1"/>
+  <text x="430" y="635" class="body-text">💡 最初は読みやすい実装を心がけよう</text>
+  <text x="430" y="650" class="body-text">デバッグしやすく、理解しやすいコードが重要</text>
+</svg>
