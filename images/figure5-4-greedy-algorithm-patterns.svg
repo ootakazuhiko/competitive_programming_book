@@ -1,0 +1,410 @@
+<svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-4：貪欲法アルゴリズム</title>
+  <desc>競技プログラミングにおける貪欲法（グリーディアルゴリズム）の基本概念と実装パターン</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="1600" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    貪欲法アルゴリズム
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    局所最適解の積み重ねで全体最適を目指す戦略
+  </text>
+  
+  <!-- Greedy Concept -->
+  <rect x="50" y="80" width="1100" height="100" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    💰 貪欲法とは何か？
+  </text>
+  
+  <text x="600" y="130" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#047857">
+    「その時々で最も良い選択をしていけば、全体として最適解が得られる」という考え方
+  </text>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#047857">
+    💡 重要：局所最適選択が全体最適につながることが保証される問題にのみ適用可能
+  </text>
+  <text x="600" y="170" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#047857">
+    高速で実装が簡単だが、適用条件を慎重に見極める必要がある
+  </text>
+  
+  <!-- Classic Problems -->
+  <!-- Coin Problem -->
+  <rect x="80" y="200" width="540" height="220" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="350" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    💴 コイン問題（両替問題）
+  </text>
+  
+  <rect x="100" y="240" width="500" height="170" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="110" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    🎯 問題設定: 指定金額を最小コイン数で両替
+  </text>
+  
+  <rect x="120" y="275" width="230" height="125" rx="4" fill="#f0f9ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="130" y="295" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    例：890円を両替
+  </text>
+  <text x="130" y="310" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    利用可能コイン: [500, 100, 50, 10, 1]
+  </text>
+  <text x="130" y="330" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    貪欲戦略: 大きなコインから順に使用
+  </text>
+  <text x="130" y="345" font-family="Arial, sans-serif" font-size="9" fill="#1e40af">
+    <tspan x="130" dy="0">500円 × 1枚 = 500円 (残り390円)</tspan>
+    <tspan x="130" dy="11">100円 × 3枚 = 300円 (残り90円)</tspan>
+    <tspan x="130" dy="11">50円 × 1枚 = 50円 (残り40円)</tspan>
+    <tspan x="130" dy="11">10円 × 4枚 = 40円 (残り0円)</tspan>
+  </text>
+  <text x="130" y="390" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    結果: 合計9枚 ← 最適解！
+  </text>
+  
+  <rect x="360" y="275" width="230" height="125" rx="4" fill="#f0f9ff" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="370" y="295" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    実装パターン:
+  </text>
+  <text x="370" y="310" font-family="Monaco, monospace" font-size="8" fill="#1e40af">
+    <tspan x="370" dy="0">def min_coins(target):</tspan>
+    <tspan x="370" dy="10">    coins = [500, 100, 50, 10, 1]</tspan>
+    <tspan x="370" dy="10">    count = 0</tspan>
+    <tspan x="370" dy="10">    for coin in coins:</tspan>
+    <tspan x="370" dy="10">        if target >= coin:</tspan>
+    <tspan x="370" dy="10">            num = target // coin</tspan>
+    <tspan x="370" dy="10">            count += num</tspan>
+    <tspan x="370" dy="10">            target %= coin</tspan>
+    <tspan x="370" dy="10">    return count</tspan>
+  </text>
+  
+  <!-- Interval Scheduling -->
+  <rect x="640" y="200" width="480" height="220" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="880" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    📅 区間スケジューリング問題
+  </text>
+  
+  <rect x="660" y="240" width="440" height="170" rx="4" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="670" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 問題設定: 重複しない最大数の区間を選択
+  </text>
+  
+  <rect x="680" y="275" width="200" height="125" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="690" y="295" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    会議スケジュール例:
+  </text>
+  <text x="690" y="310" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    <tspan x="690" dy="0">会議A: 9:00-10:30</tspan>
+    <tspan x="690" dy="11">会議B: 10:00-11:30</tspan>
+    <tspan x="690" dy="11">会議C: 11:00-12:00</tspan>
+    <tspan x="690" dy="11">会議D: 11:30-12:30</tspan>
+    <tspan x="690" dy="11">会議E: 12:00-13:00</tspan>
+  </text>
+  <text x="690" y="375" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    貪欲戦略: 終了時刻の早い順
+  </text>
+  <text x="690" y="390" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    結果: A → C → E（3個の会議）
+  </text>
+  
+  <rect x="890" y="275" width="200" height="125" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="900" y="295" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    実装のポイント:
+  </text>
+  <text x="900" y="310" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    <tspan x="900" dy="0"># 終了時刻でソート</tspan>
+    <tspan x="900" dy="10">meetings.sort(key=lambda x: x[1])</tspan>
+    <tspan x="900" dy="10">last_end = 0</tspan>
+    <tspan x="900" dy="10">for start, end in meetings:</tspan>
+    <tspan x="900" dy="10">    if start >= last_end:</tspan>
+    <tspan x="900" dy="10">        select(meeting)</tspan>
+    <tspan x="900" dy="10">        last_end = end</tspan>
+  </text>
+  
+  <!-- Greedy Strategy Framework -->
+  <rect x="50" y="440" width="1100" height="180" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="465" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🎯 貪欲法の基本戦略パターン
+  </text>
+  
+  <!-- Strategy 1: Maximum/Minimum Selection -->
+  <rect x="80" y="485" width="340" height="125" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="505" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    戦略1: 最大/最小値優先選択
+  </text>
+  <text x="100" y="525" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">• 最大値から選ぶ（価値最大化）</tspan>
+    <tspan x="100" dy="12">• 最小値から選ぶ（コスト最小化）</tspan>
+    <tspan x="100" dy="12">• 比率が最大/最小のものを選ぶ</tspan>
+  </text>
+  
+  <text x="90" y="565" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    適用例:
+  </text>
+  <text x="100" y="580" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">• コイン問題（大きな額面から）</tspan>
+    <tspan x="100" dy="12">• 分数ナップサック（価値/重み比順）</tspan>
+  </text>
+  
+  <!-- Strategy 2: Temporal/Spatial Ordering -->
+  <rect x="440" y="485" width="340" height="125" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="450" y="505" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    戦略2: 時間/位置順序優先
+  </text>
+  <text x="460" y="525" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="460" dy="0">• 開始時刻の早い順に選択</tspan>
+    <tspan x="460" dy="12">• 終了時刻の早い順に選択</tspan>
+    <tspan x="460" dy="12">• 期間の短い順に選択</tspan>
+  </text>
+  
+  <text x="450" y="565" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    適用例:
+  </text>
+  <text x="460" y="580" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="460" dy="0">• 区間スケジューリング</tspan>
+    <tspan x="460" dy="12">• 最短処理時間順スケジューリング</tspan>
+  </text>
+  
+  <!-- Strategy 3: Local Optimization -->
+  <rect x="800" y="485" width="320" height="125" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="810" y="505" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    戦略3: 局所最適化
+  </text>
+  <text x="820" y="525" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="820" dy="0">• 隣接要素との交換による改善</tspan>
+    <tspan x="820" dy="12">• 現在状態から最良の一歩を選択</tspan>
+    <tspan x="820" dy="12">• 制約を満たす範囲で最大化</tspan>
+  </text>
+  
+  <text x="810" y="565" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    適用例:
+  </text>
+  <text x="820" y="580" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="820" dy="0">• ハフマン符号化</tspan>
+    <tspan x="820" dy="12">• 最小全域木（Kruskal法）</tspan>
+  </text>
+  
+  <!-- When Greedy Works vs Fails -->
+  <rect x="50" y="640" width="1100" height="280" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="600" y="665" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#c2410c">
+    ⚠️ 貪欲法の適用可否判定
+  </text>
+  
+  <!-- Success Cases -->
+  <rect x="80" y="685" width="520" height="225" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="90" y="705" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c2410c">
+    ✅ 貪欲法が有効な場合
+  </text>
+  
+  <text x="100" y="725" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    理論的条件:
+  </text>
+  <text x="110" y="740" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="110" dy="0">• 最適部分構造性: 最適解の一部も最適解</tspan>
+    <tspan x="110" dy="12">• 貪欲選択性: 局所最適選択が全体最適につながる</tspan>
+    <tspan x="110" dy="12">• 順序性: 選択順序が結果に影響しない</tspan>
+  </text>
+  
+  <text x="100" y="785" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    実践的な判断基準:
+  </text>
+  <text x="110" y="800" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="110" dy="0">• 問題に「最大/最小」「最短/最長」が含まれる</tspan>
+    <tspan x="110" dy="12">• 選択が互いに独立している</tspan>
+    <tspan x="110" dy="12">• 後の選択が前の選択を覆さない</tspan>
+    <tspan x="110" dy="12">• 小さな例で手動計算して最適性を確認できる</tspan>
+  </text>
+  
+  <text x="100" y="855" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    典型的な成功例:
+  </text>
+  <text x="110" y="870" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="110" dy="0">• 日本の硬貨システムでのコイン問題</tspan>
+    <tspan x="110" dy="12">• 区間スケジューリング問題</tspan>
+    <tspan x="110" dy="12">• 最短処理時間優先スケジューリング</tspan>
+    <tspan x="110" dy="12">• 分数ナップサック問題</tspan>
+  </text>
+  
+  <!-- Failure Cases -->
+  <rect x="620" y="685" width="500" height="225" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="630" y="705" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c2410c">
+    ❌ 貪欲法が失敗する場合
+  </text>
+  
+  <text x="640" y="725" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    失敗例1: 特殊コインシステム
+  </text>
+  <text x="650" y="740" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="650" dy="0">コイン [1, 3, 4]、目標6円</tspan>
+    <tspan x="650" dy="12">貪欲法: 4+1+1 = 3枚</tspan>
+    <tspan x="650" dy="12">最適解: 3+3 = 2枚 ← より良い！</tspan>
+  </text>
+  
+  <text x="640" y="785" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    失敗例2: 0-1ナップサック問題
+  </text>
+  <text x="650" y="800" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="650" dy="0">容量10: A(重み6,価値30), B(重み3,価値14),</tspan>
+    <tspan x="650" dy="12">       C(重み4,価値16), D(重み2,価値9)</tspan>
+    <tspan x="650" dy="12">貪欲法(価値/重み比): A選択 → 価値30</tspan>
+    <tspan x="650" dy="12">最適解: B+C+D選択 → 価値39</tspan>
+  </text>
+  
+  <text x="640" y="855" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#c2410c">
+    失敗の共通パターン:
+  </text>
+  <text x="650" y="870" font-family="Arial, sans-serif" font-size="10" fill="#c2410c">
+    <tspan x="650" dy="0">• 初期選択が後の選択肢を大きく制限</tspan>
+    <tspan x="650" dy="12">• 組み合わせの相互作用が重要</tspan>
+    <tspan x="650" dy="12">• 大域的な最適性が局所最適と異なる</tspan>
+    <tspan x="650" dy="12">• 動的プログラミングが必要な構造</tspan>
+  </text>
+  
+  <!-- Implementation Tips -->
+  <rect x="50" y="940" width="1100" height="200" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="600" y="965" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    💡 貪欲法実装のベストプラクティス
+  </text>
+  
+  <rect x="80" y="985" width="340" height="145" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="90" y="1005" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🔧 実装のコツ
+  </text>
+  <text x="100" y="1025" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">• ソートを効果的に活用する</tspan>
+    <tspan x="100" dy="12">• 選択基準を明確にする</tspan>
+    <tspan x="100" dy="12">• エッジケース（空、単一要素）を処理</tspan>
+    <tspan x="100" dy="12">• 制約条件のチェックを忘れない</tspan>
+    <tspan x="100" dy="12">• 結果の検証機能を組み込む</tspan>
+  </text>
+  
+  <text x="90" y="1095" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    典型的な実装パターン:
+  </text>
+  <text x="100" y="1110" font-family="Monaco, monospace" font-size="8" fill="#0369a1">
+    <tspan x="100" dy="0">1. データをソート（選択基準に基づいて）</tspan>
+    <tspan x="100" dy="11">2. 順次選択（制約チェック付き）</tspan>
+    <tspan x="100" dy="11">3. 結果の更新</tspan>
+  </text>
+  
+  <rect x="440" y="985" width="340" height="145" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="450" y="1005" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🐛 よくある実装ミス
+  </text>
+  <text x="460" y="1025" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="460" dy="0">• ソート基準の間違い</tspan>
+    <tspan x="460" dy="12">• 制約条件の見落とし</tspan>
+    <tspan x="460" dy="12">• 同一値の扱い（安定ソート）</tspan>
+    <tspan x="460" dy="12">• インデックス範囲外アクセス</tspan>
+    <tspan x="460" dy="12">• 最適性の根拠なしに適用</tspan>
+  </text>
+  
+  <text x="450" y="1095" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    デバッグのポイント:
+  </text>
+  <text x="460" y="1110" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="460" dy="0">小さな例で手計算結果と照合</tspan>
+    <tspan x="460" dy="11">選択過程をステップごとに出力</tspan>
+  </text>
+  
+  <rect x="800" y="985" width="320" height="145" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="810" y="1005" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    📈 最適化テクニック
+  </text>
+  <text x="820" y="1025" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="820" dy="0">• 優先度付きキューの活用</tspan>
+    <tspan x="820" dy="12">• 前計算による高速化</tspan>
+    <tspan x="820" dy="12">• メモ化による重複計算回避</tspan>
+    <tspan x="820" dy="12">• データ構造の選択最適化</tspan>
+  </text>
+  
+  <text x="810" y="1075" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    計算量の改善:
+  </text>
+  <text x="820" y="1090" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="820" dy="0">ソート: O(N log N)</tspan>
+    <tspan x="820" dy="11">選択: O(N)</tspan>
+    <tspan x="820" dy="11">全体: O(N log N) ← 高速！</tspan>
+  </text>
+  
+  <!-- Decision Framework -->
+  <rect x="50" y="1160" width="1100" height="160" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="600" y="1185" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    🎯 貪欲法適用の判断フローチャート
+  </text>
+  
+  <!-- Decision Steps -->
+  <rect x="80" y="1205" width="260" height="105" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="1225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    ステップ1: 問題分析
+  </text>
+  <text x="100" y="1245" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">• 最適化問題か？</tspan>
+    <tspan x="100" dy="12">• 選択の独立性は？</tspan>
+    <tspan x="100" dy="12">• 部分問題の最適性は？</tspan>
+  </text>
+  <text x="90" y="1290" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    判定基準を確認
+  </text>
+  
+  <path d="M 340 1257 L 380 1257" stroke="#047857" stroke-width="2" fill="none" marker-end="url(#greenArrow)"/>
+  
+  <rect x="380" y="1205" width="260" height="105" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="390" y="1225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    ステップ2: 小例での検証
+  </text>
+  <text x="400" y="1245" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="400" dy="0">• 手計算で最適解を求める</tspan>
+    <tspan x="400" dy="12">• 貪欲法の結果と比較</tspan>
+    <tspan x="400" dy="12">• 反例がないか確認</tspan>
+  </text>
+  <text x="390" y="1290" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    正当性を証明
+  </text>
+  
+  <path d="M 640 1257 L 680 1257" stroke="#047857" stroke-width="2" fill="none" marker-end="url(#greenArrow)"/>
+  
+  <rect x="680" y="1205" width="260" height="105" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="690" y="1225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    ステップ3: 実装と検証
+  </text>
+  <text x="700" y="1245" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="700" dy="0">• 貪欲戦略を実装</tspan>
+    <tspan x="700" dy="12">• 複数テストケースで検証</tspan>
+    <tspan x="700" dy="12">• 計算量を評価</tspan>
+  </text>
+  <text x="690" y="1290" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    本格運用
+  </text>
+  
+  <rect x="960" y="1205" width="160" height="105" rx="6" fill="#fef2f2" stroke="#f87171" stroke-width="1"/>
+  <text x="970" y="1225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    失敗時の対策
+  </text>
+  <text x="980" y="1245" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="980" dy="0">• 動的プログラミング</tspan>
+    <tspan x="980" dy="12">• 全探索（小規模）</tspan>
+    <tspan x="980" dy="12">• 分割統治法</tspan>
+    <tspan x="980" dy="12">• 近似アルゴリズム</tspan>
+  </text>
+  
+  <!-- Arrow Definitions -->
+  <defs>
+    <marker id="greenArrow" markerWidth="12" markerHeight="8" refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#047857"/>
+    </marker>
+  </defs>
+  
+  <!-- Success Message -->
+  <rect x="50" y="1340" width="1100" height="80" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="1365" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🚀 貪欲法をマスターしよう！
+  </text>
+  <text x="600" y="1385" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#15803d">
+    適用条件を正しく判断できれば、高速で簡潔な解法が実現できます
+  </text>
+  <text x="600" y="1405" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#15803d">
+    💡 まずは小さな例で正当性を確認する習慣を身につけよう
+  </text>
+</svg>

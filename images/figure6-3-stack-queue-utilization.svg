@@ -1,0 +1,399 @@
+<svg viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg">
+  <title>図6-3：スタックとキューの活用</title>
+  <desc>競技プログラミングにおけるスタックとキューの概念、実装、および実践的な活用方法</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="1600" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    スタックとキューの活用
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    データの取り出し順序が重要な2つの基本データ構造
+  </text>
+  
+  <!-- Core Concept -->
+  <rect x="50" y="80" width="1100" height="100" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📚 スタックとキューの基本概念
+  </text>
+  
+  <text x="600" y="130" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#6b21a8">
+    「どの順序でデータを取り出すか」によって問題解決のアプローチが決まる
+  </text>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#6b21a8">
+    💡 LIFO（後入れ先出し）vs FIFO（先入れ先出し）の違いを理解しよう
+  </text>
+  <text x="600" y="170" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    実生活の例：本の積み重ね（スタック） vs 行列・待ち行列（キュー）
+  </text>
+  
+  <!-- Stack Section -->
+  <rect x="80" y="200" width="520" height="300" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="340" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    📚 スタック（Stack）- LIFO構造
+  </text>
+  
+  <!-- Stack Visual -->
+  <rect x="100" y="240" width="200" height="140" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="110" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    🏗️ 構造イメージ:
+  </text>
+  
+  <!-- Stack boxes -->
+  <rect x="120" y="270" width="60" height="20" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="150" y="283" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1e40af">3</text>
+  <text x="190" y="283" font-family="Arial, sans-serif" font-size="9" fill="#1e40af">← top</text>
+  
+  <rect x="120" y="290" width="60" height="20" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="150" y="303" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1e40af">2</text>
+  
+  <rect x="120" y="310" width="60" height="20" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="150" y="323" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#1e40af">1</text>
+  
+  <rect x="120" y="330" width="60" height="20" fill="#e5e7eb" stroke="#6b7280" stroke-width="1"/>
+  <text x="150" y="343" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#6b7280">bottom</text>
+  
+  <text x="110" y="370" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    最後に入れたものが最初に出る
+  </text>
+  
+  <!-- Stack Operations -->
+  <rect x="320" y="240" width="260" height="140" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="330" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    ⚡ 基本操作（O(1)）:
+  </text>
+  <text x="340" y="280" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="340" dy="0">• push(x): 要素をtopに追加</tspan>
+    <tspan x="340" dy="12">• pop(): topの要素を削除・取得</tspan>
+    <tspan x="340" dy="12">• top(): topの要素を参照</tspan>
+    <tspan x="340" dy="12">• empty(): 空かどうか判定</tspan>
+  </text>
+  
+  <text x="330" y="335" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    💡 Python実装:
+  </text>
+  <text x="340" y="350" font-family="Monaco, monospace" font-size="9" fill="#1e40af">
+    <tspan x="340" dy="0">stack = []</tspan>
+    <tspan x="340" dy="10">stack.append(1)  # push</tspan>
+    <tspan x="340" dy="10">x = stack.pop()  # pop</tspan>
+  </text>
+  
+  <!-- Stack Use Cases -->
+  <rect x="100" y="390" width="480" height="100" rx="4" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="110" y="410" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    🎯 典型的な適用場面:
+  </text>
+  <text x="120" y="430" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="120" dy="0">• 括弧のマッチング判定 → "((()))" の正しさチェック</tspan>
+    <tspan x="120" dy="12">• 逆ポーランド記法の計算 → "3 4 + 2 *" の評価</tspan>
+    <tspan x="120" dy="12">• 深さ優先探索（DFS） → グラフ・木の探索</tspan>
+    <tspan x="120" dy="12">• 関数呼び出しの管理 → コールスタック</tspan>
+    <tspan x="120" dy="12">• undo機能の実装 → 操作履歴の管理</tspan>
+  </text>
+  
+  <!-- Queue Section -->
+  <rect x="620" y="200" width="500" height="300" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="870" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🚶 キュー（Queue）- FIFO構造
+  </text>
+  
+  <!-- Queue Visual -->
+  <rect x="640" y="240" width="220" height="140" rx="4" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="650" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🏗️ 構造イメージ:
+  </text>
+  
+  <!-- Queue boxes -->
+  <text x="650" y="280" font-family="Arial, sans-serif" font-size="9" fill="#15803d">front →</text>
+  <rect x="700" y="270" width="30" height="20" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="715" y="283" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#15803d">1</text>
+  
+  <rect x="730" y="270" width="30" height="20" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="745" y="283" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#15803d">2</text>
+  
+  <rect x="760" y="270" width="30" height="20" fill="#f0fdf4" stroke="#22c55e" stroke-width="1"/>
+  <text x="775" y="283" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#15803d">3</text>
+  <text x="800" y="283" font-family="Arial, sans-serif" font-size="9" fill="#15803d">← rear</text>
+  
+  <text x="650" y="310" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    最初に入れたものが最初に出る
+  </text>
+  <text x="650" y="330" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    （待ち行列と同じ仕組み）
+  </text>
+  
+  <text x="650" y="360" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    ⚠️ リストでのキュー実装は非効率
+  </text>
+  <text x="650" y="375" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    pop(0)はO(N) → dequeを使用せよ
+  </text>
+  
+  <!-- Queue Operations -->
+  <rect x="880" y="240" width="220" height="140" rx="4" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="890" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    ⚡ 基本操作（O(1)）:
+  </text>
+  <text x="900" y="280" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="900" dy="0">• enqueue(x): 末尾に要素追加</tspan>
+    <tspan x="900" dy="12">• dequeue(): 先頭要素を削除・取得</tspan>
+    <tspan x="900" dy="12">• front(): 先頭要素を参照</tspan>
+    <tspan x="900" dy="12">• empty(): 空かどうか判定</tspan>
+  </text>
+  
+  <text x="890" y="335" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    💡 Python実装:
+  </text>
+  <text x="900" y="350" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    <tspan x="900" dy="0">from collections import deque</tspan>
+    <tspan x="900" dy="9">queue = deque()</tspan>
+    <tspan x="900" dy="9">queue.append(1)     # enqueue</tspan>
+    <tspan x="900" dy="9">x = queue.popleft() # dequeue</tspan>
+  </text>
+  
+  <!-- Queue Use Cases -->
+  <rect x="640" y="390" width="460" height="100" rx="4" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="650" y="410" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 典型的な適用場面:
+  </text>
+  <text x="660" y="430" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="660" dy="0">• 幅優先探索（BFS） → 最短経路・レベル順探索</tspan>
+    <tspan x="660" dy="12">• タスクスケジューリング → 順次処理システム</tspan>
+    <tspan x="660" dy="12">• バッファリング → データストリーム処理</tspan>
+    <tspan x="660" dy="12">• レベル順トラバーサル → 木構造の層別処理</tspan>
+    <tspan x="660" dy="12">• プリンタキュー → 印刷ジョブの順次処理</tspan>
+  </text>
+  
+  <!-- Practical Examples -->
+  <rect x="50" y="520" width="1100" height="400" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="600" y="545" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#c2410c">
+    💡 実践的な活用例とコード実装
+  </text>
+  
+  <!-- Stack Example: Bracket Matching -->
+  <rect x="80" y="565" width="520" height="170" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="90" y="585" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c2410c">
+    📚 スタック活用例：括弧マッチング判定
+  </text>
+  
+  <text x="100" y="605" font-family="Arial, sans-serif" font-size="11" fill="#c2410c">
+    問題：文字列 "((()))" が正しい括弧の対応になっているか判定
+  </text>
+  
+  <rect x="100" y="615" width="480" height="110" rx="4" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+  <text x="110" y="635" font-family="Monaco, monospace" font-size="9" fill="#c2410c">
+    <tspan x="110" dy="0">def is_valid_parentheses(s):</tspan>
+    <tspan x="110" dy="11">    stack = []</tspan>
+    <tspan x="110" dy="11">    for char in s:</tspan>
+    <tspan x="110" dy="11">        if char == '(':</tspan>
+    <tspan x="110" dy="11">            stack.append(char)  # 開き括弧をpush</tspan>
+    <tspan x="110" dy="11">        elif char == ')':</tspan>
+    <tspan x="110" dy="11">            if not stack:       # 対応する開き括弧なし</tspan>
+    <tspan x="110" dy="11">                return False</tspan>
+    <tspan x="110" dy="11">            stack.pop()         # ペア完成でpop</tspan>
+    <tspan x="110" dy="11">    return len(stack) == 0       # 全てペアになったか</tspan>
+  </text>
+  
+  <!-- Queue Example: BFS -->
+  <rect x="620" y="565" width="500" height="170" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="630" y="585" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c2410c">
+    🚶 キュー活用例：幅優先探索（BFS）
+  </text>
+  
+  <text x="640" y="605" font-family="Arial, sans-serif" font-size="11" fill="#c2410c">
+    問題：グラフの最短経路を探索（レベル順に探索）
+  </text>
+  
+  <rect x="640" y="615" width="460" height="110" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="650" y="635" font-family="Monaco, monospace" font-size="9" fill="#c2410c">
+    <tspan x="650" dy="0">def bfs_shortest_path(graph, start, goal):</tspan>
+    <tspan x="650" dy="11">    queue = deque([(start, 0)])  # (ノード, 距離)</tspan>
+    <tspan x="650" dy="11">    visited = set([start])</tspan>
+    <tspan x="650" dy="11">    while queue:</tspan>
+    <tspan x="650" dy="11">        node, dist = queue.popleft()  # FIFO</tspan>
+    <tspan x="650" dy="11">        if node == goal:</tspan>
+    <tspan x="650" dy="11">            return dist</tspan>
+    <tspan x="650" dy="11">        for neighbor in graph[node]:</tspan>
+    <tspan x="650" dy="11">            if neighbor not in visited:</tspan>
+    <tspan x="650" dy="11">                queue.append((neighbor, dist+1))</tspan>
+  </text>
+  
+  <!-- Stack Example: RPN Calculator -->
+  <rect x="80" y="745" width="520" height="165" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="90" y="765" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c2410c">
+    📚 スタック活用例：逆ポーランド記法計算機
+  </text>
+  
+  <text x="100" y="785" font-family="Arial, sans-serif" font-size="11" fill="#c2410c">
+    問題：「3 4 + 2 *」→ (3+4)*2 = 14 を計算
+  </text>
+  
+  <rect x="100" y="795" width="480" height="105" rx="4" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+  <text x="110" y="815" font-family="Monaco, monospace" font-size="9" fill="#c2410c">
+    <tspan x="110" dy="0">def rpn_calculator(tokens):</tspan>
+    <tspan x="110" dy="11">    stack = []</tspan>
+    <tspan x="110" dy="11">    for token in tokens:</tspan>
+    <tspan x="110" dy="11">        if token in ['+', '-', '*', '/']:</tspan>
+    <tspan x="110" dy="11">            b = stack.pop()  # 後の値</tspan>
+    <tspan x="110" dy="11">            a = stack.pop()  # 前の値</tspan>
+    <tspan x="110" dy="11">            result = calculate(a, b, token)</tspan>
+    <tspan x="110" dy="11">            stack.append(result)</tspan>
+    <tspan x="110" dy="11">        else:</tspan>
+    <tspan x="110" dy="11">            stack.append(int(token))  # 数値をpush</tspan>
+  </text>
+  
+  <!-- Queue Example: Task Scheduling -->
+  <rect x="620" y="745" width="500" height="165" rx="6" fill="white" stroke="#fed7aa" stroke-width="1"/>
+  <text x="630" y="765" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#c2410c">
+    🚶 キュー活用例：タスクスケジューリング
+  </text>
+  
+  <text x="640" y="785" font-family="Arial, sans-serif" font-size="11" fill="#c2410c">
+    問題：複数のタスクを順次処理するシステム
+  </text>
+  
+  <rect x="640" y="795" width="460" height="105" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="650" y="815" font-family="Monaco, monospace" font-size="9" fill="#c2410c">
+    <tspan x="650" dy="0">def task_scheduler():</tspan>
+    <tspan x="650" dy="11">    task_queue = deque()</tspan>
+    <tspan x="650" dy="11">    # タスクを登録</tspan>
+    <tspan x="650" dy="11">    task_queue.append("メール送信")</tspan>
+    <tspan x="650" dy="11">    task_queue.append("データ処理")</tspan>
+    <tspan x="650" dy="11">    task_queue.append("レポート作成")</tspan>
+    <tspan x="650" dy="11">    # 順次処理</tspan>
+    <tspan x="650" dy="11">    while task_queue:</tspan>
+    <tspan x="650" dy="11">        current = task_queue.popleft()  # FIFO</tspan>
+    <tspan x="650" dy="11">        process_task(current)</tspan>
+  </text>
+  
+  <!-- Performance and Decision Guide -->
+  <rect x="50" y="940" width="1100" height="240" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="600" y="965" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🎯 スタック vs キュー：選択指針
+  </text>
+  
+  <!-- Decision Matrix -->
+  <rect x="80" y="985" width="1040" height="85" rx="6" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="90" y="1005" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    判断基準：「処理順序」が最重要ポイント
+  </text>
+  
+  <text x="100" y="1025" font-family="Arial, sans-serif" font-size="11" fill="#0369a1">
+    <tspan x="100" dy="0">📚 「最後に処理したものから逆順で確認したい」 → スタック</tspan>
+    <tspan x="100" dy="16">🚶 「到着した順番通りに公平に処理したい」 → キュー</tspan>
+    <tspan x="100" dy="16">🔄 「直前の操作を取り消したい（Undo機能）」 → スタック</tspan>
+    <tspan x="100" dy="16">📊 「レベル順・層別に探索したい」 → キュー</tspan>
+  </text>
+  
+  <!-- Performance Comparison -->
+  <rect x="80" y="1080" width="520" height="90" rx="6" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="90" y="1100" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    ⚡ 計算量比較：
+  </text>
+  <text x="100" y="1120" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">📚 スタック（list使用）：</tspan>
+    <tspan x="250" dy="0">push O(1), pop O(1) ← 全て高速</tspan>
+    <tspan x="100" dy="14">🚶 キュー（deque使用）：</tspan>
+    <tspan x="250" dy="14">append O(1), popleft O(1) ← 全て高速</tspan>
+    <tspan x="100" dy="28">❌ キュー（list使用）：</tspan>
+    <tspan x="250" dy="28">append O(1), pop(0) O(N) ← 先頭削除が遅い</tspan>
+  </text>
+  
+  <!-- Implementation Tips -->
+  <rect x="620" y="1080" width="500" height="90" rx="6" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="630" y="1100" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    💡 実装のベストプラクティス：
+  </text>
+  <text x="640" y="1120" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="640" dy="0">• スタック：Pythonのlist使用（append/pop）</tspan>
+    <tspan x="640" dy="14">• キュー：deque使用（append/popleft）</tspan>
+    <tspan x="640" dy="28">• 空チェック：len(container) == 0 or not container</tspan>
+    <tspan x="640" dy="42">• エラー回避：pop前に必ず空チェック実行</tspan>
+  </text>
+  
+  <!-- Common Patterns -->
+  <rect x="50" y="1200" width="1100" height="200" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="600" y="1225" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    🔄 よく使われるパターンとテンプレート
+  </text>
+  
+  <!-- Stack Patterns -->
+  <rect x="80" y="1245" width="520" height="145" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="1265" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    📚 スタックの典型パターン：
+  </text>
+  
+  <text x="100" y="1285" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    1. 対称性チェック（括弧・回文など）
+  </text>
+  <text x="110" y="1300" font-family="Monaco, monospace" font-size="8" fill="#047857">
+    stack.append(item) / if stack: stack.pop()
+  </text>
+  
+  <text x="100" y="1320" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    2. 後戻り処理（DFS・バックトラック）
+  </text>
+  <text x="110" y="1335" font-family="Monaco, monospace" font-size="8" fill="#047857">
+    stack.append(next_state) / current = stack.pop()
+  </text>
+  
+  <text x="100" y="1355" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    3. 操作履歴管理（Undo機能）
+  </text>
+  <text x="110" y="1370" font-family="Monaco, monospace" font-size="8" fill="#047857">
+    history.append(action) / undo = history.pop()
+  </text>
+  
+  <!-- Queue Patterns -->
+  <rect x="620" y="1245" width="500" height="145" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="630" y="1265" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🚶 キューの典型パターン：
+  </text>
+  
+  <text x="640" y="1285" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    1. レベル順探索（BFS・木のレベル順）
+  </text>
+  <text x="650" y="1300" font-family="Monaco, monospace" font-size="8" fill="#047857">
+    queue.append(start) / current = queue.popleft()
+  </text>
+  
+  <text x="640" y="1320" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    2. 順次処理（タスク管理・バッファ）
+  </text>
+  <text x="650" y="1335" font-family="Monaco, monospace" font-size="8" fill="#047857">
+    queue.append(task) / process(queue.popleft())
+  </text>
+  
+  <text x="640" y="1355" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    3. 最短経路（重みなしグラフ）
+  </text>
+  <text x="650" y="1370" font-family="Monaco, monospace" font-size="8" fill="#047857">
+    queue.append((node, dist)) / BFS探索
+  </text>
+  
+  <!-- Advanced Tips -->
+  <rect x="50" y="1420" width="1100" height="120" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="1445" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    ⚡ 上級テクニックと注意点
+  </text>
+  
+  <rect x="80" y="1465" width="1040" height="65" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="1485" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🚀 効率化テクニック：
+  </text>
+  <text x="100" y="1505" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">• 単調スタック：降順/昇順を保つスタック → より近い大きな/小さな要素の検索</tspan>
+    <tspan x="100" dy="12">• 優先度付きキュー：heapq使用 → 重み付き最短経路（ダイクストラ法）</tspan>
+    <tspan x="100" dy="12">• 双方向キュー：dequeの両端操作 → スライディングウィンドウ最大値</tspan>
+  </text>
+  
+  <!-- Success Message -->
+  <rect x="50" y="1560" width="1100" height="30" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="1580" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🎯 スタックとキューをマスターして効率的なアルゴリズムを実装しよう！
+  </text>
+</svg>

@@ -1,0 +1,401 @@
+<svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-2：全探索アルゴリズムパターン</title>
+  <desc>競技プログラミングにおける全探索（Brute Force）の実装パターンと効率的な適用方法</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    全探索アルゴリズムパターン
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    確実で理解しやすい基本戦略
+  </text>
+  
+  <!-- Brute Force Concept -->
+  <rect x="50" y="80" width="1100" height="100" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🔍 全探索とは何か？
+  </text>
+  
+  <text x="600" y="130" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#1e40af">
+    「全ての可能性を試して、条件に合うものを見つける」最もシンプルで確実なアルゴリズム
+  </text>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">
+    計算量は大きいが、制限内であれば必ず正解にたどり着ける
+  </text>
+  <text x="600" y="170" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    💡 迷ったら全探索！まずは確実な解法を考えよう
+  </text>
+  
+  <!-- Pattern 1: Single Loop -->
+  <rect x="50" y="200" width="560" height="200" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="330" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    パターン1: 単一ループ探索
+  </text>
+  
+  <rect x="70" y="240" width="520" height="150" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="80" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 使用場面: N個の要素から条件を満たすものを探索
+  </text>
+  
+  <rect x="80" y="270" width="240" height="110" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="90" y="290" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    問題例:
+  </text>
+  <text x="90" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="90" dy="0">「各桁の和が12になる3桁の</tspan>
+    <tspan x="90" dy="12">正整数の個数を求めよ」</tspan>
+  </text>
+  <text x="90" y="335" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    探索範囲:
+  </text>
+  <text x="90" y="350" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="90" dy="0">100 ≤ n ≤ 999</tspan>
+    <tspan x="90" dy="12">計算量: O(900) → 余裕</tspan>
+  </text>
+  
+  <rect x="340" y="270" width="240" height="110" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+  <text x="350" y="290" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    実装例:
+  </text>
+  <text x="350" y="305" font-family="Monaco, monospace" font-size="9" fill="#15803d">
+    <tspan x="350" dy="0">count = 0</tspan>
+    <tspan x="350" dy="11">for n in range(100, 1000):</tspan>
+    <tspan x="350" dy="11">    digit_sum = 0</tspan>
+    <tspan x="350" dy="11">    temp = n</tspan>
+    <tspan x="350" dy="11">    while temp > 0:</tspan>
+    <tspan x="350" dy="11">        digit_sum += temp % 10</tspan>
+    <tspan x="350" dy="11">        temp //= 10</tspan>
+    <tspan x="350" dy="11">    if digit_sum == 12:</tspan>
+    <tspan x="350" dy="11">        count += 1</tspan>
+  </text>
+  
+  <!-- Pattern 2: Double Loop -->
+  <rect x="630" y="200" width="520" height="200" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="890" y="225" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#d97706">
+    パターン2: 二重ループ探索
+  </text>
+  
+  <rect x="650" y="240" width="480" height="150" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="660" y="260" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🎯 使用場面: 2つの要素の組み合わせを全て試す
+  </text>
+  
+  <rect x="660" y="270" width="220" height="110" rx="4" fill="#fffbeb" stroke="#fed7aa" stroke-width="1"/>
+  <text x="670" y="290" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    問題例:
+  </text>
+  <text x="670" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="670" dy="0">「N個の数から2つ選んで、</tspan>
+    <tspan x="670" dy="12">その和がKになる組み合わせ数」</tspan>
+  </text>
+  <text x="670" y="335" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    計算量:
+  </text>
+  <text x="670" y="350" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="670" dy="0">O(N²) → N≤1000程度まで</tspan>
+  </text>
+  
+  <rect x="900" y="270" width="220" height="110" rx="4" fill="#fffbeb" stroke="#fed7aa" stroke-width="1"/>
+  <text x="910" y="290" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    実装例:
+  </text>
+  <text x="910" y="305" font-family="Monaco, monospace" font-size="9" fill="#d97706">
+    <tspan x="910" dy="0">count = 0</tspan>
+    <tspan x="910" dy="11">for i in range(n):</tspan>
+    <tspan x="910" dy="11">    for j in range(i+1, n):</tspan>
+    <tspan x="910" dy="11">        if arr[i] + arr[j] == k:</tspan>
+    <tspan x="910" dy="11">            count += 1</tspan>
+    <tspan x="910" dy="11">print(count)</tspan>
+  </text>
+  
+  <!-- Pattern 3: Triple Loop -->
+  <rect x="50" y="420" width="560" height="200" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="330" y="445" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    パターン3: 三重ループ探索
+  </text>
+  
+  <rect x="70" y="460" width="520" height="150" rx="6" fill="white" stroke="#fecaca" stroke-width="1"/>
+  <text x="80" y="480" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🎯 使用場面: 3つの要素の組み合わせ（⚠️ 計算量注意）
+  </text>
+  
+  <rect x="80" y="490" width="240" height="110" rx="4" fill="#fef2f2" stroke="#fed7d7" stroke-width="1"/>
+  <text x="90" y="510" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    問題例:
+  </text>
+  <text x="90" y="525" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="90" dy="0">「3つの数の和が0になる</tspan>
+    <tspan x="90" dy="12">組み合わせを全て見つけよ」</tspan>
+  </text>
+  <text x="90" y="555" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    計算量:
+  </text>
+  <text x="90" y="570" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="90" dy="0">O(N³) → N≤300程度まで</tspan>
+    <tspan x="90" dy="12">⚠️ すぐに時間切れになる</tspan>
+  </text>
+  
+  <rect x="340" y="490" width="240" height="110" rx="4" fill="#fef2f2" stroke="#fed7d7" stroke-width="1"/>
+  <text x="350" y="510" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    実装例:
+  </text>
+  <text x="350" y="525" font-family="Monaco, monospace" font-size="9" fill="#dc2626">
+    <tspan x="350" dy="0">for i in range(n):</tspan>
+    <tspan x="350" dy="11">    for j in range(i+1, n):</tspan>
+    <tspan x="350" dy="11">        for k in range(j+1, n):</tspan>
+    <tspan x="350" dy="11">            if arr[i]+arr[j]+arr[k]==0:</tspan>
+    <tspan x="350" dy="11">                print(i, j, k)</tspan>
+  </text>
+  <text x="350" y="585" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#dc2626">
+    💡 改善案: ソート+二分探索
+  </text>
+  
+  <!-- Pattern 4: Digit Decomposition -->
+  <rect x="630" y="420" width="520" height="200" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="890" y="445" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    パターン4: 各桁探索
+  </text>
+  
+  <rect x="650" y="460" width="480" height="150" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="660" y="480" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🎯 使用場面: 数値の各桁を分解して処理
+  </text>
+  
+  <rect x="660" y="490" width="220" height="110" rx="4" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1"/>
+  <text x="670" y="510" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    基本処理:
+  </text>
+  <text x="670" y="525" font-family="Monaco, monospace" font-size="9" fill="#6b21a8">
+    <tspan x="670" dy="0">def digit_sum(n):</tspan>
+    <tspan x="670" dy="11">    total = 0</tspan>
+    <tspan x="670" dy="11">    while n > 0:</tspan>
+    <tspan x="670" dy="11">        total += n % 10</tspan>
+    <tspan x="670" dy="11">        n //= 10</tspan>
+    <tspan x="670" dy="11">    return total</tspan>
+  </text>
+  
+  <rect x="900" y="490" width="220" height="110" rx="4" fill="#faf5ff" stroke="#d8b4fe" stroke-width="1"/>
+  <text x="910" y="510" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    応用例:
+  </text>
+  <text x="910" y="525" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="910" dy="0">• 各桁の和が特定値</tspan>
+    <tspan x="910" dy="12">• 各桁の積が特定値</tspan>
+    <tspan x="910" dy="12">• 回文数の判定</tspan>
+    <tspan x="910" dy="12">• 桁数のカウント</tspan>
+  </text>
+  <text x="910" y="575" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">
+    💡 % と // 演算子がカギ
+  </text>
+  
+  <!-- Time Complexity Guide -->
+  <rect x="50" y="640" width="1100" height="180" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  <text x="600" y="665" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#c2410c">
+    ⏱️ 計算量の目安と適用限界
+  </text>
+  
+  <!-- Complexity Table -->
+  <rect x="80" y="685" width="140" height="25" fill="#ea580c" rx="4"/>
+  <text x="150" y="702" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    計算量
+  </text>
+  
+  <rect x="220" y="685" width="120" height="25" fill="#ea580c" rx="4"/>
+  <text x="280" y="702" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    データサイズ上限
+  </text>
+  
+  <rect x="340" y="685" width="120" height="25" fill="#ea580c" rx="4"/>
+  <text x="400" y="702" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    実行時間目安
+  </text>
+  
+  <rect x="460" y="685" width="300" height="25" fill="#ea580c" rx="4"/>
+  <text x="610" y="702" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    適用例
+  </text>
+  
+  <rect x="760" y="685" width="160" height="25" fill="#ea580c" rx="4"/>
+  <text x="840" y="702" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    判定
+  </text>
+  
+  <rect x="920" y="685" width="200" height="25" fill="#ea580c" rx="4"/>
+  <text x="1020" y="702" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="white">
+    改善方法
+  </text>
+  
+  <!-- O(N) -->
+  <rect x="80" y="710" width="140" height="25" fill="white" rx="2"/>
+  <text x="150" y="727" font-family="Monaco, monospace" font-size="10" text-anchor="middle" fill="#c2410c">
+    O(N)
+  </text>
+  
+  <rect x="220" y="710" width="120" height="25" fill="white" rx="2"/>
+  <text x="280" y="727" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#15803d">
+    N ≤ 10^8
+  </text>
+  
+  <rect x="340" y="710" width="120" height="25" fill="white" rx="2"/>
+  <text x="400" y="727" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#15803d">
+    0.1秒
+  </text>
+  
+  <rect x="460" y="710" width="300" height="25" fill="white" rx="2"/>
+  <text x="610" y="727" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#c2410c">
+    単一ループ、線形探索
+  </text>
+  
+  <rect x="760" y="710" width="160" height="25" fill="#dcfce7" rx="2"/>
+  <text x="840" y="727" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#15803d">
+    ✅ 安全
+  </text>
+  
+  <rect x="920" y="710" width="200" height="25" fill="white" rx="2"/>
+  <text x="1020" y="727" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#c2410c">
+    そのまま使用可能
+  </text>
+  
+  <!-- O(N²) -->
+  <rect x="80" y="735" width="140" height="25" fill="white" rx="2"/>
+  <text x="150" y="752" font-family="Monaco, monospace" font-size="10" text-anchor="middle" fill="#c2410c">
+    O(N²)
+  </text>
+  
+  <rect x="220" y="735" width="120" height="25" fill="white" rx="2"/>
+  <text x="280" y="752" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#f59e0b">
+    N ≤ 10^4
+  </text>
+  
+  <rect x="340" y="735" width="120" height="25" fill="white" rx="2"/>
+  <text x="400" y="752" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#f59e0b">
+    1秒
+  </text>
+  
+  <rect x="460" y="735" width="300" height="25" fill="white" rx="2"/>
+  <text x="610" y="752" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#c2410c">
+    二重ループ、ペア探索
+  </text>
+  
+  <rect x="760" y="735" width="160" height="25" fill="#fef3c7" rx="2"/>
+  <text x="840" y="752" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#d97706">
+    ⚠️ 注意
+  </text>
+  
+  <rect x="920" y="735" width="200" height="25" fill="white" rx="2"/>
+  <text x="1020" y="752" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#c2410c">
+    ソート+二分探索
+  </text>
+  
+  <!-- O(N³) -->
+  <rect x="80" y="760" width="140" height="25" fill="white" rx="2"/>
+  <text x="150" y="777" font-family="Monaco, monospace" font-size="10" text-anchor="middle" fill="#c2410c">
+    O(N³)
+  </text>
+  
+  <rect x="220" y="760" width="120" height="25" fill="white" rx="2"/>
+  <text x="280" y="777" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">
+    N ≤ 500
+  </text>
+  
+  <rect x="340" y="760" width="120" height="25" fill="white" rx="2"/>
+  <text x="400" y="777" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">
+    1秒
+  </text>
+  
+  <rect x="460" y="760" width="300" height="25" fill="white" rx="2"/>
+  <text x="610" y="777" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#c2410c">
+    三重ループ、三要素探索
+  </text>
+  
+  <rect x="760" y="760" width="160" height="25" fill="#fef2f2" rx="2"/>
+  <text x="840" y="777" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ❌ 危険
+  </text>
+  
+  <rect x="920" y="760" width="200" height="25" fill="white" rx="2"/>
+  <text x="1020" y="777" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#c2410c">
+    動的プログラミング
+  </text>
+  
+  <!-- O(2^N) -->
+  <rect x="80" y="785" width="140" height="25" fill="white" rx="2"/>
+  <text x="150" y="802" font-family="Monaco, monospace" font-size="10" text-anchor="middle" fill="#c2410c">
+    O(2^N)
+  </text>
+  
+  <rect x="220" y="785" width="120" height="25" fill="white" rx="2"/>
+  <text x="280" y="802" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">
+    N ≤ 20
+  </text>
+  
+  <rect x="340" y="785" width="120" height="25" fill="white" rx="2"/>
+  <text x="400" y="802" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#dc2626">
+    1秒
+  </text>
+  
+  <rect x="460" y="785" width="300" height="25" fill="white" rx="2"/>
+  <text x="610" y="802" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#c2410c">
+    bit全探索、部分集合
+  </text>
+  
+  <rect x="760" y="785" width="160" height="25" fill="#fef2f2" rx="2"/>
+  <text x="840" y="802" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ❌ 危険
+  </text>
+  
+  <rect x="920" y="785" width="200" height="25" fill="white" rx="2"/>
+  <text x="1020" y="802" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#c2410c">
+    メモ化・枝刈り
+  </text>
+  
+  <!-- Best Practices -->
+  <rect x="50" y="840" width="1100" height="120" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="600" y="865" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    💡 全探索を使いこなすコツ
+  </text>
+  
+  <rect x="80" y="880" width="340" height="70" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="90" y="900" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    ✅ 全探索が有効な場合
+  </text>
+  <text x="100" y="920" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">• 問題が複雑で他の解法が思いつかない</tspan>
+    <tspan x="100" dy="12">• 制約が小さく計算量が間に合う</tspan>
+    <tspan x="100" dy="12">• 確実性を重視したい（バグが出にくい）</tspan>
+  </text>
+  
+  <rect x="440" y="880" width="340" height="70" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="450" y="900" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    ⚠️ 高速化のポイント
+  </text>
+  <text x="460" y="920" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="460" dy="0">• 不要な重複処理を避ける (i < j の保証など)</tspan>
+    <tspan x="460" dy="12">• 早期終了条件を活用する</tspan>
+    <tspan x="460" dy="12">• 内側ループの計算を最小限にする</tspan>
+  </text>
+  
+  <rect x="800" y="880" width="320" height="70" rx="4" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="810" y="900" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🚀 次のステップ
+  </text>
+  <text x="820" y="920" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="820" dy="0">• 全探索で解けない場合は数学的性質を検討</tspan>
+    <tspan x="820" dy="12">• ソートやデータ構造で効率化</tspan>
+    <tspan x="820" dy="12">• 動的プログラミングや貪欲法を学習</tspan>
+  </text>
+  
+  <!-- Success Message -->
+  <rect x="50" y="980" width="1100" height="60" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="600" y="1005" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#047857">
+    🎯 全探索をマスターしよう！
+  </text>
+  <text x="600" y="1025" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#047857">
+    「迷ったら全探索」の精神で、まずは確実に解ける方法を考える習慣を身につけよう
+  </text>
+</svg>

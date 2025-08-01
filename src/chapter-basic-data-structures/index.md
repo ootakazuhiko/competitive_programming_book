@@ -259,7 +259,7 @@ layout: default
 
 リストは順番にデータを管理するのに適しているが、「特定の値を高速で検索したい」「データに名前を付けて管理したい」という場合には、辞書（ディクショナリ）が威力を発揮する。
 
-![図6-5：リスト検索 vs 辞書検索の効率比較]({{ site.baseurl }}/assets/diagrams/chapter6/figure6-5-list-vs-dict-search-comparison.svg)
+![図6-2：リストvs辞書vs集合比較]({{ site.baseurl }}/images/figure6-2-list-dict-set-comparison.svg)
 
 ### 辞書の基本操作をマスターしよう
 
@@ -666,7 +666,7 @@ layout: default
 
 データ構造の中でも、特に「データの取り出し順序」が重要な役割を果たすのが、スタックとキューだ。これらは、プログラムでよく使われる「後入れ先出し」と「先入れ先出し」という概念を具現化したものだ。
 
-![図6-12：スタックとキューの基本概念]({{ site.baseurl }}/assets/diagrams/chapter6/figure6-12-stack-queue-basic-concepts.svg)
+![図6-3：スタックとキューの活用]({{ site.baseurl }}/images/figure6-3-stack-queue-utilization.svg)
 
 ```
 
@@ -826,7 +826,7 @@ layout: default
 
 これまで様々なデータ構造を学んできたが、実際の問題を解くときに「どれを使えばいいの？」と迷うことがあるだろう。データ構造の選択は、プログラムの効率性と可読性に大きな影響を与える重要な判断だ。
 
-![図6-15：データ構造選択の判断フロー]({{ site.baseurl }}/assets/diagrams/chapter6/figure6-15-data-structure-selection-flow.svg)
+![図6-1：データ構造選択ガイド]({{ site.baseurl }}/images/figure6-1-data-structure-selection-guide.svg)
 
 ```
 

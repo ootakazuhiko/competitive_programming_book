@@ -404,6 +404,10 @@ LCM（最小公倍数）の計算：
 
 ### 数学的な性質の活用
 
+![図5-3：数学的性質の活用]({{ site.baseurl }}/images/figure5-3-mathematical-properties-utilization.svg)
+
+競技プログラミングでは、数学的な性質を理解し活用することで、計算量を劇的に削減できる。
+
 ```
 【図5-12：競技プログラミングでよく使う数学的性質】
 
@@ -698,7 +702,7 @@ LCM（最小公倍数）の計算：
 
 貪欲法は「その時々で最も良い選択をしていけば、全体として最適解が得られる」という考え方のアルゴリズムだ。
 
-![図5-18：貪欲法の思考プロセス]({{ site.baseurl }}/assets/diagrams/chapter5/figure5-18-greedy-algorithm-thinking-process.svg)
+![図5-4：貪欲法アルゴリズム]({{ site.baseurl }}/images/figure5-4-greedy-algorithm-patterns.svg)
 
 ```
 【図5-19：コイン問題の実装】
