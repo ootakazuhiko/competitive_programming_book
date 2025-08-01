@@ -213,6 +213,33 @@
             background-color: var(--background-secondary) !important;
         }
         
+        /* Mobile sidebar visibility enhancement */
+        .book-sidebar {
+            background-color: var(--background-secondary) !important;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15) !important;
+        }
+        
+        .book-sidebar * {
+            opacity: 1 !important;
+        }
+        
+        .book-sidebar .book-title,
+        .book-sidebar .toc-section-title,
+        .book-sidebar .toc-link {
+            color: var(--text-primary) !important;
+            opacity: 1 !important;
+        }
+        
+        .book-sidebar .toc-link {
+            color: var(--text-secondary) !important;
+        }
+        
+        .book-sidebar .toc-link:hover,
+        .book-sidebar .toc-link.active {
+            background-color: var(--accent-color) !important;
+            color: white !important;
+        }
+        
         /* Production overlay */
         .sidebar-toggle-checkbox:checked ~ .book-sidebar-overlay {
             opacity: 1 !important;
