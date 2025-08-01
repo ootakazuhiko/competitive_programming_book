@@ -323,33 +323,82 @@ a:hover {
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+    opacity: 1 !important;
+  }
+
+  /* Force background for both light and dark mode */
+  .book-sidebar {
+    background: var(--background-secondary) !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .book-sidebar {
+      background: #1f2937 !important;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .book-sidebar {
+      background: #f9fafb !important;
+    }
   }
   
-  /* Mobile sidebar content visibility */
+  /* Mobile sidebar content visibility - ensure all text is visible */
   .book-sidebar * {
-    color: var(--text-primary) !important;
     opacity: 1 !important;
   }
-  
-  /* Mobile sidebar links */
+
+  /* Mobile sidebar text colors for both themes */
+  .book-sidebar *,
+  .book-sidebar .book-title,
+  .book-sidebar .toc-section-title,
   .book-sidebar .toc-link {
-    color: var(--text-secondary) !important;
-    background-color: transparent !important;
-    opacity: 1 !important;
+    color: var(--text-primary) !important;
+  }
+
+  /* Force colors for dark mode */
+  @media (prefers-color-scheme: dark) {
+    .book-sidebar *,
+    .book-sidebar .book-title,
+    .book-sidebar .toc-section-title,
+    .book-sidebar .toc-link {
+      color: #f9fafb !important;
+    }
+  }
+
+  /* Force colors for light mode */  
+  @media (prefers-color-scheme: light) {
+    .book-sidebar *,
+    .book-sidebar .book-title,
+    .book-sidebar .toc-section-title,
+    .book-sidebar .toc-link {
+      color: #111827 !important;
+    }
   }
   
+  /* Mobile sidebar links - hover and active states */
   .book-sidebar .toc-link:hover,
   .book-sidebar .toc-link.active {
     background-color: var(--accent-color) !important;
     color: white !important;
     opacity: 1 !important;
   }
-  
-  /* Mobile sidebar headings */
-  .book-sidebar .book-title,
-  .book-sidebar .toc-section-title {
-    color: var(--text-primary) !important;
-    opacity: 1 !important;
+
+  /* Force hover/active colors for both themes */
+  @media (prefers-color-scheme: dark) {
+    .book-sidebar .toc-link:hover,
+    .book-sidebar .toc-link.active {
+      background-color: #3b82f6 !important;
+      color: white !important;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    .book-sidebar .toc-link:hover,
+    .book-sidebar .toc-link.active {
+      background-color: #3b82f6 !important;
+      color: white !important;
+    }
   }
 
   /* Show sidebar when checkbox is checked */
