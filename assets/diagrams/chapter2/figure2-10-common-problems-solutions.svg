@@ -1,0 +1,133 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-10：よくある問題と解決方法</title>
+  <desc>アカウント登録時によく発生する問題とその解決方法</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .problem-title { font: 600 13px Inter, sans-serif; }
+      .solution-title { font: 600 12px Inter, sans-serif; }
+      .step-text { font: 500 10px Inter, sans-serif; }
+      .desc-text { font: 400 9px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .problem-box { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .solution-box { fill: #ECFDF5; stroke: #10B981; stroke-width: 2; }
+      .step-box { fill: #F3F4F6; stroke: #9CA3AF; stroke-width: 1; }
+      .arrow { stroke: #059669; stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#059669" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-10：よくある問題と解決方法</text>
+  
+  <!-- Problem 1: Username Already Taken -->
+  <g id="problem1">
+    <rect x="50" y="60" width="700" height="160" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    
+    <!-- Problem Side -->
+    <rect x="70" y="80" width="300" height="120" rx="8" class="problem-box"/>
+    <text x="90" y="105" class="emoji">❌</text>
+    <text x="120" y="105" class="problem-title" fill="#DC2626">問題1: 「このユーザー名は使用済みです」</text>
+    
+    <g transform="translate(90, 120)">
+      <text x="0" y="15" class="step-text" fill="#B91C1C">原因：</text>
+      <text x="0" y="30" class="desc-text" fill="#DC2626">他の人が同じユーザー名を既に使用している</text>
+      <text x="0" y="45" class="desc-text" fill="#DC2626">人気のある単語や組み合わせは取られやすい</text>
+      
+      <text x="0" y="70" class="step-text" fill="#B91C1C">よくある例：</text>
+      <text x="0" y="85" class="desc-text" fill="#DC2626">• programmer, coder, student</text>
+    </g>
+    
+    <!-- Arrow -->
+    <path d="M380 140 L410 140" class="arrow" fill="none"/>
+    
+    <!-- Solution Side -->
+    <rect x="420" y="80" width="300" height="120" rx="8" class="solution-box"/>
+    <text x="440" y="105" class="emoji">✅</text>
+    <text x="470" y="105" class="solution-title" fill="#047857">解決方法</text>
+    
+    <g transform="translate(440, 120)">
+      <text x="0" y="15" class="step-text" fill="#047857">対処法：</text>
+      <text x="0" y="30" class="desc-text" fill="#047857">• 数字や年号を追加：coder_taro → coder_taro2024</text>
+      <text x="0" y="45" class="desc-text" fill="#047857">• アンダースコアで区切る：programmer → my_programmer</text>
+      <text x="0" y="60" class="desc-text" fill="#047857">• 興味分野を追加：student → algorithm_student</text>
+      <text x="0" y="75" class="desc-text" fill="#047857">• 地域名を加える：coder → tokyo_coder</text>
+    </g>
+  </g>
+  
+  <!-- Problem 2: Email Not Received -->
+  <g id="problem2">
+    <rect x="50" y="240" width="700" height="160" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    
+    <!-- Problem Side -->
+    <rect x="70" y="260" width="300" height="120" rx="8" class="problem-box"/>
+    <text x="90" y="285" class="emoji">❌</text>
+    <text x="120" y="285" class="problem-title" fill="#DC2626">問題2: 認証メールが届かない</text>
+    
+    <g transform="translate(90, 300)">
+      <text x="0" y="15" class="step-text" fill="#B91C1C">考えられる原因：</text>
+      <text x="0" y="30" class="desc-text" fill="#DC2626">• 迷惑メールフォルダに振り分けられた</text>
+      <text x="0" y="45" class="desc-text" fill="#DC2626">• メールアドレスの入力ミス</text>
+      <text x="0" y="60" class="desc-text" fill="#DC2626">• メール配信の遅延</text>
+    </g>
+    
+    <!-- Arrow -->
+    <path d="M380 320 L410 320" class="arrow" fill="none"/>
+    
+    <!-- Solution Side -->
+    <rect x="420" y="260" width="300" height="120" rx="8" class="solution-box"/>
+    <text x="440" y="285" class="emoji">✅</text>
+    <text x="470" y="285" class="solution-title" fill="#047857">確認手順</text>
+    
+    <g transform="translate(440, 300)">
+      <text x="0" y="15" class="step-text" fill="#047857">1. 迷惑メールフォルダをチェック</text>
+      <text x="0" y="30" class="step-text" fill="#047857">2. メールアドレスの入力ミス確認</text>
+      <text x="0" y="45" class="step-text" fill="#047857">3. 5-10分待ってから再確認</text>
+      <text x="0" y="60" class="step-text" fill="#047857">4. 再送信ボタンを押す</text>
+      <text x="0" y="75" class="step-text" fill="#047857">5. 別のメールアドレスを試す</text>
+    </g>
+  </g>
+  
+  <!-- Problem 3: Password Issues -->
+  <g id="problem3">
+    <rect x="50" y="420" width="700" height="160" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+    
+    <!-- Problem Side -->
+    <rect x="70" y="440" width="300" height="120" rx="8" class="problem-box"/>
+    <text x="90" y="465" class="emoji">❌</text>
+    <text x="120" y="465" class="problem-title" fill="#DC2626">問題3: パスワードが通らない</text>
+    
+    <g transform="translate(90, 480)">
+      <text x="0" y="15" class="step-text" fill="#B91C1C">よくあるエラー：</text>
+      <text x="0" y="30" class="desc-text" fill="#DC2626">「パスワードが条件を満たしていません」</text>
+      <text x="0" y="45" class="desc-text" fill="#DC2626">「パスワード確認が一致しません」</text>
+      <text x="0" y="60" class="desc-text" fill="#DC2626">「パスワードが短すぎます」</text>
+    </g>
+    
+    <!-- Arrow -->
+    <path d="M380 500 L410 500" class="arrow" fill="none"/>
+    
+    <!-- Solution Side -->
+    <rect x="420" y="440" width="300" height="120" rx="8" class="solution-box"/>
+    <text x="440" y="465" class="emoji">✅</text>
+    <text x="470" y="465" class="solution-title" fill="#047857">チェック項目</text>
+    
+    <g transform="translate(440, 480)">
+      <text x="0" y="15" class="step-text" fill="#047857">✓ 8文字以上か？</text>
+      <text x="0" y="30" class="step-text" fill="#047857">✓ 大文字・小文字・数字を含むか？</text>
+      <text x="0" y="45" class="step-text" fill="#047857">✓ 確認用パスワードと一致するか？</text>
+      <text x="0" y="60" class="step-text" fill="#047857">✓ 空白文字が入っていないか？</text>
+      <text x="0" y="75" class="step-text" fill="#047857">✓ 記号（!@#$%など）を含むか？</text>
+    </g>
+  </g>
+  
+</svg>

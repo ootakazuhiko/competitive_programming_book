@@ -1,0 +1,118 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-18：コンテスト当日のタイムライン</title>
+  <desc>AtCoderコンテスト当日の時系列に沿った準備と行動のガイド</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .time-title { font: 600 14px Inter, sans-serif; }
+      .phase-title { font: 600 12px Inter, sans-serif; }
+      .action-text { font: 500 10px Inter, sans-serif; }
+      .desc-text { font: 400 9px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .pre-contest { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+      .start-phase { fill: #ECFDF5; stroke: #10B981; stroke-width: 2; }
+      .middle-phase { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .end-phase { fill: #FECACA; stroke: #EF4444; stroke-width: 2; }
+      .timeline-line { stroke: #9CA3AF; stroke-width: 3; }
+      .time-marker { fill: #6B7280; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-18：コンテスト当日のタイムライン</text>
+  
+  <!-- Timeline Line -->
+  <line x1="100" y1="70" x2="100" y2="550" class="timeline-line"/>
+  
+  <!-- Pre-Contest Phase (20:45-21:00) -->
+  <g id="pre-contest">
+    <circle cx="100" cy="90" r="8" class="time-marker"/>
+    <text x="75" y="95" text-anchor="end" class="time-title" fill="#D97706">🕒</text>
+    
+    <rect x="130" y="60" width="620" height="120" rx="12" class="pre-contest"/>
+    <text x="150" y="85" class="time-title" fill="#D97706">コンテスト開始前 (20:45-21:00)</text>
+    
+    <g transform="translate(150, 95)">
+      <text x="0" y="20" class="phase-title" fill="#D97706">✅ やること:</text>
+      <text x="0" y="35" class="action-text" fill="#A16207">• コンピュータとネットワークの確認</text>
+      <text x="300" y="35" class="action-text" fill="#A16207">• プログラミング環境の立ち上げ</text>
+      <text x="0" y="50" class="action-text" fill="#A16207">• AtCoderにログイン</text>
+      <text x="300" y="50" class="action-text" fill="#A16207">• 水分補給、トイレ休憩</text>
+      
+      <text x="0" y="75" class="phase-title" fill="#D97706">💭 心の準備:</text>
+      <text x="0" y="90" class="desc-text" fill="#A16207">• 深呼吸して落ち着く</text>
+      <text x="150" y="90" class="desc-text" fill="#A16207">• 「楽しむぞ！」という気持ち</text>
+      <text x="320" y="90" class="desc-text" fill="#A16207">• 完璧を求めず、できる範囲で頑張る</text>
+    </g>
+  </g>
+  
+  <!-- Start Phase (21:00-21:05) -->
+  <g id="start-phase">
+    <circle cx="100" cy="210" r="8" class="time-marker"/>
+    <text x="75" y="215" text-anchor="end" class="time-title" fill="#047857">🕘</text>
+    
+    <rect x="130" y="180" width="620" height="120" rx="12" class="start-phase"/>
+    <text x="150" y="205" class="time-title" fill="#047857">開始直後 (21:00-21:05)</text>
+    
+    <g transform="translate(150, 215)">
+      <text x="0" y="20" class="phase-title" fill="#047857">📖 A問題を読む</text>
+      <text x="0" y="35" class="action-text" fill="#047857">• 問題文を丁寧に理解</text>
+      <text x="200" y="35" class="action-text" fill="#047857">• サンプル入出力を確認</text>
+      <text x="0" y="50" class="action-text" fill="#047857">• 「これなら解けそう！」を確認</text>
+      
+      <text x="0" y="75" class="phase-title" fill="#047857">⌨️ A問題を実装</text>
+      <text x="0" y="90" class="desc-text" fill="#047857">• まずはサンプルが通ることを確認　• 提出前に再度見直し　• 「Submit」ボタンをクリック！</text>
+    </g>
+  </g>
+  
+  <!-- Middle Phase (21:05-21:30) -->
+  <g id="middle-phase">
+    <circle cx="100" cy="330" r="8" class="time-marker"/>
+    <text x="75" y="335" text-anchor="end" class="time-title" fill="#1E40AF">🕘</text>
+    
+    <rect x="130" y="300" width="620" height="120" rx="12" class="middle-phase"/>
+    <text x="150" y="325" class="time-title" fill="#1E40AF">中盤 (21:05-21:30)</text>
+    
+    <g transform="translate(150, 335)">
+      <text x="0" y="20" class="phase-title" fill="#1E40AF">📖 B問題に挑戦</text>
+      <text x="0" y="35" class="action-text" fill="#1E40AF">• A問題より少し複雑だが、基本的な考え方は同じ</text>
+      <text x="0" y="50" class="action-text" fill="#1E40AF">• わからなければ一旦飛ばしてもOK</text>
+      
+      <text x="0" y="75" class="phase-title" fill="#1E40AF">💭 戦略的思考:</text>
+      <text x="0" y="90" class="desc-text" fill="#1E40AF">• 解けそうな問題から順番に　• 時間配分を意識　• 焦らず、自分のペースで</text>
+    </g>
+  </g>
+  
+  <!-- End Phase (21:30-22:40) -->
+  <g id="end-phase">
+    <circle cx="100" cy="450" r="8" class="time-marker"/>
+    <text x="75" y="455" text-anchor="end" class="time-title" fill="#DC2626">🕘</text>
+    
+    <rect x="130" y="420" width="620" height="120" rx="12" class="end-phase"/>
+    <text x="150" y="445" class="time-title" fill="#DC2626">終盤 (21:30-22:40)</text>
+    
+    <g transform="translate(150, 455)">
+      <text x="0" y="20" class="phase-title" fill="#DC2626">🔄 見直しと追加挑戦</text>
+      <text x="0" y="35" class="action-text" fill="#B91C1C">• 提出したコードの再確認</text>
+      <text x="200" y="35" class="action-text" fill="#B91C1C">• まだ解けていない問題への挑戦</text>
+      <text x="0" y="50" class="action-text" fill="#B91C1C">• C問題にも挑戦してみる（無理は禁物）</text>
+      
+      <text x="0" y="75" class="phase-title" fill="#DC2626">📝 学習ノート作成:</text>
+      <text x="0" y="90" class="desc-text" fill="#B91C1C">• 解けた問題の解法をメモ　• わからなかった問題をチェック　• 次回への改善点を記録</text>
+    </g>
+  </g>
+  
+  <!-- Bottom Tips -->
+  <g id="bottom-tips">
+    <rect x="100" y="560" width="600" height="30" rx="8" fill="#F0F9FF" stroke="#0369A1" stroke-width="2"/>
+    <text x="120" y="578" class="emoji">⏰</text>
+    <text x="150" y="578" style="font: 600 11px Inter, sans-serif; fill: #0369A1;">時間管理のコツ：</text>
+    <text x="250" y="578" class="desc-text" fill="#1E40AF">A問題15分、B問題30分を目安に。時間を区切って次の問題に進む勇気も大切！</text>
+  </g>
+  
+</svg>

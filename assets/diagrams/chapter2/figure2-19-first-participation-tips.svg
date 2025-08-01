@@ -1,0 +1,139 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-19：初回参加の心理的ハードルを下げるコツ</title>
+  <desc>初回コンテスト参加時の不安解消と現実的な期待設定</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .anxiety-text { font: 500 11px Inter, sans-serif; }
+      .reality-text { font: 500 11px Inter, sans-serif; }
+      .success-text { font: 600 11px Inter, sans-serif; }
+      .desc-text { font: 400 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .anxiety-box { fill: #FEF2F2; stroke: #EF4444; stroke-width: 2; }
+      .reality-box { fill: #ECFDF5; stroke: #10B981; stroke-width: 2; }
+      .success-criteria { fill: #DBEAFE; stroke: #3B82F6; stroke-width: 2; }
+      .arrow-transform { stroke: #10B981; stroke-width: 3; marker-end: url(#arrow-success); }
+    </style>
+    
+    <marker id="arrow-success" markerWidth="12" markerHeight="8" 
+            refX="11" refY="4" orient="auto">
+      <polygon points="0 0, 12 4, 0 8" fill="#10B981" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-19：初回参加の心理的ハードルを下げるコツ</text>
+  
+  <!-- Headers -->
+  <text x="200" y="70" text-anchor="middle" class="section-title" fill="#DC2626">😰 よくある不安</text>
+  <text x="600" y="70" text-anchor="middle" class="section-title" fill="#047857">🤗 現実・対処法</text>
+  
+  <!-- Anxiety & Reality Pair 1 -->
+  <g id="pair1">
+    <rect x="50" y="90" width="300" height="80" rx="8" class="anxiety-box"/>
+    <g transform="translate(70, 110)">
+      <text x="0" y="15" class="anxiety-text" fill="#DC2626">「1問も解けなかったら</text>
+      <text x="0" y="30" class="anxiety-text" fill="#DC2626"> 恥ずかしい...」</text>
+      <text x="0" y="50" class="desc-text" fill="#B91C1C">完璧主義の罠</text>
+    </g>
+    
+    <!-- Arrow -->
+    <path d="M360 130 L440 130" class="arrow-transform" fill="none"/>
+    
+    <rect x="450" y="90" width="300" height="80" rx="8" class="reality-box"/>
+    <g transform="translate(470, 110)">
+      <text x="0" y="15" class="reality-text" fill="#047857">実際は多くの初心者が</text>
+      <text x="0" y="30" class="reality-text" fill="#047857">A問題は解けている</text>
+      <text x="0" y="50" class="desc-text" fill="#047857">完璧を求めなくてOK!</text>
+    </g>
+  </g>
+  
+  <!-- Anxiety & Reality Pair 2 -->
+  <g id="pair2">
+    <rect x="50" y="190" width="300" height="80" rx="8" class="anxiety-box"/>
+    <g transform="translate(70, 210)">
+      <text x="0" y="15" class="anxiety-text" fill="#DC2626">「他の人と比べて</text>
+      <text x="0" y="30" class="anxiety-text" fill="#DC2626"> レベルが低すぎる...」</text>
+      <text x="0" y="50" class="desc-text" fill="#B91C1C">比較による劣等感</text>
+    </g>
+    
+    <!-- Arrow -->
+    <path d="M360 230 L440 230" class="arrow-transform" fill="none"/>
+    
+    <rect x="450" y="190" width="300" height="80" rx="8" class="reality-box"/>
+    <g transform="translate(470, 210)">
+      <text x="0" y="15" class="reality-text" fill="#047857">同世代の参加者も</text>
+      <text x="0" y="30" class="reality-text" fill="#047857">最初は同じレベル</text>
+      <text x="0" y="50" class="desc-text" fill="#047857">成長過程を楽しもう！</text>
+    </g>
+  </g>
+  
+  <!-- Anxiety & Reality Pair 3 -->
+  <g id="pair3">
+    <rect x="50" y="290" width="300" height="80" rx="8" class="anxiety-box"/>
+    <g transform="translate(70, 310)">
+      <text x="0" y="15" class="anxiety-text" fill="#DC2626">「時間内に解き切れない</text>
+      <text x="0" y="30" class="anxiety-text" fill="#DC2626"> プレッシャーが...」</text>
+      <text x="0" y="50" class="desc-text" fill="#B91C1C">時間制限への恐怖</text>
+    </g>
+    
+    <!-- Arrow -->
+    <path d="M360 330 L440 330" class="arrow-transform" fill="none"/>
+    
+    <rect x="450" y="290" width="300" height="80" rx="8" class="reality-box"/>
+    <g transform="translate(470, 310)">
+      <text x="0" y="15" class="reality-text" fill="#047857">時間内に全問解くのは</text>
+      <text x="0" y="30" class="reality-text" fill="#047857">上級者でも困難</text>
+      <text x="0" y="50" class="desc-text" fill="#047857">1問でも解けたら成功！</text>
+    </g>
+  </g>
+  
+  <!-- Success Criteria Section -->
+  <g id="success-criteria">
+    <rect x="100" y="400" width="600" height="150" rx="12" class="success-criteria"/>
+    <text x="120" y="430" class="emoji">💡</text>
+    <text x="150" y="430" class="section-title" fill="#1E40AF">初回参加の成功基準</text>
+    
+    <g transform="translate(120, 445)">
+      <!-- Success Item 1 -->
+      <rect x="0" y="10" width="250" height="25" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+      <text x="10" y="25" class="success-text" fill="#047857">✅ A問題を1問でも解けた</text>
+      <text x="10" y="35" class="desc-text" fill="#047857">→ 大成功！</text>
+      
+      <!-- Success Item 2 -->
+      <rect x="270" y="10" width="250" height="25" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+      <text x="280" y="25" class="success-text" fill="#047857">✅ 問題文を理解できた</text>
+      <text x="280" y="35" class="desc-text" fill="#047857">→ 良いスタート！</text>
+      
+      <!-- Success Item 3 -->
+      <rect x="0" y="55" width="250" height="25" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+      <text x="10" y="70" class="success-text" fill="#047857">✅ 最後まで諦めずに参加</text>
+      <text x="10" y="80" class="desc-text" fill="#047857">→ 継続力の証明！</text>
+      
+      <!-- Success Item 4 -->
+      <rect x="270" y="55" width="250" height="25" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+      <text x="280" y="70" class="success-text" fill="#047857">✅ 楽しめた</text>
+      <text x="280" y="80" class="desc-text" fill="#047857">→ 最も重要な成功！</text>
+      
+      <text x="0" y="110" class="desc-text" fill="#1E40AF">
+        どれか一つでも当てはまれば、それは立派な成功体験です！小さな成功を積み重ねることが成長への第一歩。
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom Encouragement -->
+  <g id="encouragement">
+    <rect x="150" y="570" width="500" height="25" rx="10" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2"/>
+    <text x="170" y="585" class="emoji">🌟</text>
+    <text x="200" y="585" style="font: 600 11px Inter, sans-serif; fill: #D97706;">
+      誰もが最初は初心者！勇気を出して参加することが、成長への最大の一歩です
+    </text>
+  </g>
+  
+</svg>

@@ -1,0 +1,156 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図2-13：マイページの重要な情報</title>
+  <desc>AtCoderのマイページレイアウトと重要な情報の見方</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: #1F2937; }
+      .profile-title { font: 600 18px Inter, sans-serif; }
+      .username { font: 600 16px Inter, sans-serif; }
+      .rating-text { font: 600 14px Inter, sans-serif; }
+      .stats-text { font: 500 12px Inter, sans-serif; }
+      .label-text { font: 400 11px Inter, sans-serif; }
+      .submission-text { font: 500 10px 'Courier New', monospace; }
+      .desc-text { font: 400 9px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .page-bg { fill: #FFFFFF; stroke: #E5E7EB; stroke-width: 2; }
+      .profile-section { fill: #F9FAFB; stroke: #D1D5DB; stroke-width: 1; }
+      .rating-badge { fill: #92400E; }
+      .graph-area { fill: #F3F4F6; stroke: #9CA3AF; stroke-width: 1; }
+      .submission-bg { fill: #F0F9FF; stroke: #0369A1; stroke-width: 1; }
+      .ac-status { fill: #22C55E; }
+      .wa-status { fill: #EF4444; }
+      .terms-box { fill: #FEF3C7; stroke: #F59E0B; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図2-13：マイページの重要な情報</text>
+  
+  <!-- MyPage Container -->
+  <rect x="50" y="60" width="700" height="500" rx="12" class="page-bg"/>
+  
+  <!-- Profile Header -->
+  <text x="70" y="85" class="emoji">👤</text>
+  <text x="100" y="85" class="profile-title" fill="#374151">ユーザープロフィール画面</text>
+  
+  <!-- Profile Info Section -->
+  <rect x="70" y="100" width="650" height="120" rx="8" class="profile-section"/>
+  
+  <!-- Profile Image Placeholder -->
+  <rect x="90" y="120" width="60" height="60" rx="30" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="2"/>
+  <text x="120" y="155" text-anchor="middle" class="emoji">👨‍💻</text>
+  
+  <!-- User Information -->
+  <g transform="translate(170, 125)">
+    <text x="0" y="20" class="username" fill="#1F2937">your_username</text>
+    
+    <!-- Rating Info -->
+    <text x="0" y="45" class="emoji">📊</text>
+    <text x="25" y="45" class="label-text" fill="#6B7280">レーティング:</text>
+    <rect x="100" y="35" width="60" height="18" rx="9" class="rating-badge"/>
+    <text x="130" y="47" text-anchor="middle" style="font: 600 11px Inter, sans-serif; fill: #FFFFFF;">400</text>
+    <text x="170" y="45" class="rating-text" fill="#92400E">(茶色)</text>
+    
+    <!-- Stats -->
+    <text x="0" y="65" class="emoji">🏆</text>
+    <text x="25" y="65" class="label-text" fill="#6B7280">最高レーティング:</text>
+    <text x="140" y="65" class="stats-text" fill="#374151">450</text>
+    
+    <text x="0" y="80" class="emoji">📈</text>
+    <text x="25" y="80" class="label-text" fill="#6B7280">参加回数:</text>
+    <text x="100" y="80" class="stats-text" fill="#374151">15回</text>
+    
+    <text x="0" y="95" class="emoji">🥇</text>
+    <text x="25" y="95" class="label-text" fill="#6B7280">最高順位:</text>
+    <text x="100" y="95" class="stats-text" fill="#374151">1,234位</text>
+  </g>
+  
+  <!-- Rating Graph Section -->
+  <g id="rating-graph">
+    <rect x="70" y="240" width="320" height="160" rx="8" class="graph-area"/>
+    <text x="90" y="265" class="stats-text" fill="#374151">レーティンググラフ</text>
+    
+    <!-- Graph Axes -->
+    <line x1="90" y1="370" x2="370" y2="370" stroke="#9CA3AF" stroke-width="1"/>
+    <line x1="90" y1="280" x2="90" y2="370" stroke="#9CA3AF" stroke-width="1"/>
+    
+    <!-- Y-axis labels -->
+    <text x="85" y="285" text-anchor="end" class="desc-text" fill="#6B7280">500</text>
+    <text x="85" y="315" text-anchor="end" class="desc-text" fill="#6B7280">400</text>
+    <text x="85" y="345" text-anchor="end" class="desc-text" fill="#6B7280">300</text>
+    <text x="85" y="375" text-anchor="end" class="desc-text" fill="#6B7280">200</text>
+    
+    <!-- X-axis labels -->
+    <text x="120" y="385" text-anchor="middle" class="desc-text" fill="#6B7280">1月</text>
+    <text x="180" y="385" text-anchor="middle" class="desc-text" fill="#6B7280">2月</text>
+    <text x="240" y="385" text-anchor="middle" class="desc-text" fill="#6B7280">3月</text>
+    <text x="300" y="385" text-anchor="middle" class="desc-text" fill="#6B7280">4月</text>
+    
+    <!-- Rating line -->
+    <path d="M120 345 L180 325 L240 315 L300 345" stroke="#3B82F6" stroke-width="3" fill="none"/>
+    <circle cx="120" cy="345" r="4" fill="#3B82F6"/>
+    <circle cx="180" cy="325" r="4" fill="#3B82F6"/>
+    <circle cx="240" cy="315" r="4" fill="#3B82F6"/>
+    <circle cx="300" cy="345" r="4" fill="#3B82F6"/>
+  </g>
+  
+  <!-- Recent Submissions Section -->
+  <g id="submissions">
+    <rect x="410" y="240" width="310" height="160" rx="8" class="submission-bg"/>
+    <text x="430" y="265" class="emoji">📚</text>
+    <text x="455" y="265" class="stats-text" fill="#0369A1">最近の提出</text>
+    
+    <g transform="translate(430, 280)">
+      <!-- Submission 1 -->
+      <text x="0" y="15" class="submission-text" fill="#374151">• ABC349 A - Zero Sum</text>
+      <rect x="180" y="5" width="25" height="15" rx="7" class="ac-status"/>
+      <text x="192" y="14" text-anchor="middle" style="font: 600 8px Inter, sans-serif; fill: #FFFFFF;">AC</text>
+      <text x="210" y="15" class="desc-text" fill="#22C55E">✅</text>
+      
+      <!-- Submission 2 -->
+      <text x="0" y="35" class="submission-text" fill="#374151">• ABC349 B - Commencement</text>
+      <rect x="180" y="25" width="25" height="15" rx="7" class="wa-status"/>
+      <text x="192" y="34" text-anchor="middle" style="font: 600 8px Inter, sans-serif; fill: #FFFFFF;">WA</text>
+      <text x="210" y="35" class="desc-text" fill="#EF4444">❌</text>
+      
+      <!-- Submission 3 -->
+      <text x="0" y="55" class="submission-text" fill="#374151">• ABC348 A - Broken Keyboard</text>
+      <rect x="180" y="45" width="25" height="15" rx="7" class="ac-status"/>
+      <text x="192" y="54" text-anchor="middle" style="font: 600 8px Inter, sans-serif; fill: #FFFFFF;">AC</text>
+      <text x="210" y="55" class="desc-text" fill="#22C55E">✅</text>
+      
+      <!-- Submission 4 -->
+      <text x="0" y="75" class="submission-text" fill="#374151">• ABC348 B - Distance</text>
+      <rect x="180" y="65" width="25" height="15" rx="7" class="ac-status"/>
+      <text x="192" y="74" text-anchor="middle" style="font: 600 8px Inter, sans-serif; fill: #FFFFFF;">AC</text>
+      <text x="210" y="75" class="desc-text" fill="#22C55E">✅</text>
+      
+      <!-- Terms explanation -->
+      <text x="0" y="100" class="desc-text" fill="#0369A1">📖 用語説明:</text>
+      <text x="0" y="115" class="desc-text" fill="#0369A1">• AC (Accepted): 正解</text>
+      <text x="0" y="128" class="desc-text" fill="#0369A1">• WA (Wrong Answer): 不正解</text>
+      <text x="0" y="141" class="desc-text" fill="#0369A1">• TLE (Time Limit Exceeded): 時間制限超過</text>
+    </g>
+  </g>
+  
+  <!-- Important Notes -->
+  <g id="notes">
+    <rect x="70" y="420" width="650" height="100" rx="8" class="terms-box"/>
+    <text x="90" y="445" class="emoji">💡</text>
+    <text x="120" y="445" style="font: 600 14px Inter, sans-serif; fill: #92400E;">マイページ活用のポイント</text>
+    
+    <g transform="translate(90, 460)">
+      <text x="0" y="15" class="label-text" fill="#A16207">✅ レーティンググラフで成長を実感</text>
+      <text x="240" y="15" class="label-text" fill="#A16207">✅ 最近の提出で苦手分野を把握</text>
+      <text x="0" y="30" class="label-text" fill="#A16207">✅ 参加回数で継続的な努力を確認</text>
+      <text x="240" y="30" class="label-text" fill="#A16207">✅ 最高順位で最良の成績を記録</text>
+      <text x="0" y="50" class="label-text" fill="#A16207">定期的にマイページを確認して、自分の成長を客観的に把握しよう！</text>
+    </g>
+  </g>
+  
+</svg>
