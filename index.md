@@ -39,15 +39,14 @@ layout: book
 
 
 
-## 付録
+## 付録（準備中）
 
+<!-- 付録ページは現在準備中です。将来的に以下のコンテンツを提供予定：
 - [付録1 アルゴリズムリファレンス](src/appendices/algorithm-reference.md)
-
 - [付録2 実装テンプレート集](src/appendices/implementation-templates.md)
-
 - [付録3 練習問題集](src/appendices/practice-problems.md)
-
 - [付録4 参考資料・リンク集](src/appendices/resources.md)
+-->
 
 
 
