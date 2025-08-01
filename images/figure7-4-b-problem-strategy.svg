@@ -1,0 +1,377 @@
+<svg viewBox="0 0 1400 1600" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-4：B問題の特徴と戦略アプローチ</title>
+  <desc>AtCoder Beginner Contest B問題の難易度分析と効果的な攻略戦略</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1600" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    B問題の特徴と戦略アプローチ
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    A問題から大きくステップアップする第2の関門
+  </text>
+
+  <!-- B Problem Overview -->
+  <rect x="50" y="80" width="1300" height="140" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🎯 B問題の基本特徴と難易度分析
+  </text>
+
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#d97706">
+    <tspan x="100" dy="0">配点：200-300点（コンテスト全体の約25%）｜制約：N ≤ 10^5程度（A問題より大幅に増加）</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="12" fill="#d97706">
+    <tspan x="100" dy="0">時間：15-25分が目標（A問題の2-3倍）｜難易度：データ構造とアルゴリズムの基礎知識が必要</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" fill="#d97706">
+    <tspan x="100" dy="0">🔥 A問題との主な違い：単純な一発計算では解けない、ループや配列操作が必須、論理的思考力がより重要</tspan>
+  </text>
+  <text x="100" y="190" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    <tspan x="100" dy="0">💡 B問題攻略がレーティング向上の鍵：安定してB問題を解けるようになると茶色レーティング(400+)に到達</tspan>
+  </text>
+
+  <!-- Difficulty Comparison -->
+  <rect x="50" y="240" width="1300" height="200" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="700" y="265" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📊 A問題との比較分析：何が変わるのか？
+  </text>
+
+  <!-- A vs B Comparison Table -->
+  <rect x="80" y="285" width="300" height="145" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🔍 A問題の特徴（復習）
+  </text>
+  <text x="100" y="325" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">• 入力→即座に計算→出力</tspan>
+    <tspan x="100" dy="12">• 制約が小さい（N≤100）</tspan>
+    <tspan x="100" dy="12">• 単発処理、ループは最大数回</tspan>
+    <tspan x="100" dy="12">• パターン認識が主要スキル</tspan>
+    <tspan x="100" dy="12">• 5-10分で解決可能</tspan>
+  </text>
+
+  <text x="90" y="385" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🎯 成功の鍵
+  </text>
+  <text x="100" y="405" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    パターン暗記 + 高速実装
+  </text>
+
+  <rect x="400" y="285" width="300" height="145" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="410" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🔥 B問題の特徴（新しい挑戦）
+  </text>
+  <text x="420" y="325" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="420" dy="0">• 複数ステップの処理が必要</tspan>
+    <tspan x="420" dy="12">• 制約が大きい（N≤10^5）</tspan>
+    <tspan x="420" dy="12">• ループ・配列・文字列操作が中心</tspan>
+    <tspan x="420" dy="12">• 論理的思考力とアルゴリズム知識</tspan>
+    <tspan x="420" dy="12">• 15-25分の時間が必要</tspan>
+  </text>
+
+  <text x="410" y="385" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🎯 成功の鍵
+  </text>
+  <text x="420" y="405" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    問題分解 + 段階的実装
+  </text>
+
+  <rect x="720" y="285" width="300" height="145" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="730" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    ⚡ レベルアップのポイント
+  </text>
+  <text x="740" y="325" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="740" dy="0">思考の転換：</tspan>
+    <tspan x="750" dy="12">「一発で解く」→「段階的に処理」</tspan>
+    <tspan x="750" dy="12">「暗記重視」→「理解重視」</tspan>
+    <tspan x="750" dy="12">「高速実装」→「正確な設計」</tspan>
+  </text>
+
+  <text x="730" y="375" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🧠 新しく必要な能力
+  </text>
+  <text x="740" y="395" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    問題分解力、デバッグ力、計算量意識
+  </text>
+
+  <rect x="1040" y="285" width="280" height="145" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="1050" y="305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📈 習熟度別目標時間
+  </text>
+  <text x="1060" y="325" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1060" dy="0">初心者：35分以内</tspan>
+    <tspan x="1060" dy="12">中級者：25分以内</tspan>
+    <tspan x="1060" dy="12">上級者：15分以内</tspan>
+  </text>
+
+  <text x="1050" y="365" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🎯 正解率目標
+  </text>
+  <text x="1060" y="385" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    初期：50% → 最終：80%以上
+  </text>
+
+  <!-- B Problem Categories -->
+  <rect x="50" y="460" width="1300" height="300" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="700" y="485" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    🗂️ B問題の主要カテゴリーと攻略法
+  </text>
+
+  <!-- Category 1: Loop & Array -->
+  <rect x="80" y="505" width="300" height="120" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🔄 カテゴリ1：ループ・配列操作（40%）
+  </text>
+  <text x="100" y="545" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">特徴：</tspan>
+    <tspan x="110" dy="12">• N個のデータを順次処理</tspan>
+    <tspan x="110" dy="12">• 条件に応じたカウント・集計</tspan>
+    <tspan x="110" dy="12">• 配列の走査・変更</tspan>
+  </text>
+
+  <text x="90" y="585" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    攻略法：for文の使い方をマスター
+  </text>
+  <text x="100" y="605" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    例：ABC085 B - Kagami Mochi
+  </text>
+
+  <!-- Category 2: String Processing -->
+  <rect x="400" y="505" width="300" height="120" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="410" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🔤 カテゴリ2：文字列処理（25%）
+  </text>
+  <text x="420" y="545" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="420" dy="0">特徴：</tspan>
+    <tspan x="430" dy="12">• 文字列の変換・置換</tspan>
+    <tspan x="430" dy="12">• パターンマッチング</tspan>
+    <tspan x="430" dy="12">• 文字列の構築・分解</tspan>
+  </text>
+
+  <text x="410" y="585" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    攻略法：Python文字列メソッド習熟
+  </text>
+  <text x="420" y="605" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    例：ABC086 B - 1 21
+  </text>
+
+  <!-- Category 3: Search & Simulation -->
+  <rect x="720" y="505" width="300" height="120" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="730" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🔍 カテゴリ3：探索・シミュレーション（20%）
+  </text>
+  <text x="740" y="545" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="740" dy="0">特徴：</tspan>
+    <tspan x="750" dy="12">• 全探索（brute force）</tspan>
+    <tspan x="750" dy="12">• 条件を満たす組み合わせ発見</tspan>
+    <tspan x="750" dy="12">• ゲーム・パズルのシミュレーション</tspan>
+  </text>
+
+  <text x="730" y="585" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    攻略法：二重ループの使いこなし
+  </text>
+  <text x="740" y="605" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    例：ABC083 B - Some Sums
+  </text>
+
+  <!-- Category 4: Mathematical -->
+  <rect x="1040" y="505" width="280" height="120" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="1050" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🧮 カテゴリ4：数学・論理（15%）
+  </text>
+  <text x="1060" y="545" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="1060" dy="0">特徴：</tspan>
+    <tspan x="1070" dy="12">• 数学的性質の利用</tspan>
+    <tspan x="1070" dy="12">• 論理パズル</tspan>
+    <tspan x="1070" dy="12">• 最適化問題</tspan>
+  </text>
+
+  <text x="1050" y="585" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    攻略法：数学的思考力を鍛える
+  </text>
+  <text x="1060" y="605" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    例：ABC088 B - Card Game for Two
+  </text>
+
+  <!-- Advanced Strategy Section -->
+  <rect x="80" y="645" width="1240" height="100" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="665" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🎯 カテゴリ横断的な攻略戦略
+  </text>
+  <text x="100" y="685" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">1. 問題を小さな部分に分解：複雑に見える問題も「入力処理」「メイン処理」「出力処理」に分けて考える</tspan>
+    <tspan x="100" dy="12">2. サンプルで動作確認：各部分が正しく動作するか段階的に検証</tspan>
+    <tspan x="100" dy="12">3. 計算量を意識：N≤10^5の場合、O(N)やO(N log N)の解法を選択</tspan>
+    <tspan x="100" dy="12">4. エッジケースの検討：空リスト、最小値・最大値、同じ値が連続する場合など</tspan>
+  </text>
+
+  <!-- B Problem Strategy Framework -->
+  <rect x="50" y="780" width="1300" height="320" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="700" y="805" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🚀 B問題攻略の7ステップ戦略フレームワーク
+  </text>
+
+  <!-- Step 1-2 -->
+  <rect x="80" y="825" width="280" height="120" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="90" y="845" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    📖 Step 1-2: 理解・分析（5-7分）
+  </text>
+  <text x="100" y="865" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">A問題の手法を拡張：</tspan>
+    <tspan x="110" dy="12">• 問題文の複数回読解</tspan>
+    <tspan x="110" dy="12">• サンプルの詳細分析</tspan>
+    <tspan x="110" dy="12">• 処理の流れを図示</tspan>
+    <tspan x="110" dy="12">• 必要なデータ構造の特定</tspan>
+  </text>
+
+  <text x="90" y="925" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    💡 B問題特有のポイント
+  </text>
+
+  <!-- Step 3-4 -->
+  <rect x="380" y="825" width="280" height="120" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="390" y="845" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🔧 Step 3-4: 設計・実装（10-15分）
+  </text>
+  <text x="400" y="865" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="400" dy="0">段階的アプローチ：</tspan>
+    <tspan x="410" dy="12">• 大まかな処理の流れを設計</tspan>
+    <tspan x="410" dy="12">• 入力処理から順次実装</tspan>
+    <tspan x="410" dy="12">• 各部分をテスト</tspan>
+    <tspan x="410" dy="12">• デバッグしながら完成</tspan>
+  </text>
+
+  <text x="390" y="925" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    ⚠️ 一気に書かない
+  </text>
+
+  <!-- Step 5-7 -->
+  <rect x="680" y="825" width="280" height="120" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="690" y="845" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ✅ Step 5-7: 検証・修正・提出（3-5分）
+  </text>
+  <text x="700" y="865" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="700" dy="0">慎重な最終確認：</tspan>
+    <tspan x="710" dy="12">• 全サンプルでのテスト</tspan>
+    <tspan x="710" dy="12">• エッジケースの確認</tspan>
+    <tspan x="710" dy="12">• 計算量の再チェック</tspan>
+    <tspan x="710" dy="12">• 自信を持って提出</tspan>
+  </text>
+
+  <text x="690" y="925" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    🎯 品質重視
+  </text>
+
+  <!-- Time Management -->
+  <rect x="980" y="825" width="320" height="120" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="990" y="845" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ⏰ 重要：時間配分の管理
+  </text>
+  <text x="1000" y="865" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="1000" dy="0">総時間30分を超えた場合：</tspan>
+    <tspan x="1010" dy="12">• 一旦B問題を飛ばす</tspan>
+    <tspan x="1010" dy="12">• C問題に挑戦</tspan>
+    <tspan x="1010" dy="12">• コンテスト後に復習</tspan>
+  </text>
+
+  <text x="990" y="905" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    🧠 冷静な判断力
+  </text>
+  <text x="1000" y="925" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">
+    完璧を求めすぎない
+  </text>
+
+  <!-- Success Framework -->
+  <rect x="80" y="965" width="1240" height="125" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="90" y="985" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🏆 B問題成功のための総合フレームワーク
+  </text>
+  <text x="100" y="1005" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">技術面：Pythonの基本データ構造（list, dict, set）の使いこなし | アルゴリズム：ソート、探索、グリーディの基礎理解</tspan>
+    <tspan x="100" dy="12">思考面：問題を小さく分解する習慣 | 段階的に実装・テストする手法 | デバッグ技術の向上</tspan>
+    <tspan x="100" dy="12">時間面：理解に十分時間をかける | 実装は丁寧だが迅速に | 検証は確実に行う</tspan>
+    <tspan x="100" dy="12">心理面：A問題との違いを受け入れる | 完璧より確実性を重視 | 焦らず段階的に進む</tspan>
+  </text>
+
+  <!-- Practice Recommendations -->
+  <rect x="50" y="1120" width="1300" height="240" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="1145" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    📚 B問題攻略のための実践的トレーニングプラン
+  </text>
+
+  <!-- Phase 1 -->
+  <rect x="80" y="1165" width="280" height="100" rx="6" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="90" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    📖 Phase 1: 基礎固め（2週間）
+  </text>
+  <text x="100" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">• ループ・配列の基本操作練習</tspan>
+    <tspan x="100" dy="12">• 易しいB問題（difficulty 400-800）</tspan>
+    <tspan x="100" dy="12">• 1日1問、時間制限なし</tspan>
+    <tspan x="100" dy="12">• 解法の理解を最優先</tspan>
+  </text>
+
+  <!-- Phase 2 -->
+  <rect x="380" y="1165" width="280" height="100" rx="6" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="390" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🚀 Phase 2: 実戦練習（3週間）
+  </text>
+  <text x="400" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="400" dy="0">• 標準的なB問題（difficulty 400-1200）</tspan>
+    <tspan x="400" dy="12">• 時間制限30分で挑戦</tspan>
+    <tspan x="400" dy="12">• 1日2問のペース</tspan>
+    <tspan x="400" dy="12">• 各カテゴリをバランス良く</tspan>
+  </text>
+
+  <!-- Phase 3 -->
+  <rect x="680" y="1165" width="280" height="100" rx="6" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="690" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🏆 Phase 3: 実戦形式（2週間）
+  </text>
+  <text x="700" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="700" dy="0">• 過去のABCを時間制限付きで</tspan>
+    <tspan x="700" dy="12">• A→B問題の連続解答練習</tspan>
+    <tspan x="700" dy="12">• 実際のコンテスト参加</tspan>
+    <tspan x="700" dy="12">• 安定した正解率80%を目指す</tspan>
+  </text>
+
+  <!-- Recommended Problems -->
+  <rect x="980" y="1165" width="320" height="100" rx="6" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="990" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    📝 推奨練習問題（各5問）
+  </text>
+  <text x="1000" y="1205" font-family="Arial, sans-serif" font-size="9" fill="#0369a1">
+    <tspan x="1000" dy="0">ループ系: ABC085 B, ABC083 B, ABC081 B</tspan>
+    <tspan x="1000" dy="10">文字列系: ABC086 B, ABC088 B, ABC087 B</tspan>
+    <tspan x="1000" dy="10">探索系: ABC084 B, ABC082 B, ABC089 B</tspan>
+    <tspan x="1000" dy="10">数学系: ABC090 B, ABC091 B, ABC092 B</tspan>
+  </text>
+
+  <!-- Success Metrics -->
+  <rect x="80" y="1285" width="1240" height="65" rx="6" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="90" y="1305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    📊 習熟度チェック項目と目標設定
+  </text>
+  <text x="100" y="1325" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">技術的成長: Pythonの基本構文を迷わず書ける | データ構造の特性を理解している | 計算量を意識してアルゴリズムを選択できる</tspan>
+    <tspan x="100" dy="12">問題解決力: 複雑な問題を適切に分解できる | 段階的にデバッグを進められる | エッジケースを自分で発見できる</tspan>
+  </text>
+
+  <!-- Final Message -->
+  <rect x="50" y="1380" width="1300" height="100" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="1405" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🌟 B問題攻略は競技プログラミング上達の大きな節目！
+  </text>
+  <text x="700" y="1425" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#15803d">
+    A問題の「暗記・パターン認識」から B問題の「理解・論理的思考」へのレベルアップ
+  </text>
+  <text x="700" y="1445" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#15803d">
+    焦らず段階的に、確実な理解を積み重ねることが成功への近道
+  </text>
+  <text x="700" y="1465" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#15803d">
+    B問題が安定して解けるようになれば、競技プログラミングの楽しさが大きく広がる！
+  </text>
+</svg>

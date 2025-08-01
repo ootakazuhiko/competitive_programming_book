@@ -1,0 +1,447 @@
+<svg viewBox="0 0 1400 1600" xmlns="http://www.w3.org/2000/svg">
+  <title>図8-3：解法設計の5段階プロセス</title>
+  <desc>競技プログラミング問題に対する体系的な解法設計アプローチと実装戦略</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1600" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    解法設計の5段階プロセス
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    問題理解から実装まで、確実で効率的な解法構築の体系的手法
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🎯 5段階解法設計プロセスの全体像
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">Stage 1: 問題分解（2-3分）→ Stage 2: 解法選択（1-2分）→ Stage 3: アルゴリズム設計（3-5分）→ Stage 4: 実装計画（1-2分）→ Stage 5: 検証戦略（1分）</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">🎯 目標：問題の本質を理解し、最適なアプローチで確実に実装可能な解法を構築する</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：設計に十分な時間をかけることで、実装とデバッグの効率が飛躍的に向上</tspan>
+  </text>
+
+  <!-- Stage 1: Problem Decomposition -->
+  <rect x="50" y="220" width="1300" height="260" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🧩 Stage 1: 問題分解（2-3分）- 複雑な問題を管理可能な部分に分割
+  </text>
+
+  <!-- Stage 1 Left -->
+  <rect x="80" y="265" width="400" height="200" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🎯 分解すべき問題要素
+  </text>
+  <text x="100" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">✅ 入力処理の複雑性</tspan>
+    <tspan x="110" dy="12">データ型、形式、前処理の必要性</tspan>
+    <tspan x="100" dy="24">✅ 核となる計算処理</tspan>
+    <tspan x="110" dy="12">主要なアルゴリズム、データ構造</tspan>
+    <tspan x="100" dy="24">✅ 出力処理の要件</tspan>
+    <tspan x="110" dy="12">形式、順序、後処理の必要性</tspan>
+    <tspan x="100" dy="24">✅ 制約条件への対応</tspan>
+    <tspan x="110" dy="12">計算量、メモリ使用量、特殊ケース</tspan>
+  </text>
+
+  <text x="90" y="415" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    🧠 分解の視点
+  </text>
+  <text x="100" y="435" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    「一度に全部」ではなく「段階的に」
+  </text>
+  <text x="100" y="450" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    各部分の独立性を重視
+  </text>
+
+  <!-- Stage 1 Middle -->
+  <rect x="500" y="265" width="400" height="200" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="510" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    📝 実践例：問題分解の実際
+  </text>
+  
+  <text x="520" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="520" dy="0">例：「配列の中で条件を満たす部分配列の個数」</tspan>
+  </text>
+  
+  <text x="520" y="325" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    分解結果：
+  </text>
+  <text x="530" y="345" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    <tspan x="530" dy="0">1. 入力処理：配列サイズN、要素の読み込み</tspan>
+    <tspan x="530" dy="12">2. 部分配列生成：全ての可能な区間の列挙</tspan>
+    <tspan x="530" dy="12">3. 条件判定：各部分配列が条件を満たすか</tspan>
+    <tspan x="530" dy="12">4. カウント処理：条件を満たす個数の集計</tspan>
+    <tspan x="530" dy="12">5. 出力処理：結果の出力</tspan>
+  </text>
+
+  <text x="520" y="405" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    計算量分析：
+  </text>
+  <text x="530" y="425" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    O(N²) ～ O(N³) → 制約に応じて最適化検討
+  </text>
+
+  <!-- Stage 1 Right -->
+  <rect x="920" y="265" width="380" height="200" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="930" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🔍 効果的な分解テクニック
+  </text>
+  <text x="940" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="940" dy="0">トップダウン分解：</tspan>
+    <tspan x="950" dy="12">• 全体目標から詳細処理へ</tspan>
+    <tspan x="950" dy="12">• 「何をするか」から「どうするか」へ</tspan>
+  </text>
+
+  <text x="940" y="345" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="940" dy="0">ボトムアップ分解：</tspan>
+    <tspan x="950" dy="12">• 基本操作から複合処理へ</tspan>
+    <tspan x="950" dy="12">• 「できること」を積み上げる</tspan>
+  </text>
+
+  <text x="940" y="385" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="940" dy="0">依存関係の整理：</tspan>
+    <tspan x="950" dy="12">• どの処理が前提条件か</tspan>
+    <tspan x="950" dy="12">• 並列処理可能な部分はどこか</tspan>
+  </text>
+
+  <text x="930" y="425" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    💡 分解の判定基準
+  </text>
+  <text x="940" y="445" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    各部分が独立してテスト可能
+  </text>
+
+  <!-- Stage 2: Solution Selection -->
+  <rect x="50" y="500" width="1300" height="220" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="525" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🎲 Stage 2: 解法選択（1-2分）- 最適なアプローチの決定と計算量の検証
+  </text>
+
+  <!-- Stage 2 Content -->
+  <rect x="80" y="545" width="280" height="165" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 選択すべき解法要素
+  </text>
+  <text x="100" y="585" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">✅ アルゴリズムの選択</tspan>
+    <tspan x="110" dy="12">全探索、貪欲、動的計画法など</tspan>
+    <tspan x="100" dy="24">✅ データ構造の選択</tspan>
+    <tspan x="110" dy="12">配列、辞書、集合、優先度付きキューなど</tspan>
+    <tspan x="100" dy="24">✅ 計算量の妥当性確認</tspan>
+    <tspan x="110" dy="12">制約条件との整合性</tspan>
+  </text>
+
+  <text x="90" y="655" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    ⚡ 選択の基準
+  </text>
+  <text x="100" y="675" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    実装の容易さ vs 効率性のバランス
+  </text>
+
+  <rect x="380" y="545" width="280" height="165" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="390" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📊 制約から逆算する解法選択
+  </text>
+  <text x="400" y="585" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">N ≤ 100: O(N³)まで許容</tspan>
+    <tspan x="410" dy="12">→ 全探索、3重ループも可能</tspan>
+    <tspan x="400" dy="24">N ≤ 10³: O(N²)推奨</tspan>
+    <tspan x="410" dy="12">→ 2重ループ、単純DP</tspan>
+    <tspan x="400" dy="24">N ≤ 10⁵: O(N log N)必須</tspan>
+    <tspan x="410" dy="12">→ ソート、セグメント木</tspan>
+    <tspan x="400" dy="24">N ≤ 10⁶: O(N)または O(log N)</tspan>
+    <tspan x="410" dy="12">→ 線形探索、数学的解法</tspan>
+  </text>
+
+  <rect x="680" y="545" width="300" height="165" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="690" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🧮 実践例：解法選択の判定
+  </text>
+  <text x="700" y="585" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="700" dy="0">部分配列問題（N≤1000）の場合：</tspan>
+    <tspan x="710" dy="12">候補1: 全探索 O(N³) → 10⁹回計算</tspan>
+    <tspan x="710" dy="12">候補2: 累積和活用 O(N²) → 10⁶回計算</tspan>
+    <tspan x="710" dy="12">候補3: 尺取り法 O(N) → 10³回計算</tspan>
+  </text>
+  
+  <text x="700" y="645" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    選択結果：
+  </text>
+  <text x="710" y="665" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    制約的に候補2が最適、実装も比較的容易
+  </text>
+
+  <rect x="1000" y="545" width="320" height="165" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="1010" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🚨 解法選択での注意点
+  </text>
+  <text x="1020" y="585" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1020" dy="0">過度な最適化の回避：</tspan>
+    <tspan x="1030" dy="12">• 制約を満たせば十分</tspan>
+    <tspan x="1030" dy="12">• 実装の確実性を優先</tspan>
+  </text>
+
+  <text x="1020" y="625" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1020" dy="0">複数解法の検討：</tspan>
+    <tspan x="1030" dy="12">• メイン解法とバックアップ解法</tspan>
+    <tspan x="1030" dy="12">• 実装の難易度も考慮</tspan>
+  </text>
+
+  <text x="1010" y="665" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    💡 判断の目安
+  </text>
+  <text x="1020" y="685" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    80%の確信度で決定、20%は実装で調整
+  </text>
+
+  <!-- Stage 3: Algorithm Design -->
+  <rect x="50" y="740" width="1300" height="280" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="700" y="765" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    ⚙️ Stage 3: アルゴリズム設計（3-5分）- 具体的な処理手順の詳細設計
+  </text>
+
+  <!-- Stage 3 Top Row -->
+  <rect x="80" y="785" width="280" height="120" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="805" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📋 設計すべき処理要素
+  </text>
+  <text x="100" y="825" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">✅ データの前処理手順</tspan>
+    <tspan x="100" dy="12">✅ 主要ループの構造</tspan>
+    <tspan x="100" dy="12">✅ 条件分岐の詳細ロジック</tspan>
+    <tspan x="100" dy="12">✅ 中間結果の管理方法</tspan>
+    <tspan x="100" dy="12">✅ エラーハンドリング</tspan>
+  </text>
+
+  <text x="90" y="875" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🎯 設計の精度
+  </text>
+
+  <rect x="380" y="785" width="280" height="120" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="390" y="805" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🔧 疑似コード作成のコツ
+  </text>
+  <text x="400" y="825" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="400" dy="0">日本語とコードの混合記述：</tspan>
+    <tspan x="410" dy="12">• 「配列をソートする」</tspan>
+    <tspan x="410" dy="12">• 「for i in range(N):」</tspan>
+    <tspan x="410" dy="12">• 「条件を満たす場合、カウント+1」</tspan>
+  </text>
+
+  <text x="390" y="875" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    📝 記述レベル
+  </text>
+
+  <rect x="680" y="785" width="300" height="120" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="690" y="805" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🏗️ アルゴリズム設計例
+  </text>
+  
+  <text x="700" y="825" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    <tspan x="700" dy="0">部分配列問題の疑似コード：</tspan>
+    <tspan x="710" dy="12">1. 配列 arr を読み込み</tspan>
+    <tspan x="710" dy="12">2. count = 0 で初期化</tspan>
+    <tspan x="710" dy="12">3. for i in range(N):</tspan>
+    <tspan x="720" dy="12">   for j in range(i, N):</tspan>
+    <tspan x="730" dy="12">     部分配列 arr[i:j+1] が条件を満たすなら</tspan>
+    <tspan x="730" dy="12">     count += 1</tspan>
+    <tspan x="710" dy="12">4. count を出力</tspan>
+  </text>
+
+  <rect x="1000" y="785" width="320" height="120" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="1010" y="805" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🔍 設計の検証ポイント
+  </text>
+  <text x="1020" y="825" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1020" dy="0">論理的整合性：</tspan>
+    <tspan x="1030" dy="12">• 各ステップが必要十分か</tspan>
+    <tspan x="1030" dy="12">• 漏れや重複がないか</tspan>
+  </text>
+
+  <text x="1020" y="855" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1020" dy="0">実装可能性：</tspan>
+    <tspan x="1030" dy="12">• Pythonで実現可能か</tspan>
+    <tspan x="1030" dy="12">• 複雑すぎないか</tspan>
+  </text>
+
+  <!-- Stage 3 Bottom Section -->
+  <rect x="80" y="925" width="1240" height="85" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="945" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🎯 アルゴリズム設計の品質評価指標
+  </text>
+  <text x="100" y="965" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">正確性: 全てのテストケースで正しい結果を出力する | 効率性: 制約条件下で時間・空間計算量が妥当</tspan>
+    <tspan x="100" dy="12">可読性: 疑似コードが他者に理解可能 | 実装容易性: コードへの変換が直接的</tspan>
+    <tspan x="100" dy="12">拡張性: 制約が変更されても適応可能 | 堅牢性: エッジケースでも正常動作</tspan>
+  </text>
+
+  <!-- Stage 4: Implementation Planning -->
+  <rect x="50" y="1040" width="650" height="200" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="375" y="1065" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    📝 Stage 4: 実装計画（1-2分）- コーディングの効率化
+  </text>
+
+  <!-- Stage 4 Content -->
+  <rect x="80" y="1085" width="280" height="145" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="1105" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🎯 計画すべき実装要素
+  </text>
+  <text x="100" y="1125" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">✅ 実装順序の決定</tspan>
+    <tspan x="100" dy="12">✅ 変数名の統一ルール</tspan>
+    <tspan x="100" dy="12">✅ デバッグポイントの設定</tspan>
+    <tspan x="100" dy="12">✅ テスト方法の準備</tspan>
+  </text>
+
+  <text x="90" y="1185" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    ⚡ 効率化のポイント
+  </text>
+  <text x="100" y="1205" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    段階的実装とテストの組み合わせ
+  </text>
+
+  <!-- Stage 4 Right -->
+  <rect x="380" y="1085" width="300" height="145" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="390" y="1105" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    📋 実装順序の例
+  </text>
+  <text x="400" y="1125" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="400" dy="0">1. 入力処理部分</tspan>
+    <tspan x="400" dy="12">2. データ前処理（ソートなど）</tspan>
+    <tspan x="400" dy="12">3. メインロジック（最重要部分）</tspan>
+    <tspan x="400" dy="12">4. 出力処理部分</tspan>
+    <tspan x="400" dy="12">5. エラー処理・エッジケース対応</tspan>
+  </text>
+
+  <text x="390" y="1185" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    💡 各段階でのテスト
+  </text>
+  <text x="400" y="1205" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    部分的な動作確認で品質向上
+  </text>
+
+  <!-- Stage 5: Verification Strategy -->
+  <rect x="720" y="1040" width="630" height="200" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="1035" y="1065" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ✅ Stage 5: 検証戦略（1分）- 品質保証の計画
+  </text>
+
+  <!-- Stage 5 Content -->
+  <rect x="750" y="1085" width="280" height="145" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="760" y="1105" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    🎯 検証計画の要素
+  </text>
+  <text x="770" y="1125" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="770" dy="0">✅ サンプルテストケース</tspan>
+    <tspan x="770" dy="12">✅ 自作エッジケース</tspan>
+    <tspan x="770" dy="12">✅ 計算量の実測</tspan>
+    <tspan x="770" dy="12">✅ コード品質チェック</tspan>
+  </text>
+
+  <text x="760" y="1185" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    🔍 検証の重要性
+  </text>
+  <text x="770" y="1205" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">
+    設計段階での検証計画が実装品質を決定
+  </text>
+
+  <!-- Stage 5 Right -->
+  <rect x="1050" y="1085" width="280" height="145" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="1060" y="1105" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    📊 検証レベルの設定
+  </text>
+  <text x="1070" y="1125" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="1070" dy="0">Level 1: 基本動作確認</tspan>
+    <tspan x="1070" dy="12">Level 2: エッジケース検証</tspan>
+    <tspan x="1070" dy="12">Level 3: 性能測定</tspan>
+    <tspan x="1070" dy="12">Level 4: コード品質監査</tspan>
+  </text>
+
+  <text x="1060" y="1185" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    ⏰ 時間配分
+  </text>
+  <text x="1070" y="1205" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">
+    実装時間の20%を検証に割り当て
+  </text>
+
+  <!-- Success Framework -->
+  <rect x="50" y="1260" width="1300" height="160" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="1285" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🏆 5段階設計プロセスの統合効果と成功パターン
+  </text>
+
+  <!-- Success Content -->
+  <rect x="80" y="1305" width="400" height="105" rx="6" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="90" y="1325" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    📈 設計品質の向上効果
+  </text>
+  <text x="100" y="1345" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="100" dy="0">実装エラーの削減: 90%以上</tspan>
+    <tspan x="100" dy="12">デバッグ時間の短縮: 70%以上</tspan>
+    <tspan x="100" dy="12">コード品質の向上: 大幅改善</tspan>
+    <tspan x="100" dy="12">解答速度の向上: 長期的に2-3倍</tspan>
+  </text>
+
+  <text x="90" y="1385" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    💡 継続的改善
+  </text>
+
+  <rect x="500" y="1305" width="400" height="105" rx="6" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="510" y="1325" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🎯 設計力向上のマイルストーン
+  </text>
+  <text x="520" y="1345" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="520" dy="0">初級: 各段階を意識して実行（3-4週間）</tspan>
+    <tspan x="520" dy="12">中級: 段階間の連携を最適化（2-3ヶ月）</tspan>
+    <tspan x="520" dy="12">上級: 直感的な設計判断（6ヶ月-1年）</tspan>
+    <tspan x="520" dy="12">エキスパート: 自動化された設計思考</tspan>
+  </text>
+
+  <text x="510" y="1385" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0369a1">
+    📊 習熟度の指標
+  </text>
+
+  <rect x="920" y="1305" width="380" height="105" rx="6" fill="white" stroke="#7dd3fc" stroke-width="1"/>
+  <text x="930" y="1325" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#0369a1">
+    🚀 実践での活用法
+  </text>
+  <text x="940" y="1345" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="940" dy="0">コンテスト本番:</tspan>
+    <tspan x="950" dy="12">• 設計に集中した時間確保</tspan>
+    <tspan x="950" dy="12">• 実装前の確信度80%以上で開始</tspan>
+  </text>
+
+  <text x="940" y="1375" font-family="Arial, sans-serif" font-size="10" fill="#0369a1">
+    <tspan x="940" dy="0">練習時:</tspan>
+    <tspan x="950" dy="12">• 設計プロセスの記録と振り返り</tspan>
+    <tspan x="950" dy="12">• 各段階の時間測定と最適化</tspan>
+  </text>
+
+  <!-- Final Message -->
+  <rect x="50" y="1440" width="1300" height="120" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="1465" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🌟 体系的な解法設計で競技プログラミングの実力を飛躍的に向上！
+  </text>
+  <text x="700" y="1485" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#15803d">
+    問題分解 → 解法選択 → アルゴリズム設計 → 実装計画 → 検証戦略の5段階で確実な問題解決
+  </text>
+  <text x="700" y="1505" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#15803d">
+    設計に時間をかけることで、実装とデバッグの効率が飛躍的に向上する
+  </text>
+  <text x="700" y="1525" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#15803d">
+    継続的な練習により、複雑な問題でも短時間で高品質な解法を構築できるようになる
+  </text>
+  <text x="700" y="1545" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#15803d">
+    体系的アプローチにより、プログラミングスキル全般が大幅に向上する
+  </text>
+</svg>

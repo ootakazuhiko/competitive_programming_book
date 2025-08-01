@@ -1,0 +1,405 @@
+<svg viewBox="0 0 1400 1600" xmlns="http://www.w3.org/2000/svg">
+  <title>図8-1：問題文読解の3段階プロセス</title>
+  <desc>競技プログラミング問題文を効率的かつ確実に理解するための段階的読解手法</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1600" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    問題文読解の3段階プロセス
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    問題の本質を見抜き、正確な解法設計につなげる読解術
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🎯 3段階読解プロセスの全体像
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">Stage 1: 全体把握（30秒-1分）→ Stage 2: 詳細分析（2-3分）→ Stage 3: 構造化理解（1-2分）</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">🎯 目標：問題の本質的な要求を完全に理解し、解法の方向性を明確にする</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：読解を急がず、理解に確実な時間をかけることで後続ステップの効率が大幅向上</tspan>
+  </text>
+
+  <!-- Stage 1: Overall Understanding -->
+  <rect x="50" y="220" width="1300" height="280" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    📖 Stage 1: 全体把握（30秒-1分）- 問題の概要と難易度を素早く判定
+  </text>
+
+  <!-- Stage 1 Left -->
+  <rect x="80" y="265" width="400" height="220" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🎯 実行する読解項目
+  </text>
+  <text x="100" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">✅ 問題タイトルから問題領域を推測</tspan>
+    <tspan x="110" dy="12">例：「Sorting」→ソート関連、「Game」→ゲーム理論</tspan>
+    <tspan x="100" dy="24">✅ 問題文の長さから難易度を予想</tspan>
+    <tspan x="110" dy="12">短文：A問題レベル、長文：B-C問題レベル</tspan>
+    <tspan x="100" dy="24">✅ 制約条件をざっと確認</tspan>
+    <tspan x="110" dy="12">N≤100：全探索可能、N≤10^5：効率的解法必要</tspan>
+    <tspan x="100" dy="24">✅ 入出力例の個数と複雑さを把握</tspan>
+    <tspan x="110" dy="12">多い例：境界条件重要、複雑な例：実装が困難</tspan>
+  </text>
+
+  <text x="90" y="425" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    🧠 Stage 1の判断材料
+  </text>
+  <text x="100" y="445" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    問題の「第一印象」で解法の方向性を予想
+  </text>
+  <text x="100" y="460" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    時間配分の初期計画を立てる
+  </text>
+
+  <!-- Stage 1 Middle -->
+  <rect x="500" y="265" width="400" height="220" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="510" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    📊 実践例：問題の第一印象分析
+  </text>
+  
+  <text x="520" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="520" dy="0">問題例：「B - Card Game for Two」</tspan>
+  </text>
+  
+  <text x="520" y="325" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    第一印象分析：
+  </text>
+  <text x="530" y="345" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    <tspan x="530" dy="0">• タイトル分析：「Card Game」→ゲーム理論系</tspan>
+    <tspan x="530" dy="12">• 「Two」→2人ゲーム、最適戦略が関係？</tspan>
+    <tspan x="530" dy="12">• 制約：N≤100 → 比較的小さい、全探索も可能</tspan>
+    <tspan x="530" dy="12">• 問題文：中程度の長さ → B問題レベル</tspan>
+  </text>
+
+  <text x="520" y="405" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    予想される解法方向：
+  </text>
+  <text x="530" y="425" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    貪欲法（最適戦略）、ソート、配列操作
+  </text>
+  <text x="530" y="440" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    時間配分：15-20分程度の見積もり
+  </text>
+
+  <!-- Stage 1 Right -->
+  <rect x="920" y="265" width="380" height="220" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="930" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    ⚡ 速読テクニックと注意点
+  </text>
+  <text x="940" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="940" dy="0">効率的な速読方法：</tspan>
+    <tspan x="950" dy="12">• キーワードに注目：「最大」「最小」「個数」</tspan>
+    <tspan x="950" dy="12">• 数値を優先：制約条件、入出力サイズ</tspan>
+    <tspan x="950" dy="12">• 図表があれば必ず確認</tspan>
+  </text>
+
+  <text x="940" y="355" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="940" dy="0">よくある読み飛ばしミス：</tspan>
+    <tspan x="950" dy="12">❌ 制約条件の見落とし</tspan>
+    <tspan x="950" dy="12">❌ 特殊条件（0以下、重複など）の無視</tspan>
+    <tspan x="950" dy="12">❌ 出力形式の確認不足</tspan>
+  </text>
+
+  <text x="930" y="405" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    💡 Stage 1での心構え
+  </text>
+  <text x="940" y="425" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    完璧な理解は求めない
+  </text>
+  <text x="940" y="440" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    「何となくこんな問題」の感覚を掴む
+  </text>
+
+  <!-- Stage 2: Detailed Analysis -->
+  <rect x="50" y="520" width="1300" height="320" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="545" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🔬 Stage 2: 詳細分析（2-3分）- 問題要求の正確な理解と解法設計
+  </text>
+
+  <!-- Stage 2 Top Left -->
+  <rect x="80" y="565" width="280" height="140" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📋 詳細分析のチェック項目
+  </text>
+  <text x="100" y="605" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">✅ 問題の正確な要求を1文で要約</tspan>
+    <tspan x="100" dy="12">✅ 入力データの形式と意味を確認</tspan>
+    <tspan x="100" dy="12">✅ 出力すべき結果の形式を確認</tspan>
+    <tspan x="100" dy="12">✅ 制約条件の詳細理解</tspan>
+    <tspan x="100" dy="12">✅ 特殊ケース・エッジケースの想定</tspan>
+  </text>
+
+  <text x="90" y="665" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 分析の深度
+  </text>
+  <text x="100" y="685" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    「なぜその処理が必要か」まで理解
+  </text>
+
+  <!-- Stage 2 Top Right -->
+  <rect x="380" y="565" width="280" height="140" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="390" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🔍 問題要求の構文解析
+  </text>
+  <text x="400" y="605" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">主語の特定：「誰が」行動するか</tspan>
+    <tspan x="410" dy="12">例：Alice, プレイヤー, アルゴリズム</tspan>
+    <tspan x="400" dy="24">動詞の特定：「何を」するか</tspan>
+    <tspan x="410" dy="12">例：最大化、選択、判定、計算</tspan>
+    <tspan x="400" dy="24">目的語の特定：「何に対して」か</tspan>
+    <tspan x="410" dy="12">例：得点、個数、距離、時間</tspan>
+  </text>
+
+  <text x="390" y="665" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    📖 読解の精度向上
+  </text>
+  <text x="400" y="685" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    曖昧な理解は後でトラブルの元
+  </text>
+
+  <!-- Stage 2 Middle -->
+  <rect x="680" y="565" width="300" height="140" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="690" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📊 制約条件の戦略的解釈
+  </text>
+  <text x="700" y="605" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="700" dy="0">N ≤ 100：</tspan>
+    <tspan x="710" dy="12">→ O(N²)、O(N³)も許容、全探索推奨</tspan>
+    <tspan x="700" dy="24">N ≤ 10^5：</tspan>
+    <tspan x="710" dy="12">→ O(N log N)以下必須、ソート活用</tspan>
+    <tspan x="700" dy="24">N ≤ 10^9：</tspan>
+    <tspan x="710" dy="12">→ O(log N)、数学的解法が必要</tspan>
+  </text>
+
+  <text x="690" y="665" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    ⚡ 解法選択の指針
+  </text>
+  <text x="700" y="685" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    制約から逆算して最適解法を判定
+  </text>
+
+  <!-- Stage 2 Right -->
+  <rect x="1000" y="565" width="320" height="140" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="1010" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🚨 詳細分析での重要ポイント
+  </text>
+  <text x="1020" y="605" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1020" dy="0">暗黙の条件を見抜く：</tspan>
+    <tspan x="1030" dy="12">• 「整数」→小数点以下切り捨て？</tspan>
+    <tspan x="1030" dy="12">• 「異なる」→重複禁止の意味？</tspan>
+    <tspan x="1030" dy="12">• 「最適」→最大？最小？</tspan>
+  </text>
+
+  <text x="1020" y="645" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1020" dy="0">日本語の曖昧さに注意：</tspan>
+    <tspan x="1030" dy="12">• 「AまたはB」→排他的？包含的？</tspan>
+    <tspan x="1030" dy="12">• 「少なくとも」「多くとも」</tspan>
+  </text>
+
+  <!-- Stage 2 Bottom Section -->
+  <rect x="80" y="725" width="1240" height="105" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="745" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📝 実践例：詳細分析の実際（Card Game for Two 問題）
+  </text>
+  <text x="100" y="765" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">問題要求の1文要約：「N枚のカードを2人が交互に取り、各自の得点の最大化を目指すゲームでのAliceの得点を求める」</tspan>
+    <tspan x="100" dy="12">入力分析：N（カード枚数）、a_i（各カードの得点） | 出力分析：Alice の最終得点（整数）</tspan>
+    <tspan x="100" dy="12">制約戦略：N≤100 → 全探索も可能だが、貪欲法（降順ソート→交互取得）が最適解</tspan>
+    <tspan x="100" dy="12">特殊ケース：N=1（Aliceが全て取得）、全て同じ値（順序無関係）、負の値（最小損失戦略）</tspan>
+  </text>
+
+  <!-- Stage 3: Structured Understanding -->
+  <rect x="50" y="860" width="1300" height="280" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="700" y="885" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🏗️ Stage 3: 構造化理解（1-2分）- 解法設計のための情報整理
+  </text>
+
+  <!-- Stage 3 Left -->
+  <rect x="80" y="905" width="400" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="925" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🗂️ 問題情報の構造化整理
+  </text>
+  <text x="100" y="945" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">✅ 入力→処理→出力の流れを図式化</tspan>
+    <tspan x="100" dy="12">✅ 必要なデータ構造の選定</tspan>
+    <tspan x="110" dy="12">配列、辞書、集合、優先度付きキューなど</tspan>
+    <tspan x="100" dy="24">✅ アルゴリズムの大まかな流れを設計</tspan>
+    <tspan x="110" dy="12">前処理→主処理→後処理の3段階</tspan>
+    <tspan x="100" dy="24">✅ 計算量の見積もりと妥当性確認</tspan>
+    <tspan x="100" dy="24">✅ エッジケース処理の方針決定</tspan>
+  </text>
+
+  <text x="90" y="1055" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🎯 構造化の目標
+  </text>
+  <text x="100" y="1075" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    実装前に「何をどの順序で書くか」を明確化
+  </text>
+  <text x="100" y="1090" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    実装中の迷いを最小限に抑える
+  </text>
+
+  <!-- Stage 3 Middle -->
+  <rect x="500" y="905" width="400" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="510" y="925" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📋 解法設計テンプレートの活用
+  </text>
+  
+  <text x="520" y="945" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">
+    Card Game問題の構造化例：
+  </text>
+  <text x="530" y="965" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    <tspan x="530" dy="0">1. データ構造：配列（カード得点）</tspan>
+    <tspan x="530" dy="12">2. 前処理：降順ソート</tspan>
+    <tspan x="530" dy="12">3. 主処理：交互に最大値を取得</tspan>
+    <tspan x="530" dy="12">4. 後処理：Aliceの得点を合計</tspan>
+    <tspan x="530" dy="12">5. 計算量：O(N log N) ← ソートが支配的</tspan>
+  </text>
+
+  <text x="520" y="1025" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">
+    実装順序：
+  </text>
+  <text x="530" y="1045" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    入力処理→ソート→ループ→出力
+  </text>
+  <text x="530" y="1060" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    各段階でデバッグしながら進行
+  </text>
+
+  <!-- Stage 3 Right -->
+  <rect x="920" y="905" width="380" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="930" y="925" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    ⚡ 構造化の実践テクニック
+  </text>
+  <text x="940" y="945" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="940" dy="0">疑似コードの活用：</tspan>
+    <tspan x="950" dy="12">• 日本語と英語の混合でOK</tspan>
+    <tspan x="950" dy="12">• 詳細な文法は不要</tspan>
+    <tspan x="950" dy="12">• 処理の流れが分かれば十分</tspan>
+  </text>
+
+  <text x="940" y="995" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="940" dy="0">図解の活用：</tspan>
+    <tspan x="950" dy="12">• 複雑な条件分岐は図で整理</tspan>
+    <tspan x="950" dy="12">• データの流れを矢印で表現</tspan>
+    <tspan x="950" dy="12">• 手書きメモで十分</tspan>
+  </text>
+
+  <text x="930" y="1045" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    📊 理解度のセルフチェック
+  </text>
+  <text x="940" y="1065" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    「友人に問題を説明できるか？」
+  </text>
+  <text x="940" y="1080" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    「なぜその解法で正しいか？」
+  </text>
+
+  <!-- Common Mistakes Section -->
+  <rect x="50" y="1160" width="1300" height="180" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="700" y="1185" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    ⚠️ 読解プロセスでのよくある失敗パターンと対策
+  </text>
+
+  <!-- Mistake 1 -->
+  <rect x="80" y="1205" width="280" height="125" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="90" y="1225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ❌ 失敗パターン1：性急な読解
+  </text>
+  <text x="100" y="1245" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="100" dy="0">問題文を1回だけ読んで</tspan>
+    <tspan x="100" dy="12">「なんとなく理解した」と</tspan>
+    <tspan x="100" dy="12">判断してしまう</tspan>
+  </text>
+
+  <text x="90" y="1285" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    ✅ 対策
+  </text>
+  <text x="100" y="1305" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">
+    必ず2回以上読む、理解を言語化
+  </text>
+
+  <!-- Mistake 2 -->
+  <rect x="380" y="1205" width="280" height="125" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="390" y="1225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ❌ 失敗パターン2：制約軽視
+  </text>
+  <text x="400" y="1245" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="400" dy="0">制約条件を読み飛ばし、</tspan>
+    <tspan x="400" dy="12">非効率な解法を選択</tspan>
+    <tspan x="400" dy="12">TLE（時間超過）で失敗</tspan>
+  </text>
+
+  <text x="390" y="1285" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    ✅ 対策
+  </text>
+  <text x="400" y="1305" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">
+    制約から計算量を逆算、解法選択
+  </text>
+
+  <!-- Mistake 3 -->
+  <rect x="680" y="1205" width="280" height="125" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="690" y="1225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ❌ 失敗パターン3：サンプル軽視
+  </text>
+  <text x="700" y="1245" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="700" dy="0">サンプル入出力を</tspan>
+    <tspan x="700" dy="12">「参考程度」と考え、</tspan>
+    <tspan x="700" dy="12">詳細な分析を怠る</tspan>
+  </text>
+
+  <text x="690" y="1285" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    ✅ 対策
+  </text>
+  <text x="700" y="1305" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">
+    手計算で変換過程を完全理解
+  </text>
+
+  <!-- Mistake 4 -->
+  <rect x="980" y="1205" width="320" height="125" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="990" y="1225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    ❌ 失敗パターン4：構造化不足
+  </text>
+  <text x="1000" y="1245" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="1000" dy="0">問題を理解したつもりで</tspan>
+    <tspan x="1000" dy="12">いきなり実装開始、</tspan>
+    <tspan x="1000" dy="12">途中で方針変更が必要に</tspan>
+  </text>
+
+  <text x="990" y="1285" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    ✅ 対策
+  </text>
+  <text x="1000" y="1305" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">
+    疑似コード作成、段階的設計
+  </text>
+
+  <!-- Success Framework -->
+  <rect x="50" y="1360" width="1300" height="120" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="1385" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🏆 効果的な問題文読解で解答成功率を大幅向上！
+  </text>
+  <text x="700" y="1405" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#15803d">
+    全体把握 → 詳細分析 → 構造化理解の3段階で確実な理解を実現
+  </text>
+  <text x="700" y="1425" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#15803d">
+    「読解を急がず、理解に時間をかける」ことが結果的に最も効率的
+  </text>
+  <text x="700" y="1445" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#15803d">
+    問題の本質を正確に把握することで、実装やデバッグでの迷いが激減する
+  </text>
+  <text x="700" y="1465" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#15803d">
+    継続的な練習により、複雑な問題文も短時間で正確に理解できるようになる
+  </text>
+</svg>

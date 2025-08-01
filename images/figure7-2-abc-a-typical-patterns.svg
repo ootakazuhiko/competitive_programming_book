@@ -1,0 +1,558 @@
+<svg viewBox="0 0 1400 1600" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-2：ABC A問題の典型パターンと実装戦略</title>
+  <desc>AtCoder Beginner Contest A問題における4つの典型パターンの詳細分析と、それぞれの実装アプローチ</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1600" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    ABC A問題の典型パターンと実装戦略
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    パターン認識から実装までの完全ガイド
+  </text>
+
+  <!-- Pattern 1: Arithmetic Operations -->
+  <rect x="50" y="80" width="650" height="360" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="375" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    📊 パターン1：四則演算（出現率35%）
+  </text>
+
+  <!-- Arithmetic - Characteristics -->
+  <rect x="80" y="125" width="280" height="140" rx="6" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="90" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    🎯 基本特徴
+  </text>
+  <text x="100" y="165" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="100" dy="0">• 数値の入力→計算→出力の単純な流れ</tspan>
+    <tspan x="100" dy="12">• 基本的な四則演算（+, -, *, /, //, %）</tspan>
+    <tspan x="100" dy="12">• 単位変換、比率計算、差分計算</tspan>
+    <tspan x="100" dy="12">• 数学的な公式の実装</tspan>
+    <tspan x="100" dy="12">• 小数点以下の扱いに注意</tspan>
+  </text>
+  
+  <text x="90" y="225" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    💡 識別キーワード
+  </text>
+  <text x="100" y="245" font-family="Arial, sans-serif" font-size="9" fill="#1e40af">
+    「計算せよ」「求めよ」「何倍」「差」「合計」
+  </text>
+
+  <!-- Arithmetic - Implementation Strategy -->
+  <rect x="380" y="125" width="300" height="140" rx="6" fill="white" stroke="#93c5fd" stroke-width="1"/>
+  <text x="390" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    🚀 実装戦略
+  </text>
+  <text x="400" y="165" font-family="Arial, sans-serif" font-size="10" fill="#1e40af">
+    <tspan x="400" dy="0">1. 入力値の型を正確に判定（int vs float）</tspan>
+    <tspan x="400" dy="12">2. 演算子の優先順位を意識</tspan>
+    <tspan x="400" dy="12">3. 整数除算（//）と通常除算（/）の使い分け</tspan>
+    <tspan x="400" dy="12">4. 剰余演算（%）の活用機会を検討</tspan>
+    <tspan x="400" dy="12">5. 出力形式（整数/小数）の確認</tspan>
+  </text>
+
+  <text x="390" y="225" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    ⚠️ 注意点
+  </text>
+  <text x="400" y="245" font-family="Arial, sans-serif" font-size="9" fill="#1e40af">
+    ゼロ除算、オーバーフロー、精度誤差
+  </text>
+
+  <!-- Arithmetic - Code Examples -->
+  <rect x="80" y="280" width="600" height="150" rx="6" fill="#f0f9ff" stroke="#93c5fd" stroke-width="1"/>
+  <text x="90" y="300" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1e40af">
+    📝 実装例とパターン別テンプレート
+  </text>
+
+  <text x="100" y="320" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    例1: 基本計算（ABC086 A - Product）
+  </text>
+  <text x="110" y="335" font-family="Monaco, monospace" font-size="8" fill="#1e40af">
+    a, b = map(int, input().split())
+  </text>
+  <text x="110" y="345" font-family="Monaco, monospace" font-size="8" fill="#1e40af">
+    print("Even" if (a * b) % 2 == 0 else "Odd")
+  </text>
+
+  <text x="400" y="320" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    例2: 単位変換（ABC083 A - Libra）
+  </text>
+  <text x="410" y="335" font-family="Monaco, monospace" font-size="8" fill="#1e40af">
+    a, b, c, d = map(int, input().split())
+  </text>
+  <text x="410" y="345" font-family="Monaco, monospace" font-size="8" fill="#1e40af">
+    print("Left" if a + b > c + d else "Right" if a + b < c + d else "Balanced")
+  </text>
+
+  <text x="100" y="375" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e40af">
+    汎用テンプレート：
+  </text>
+  <text x="110" y="390" font-family="Monaco, monospace" font-size="8" fill="#1e40af">
+    # 数値入力 → 計算 → 結果出力
+  </text>
+  <text x="110" y="400" font-family="Monaco, monospace" font-size="8" fill="#1e40af">
+    nums = list(map(int, input().split()))  # または個別のint(input())
+  </text>
+  <text x="110" y="410" font-family="Monaco, monospace" font-size="8" fill="#1e40af">
+    result = 計算式  # 四則演算を適用
+  </text>
+  <text x="110" y="420" font-family="Monaco, monospace" font-size="8" fill="#1e40af">
+    print(result)
+  </text>
+
+  <!-- Pattern 2: Conditional Logic -->
+  <rect x="720" y="80" width="630" height="360" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="1035" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🔀 パターン2：条件判定（出現率30%）
+  </text>
+
+  <!-- Conditional - Characteristics -->
+  <rect x="750" y="125" width="280" height="140" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="760" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 基本特徴
+  </text>
+  <text x="770" y="165" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="770" dy="0">• if-else文による分岐処理</tspan>
+    <tspan x="770" dy="12">• Yes/No、可能/不可能の判定</tspan>
+    <tspan x="770" dy="12">• 複数条件の組み合わせ（and, or）</tspan>
+    <tspan x="770" dy="12">• 数学的性質の活用（偶数/奇数など）</tspan>
+    <tspan x="770" dy="12">• 範囲判定、閾値との比較</tspan>
+  </text>
+  
+  <text x="760" y="225" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    💡 識別キーワード
+  </text>
+  <text x="770" y="245" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    「判定せよ」「可能か」「Yes/No」「場合分け」
+  </text>
+
+  <!-- Conditional - Implementation Strategy -->
+  <rect x="1050" y="125" width="280" height="140" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="1060" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🚀 実装戦略
+  </text>
+  <text x="1070" y="165" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1070" dy="0">1. 条件を明確に整理（フローチャート化）</tspan>
+    <tspan x="1070" dy="12">2. 境界値の処理を慎重に検討</tspan>
+    <tspan x="1070" dy="12">3. 複雑な条件は分割して記述</tspan>
+    <tspan x="1070" dy="12">4. 三項演算子の適切な活用</tspan>
+    <tspan x="1070" dy="12">5. エッジケースの洗い出し</tspan>
+  </text>
+
+  <text x="1060" y="225" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    ⚠️ 注意点
+  </text>
+  <text x="1070" y="245" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    条件の漏れ、境界値エラー、論理演算の優先順位
+  </text>
+
+  <!-- Conditional - Code Examples -->
+  <rect x="750" y="280" width="580" height="150" rx="6" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="760" y="300" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📝 実装例とパターン別テンプレート
+  </text>
+
+  <text x="770" y="320" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    例1: 単純判定（ABC081 A - Placing Marbles）
+  </text>
+  <text x="780" y="335" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    s = input()
+  </text>
+  <text x="780" y="345" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    print(s.count('1'))  # 1の個数をカウント
+  </text>
+
+  <text x="1050" y="320" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    例2: 複数条件（ABC085 A - Already 2018）
+  </text>
+  <text x="1060" y="335" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    s = input()
+  </text>
+  <text x="1060" y="345" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    print(s.replace("2017", "2018"))
+  </text>
+
+  <text x="770" y="375" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#15803d">
+    汎用テンプレート：
+  </text>
+  <text x="780" y="390" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    # 条件判定の基本パターン
+  </text>
+  <text x="780" y="400" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    if 条件1:
+  </text>
+  <text x="780" y="410" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+        print("結果1")
+  </text>
+  <text x="780" y="420" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    else:
+  </text>
+  <text x="790" y="420" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+        print("結果2")
+  </text>
+
+  <!-- Pattern 3: String Processing -->
+  <rect x="50" y="460" width="650" height="360" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="375" y="485" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🔤 パターン3：文字列操作（出現率20%）
+  </text>
+
+  <!-- String - Characteristics -->
+  <rect x="80" y="505" width="280" height="140" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🎯 基本特徴
+  </text>
+  <text x="100" y="545" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">• 文字列の長さ、分割、結合処理</tspan>
+    <tspan x="100" dy="12">• 特定文字のカウント、置換</tspan>
+    <tspan x="100" dy="12">• 部分文字列の抽出、検索</tspan>
+    <tspan x="100" dy="12">• 文字列の比較、ソート</tspan>
+    <tspan x="100" dy="12">• 正規表現は通常不要（基本メソッドで十分）</tspan>
+  </text>
+  
+  <text x="90" y="605" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    💡 識別キーワード
+  </text>
+  <text x="100" y="625" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    「文字列」「個数」「置換」「長さ」「含む」
+  </text>
+
+  <!-- String - Implementation Strategy -->
+  <rect x="380" y="505" width="300" height="140" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="390" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🚀 実装戦略
+  </text>
+  <text x="400" y="545" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="400" dy="0">1. Python文字列メソッドを活用</tspan>
+    <tspan x="400" dy="12">2. インデックスアクセス時の範囲確認</tspan>
+    <tspan x="400" dy="12">3. 大文字小文字の区別に注意</tspan>
+    <tspan x="400" dy="12">4. split(), join(), replace()の習熟</tspan>
+    <tspan x="400" dy="12">5. スライス記法の効果的な利用</tspan>
+  </text>
+
+  <text x="390" y="605" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    ⚠️ 注意点
+  </text>
+  <text x="400" y="625" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    インデックス範囲外、文字コード、空文字列処理
+  </text>
+
+  <!-- String - Code Examples -->
+  <rect x="80" y="660" width="600" height="150" rx="6" fill "#fffbeb" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="680" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    📝 実装例とパターン別テンプレート
+  </text>
+
+  <text x="100" y="700" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    例1: 文字カウント（ABC081 A）
+  </text>
+  <text x="110" y="715" font-family="Monaco, monospace" font-size="8" fill="#d97706">
+    s = input()
+  </text>
+  <text x="110" y="725" font-family="Monaco, monospace" font-size="8" fill="#d97706">
+    print(s.count('1'))
+  </text>
+
+  <text x="400" y="700" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    例2: 文字列置換（ABC085 A）
+  </text>
+  <text x="410" y="715" font-family="Monaco, monospace" font-size="8" fill="#d97706">
+    s = input()
+  </text>
+  <text x="410" y="725" font-family="Monaco, monospace" font-size="8" fill="#d97706">
+    print(s.replace("2017", "2018"))
+  </text>
+
+  <text x="100" y="755" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    汎用テンプレート：
+  </text>
+  <text x="110" y="770" font-family="Monaco, monospace" font-size="8" fill="#d97706">
+    s = input()  # 文字列入力
+  </text>
+  <text x="110" y="780" font-family="Monaco, monospace" font-size="8" fill="#d97706">
+    # よく使う操作: len(s), s.count(c), s.replace(old, new)
+  </text>
+  <text x="110" y="790" font-family="Monaco, monospace" font-size="8" fill="#d97706">
+    result = 文字列操作  # 目的に応じた処理
+  </text>
+  <text x="110" y="800" font-family="Monaco, monospace" font-size="8" fill="#d97706">
+    print(result)
+  </text>
+
+  <!-- Pattern 4: Array/List Operations -->
+  <rect x="720" y="460" width="630" height="360" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="1035" y="485" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📋 パターン4：配列操作（出現率15%）
+  </text>
+
+  <!-- Array - Characteristics -->
+  <rect x="750" y="505" width="280" height="140" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="760" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🎯 基本特徴
+  </text>
+  <text x="770" y="545" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="770" dy="0">• 配列の最大値、最小値、合計値</tspan>
+    <tspan x="770" dy="12">• 要素の検索、カウント</tspan>
+    <tspan x="770" dy="12">• 距離計算（絶対値差）</tspan>
+    <tspan x="770" dy="12">• ソート、逆順処理</tspan>
+    <tspan x="770" dy="12">• インデックスを使った位置計算</tspan>
+  </text>
+  
+  <text x="760" y="605" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    💡 識別キーワード
+  </text>
+  <text x="770" y="625" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    「最大」「最小」「合計」「距離」「近い」
+  </text>
+
+  <!-- Array - Implementation Strategy -->
+  <rect x="1050" y="505" width="280" height="140" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="1060" y="525" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🚀 実装戦略
+  </text>
+  <text x="1070" y="545" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="1070" dy="0">1. Python組み込み関数の活用（max, min, sum）</tspan>
+    <tspan x="1070" dy="12">2. リスト内包表記の効果的利用</tspan>
+    <tspan x="1070" dy="12">3. enumerate()でインデックス取得</tspan>
+    <tspan x="1070" dy="12">4. abs()関数で距離計算</tspan>
+    <tspan x="1070" dy="12">5. sorted()と.sort()の使い分け</tspan>
+  </text>
+
+  <text x="1060" y="605" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    ⚠️ 注意点
+  </text>
+  <text x="1070" y="625" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    空リスト、インデックス範囲外、データ型統一
+  </text>
+
+  <!-- Array - Code Examples -->
+  <rect x="750" y="660" width="580" height="150" rx="6" fill="#faf5ff" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="760" y="680" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📝 実装例とパターン別テンプレート
+  </text>
+
+  <text x="770" y="700" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">
+    例1: 最近距離（ABC091 A）
+  </text>
+  <text x="780" y="715" font-family="Monaco, monospace" font-size="8" fill="#6b21a8">
+    x, a, b = map(int, input().split())
+  </text>
+  <text x="780" y="725" font-family="Monaco, monospace" font-size="8" fill="#6b21a8">
+    print("A" if abs(x-a) < abs(x-b) else "B")
+  </text>
+
+  <text x="1050" y="700" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">
+    例2: 配列処理（ABC087 A）
+  </text>
+  <text x="1060" y="715" font-family="Monaco, monospace" font-size="8" fill="#6b21a8">
+    x, a, b = map(int, input().split())
+  </text>
+  <text x="1060" y="725" font-family="Monaco, monospace" font-size="8" fill="#6b21a8">
+    print(max(0, x - a - b))
+  </text>
+
+  <text x="770" y="755" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">
+    汎用テンプレート：
+  </text>
+  <text x="780" y="770" font-family="Monaco, monospace" font-size="8" fill="#6b21a8">
+    arr = list(map(int, input().split()))  # 配列入力
+  </text>
+  <text x="780" y="780" font-family="Monaco, monospace" font-size="8" fill="#6b21a8">
+    # よく使う操作: max(arr), min(arr), sum(arr), len(arr)
+  </text>
+  <text x="780" y="790" font-family="Monaco, monospace" font-size="8" fill="#6b21a8">
+    result = 配列操作  # 最大/最小/合計/距離計算など
+  </text>
+  <text x="780" y="800" font-family="Monaco, monospace" font-size="8" fill="#6b21a8">
+    print(result)
+  </text>
+
+  <!-- Pattern Recognition Strategy -->
+  <rect x="50" y="840" width="1300" height="280" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="700" y="865" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    🎯 パターン認識戦略：問題文から最適解法を瞬時に判定
+  </text>
+
+  <!-- Recognition Flow -->
+  <rect x="80" y="885" width="300" height="225" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="905" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    📋 問題文解析のフローチャート
+  </text>
+  <text x="100" y="925" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">Step 1: キーワード抽出</tspan>
+    <tspan x="110" dy="12">• 「計算」「求める」→ 四則演算</tspan>
+    <tspan x="110" dy="12">• 「判定」「可能」→ 条件分岐</tspan>
+    <tspan x="110" dy="12">• 「文字」「個数」→ 文字列操作</tspan>
+    <tspan x="110" dy="12">• 「最大」「距離」→ 配列操作</tspan>
+  </text>
+  <text x="100" y="985" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">Step 2: 入出力形式確認</tspan>
+    <tspan x="110" dy="12">• 数値のみ → 四則演算または配列</tspan>
+    <tspan x="110" dy="12">• 文字列含む → 文字列操作</tspan>
+    <tspan x="110" dy="12">• Yes/No出力 → 条件判定</tspan>
+  </text>
+  <text x="100" y="1045" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">Step 3: サンプルで仮説検証</tspan>
+    <tspan x="110" dy="12">• 手計算で変換過程を確認</tspan>
+    <tspan x="110" dy="12">• パターンが一致するか検証</tspan>
+  </text>
+
+  <!-- Common Combinations -->
+  <rect x="400" y="885" width="320" height="225" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="410" y="905" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🔄 パターンの組み合わせ例
+  </text>
+  <text x="420" y="925" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="420" dy="0">複合パターン1: 計算 + 条件判定</tspan>
+    <tspan x="430" dy="12">例: a * b が偶数かどうか判定</tspan>
+    <tspan x="430" dy="12">→ 四則演算 + 剰余 + if文</tspan>
+  </text>
+  <text x="420" y="975" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="420" dy="0">複合パターン2: 文字列 + カウント</tspan>
+    <tspan x="430" dy="12">例: 特定文字の出現回数</tspan>
+    <tspan x="430" dy="12">→ 文字列メソッド + 配列操作</tspan>
+  </text>
+  <text x="420" y="1025" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="420" dy="0">複合パターン3: 配列 + 条件</tspan>
+    <tspan x="430" dy="12">例: 最小値が条件を満たすか</tspan>
+    <tspan x="430" dy="12">→ min() + 比較演算子</tspan>
+  </text>
+
+  <!-- Speed Optimization -->
+  <rect x="740" y="885" width="290" height="225" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="750" y="905" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    ⚡ 高速実装のコツ
+  </text>
+  <text x="760" y="925" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="760" dy="0">1. パターン別テンプレートの暗記</tspan>
+    <tspan x="770" dy="12">• よく使うコード片を手に覚えさせる</tspan>
+    <tspan x="770" dy="12">• input(), map(), split()の組み合わせ</tspan>
+  </text>
+  <text x="760" y="965" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="760" dy="0">2. Python組み込み関数の活用</tspan>
+    <tspan x="770" dy="12">• max(), min(), sum(), abs()</tspan>
+    <tspan x="770" dy="12">• count(), replace(), split()</tspan>
+  </text>
+  <text x="760" y="1005" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="760" dy="0">3. 三項演算子で短縮</tspan>
+    <tspan x="770" dy="12">• result = A if 条件 else B</tspan>
+    <tspan x="770" dy="12">• 簡潔で読みやすいコード</tspan>
+  </text>
+
+  <!-- Best Practices -->
+  <rect x="1050" y="885" width="280" height="225" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="1060" y="905" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    📚 実践的なベストプラクティス
+  </text>
+  <text x="1070" y="925" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="1070" dy="0">日々の練習方法:</tspan>
+    <tspan x="1080" dy="12">• 各パターン10問ずつ解く</tspan>
+    <tspan x="1080" dy="12">• 時間を測って高速化</tspan>
+    <tspan x="1080" dy="12">• 間違いパターンを記録</tspan>
+  </text>
+  <text x="1070" y="975" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="1070" dy="0">コンテスト本番:</tspan>
+    <tspan x="1080" dy="12">• 問題文を2回読む</tspan>
+    <tspan x="1080" dy="12">• パターン識別に30秒</tspan>
+    <tspan x="1080" dy="12">• サンプルで必ず検証</tspan>
+  </text>
+  <text x="1070" y="1025" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="1070" dy="0">継続的改善:</tspan>
+    <tspan x="1080" dy="12">• 解法の振り返り</tspan>
+    <tspan x="1080" dy="12">• より短いコードの模索</tspan>
+    <tspan x="1080" dy="12">• 新パターンの蓄積</tspan>
+  </text>
+
+  <!-- Success Message -->
+  <rect x="50" y="1140" width="1300" height="80" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="1165" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🏆 パターン認識をマスターして A問題攻略の基盤を固めよう！
+  </text>
+  <text x="700" y="1185" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">
+    問題文 → パターン識別 → テンプレート適用 → 実装 → 検証の流れを体に染み込ませよう
+  </text>
+  <text x="700" y="1205" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0369a1">
+    継続的な練習により、パターン認識は必ず高速化・自動化される
+  </text>
+
+  <!-- Practice Recommendations -->
+  <rect x="50" y="1240" width="1300" height="320" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="1265" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    📊 パターン別練習推奨問題セット
+  </text>
+
+  <!-- Pattern 1 Practice -->
+  <rect x="80" y="1285" width="300" height="120" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="1305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🔢 四則演算パターン（10問）
+  </text>
+  <text x="100" y="1325" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    <tspan x="100" dy="0">• ABC086 A - Product</tspan>
+    <tspan x="100" dy="10">• ABC083 A - Libra</tspan>
+    <tspan x="100" dy="10">• ABC088 A - Infinite Coins</tspan>
+    <tspan x="100" dy="10">• ABC087 A - Buying Sweets</tspan>
+    <tspan x="100" dy="10">• ABC089 A - Grouping 2</tspan>
+    <tspan x="100" dy="10">• ABC090 A - Diagonal String</tspan>
+  </text>
+
+  <!-- Pattern 2 Practice -->
+  <rect x="400" y="1285" width="300" height="120" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="410" y="1305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🔀 条件判定パターン（10問）
+  </text>
+  <text x="420" y="1325" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    <tspan x="420" dy="0">• ABC081 A - Placing Marbles</tspan>
+    <tspan x="420" dy="10">• ABC082 A - Round Up the Mean</tspan>
+    <tspan x="420" dy="10">• ABC084 A - New Year</tspan>
+    <tspan x="420" dy="10">• ABC091 A - Two Coins</tspan>
+    <tspan x="420" dy="10">• ABC092 A - Traveling Budget</tspan>
+    <tspan x="420" dy="10">• ABC093 A - abc of ABC</tspan>
+  </text>
+
+  <!-- Pattern 3 Practice -->
+  <rect x="720" y="1285" width="300" height="120" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="730" y="1305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🔤 文字列操作パターン（8問）
+  </text>
+  <text x="740" y="1325" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    <tspan x="740" dy="0">• ABC085 A - Already 2018</tspan>
+    <tspan x="740" dy="10">• ABC094 A - Cats and Dogs</tspan>
+    <tspan x="740" dy="10">• ABC095 A - Something on It</tspan>
+    <tspan x="740" dy="10">• ABC096 A - Day of Takahashi</tspan>
+    <tspan x="740" dy="10">• ABC097 A - Colorful Transceivers</tspan>
+    <tspan x="740" dy="10">• ABC098 A - Add Sub Mul</tspan>
+  </text>
+
+  <!-- Pattern 4 Practice -->
+  <rect x="1040" y="1285" width="290" height="120" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="1050" y="1305" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    📋 配列操作パターン（7問）
+  </text>
+  <text x="1060" y="1325" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    <tspan x="1060" dy="0">• ABC099 A - ABD</tspan>
+    <tspan x="1060" dy="10">• ABC100 A - Happy Birthday!</tspan>
+    <tspan x="1060" dy="10">• ABC101 A - Eating Symbols Easy</tspan>
+    <tspan x="1060" dy="10">• ABC102 A - Multiple of 2 and N</tspan>
+    <tspan x="1060" dy="10">• ABC103 A - Task Scheduling Problem</tspan>
+    <tspan x="1060" dy="10">• ABC104 A - Rated for Me</tspan>
+  </text>
+
+  <!-- Training Schedule -->
+  <rect x="80" y="1425" width="1250" height="115" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="1445" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    📅 2週間集中トレーニングスケジュール
+  </text>
+  <text x="100" y="1465" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">Week 1: パターン認識力強化</tspan>
+    <tspan x="110" dy="12">• Day 1-2: 四則演算パターン（5問/日）| Day 3-4: 条件判定パターン（5問/日）</tspan>
+    <tspan x="110" dy="12">• Day 5-6: 文字列操作パターン（4問/日）| Day 7: 配列操作パターン（7問）</tspan>
+  </text>
+  <text x="100" y="1505" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">Week 2: 高速実装力強化</tspan>
+    <tspan x="110" dy="12">• Day 8-10: 全パターンをランダムに混ぜて時間測定（10問/日、各問5分以内目標）</tspan>
+    <tspan x="110" dy="12">• Day 11-14: 実際のコンテスト形式で練習（A問題を3分以内で解く練習）</tspan>
+  </text>
+</svg>

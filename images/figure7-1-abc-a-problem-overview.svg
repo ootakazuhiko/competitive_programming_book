@@ -1,0 +1,333 @@
+<svg viewBox="0 0 1200 1400" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-1：ABC A問題の全体像と出題傾向</title>
+  <desc>AtCoder Beginner Contest（ABC）のA問題における基本特徴、出題傾向、および攻略のポイント</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="1400" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    ABC A問題の全体像と出題傾向
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    競技プログラミング入門者のための最初の関門
+  </text>
+  
+  <!-- A Problem Overview -->
+  <rect x="50" y="80" width="1100" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="600" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🎯 A問題の基本特徴
+  </text>
+  
+  <text x="600" y="130" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#1e40af">
+    配点：100-200点（コンテスト全体の約15%）｜制約：データサイズが小さい（N ≤ 100程度）
+  </text>
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">
+    時間：正解まで5-10分以内が目標｜難易度：プログラミング初心者でも解ける
+  </text>
+  <text x="600" y="170" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    💡 「確実に得点できる問題」として位置づけられている
+  </text>
+  <text x="600" y="190" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#1e40af">
+    ✅ 基本的な入出力処理 ✅ 四則演算と条件分岐 ✅ 簡単な文字列操作 ✅ 問題文の正確な理解
+  </text>
+  
+  <!-- Pattern Analysis -->
+  <rect x="50" y="220" width="1100" height="280" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    📊 A問題の典型パターン（出現頻度順）
+  </text>
+  
+  <!-- Pattern 1: Arithmetic -->
+  <rect x="80" y="265" width="260" height="110" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    パターン1: 四則演算（35%）
+  </text>
+  <text x="100" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">• 数値計算、単位変換</tspan>
+    <tspan x="100" dy="12">• 簡単な数式の実装</tspan>
+    <tspan x="100" dy="12">• 演算子の適切な選択</tspan>
+  </text>
+  <text x="90" y="345" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    例：積雪深差（H2 - H1）
+  </text>
+  <text x="100" y="360" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    print(int(input()) - int(input()))
+  </text>
+  
+  <!-- Pattern 2: Conditional -->
+  <rect x="360" y="265" width="260" height="110" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="370" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    パターン2: 条件判定（30%）
+  </text>
+  <text x="380" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="380" dy="0">• if文による条件分岐</tspan>
+    <tspan x="380" dy="12">• Yes/No判定問題</tspan>
+    <tspan x="380" dy="12">• 数学的性質の活用</tspan>
+  </text>
+  <text x="370" y="345" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    例：偶数・奇数判定
+  </text>
+  <text x="380" y="360" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    print("Even" if (a*b)%2==0 else "Odd")
+  </text>
+  
+  <!-- Pattern 3: String -->
+  <rect x="640" y="265" width="260" height="110" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="650" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    パターン3: 文字列操作（20%）
+  </text>
+  <text x="660" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="660" dy="0">• 文字列の長さ・分割・結合</tspan>
+    <tspan x="660" dy="12">• 文字の個数カウント</tspan>
+    <tspan x="660" dy="12">• 基本的な文字列メソッド</tspan>
+  </text>
+  <text x="650" y="345" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    例：特定文字の個数
+  </text>
+  <text x="660" y="360" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    print(input().count('1'))
+  </text>
+  
+  <!-- Pattern 4: Array -->
+  <rect x="920" y="265" width="200" height="110" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="930" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    パターン4: 配列操作（15%）
+  </text>
+  <text x="940" y="305" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="940" dy="0">• 最大値・最小値・合計</tspan>
+    <tspan x="940" dy="12">• 距離計算（絶対値）</tspan>
+    <tspan x="940" dy="12">• 要素数・インデックス</tspan>
+  </text>
+  <text x="930" y="345" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    例：距離比較
+  </text>
+  <text x="940" y="360" font-family="Monaco, monospace" font-size="8" fill="#15803d">
+    print("A" if abs(x-a)&lt;abs(x-b) else "B")
+  </text>
+  
+  <!-- Additional Patterns -->
+  <rect x="80" y="385" width="1040" height="105" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="405" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 成功のポイント：パターン認識力の向上
+  </text>
+  <text x="100" y="425" font-family="Arial, sans-serif" font-size="11" fill="#15803d">
+    <tspan x="100" dy="0">• 問題文のキーワードから解法パターンを素早く識別</tspan>
+    <tspan x="100" dy="14">• 「計算せよ」→四則演算 ｜「判定せよ」→条件分岐 ｜「個数を求めよ」→カウント処理</tspan>
+    <tspan x="100" dy="14">• 制約条件（N≤100）から全探索の安全性を判断</tspan>
+    <tspan x="100" dy="14">• サンプル入出力から変換ルールを推測し、一般化</tspan>
+  </text>
+  
+  <!-- Success Strategy -->
+  <rect x="50" y="520" width="1100" height="300" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="600" y="545" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    🏆 A問題攻略の5ステップ戦略
+  </text>
+  
+  <!-- Step 1 -->
+  <rect x="80" y="565" width="200" height="120" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    Step 1: 精読（2-3分）
+  </text>
+  <text x="100" y="605" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">✅ 問題文を最低2回読む</tspan>
+    <tspan x="100" dy="12">✅ 求められる結果を明確化</tspan>
+    <tspan x="100" dy="12">✅ 入出力形式を正確に把握</tspan>
+    <tspan x="100" dy="12">✅ 制約条件を確認</tspan>
+  </text>
+  <text x="90" y="660" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    💡 計算式？条件分岐？を判断
+  </text>
+  
+  <!-- Step 2 -->
+  <rect x="300" y="565" width="200" height="120" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="310" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    Step 2: サンプル分析（1-2分）
+  </text>
+  <text x="320" y="605" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="320" dy="0">✅ 入力→出力の変換過程を追跡</tspan>
+    <tspan x="320" dy="12">✅ なぜその結果になるか理解</tspan>
+    <tspan x="320" dy="12">✅ 解法の妥当性を検証</tspan>
+    <tspan x="320" dy="12">✅ 特殊ケースを想定</tspan>
+  </text>
+  <text x="310" y="660" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    💡 手計算で確実に理解
+  </text>
+  
+  <!-- Step 3 -->
+  <rect x="520" y="565" width="200" height="120" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="530" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    Step 3: 実装（3-5分）
+  </text>
+  <text x="540" y="605" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="540" dy="0">✅ 入力処理から開始</tspan>
+    <tspan x="540" dy="12">✅ メインロジックを実装</tspan>
+    <tspan x="540" dy="12">✅ 出力処理を追加</tspan>
+    <tspan x="540" dy="12">✅ 変数名を意味あるものに</tspan>
+  </text>
+  <text x="530" y="660" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    💡 読みやすいコードを心がける
+  </text>
+  
+  <!-- Step 4 -->
+  <rect x="740" y="565" width="200" height="120" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="750" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    Step 4: 検証（1-2分）
+  </text>
+  <text x="760" y="605" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="760" dy="0">✅ サンプル入力で動作確認</tspan>
+    <tspan x="760" dy="12">✅ 手動計算と結果照合</tspan>
+    <tspan x="760" dy="12">✅ 出力形式の正確性確認</tspan>
+    <tspan x="760" dy="12">✅ エッジケースを想定</tspan>
+  </text>
+  <text x="750" y="660" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    💡 慎重だが迅速な検証
+  </text>
+  
+  <!-- Step 5 -->
+  <rect x="960" y="565" width="160" height="120" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="970" y="585" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    Step 5: 提出（30秒）
+  </text>
+  <text x="980" y="605" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="980" dy="0">✅ 言語選択確認</tspan>
+    <tspan x="980" dy="12">✅ コード全体確認</tspan>
+    <tspan x="980" dy="12">✅ 不要な文削除</tspan>
+    <tspan x="980" dy="12">✅ 即座に提出</tspan>
+  </text>
+  <text x="970" y="660" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    💡 完璧より確実性
+  </text>
+  
+  <!-- Time Management -->
+  <rect x="80" y="700" width="1040" height="80" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="720" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    ⏱️ 時間管理の重要ポイント
+  </text>
+  <text x="100" y="740" font-family="Arial, sans-serif" font-size="11" fill="#d97706">
+    <tspan x="100" dy="0">• A問題全体で10分以内を目標（15分以上かかる場合は一旦飛ばしてB問題へ）</tspan>
+    <tspan x="100" dy="14">• 「悩みすぎて時間を浪費しない」：A問題は完璧を求めず、動くものを提出</tspan>
+    <tspan x="100" dy="14">• B問題に十分な時間を残すことを最優先に考える</tspan>
+  </text>
+  
+  <!-- Difficulty Analysis -->
+  <rect x="50" y="840" width="1100" height="200" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="600" y="865" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    📈 A問題の難易度分析と成長目標
+  </text>
+  
+  <!-- Difficulty Levels -->
+  <rect x="80" y="885" width="340" height="145" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="905" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📊 難易度レベル別分布
+  </text>
+  <text x="100" y="925" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="100" dy="0">🟢 超簡単（30%）：基本的な計算・入出力のみ</tspan>
+    <tspan x="100" dy="14">🟡 簡単（50%）：条件分岐・文字列処理</tspan>
+    <tspan x="100" dy="14">🟠 やや難（20%）：複数の処理の組み合わせ</tspan>
+  </text>
+  
+  <text x="90" y="980" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🎯 習熟度別目標時間
+  </text>
+  <text x="100" y="1000" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">初心者：15分以内 | 中級者：10分以内 | 上級者：5分以内</tspan>
+  </text>
+  
+  <!-- Success Metrics -->
+  <rect x="440" y="885" width="340" height="145" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="450" y="905" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🏆 成功指標と目標設定
+  </text>
+  <text x="460" y="925" font-family="Arial, sans-serif" font-size="11" fill="#6b21a8">
+    <tspan x="460" dy="0">🥉 短期目標：A問題を安定して15分以内で正解</tspan>
+    <tspan x="460" dy="14">🥈 中期目標：A問題を10分以内で正解率80%</tspan>
+    <tspan x="460" dy="14">🥇 長期目標：A問題を5分以内で正解率95%</tspan>
+  </text>
+  
+  <text x="450" y="980" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📊 レーティング向上効果
+  </text>
+  <text x="460" y="1000" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    A問題安定正解 → 茶色レーティング(400+)への基盤
+  </text>
+  
+  <!-- Common Mistakes -->
+  <rect x="800" y="885" width="320" height="145" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="810" y="905" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    ⚠️ よくある失敗パターン
+  </text>
+  <text x="820" y="925" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="820" dy="0">❌ 問題文の読み飛ばし</tspan>
+    <tspan x="820" dy="12">❌ 出力形式の見落とし</tspan>
+    <tspan x="820" dy="12">❌ サンプルでの動作未確認</tspan>
+    <tspan x="820" dy="12">❌ 過度に複雑な解法を選択</tspan>
+    <tspan x="820" dy="12">❌ 時間をかけすぎる</tspan>
+  </text>
+  
+  <text x="810" y="990" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    対策：基本に忠実に、確実性重視
+  </text>
+  
+  <!-- Preparation Tips -->
+  <rect x="50" y="1060" width="1100" height="200" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="600" y="1085" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    💪 A問題攻略のための練習方法
+  </text>
+  
+  <rect x="80" y="1105" width="340" height="145" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="1125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    📚 日常的な練習方法
+  </text>
+  <text x="100" y="1145" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">• 過去のABC A問題を時間を測って解く</tspan>
+    <tspan x="100" dy="12">• パターン別に問題をグループ化して練習</tspan>
+    <tspan x="100" dy="12">• 基本的なPython構文の習熟度向上</tspan>
+    <tspan x="100" dy="12">• 入出力処理のテンプレート化</tspan>
+  </text>
+  
+  <text x="90" y="1215" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    目標：1日1問、継続して実力向上
+  </text>
+  
+  <rect x="440" y="1105" width="340" height="145" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="450" y="1125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🧠 思考力強化のポイント
+  </text>
+  <text x="460" y="1145" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="460" dy="0">• 問題文から解法パターンを瞬時に識別</tspan>
+    <tspan x="460" dy="12">• サンプルから一般的なルールを導出</tspan>
+    <tspan x="460" dy="12">• エッジケースを想定する習慣</tspan>
+    <tspan x="460" dy="12">• 複数の解法から最適なものを選択</tspan>
+  </text>
+  
+  <text x="450" y="1215" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    重要：パターン認識力の向上
+  </text>
+  
+  <rect x="800" y="1105" width="320" height="145" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="810" y="1125" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    ⚡ 実戦での心構え
+  </text>
+  <text x="820" y="1145" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="820" dy="0">• 完璧を求めすぎず、確実性を重視</tspan>
+    <tspan x="820" dy="12">• 焦らず、基本的な手順を守る</tspan>
+    <tspan x="820" dy="12">• サンプルが通ったら迷わず提出</tspan>
+    <tspan x="820" dy="12">• 時間配分を常に意識</tspan>
+  </text>
+  
+  <text x="810" y="1215" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    マインド：A問題は得点源
+  </text>
+  
+  <!-- Success Message -->
+  <rect x="50" y="1280" width="1100" height="60" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="600" y="1305" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🚀 A問題をマスターして競技プログラミングの基盤を築こう！
+  </text>
+  <text x="600" y="1325" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">
+    パターン認識 → 素早い実装 → 確実な検証 → 迷わず提出の流れを習慣化しよう
+  </text>
+</svg>

@@ -1,0 +1,415 @@
+<svg viewBox="0 0 1400 1600" xmlns="http://www.w3.org/2000/svg">
+  <title>図8-2：サンプル活用の4段階戦略</title>
+  <desc>競技プログラミングにおけるサンプル入出力を最大限活用した解法検証と理解深化の手法</desc>
+
+  <!-- Background -->
+  <rect width="1400" height="1600" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="700" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e293b">
+    サンプル活用の4段階戦略
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="55" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#64748b">
+    サンプル入出力から最大限の情報を抽出し、確実な解法構築につなげる
+  </text>
+
+  <!-- Overview Section -->
+  <rect x="50" y="80" width="1300" height="120" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="105" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">
+    🎯 4段階サンプル活用戦略の全体像
+  </text>
+  
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">
+    <tspan x="100" dy="0">Stage 1: 基本理解（1分）→ Stage 2: 詳細追跡（2-3分）→ Stage 3: パターン発見（1-2分）→ Stage 4: 検証拡張（1分）</tspan>
+  </text>
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="11" fill="#1e40af">
+    <tspan x="100" dy="0">🎯 目標：サンプルから問題の本質的なルールを完全に理解し、汎用的な解法を構築する</tspan>
+  </text>
+  <text x="100" y="170" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1e40af">
+    <tspan x="100" dy="0">💡 重要：サンプルは「答えのヒント」ではなく「理解のための貴重な教材」として最大限活用</tspan>
+  </text>
+
+  <!-- Stage 1: Basic Understanding -->
+  <rect x="50" y="220" width="1300" height="260" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="245" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#d97706">
+    📋 Stage 1: 基本理解（1分）- サンプルの形式と構造を把握
+  </text>
+
+  <!-- Stage 1 Left -->
+  <rect x="80" y="265" width="400" height="200" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="90" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    🔍 基本情報の抽出項目
+  </text>
+  <text x="100" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="100" dy="0">✅ 入力データの形式と個数</tspan>
+    <tspan x="110" dy="12">行数、各行のデータ数、データ型を確認</tspan>
+    <tspan x="100" dy="24">✅ 出力データの形式と個数</tspan>
+    <tspan x="110" dy="12">数値？文字列？改行の有無？</tspan>
+    <tspan x="100" dy="24">✅ 入力と出力の規模感の対応</tspan>
+    <tspan x="110" dy="12">N個入力→1個出力？N個→N個？</tspan>
+    <tspan x="100" dy="24">✅ 複数サンプルがある場合の一貫性</tspan>
+    <tspan x="110" dy="12">全サンプルで形式が統一されているか</tspan>
+  </text>
+
+  <text x="90" y="415" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    📊 形式理解のポイント
+  </text>
+  <text x="100" y="435" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    入出力形式の「パターン」を見抜く
+  </text>
+  <text x="100" y="450" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    データの「意味」より「構造」を重視
+  </text>
+
+  <!-- Stage 1 Middle -->
+  <rect x="500" y="265" width="400" height="200" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="510" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    📝 実践例：基本理解の実際
+  </text>
+  
+  <text x="520" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="520" dy="0">サンプル例（ABC088 B - Card Game for Two）:</tspan>
+  </text>
+  
+  <text x="520" y="325" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    <tspan x="520" dy="0">入力:</tspan>
+    <tspan x="520" dy="12">2</tspan>
+    <tspan x="520" dy="12">3 1</tspan>
+    <tspan x="520" dy="12">出力:</tspan>
+    <tspan x="520" dy="12">2</tspan>
+  </text>
+
+  <text x="520" y="375" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#d97706">
+    基本理解の結果：
+  </text>
+  <text x="530" y="395" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    <tspan x="530" dy="0">• 入力：1行目にN（整数）、2行目にN個の整数</tspan>
+    <tspan x="530" dy="12">• 出力：1つの整数</tspan>
+    <tspan x="530" dy="12">• 規模：N個の入力→1個の出力（集約系）</tspan>
+    <tspan x="530" dy="12">• 形式：標準的な競技プログラミング形式</tspan>
+  </text>
+
+  <!-- Stage 1 Right -->
+  <rect x="920" y="265" width="380" height="200" rx="6" fill="white" stroke="#fbbf24" stroke-width="1"/>
+  <text x="930" y="285" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+    ⚡ 効率的な基本理解テクニック
+  </text>
+  <text x="940" y="305" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="940" dy="0">高速形式判定：</tspan>
+    <tspan x="950" dy="12">• 入力行数をカウント</tspan>
+    <tspan x="950" dy="12">• 各行の要素数をチェック</tspan>
+    <tspan x="950" dy="12">• 出力の行数と要素数を確認</tspan>
+  </text>
+
+  <text x="940" y="355" font-family="Arial, sans-serif" font-size="10" fill="#d97706">
+    <tspan x="940" dy="0">よくある形式パターン：</tspan>
+    <tspan x="950" dy="12">• N → N個の数値 → 1個の結果</tspan>
+    <tspan x="950" dy="12">• N M → N×M の格子 → 複数結果</tspan>
+    <tspan x="950" dy="12">• 文字列 → 変換 → 文字列</tspan>
+  </text>
+
+  <text x="930" y="405" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#d97706">
+    🎯 Stage 1での判断
+  </text>
+  <text x="940" y="425" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    「この形式なら実装可能」の感触
+  </text>
+  <text x="940" y="440" font-family="Arial, sans-serif" font-size="9" fill="#d97706">
+    入出力処理の大まかな設計
+  </text>
+
+  <!-- Stage 2: Detailed Tracking -->
+  <rect x="50" y="500" width="1300" height="300" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="700" y="525" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#15803d">
+    🔬 Stage 2: 詳細追跡（2-3分）- 入力から出力への変換過程を完全理解
+  </text>
+
+  <!-- Stage 2 Top Left -->
+  <rect x="80" y="545" width="280" height="120" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🎯 追跡すべき変換ステップ
+  </text>
+  <text x="100" y="585" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">✅ 入力データの解釈方法</tspan>
+    <tspan x="100" dy="12">✅ 中間計算の全プロセス</tspan>
+    <tspan x="100" dy="12">✅ 最終結果の導出根拠</tspan>
+    <tspan x="100" dy="12">✅ 各ステップの計算規則</tspan>
+  </text>
+
+  <text x="90" y="635" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    💡 追跡の精度
+  </text>
+  <text x="100" y="655" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    「コンピューターになったつもり」で実行
+  </text>
+
+  <!-- Stage 2 Top Right -->
+  <rect x="380" y="545" width="280" height="120" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="390" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📋 手計算による検証手法
+  </text>
+  <text x="400" y="585" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="400" dy="0">ステップ・バイ・ステップ実行：</tspan>
+    <tspan x="410" dy="12">• 各行の処理を順次実行</tspan>
+    <tspan x="410" dy="12">• 変数の値変化を記録</tspan>
+    <tspan x="410" dy="12">• 条件分岐の判定を確認</tspan>
+    <tspan x="410" dy="12">• 最終結果までの経路を追跡</tspan>
+  </text>
+
+  <text x="390" y="635" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🔍 検証の精度
+  </text>
+  <text x="400" y="655" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    電卓を使ってでも正確に計算
+  </text>
+
+  <!-- Stage 2 Middle Left -->
+  <rect x="680" y="545" width="300" height="120" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="690" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    🧮 実践例：詳細追跡の実際
+  </text>
+  <text x="700" y="585" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="700" dy="0">Card Game 問題の追跡：</tspan>
+    <tspan x="710" dy="12">入力: N=2, cards=[3,1]</tspan>
+    <tspan x="710" dy="12">1. ソート: [3,1] → [3,1]（既にソート済）</tspan>
+    <tspan x="710" dy="12">2. Alice取得: 3（最大値）</tspan>
+    <tspan x="710" dy="12">3. Bob取得: 1（残りの最大値）</tspan>
+    <tspan x="710" dy="12">4. Alice得点: 3, Bob得点: 1</tspan>
+    <tspan x="710" dy="12">5. 出力: 3 - 1 = 2</tspan>
+  </text>
+
+  <!-- Stage 2 Right -->
+  <rect x="1000" y="545" width="320" height="120" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="1010" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    ⚠️ 詳細追跡での注意点
+  </text>
+  <text x="1020" y="585" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="1020" dy="0">見落としやすいポイント：</tspan>
+    <tspan x="1030" dy="12">• インデックスの0始まり/1始まり</tspan>
+    <tspan x="1030" dy="12">• 整数除算の切り捨て</tspan>
+    <tspan x="1030" dy="12">• 文字列の比較ルール</tspan>
+    <tspan x="1030" dy="12">• 浮動小数点の精度</tspan>
+  </text>
+
+  <text x="1010" y="635" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#15803d">
+    🎯 確認のコツ
+  </text>
+  <text x="1020" y="655" font-family="Arial, sans-serif" font-size="9" fill="#15803d">
+    「なぜその計算で正しいか」を自問
+  </text>
+
+  <!-- Stage 2 Bottom Section -->
+  <rect x="80" y="685" width="1240" height="105" rx="6" fill="white" stroke="#86efac" stroke-width="1"/>
+  <text x="90" y="705" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">
+    📝 詳細追跡の記録方法と活用テクニック
+  </text>
+  <text x="100" y="725" font-family="Arial, sans-serif" font-size="10" fill="#15803d">
+    <tspan x="100" dy="0">記録形式：「Step 1: 入力 [3,1] → Step 2: ソート [3,1] → Step 3: Alice=3, Bob=1 → Step 4: 出力 3-1=2」</tspan>
+    <tspan x="100" dy="12">検証方法：別のサンプルでも同じ手順で正しい結果が得られるかを確認</tspan>
+    <tspan x="100" dy="12">理解深化：「なぜソートが必要なのか」「なぜ差を取るのか」など、各ステップの意図を理解</tspan>
+    <tspan x="100" dy="12">実装準備：手計算の手順をそのままプログラムのアルゴリズムとして活用</tspan>
+  </text>
+
+  <!-- Stage 3: Pattern Discovery -->
+  <rect x="50" y="820" width="1300" height="280" rx="8" fill="#f3e8ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="700" y="845" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#6b21a8">
+    🔍 Stage 3: パターン発見（1-2分）- 汎用的なルールと例外条件の特定
+  </text>
+
+  <!-- Stage 3 Left -->
+  <rect x="80" y="865" width="400" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="90" y="885" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🎯 発見すべきパターン要素
+  </text>
+  <text x="100" y="905" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="100" dy="0">✅ 計算の一般的なルール</tspan>
+    <tspan x="110" dy="12">どんな入力でも適用できる処理手順</tspan>
+    <tspan x="100" dy="24">✅ データの前処理の必要性</tspan>
+    <tspan x="110" dy="12">ソート、変換、フィルタリングなど</tspan>
+    <tspan x="100" dy="24">✅ 特殊ケースの存在</tspan>
+    <tspan x="110" dy="12">空データ、最小値、最大値での動作</tspan>
+    <tspan x="100" dy="24">✅ 計算量に影響する要因</tspan>
+    <tspan x="110" dy="12">ループの回数、データのサイズ依存性</tspan>
+  </text>
+
+  <text x="90" y="1015" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🧠 パターン思考のコツ
+  </text>
+  <text x="100" y="1035" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    「この解法は他の入力でも通用するか？」
+  </text>
+  <text x="100" y="1050" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    「例外的な場合はないか？」
+  </text>
+
+  <!-- Stage 3 Middle -->
+  <rect x="500" y="865" width="400" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="510" y="885" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    📊 パターン発見の実践例
+  </text>
+  
+  <text x="520" y="905" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">
+    Card Game 問題のパターン分析：
+  </text>
+  <text x="530" y="925" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    <tspan x="530" dy="0">一般的なルール:</tspan>
+    <tspan x="540" dy="12">1. カードを降順にソート</tspan>
+    <tspan x="540" dy="12">2. Alice、Bobが交互に最大値を取得</tspan>
+    <tspan x="540" dy="12">3. 各プレイヤーの得点の差を計算</tspan>
+  </text>
+
+  <text x="530" y="970" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    <tspan x="530" dy="0">特殊ケース:</tspan>
+    <tspan x="540" dy="12">• N=1: Aliceが全て取得</tspan>
+    <tspan x="540" dy="12">• 全て同じ値: 順序は無関係</tspan>
+    <tspan x="540" dy="12">• 負の値: 損失の最小化</tspan>
+  </text>
+
+  <text x="530" y="1015" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    <tspan x="530" dy="0">計算量: O(N log N) ← ソートが支配的</tspan>
+  </text>
+
+  <text x="520" y="1035" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6b21a8">
+    汎用性の確認:
+  </text>
+  <text x="530" y="1055" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    どんなN、どんなカード値でも適用可能
+  </text>
+
+  <!-- Stage 3 Right -->
+  <rect x="920" y="865" width="380" height="220" rx="6" fill="white" stroke="#c4b5fd" stroke-width="1"/>
+  <text x="930" y="885" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#6b21a8">
+    🔬 高度なパターン分析技法
+  </text>
+  <text x="940" y="905" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="940" dy="0">複数サンプルの比較分析：</tspan>
+    <tspan x="950" dy="12">• 共通する処理ステップの抽出</tspan>
+    <tspan x="950" dy="12">• データサイズによる違いの分析</tspan>
+    <tspan x="950" dy="12">• 境界値での動作パターン</tspan>
+  </text>
+
+  <text x="940" y="955" font-family="Arial, sans-serif" font-size="10" fill="#6b21a8">
+    <tspan x="940" dy="0">逆算による検証：</tspan>
+    <tspan x="950" dy="12">• 出力から入力への逆算</tspan>
+    <tspan x="950" dy="12">• 「なぜその結果になるか」の論理確認</tspan>
+    <tspan x="950" dy="12">• 別解の可能性の検討</tspan>
+  </text>
+
+  <text x="930" y="1005" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#6b21a8">
+    🎯 パターン確信度の判定
+  </text>
+  <text x="940" y="1025" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    80%以上の確信度で実装開始
+  </text>
+  <text x="940" y="1040" font-family="Arial, sans-serif" font-size="9" fill="#6b21a8">
+    不安な場合はStage 4で追加検証
+  </text>
+
+  <!-- Stage 4: Verification Extension -->
+  <rect x="50" y="1120" width="650" height="220" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="375" y="1145" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#047857">
+    ✅ Stage 4: 検証拡張（1分）- 理解の確実性を高める
+  </text>
+
+  <!-- Stage 4 Content -->
+  <rect x="80" y="1165" width="280" height="165" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="90" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    🎯 実行する検証項目
+  </text>
+  <text x="100" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="100" dy="0">✅ 自作テストケースでの検証</tspan>
+    <tspan x="100" dy="12">✅ エッジケースでの動作確認</tspan>
+    <tspan x="100" dy="12">✅ 計算量の妥当性再確認</tspan>
+    <tspan x="100" dy="12">✅ 解法の論理的整合性チェック</tspan>
+  </text>
+
+  <text x="90" y="1275" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    💡 検証の目標
+  </text>
+  <text x="100" y="1295" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    「絶対に正しい」という確信を得る
+  </text>
+  <text x="100" y="1310" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    実装での迷いを完全に排除
+  </text>
+
+  <!-- Stage 4 Examples -->
+  <rect x="380" y="1165" width="300" height="165" rx="6" fill="white" stroke="#6ee7b7" stroke-width="1"/>
+  <text x="390" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#047857">
+    📋 自作テストケースの例
+  </text>
+  <text x="400" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#047857">
+    <tspan x="400" dy="0">最小ケース: N=1, cards=[5]</tspan>
+    <tspan x="410" dy="12">→ Alice=5, Bob=0, 出力=5</tspan>
+    <tspan x="400" dy="24">同値ケース: N=3, cards=[2,2,2]</tspan>
+    <tspan x="410" dy="12">→ Alice=4, Bob=2, 出力=2</tspan>
+    <tspan x="400" dy="24">降順ケース: N=3, cards=[5,3,1]</tspan>
+    <tspan x="410" dy="12">→ Alice=6, Bob=3, 出力=3</tspan>
+  </text>
+
+  <text x="390" y="1285" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#047857">
+    🔍 検証の精度
+  </text>
+  <text x="400" y="1305" font-family="Arial, sans-serif" font-size="9" fill="#047857">
+    手計算で確実に正解を導出
+  </text>
+
+  <!-- Summary and Best Practices -->
+  <rect x="720" y="1120" width="630" height="220" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+  <text x="1035" y="1145" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#dc2626">
+    🏆 サンプル活用のベストプラクティス
+  </text>
+
+  <!-- Best Practice Content -->
+  <rect x="750" y="1165" width="570" height="165" rx="6" fill="white" stroke="#fca5a5" stroke-width="1"/>
+  <text x="760" y="1185" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+    📚 効率的なサンプル活用の総合戦略
+  </text>
+  <text x="770" y="1205" font-family="Arial, sans-serif" font-size="10" fill="#dc2626">
+    <tspan x="770" dy="0">時間配分: 基本理解(20%) → 詳細追跡(60%) → パターン発見(15%) → 検証拡張(5%)</tspan>
+    <tspan x="770" dy="12">記録方法: 手計算の過程をメモに残し、実装時のリファレンスとして活用</tspan>
+    <tspan x="770" dy="12">理解度判定: 「友人に解法を説明できる」レベルまで理解を深める</tspan>
+    <tspan x="770" dy="12">継続的改善: 間違った問題のサンプル分析過程を振り返り、見落としパターンを学習</tspan>
+  </text>
+
+  <text x="760" y="1265" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+    ⚠️ よくある失敗パターン
+  </text>
+  <text x="770" y="1285" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">
+    「サンプルが通ったから正解」と早合点する
+  </text>
+  <text x="770" y="1300" font-family="Arial, sans-serif" font-size="9" fill="#dc2626">
+    追跡が浅く、本質的なルールを見抜けない
+  </text>
+
+  <!-- Final Message -->
+  <rect x="50" y="1360" width="1300" height="120" rx="8" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+  <text x="700" y="1385" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#0369a1">
+    🌟 サンプル活用マスターで問題解決力を大幅向上！
+  </text>
+  <text x="700" y="1405" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#0369a1">
+    基本理解 → 詳細追跡 → パターン発見 → 検証拡張の4段階で確実な理解を実現
+  </text>
+  <text x="700" y="1425" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#0369a1">
+    サンプルを「答えのヒント」ではなく「理解のための教材」として最大限活用
+  </text>
+  <text x="700" y="1445" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#0369a1">
+    丁寧なサンプル分析により、実装の迷いが大幅に減り、デバッグ時間も短縮される
+  </text>
+  <text x="700" y="1465" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#0369a1">
+    継続的な練習により、複雑な問題でも短時間で本質的なパターンを見抜けるようになる
+  </text>
+
+  <!-- Practice Recommendations -->
+  <rect x="50" y="1500" width="1300" height="80" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="2"/>
+  <text x="700" y="1525" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#d97706">
+    📊 サンプル活用スキル向上のための練習方法
+  </text>
+  <text x="100" y="1545" font-family="Arial, sans-serif" font-size="11" fill="#d97706">
+    <tspan x="100" dy="0">日常練習: 解いた problems のサンプルを4段階法で再分析し、見落とした要素を発見する</tspan>
+    <tspan x="100" dy="12">応用練習: サンプルを見ただけで解法の方向性を予想し、実際の解法と比較する</tspan>
+    <tspan x="100" dy="12">上級練習: 自分でテストケースを作成し、他の人の解法の妥当性を検証する</tspan>
+  </text>
+</svg>
