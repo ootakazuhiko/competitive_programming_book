@@ -147,13 +147,67 @@
     <!-- Overlay for mobile sidebar -->
     <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
-    <!-- Scripts - Optimized for performance -->
+    <!-- Scripts - 緊急修正：JavaScript完全分離テスト（ページフリーズ問題根本原因特定） -->
+    <!-- 全てのJavaScriptファイルを一時的に無効化 -->
+    <!-- 
     <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/code-copy.js' | relative_url }}"></script>
-    <!-- Performance optimization: Using safe-main.js instead of main.js -->
-    <!-- Search functionality disabled to resolve browser freeze issues -->
     <script src="{{ '/assets/js/safe-main.js' | relative_url }}"></script>
-    <!-- <script src="{{ '/assets/js/search.js' | relative_url }}"></script> -->
+    -->
+    
+    <!-- 最小限のテーマ切り替えとサイドバートグル（インライン実装） -->
+    <script>
+        (function() {
+            'use strict';
+            
+            console.log('[Emergency JS] Minimal inline JavaScript loading...');
+            
+            document.addEventListener('DOMContentLoaded', function() {
+                // テーマ切り替え機能
+                const themeToggle = document.querySelector('.theme-toggle');
+                if (themeToggle) {
+                    themeToggle.addEventListener('click', function() {
+                        const currentTheme = document.documentElement.getAttribute('data-theme');
+                        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                        document.documentElement.setAttribute('data-theme', newTheme);
+                        localStorage.setItem('theme', newTheme);
+                        console.log('[Emergency JS] Theme switched to:', newTheme);
+                    });
+                }
+                
+                // サイドバートグル機能
+                const sidebarToggle = document.querySelector('.sidebar-toggle');
+                const sidebar = document.querySelector('.book-sidebar');
+                const overlay = document.querySelector('.sidebar-overlay');
+                
+                if (sidebarToggle && sidebar) {
+                    sidebarToggle.addEventListener('click', function() {
+                        sidebar.classList.toggle('open');
+                        if (overlay) {
+                            overlay.classList.toggle('active');
+                        }
+                        console.log('[Emergency JS] Sidebar toggled');
+                    });
+                }
+                
+                // オーバーレイクリックでサイドバーを閉じる
+                if (overlay) {
+                    overlay.addEventListener('click', function() {
+                        sidebar.classList.remove('open');
+                        overlay.classList.remove('active');
+                    });
+                }
+                
+                console.log('[Emergency JS] Minimal initialization completed successfully');
+            });
+            
+            // エラーハンドリング
+            window.addEventListener('error', function(event) {
+                console.warn('[Emergency JS] Error caught:', event.error);
+            });
+            
+        })();
+    </script>
 </body>
 </html>
