@@ -1,0 +1,135 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="figure1-9-title" aria-describedby="figure1-9-desc">
+  <title id="figure1-9-title">図1-9：解法の多様性による創造性の育成</title>
+  <desc id="figure1-9-desc">同じ問題に対する複数の異なる解法アプローチを示し、創造性の育成を表現した図</desc>
+  
+  <!-- 背景 -->
+  <rect width="800" height="700" fill="#f8fafc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1f2937">
+    解法の多様性による創造性の育成
+  </text>
+  
+  <!-- 問題設定 -->
+  <text x="400" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#374151">
+    同じ問題「1から100の和を求める」でも...
+  </text>
+  
+  <!-- 解法A: 直接計算アプローチ -->
+  <g>
+    <text x="40" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">
+      解法A: 直接計算アプローチ
+    </text>
+    
+    <rect x="40" y="110" width="350" height="130" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+    
+    <!-- コード -->
+    <rect x="60" y="130" width="310" height="70" rx="4" fill="#1e293b"/>
+    <text x="70" y="150" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">total = 0</text>
+    <text x="70" y="165" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">for i in range(1, 101):</text>
+    <text x="90" y="180" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">total += i</text>
+    <text x="70" y="195" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">print(total)</text>
+    
+    <!-- 特徴 -->
+    <text x="60" y="220" font-family="Arial, sans-serif" font-size="12" fill="#7f1d1d">特徴：確実だけど少し遅い</text>
+    <text x="60" y="235" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#991b1b">思考：基本に忠実、堅実</text>
+  </g>
+  
+  <!-- 解法B: 数学的アプローチ -->
+  <g>
+    <text x="410" y="100" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2563eb">
+      解法B: 数学的アプローチ
+    </text>
+    
+    <rect x="410" y="110" width="350" height="130" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+    
+    <!-- コード -->
+    <rect x="430" y="130" width="310" height="70" rx="4" fill="#1e293b"/>
+    <text x="440" y="150" font-family="Monaco, monospace" font-size="11" fill="#94a3b8"># ガウスの公式を使用</text>
+    <text x="440" y="165" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">n = 100</text>
+    <text x="440" y="180" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">total = n * (n + 1) // 2</text>
+    <text x="440" y="195" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">print(total)</text>
+    
+    <!-- 特徴 -->
+    <text x="430" y="220" font-family="Arial, sans-serif" font-size="12" fill="#1e40af">特徴：高速で数学的にエレガント</text>
+    <text x="430" y="235" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#1d4ed8">思考：理論活用、効率性重視</text>
+  </g>
+  
+  <!-- 解法C: Pythonらしいアプローチ -->
+  <g>
+    <text x="40" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#16a34a">
+      解法C: Pythonらしいアプローチ
+    </text>
+    
+    <rect x="40" y="290" width="350" height="110" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    
+    <!-- コード -->
+    <rect x="60" y="310" width="310" height="50" rx="4" fill="#1e293b"/>
+    <text x="70" y="330" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">total = sum(range(1, 101))</text>
+    <text x="70" y="345" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">print(total)</text>
+    
+    <!-- 特徴 -->
+    <text x="60" y="380" font-family="Arial, sans-serif" font-size="12" fill="#166534">特徴：簡潔で読みやすい</text>
+    <text x="60" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#15803d">思考：言語の特性活用、可読性重視</text>
+  </g>
+  
+  <!-- 解法D: 再帰的アプローチ -->
+  <g>
+    <text x="410" y="280" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#7c3aed">
+      解法D: 再帰的アプローチ
+    </text>
+    
+    <rect x="410" y="290" width="350" height="110" rx="8" fill="#faf5ff" stroke="#8b5cf6" stroke-width="2"/>
+    
+    <!-- コード -->
+    <rect x="430" y="310" width="310" height="50" rx="4" fill="#1e293b"/>
+    <text x="440" y="330" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">def sum_to_n(n):</text>
+    <text x="460" y="345" font-family="Monaco, monospace" font-size="11" fill="#f1f5f9">return 1 if n==1 else n+sum_to_n(n-1)</text>
+    
+    <!-- 特徴 -->
+    <text x="430" y="380" font-family="Arial, sans-serif" font-size="12" fill="#6b21a8">特徴：プログラミング的思考</text>
+    <text x="430" y="395" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#7c2d12">思考：関数型、再帰的発想</text>
+  </g>
+  
+  <!-- 中央の創造性メッセージ -->
+  <g>
+    <ellipse cx="400" cy="480" rx="180" ry="60" fill="#fef3c7" stroke="#f59e0b" stroke-width="3"/>
+    <text x="400" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#92400e">
+      🎨 君だけの解法を見つけよう！
+    </text>
+    <text x="400" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#78350f">
+      「同じ答えでも、アプローチは無限大」
+    </text>
+  </g>
+  
+  <!-- 創造性の流れを示す矢印 -->
+  <g stroke="#f59e0b" stroke-width="2" fill="none" marker-end="url(#arrowhead-orange)">
+    <path d="M 200 250 Q 400 350 200 450"/>
+    <path d="M 600 250 Q 400 350 600 450"/>
+    <path d="M 200 420 Q 400 350 600 420"/>
+    <path d="M 600 420 Q 400 350 200 420"/>
+  </g>
+  
+  <!-- 創造性の広がりを示すポイント -->
+  <circle cx="150" cy="550" r="4" fill="#f59e0b"/>
+  <circle cx="300" cy="580" r="4" fill="#f59e0b"/>
+  <circle cx="500" cy="580" r="4" fill="#f59e0b"/>
+  <circle cx="650" cy="550" r="4" fill="#f59e0b"/>
+  
+  <text x="400" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-style="italic" fill="#6b7280">
+    さらなる解法の可能性...
+  </text>
+  
+  <!-- 多様性を示すアイコン -->
+  <text x="150" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="20">🔄</text>
+  <text x="300" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="20">💡</text>
+  <text x="500" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="20">⚡</text>
+  <text x="650" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="20">🚀</text>
+  
+  <!-- 矢印定義 -->
+  <defs>
+    <marker id="arrowhead-orange" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+  </defs>
+</svg>
