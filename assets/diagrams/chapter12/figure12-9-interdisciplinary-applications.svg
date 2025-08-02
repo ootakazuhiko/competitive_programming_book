@@ -1,0 +1,206 @@
+<svg viewBox="0 0 1000 1200" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+  <defs>
+    <style>
+      .header { font-size: 16px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .section-title { font-size: 14px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .category-title { font-size: 13px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .item-text { font-size: 11px; fill: var(--text-secondary, #4a4a4a); }
+      .detail-text { font-size: 10px; fill: var(--text-tertiary, #666666); }
+      .highlight-text { font-size: 11px; fill: var(--success-text, #059669); font-weight: 500; }
+      .box { fill: var(--bg-primary, #ffffff); stroke: var(--border-primary, #d1d5db); stroke-width: 1.5; }
+      .header-box { fill: var(--bg-accent, #f3f4f6); stroke: var(--border-primary, #d1d5db); stroke-width: 1.5; }
+      .science-box { fill: var(--bg-info, #e8f5ff); stroke: var(--border-info, #3b82f6); stroke-width: 1.5; }
+      .medical-box { fill: var(--bg-success, #f0f9f5); stroke: var(--border-success, #10b981); stroke-width: 1.5; }
+      .business-box { fill: var(--bg-warning, #fffaf0); stroke: var(--border-warning, #f59e0b); stroke-width: 1.5; }
+      .creative-box { fill: var(--bg-purple, #f3e8ff); stroke: var(--border-purple, #8b5cf6); stroke-width: 1.5; }
+      .education-box { fill: var(--bg-cyan, #ecfdf5); stroke: var(--border-cyan, #06b6d4); stroke-width: 1.5; }
+      .core-box { fill: var(--bg-rose, #fef2f2); stroke: var(--border-rose, #ef4444); stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <rect x="20" y="20" width="960" height="40" class="header-box" rx="8"/>
+  <text x="500" y="44" text-anchor="middle" class="header">🌐 プログラミングスキルの分野横断的応用</text>
+
+  <!-- Core Skills Foundation -->
+  <rect x="40" y="80" width="920" height="100" class="core-box" rx="8"/>
+  <text x="60" y="104" class="section-title">💎 競技プログラミングで培った核心スキル</text>
+  
+  <rect x="60" y="120" width="200" height="40" class="box" rx="4"/>
+  <text x="160" y="140" text-anchor="middle" class="highlight-text">論理的思考力</text>
+  
+  <rect x="280" y="120" width="200" height="40" class="box" rx="4"/>
+  <text x="380" y="140" text-anchor="middle" class="highlight-text">問題解決能力</text>
+  
+  <rect x="500" y="120" width="200" height="40" class="box" rx="4"/>
+  <text x="600" y="140" text-anchor="middle" class="highlight-text">アルゴリズム思考</text>
+  
+  <rect x="720" y="120" width="200" height="40" class="box" rx="4"/>
+  <text x="820" y="140" text-anchor="middle" class="highlight-text">継続学習力</text>
+
+  <!-- Academic Research Fields -->
+  <rect x="40" y="200" width="920" height="220" class="science-box" rx="8"/>
+  <text x="60" y="224" class="section-title">🔬 学術・研究分野での応用</text>
+  
+  <rect x="60" y="240" width="200" height="160" class="box" rx="4"/>
+  <text x="70" y="260" class="category-title">🧬 生命科学・バイオ</text>
+  <text x="70" y="280" class="item-text">• ゲノム解析アルゴリズム開発</text>
+  <text x="70" y="295" class="item-text">• タンパク質構造予測</text>
+  <text x="70" y="310" class="item-text">• 創薬支援システム</text>
+  <text x="70" y="325" class="item-text">• 遺伝子発現データ解析</text>
+  <text x="70" y="340" class="item-text">• 進化生物学・系統解析</text>
+  <text x="70" y="360" class="detail-text">バイオインフォマティクスの</text>
+  <text x="70" y="375" class="detail-text">コア技術として活用</text>
+  <text x="70" y="390" class="highlight-text">生命の謎を解く鍵</text>
+  
+  <rect x="280" y="240" width="200" height="160" class="box" rx="4"/>
+  <text x="290" y="260" class="category-title">🌍 環境・地球科学</text>
+  <text x="290" y="280" class="item-text">• 気候変動シミュレーション</text>
+  <text x="290" y="295" class="item-text">• 環境データ分析・可視化</text>
+  <text x="290" y="310" class="item-text">• 生態系モデリング</text>
+  <text x="290" y="325" class="item-text">• 災害予測システム</text>
+  <text x="290" y="340" class="item-text">• 持続可能性評価</text>
+  <text x="290" y="360" class="detail-text">地球環境問題解決の</text>
+  <text x="290" y="375" class="detail-text">技術的基盤を提供</text>
+  <text x="290" y="390" class="highlight-text">未来の地球を守る</text>
+  
+  <rect x="500" y="240" width="200" height="160" class="box" rx="4"/>
+  <text x="510" y="260" class="category-title">🏭 工学・物理学</text>
+  <text x="510" y="280" class="item-text">• 構造解析・FEMシミュレーション</text>
+  <text x="510" y="295" class="item-text">• 流体力学・伝熱解析</text>
+  <text x="510" y="310" class="item-text">• 材料設計・最適化</text>
+  <text x="510" y="325" class="item-text">• ロボティクス・制御システム</text>
+  <text x="510" y="340" class="item-text">• 量子計算・量子情報処理</text>
+  <text x="510" y="360" class="detail-text">次世代技術の基盤となる</text>
+  <text x="510" y="375" class="detail-text">計算手法を支える</text>
+  <text x="510" y="390" class="highlight-text">イノベーションの源泉</text>
+  
+  <rect x="720" y="240" width="200" height="160" class="box" rx="4"/>
+  <text x="730" y="260" class="category-title">📊 社会科学・経済学</text>
+  <text x="730" y="280" class="item-text">• 経済データ分析・予測</text>
+  <text x="730" y="295" class="item-text">• 社会ネットワーク分析</text>
+  <text x="730" y="310" class="item-text">• 政策効果シミュレーション</text>
+  <text x="730" y="325" class="item-text">• マーケティング分析</text>
+  <text x="730" y="340" class="item-text">• 都市計画・交通最適化</text>
+  <text x="730" y="360" class="detail-text">社会現象を数値化し</text>
+  <text x="730" y="375" class="detail-text">データドリブンな施策へ</text>
+  <text x="730" y="390" class="highlight-text">社会をより良く変える</text>
+
+  <!-- Medical Healthcare -->
+  <rect x="40" y="440" width="920" height="220" class="medical-box" rx="8"/>
+  <text x="60" y="464" class="section-title">🏥 医療・ヘルスケア分野</text>
+  
+  <rect x="60" y="480" width="200" height="160" class="box" rx="4"/>
+  <text x="70" y="500" class="category-title">🔬 医療AI・診断支援</text>
+  <text x="70" y="520" class="item-text">• 画像診断AI（X線、MRI、CT）</text>
+  <text x="70" y="535" class="item-text">• 診断支援システム</text>
+  <text x="70" y="550" class="item-text">• 疾患予測モデル</text>
+  <text x="70" y="565" class="item-text">• 個別化医療</text>
+  <text x="70" y="580" class="item-text">• 手術支援ロボット</text>
+  <text x="70" y="600" class="detail-text">医師の診断精度向上と</text>
+  <text x="70" y="615" class="detail-text">治療の個別最適化</text>
+  <text x="70" y="630" class="highlight-text">人の命を救う技術</text>
+  
+  <rect x="280" y="480" width="200" height="160" class="box" rx="4"/>
+  <text x="290" y="500" class="category-title">📱 デジタルヘルス</text>
+  <text x="290" y="520" class="item-text">• ウェアラブルデータ解析</text>
+  <text x="290" y="535" class="item-text">• 健康管理アプリ</text>
+  <text x="290" y="550" class="item-text">• 遠隔医療プラットフォーム</text>
+  <text x="290" y="565" class="item-text">• 医療IoT・スマートホスピタル</text>
+  <text x="290" y="580" class="item-text">• 疾患管理システム</text>
+  <text x="290" y="600" class="detail-text">予防医学とセルフケアを</text>
+  <text x="290" y="615" class="detail-text">技術で支援</text>
+  <text x="290" y="630" class="highlight-text">健康寿命を延ばす</text>
+  
+  <rect x="500" y="480" width="200" height="160" class="box" rx="4"/>
+  <text x="510" y="500" class="category-title">🧠 脳科学・神経工学</text>
+  <text x="510" y="520" class="item-text">• 脳波・fMRIデータ解析</text>
+  <text x="510" y="535" class="item-text">• ブレインマシンインターフェース</text>
+  <text x="510" y="550" class="item-text">• 神経疾患早期診断</text>
+  <text x="510" y="565" class="item-text">• 認知機能評価</text>
+  <text x="510" y="580" class="item-text">• リハビリテーション支援</text>
+  <text x="510" y="600" class="detail-text">脳の仕組みを解明し</text>
+  <text x="510" y="615" class="detail-text">神経疾患治療に貢献</text>
+  <text x="510" y="630" class="highlight-text">脳と機械をつなぐ</text>
+  
+  <rect x="720" y="480" width="200" height="160" class="box" rx="4"/>
+  <text x="730" y="500" class="category-title">💊 創薬・医薬品開発</text>
+  <text x="730" y="520" class="item-text">• 分子設計・化合物最適化</text>
+  <text x="730" y="535" class="item-text">• 薬物動態シミュレーション</text>
+  <text x="730" y="550" class="item-text">• 臨床試験データ解析</text>
+  <text x="730" y="565" class="item-text">• 副作用予測システム</text>
+  <text x="730" y="580" class="item-text">• 薬剤耐性解析</text>
+  <text x="730" y="600" class="detail-text">新薬開発の期間短縮と</text>
+  <text x="730" y="615" class="detail-text">成功確率向上</text>
+  <text x="730" y="630" class="highlight-text">薬で病気を治す</text>
+
+  <!-- Business Applications -->
+  <rect x="40" y="680" width="920" height="160" class="business-box" rx="8"/>
+  <text x="60" y="704" class="section-title">💼 ビジネス・産業分野</text>
+  
+  <rect x="60" y="720" width="280" height="100" class="box" rx="4"/>
+  <text x="70" y="740" class="category-title">📈 フィンテック・金融工学</text>
+  <text x="70" y="760" class="item-text">• アルゴリズムトレーディング・HFT</text>
+  <text x="70" y="775" class="item-text">• リスク管理・ポートフォリオ最適化</text>
+  <text x="70" y="790" class="item-text">• 不正検知・マネーロンダリング対策</text>
+  <text x="70" y="805" class="highlight-text">金融の未来を創造</text>
+  
+  <rect x="360" y="720" width="280" height="100" class="box" rx="4"/>
+  <text x="370" y="740" class="category-title">🚀 スタートアップ・イノベーション</text>
+  <text x="370" y="760" class="item-text">• AI・機械学習プロダクト開発</text>
+  <text x="370" y="775" class="item-text">• データプラットフォーム構築</text>
+  <text x="370" y="790" class="item-text">• 自動化・効率化システム</text>
+  <text x="370" y="805" class="highlight-text">新しい価値を生み出す</text>
+  
+  <rect x="660" y="720" width="280" height="100" class="box" rx="4"/>
+  <text x="670" y="740" class="category-title">🏭 製造業・IoT</text>
+  <text x="670" y="760" class="item-text">• スマートファクトリー最適化</text>
+  <text x="670" y="775" class="item-text">• 予知保全・品質管理</text>
+  <text x="670" y="790" class="item-text">• サプライチェーン最適化</text>
+  <text x="670" y="805" class="highlight-text">製造業のDXを推進</text>
+
+  <!-- Creative and Education -->
+  <rect x="40" y="860" width="440" height="160" class="creative-box" rx="8"/>
+  <text x="60" y="884" class="section-title">🎨 クリエイティブ・エンターテイメント</text>
+  
+  <rect x="60" y="900" width="180" height="100" class="box" rx="4"/>
+  <text x="70" y="920" class="category-title">🎮 ゲーム開発・VR/AR</text>
+  <text x="70" y="940" class="item-text">• ゲームAI・NPCの行動設計</text>
+  <text x="70" y="955" class="item-text">• VR/AR体験の最適化</text>
+  <text x="70" y="970" class="item-text">• リアルタイム描画技術</text>
+  <text x="70" y="985" class="highlight-text">新しい体験を創造</text>
+  
+  <rect x="260" y="900" width="200" height="100" class="box" rx="4"/>
+  <text x="270" y="920" class="category-title">🎵 メディア・コンテンツ</text>
+  <text x="270" y="940" class="item-text">• 音声・画像処理技術</text>
+  <text x="270" y="955" class="item-text">• 推薦システム・パーソナライゼーション</text>
+  <text x="270" y="970" class="item-text">• コンテンツ生成AI</text>
+  <text x="270" y="985" class="highlight-text">エンタメの可能性を拡張</text>
+
+  <rect x="520" y="860" width="440" height="160" class="education-box" rx="8"/>
+  <text x="540" y="884" class="section-title">📚 教育・人材育成</text>
+  
+  <rect x="540" y="900" width="180" height="100" class="box" rx="4"/>
+  <text x="550" y="920" class="category-title">🎓 EdTech・個別学習</text>
+  <text x="550" y="940" class="item-text">• 適応学習システム</text>
+  <text x="550" y="955" class="item-text">• 学習進捗分析・最適化</text>
+  <text x="550" y="970" class="item-text">• オンライン教育プラットフォーム</text>
+  <text x="550" y="985" class="highlight-text">学習を個別最適化</text>
+  
+  <rect x="740" y="900" width="200" height="100" class="box" rx="4"/>
+  <text x="750" y="920" class="category-title">👥 人材開発・採用</text>
+  <text x="750" y="940" class="item-text">• スキルアセスメント</text>
+  <text x="750" y="955" class="item-text">• 人材マッチングシステム</text>
+  <text x="750" y="970" class="item-text">• 組織分析・人事最適化</text>
+  <text x="750" y="985" class="highlight-text">人と組織の成長を支援</text>
+
+  <!-- Bottom Message -->
+  <rect x="40" y="1040" width="920" height="140" class="header-box" rx="8"/>
+  <text x="60" y="1064" class="section-title">🌟 君の可能性は無限大</text>
+  
+  <text x="80" y="1088" class="item-text">競技プログラミングで培った論理的思考力・問題解決能力・継続学習力は、</text>
+  <text x="80" y="1108" class="item-text">現代社会のあらゆる分野で求められる最も重要なスキルです。</text>
+  
+  <text x="80" y="1138" class="highlight-text">技術で世界を変える—それが君たちの使命です。</text>
+  <text x="80" y="1158" class="item-text">どの分野に進んでも、今身につけた力が必ず活かされます。未来は君たちの手の中に。</text>
+</svg>
