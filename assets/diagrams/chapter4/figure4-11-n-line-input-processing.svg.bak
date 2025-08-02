@@ -1,0 +1,89 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --success-color: #27ae60;
+        --info-color: #17a2b8;
+        --background-light: #ecf0f1;
+        --text-dark: #2c3e50;
+        --border-color: #bdc3c7;
+      }
+      
+      .container { font-family: 'Inter', sans-serif; }
+      .title { font-size: 18px; font-weight: 600; fill: var(--primary-color); }
+      .subtitle { font-size: 14px; font-weight: 500; fill: var(--text-dark); }
+      .text { font-size: 12px; fill: var(--text-dark); }
+      .code { font-family: 'Consolas', 'Monaco', monospace; font-size: 11px; fill: var(--text-dark); }
+      .example-box { fill: #f0f8ff; stroke: var(--secondary-color); stroke-width: 2; rx: 8; }
+      .code-box { fill: #f0fff0; stroke: var(--success-color); stroke-width: 2; rx: 8; }
+      .input-box { fill: #fff8f0; stroke: var(--info-color); stroke-width: 1; rx: 4; }
+      .arrow { stroke: var(--secondary-color); stroke-width: 2; fill: var(--secondary-color); }
+    </style>
+  </defs>
+  
+  <title>図4-11：N行入力処理の基本形</title>
+  <desc>N個のデータが1行ずつ与えられる場合の基本的な処理パターンを示した図</desc>
+  
+  <g class="container">
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" class="title">図4-11：N行入力処理の基本形</text>
+    
+    <!-- Problem description -->
+    <rect x="50" y="60" width="300" height="120" class="example-box"/>
+    <text x="70" y="85" class="subtitle">問題例：「N個の整数が1行ずつ与えられる」</text>
+    <text x="70" y="110" class="text">入力例:</text>
+    <text x="70" y="130" class="code">3      ← N（データの個数）</text>
+    <text x="70" y="150" class="code">10     ← 1行目の数値</text>
+    <text x="70" y="170" class="code">25     ← 2行目の数値</text>
+    
+    <!-- Arrow -->
+    <path d="M360 120 L410 120" class="arrow" marker-end="url(#arrowhead)"/>
+    
+    <!-- Basic code -->
+    <rect x="420" y="60" width="330" height="280" class="code-box"/>
+    <text x="440" y="85" class="subtitle">基本コード：</text>
+    <text x="440" y="110" class="code">n = int(input())          # データ個数を読み込み</text>
+    <text x="440" y="130" class="code">numbers = []              # 結果格納用リスト</text>
+    <text x="440" y="150" class="code">for i in range(n):        # N回繰り返し</text>
+    <text x="460" y="170" class="code">x = int(input())      # 1行ずつ読み込み</text>
+    <text x="460" y="190" class="code">numbers.append(x)     # リストに追加</text>
+    <text x="440" y="220" class="code"># この時点で numbers = [10, 25, 13]</text>
+    <text x="440" y="250" class="code">print(max(numbers))       # 最大値出力: 25</text>
+    <text x="440" y="270" class="code">print(sum(numbers))       # 合計出力: 48</text>
+    <text x="440" y="290" class="code">print(len(numbers))       # 個数出力: 3</text>
+    <text x="440" y="320" class="code">13     ← 3行目の数値</text>
+    
+    <!-- Step-by-step explanation -->
+    <rect x="50" y="200" width="300" height="180" class="input-box"/>
+    <text x="70" y="225" class="subtitle">処理の流れ：</text>
+    <text x="70" y="250" class="text">1. n = 3 を読み込み</text>
+    <text x="70" y="270" class="text">2. 空のリスト numbers = [] を作成</text>
+    <text x="70" y="290" class="text">3. 3回ループ:</text>
+    <text x="90" y="310" class="text">• 1回目: 10 を読み込み → [10]</text>
+    <text x="90" y="330" class="text">• 2回目: 25 を読み込み → [10, 25]</text>
+    <text x="90" y="350" class="text">• 3回目: 13 を読み込み → [10, 25, 13]</text>
+    <text x="70" y="370" class="text">4. リストを使って結果を計算・出力</text>
+    
+    <!-- Key benefits -->
+    <rect x="50" y="400" width="700" height="120" class="example-box"/>
+    <text x="70" y="425" class="subtitle">💡 このパターンの利点：</text>
+    <text x="90" y="450" class="text">• N個のデータをすべてメモリに保持できる</text>
+    <text x="90" y="470" class="text">• 後から最大値、最小値、平均値などを簡単に計算できる</text>
+    <text x="90" y="490" class="text">• ソートや検索などの操作も可能</text>
+    <text x="90" y="510" class="text">• 競技プログラミングで最も頻繁に使用するパターンの一つ</text>
+    
+    <!-- Usage note -->
+    <rect x="50" y="540" width="700" height="40" class="input-box"/>
+    <text x="70" y="565" class="subtitle">📋 使用場面：データの全体を把握してから処理する必要がある問題</text>
+  </g>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="var(--secondary-color)"/>
+    </marker>
+  </defs>
+</svg>

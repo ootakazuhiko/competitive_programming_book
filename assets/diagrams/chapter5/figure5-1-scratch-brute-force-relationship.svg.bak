@@ -1,0 +1,123 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" 
+     style="max-width: 100%; height: auto;">
+  
+  <defs>
+    <style>
+      .bg { fill: var(--svg-bg, #ffffff); }
+      .bg-alt { fill: var(--svg-bg-alt, #f8fafc); }
+      .text { fill: var(--svg-text, #1a1a1a); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+      .text-sm { font-size: 12px; }
+      .text-md { font-size: 14px; font-weight: 500; }
+      .text-lg { font-size: 16px; font-weight: 600; }
+      .border { stroke: var(--svg-border, #d1d5db); fill: none; stroke-width: 1; }
+      .primary { fill: var(--svg-primary, #3b82f6); }
+      .success { fill: var(--svg-success, #10b981); }
+      .warning { fill: var(--svg-warning, #f59e0b); }
+      .scratch-box { fill: #FFE5CC; stroke: #FF6B35; stroke-width: 2; rx: 8; }
+      .competitive-box { fill: #E3F2FD; stroke: var(--svg-primary, #3b82f6); stroke-width: 2; rx: 8; }
+      .connection-line { stroke: var(--svg-primary, #3b82f6); stroke-width: 3; stroke-dasharray: 5,5; }
+      .concept-box { fill: var(--svg-bg-alt, #f8fafc); stroke: var(--svg-success, #10b981); stroke-width: 2; rx: 8; }
+    </style>
+    
+    <!-- Arrow marker -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="3" 
+            markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" class="primary"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" class="bg"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="text text-lg">Scratchのゲーム開発と全探索の関係</text>
+  
+  <!-- Scratch section -->
+  <g class="scratch-section">
+    <text x="200" y="70" text-anchor="middle" class="text text-md">🎮 Scratchでの敵キャラ発見</text>
+    
+    <rect x="80" y="80" width="240" height="200" class="scratch-box"/>
+    
+    <!-- Step 1 -->
+    <text x="100" y="110" class="text text-sm">画面上の全ての場所を</text>
+    <text x="100" y="130" class="text text-sm">順番にチェック</text>
+    
+    <!-- Arrow -->
+    <text x="100" y="155" class="text text-sm">↓</text>
+    
+    <!-- Step 2 -->
+    <text x="100" y="175" class="text text-sm">敵がいるかどうか確認</text>
+    
+    <!-- Arrow -->
+    <text x="100" y="200" class="text text-sm">↓</text>
+    
+    <!-- Step 3 -->
+    <text x="100" y="220" class="text text-sm">見つかったら処理実行</text>
+    
+    <!-- Scratch visual representation -->
+    <rect x="100" y="240" width="200" height="30" fill="#FFD23F" stroke="#FF6B35" rx="4"/>
+    <text x="200" y="260" text-anchor="middle" class="text text-sm">for each sprite, check position</text>
+  </g>
+  
+  <!-- Connection arrow -->
+  <g class="connection">
+    <path d="M 320 180 Q 400 160 480 180" class="connection-line" fill="none"/>
+    <text x="400" y="150" text-anchor="middle" class="text text-sm primary">⟷ 同じ考え方</text>
+  </g>
+  
+  <!-- Competitive Programming section -->
+  <g class="competitive-section">
+    <text x="600" y="70" text-anchor="middle" class="text text-md">🔍 競技プログラミングの全探索</text>
+    
+    <rect x="480" y="80" width="240" height="200" class="competitive-box"/>
+    
+    <!-- Step 1 -->
+    <text x="500" y="110" class="text text-sm">可能な全ての答えを</text>
+    <text x="500" y="130" class="text text-sm">順番にチェック</text>
+    
+    <!-- Arrow -->
+    <text x="500" y="155" class="text text-sm">↓</text>
+    
+    <!-- Step 2 -->
+    <text x="500" y="175" class="text text-sm">条件を満たすかどうか確認</text>
+    
+    <!-- Arrow -->
+    <text x="500" y="200" class="text text-sm">↓</text>
+    
+    <!-- Step 3 -->
+    <text x="500" y="220" class="text text-sm">見つかったら答えとして採用</text>
+    
+    <!-- Code representation -->
+    <rect x="500" y="240" width="200" height="30" fill="#E3F2FD" stroke="var(--svg-primary, #3b82f6)" rx="4"/>
+    <text x="600" y="260" text-anchor="middle" class="text text-sm">for i in range(n): check condition</text>
+  </g>
+  
+  <!-- Common concept section -->
+  <g class="common-concept">
+    <rect x="150" y="320" width="500" height="140" class="concept-box"/>
+    <text x="400" y="350" text-anchor="middle" class="text text-md success">共通する考え方：「しらみつぶしに調べる」</text>
+    
+    <text x="180" y="380" class="text text-sm">= 「可能性を1つずつ丁寧に確認していく」</text>
+    
+    <!-- Key benefits -->
+    <text x="180" y="410" class="text text-sm">🎯 全探索の特徴：</text>
+    <text x="200" y="430" class="text text-sm">• 確実に正解が見つかる</text>
+    <text x="200" y="450" class="text text-sm">• 実装がシンプルで間違いにくい</text>
+    
+    <text x="420" y="410" class="text text-sm">⚡ 実用的な範囲：</text>
+    <text x="440" y="430" class="text text-sm">• 探索範囲が比較的小さい場合</text>
+    <text x="440" y="450" class="text text-sm">• 他に効率的な解法がない場合</text>
+  </g>
+  
+  <!-- Algorithm insight -->
+  <g class="insight">
+    <rect x="200" y="490" width="400" height="80" fill="#FFF7ED" stroke="#F59E0B" stroke-width="2" rx="8"/>
+    <text x="400" y="515" text-anchor="middle" class="text text-md warning">💡 アルゴリズムの本質</text>
+    <text x="220" y="540" class="text text-sm">全探索は「最も基本的で確実な問題解決手法」</text>
+    <text x="220" y="560" class="text text-sm">Scratchでの経験が、そのまま競技プログラミングに活かせる！</text>
+  </g>
+  
+  <!-- Accessibility -->
+  <title>Scratchのゲーム開発と全探索の関係</title>
+  <desc>Scratchでの敵キャラクター発見処理と競技プログラミングの全探索アルゴリズムの共通性を示す図表</desc>
+</svg>

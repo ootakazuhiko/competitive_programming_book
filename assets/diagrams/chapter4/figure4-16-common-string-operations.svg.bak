@@ -1,0 +1,74 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --success-color: #27ae60;
+        --info-color: #17a2b8;
+        --background-light: #ecf0f1;
+        --text-dark: #2c3e50;
+        --border-color: #bdc3c7;
+      }
+      
+      .container { font-family: 'Inter', sans-serif; }
+      .title { font-size: 18px; font-weight: 600; fill: var(--primary-color); }
+      .subtitle { font-size: 14px; font-weight: 500; fill: var(--text-dark); }
+      .text { font-size: 12px; fill: var(--text-dark); }
+      .code { font-family: 'Consolas', 'Monaco', monospace; font-size: 11px; fill: var(--text-dark); }
+      .pattern1-box { fill: #f0f8ff; stroke: var(--secondary-color); stroke-width: 2; rx: 8; }
+      .pattern2-box { fill: #f0fff0; stroke: var(--success-color); stroke-width: 2; rx: 8; }
+      .pattern3-box { fill: #fff8f0; stroke: var(--info-color); stroke-width: 2; rx: 8; }
+    </style>
+  </defs>
+  
+  <title>図4-16：競技プログラミングでよく使う文字列操作</title>
+  <desc>競技プログラミングで頻繁に使用される文字列操作のパターンを示した図</desc>
+  
+  <g class="container">
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" class="title">図4-16：競技プログラミングでよく使う文字列操作</text>
+    
+    <!-- Pattern 1: Character counting -->
+    <rect x="50" y="60" width="700" height="160" class="pattern1-box"/>
+    <text x="70" y="85" class="subtitle">パターン1：文字の出現回数カウント</text>
+    <text x="70" y="110" class="code">s = input()  # "programming"</text>
+    <text x="70" y="130" class="code">char_count = {}</text>
+    <text x="70" y="150" class="code">for char in s:</text>
+    <text x="90" y="170" class="code">if char in char_count:</text>
+    <text x="110" y="190" class="code">char_count[char] += 1</text>
+    <text x="90" y="210" class="code">else: char_count[char] = 1</text>
+    <text x="400" y="110" class="code"># より簡潔な書き方</text>
+    <text x="400" y="130" class="code">from collections import Counter</text>
+    <text x="400" y="150" class="code">char_count = Counter(s)</text>
+    <text x="400" y="180" class="text">結果: {'p': 1, 'r': 2, 'o': 1, 'g': 2, ...}</text>
+    
+    <!-- Pattern 2: Palindrome check -->
+    <rect x="50" y="240" width="700" height="120" class="pattern2-box"/>
+    <text x="70" y="265" class="subtitle">パターン2：回文（palindrome）判定</text>
+    <text x="70" y="290" class="code">s = input()  # "racecar"</text>
+    <text x="70" y="310" class="code">if s == s[::-1]:</text>
+    <text x="90" y="330" class="code">print("回文です")</text>
+    <text x="70" y="350" class="code">else: print("回文ではありません")</text>
+    <text x="400" y="290" class="code"># 大文字小文字を区別しない回文判定</text>
+    <text x="400" y="310" class="code">s = input().lower()</text>
+    <text x="400" y="330" class="code">if s == s[::-1]:</text>
+    <text x="420" y="350" class="code">print("回文です（大小文字無視）")</text>
+    
+    <!-- Pattern 3: String replacement -->
+    <rect x="50" y="380" width="700" height="160" class="pattern3-box"/>
+    <text x="70" y="405" class="subtitle">パターン3：文字列の置換・加工</text>
+    <text x="70" y="430" class="code">s = input()  # "Hello World"</text>
+    <text x="70" y="450" class="code">s = s.replace(" ", "_")      # "Hello_World"</text>
+    <text x="70" y="470" class="code">s = s.replace("o", "0")      # "Hell0_W0rld"</text>
+    <text x="70" y="490" class="code">s = s.lower()               # "hell0_w0rld"</text>
+    <text x="70" y="510" class="code">words = s.split("_")        # ["hell0", "w0rld"]</text>
+    <text x="70" y="530" class="code">print("_".join(words))      # "hell0_w0rld"</text>
+    <text x="400" y="430" class="text">💡 チェーンして複数の操作を適用</text>
+    <text x="400" y="450" class="text">• replace()で文字を置換</text>
+    <text x="400" y="470" class="text">• upper()/lower()で大小文字変換</text>
+    <text x="400" y="490" class="text">• split()/join()で分割・結合</text>
+    <text x="400" y="510" class="text">• スライス記法で部分文字列取得</text>
+  </g>
+</svg>

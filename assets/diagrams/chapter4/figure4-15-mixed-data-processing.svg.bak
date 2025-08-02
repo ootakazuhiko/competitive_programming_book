@@ -1,0 +1,70 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --success-color: #27ae60;
+        --warning-color: #f39c12;
+        --background-light: #ecf0f1;
+        --text-dark: #2c3e50;
+        --border-color: #bdc3c7;
+      }
+      
+      .container { font-family: 'Inter', sans-serif; }
+      .title { font-size: 18px; font-weight: 600; fill: var(--primary-color); }
+      .subtitle { font-size: 14px; font-weight: 500; fill: var(--text-dark); }
+      .text { font-size: 12px; fill: var(--text-dark); }
+      .code { font-family: 'Consolas', 'Monaco', monospace; font-size: 11px; fill: var(--text-dark); }
+      .example-box { fill: #f0f8ff; stroke: var(--secondary-color); stroke-width: 2; rx: 8; }
+      .complex-box { fill: #f0fff0; stroke: var(--success-color); stroke-width: 2; rx: 8; }
+      .warning-box { fill: #fff8e1; stroke: var(--warning-color); stroke-width: 2; rx: 8; }
+    </style>
+  </defs>
+  
+  <title>図4-15：混在データの処理パターン</title>
+  <desc>文字列と数値が混在するデータの処理方法を示した図</desc>
+  
+  <g class="container">
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" class="title">図4-15：混在データの処理パターン</text>
+    
+    <!-- Basic mixed data -->
+    <rect x="50" y="60" width="700" height="160" class="example-box"/>
+    <text x="70" y="85" class="subtitle">問題例：「名前と年齢が空白区切りで与えられる」</text>
+    <text x="70" y="110" class="text">入力例: "Alice 15"</text>
+    <text x="70" y="135" class="subtitle">処理方法：</text>
+    <text x="70" y="160" class="code"># 方法1: split()で分割してから個別に変換</text>
+    <text x="70" y="180" class="code">line = input().split()</text>
+    <text x="70" y="200" class="code">name = line[0]           # 文字列のまま</text>
+    <text x="400" y="160" class="code"># 方法2: 直接代入（型が確定している場合）</text>
+    <text x="400" y="180" class="code">name, age_str = input().split()</text>
+    <text x="400" y="200" class="code">age = int(age_str)</text>
+    
+    <!-- Complex pattern -->
+    <rect x="50" y="240" width="700" height="160" class="complex-box"/>
+    <text x="70" y="265" class="subtitle">複雑な混在パターン：</text>
+    <text x="70" y="290" class="code"># "3 Alice Bob Charlie" のような入力</text>
+    <text x="70" y="310" class="code"># 最初が個数、後ろが名前のリスト</text>
+    <text x="70" y="330" class="code">data = input().split()</text>
+    <text x="70" y="350" class="code">n = int(data[0])         # 最初の要素は個数</text>
+    <text x="70" y="370" class="code">names = data[1:]         # 2番目以降は名前</text>
+    <text x="70" y="390" class="code">print(f"人数: {n}")</text>
+    <text x="400" y="330" class="code">for i, name in enumerate(names):</text>
+    <text x="420" y="350" class="code">print(f"{i+1}番目: {name}")</text>
+    <text x="400" y="380" class="text">💡 スライス記法 data[1:] で2番目以降を取得</text>
+    
+    <!-- Warning -->
+    <rect x="50" y="420" width="700" height="120" class="warning-box"/>
+    <text x="70" y="445" class="subtitle">注意が必要なパターン：</text>
+    <text x="70" y="470" class="code"># 文字列に空白が含まれる場合</text>
+    <text x="70" y="490" class="code"># 「"Hello World" 25」のような入力</text>
+    <text x="70" y="510" class="code"># この場合、split()だけでは正しく分割できない</text>
+    <text x="70" y="530" class="text">⚠️ 問題文で入力形式を必ず確認すること</text>
+    <text x="400" y="470" class="text">• 空白を含む文字列の扱い</text>
+    <text x="400" y="490" class="text">• 特殊な区切り文字の場合</text>
+    <text x="400" y="510" class="text">• 引用符で囲まれた文字列</text>
+    <text x="400" y="530" class="text">• 問題文の入力形式説明を精読</text>
+  </g>
+</svg>

@@ -1,0 +1,96 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --success-color: #27ae60;
+        --warning-color: #f39c12;
+        --background-light: #ecf0f1;
+        --text-dark: #2c3e50;
+        --border-color: #bdc3c7;
+      }
+      
+      .container { font-family: 'Inter', sans-serif; }
+      .title { font-size: 18px; font-weight: 600; fill: var(--primary-color); }
+      .subtitle { font-size: 14px; font-weight: 500; fill: var(--text-dark); }
+      .text { font-size: 12px; fill: var(--text-dark); }
+      .code { font-family: 'Consolas', 'Monaco', monospace; font-size: 11px; fill: var(--text-dark); }
+      .step-box { fill: var(--background-light); stroke: var(--border-color); stroke-width: 2; rx: 8; }
+      .arrow { stroke: var(--secondary-color); stroke-width: 2; fill: var(--secondary-color); }
+      .input-box { fill: #fff5f5; stroke: var(--accent-color); stroke-width: 2; rx: 6; }
+      .process-box { fill: #f0f8ff; stroke: var(--secondary-color); stroke-width: 2; rx: 6; }
+      .output-box { fill: #f0fff0; stroke: var(--success-color); stroke-width: 2; rx: 6; }
+      .branch-box { fill: #fff8e1; stroke: var(--warning-color); stroke-width: 2; rx: 6; }
+    </style>
+  </defs>
+  
+  <title>図4-7：複数数値入力の段階的処理</title>
+  <desc>複数の数値が一行に入力された場合の段階的な処理過程を示した図</desc>
+  
+  <g class="container">
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" class="title">図4-7：複数数値入力の段階的処理</text>
+    
+    <!-- Step 1: Input -->
+    <rect x="300" y="60" width="200" height="40" class="input-box"/>
+    <text x="400" y="85" text-anchor="middle" class="subtitle">入力: "3 5 2\n"</text>
+    
+    <!-- Arrow 1 -->
+    <path d="M400 110 L400 130" class="arrow" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 2: input() -->
+    <rect x="300" y="140" width="200" height="40" class="process-box"/>
+    <text x="400" y="165" text-anchor="middle" class="subtitle">input(): "3 5 2"</text>
+    <text x="520" y="165" class="text">← 改行文字は自動で除去</text>
+    
+    <!-- Arrow 2 -->
+    <path d="M400 190 L400 210" class="arrow" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 3: split() -->
+    <rect x="300" y="220" width="200" height="40" class="process-box"/>
+    <text x="400" y="245" text-anchor="middle" class="subtitle">.split(): ["3", "5", "2"]</text>
+    <text x="520" y="245" class="text">← 空白で分割、文字列のリスト</text>
+    
+    <!-- Arrow 3 -->
+    <path d="M400 270 L400 290" class="arrow" marker-end="url(#arrowhead)"/>
+    
+    <!-- Step 4: map(int, ...) -->
+    <rect x="300" y="300" width="200" height="40" class="process-box"/>
+    <text x="400" y="325" text-anchor="middle" class="subtitle">map(int, ...): &lt;map object&gt;</text>
+    <text x="520" y="325" class="text">← 各要素をint()で変換するオブジェクト</text>
+    
+    <!-- Arrow to branch -->
+    <path d="M400 350 L400 370" class="arrow" marker-end="url(#arrowhead)"/>
+    
+    <!-- Branch point -->
+    <rect x="250" y="380" width="300" height="30" class="branch-box"/>
+    <text x="400" y="400" text-anchor="middle" class="subtitle">使用方法による分岐:</text>
+    
+    <!-- Left branch: Individual variables -->
+    <path d="M350 410 L250 430" class="arrow" marker-end="url(#arrowhead)"/>
+    <rect x="50" y="440" width="300" height="80" class="output-box"/>
+    <text x="200" y="465" text-anchor="middle" class="subtitle">パターン1：個別変数に代入</text>
+    <text x="70" y="485" class="code">a, b, c = map(int, input().split())</text>
+    <text x="70" y="505" class="code"># a=3, b=5, c=2（それぞれ整数）</text>
+    
+    <!-- Right branch: List -->
+    <path d="M450 410 L550 430" class="arrow" marker-end="url(#arrowhead)"/>
+    <rect x="450" y="440" width="300" height="80" class="output-box"/>
+    <text x="600" y="465" text-anchor="middle" class="subtitle">パターン2：リストとして取得</text>
+    <text x="470" y="485" class="code">numbers = list(map(int, input().split()))</text>
+    <text x="470" y="505" class="code"># numbers = [3, 5, 2]（整数のリスト）</text>
+    
+    <!-- Key insight -->
+    <rect x="100" y="540" width="600" height="40" class="step-box"/>
+    <text x="120" y="565" class="subtitle">💡 重要なポイント：map()とlist()の組み合わせで効率的に複数数値を処理</text>
+  </g>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+            refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="var(--secondary-color)"/>
+    </marker>
+  </defs>
+</svg>
