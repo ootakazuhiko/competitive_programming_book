@@ -1,0 +1,166 @@
+<svg viewBox="0 0 950 900" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+  <defs>
+    <style>
+      .header { font-size: 16px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .section-title { font-size: 14px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .category-title { font-size: 13px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .item-text { font-size: 11px; fill: var(--text-secondary, #4a4a4a); }
+      .detail-text { font-size: 10px; fill: var(--text-tertiary, #666666); }
+      .highlight-text { font-size: 11px; fill: var(--success-text, #059669); font-weight: 500; }
+      .warning-text { font-size: 11px; fill: var(--warning-text, #f59e0b); font-weight: 500; }
+      .box { fill: var(--bg-primary, #ffffff); stroke: var(--border-primary, #d1d5db); stroke-width: 1.5; }
+      .header-box { fill: var(--bg-accent, #f3f4f6); stroke: var(--border-primary, #d1d5db); stroke-width: 1.5; }
+      .online-box { fill: var(--bg-info, #e8f5ff); stroke: var(--border-info, #3b82f6); stroke-width: 1.5; }
+      .offline-box { fill: var(--bg-success, #f0f9f5); stroke: var(--border-success, #10b981); stroke-width: 1.5; }
+      .comparison-box { fill: var(--bg-warning, #fffaf0); stroke: var(--border-warning, #f59e0b); stroke-width: 1.5; }
+      .strategy-box { fill: var(--bg-purple, #f3e8ff); stroke: var(--border-purple, #8b5cf6); stroke-width: 1.5; }
+      .arrow { fill: none; stroke: var(--text-tertiary, #666666); stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="var(--text-tertiary, #666666)"/>
+      </marker>
+    </defs>
+  </defs>
+
+  <!-- Title -->
+  <rect x="20" y="20" width="910" height="40" class="header-box" rx="8"/>
+  <text x="475" y="44" text-anchor="middle" class="header">💻🏠 オンライン・オフラインでの交流最適化</text>
+
+  <!-- Online Communication Section -->
+  <rect x="40" y="80" width="430" height="380" class="online-box" rx="8"/>
+  <text x="60" y="104" class="section-title">💻 オンラインでの効果的な交流</text>
+  
+  <rect x="60" y="120" width="390" height="100" class="box" rx="4"/>
+  <text x="80" y="140" class="category-title">✅ オンラインの利点：</text>
+  <text x="80" y="160" class="item-text">• 地理的制約なし</text>
+  <text x="80" y="175" class="item-text">• 時間の調整がしやすい</text>
+  <text x="80" y="190" class="item-text">• 画面共有での効率的な解説</text>
+  <text x="80" y="205" class="item-text">• チャット履歴での復習可能</text>
+  
+  <rect x="60" y="240" width="190" height="100" class="box" rx="4"/>
+  <text x="80" y="260" class="category-title">🛠️ 推奨ツール：</text>
+  <text x="80" y="280" class="item-text">• Discord：音声・テキストチャット</text>
+  <text x="80" y="295" class="item-text">• Zoom：画面共有・録画機能</text>
+  <text x="80" y="310" class="item-text">• Slack：学習グループ情報共有</text>
+  <text x="80" y="325" class="item-text">• GitHub：コード共有・レビュー</text>
+  
+  <rect x="260" y="240" width="190" height="100" class="box" rx="4"/>
+  <text x="280" y="260" class="category-title">📝 交流のコツ：</text>
+  <text x="280" y="280" class="item-text">• 定期的な時間を決めて継続</text>
+  <text x="280" y="295" class="item-text">• 画面共有でコードを一緒に見る</text>
+  <text x="280" y="310" class="item-text">• 音声通話で相談しながら解決</text>
+  <text x="280" y="325" class="item-text">• 学習記録・進捗共有</text>
+  
+  <rect x="60" y="360" width="390" height="80" class="box" rx="4"/>
+  <text x="80" y="380" class="warning-text">⚠️ 注意点：</text>
+  <text x="80" y="400" class="detail-text">• 個人情報の取り扱いに注意</text>
+  <text x="250" y="400" class="detail-text">• 長時間の画面利用による疲労対策</text>
+  <text x="80" y="415" class="detail-text">• 時間管理と集中力の維持</text>
+  <text x="250" y="415" class="detail-text">• ネットリテラシーの向上</text>
+  
+  <text x="255" y="440" class="highlight-text">🌐 世界中の仲間とつながれる</text>
+
+  <!-- Offline Communication Section -->
+  <rect x="480" y="80" width="430" height="380" class="offline-box" rx="8"/>
+  <text x="500" y="104" class="section-title">🏠 オフラインでの効果的な交流</text>
+  
+  <rect x="500" y="120" width="390" height="100" class="box" rx="4"/>
+  <text x="520" y="140" class="category-title">✅ オフラインの利点：</text>
+  <text x="520" y="160" class="item-text">• より深いコミュニケーション</text>
+  <text x="520" y="175" class="item-text">• ホワイトボードを使った図解</text>
+  <text x="520" y="190" class="item-text">• 集中した学習環境</text>
+  <text x="520" y="205" class="item-text">• リアルな人間関係の構築</text>
+  
+  <rect x="500" y="240" width="190" height="100" class="box" rx="4"/>
+  <text x="520" y="260" class="category-title">📍 推奨場所：</text>
+  <text x="520" y="280" class="item-text">• 学校の空き教室・図書館</text>
+  <text x="520" y="295" class="item-text">• 公共図書館の学習室</text>
+  <text x="520" y="310" class="item-text">• 地域の学習センター</text>
+  <text x="520" y="325" class="item-text">• 安全で静かなカフェ</text>
+  
+  <rect x="700" y="240" width="190" height="100" class="box" rx="4"/>
+  <text x="720" y="260" class="category-title">🤝 交流の進め方：</text>
+  <text x="720" y="280" class="item-text">• 定期的な勉強会開催</text>
+  <text x="720" y="295" class="item-text">• ペアプログラミング</text>
+  <text x="720" y="310" class="item-text">• ホワイトボードでの議論</text>
+  <text x="720" y="325" class="item-text">• 保護者・先生への相談</text>
+  
+  <rect x="500" y="360" width="390" height="80" class="box" rx="4"/>
+  <text x="520" y="380" class="warning-text">⚠️ 安全面の配慮：</text>
+  <text x="520" y="400" class="detail-text">• 保護者・学校への事前相談</text>
+  <text x="720" y="400" class="detail-text">• 公共の場での活動を基本に</text>
+  <text x="520" y="415" class="detail-text">• 時間・場所の事前共有</text>
+  <text x="720" y="415" class="detail-text">• 複数人での活動を心がける</text>
+  
+  <text x="695" y="440" class="highlight-text">🤝 リアルなつながりを深める</text>
+
+  <!-- Comparison Section -->
+  <rect x="40" y="480" width="870" height="160" class="comparison-box" rx="8"/>
+  <text x="60" y="504" class="section-title">⚖️ オンライン vs オフラインの使い分け</text>
+  
+  <rect x="60" y="520" width="260" height="100" class="box" rx="4"/>
+  <text x="80" y="540" class="category-title">💻 オンライン向きの活動：</text>
+  <text x="80" y="560" class="item-text">• 定期的な進捗共有</text>
+  <text x="80" y="575" class="item-text">• コードレビュー・ヒント交換</text>
+  <text x="80" y="590" class="item-text">• 遠方の仲間との交流</text>
+  <text x="80" y="605" class="highlight-text">効率重視・継続性重視</text>
+  
+  <rect x="340" y="520" width="260" height="100" class="box" rx="4"/>
+  <text x="360" y="540" class="category-title">🏠 オフライン向きの活動：</text>
+  <text x="360" y="560" class="item-text">• 深い議論・ブレインストーミング</text>
+  <text x="360" y="575" class="item-text">• 複雑な問題の共同解決</text>
+  <text x="360" y="590" class="item-text">• 親睦を深める活動</text>
+  <text x="360" y="605" class="highlight-text">深度重視・関係性重視</text>
+  
+  <rect x="620" y="520" width="270" height="100" class="box" rx="4"/>
+  <text x="640" y="540" class="category-title">🔄 ハイブリッド活用：</text>
+  <text x="640" y="560" class="item-text">• 平日はオンライン・週末はオフライン</text>
+  <text x="640" y="575" class="item-text">• 目的に応じて使い分け</text>
+  <text x="640" y="590" class="item-text">• 両方の利点を活かす</text>
+  <text x="640" y="605" class="highlight-text">最適な組み合わせを見つける</text>
+
+  <!-- Strategy Section -->
+  <rect x="40" y="660" width="870" height="220" class="strategy-box" rx="8"/>
+  <text x="60" y="684" class="section-title">🎯 交流を最大化する戦略</text>
+  
+  <rect x="60" y="700" width="200" height="160" class="box" rx="4"/>
+  <text x="80" y="720" class="category-title">📅 計画的な交流：</text>
+  <text x="80" y="740" class="item-text">• 週次・月次の定期活動</text>
+  <text x="80" y="755" class="item-text">• 目標設定と進捗確認</text>
+  <text x="80" y="770" class="item-text">• イベント・コンテストへの</text>
+  <text x="80" y="785" class="item-text">  参加計画</text>
+  <text x="80" y="805" class="highlight-text">📈 成長を可視化</text>
+  <text x="80" y="825" class="item-text">学習ログや成果を共有し、</text>
+  <text x="80" y="840" class="item-text">互いの成長を実感する</text>
+  
+  <rect x="280" y="700" width="200" height="160" class="box" rx="4"/>
+  <text x="300" y="720" class="category-title">🎭 多様な交流形式：</text>
+  <text x="300" y="740" class="item-text">• ペアプログラミング</text>
+  <text x="300" y="755" class="item-text">• 模擬コンテスト開催</text>
+  <text x="300" y="770" class="item-text">• 勉強会・発表会</text>
+  <text x="300" y="785" class="item-text">• 解説記事の共同執筆</text>
+  <text x="300" y="805" class="highlight-text">🌟 創造的な活動</text>
+  <text x="300" y="825" class="item-text">一緒にプロジェクトを作成し、</text>
+  <text x="300" y="840" class="item-text">より深い学びを実現</text>
+  
+  <rect x="500" y="700" width="200" height="160" class="box" rx="4"/>
+  <text x="520" y="720" class="category-title">🌍 コミュニティ拡大：</text>
+  <text x="520" y="740" class="item-text">• 年齢・レベル違いとの交流</text>
+  <text x="520" y="755" class="item-text">• 先輩からのアドバイス</text>
+  <text x="520" y="770" class="item-text">• 後輩への指導・メンタリング</text>
+  <text x="520" y="785" class="item-text">• 保護者・教員の理解促進</text>
+  <text x="520" y="805" class="highlight-text">🤝 相互メンタリング</text>
+  <text x="520" y="825" class="item-text">教えることで理解が深まり、</text>
+  <text x="520" y="840" class="item-text">リーダーシップも育つ</text>
+  
+  <rect x="720" y="700" width="170" height="160" class="box" rx="4"/>
+  <text x="740" y="720" class="category-title">⚡ 継続のコツ：</text>
+  <text x="740" y="740" class="item-text">• 無理のないペース</text>
+  <text x="740" y="755" class="item-text">• 楽しさを最優先</text>
+  <text x="740" y="770" class="item-text">• 小さな成功を積み重ね</text>
+  <text x="740" y="785" class="item-text">• 挫折時の支え合い</text>
+  <text x="740" y="805" class="highlight-text">💪 仲間の力</text>
+  <text x="740" y="825" class="item-text">一人では続かないことも、</text>
+  <text x="740" y="840" class="item-text">仲間がいれば必ず続く</text>
+</svg>
