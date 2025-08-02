@@ -1,0 +1,130 @@
+<svg viewBox="0 0 950 900" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+  <defs>
+    <style>
+      .header { font-size: 16px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .section-title { font-size: 14px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .item-text { font-size: 12px; fill: var(--text-secondary, #4a4a4a); }
+      .code-text { font-size: 10px; fill: var(--text-tertiary, #666666); font-family: 'Monaco', 'Consolas', monospace; }
+      .step-text { font-size: 11px; fill: var(--text-tertiary, #666666); }
+      .highlight-text { font-size: 11px; fill: var(--success-text, #059669); font-weight: 500; }
+      .warning-text { font-size: 11px; fill: var(--error-text, #dc2626); font-weight: 500; }
+      .safe-text { font-size: 11px; fill: var(--success-text, #059669); }
+      .danger-text { font-size: 11px; fill: var(--error-text, #dc2626); }
+      .info-text { font-size: 11px; fill: var(--info-text, #3b82f6); }
+      .box { fill: var(--bg-primary, #ffffff); stroke: var(--border-primary, #d1d5db); stroke-width: 1.5; }
+      .header-box { fill: var(--bg-accent, #f3f4f6); stroke: var(--border-primary, #d1d5db); stroke-width: 1.5; }
+      .constraint-box { fill: var(--bg-info, #e8f5ff); stroke: var(--border-info, #3b82f6); stroke-width: 1.5; }
+      .optimization-box { fill: var(--bg-success, #f0f9f5); stroke: var(--border-success, #10b981); stroke-width: 1.5; }
+      .warning-box { fill: var(--bg-warning, #fffaf0); stroke: var(--border-warning, #f59e0b); stroke-width: 1.5; }
+      .checklist-box { fill: var(--bg-purple, #f3e8ff); stroke: var(--border-purple, #8b5cf6); stroke-width: 1.5; }
+      .arrow { fill: none; stroke: var(--text-tertiary, #666666); stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="var(--text-tertiary, #666666)"/>
+      </marker>
+    </defs>
+  </defs>
+
+  <!-- Title -->
+  <rect x="20" y="20" width="910" height="40" class="header-box" rx="8"/>
+  <text x="475" y="44" text-anchor="middle" class="header">📊 制約から計算量を逆算する技術</text>
+
+  <!-- Constraint Table -->
+  <rect x="40" y="80" width="870" height="300" class="constraint-box" rx="8"/>
+  <text x="60" y="104" class="section-title">📏 制約と許容される計算量の目安</text>
+  
+  <rect x="60" y="120" width="380" height="240" class="box" rx="4"/>
+  <text x="80" y="140" class="highlight-text">データサイズ別計算量上限：</text>
+  
+  <text x="80" y="165" class="code-text">N ≤ 10         → O(N!) 階乗も可能</text>
+  <text x="80" y="185" class="code-text">N ≤ 20         → O(2^N) 全探索可能</text>
+  <text x="80" y="205" class="code-text">N ≤ 100        → O(N^3) 三重ループ</text>
+  <text x="80" y="225" class="code-text">N ≤ 1,000      → O(N^2) 二重ループ</text>
+  <text x="80" y="245" class="code-text">N ≤ 100,000    → O(N log N) ソート</text>
+  <text x="80" y="265" class="code-text">N ≤ 1,000,000  → O(N) 線形処理</text>
+  <text x="80" y="285" class="code-text">N ≤ 10,000,000 → O(log N) 二分探索</text>
+  
+  <text x="80" y="320" class="safe-text">✅ 安全な計算量 (緑色のゾーン)</text>
+  <text x="80" y="340" class="danger-text">❌ 危険な計算量 (TLEリスク大)</text>
+  
+  <rect x="460" y="120" width="430" height="240" class="box" rx="4"/>
+  <text x="480" y="140" class="warning-text">💡 安全マージンの考え方：</text>
+  
+  <text x="480" y="165" class="step-text">• 見積もりの2-3倍の余裕を見る</text>
+  <text x="480" y="185" class="step-text">• Pythonは他言語より3-5倍遅い</text>
+  <text x="480" y="205" class="step-text">• 実装の複雑さも影響する</text>
+  <text x="480" y="225" class="step-text">• 入出力処理の時間も考慮</text>
+  
+  <text x="480" y="255" class="info-text">🎯 実践的な判断例：</text>
+  <text x="480" y="275" class="safe-text">N≤1,000 + O(N^2) → 安全</text>
+  <text x="480" y="295" class="danger-text">N≤100,000 + O(N^2) → TLE危険</text>
+  <text x="480" y="315" class="step-text">N≤100,000 + O(N log N) → 安全</text>
+  <text x="480" y="335" class="step-text">N≤1,000,000 + O(N) → 安全</text>
+
+  <!-- Arrow -->
+  <path d="M 475 390 L 475 420" class="arrow"/>
+
+  <!-- Optimization Checklist -->
+  <rect x="40" y="400" width="870" height="280" class="optimization-box" rx="8"/>
+  <text x="60" y="424" class="section-title">🚀 高速化チェックリスト</text>
+  
+  <rect x="60" y="440" width="260" height="220" class="box" rx="4"/>
+  <text x="80" y="460" class="highlight-text">✅ アルゴリズム見直し：</text>
+  <text x="80" y="480" class="step-text">• 全探索 → 二分探索</text>
+  <text x="80" y="500" class="step-text">• 線形探索 → ハッシュ活用</text>
+  <text x="80" y="520" class="step-text">• 毎回計算 → 前処理</text>
+  <text x="80" y="540" class="step-text">• 重複処理 → メモ化</text>
+  <text x="80" y="560" class="step-text">• 動的プログラミング</text>
+  
+  <text x="80" y="590" class="warning-text">💡 計算量分析：</text>
+  <text x="80" y="610" class="step-text">O(N²) → O(N log N)</text>
+  <text x="80" y="630" class="step-text">O(N) → O(log N)</text>
+  <text x="80" y="650" class="step-text">O(2^N) → O(N²)</text>
+  
+  <rect x="340" y="440" width="260" height="220" class="box" rx="4"/>
+  <text x="360" y="460" class="highlight-text">✅ データ構造最適化：</text>
+  <text x="360" y="480" class="step-text">• リスト検索 → 辞書・集合</text>
+  <text x="360" y="500" class="step-text">• 文字列結合 → join使用</text>
+  <text x="360" y="520" class="step-text">• 動的配列 → 事前確保</text>
+  <text x="360" y="540" class="step-text">• インデックス計算削減</text>
+  
+  <text x="360" y="570" class="warning-text">💡 データ構造選択：</text>
+  <text x="360" y="590" class="step-text">list → set (検索)</text>
+  <text x="360" y="610" class="step-text">list → deque (両端操作)</text>
+  <text x="360" y="630" class="step-text">dict → defaultdict</text>
+  <text x="360" y="650" class="step-text">heapq (優先度付きキュー)</text>
+  
+  <rect x="620" y="440" width="270" height="220" class="box" rx="4"/>
+  <text x="640" y="460" class="highlight-text">✅ Python固有最適化：</text>
+  <text x="640" y="480" class="step-text">• for文 → リスト内包表記</text>
+  <text x="640" y="500" class="step-text">• 関数呼び出し回数削減</text>
+  <text x="640" y="520" class="step-text">• import文の効率化</text>
+  <text x="640" y="540" class="step-text">• 変数参照の局所化</text>
+  
+  <text x="640" y="570" class="warning-text">💡 最後の手段：</text>
+  <text x="640" y="590" class="step-text">• PyPy での提出</text>
+  <text x="640" y="610" class="step-text">• アルゴリズム根本見直し</text>
+  <text x="640" y="630" class="step-text">• 制約の再確認</text>
+  <text x="640" y="650" class="step-text">• 実装の単純化</text>
+
+  <!-- Bottom Practical Guide -->
+  <rect x="40" y="700" width="870" height="180" class="checklist-box" rx="8"/>
+  <text x="60" y="724" class="section-title">⚡ 実践的TLE回避ガイド</text>
+  
+  <text x="80" y="748" class="highlight-text">Phase 1: 制約確認</text>
+  <text x="80" y="768" class="step-text">問題の制約から必要計算量を逆算</text>
+  
+  <text x="250" y="748" class="highlight-text">Phase 2: アルゴリズム選択</text>
+  <text x="250" y="768" class="step-text">制約に適した計算量のアルゴリズム</text>
+  
+  <text x="450" y="748" class="highlight-text">Phase 3: 実装最適化</text>
+  <text x="450" y="768" class="step-text">データ構造とコード効率化</text>
+  
+  <text x="650" y="748" class="highlight-text">Phase 4: 実行時間測定</text>
+  <text x="650" y="768" class="step-text">ローカルテストで性能確認</text>
+  
+  <text x="80" y="808" class="info-text">💡 重要な考え方：「制約 → 計算量 → アルゴリズム」の順で思考</text>
+  <text x="80" y="828" class="step-text">制約が教えてくれる「解法の種類」を見逃すな！</text>
+  <text x="80" y="848" class="warning-text">⚠️ 制約を見ずにコードを書き始めるのは最も危険なパターン</text>
+</svg>
