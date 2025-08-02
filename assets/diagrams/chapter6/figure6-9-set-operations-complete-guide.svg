@@ -1,0 +1,125 @@
+<svg viewBox="0 0 950 1100" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+  <defs>
+    <style>
+      .header { font-size: 16px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .section-title { font-size: 14px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .item-text { font-size: 12px; fill: var(--text-secondary, #4a4a4a); }
+      .code-text { font-size: 10px; fill: var(--text-tertiary, #666666); font-family: 'Monaco', 'Consolas', monospace; }
+      .comment-text { font-size: 9px; fill: var(--success-text, #059669); }
+      .warning-text { font-size: 10px; fill: var(--error-text, #dc2626); }
+      .box { fill: var(--bg-primary, #ffffff); stroke: var(--border-primary, #d1d5db); stroke-width: 1.5; }
+      .header-box { fill: var(--bg-accent, #f3f4f6); stroke: var(--border-primary, #d1d5db); stroke-width: 1.5; }
+      .creation-box { fill: var(--bg-info, #e8f5ff); stroke: var(--border-info, #3b82f6); stroke-width: 1.5; }
+      .operation-box { fill: var(--bg-success, #f0f9f5); stroke: var(--border-success, #10b981); stroke-width: 1.5; }
+      .search-box { fill: var(--bg-warning, #fffaf0); stroke: var(--border-warning, #f59e0b); stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <rect x="20" y="20" width="910" height="40" class="header-box" rx="8"/>
+  <text x="475" y="44" text-anchor="middle" class="header">🏗️ 集合操作の完全ガイド</text>
+
+  <!-- Set Creation Section -->
+  <rect x="40" y="80" width="870" height="280" class="creation-box" rx="8"/>
+  <text x="60" y="104" class="section-title">🏗️ 集合の作成</text>
+  
+  <rect x="60" y="120" width="810" height="220" class="box" rx="4"/>
+  
+  <!-- Empty Set -->
+  <text x="80" y="140" class="item-text">空の集合作成：</text>
+  <text x="80" y="160" class="code-text">empty_set = set()</text>
+  <text x="280" y="160" class="warning-text"># empty_set = {} は辞書になってしまう！</text>
+  
+  <!-- Set with Values -->
+  <text x="80" y="190" class="item-text">値を入れて集合作成：</text>
+  <text x="80" y="210" class="code-text">fruits = {"apple", "banana", "cherry"}</text>
+  <text x="80" y="230" class="code-text">numbers = {1, 2, 3, 4, 5}</text>
+  
+  <!-- From List -->
+  <text x="80" y="260" class="item-text">リストから集合作成（重複除去）：</text>
+  <text x="80" y="280" class="code-text">numbers_list = [1, 2, 2, 3, 3, 3, 4, 5]</text>
+  <text x="80" y="300" class="code-text">unique_numbers = set(numbers_list)</text>
+  <text x="80" y="320" class="comment-text"># 結果: {1, 2, 3, 4, 5}</text>
+  
+  <!-- From String -->  
+  <text x="500" y="190" class="item-text">文字列から集合作成：</text>
+  <text x="500" y="210" class="code-text">chars = set("programming")</text>
+  <text x="500" y="230" class="comment-text"># 結果: {'p','r','o','g','a','m','i','n'}</text>
+  
+  <text x="500" y="270" class="item-text">💡 重要なポイント：</text>
+  <text x="520" y="290" class="item-text">• 重複は自動的に除去される</text>
+  <text x="520" y="310" class="item-text">• 順序は保証されない</text>
+  <text x="520" y="330" class="item-text">• 高速な存在確認（O(1)）</text>
+
+  <!-- Add/Remove Operations -->
+  <rect x="40" y="380" width="870" height="280" class="operation-box" rx="8"/>
+  <text x="60" y="404" class="section-title">➕ 要素の追加・削除</text>
+  
+  <rect x="60" y="420" width="400" height="220" class="box" rx="4"/>
+  <text x="80" y="440" class="code-text">fruits = {"apple", "banana"}</text>
+  
+  <text x="80" y="470" class="item-text">要素の追加：</text>
+  <text x="80" y="490" class="code-text">fruits.add("cherry")</text>
+  <text x="80" y="510" class="comment-text"># {"apple", "banana", "cherry"}</text>
+  
+  <text x="80" y="540" class="item-text">複数要素の追加：</text>
+  <text x="80" y="560" class="code-text">fruits.update(["grape", "melon"])</text>
+  <text x="80" y="580" class="code-text">fruits.update({"orange", "kiwi"})</text>
+  
+  <text x="80" y="610" class="item-text">要素の削除：</text>
+  <text x="80" y="630" class="code-text">fruits.remove("banana")  # ない場合エラー</text>
+  
+  <rect x="480" y="420" width="370" height="220" class="box" rx="4"/>
+  <text x="500" y="450" class="item-text">削除メソッドの違い：</text>
+  
+  <text x="500" y="480" class="code-text">fruits.remove("item")</text>
+  <text x="500" y="500" class="comment-text"># 要素がない場合：KeyError</text>
+  
+  <text x="500" y="530" class="code-text">fruits.discard("item")</text>
+  <text x="500" y="550" class="comment-text"># 要素がない場合：何もしない</text>
+  
+  <text x="500" y="580" class="code-text">popped = fruits.pop()</text>
+  <text x="500" y="600" class="comment-text"># 任意の要素を削除して返す</text>
+  
+  <text x="500" y="620" class="code-text">fruits.clear()</text>
+  <text x="500" y="640" class="comment-text"># 全要素削除</text>
+
+  <!-- Search and Iteration -->
+  <rect x="40" y="680" width="870" height="260" class="search-box" rx="8"/>
+  <text x="60" y="704" class="section-title">🔍 存在確認と反復処理</text>
+  
+  <rect x="60" y="720" width="400" height="200" class="box" rx="4"/>
+  <text x="80" y="740" class="code-text">languages = {"Python", "Java", "C++", "JavaScript"}</text>
+  
+  <text x="80" y="770" class="item-text">存在確認（高速：O(1)）：</text>
+  <text x="80" y="790" class="code-text">print("Python" in languages)  # True</text>
+  <text x="80" y="810" class="code-text">print("Ruby" in languages)    # False</text>
+  
+  <text x="80" y="840" class="item-text">要素数の取得：</text>
+  <text x="80" y="860" class="code-text">print(len(languages))  # 4</text>
+  
+  <text x="80" y="890" class="item-text">全要素への反復処理：</text>
+  <text x="80" y="910" class="code-text">for lang in languages:</text>
+  
+  <rect x="480" y="720" width="370" height="200" class="box" rx="4"/>
+  <text x="500" y="750" class="item-text">条件付きフィルタリング：</text>
+  <text x="500" y="770" class="code-text">short_names = {lang for lang in languages</text>
+  <text x="600" y="790" class="code-text">if len(lang) <= 4}</text>
+  <text x="500" y="810" class="comment-text"># 結果: {"Java", "C++"}</text>
+  
+  <text x="500" y="840" class="item-text">🎯 活用シーン：</text>
+  <text x="520" y="860" class="item-text">• 重複データの除去</text>
+  <text x="520" y="880" class="item-text">• 高速な存在確認</text>
+  <text x="520" y="900" class="item-text">• 集合演算による複雑な条件処理</text>
+
+  <!-- Performance Note -->
+  <rect x="40" y="960" width="870" height="120" class="header-box" rx="8"/>
+  <text x="60" y="984" class="section-title">🚀 パフォーマンスの特徴</text>
+  <text x="80" y="1008" class="item-text">• 要素の追加・削除・検索：平均 O(1)</text>
+  <text x="80" y="1028" class="item-text">• メモリ効率：リストより高効率（重複がない場合）</text>
+  <text x="80" y="1048" class="item-text">• 順序なし：順序が重要な場合はリストを使用</text>
+  
+  <text x="500" y="1008" class="item-text">💡 競技プログラミングでの活用：</text>
+  <text x="520" y="1028" class="item-text">• 重複チェック、ユニーク値の管理</text>
+  <text x="520" y="1048" class="item-text">• 高速な包含判定、集合演算</text>
+</svg>
