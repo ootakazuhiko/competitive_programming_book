@@ -1,0 +1,119 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-1：ScratchからPythonへの入出力比較</title>
+  <desc>Scratchの視覚的プログラミングからPythonのテキストベースプログラミングへの自然な進化を示す比較図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Monaco', monospace; fill: var(--svg-text, #4B5563); }
+      .desc-text { font: 400 11px Inter, sans-serif; fill: var(--svg-text, #6B7280); }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      .arrow-text { font: 600 12px Inter, sans-serif; fill: var(--svg-primary, #3B82F6); }
+      
+      .scratch-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .python-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .insight-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .arrow { stroke: var(--svg-primary, #3B82F6); stroke-width: 3; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="var(--svg-primary, #3B82F6)"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-1：ScratchからPythonへの入出力比較</text>
+  
+  <!-- Scratch Section -->
+  <g id="scratch-section">
+    <text x="80" y="75" class="emoji">🎮</text>
+    <text x="110" y="75" class="section-title" fill="#D97706">Scratchでの入出力</text>
+    
+    <rect x="50" y="90" width="280" height="120" rx="12" class="scratch-box"/>
+    
+    <g transform="translate(70, 110)">
+      <text x="0" y="15" class="emoji">👤</text>
+      <text x="25" y="15" class="desc-text">「名前は？」と聞く</text>
+      
+      <text x="0" y="35" class="emoji">📝</text>
+      <text x="25" y="35" class="desc-text">答えを変数に保存</text>
+      
+      <text x="0" y="55" class="emoji">💬</text>
+      <text x="25" y="55" class="desc-text">「こんにちは○○」と言う</text>
+      
+      <rect x="0" y="70" width="240" height="20" fill="#D97706" fill-opacity="0.1"/>
+      <text x="10" y="83" style="font: 600 11px Inter, sans-serif; fill: #D97706;">
+        視覚的ブロックでプログラミング
+      </text>
+    </g>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M340 150 L420 150" class="arrow" marker-end="url(#arrow)"/>
+  <text x="380" y="140" text-anchor="middle" class="arrow-text">⟷</text>
+  
+  <!-- Python Section -->
+  <g id="python-section">
+    <text x="480" y="75" class="emoji">💻</text>
+    <text x="510" y="75" class="section-title" fill="#1E40AF">Pythonでの入出力</text>
+    
+    <rect x="450" y="90" width="300" height="120" rx="12" class="python-box"/>
+    
+    <g transform="translate(470, 110)">
+      <text x="0" y="15" class="code-text">name = input()</text>
+      <text x="0" y="30" class="desc-text"># ユーザーの入力を待つ</text>
+      
+      <text x="0" y="50" class="code-text">print(f"こんにちは{name}")</text>
+      <text x="0" y="65" class="desc-text"># 処理結果を出力</text>
+      
+      <rect x="0" y="75" width="260" height="20" fill="#1E40AF" fill-opacity="0.1"/>
+      <text x="10" y="88" style="font: 600 11px Inter, sans-serif; fill: #1E40AF;">
+        テキストベースでプログラミング
+      </text>
+    </g>
+  </g>
+  
+  <!-- Insight Section -->
+  <g id="insight-section">
+    <rect x="100" y="240" width="600" height="120" rx="12" class="insight-box"/>
+    <text x="120" y="265" class="emoji">💡</text>
+    <text x="150" y="265" style="font: 600 14px Inter, sans-serif; fill: #047857;">
+      本質は同じ：プログラムの基本構造
+    </text>
+    
+    <g transform="translate(120, 280)">
+      <g transform="translate(0, 10)">
+        <circle cx="8" cy="8" r="4" fill="#10B981"/>
+        <text x="20" y="12" class="desc-text" fill="#047857">
+          外部から情報を受け取る（入力）
+        </text>
+      </g>
+      
+      <g transform="translate(0, 30)">
+        <circle cx="8" cy="8" r="4" fill="#10B981"/>
+        <text x="20" y="12" class="desc-text" fill="#047857">
+          受け取った情報を処理する（計算・判断）
+        </text>
+      </g>
+      
+      <g transform="translate(0, 50)">
+        <circle cx="8" cy="8" r="4" fill="#10B981"/>
+        <text x="20" y="12" class="desc-text" fill="#047857">
+          処理した結果を外部に伝える（出力）
+        </text>
+      </g>
+      
+      <text x="350" y="32" style="font: 600 12px Inter, sans-serif; fill: #047857;">
+        でも競技プログラミングでは
+      </text>
+      <text x="350" y="47" style="font: 500 11px Inter, sans-serif; fill: #047857;">
+        少し特殊な約束事があるんだ...
+      </text>
+    </g>
+  </g>
+  
+</svg>

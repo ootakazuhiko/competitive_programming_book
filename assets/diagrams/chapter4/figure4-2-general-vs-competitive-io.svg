@@ -1,0 +1,224 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <title>図4-2：一般プログラムと競技プログラムの入出力の違い</title>
+  <desc>一般的なプログラムと競技プログラミングにおける入出力方式の根本的な違いを比較する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .feature-text { font: 500 12px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      .vs-text { font: 700 16px Inter, sans-serif; fill: var(--svg-primary, #EF4444); }
+      
+      .general-box { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .competitive-box { fill: var(--svg-bg, #FEF2F2); stroke: var(--svg-primary, #DC2626); stroke-width: 2; }
+      .summary-box { fill: var(--svg-bg, #F0FDF4); stroke: var(--svg-primary, #22C55E); stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図4-2：一般プログラムと競技プログラムの入出力の違い</text>
+  
+  <!-- General Programs Section -->
+  <g id="general-programs">
+    <text x="70" y="75" class="emoji">🖥️</text>
+    <text x="100" y="75" class="section-title" fill="#0369A1">一般的なプログラム</text>
+    
+    <rect x="50" y="90" width="280" height="200" rx="12" class="general-box"/>
+    
+    <g transform="translate(70, 110)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #0369A1;">
+        ユーザーとの対話形式
+      </text>
+      
+      <g transform="translate(0, 30)">
+        <circle cx="6" cy="6" r="3" fill="#0369A1"/>
+        <text x="15" y="10" class="feature-text" fill="#0369A1">
+          「名前は？」→入力
+        </text>
+      </g>
+      
+      <g transform="translate(0, 50)">
+        <circle cx="6" cy="6" r="3" fill="#0369A1"/>
+        <text x="15" y="10" class="feature-text" fill="#0369A1">
+          「年齢は？」→入力
+        </text>
+      </g>
+      
+      <g transform="translate(0, 70)">
+        <circle cx="6" cy="6" r="3" fill="#0369A1"/>
+        <text x="15" y="10" class="feature-text" fill="#0369A1">
+          エラー時は再入力要求
+        </text>
+      </g>
+      
+      <g transform="translate(0, 90)">
+        <circle cx="6" cy="6" r="3" fill="#0369A1"/>
+        <text x="15" y="10" class="feature-text" fill="#0369A1">
+          ユーザビリティ重視
+        </text>
+      </g>
+      
+      <g transform="translate(0, 110)">
+        <circle cx="6" cy="6" r="3" fill="#0369A1"/>
+        <text x="15" y="10" class="feature-text" fill="#0369A1">
+          見た目の美しさも重要
+        </text>
+      </g>
+      
+      <rect x="0" y="135" width="240" height="35" rx="8" fill="#0369A1" fill-opacity="0.1"/>
+      <text x="10" y="150" style="font: 600 11px Inter, sans-serif; fill: #0369A1;">
+        🎨 使いやすさとデザインが重要
+      </text>
+      <text x="10" y="165" style="font: 400 10px Inter, sans-serif; fill: #0369A1;">
+        ユーザー体験を最優先に設計
+      </text>
+    </g>
+  </g>
+  
+  <!-- VS Symbol -->
+  <g id="vs-symbol">
+    <rect x="370" y="170" width="60" height="40" rx="20" fill="#EF4444" fill-opacity="0.1"/>
+    <text x="400" y="195" text-anchor="middle" class="vs-text">VS</text>
+  </g>
+  
+  <!-- Competitive Programming Section -->
+  <g id="competitive-programming">
+    <text x="480" y="75" class="emoji">🏆</text>
+    <text x="510" y="75" class="section-title" fill="#DC2626">競技プログラミング</text>
+    
+    <rect x="470" y="90" width="280" height="200" rx="12" class="competitive-box"/>
+    
+    <g transform="translate(490, 110)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">
+        一方通行の処理
+      </text>
+      
+      <g transform="translate(0, 30)">
+        <circle cx="6" cy="6" r="3" fill="#DC2626"/>
+        <text x="15" y="10" class="feature-text" fill="#DC2626">
+          問題文で形式決定
+        </text>
+      </g>
+      
+      <g transform="translate(0, 50)">
+        <circle cx="6" cy="6" r="3" fill="#DC2626"/>
+        <text x="15" y="10" class="feature-text" fill="#DC2626">
+          標準入力→計算→標準出力
+        </text>
+      </g>
+      
+      <g transform="translate(0, 70)">
+        <circle cx="6" cy="6" r="3" fill="#DC2626"/>
+        <text x="15" y="10" class="feature-text" fill="#DC2626">
+          1回で正確に処理
+        </text>
+      </g>
+      
+      <g transform="translate(0, 90)">
+        <circle cx="6" cy="6" r="3" fill="#DC2626"/>
+        <text x="15" y="10" class="feature-text" fill="#DC2626">
+          効率と正確性重視
+        </text>
+      </g>
+      
+      <g transform="translate(0, 110)">
+        <circle cx="6" cy="6" r="3" fill="#DC2626"/>
+        <text x="15" y="10" class="feature-text" fill="#DC2626">
+          結果の正確性のみ重要
+        </text>
+      </g>
+      
+      <rect x="0" y="135" width="240" height="35" rx="8" fill="#DC2626" fill-opacity="0.1"/>
+      <text x="10" y="150" style="font: 600 11px Inter, sans-serif; fill: #DC2626;">
+        ⚡ 速度と正確性が最優先
+      </text>
+      <text x="10" y="165" style="font: 400 10px Inter, sans-serif; fill: #DC2626;">
+        自動化されたジャッジシステム向け
+      </text>
+    </g>
+  </g>
+  
+  <!-- Flow Diagram -->
+  <g id="flow-comparison" transform="translate(50, 320)">
+    <rect x="0" y="0" width="700" height="140" rx="12" class="summary-box"/>
+    <text x="20" y="25" class="emoji">🔄</text>
+    <text x="50" y="25" style="font: 600 14px Inter, sans-serif; fill: #047857;">
+      データの流れの違い
+    </text>
+    
+    <!-- General Program Flow -->
+    <g transform="translate(20, 40)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #0369A1;">
+        一般プログラム：
+      </text>
+      <rect x="0" y="20" width="80" height="25" rx="8" fill="#0369A1" fill-opacity="0.2"/>
+      <text x="40" y="36" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #0369A1;">
+        ユーザー入力
+      </text>
+      
+      <text x="90" y="32" style="font: 500 12px Inter, sans-serif; fill: #6B7280;">→</text>
+      
+      <rect x="110" y="20" width="80" height="25" rx="8" fill="#0369A1" fill-opacity="0.2"/>
+      <text x="150" y="36" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #0369A1;">
+        対話処理
+      </text>
+      
+      <text x="200" y="32" style="font: 500 12px Inter, sans-serif; fill: #6B7280;">→</text>
+      
+      <rect x="220" y="20" width="80" height="25" rx="8" fill="#0369A1" fill-opacity="0.2"/>
+      <text x="260" y="36" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #0369A1;">
+        結果表示
+      </text>
+    </g>
+    
+    <!-- Competitive Program Flow -->
+    <g transform="translate(20, 80)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">
+        競技プログラム：
+      </text>
+      <rect x="0" y="20" width="80" height="25" rx="8" fill="#DC2626" fill-opacity="0.2"/>
+      <text x="40" y="36" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #DC2626;">
+        標準入力
+      </text>
+      
+      <text x="90" y="32" style="font: 500 12px Inter, sans-serif; fill: #6B7280;">→</text>
+      
+      <rect x="110" y="20" width="80" height="25" rx="8" fill="#DC2626" fill-opacity="0.2"/>
+      <text x="150" y="36" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #DC2626;">
+        一括処理
+      </text>
+      
+      <text x="200" y="32" style="font: 500 12px Inter, sans-serif; fill: #6B7280;">→</text>
+      
+      <rect x="220" y="20" width="80" height="25" rx="8" fill="#DC2626" fill-opacity="0.2"/>
+      <text x="260" y="36" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #DC2626;">
+        標準出力
+      </text>
+      
+      <text x="320" y="32" style="font: 500 12px Inter, sans-serif; fill: #6B7280;">→</text>
+      
+      <rect x="340" y="20" width="80" height="25" rx="8" fill="#DC2626" fill-opacity="0.2"/>
+      <text x="380" y="36" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #DC2626;">
+        自動判定
+      </text>
+    </g>
+    
+    <text x="450" y="50" style="font: 600 12px Inter, sans-serif; fill: #047857;">
+      💡 Key Point
+    </text>
+    <text x="450" y="65" style="font: 500 11px Inter, sans-serif; fill: #047857;">
+      競技プログラミングは
+    </text>
+    <text x="450" y="80" style="font: 500 11px Inter, sans-serif; fill: #047857;">
+      「機械との対話」形式
+    </text>
+    <text x="450" y="95" style="font: 500 11px Inter, sans-serif; fill: #047857;">
+      人間が見やすい必要はない
+    </text>
+  </g>
+  
+</svg>
