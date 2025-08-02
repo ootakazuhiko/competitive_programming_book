@@ -1,0 +1,143 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Inter, -apple-system, sans-serif; font-size: 18px; font-weight: 600; fill: #1f2937; }
+      .sheet-title { font-family: Inter, -apple-system, sans-serif; font-size: 16px; font-weight: 600; fill: #374151; }
+      .section-header { font-family: Inter, -apple-system, sans-serif; font-size: 13px; font-weight: 600; fill: #4b5563; }
+      .label { font-family: Inter, -apple-system, sans-serif; font-size: 11px; font-weight: 500; fill: #6b7280; }
+      .content { font-family: Inter, -apple-system, sans-serif; font-size: 11px; fill: #6b7280; }
+      .example { font-family: Inter, -apple-system, sans-serif; font-size: 10px; fill: #9ca3af; font-style: italic; }
+      .positive { fill: #10b981; }
+      .warning { fill: #f59e0b; }
+      .negative { fill: #ef4444; }
+      
+      .sheet-bg { fill: #ffffff; stroke: #d1d5db; stroke-width: 2; }
+      .section-bg { fill: #f9fafb; stroke: #e5e7eb; stroke-width: 1; }
+      .input-field { fill: #ffffff; stroke: #d1d5db; stroke-width: 1; stroke-dasharray: 2,2; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">図10-8：振り返りシートテンプレート</text>
+
+  <!-- Main sheet container -->
+  <rect x="40" y="50" width="720" height="630" rx="12" class="sheet-bg"/>
+  
+  <!-- Sheet header -->
+  <rect x="60" y="70" width="680" height="40" rx="6" fill="#f3f4f6" stroke="#d1d5db"/>
+  <text x="80" y="90" class="sheet-title">📋 コンテスト振り返りシート</text>
+  <text x="600" y="95" class="example">作成日: ___/___/___</text>
+
+  <!-- Basic information section -->
+  <rect x="60" y="130" width="680" height="100" rx="6" class="section-bg"/>
+  <text x="80" y="150" class="section-header">📅 基本情報</text>
+  
+  <text x="90" y="175" class="label">コンテスト名:</text>
+  <rect x="200" y="165" width="120" height="15" class="input-field"/>
+  <text x="205" y="175" class="example">例: ABC 350</text>
+  
+  <text x="350" y="175" class="label">参加者数:</text>
+  <rect x="430" y="165" width="80" height="15" class="input-field"/>
+  <text x="435" y="175" class="example">例: 8,432人</text>
+  
+  <text x="540" y="175" class="label">自分の順位:</text>
+  <rect x="630" y="165" width="80" height="15" class="input-field"/>
+  <text x="635" y="175" class="example">例: 1,247位</text>
+
+  <text x="90" y="200" class="label">得点:</text>
+  <rect x="140" y="190" width="80" height="15" class="input-field"/>
+  <text x="145" y="200" class="example">例: 300点</text>
+  
+  <text x="250" y="200" class="label">レーティング変化:</text>
+  <rect x="370" y="190" width="120" height="15" class="input-field"/>
+  <text x="375" y="200" class="example">例: 445 → 487 (+42)</text>
+  
+  <text x="520" y="200" class="label">色の変化:</text>
+  <rect x="590" y="190" width="120" height="15" class="input-field"/>
+  <text x="595" y="200" class="example">例: グレー → 茶色</text>
+
+  <!-- Problem analysis section -->
+  <rect x="60" y="250" width="680" height="140" rx="6" class="section-bg"/>
+  <text x="80" y="270" class="section-header">🎯 問題別分析</text>
+  
+  <!-- Problem A -->
+  <text x="90" y="295" class="label">A問題:</text>
+  <rect x="150" y="285" width="100" height="15" class="input-field"/>
+  <text x="155" y="295" class="example">例: AC (8分)</text>
+  <circle cx="270" cy="292" r="6" class="positive"/>
+  <text x="285" y="296" class="content">✅</text>
+  
+  <text x="320" y="295" class="label">難易度:</text>
+  <rect x="370" y="285" width="80" height="15" class="input-field"/>
+  <text x="375" y="295" class="example">簡単/普通/難しい</text>
+  
+  <text x="480" y="295" class="label">感想:</text>
+  <rect x="520" y="285" width="200" height="15" class="input-field"/>
+  <text x="525" y="295" class="example">例: スムーズに解けた</text>
+
+  <!-- Problem B -->
+  <text x="90" y="320" class="label">B問題:</text>
+  <rect x="150" y="310" width="100" height="15" class="input-field"/>
+  <text x="155" y="320" class="example">例: WA→AC (23分)</text>
+  <circle cx="270" cy="317" r="6" class="warning"/>
+  <text x="285" y="321" class="content">⚠️</text>
+  
+  <text x="320" y="320" class="label">原因:</text>
+  <rect x="360" y="310" width="150" height="15" class="input-field"/>
+  <text x="365" y="320" class="example">例: 出力形式のミス</text>
+  
+  <text x="530" y="320" class="label">学習点:</text>
+  <rect x="580" y="310" width="140" height="15" class="input-field"/>
+  <text x="585" y="320" class="example">出力形式の確認を忘れずに</text>
+
+  <!-- Problem C -->
+  <text x="90" y="345" class="label">C問題:</text>
+  <rect x="150" y="335" width="100" height="15" class="input-field"/>
+  <text x="155" y="345" class="example">例: 未提出</text>
+  <circle cx="270" cy="342" r="6" class="negative"/>
+  <text x="285" y="346" class="content">❌</text>
+  
+  <text x="320" y="345" class="label">原因:</text>
+  <rect x="360" y="335" width="150" height="15" class="input-field"/>
+  <text x="365" y="345" class="example">解法が思い浮かばなかった</text>
+  
+  <text x="530" y="345" class="label">学習点:</text>
+  <rect x="580" y="335" width="140" height="15" class="input-field"/>
+  <text x="585" y="345" class="example">類似問題を練習する必要</text>
+
+  <!-- Learning section -->
+  <rect x="60" y="410" width="680" height="80" rx="6" class="section-bg"/>
+  <text x="80" y="430" class="section-header">💡 新しく学んだこと</text>
+  
+  <text x="90" y="450" class="label">• 具体的な新しい知識や技術:</text>
+  <rect x="100" y="460" width="620" height="15" class="input-field"/>
+  
+  <text x="90" y="485" class="label">• 解法のパターンや考え方:</text>
+  <rect x="100" y="495" width="620" height="15" class="input-field"/>
+
+  <!-- Improvement section -->
+  <rect x="60" y="510" width="330" height="80" rx="6" class="section-bg"/>
+  <text x="80" y="530" class="section-header">🔧 改善点</text>
+  
+  <text x="90" y="550" class="label">• 次回のコンテストで気をつけること:</text>
+  <rect x="100" y="560" width="270" height="15" class="input-field"/>
+  
+  <text x="90" y="585" class="label">• 練習すべき分野や技術:</text>
+  <rect x="100" y="595" width="270" height="15" class="input-field"/>
+
+  <!-- Goals section -->
+  <rect x="410" y="510" width="330" height="80" rx="6" class="section-bg"/>
+  <text x="430" y="530" class="section-header">🎯 次回目標</text>
+  
+  <text x="440" y="550" class="label">• 具体的で達成可能な目標設定:</text>
+  <rect x="450" y="560" width="270" height="15" class="input-field"/>
+  
+  <text x="440" y="585" class="label">• 挑戦したい問題のレベル:</text>
+  <rect x="450" y="595" width="270" height="15" class="input-field"/>
+
+  <!-- Tips section -->
+  <rect x="60" y="610" width="680" height="50" rx="6" fill="#f0f9ff" stroke="#3b82f6" stroke-width="1"/>
+  <text x="80" y="630" class="section-header">✨ 振り返りシート活用のコツ</text>
+  <text x="90" y="645" class="content">• 感情的な時は少し時間を置いてから記入する  • 良かった点も必ず記録する  • 定期的に過去のシートを見返す</text>
+  <text x="90" y="658" class="content">• 完璧を求めず、気軽に書く  • 友達や家族と共有して、外部の視点も取り入れる</text>
+</svg>
