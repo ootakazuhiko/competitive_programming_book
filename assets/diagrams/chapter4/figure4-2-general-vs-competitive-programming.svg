@@ -147,8 +147,8 @@
   </g>
   
   <!-- Bottom Example -->
-  <g transform="translate(200, 560)">
-    <text x="0" y="0" style="font: 600 14px Inter, sans-serif; fill: #374151;">
+  <g transform="translate(100, 570)">
+    <text x="300" y="0" text-anchor="middle" style="font: 600 13px Inter, sans-serif; fill: #374151;">
       📚 この違いを理解することで、競技プログラミング特有の入出力パターンが身につく
     </text>
   </g>

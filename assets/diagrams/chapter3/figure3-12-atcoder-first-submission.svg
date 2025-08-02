@@ -92,7 +92,7 @@
   </g>
   
   <!-- No Branch -->
-  <path d="M350 450 L250 450 L250 300 L310 300" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M350 450 L250 450 L250 300 L320 300" class="arrow" marker-end="url(#arrow)"/>
   <text x="280" y="445" style="font: 600 12px Inter, sans-serif; fill: #EF4444;">修正</text>
   
   <!-- Yes Branch -->
@@ -137,8 +137,8 @@
   
   <!-- Flow arrows for side steps -->
   <path d="M400 530 L270 530 L270 390 L260 390" class="arrow" marker-end="url(#arrow)"/>
-  <path d="M180 360 L180 330" class="arrow" marker-end="url(#arrow)"/>
-  <path d="M180 260 L180 230" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M180 360 L180 320" class="arrow" marker-end="url(#arrow)"/>
+  <path d="M180 260 L180 220" class="arrow" marker-end="url(#arrow)"/>
   
   <!-- Side Information Boxes -->
   <!-- Tips Box -->

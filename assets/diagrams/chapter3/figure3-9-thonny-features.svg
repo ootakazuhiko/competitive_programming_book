@@ -100,10 +100,10 @@
   </g>
   
   <!-- Connection lines to center -->
-  <path d="M230 100 Q315 125 260 150" class="connector"/>
-  <path d="M570 100 Q485 125 540 150" class="connector"/>
-  <path d="M230 300 Q315 275 260 150" class="connector"/>
-  <path d="M570 300 Q485 275 540 150" class="connector"/>
+  <path d="M230 100 L260 150" class="connector"/>
+  <path d="M570 100 L540 150" class="connector"/>
+  <path d="M230 300 L260 150" class="connector"/>
+  <path d="M570 300 L540 150" class="connector"/>
   
   <!-- Benefits Section -->
   <g id="benefits">
