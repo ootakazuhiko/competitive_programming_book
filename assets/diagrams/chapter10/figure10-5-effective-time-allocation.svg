@@ -1,0 +1,111 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Inter, -apple-system, sans-serif; font-size: 18px; font-weight: 600; fill: #1f2937; }
+      .phase-title { font-family: Inter, -apple-system, sans-serif; font-size: 16px; font-weight: 600; fill: #374151; }
+      .header { font-family: Inter, -apple-system, sans-serif; font-size: 14px; font-weight: 600; fill: #4b5563; }
+      .content { font-family: Inter, -apple-system, sans-serif; font-size: 12px; fill: #6b7280; }
+      .time-label { font-family: Inter, -apple-system, sans-serif; font-size: 13px; font-weight: 500; fill: #1f2937; }
+      .strategy-text { font-family: Inter, -apple-system, sans-serif; font-size: 11px; fill: #374151; }
+      
+      .phase-a { fill: #ecfdf5; stroke: #10b981; stroke-width: 2; }
+      .phase-b { fill: #fef3c7; stroke: #f59e0b; stroke-width: 2; }
+      .phase-c { fill: #fecaca; stroke: #ef4444; stroke-width: 2; }
+      .phase-final { fill: #e0e7ff; stroke: #6366f1; stroke-width: 2; }
+      
+      .icon-a { fill: #10b981; }
+      .icon-b { fill: #f59e0b; }
+      .icon-c { fill: #ef4444; }
+      .icon-final { fill: #6366f1; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">図10-5：100分コンテストの効率的時間配分</text>
+
+  <!-- Phase A: 0-15 minutes -->
+  <rect x="40" y="50" width="170" height="120" rx="8" class="phase-a"/>
+  <circle cx="60" cy="70" r="8" class="icon-a"/>
+  <text x="75" y="75" class="phase-title">開始-15分：A問題攻略期</text>
+  
+  <text x="50" y="95" class="header">目標：A問題を確実にAC</text>
+  <text x="50" y="110" class="time-label">⏱️ 時間配分：</text>
+  <text x="55" y="125" class="content">• 問題読解：2分</text>
+  <text x="55" y="138" class="content">• 実装：3分</text>
+  <text x="55" y="151" class="content">• 検証・提出：2分</text>
+  <text x="55" y="164" class="content">• 予備時間：8分</text>
+
+  <!-- Phase B: 15-35 minutes -->
+  <rect x="230" y="50" width="170" height="120" rx="8" class="phase-b"/>
+  <circle cx="250" cy="70" r="8" class="icon-b"/>
+  <text x="265" y="75" class="phase-title">15分-35分：B問題攻略期</text>
+  
+  <text x="240" y="95" class="header">目標：B問題をAC</text>
+  <text x="240" y="110" class="time-label">⏱️ 時間配分：</text>
+  <text x="245" y="125" class="content">• 問題読解：5分</text>
+  <text x="245" y="138" class="content">• 解法検討：5分</text>
+  <text x="245" y="151" class="content">• 実装：8分</text>
+  <text x="245" y="164" class="content">• デバッグ：2分</text>
+
+  <!-- Phase C: 35-85 minutes -->
+  <rect x="420" y="50" width="170" height="120" rx="8" class="phase-c"/>
+  <circle cx="440" cy="70" r="8" class="icon-c"/>
+  <text x="455" y="75" class="phase-title">35分-85分：C問題挑戦期</text>
+  
+  <text x="430" y="95" class="header">目標：C問題にチャレンジ</text>
+  <text x="430" y="110" class="time-label">⏱️ 時間配分：</text>
+  <text x="435" y="125" class="content">• 問題読解・理解：10分</text>
+  <text x="435" y="138" class="content">• 解法検討・設計：15分</text>
+  <text x="435" y="151" class="content">• 実装・デバッグ：25分</text>
+
+  <!-- Phase Final: 85-100 minutes -->
+  <rect x="610" y="50" width="150" height="120" rx="8" class="phase-final"/>
+  <circle cx="630" cy="70" r="8" class="icon-final"/>
+  <text x="645" y="75" class="phase-title">85分-100分：見直し期</text>
+  
+  <text x="620" y="95" class="header">目標：確認と追加AC</text>
+  <text x="620" y="110" class="time-label">⏱️ 時間配分：</text>
+  <text x="625" y="125" class="content">• A,B問題再確認：5分</text>
+  <text x="625" y="138" class="content">• 最後のチャレンジ：10分</text>
+
+  <!-- Timeline -->
+  <line x1="40" y1="200" x2="760" y2="200" stroke="#e5e7eb" stroke-width="2"/>
+  <text x="40" y="195" class="time-label">0分</text>
+  <text x="120" y="195" class="time-label">15分</text>
+  <text x="300" y="195" class="time-label">35分</text>
+  <text x="550" y="195" class="time-label">85分</text>
+  <text x="720" y="195" class="time-label">100分</text>
+
+  <!-- Strategy boxes -->
+  <rect x="40" y="230" width="340" height="160" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="50" y="250" class="header">💡 A問題戦略（安定した基盤作り）</text>
+  <text x="55" y="270" class="strategy-text">• 焦らず確実に解く - 一発ACを目指す</text>
+  <text x="55" y="285" class="strategy-text">• サンプルで必ず動作確認を行う</text>
+  <text x="55" y="300" class="strategy-text">• A問題は「貯金」を作る重要な問題</text>
+  <text x="55" y="315" class="strategy-text">• 予備時間で心理的余裕を確保</text>
+  <text x="55" y="340" class="strategy-text">• エラーが出ても慌てず、第9章で学んだ対処法を活用</text>
+  <text x="55" y="355" class="strategy-text">• 完璧を求めすぎず、動くコードを書くことを優先</text>
+  <text x="55" y="370" class="strategy-text">• この段階で躓いても大丈夫、学習の機会として捉える</text>
+
+  <rect x="400" y="230" width="360" height="160" rx="8" fill="#f0f9ff" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="410" y="250" class="header">🎯 B・C問題戦略（実力向上への挑戦）</text>
+  <text x="415" y="270" class="strategy-text">• B問題：15分で解法が見えなければ潔く切り替え</text>
+  <text x="415" y="285" class="strategy-text">• C問題：完全正解より理解を深めることを重視</text>
+  <text x="415" y="300" class="strategy-text">• 部分点でも価値あり - 何かしら提出を心がける</text>
+  <text x="415" y="315" class="strategy-text">• 時間配分を意識し、全体最適を図る</text>
+  <text x="415" y="340" class="strategy-text">• 解けない問題は次回への課題として記録</text>
+  <text x="415" y="355" class="strategy-text">• 最終段階では新しい問題より既存AC維持を優先</text>
+  <text x="415" y="370" class="strategy-text">• 経験値を稼ぐ意識で、挑戦することに価値を見出す</text>
+
+  <!-- Key principles -->
+  <rect x="40" y="420" width="720" height="120" rx="8" fill="#fef7ed" stroke="#fb923c" stroke-width="2"/>
+  <text x="50" y="445" class="header">⚡ 時間配分の重要原則</text>
+  
+  <text x="55" y="470" class="strategy-text">1️⃣ 完璧主義の罠を避ける：100点を目指すより、確実に取れる点を積み重ねる</text>
+  <text x="55" y="485" class="strategy-text">2️⃣ 柔軟な判断力：計画に固執せず、状況に応じて時間配分を調整する</text>
+  <text x="55" y="500" class="strategy-text">3️⃣ 学習機会として活用：解けない問題も成長の材料として前向きに捉える</text>
+  <text x="55" y="515" class="strategy-text">4️⃣ 継続参加の価値：一回の結果に一喜一憂せず、長期的な成長を信じる</text>
+
+  <!-- Footer note -->
+  <text x="400" y="570" text-anchor="middle" class="content">※この時間配分は目安です。自分のペースに合わせて調整してください。</text>
+</svg>

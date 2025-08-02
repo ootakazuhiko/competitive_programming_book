@@ -1,0 +1,117 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-family: Inter, -apple-system, sans-serif; font-size: 18px; font-weight: 600; fill: #1f2937; }
+      .section-title { font-family: Inter, -apple-system, sans-serif; font-size: 15px; font-weight: 600; fill: #374151; }
+      .header { font-family: Inter, -apple-system, sans-serif; font-size: 13px; font-weight: 600; fill: #4b5563; }
+      .content { font-family: Inter, -apple-system, sans-serif; font-size: 11px; fill: #6b7280; }
+      .highlight { font-family: Inter, -apple-system, sans-serif; font-size: 11px; fill: #1f2937; font-weight: 500; }
+      .positive { fill: #10b981; }
+      .negative { fill: #ef4444; }
+      .neutral { fill: #6366f1; }
+      
+      .result-screen { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; }
+      .rating-box { fill: #ecfdf5; stroke: #10b981; stroke-width: 1; }
+      .problem-box { fill: #fef3c7; stroke: #f59e0b; stroke-width: 1; }
+      .stats-box { fill: #e0e7ff; stroke: #6366f1; stroke-width: 1; }
+      .interpretation-box { fill: #fef2f2; stroke: #f87171; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" class="title">図10-7：AtCoder結果画面の読み方</text>
+
+  <!-- Mock result screen -->
+  <rect x="40" y="50" width="720" height="200" rx="8" class="result-screen"/>
+  <text x="50" y="75" class="section-title">📊 AtCoder結果画面（例）</text>
+  
+  <!-- Basic results section -->
+  <rect x="60" y="85" width="160" height="90" rx="4" fill="#ffffff" stroke="#e5e7eb"/>
+  <text x="70" y="105" class="header">🏆 基本成績</text>
+  <text x="75" y="125" class="highlight">順位: 1,247位 / 8,432人</text>
+  <text x="75" y="140" class="highlight">得点: 300点</text>
+  <text x="75" y="155" class="highlight">ペナルティ: +15分</text>
+
+  <!-- Rating change section -->
+  <rect x="240" y="85" width="160" height="90" rx="4" class="rating-box"/>
+  <text x="250" y="105" class="header">📈 レーティング変化</text>
+  <text x="255" y="125" class="positive">変化量: +42</text>
+  <text x="255" y="140" class="highlight">新レーティング: 487</text>
+  <text x="255" y="155" class="positive">色: グレー → 茶色</text>
+
+  <!-- Problem results section -->
+  <rect x="420" y="85" width="160" height="90" rx="4" class="problem-box"/>
+  <text x="430" y="105" class="header">🎯 問題別成績</text>
+  <text x="435" y="125" class="positive">A問題: AC (8分)</text>
+  <text x="435" y="140" class="neutral">B問題: WA→AC (23分)</text>
+  <text x="435" y="155" class="negative">C問題: 未提出</text>
+
+  <!-- Statistics section -->
+  <rect x="600" y="85" width="140" height="90" rx="4" class="stats-box"/>
+  <text x="610" y="105" class="header">📊 統計情報</text>
+  <text x="615" y="125" class="content">A問題正解率: 92%</text>
+  <text x="615" y="140" class="content">B問題正解率: 65%</text>
+  <text x="615" y="155" class="content">平均解答時間との比較</text>
+
+  <!-- Detailed explanation sections -->
+  
+  <!-- Section 1: How to read basic results -->
+  <rect x="40" y="280" width="360" height="160" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <text x="50" y="305" class="section-title">📊 基本成績の読み解き方</text>
+  
+  <text x="55" y="330" class="header">• 順位の意味：</text>
+  <text x="65" y="345" class="content">全参加者中での位置づけ。初心者は下位でも正常</text>
+  <text x="65" y="358" class="content">重要なのは過去の自分との比較</text>
+  
+  <text x="55" y="380" class="header">• 得点システム：</text>
+  <text x="65" y="395" class="content">A問題=100点、B問題=200点、C問題=300点...</text>
+  <text x="65" y="408" class="content">部分点もあるため、挑戦することに価値あり</text>
+  
+  <text x="55" y="425" class="header">• ペナルティとは：</text>
+  <text x="65" y="440" class="content">誤答1回につき5分が加算される</text>
+
+  <!-- Section 2: Rating interpretation -->
+  <rect x="420" y="280" width="340" height="160" rx="8" class="rating-box"/>
+  <text x="430" y="305" class="section-title">📈 レーティング変動の理解</text>
+  
+  <text x="435" y="330" class="header">レーティング上昇のケース:</text>
+  <text x="445" y="345" class="content">• 期待順位より上位でフィニッシュ</text>
+  <text x="445" y="358" class="content">• 同レベルの人より多く問題を解けた</text>
+  <text x="445" y="371" class="content">• 時間内に効率よく解答できた</text>
+  
+  <text x="435" y="395" class="header">レーティング下降のケース:</text>
+  <text x="445" y="410" class="content">• 期待順位より下位でフィニッシュ</text>
+  <text x="445" y="423" class="content">• 実力相応の結果が出せなかった</text>
+
+  <!-- Section 3: Problem analysis -->
+  <rect x="40" y="460" width="360" height="140" rx="8" class="problem-box"/>
+  <text x="50" y="485" class="section-title">🎯 問題別分析のポイント</text>
+  
+  <text x="55" y="510" class="header">結果記号の意味:</text>
+  <text x="65" y="525" class="positive">• AC (Accepted): 正解</text>
+  <text x="65" y="538" class="negative">• WA (Wrong Answer): 不正解</text>
+  <text x="65" y="551" class="negative">• TLE (Time Limit Exceeded): 時間切れ</text>
+  <text x="65" y="564" class="neutral">• RE (Runtime Error): 実行時エラー</text>
+  
+  <text x="55" y="585" class="header">分析すべき点:</text>
+  <text x="65" y="600" class="content">• 解答時間（早すぎる場合は見直し不足の可能性）</text>
+
+  <!-- Section 4: Important mindset -->
+  <rect x="420" y="460" width="340" height="140" rx="8" class="interpretation-box"/>
+  <text x="430" y="485" class="section-title">💡 結果に対する重要な考え方</text>
+  
+  <text x="435" y="510" class="header">健全なマインドセット:</text>
+  <text x="445" y="525" class="content">• 短期的な変動より長期的な成長を重視</text>
+  <text x="445" y="538" class="content">• レーティングは実力の「目安」であり「目的」ではない</text>
+  <text x="445" y="551" class="content">• 下がった時ほど学習のチャンス</text>
+  <text x="445" y="564" class="content">• 他者との比較より自己成長に注目</text>
+  
+  <text x="435" y="585" class="header">次回への活かし方:</text>
+  <text x="445" y="600" class="content">• 解けなかった問題の解説を必ず読む</text>
+
+  <!-- Bottom tips -->
+  <rect x="40" y="620" width="720" height="60" rx="8" fill="#f0f9ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="50" y="645" class="header">🎯 結果画面を見る時の心構え</text>
+  <text x="55" y="665" class="content">結果は過去のもの。重要なのは「この経験から何を学び、次にどう活かすか」です。完璧な結果を求めず、</text>
+  <text x="55" y="680" class="content">一歩ずつの成長を積み重ねることで、必ず実力向上につながります。</text>
+</svg>
