@@ -1,0 +1,178 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図6-8：集合の基本概念と数学的背景</title>
+  <desc>集合（セット）の数学的概念とPythonでの実装、主要特徴を視覚的に説明する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .concept-text { font: 500 12px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Monaco', monospace; fill: var(--svg-text, #4B5563); }
+      .math-text { font: 600 14px 'Monaco', monospace; fill: var(--svg-text, #7C3AED); }
+      .feature-text { font: 500 11px Inter, sans-serif; }
+      .example-text { font: 500 11px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-box { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .math-box { fill: var(--svg-bg, #F3E8FF); stroke: var(--svg-primary, #8B5CF6); stroke-width: 2; }
+      .python-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .feature-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .example-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .element-circle { fill: var(--svg-bg, #BFDBFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .unique-highlight { fill: var(--svg-bg, #FBBF24); stroke: var(--svg-primary, #D97706); stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図6-8：集合の基本概念と数学的背景</text>
+  
+  <!-- Main Content Box -->
+  <g id="main-content" transform="translate(50, 60)">
+    <rect x="0" y="0" width="700" height="480" rx="12" class="main-box"/>
+    <text x="20" y="25" class="emoji">🔢</text>
+    <text x="50" y="25" class="section-title" fill="#0369A1">集合とは何か？</text>
+    
+    <!-- Mathematical vs Python comparison -->
+    <g transform="translate(20, 40)">
+      <!-- Mathematical Set -->
+      <g>
+        <rect x="0" y="10" width="300" height="80" rx="8" class="math-box"/>
+        <text x="15" y="30" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">
+          数学での集合：
+        </text>
+        <text x="15" y="50" class="math-text">{1, 2, 3, 4, 5}</text>
+        <text x="15" y="70" style="font: 500 10px Inter, sans-serif; fill: #7C3AED;">
+          順序なし、重複なし、有限/無限
+        </text>
+      </g>
+      
+      <!-- Python Set -->
+      <g transform="translate(320, 0)">
+        <rect x="0" y="10" width="300" height="80" rx="8" class="python-box"/>
+        <text x="15" y="30" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">
+          Pythonでの集合：
+        </text>
+        <text x="15" y="50" style="font: 600 14px 'Monaco', monospace; fill: #1E40AF;">{1, 2, 3, 4, 5}</text>
+        <text x="15" y="70" style="font: 500 10px Inter, sans-serif; fill: #1E40AF;">
+          set型、効率的な実装
+        </text>
+      </g>
+    </g>
+    
+    <!-- Set Visualization -->
+    <g transform="translate(20, 120)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #0369A1;">
+        集合の視覚的表現：
+      </text>
+      
+      <!-- Set circle with elements -->
+      <g transform="translate(100, 30)">
+        <!-- Outer circle representing the set -->
+        <circle cx="120" cy="60" r="80" fill="var(--svg-bg, #EFF6FF)" stroke="var(--svg-primary, #3B82F6)" stroke-width="3"/>
+        
+        <!-- Elements inside the set -->
+        <circle cx="80" cy="40" r="15" class="element-circle"/>
+        <text x="80" y="45" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">1</text>
+        
+        <circle cx="120" cy="30" r="15" class="element-circle"/>
+        <text x="120" y="35" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">2</text>
+        
+        <circle cx="160" cy="40" r="15" class="element-circle"/>
+        <text x="160" y="45" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">3</text>
+        
+        <circle cx="90" cy="80" r="15" class="element-circle"/>
+        <text x="90" y="85" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">4</text>
+        
+        <circle cx="150" cy="80" r="15" class="element-circle"/>
+        <text x="150" y="85" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">5</text>
+        
+        <!-- Set label -->
+        <text x="120" y="155" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #0369A1;">
+          集合 = {1, 2, 3, 4, 5}
+        </text>
+      </g>
+      
+      <!-- No duplicates illustration -->
+      <g transform="translate(320, 30)">
+        <text x="0" y="0" style="font: 600 11px Inter, sans-serif; fill: #DC2626;">
+          ❌ 重複は自動除去
+        </text>
+        <text x="0" y="20" class="code-text">[1, 2, 2, 3, 3, 3]</text>
+        <path d="M80 25 L160 25" stroke="var(--svg-primary, #10B981)" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+        <text x="120" y="20" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #10B981;">set()</text>
+        <text x="170" y="20" style="font: 600 11px 'Monaco', monospace; fill: #10B981;">{1, 2, 3}</text>
+      </g>
+    </g>
+    
+    <!-- Features Section -->
+    <g transform="translate(20, 270)">
+      <rect x="0" y="0" width="660" height="140" rx="12" class="feature-box"/>
+      <text x="15" y="25" style="font: 600 12px Inter, sans-serif; fill: #047857;">特徴：</text>
+      
+      <!-- Feature 1 -->
+      <g transform="translate(15, 35)">
+        <rect x="0" y="0" width="300" height="20" rx="10" fill="var(--svg-bg, #ECFDF5)" stroke="var(--svg-primary, #22C55E)" stroke-width="1"/>
+        <text x="10" y="14" style="font: 600 10px Inter, sans-serif; fill: #047857;">✅ 重複する要素がない（自動的に除去）</text>
+      </g>
+      
+      <!-- Feature 2 -->
+      <g transform="translate(330, 35)">
+        <rect x="0" y="0" width="300" height="20" rx="10" fill="var(--svg-bg, #ECFDF5)" stroke="var(--svg-primary, #22C55E)" stroke-width="1"/>
+        <text x="10" y="14" style="font: 600 10px Inter, sans-serif; fill: #047857;">✅ 順序がない（インデックスでアクセス不可）</text>
+      </g>
+      
+      <!-- Feature 3 -->
+      <g transform="translate(15, 65)">
+        <rect x="0" y="0" width="300" height="20" rx="10" fill="var(--svg-bg, #ECFDF5)" stroke="var(--svg-primary, #22C55E)" stroke-width="1"/>
+        <text x="10" y="14" style="font: 600 10px Inter, sans-serif; fill: #047857;">✅ 高速な存在確認（O(1)）</text>
+      </g>
+      
+      <!-- Feature 4 -->
+      <g transform="translate(330, 65)">
+        <rect x="0" y="0" width="300" height="20" rx="10" fill="var(--svg-bg, #ECFDF5)" stroke="var(--svg-primary, #22C55E)" stroke-width="1"/>
+        <text x="10" y="14" style="font: 600 10px Inter, sans-serif; fill: #047857;">✅ 集合演算（和集合、積集合など）が可能</text>
+      </g>
+      
+      <!-- Performance comparison -->
+      <g transform="translate(15, 95)">
+        <rect x="0" y="0" width="630" height="30" rx="8" fill="var(--svg-bg, #047857)" fill-opacity="0.1"/>
+        <text x="10" y="15" style="font: 600 11px Inter, sans-serif; fill: #047857;">
+          🚀 パフォーマンス比較：
+        </text>
+        <text x="10" y="27" style="font: 500 10px Inter, sans-serif; fill: #047857;">
+          リストでの存在確認 O(N) vs セットでの存在確認 O(1) - 大量データでは圧倒的な差
+        </text>
+      </g>
+    </g>
+    
+    <!-- Practical Example -->
+    <g transform="translate(20, 430)">
+      <rect x="0" y="0" width="660" height="35" rx="8" class="example-box"/>
+      <text x="15" y="18" style="font: 600 12px Inter, sans-serif; fill: #D97706;">
+        例：重複除去の自動化
+      </text>
+      <g transform="translate(15, 20)">
+        <text x="0" y="10" class="code-text">numbers = [1, 2, 2, 3, 3, 3, 4, 5]</text>
+        <text x="250" y="10" class="code-text">unique = set(numbers)  # {1, 2, 3, 4, 5}</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Key Benefits -->
+  <g id="key-benefits" transform="translate(100, 560)">
+    <text x="300" y="15" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: var(--svg-text, #374151);">
+      💡 集合は重複管理と高速検索の強力なツール
+    </text>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L10,3 z" fill="var(--svg-primary, #10B981)"/>
+    </marker>
+  </defs>
+  
+</svg>
