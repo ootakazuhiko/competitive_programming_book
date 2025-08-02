@@ -1,4 +1,4 @@
-<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
   <title>図1-15：主要な競技プログラミングプラットフォーム比較</title>
   <desc>AtCoder、Codeforces、LeetCode、TopCoderなど主要な競技プログラミングプラットフォームの特徴比較</desc>
   
@@ -24,7 +24,7 @@
   </defs>
   
   <!-- Background -->
-  <rect width="800" height="600" fill="#FFFFFF"/>
+  <rect width="800" height="700" fill="#FFFFFF"/>
   
   <!-- Title -->
   <text x="400" y="32" text-anchor="middle" class="title">図1-15：主要な競技プログラミングプラットフォーム比較</text>
@@ -183,8 +183,45 @@
     </g>
   </g>
   
+  <!-- JOI (Japan Olympiad in Informatics) -->
+  <g id="joi">
+    <rect x="40" y="560" width="340" height="100" rx="8" fill="#FFF7ED" stroke="#EA580C" stroke-width="2"/>
+    
+    <text x="60" y="585" class="emoji">🏅</text>
+    <text x="85" y="585" class="platform-title" fill="#EA580C">JOI (日本情報オリンピック)</text>
+    
+    <g transform="translate(50, 600)">
+      <text x="0" y="0" class="feature-label">開催:</text>
+      <text x="120" y="0" class="feature-value">年1回（12月予選・2月本選）</text>
+      
+      <text x="0" y="18" class="feature-label">対象:</text>
+      <text x="120" y="18" class="feature-value">中学生・高校生限定</text>
+      
+      <text x="0" y="36" class="feature-label">価値:</text>
+      <text x="120" y="36" class="feature-value">最も権威のある中高生競技</text>
+      
+      <text x="10" y="54" class="rating" fill="#EA580C">🎯 中学生への適性：★★★★☆</text>
+    </g>
+  </g>
+  
+  <!-- Other Practice Sites -->
+  <g id="other-sites">
+    <rect x="420" y="560" width="340" height="100" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="2"/>
+    
+    <text x="440" y="585" class="emoji">📚</text>
+    <text x="465" y="585" class="platform-title" fill="#16A34A">その他の練習サイト</text>
+    
+    <g transform="translate(430, 600)">
+      <text x="0" y="0" class="feature-value">• AOJ：会津大学オンラインジャッジ</text>
+      <text x="0" y="15" class="feature-value">• paiza：就活・転職向け</text>
+      <text x="0" y="30" class="feature-value">• yukicoder：日本語問題多数</text>
+      
+      <text x="10" y="48" class="rating" fill="#16A34A">🎯 中学生への適性：★★★☆☆</text>
+    </g>
+  </g>
+
   <!-- Legend -->
-  <g transform="translate(250, 560)">
+  <g transform="translate(250, 680)">
     <text x="0" y="0" class="feature-label">評価:</text>
     <circle cx="40" cy="-4" r="6" class="excellent"/>
     <text x="50" y="0" class="feature-value">優秀</text>
