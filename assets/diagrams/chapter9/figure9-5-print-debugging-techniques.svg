@@ -1,0 +1,291 @@
+<svg viewBox="0 0 800 1100" xmlns="http://www.w3.org/2000/svg">
+  <title>図9-5：print文デバッグの効果的活用法</title>
+  <desc>print文を使った効果的なデバッグ手法、変数の状態確認、実行経路の追跡</desc>
+  
+  <!-- Background -->
+  <rect width="800" height="1100" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="bold" fill="#1f2937">
+    print文デバッグの効果的活用法
+  </text>
+  
+  <!-- Overview Section -->
+  <g id="overview">
+    <rect x="50" y="60" width="700" height="140" rx="12" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="70" width="680" height="30" rx="8" fill="#bae6fd" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="80" y="88" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#0284c7">
+      🖨️ print文デバッグとは
+    </text>
+    
+    <!-- Content -->
+    <text x="80" y="120" font-family="Inter, Arial, sans-serif" font-size="13" fill="#0369a1">
+      • コードの実行中に変数の値や処理の流れを確認する最も基本的な手法
+    </text>
+    <text x="80" y="140" font-family="Inter, Arial, sans-serif" font-size="13" fill="#0369a1">
+      • 特別なツールが不要で、すぐに使える
+    </text>
+    <text x="80" y="160" font-family="Inter, Arial, sans-serif" font-size="13" fill="#0369a1">
+      • 論理エラーの発見に特に効果的
+    </text>
+    <text x="80" y="180" font-family="Inter, Arial, sans-serif" font-size="13" fill="#0369a1">
+      • 複雑なアルゴリズムの動作確認にも使える
+    </text>
+  </g>
+  
+  <!-- Basic Techniques Section -->
+  <g id="basic-techniques">
+    <rect x="50" y="220" width="700" height="280" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="230" width="680" height="30" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="80" y="248" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#16a34a">
+      💡 基本テクニック
+    </text>
+    
+    <!-- Technique 1: Variable State -->
+    <rect x="80" y="280" width="320" height="200" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="90" y="300" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#16a34a">
+      1️⃣ 変数の状態確認
+    </text>
+    
+    <!-- Code example -->
+    <rect x="90" y="310" width="300" height="100" rx="4" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+    <text x="100" y="326" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      for i in range(n):
+    </text>
+    <text x="110" y="340" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print(f"i={i}, arr[i]={arr[i]}")
+    </text>
+    <text x="110" y="354" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      # 処理
+    </text>
+    <text x="110" y="368" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print(f"処理後: result={result}")
+    </text>
+    <text x="110" y="382" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print("-" * 20)
+    </text>
+    <text x="110" y="396" font-family="Inter, Arial, sans-serif" font-size="9" fill="#6b7280">
+      # 区切り線で見やすく
+    </text>
+    
+    <!-- Benefits -->
+    <text x="100" y="430" font-family="Inter, Arial, sans-serif" font-size="12" fill="#16a34a">
+      ✅ ループの各回でのデータ変化を追跡
+    </text>
+    <text x="100" y="445" font-family="Inter, Arial, sans-serif" font-size="12" fill="#16a34a">
+      ✅ 期待通りの値になっているか確認
+    </text>
+    <text x="100" y="460" font-family="Inter, Arial, sans-serif" font-size="12" fill="#16a34a">
+      ✅ 配列の境界や条件分岐の確認
+    </text>
+    
+    <!-- Technique 2: Execution Path -->
+    <rect x="420" y="280" width="320" height="200" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="430" y="300" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#16a34a">
+      2️⃣ 実行経路の追跡
+    </text>
+    
+    <!-- Code example -->
+    <rect x="430" y="310" width="300" height="100" rx="4" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+    <text x="440" y="326" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      def binary_search(arr, target):
+    </text>
+    <text x="450" y="340" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print("二分探索開始")
+    </text>
+    <text x="450" y="354" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      if condition:
+    </text>
+    <text x="460" y="368" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print("左側を探索")
+    </text>
+    <text x="450" y="382" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      else:
+    </text>
+    <text x="460" y="396" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print("右側を探索")
+    </text>
+    
+    <!-- Benefits -->
+    <text x="440" y="430" font-family="Inter, Arial, sans-serif" font-size="12" fill="#16a34a">
+      ✅ どの条件分岐を通ったか確認
+    </text>
+    <text x="440" y="445" font-family="Inter, Arial, sans-serif" font-size="12" fill="#16a34a">
+      ✅ 関数の呼び出し順序を追跡
+    </text>
+    <text x="440" y="460" font-family="Inter, Arial, sans-serif" font-size="12" fill="#16a34a">
+      ✅ 無限ループや予期しない経路の発見
+    </text>
+  </g>
+  
+  <!-- Advanced Techniques Section -->
+  <g id="advanced-techniques">
+    <rect x="50" y="520" width="700" height="300" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="530" width="680" height="30" rx="8" fill="#fde68a" stroke="#f59e0b" stroke-width="1"/>
+    <text x="80" y="548" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#d97706">
+      🚀 応用テクニック
+    </text>
+    
+    <!-- Technique 3: Formatted Output -->
+    <rect x="80" y="580" width="320" height="220" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="90" y="600" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+      3️⃣ 見やすい出力形式
+    </text>
+    
+    <!-- Code example -->
+    <rect x="90" y="610" width="300" height="130" rx="4" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+    <text x="100" y="626" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#d97706">
+      # 配列の状態を見やすく表示
+    </text>
+    <text x="100" y="640" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      def debug_array(arr, msg=""):
+    </text>
+    <text x="110" y="654" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print(f"[DEBUG] {msg}")
+    </text>
+    <text x="110" y="668" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print(f"配列: {arr}")
+    </text>
+    <text x="110" y="682" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print(f"長さ: {len(arr)}")
+    </text>
+    <text x="110" y="696" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print("=" * 30)
+    </text>
+    <text x="100" y="720" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      # 使用例
+    </text>
+    <text x="100" y="734" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      debug_array(nums, "ソート前")
+    </text>
+    
+    <!-- Benefits -->
+    <text x="100" y="760" font-family="Inter, Arial, sans-serif" font-size="12" fill="#d97706">
+      ✅ 情報を整理して表示
+    </text>
+    <text x="100" y="775" font-family="Inter, Arial, sans-serif" font-size="12" fill="#d97706">
+      ✅ デバッグメッセージを統一
+    </text>
+    <text x="100" y="790" font-family="Inter, Arial, sans-serif" font-size="12" fill="#d97706">
+      ✅ 本番コードと区別しやすい
+    </text>
+    
+    <!-- Technique 4: Conditional Debug -->
+    <rect x="420" y="580" width="320" height="220" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="430" y="600" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+      4️⃣ 条件付きデバッグ
+    </text>
+    
+    <!-- Code example -->
+    <rect x="430" y="610" width="300" height="130" rx="4" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+    <text x="440" y="626" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#d97706">
+      # 特定の条件でのみデバッグ出力
+    </text>
+    <text x="440" y="640" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      DEBUG = True
+    </text>
+    <text x="440" y="668" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      for i in range(1000):
+    </text>
+    <text x="450" y="682" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      if DEBUG and i % 100 == 0:
+    </text>
+    <text x="460" y="696" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print(f"進捗: {i}/1000")
+    </text>
+    <text x="450" y="724" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      if result < 0 and DEBUG:
+    </text>
+    <text x="460" y="738" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print(f"異常値検出: {result}")
+    </text>
+    
+    <!-- Benefits -->
+    <text x="440" y="760" font-family="Inter, Arial, sans-serif" font-size="12" fill="#d97706">
+      ✅ 大量データでも出力量を制御
+    </text>
+    <text x="440" y="775" font-family="Inter, Arial, sans-serif" font-size="12" fill="#d97706">
+      ✅ 異常な状況のみに焦点
+    </text>
+    <text x="440" y="790" font-family="Inter, Arial, sans-serif" font-size="12" fill="#d97706">
+      ✅ デバッグモードの切り替えが簡単
+    </text>
+  </g>
+  
+  <!-- Best Practices Section -->
+  <g id="best-practices">
+    <rect x="50" y="840" width="700" height="220" rx="12" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="850" width="680" height="30" rx="8" fill="#e9d5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="80" y="868" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#9333ea">
+      📋 ベストプラクティス
+    </text>
+    
+    <!-- Practices grid -->
+    <g id="practices-grid">
+      <!-- Do's -->
+      <rect x="80" y="900" width="300" height="140" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+      <text x="90" y="920" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#16a34a">
+        ✅ 推奨事項
+      </text>
+      <text x="100" y="940" font-family="Inter, Arial, sans-serif" font-size="12" fill="#15803d">
+        • [DEBUG]などのプレフィックスを使用
+      </text>
+      <text x="100" y="955" font-family="Inter, Arial, sans-serif" font-size="12" fill="#15803d">
+        • 変数名と値を同時に表示
+      </text>
+      <text x="100" y="970" font-family="Inter, Arial, sans-serif" font-size="12" fill="#15803d">
+        • ループの進捗を定期的に表示
+      </text>
+      <text x="100" y="985" font-family="Inter, Arial, Sans-serif" font-size="12" fill="#15803d">
+        • 区切り線で出力を整理
+      </text>
+      <text x="100" y="1000" font-family="Inter, Arial, sans-serif" font-size="12" fill="#15803d">
+        • デバッグ用関数を作成して再利用
+      </text>
+      <text x="100" y="1015" font-family="Inter, Arial, sans-serif" font-size="12" fill="#15803d">
+        • 提出前にprint文をコメントアウト
+      </text>
+      <text x="100" y="1030" font-family="Inter, Arial, sans-serif" font-size="12" fill="#15803d">
+        • 意味のあるメッセージを付ける
+      </text>
+      
+      <!-- Don'ts -->
+      <rect x="420" y="900" width="300" height="140" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+      <text x="430" y="920" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">
+        ❌ 避けるべきこと
+      </text>
+      <text x="440" y="940" font-family="Inter, Arial, sans-serif" font-size="12" fill="#dc2626">
+        • print文のみの行（意味不明な出力）
+      </text>
+      <text x="440" y="955" font-family="Inter, Arial, sans-serif" font-size="12" fill="#dc2626">
+        • 大量の無駄な出力
+      </text>
+      <text x="440" y="970" font-family="Inter, Arial, sans-serif" font-size="12" fill="#dc2626">
+        • デバッグ文を残したまま提出
+      </text>
+      <text x="440" y="985" font-family="Inter, Arial, sans-serif" font-size="12" fill="#dc2626">
+        • ネストが深い場所での大量出力
+      </text>
+      <text x="440" y="1000" font-family="Inter, Arial, sans-serif" font-size="12" fill="#dc2626">
+        • 変数名だけの出力（値が不明）
+      </text>
+      <text x="440" y="1015" font-family="Inter, Arial, sans-serif" font-size="12" fill="#dc2626">
+        • 実行時間に大きく影響する出力
+      </text>
+      <text x="440" y="1030" font-family="Inter, Arial, sans-serif" font-size="12" fill="#dc2626">
+        • 文字化けや見づらい形式
+      </text>
+    </g>
+  </g>
+  
+  <!-- Key takeaway bar -->
+  <rect x="50" y="1080" width="700" height="5" rx="4" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2"/>
+</svg>
