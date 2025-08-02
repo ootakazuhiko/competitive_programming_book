@@ -669,8 +669,6 @@ order: 6
 
 ![図6-3：スタックとキューの活用]({{ site.baseurl }}/images/figure6-3-stack-queue-utilization.svg)
 
-```
-
 ### Pythonでのスタック実装
 
 ```
