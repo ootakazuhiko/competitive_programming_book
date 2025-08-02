@@ -1,0 +1,189 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図6-3：二次元リストの構造と活用法</title>
+  <desc>二次元リスト（表形式データ）の構造、インデックスアクセス、作成方法を詳細に説明する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .concept-text { font: 500 12px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Monaco', monospace; fill: var(--svg-text, #4B5563); }
+      .grid-value { font: 600 14px 'Monaco', monospace; fill: var(--svg-text, #1F2937); }
+      .index-text { font: 500 10px Inter, sans-serif; fill: var(--svg-text, #6B7280); }
+      .label-text { font: 600 11px Inter, sans-serif; }
+      .warning-text { font: 600 11px Inter, sans-serif; fill: var(--svg-text, #DC2626); }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-box { fill: var(--svg-bg, #EFF6FF); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .grid-cell { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .creation-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .warning-box { fill: var(--svg-bg, #FEE2E2); stroke: var(--svg-primary, #EF4444); stroke-width: 2; }
+      .pattern-box { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .row-header { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 1; }
+      .col-header { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図6-3：二次元リストの構造と活用法</text>
+  
+  <!-- Main Concept -->
+  <g id="main-concept" transform="translate(50, 60)">
+    <rect x="0" y="0" width="700" height="580" rx="12" class="main-box"/>
+    <text x="20" y="25" class="emoji">📊</text>
+    <text x="50" y="25" class="section-title" fill="#1E40AF">二次元リストの基本概念</text>
+    
+    <!-- Code Example -->
+    <g transform="translate(20, 40)">
+      <text x="0" y="15" class="code-text">grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]</text>
+    </g>
+    
+    <!-- Visual Grid -->
+    <g transform="translate(20, 75)">
+      <text x="0" y="0" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">
+        視覚的表現：
+      </text>
+      
+      <!-- Column headers -->
+      <g transform="translate(120, 20)">
+        <text x="0" y="-5" class="label-text" fill="#BE185D">列0</text>
+        <text x="70" y="-5" class="label-text" fill="#BE185D">列1</text>
+        <text x="140" y="-5" class="label-text" fill="#BE185D">列2</text>
+        <text x="210" y="-5" class="label-text" fill="#6B7280">← 列インデックス</text>
+      </g>
+      
+      <!-- Grid with values -->
+      <g transform="translate(50, 30)">
+        <!-- Row 0 -->
+        <rect x="-30" y="0" width="40" height="40" class="row-header"/>
+        <text x="-10" y="25" text-anchor="middle" class="label-text" fill="#D97706">行0</text>
+        
+        <rect x="20" y="0" width="50" height="40" class="grid-cell"/>
+        <text x="45" y="25" text-anchor="middle" class="grid-value" fill="#1E40AF">1</text>
+        
+        <rect x="80" y="0" width="50" height="40" class="grid-cell"/>
+        <text x="105" y="25" text-anchor="middle" class="grid-value" fill="#1E40AF">2</text>
+        
+        <rect x="140" y="0" width="50" height="40" class="grid-cell"/>
+        <text x="165" y="25" text-anchor="middle" class="grid-value" fill="#1E40AF">3</text>
+        
+        <!-- Row 1 -->
+        <rect x="-30" y="50" width="40" height="40" class="row-header"/>
+        <text x="-10" y="75" text-anchor="middle" class="label-text" fill="#D97706">行1</text>
+        
+        <rect x="20" y="50" width="50" height="40" class="grid-cell"/>
+        <text x="45" y="75" text-anchor="middle" class="grid-value" fill="#1E40AF">4</text>
+        
+        <rect x="80" y="50" width="50" height="40" class="grid-cell"/>
+        <text x="105" y="75" text-anchor="middle" class="grid-value" fill="#1E40AF">5</text>
+        
+        <rect x="140" y="50" width="50" height="40" class="grid-cell"/>
+        <text x="165" y="75" text-anchor="middle" class="grid-value" fill="#1E40AF">6</text>
+        
+        <!-- Row 2 -->
+        <rect x="-30" y="100" width="40" height="40" class="row-header"/>
+        <text x="-10" y="125" text-anchor="middle" class="label-text" fill="#D97706">行2</text>
+        
+        <rect x="20" y="100" width="50" height="40" class="grid-cell"/>
+        <text x="45" y="125" text-anchor="middle" class="grid-value" fill="#1E40AF">7</text>
+        
+        <rect x="80" y="100" width="50" height="40" class="grid-cell"/>
+        <text x="105" y="125" text-anchor="middle" class="grid-value" fill="#1E40AF">8</text>
+        
+        <rect x="140" y="100" width="50" height="40" class="grid-cell"/>
+        <text x="165" y="125" text-anchor="middle" class="grid-value" fill="#1E40AF">9</text>
+        
+        <!-- Row index arrow -->
+        <text x="-50" y="75" class="label-text" fill="#6B7280">↑</text>
+        <text x="-110" y="95" class="label-text" fill="#6B7280">行インデックス</text>
+      </g>
+      
+      <!-- Access examples -->
+      <g transform="translate(320, 50)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">
+          アクセス方法：
+        </text>
+        <text x="0" y="35" class="code-text">print(grid[0][0])    # 1</text>
+        <text x="0" y="50" class="code-text">print(grid[1][2])    # 6</text>
+        <text x="0" y="65" class="code-text">print(grid[2][1])    # 8</text>
+        
+        <!-- Access visualization arrows -->
+        <g>
+          <!-- grid[1][2] example -->
+          <path d="M150 55 L-85 75" stroke="var(--svg-primary, #DC2626)" stroke-width="2" fill="none" stroke-dasharray="3,3"/>
+          <text x="20" y="45" style="font: 500 9px Inter, sans-serif; fill: #DC2626;">grid[1][2]</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Creation Methods -->
+    <g transform="translate(20, 250)">
+      <rect x="0" y="0" width="660" height="200" rx="12" class="creation-box"/>
+      <text x="15" y="25" class="emoji">🏗️</text>
+      <text x="45" y="25" style="font: 600 12px Inter, sans-serif; fill: #047857;">
+        二次元リストの作成方法
+      </text>
+      
+      <!-- Method 1 -->
+      <g transform="translate(15, 40)">
+        <text x="0" y="15" style="font: 600 11px Inter, sans-serif; fill: #047857;">
+          方法1: 直接作成
+        </text>
+        <text x="0" y="30" class="code-text">matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]</text>
+      </g>
+      
+      <!-- Method 2 -->
+      <g transform="translate(15, 65)">
+        <text x="0" y="15" style="font: 600 11px Inter, sans-serif; fill: #047857;">
+          方法2: 内包表記を使用（推奨）
+        </text>
+        <text x="0" y="30" class="code-text">rows, cols = 3, 4</text>
+        <text x="0" y="45" class="code-text">matrix = [[0 for _ in range(cols)] for _ in range(rows)]</text>
+        <text x="0" y="60" class="code-text"># [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]</text>
+      </g>
+      
+      <!-- Method 3 -->
+      <g transform="translate(15, 130)">
+        <text x="0" y="15" style="font: 600 11px Inter, sans-serif; fill: #047857;">
+          方法3: 値を入力しながら作成
+        </text>
+        <text x="0" y="30" class="code-text">matrix = []</text>
+        <text x="0" y="45" class="code-text">for i in range(3):</text>
+        <text x="20" y="60" class="code-text">row = list(map(int, input().split()))</text>
+        <text x="20" y="75" class="code-text">matrix.append(row)</text>
+      </g>
+    </g>
+    
+    <!-- Warning Section -->
+    <g transform="translate(20, 470)">
+      <rect x="0" y="0" width="660" height="50" rx="12" class="warning-box"/>
+      <text x="15" y="20" class="emoji">❌</text>
+      <text x="45" y="20" class="warning-text">
+        危険な方法（避けるべき）：
+      </text>
+      <text x="15" y="35" class="code-text">wrong = [[0] * 3] * 3  # 参照が共有されて問題発生</text>
+      <text x="15" y="48" style="font: 500 9px Inter, sans-serif; fill: #DC2626;">
+        この方法では全ての行が同じリストオブジェクトを参照し、予期しない動作の原因となる
+      </text>
+    </g>
+    
+    <!-- Usage Patterns -->
+    <g transform="translate(20, 540)">
+      <rect x="0" y="0" width="660" height="25" rx="12" class="pattern-box"/>
+      <text x="15" y="17" style="font: 600 12px Inter, sans-serif; fill: #0369A1;">
+        💡 活用場面：ゲーム盤面、画像データ、表計算、迷路問題、動的プログラミングテーブル
+      </text>
+    </g>
+  </g>
+  
+  <!-- Key Insight -->
+  <g id="key-insight" transform="translate(100, 660)">
+    <text x="300" y="15" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: var(--svg-text, #374151);">
+      🎯 二次元リストは行列データを効率的に管理する強力なツール
+    </text>
+  </g>
+  
+</svg>
