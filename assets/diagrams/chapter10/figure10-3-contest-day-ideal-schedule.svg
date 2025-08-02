@@ -1,0 +1,142 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図10-3：コンテスト当日の理想的スケジュール</title>
+  <desc>AtCoderコンテスト当日の最適なタイムスケジュールと各フェーズでの重要ポイントを示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .time-title { font: 600 14px Inter, sans-serif; }
+      .phase-title { font: 600 13px Inter, sans-serif; }
+      .item-text { font: 500 11px Inter, sans-serif; }
+      .detail-text { font: 500 10px Inter, sans-serif; }
+      .time-text { font: 600 12px 'Monaco', monospace; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .timeline-box { fill: var(--svg-bg, #F3F4F6); stroke: var(--svg-primary, #9CA3AF); stroke-width: 2; }
+      .pre-contest-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .contest-start-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .contest-mid-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .contest-end-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .post-contest-box { fill: var(--svg-bg, #EDE9FE); stroke: var(--svg-primary, #8B5CF6); stroke-width: 2; }
+      .check-box { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 1; }
+      .mental-box { fill: var(--svg-bg, #F0FDF4); stroke: var(--svg-primary, #22C55E); stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図10-3：コンテスト当日の理想的スケジュール</text>
+  
+  <!-- Timeline Container -->
+  <g id="timeline-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="600" rx="12" class="timeline-box"/>
+    
+    <!-- Pre-Contest Phase (20:30-20:45) -->
+    <g id="pre-contest" transform="translate(20, 20)">
+      <rect x="0" y="0" width="760" height="100" rx="10" class="pre-contest-box"/>
+      <text x="15" y="20" class="emoji">🕒</text>
+      <text x="45" y="20" class="time-title" fill="#1E40AF">コンテスト開始前</text>
+      <text x="600" y="20" class="time-text" fill="#1E40AF">(20:30-20:45)</text>
+      
+      <g transform="translate(15, 35)">
+        <rect x="0" y="0" width="350" height="55" rx="8" class="check-box"/>
+        <text x="10" y="15" class="emoji">✅</text>
+        <text x="35" y="15" style="font: 600 11px Inter, sans-serif; fill: #0369A1;">最終環境チェック：</text>
+        <text x="10" y="28" class="item-text" fill="#0369A1;">• PCとネットワークの動作確認</text>
+        <text x="10" y="40" class="item-text" fill="#0369A1;">• AtCoderにログイン</text>
+        <text x="10" y="52" class="item-text" fill="#0369A1;">• エディタとブラウザの起動</text>
+      </g>
+      
+      <g transform="translate(380, 35)">
+        <rect x="0" y="0" width="360" height="55" rx="8" class="mental-box"/>
+        <text x="10" y="15" class="emoji">🧘</text>
+        <text x="35" y="15" style="font: 600 11px Inter, sans-serif; fill: #047857;">心の準備：</text>
+        <text x="10" y="28" class="item-text" fill="#047857;">• 深呼吸とリラックス</text>
+        <text x="10" y="40" class="item-text" fill="#047857;">• 楽しむマインドセット確認</text>
+        <text x="10" y="52" class="item-text" fill="#047857;">• 必要サイトをブックマーク</text>
+      </g>
+    </g>
+    
+    <!-- Contest Start (21:00-21:20) -->
+    <g id="contest-start" transform="translate(20, 140)">
+      <rect x="0" y="0" width="760" height="100" rx="10" class="contest-start-box"/>
+      <text x="15" y="20" class="emoji">🚀</text>
+      <text x="45" y="20" class="time-title" fill="#047857">コンテスト開始</text>
+      <text x="600" y="20" class="time-text" fill="#047857">(21:00-21:20)</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #047857;">Phase 1: A問題集中期</text>
+        <text x="0" y="30" class="item-text" fill="#047857;">• A問題のみに集中（他の問題は見ない）</text>
+        <text x="0" y="43" class="item-text" fill="#047857;">• 問題文を2回読んで確実に理解</text>
+        <text x="0" y="56" class="item-text" fill="#047857;">• サンプルを手動で確認してから実装</text>
+        <text x="0" y="69" class="item-text" fill="#047857;">• 焦らず、確実性を重視</text>
+        
+        <text x="400" y="15" style="font: 600 12px Inter, sans-serif; fill: #047857;">🎯 目標：A問題AC</text>
+        <text x="400" y="30" class="detail-text" fill="#047857;">• 15-20分以内での正解を目指す</text>
+        <text x="400" y="43" class="detail-text" fill="#047857;">• 1回目でACできなくても冷静に対処</text>
+        <text x="400" y="56" class="detail-text" fill="#047857;">• エラーメッセージを落ち着いて読む</text>
+      </g>
+    </g>
+    
+    <!-- Contest Mid Phase (21:20-22:00) -->
+    <g id="contest-mid" transform="translate(20, 260)">
+      <rect x="0" y="0" width="760" height="100" rx="10" class="contest-mid-box"/>
+      <text x="15" y="20" class="emoji">⚡</text>
+      <text x="45" y="20" class="time-title" fill="#D97706">コンテスト中盤</text>
+      <text x="600" y="20" class="time-text" fill="#D97706">(21:20-22:00)</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #D97706;">Phase 2: B問題チャレンジ期</text>
+        <text x="0" y="30" class="item-text" fill="#D97706;">• A問題ACできた場合：B問題に挑戦</text>
+        <text x="0" y="43" class="item-text" fill="#D97706;">• A問題で詰まった場合：継続またはB問題も確認</text>
+        <text x="0" y="56" class="item-text" fill="#D97706;">• 15分考えて進展なければ他の問題も検討</text>
+        <text x="0" y="69" class="detail-text" fill="#D97706;">💡 柔軟性を持って問題選択</text>
+        
+        <text x="400" y="15" style="font: 600 12px Inter, sans-serif; fill: #D97706;">🎯 目標：2問目への挑戦</text>
+        <text x="400" y="30" class="detail-text" fill="#D97706;">• 解けなくても問題文理解で学習効果</text>
+        <text x="400" y="43" class="detail-text" fill="#D97706;">• 時間管理を意識して取り組む</text>
+        <text x="400" y="56" class="detail-text" fill="#D97706;">• 複数問題を俯瞰して戦略的に判断</text>
+      </g>
+    </g>
+    
+    <!-- Contest End Phase (22:00-22:40) -->
+    <g id="contest-end" transform="translate(20, 380)">
+      <rect x="0" y="0" width="760" height="100" rx="10" class="contest-end-box"/>
+      <text x="15" y="20" class="emoji">🏃</text>
+      <text x="45" y="20" class="time-title" fill="#BE185D">コンテスト終盤</text>
+      <text x="600" y="20" class="time-text" fill="#BE185D">(22:00-22:40)</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #BE185D;">Phase 3: 最終スパート期</text>
+        <text x="0" y="30" class="item-text" fill="#BE185D;">• 残り時間で確実に解けそうな問題に集中</text>
+        <text x="0" y="43" class="item-text" fill="#BE185D;">• 新しい問題より既存問題の見直し重視</text>
+        <text x="0" y="56" class="item-text" fill="#BE185D;">• 終了10分前は提出した解答の再確認</text>
+        <text x="0" y="69" class="detail-text" fill="#BE185D;">⚠️ 無理はせず、確実性優先</text>
+        
+        <text x="400" y="15" style="font: 600 12px Inter, sans-serif; fill: #BE185D;">🎯 目標：ベストを尽くす</text>
+        <text x="400" y="30" class="detail-text" fill="#BE185D;">• 解けた問題の確実な正解</text>
+        <text x="400" y="43" class="detail-text" fill="#BE185D;">• 学んだことをメモ</text>
+        <text x="400" y="56" class="detail-text" fill="#BE185D;">• 次回への課題発見</text>
+      </g>
+    </g>
+    
+    <!-- Post Contest (22:40-) -->
+    <g id="post-contest" transform="translate(20, 500)">
+      <rect x="0" y="0" width="760" height="80" rx="10" class="post-contest-box"/>
+      <text x="15" y="20" class="emoji">📊</text>
+      <text x="45" y="20" class="time-title" fill="#7C3AED">コンテスト終了後</text>
+      <text x="600" y="20" class="time-text" fill="#7C3AED">(22:40-)</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="item-text" fill="#7C3AED;">• 結果確認（順位・レーティング変化）</text>
+        <text x="350" y="15" class="item-text" fill="#7C3AED;">• 解説の確認（まず自力で再挑戦）</text>
+        <text x="0" y="30" class="item-text" fill="#7C3AED;">• 振り返りシートの記入</text>
+        <text x="350" y="30" class="item-text" fill="#7C3AED;">• Twitterで感想シェア（任意）</text>
+        <text x="0" y="45" class="detail-text" fill="#7C3AED;">🎉 完走おめでとう！参加自体が大きな成果</text>
+      </g>
+    </g>
+  </g>
+  
+</svg>

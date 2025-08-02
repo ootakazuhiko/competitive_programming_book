@@ -1,0 +1,172 @@
+<svg viewBox="0 0 900 1000" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-2：A問題解答の5ステップ</title>
+  <desc>AtCoder ABC A問題を確実に解くための標準的な5段階プロセスを詳細に説明する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .step-title { font: 600 14px Inter, sans-serif; }
+      .step-time { font: 600 12px Inter, sans-serif; }
+      .action-text { font: 500 11px Inter, sans-serif; }
+      .check-text { font: 500 10px Inter, sans-serif; }
+      .warning-text { font: 500 11px Inter, sans-serif; }
+      .target-text { font: 600 12px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .step1-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .step2-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .step3-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .step4-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .step5-box { fill: var(--svg-bg, #EDE9FE); stroke: var(--svg-primary, #8B5CF6); stroke-width: 2; }
+      .warning-box { fill: var(--svg-bg, #FEE2E2); stroke: var(--svg-primary, #EF4444); stroke-width: 1; }
+      .target-box { fill: var(--svg-bg, #F0FDF4); stroke: var(--svg-primary, #22C55E); stroke-width: 2; }
+      .arrow { stroke: var(--svg-primary, #10B981); stroke-width: 3; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="var(--svg-primary, #10B981)"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="1000" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図7-2：A問題解答の5ステップ</text>
+  
+  <!-- Step 1: Problem Understanding -->
+  <g id="step1" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="150" rx="12" class="step1-box"/>
+    <text x="20" y="25" style="font: 600 16px Inter, sans-serif; fill: #1E40AF;">Step 1: 問題文理解</text>
+    <text x="650" y="25" class="step-time" fill="#1E40AF">（1-2分）</text>
+    
+    <g transform="translate(20, 40)">
+      <text x="0" y="15" class="emoji">✅</text>
+      <text x="30" y="15" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">やること：</text>
+      
+      <text x="0" y="35" class="action-text" fill="#1E40AF;">• 問題文を2回読む</text>
+      <text x="200" y="35" class="action-text" fill="#1E40AF;">• 入力形式を確認</text>
+      <text x="0" y="50" class="action-text" fill="#1E40AF;">• 出力形式を確認</text>
+      <text x="200" y="50" class="action-text" fill="#1E40AF;">• サンプルで動作を理解</text>
+      
+      <g transform="translate(0, 70)">
+        <text x="0" y="15" class="emoji">🔍</text>
+        <text x="30" y="15" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">確認ポイント：</text>
+        
+        <text x="0" y="30" class="check-text" fill="#1E40AF;">• 何を計算すればいいか明確になったか？</text>
+        <text x="0" y="45" class="check-text" fill="#1E40AF;">• 入力の個数と型は理解できたか？</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M450 220 L450 240" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Step 2: Solution Design -->
+  <g id="step2" transform="translate(50, 250)">
+    <rect x="0" y="0" width="800" height="140" rx="12" class="step2-box"/>
+    <text x="20" y="25" style="font: 600 16px Inter, sans-serif; fill: #047857;">Step 2: 解法設計</text>
+    <text x="650" y="25" class="step-time" fill="#047857">（30秒-1分）</text>
+    
+    <g transform="translate(20, 40)">
+      <text x="0" y="15" class="emoji">💭</text>
+      <text x="30" y="15" style="font: 600 12px Inter, sans-serif; fill: #047857;">考えること：</text>
+      
+      <text x="0" y="35" class="action-text" fill="#047857;">• どの演算・処理を使うか</text>
+      <text x="300" y="35" class="action-text" fill="#047857;">• 条件分岐が必要か</text>
+      <text x="0" y="50" class="action-text" fill="#047857;">• 特別なアルゴリズムは不要（A問題の場合）</text>
+      
+      <g transform="translate(400, 40)">
+        <text x="0" y="0" class="emoji">📝</text>
+        <text x="30" y="0" style="font: 600 12px Inter, sans-serif; fill: #047857;">疑似コード作成：</text>
+        <text x="0" y="15" class="action-text" fill="#047857;">1. 入力を受け取る</text>
+        <text x="0" y="30" class="action-text" fill="#047857;">2. 必要な計算を行う</text>
+        <text x="0" y="45" class="action-text" fill="#047857;">3. 結果を出力する</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M450 400 L450 420" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Step 3: Implementation -->
+  <g id="step3" transform="translate(50, 430)">
+    <rect x="0" y="0" width="800" height="160" rx="12" class="step3-box"/>
+    <text x="20" y="25" style="font: 600 16px Inter, sans-serif; fill: #D97706;">Step 3: 実装</text>
+    <text x="650" y="25" class="step-time" fill="#D97706">（2-3分）</text>
+    
+    <g transform="translate(20, 40)">
+      <text x="0" y="15" class="emoji">⌨️</text>
+      <text x="30" y="15" style="font: 600 12px Inter, sans-serif; fill: #D97706;">コーディング：</text>
+      
+      <text x="0" y="35" class="action-text" fill="#D97706;">• 入力処理から書き始める</text>
+      <text x="300" y="35" class="action-text" fill="#D97706;">• サンプルを頭の中で追跡しながら実装</text>
+      <text x="0" y="50" class="action-text" fill="#D97706;">• print文は最後に1回だけ</text>
+      
+      <g transform="translate(0, 70)">
+        <rect x="0" y="0" width="760" height="45" rx="8" class="warning-box"/>
+        <text x="10" y="15" class="emoji">🚫</text>
+        <text x="40" y="15" style="font: 600 11px Inter, sans-serif; fill: #DC2626;">避けるべきこと：</text>
+        
+        <text x="10" y="30" class="warning-text" fill="#DC2626;">• 複雑すぎる実装（A問題に複雑さは不要）</text>
+        <text x="10" y="42" class="warning-text" fill="#DC2626;">• デバッグ用print文の残存</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <path d="M450 600 L450 620" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Step 4: Verification -->
+  <g id="step4" transform="translate(50, 630)">
+    <rect x="0" y="0" width="800" height="150" rx="12" class="step4-box"/>
+    <text x="20" y="25" style="font: 600 16px Inter, sans-serif; fill: #BE185D;">Step 4: 検証</text>
+    <text x="650" y="25" class="step-time" fill="#BE185D">（1分）</text>
+    
+    <g transform="translate(20, 40)">
+      <text x="0" y="15" class="emoji">🧪</text>
+      <text x="30" y="15" style="font: 600 12px Inter, sans-serif; fill: #BE185D;">サンプルでの動作確認：</text>
+      
+      <text x="0" y="35" class="action-text" fill="#BE185D;">• 手動でサンプル入力をトレース</text>
+      <text x="300" y="35" class="action-text" fill="#BE185D;">• 期待される出力と一致するか確認</text>
+      <text x="0" y="50" class="action-text" fill="#BE185D;">• 境界値での動作も考慮</text>
+      
+      <g transform="translate(0, 70)">
+        <text x="0" y="15" class="emoji">📋</text>
+        <text x="30" y="15" style="font: 600 12px Inter, sans-serif; fill: #BE185D;">チェックリスト：</text>
+        
+        <text x="0" y="30" class="check-text" fill="#BE185D;">✅ インデントは正しいか</text>
+        <text x="200" y="30" class="check-text" fill="#BE185D;">✅ 変数名に誤字はないか</text>
+        <text x="400" y="30" class="check-text" fill="#BE185D;">✅ 演算子は正しいか</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Arrow 4 -->
+  <path d="M450 790 L450 810" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Step 5: Submission -->
+  <g id="step5" transform="translate(50, 820)">
+    <rect x="0" y="0" width="800" height="120" rx="12" class="step5-box"/>
+    <text x="20" y="25" style="font: 600 16px Inter, sans-serif; fill: #7C3AED;">Step 5: 提出</text>
+    <text x="650" y="25" class="step-time" fill="#7C3AED">（30秒）</text>
+    
+    <g transform="translate(20, 40)">
+      <text x="0" y="15" class="emoji">🚀</text>
+      <text x="30" y="15" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">最終確認：</text>
+      
+      <text x="0" y="35" class="action-text" fill="#7C3AED;">• 言語選択がPythonになっているか</text>
+      <text x="350" y="35" class="action-text" fill="#7C3AED;">• コード全体をコピー&ペースト</text>
+      <text x="0" y="50" class="action-text" fill="#7C3AED;">• 提出ボタンをクリック</text>
+    </g>
+  </g>
+  
+  <!-- Target Time -->
+  <g id="target" transform="translate(150, 960)">
+    <rect x="0" y="0" width="600" height="30" rx="15" class="target-box"/>
+    <text x="300" y="20" text-anchor="middle" class="target-text" fill="#047857;">
+      ⏱️ 目標時間：A問題は5-7分以内で完答
+    </text>
+  </g>
+  
+</svg>

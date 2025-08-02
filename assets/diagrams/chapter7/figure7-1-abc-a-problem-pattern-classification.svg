@@ -1,0 +1,163 @@
+<svg viewBox="0 0 900 800" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-1：ABC A問題の出題パターン分類</title>
+  <desc>AtCoder ABC A問題の主要出題パターンを分類し、各パターンの特徴と解法を詳細に説明する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .pattern-title { font: 600 14px Inter, sans-serif; }
+      .example-title { font: 600 12px Inter, sans-serif; }
+      .problem-text { font: 500 11px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Monaco', monospace; fill: var(--svg-text, #4B5563); }
+      .point-text { font: 500 11px Inter, sans-serif; }
+      .percentage-text { font: 600 14px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .pattern1-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .pattern2-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .pattern3-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .pattern4-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .example-box { fill: var(--svg-bg, #F8FAFC); stroke: var(--svg-primary, #CBD5E0); stroke-width: 1; }
+      .point-box { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 1; }
+      .summary-box { fill: var(--svg-bg, #F0FDF4); stroke: var(--svg-primary, #22C55E); stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="800" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図7-1：ABC A問題の出題パターン分類</text>
+  
+  <!-- Pattern 1: Arithmetic Operations -->
+  <g id="pattern1" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="160" rx="12" class="pattern1-box"/>
+    <text x="20" y="25" class="emoji">🎯</text>
+    <text x="50" y="25" class="pattern-title" fill="#D97706">パターン1：四則演算</text>
+    <text x="650" y="25" class="percentage-text" fill="#D97706">（約30%）</text>
+    
+    <!-- Example -->
+    <g transform="translate(20, 35)">
+      <rect x="0" y="0" width="760" height="110" rx="8" class="example-box"/>
+      <text x="15" y="20" class="example-title" fill="#92400E">例：ABC001 A - 積雪深差</text>
+      
+      <text x="15" y="40" class="problem-text" fill="#6B7280">
+        問題：雪が積もる前の深さH1と積もった後の深さH2が与えられる。積雪量を出力せよ。
+      </text>
+      
+      <text x="15" y="60" class="code-text">解法：print(H2 - H1)</text>
+      
+      <!-- Points -->
+      <g transform="translate(15, 75)">
+        <rect x="0" y="0" width="730" height="25" rx="8" class="point-box"/>
+        <text x="10" y="12" class="emoji">💡</text>
+        <text x="35" y="12" class="point-text" fill="#0369A1">ポイント：</text>
+        <text x="10" y="22" class="point-text" fill="#0369A1">
+          • 問題文を式に翻訳する能力　• 演算子の選択（+, -, *, //, %）
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Pattern 2: Conditional Judgment -->
+  <g id="pattern2" transform="translate(50, 240)">
+    <rect x="0" y="0" width="800" height="180" rx="12" class="pattern2-box"/>
+    <text x="20" y="25" class="emoji">🎯</text>
+    <text x="50" y="25" class="pattern-title" fill="#1E40AF">パターン2：条件判定</text>
+    <text x="650" y="25" class="percentage-text" fill="#1E40AF">（約25%）</text>
+    
+    <!-- Example -->
+    <g transform="translate(20, 35)">
+      <rect x="0" y="0" width="760" height="130" rx="8" class="example-box"/>
+      <text x="15" y="20" class="example-title" fill="#1E40AF">例：ABC086 A - Product</text>
+      
+      <text x="15" y="40" class="problem-text" fill="#6B7280">
+        問題：2つの整数A,Bの積が偶数か奇数か判定
+      </text>
+      
+      <g transform="translate(15, 50)">
+        <text x="0" y="15" class="code-text">a, b = map(int, input().split())</text>
+        <text x="0" y="30" class="code-text">if (a * b) % 2 == 0:</text>
+        <text x="20" y="45" class="code-text">print("Even")</text>
+        <text x="0" y="60" class="code-text">else:</text>
+        <text x="20" y="75" class="code-text">print("Odd")</text>
+      </g>
+      
+      <!-- Points -->
+      <g transform="translate(350, 55)">
+        <rect x="0" y="0" width="380" height="35" rx="8" class="point-box"/>
+        <text x="10" y="15" class="emoji">💡</text>
+        <text x="35" y="15" class="point-text" fill="#0369A1">ポイント：</text>
+        <text x="10" y="25" class="point-text" fill="#0369A1">• 数学的性質の理解（偶数×何数=偶数）</text>
+        <text x="10" y="35" class="point-text" fill="#0369A1">• 条件分岐の正確な実装</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Pattern 3: String Operations -->
+  <g id="pattern3" transform="translate(50, 440)">
+    <rect x="0" y="0" width="800" height="140" rx="12" class="pattern3-box"/>
+    <text x="20" y="25" class="emoji">🎯</text>
+    <text x="50" y="25" class="pattern-title" fill="#047857">パターン3：文字列操作</text>
+    <text x="650" y="25" class="percentage-text" fill="#047857">（約20%）</text>
+    
+    <!-- Example -->
+    <g transform="translate(20, 35)">
+      <rect x="0" y="0" width="760" height="90" rx="8" class="example-box"/>
+      <text x="15" y="20" class="example-title" fill="#047857">例：文字列の長さ、置換、分割など</text>
+      
+      <g transform="translate(15, 30)">
+        <text x="0" y="15" class="code-text">s = input()</text>
+        <text x="0" y="30" class="code-text">print(len(s))</text>
+      </g>
+      
+      <!-- Points -->
+      <g transform="translate(200, 30)">
+        <rect x="0" y="0" width="540" height="45" rx="8" class="point-box"/>
+        <text x="10" y="15" class="emoji">💡</text>
+        <text x="35" y="15" class="point-text" fill="#0369A1">ポイント：</text>
+        <text x="10" y="25" class="point-text" fill="#0369A1">• 基本的な文字列メソッドの習得</text>
+        <text x="10" y="35" class="point-text" fill="#0369A1">• 文字列のインデックス操作</text>
+        <text x="10" y="45" class="point-text" fill="#0369A1">• len(), replace(), split()などの活用</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Pattern 4: Other Patterns -->
+  <g id="pattern4" transform="translate(50, 600)">
+    <rect x="0" y="0" width="800" height="120" rx="12" class="pattern4-box"/>
+    <text x="20" y="25" class="emoji">🎯</text>
+    <text x="50" y="25" class="pattern-title" fill="#BE185D">パターン4：その他</text>
+    <text x="650" y="25" class="percentage-text" fill="#BE185D">（約25%）</text>
+    
+    <!-- Examples -->
+    <g transform="translate(20, 35)">
+      <rect x="0" y="0" width="760" height="70" rx="8" class="example-box"/>
+      <g transform="translate(15, 15)">
+        <text x="0" y="15" class="problem-text" fill="#BE185D">• 簡単な数列・座標計算</text>
+        <text x="200" y="15" class="problem-text" fill="#BE185D">• 配列の基本操作</text>
+        <text x="400" y="15" class="problem-text" fill="#BE185D">• 入出力形式の工夫</text>
+        
+        <text x="0" y="35" class="problem-text" fill="#BE185D">• 論理演算</text>
+        <text x="200" y="35" class="problem-text" fill="#BE185D">• 最大・最小値</text>
+        <text x="400" y="35" class="problem-text" fill="#BE185D">• 桁数・約数の計算</text>
+        
+        <text x="0" y="55" class="point-text" fill="#0369A1">
+          💡 共通点：基本的なプログラミング知識で解決可能、複雑なアルゴリズムは不要
+        </text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Summary -->
+  <g id="summary" transform="translate(150, 740)">
+    <rect x="0" y="0" width="600" height="40" rx="20" class="summary-box"/>
+    <text x="300" y="20" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #047857;">
+      🏆 A問題攻略の鍵：基礎力の確実な定着と問題パターンの理解
+    </text>
+    <text x="300" y="35" text-anchor="middle" style="font: 500 12px Inter, sans-serif; fill: #047857;">
+      速度よりも正確性を重視し、1問1問確実に正解を積み重ねることが重要
+    </text>
+  </g>
+  
+</svg>

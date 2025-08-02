@@ -1,0 +1,124 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図10-1：初回コンテスト参加への完全準備ガイド</title>
+  <desc>AtCoder初回コンテスト参加前に必要な技術的・心理的準備項目を包括的に説明する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .phase-title { font: 600 13px Inter, sans-serif; }
+      .item-text { font: 500 11px Inter, sans-serif; }
+      .detail-text { font: 500 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-box { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .week-before-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .tech-prep-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .mental-prep-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .day-before-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .day-of-box { fill: var(--svg-bg, #EDE9FE); stroke: var(--svg-primary, #8B5CF6); stroke-width: 2; }
+      .success-box { fill: var(--svg-bg, #F0FDF4); stroke: var(--svg-primary, #22C55E); stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="600" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図10-1：初回コンテスト参加への完全準備ガイド</text>
+  
+  <!-- Main Container -->
+  <g id="main-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="500" rx="12" class="main-box"/>
+    
+    <!-- 1 Week Before -->
+    <g id="week-before" transform="translate(20, 20)">
+      <rect x="0" y="0" width="760" height="140" rx="10" class="week-before-box"/>
+      <text x="15" y="20" class="emoji">🗓️</text>
+      <text x="45" y="20" class="phase-title" fill="#1E40AF">参加1週間前の準備</text>
+      
+      <!-- Technical Preparation -->
+      <g transform="translate(15, 35)">
+        <rect x="0" y="0" width="350" height="90" rx="8" class="tech-prep-box"/>
+        <text x="10" y="18" class="emoji">📚</text>
+        <text x="35" y="18" style="font: 600 12px Inter, sans-serif; fill: #047857;">技術的準備：</text>
+        
+        <text x="10" y="33" class="item-text" fill="#047857;">• ABC過去のA問題を10問以上解く</text>
+        <text x="10" y="47" class="item-text" fill="#047857;">• 基本的な入出力パターンの復習</text>
+        <text x="10" y="61" class="item-text" fill="#047857;">• よく使うPython構文の整理</text>
+        <text x="10" y="75" class="item-text" fill="#047857;">• エディタの設定確認と動作テスト</text>
+      </g>
+      
+      <!-- Mental Preparation -->
+      <g transform="translate(380, 35)">
+        <rect x="0" y="0" width="350" height="90" rx="8" class="mental-prep-box"/>
+        <text x="10" y="18" class="emoji">🧠</text>
+        <text x="35" y="18" style="font: 600 12px Inter, sans-serif; fill: #D97706;">心理的準備：</text>
+        
+        <text x="10" y="33" class="item-text" fill="#D97706;">• 「楽しむ」ことを最優先目標に設定</text>
+        <text x="10" y="47" class="item-text" fill="#D97706;">• 他の参加者のブログやTweetを読む</text>
+        <text x="10" y="61" class="item-text" fill="#D97706;">• 初回は「経験」が最大の収穫と認識</text>
+        <text x="10" y="75" class="item-text" fill="#D97706;">• A問題1問正解を現実的目標に設定</text>
+      </g>
+    </g>
+    
+    <!-- Day Before -->
+    <g id="day-before" transform="translate(20, 180)">
+      <rect x="0" y="0" width="760" height="100" rx="10" class="day-before-box"/>
+      <text x="15" y="20" class="emoji">📋</text>
+      <text x="45" y="20" class="phase-title" fill="#BE185D">参加前日の最終準備</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="item-text" fill="#BE185D;">• 使用予定のPCでAtCoderにログインテスト</text>
+        <text x="350" y="15" class="item-text" fill="#BE185D;">• Pythonエディタ（Thonny/VSCode）の動作確認</text>
+        
+        <text x="0" y="30" class="item-text" fill="#BE185D;">• コンテスト時間の再確認（通常21:00-22:40）</text>
+        <text x="350" y="30" class="item-text" fill="#BE185D;">• 必要なリファレンスサイトをブックマーク</text>
+        
+        <text x="0" y="45" class="item-text" fill="#BE185D;">• 十分な睡眠確保（本番での集中力のため）</text>
+        <text x="350" y="45" class="item-text" fill="#BE185D;">• コンテスト中の飲み物・軽食を準備</text>
+        
+        <text x="0" y="60" class="detail-text" fill="#BE185D;">💡 重要：本番環境の事前テストで予期しないトラブルを回避</text>
+      </g>
+    </g>
+    
+    <!-- Day Of Contest -->
+    <g id="day-of-contest" transform="translate(20, 300)">
+      <rect x="0" y="0" width="760" height="120" rx="10" class="day-of-box"/>
+      <text x="15" y="20" class="emoji">⏰</text>
+      <text x="45" y="20" class="phase-title" fill="#7C3AED">コンテスト当日（開始30分前〜）</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" style="font: 600 11px Inter, sans-serif; fill: #7C3AED;">環境準備：</text>
+        <text x="100" y="15" class="item-text" fill="#7C3AED;">PCとネット接続の最終確認</text>
+        <text x="350" y="15" class="item-text" fill="#7C3AED;">AtCoderサイトへのログイン</text>
+        
+        <text x="0" y="30" style="font: 600 11px Inter, sans-serif; fill: #7C3AED;">ツール準備：</text>
+        <text x="100" y="30" class="item-text" fill="#7C3AED;">エディタとブラウザの起動</text>
+        <text x="350" y="30" class="item-text" fill="#7C3AED;">計算機やメモ帳の準備</text>
+        
+        <text x="0" y="45" style="font: 600 11px Inter, sans-serif; fill: #7C3AED;">心の準備：</text>
+        <text x="100" y="45" class="item-text" fill="#7C3AED;">深呼吸とリラックス</text>
+        <text x="350" y="45" class="item-text" fill="#7C3AED;">「楽しむ」マインドセットの確認</text>
+        
+        <text x="0" y="65" style="font: 600 11px Inter, sans-serif; fill: #7C3AED;">最終確認：</text>
+        <text x="100" y="65" class="item-text" fill="#7C3AED;">コンテストページで問題数と時間確認</text>
+        
+        <text x="0" y="80" class="detail-text" fill="#7C3AED;">🎯 開始の合図を待ち、問題文が公開されたら「A問題」から順番に取り組む</text>
+      </g>
+    </g>
+    
+    <!-- Success Mindset -->
+    <g id="success-mindset" transform="translate(20, 440)">
+      <rect x="0" y="0" width="760" height="40" rx="10" class="success-box"/>
+      <text x="15" y="18" class="emoji">🏆</text>
+      <text x="45" y="18" style="font: 600 13px Inter, sans-serif; fill: #047857;">
+        成功の定義：結果に関わらず「完走」すること自体が大きな一歩
+      </text>
+      <text x="45" y="32" class="detail-text" fill="#047857;">
+        初回参加の目標は「問題を1問でも理解する」「AtCoderの雰囲気を体験する」「次への足がかりを作る」
+      </text>
+    </g>
+  </g>
+  
+</svg>

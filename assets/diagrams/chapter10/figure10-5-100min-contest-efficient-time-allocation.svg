@@ -1,0 +1,177 @@
+<svg viewBox="0 0 900 800" xmlns="http://www.w3.org/2000/svg">
+  <title>図10-5：100分コンテストの効率的時間配分</title>
+  <desc>AtCoderの100分コンテストにおける各問題への最適な時間配分と戦略を視覚化した図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .phase-title { font: 600 14px Inter, sans-serif; }
+      .time-label { font: 600 13px 'Monaco', monospace; }
+      .target-text { font: 600 12px Inter, sans-serif; }
+      .breakdown-text { font: 500 11px Inter, sans-serif; }
+      .strategy-text { font: 500 10px Inter, sans-serif; }
+      .warning-text { font: 600 11px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .timeline-bg { fill: var(--svg-bg, #F3F4F6); stroke: var(--svg-primary, #9CA3AF); stroke-width: 2; }
+      .phase1-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .phase2-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .phase3-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .phase4-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .phase5-box { fill: var(--svg-bg, #EDE9FE); stroke: var(--svg-primary, #8B5CF6); stroke-width: 2; }
+      .time-bar { fill: var(--svg-primary, #22C55E); }
+      .warning-box { fill: var(--svg-bg, #FEE2E2); stroke: var(--svg-primary, #EF4444); stroke-width: 2; }
+      .strategy-box { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="800" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図10-5：100分コンテストの効率的時間配分</text>
+  
+  <!-- Timeline Container -->
+  <g id="timeline-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="700" rx="12" class="timeline-bg"/>
+    
+    <!-- Timeline Bar -->
+    <g id="timeline-bar" transform="translate(50, 30)">
+      <rect x="0" y="0" width="700" height="20" fill="var(--svg-bg, #E5E7EB)" stroke="var(--svg-primary, #9CA3AF)" stroke-width="1"/>
+      
+      <!-- Phase 1: 0-15min -->
+      <rect x="0" y="0" width="105" height="20" class="time-bar" fill="#3B82F6"/>
+      <text x="52" y="14" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">Phase 1</text>
+      
+      <!-- Phase 2: 15-35min -->
+      <rect x="105" y="0" width="140" height="20" class="time-bar" fill="#10B981"/>
+      <text x="175" y="14" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">Phase 2</text>
+      
+      <!-- Phase 3: 35-65min -->
+      <rect x="245" y="0" width="210" height="20" class="time-bar" fill="#F59E0B"/>
+      <text x="350" y="14" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">Phase 3</text>
+      
+      <!-- Phase 4: 65-85min -->
+      <rect x="455" y="0" width="140" height="20" class="time-bar" fill="#EC4899"/>
+      <text x="525" y="14" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">Phase 4</text>
+      
+      <!-- Phase 5: 85-100min -->
+      <rect x="595" y="0" width="105" height="20" class="time-bar" fill="#8B5CF6"/>
+      <text x="647" y="14" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">Phase 5</text>
+      
+      <!-- Time markers -->
+      <text x="0" y="35" class="time-label" fill="#6B7280">0分</text>
+      <text x="105" y="35" class="time-label" fill="#6B7280">15分</text>
+      <text x="245" y="35" class="time-label" fill="#6B7280">35分</text>
+      <text x="455" y="35" class="time-label" fill="#6B7280">65分</text>
+      <text x="595" y="35" class="time-label" fill="#6B7280">85分</text>
+      <text x="680" y="35" class="time-label" fill="#6B7280">100分</text>
+    </g>
+    
+    <!-- Phase 1: A Problem Attack -->
+    <g id="phase1" transform="translate(20, 90)">
+      <rect x="0" y="0" width="760" height="110" rx="10" class="phase1-box"/>
+      <text x="15" y="20" class="emoji">🕘</text>
+      <text x="45" y="20" class="phase-title" fill="#1E40AF">開始-15分：A問題攻略期</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="target-text" fill="#1E40AF">目標：A問題を確実にAC（正解）</text>
+        
+        <rect x="0" y="25" width="350" height="60" rx="8" class="strategy-box"/>
+        <text x="10" y="40" class="emoji">⏱️</text>
+        <text x="35" y="40" style="font: 600 11px Inter, sans-serif; fill: #0369A1;">時間配分：</text>
+        <text x="10" y="53" class="breakdown-text" fill="#0369A1;">• 問題読解：2分</text>
+        <text x="120" y="53" class="breakdown-text" fill="#0369A1;">• 実装：3分</text>
+        <text x="10" y="66" class="breakdown-text" fill="#0369A1;">• 検証・提出：2分</text>
+        <text x="120" y="66" class="breakdown-text" fill="#0369A1;">• 予備時間：8分</text>
+        
+        <g transform="translate(370, 25)">
+          <rect x="0" y="0" width="370" height="60" rx="8" class="strategy-box"/>
+          <text x="10" y="15" style="font: 600 11px Inter, sans-serif; fill: #0369A1;">重要ポイント：</text>
+          <text x="10" y="28" class="strategy-text" fill="#0369A1;">• 他の問題は一切見ない（集中力維持）</text>
+          <text x="10" y="40" class="strategy-text" fill="#0369A1;">• サンプルを必ず手動確認してから実装</text>
+          <text x="10" y="52" class="strategy-text" fill="#0369A1;">• 1回で正解できなくても冷静に対処</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Phase 2: B Problem Challenge -->
+    <g id="phase2" transform="translate(20, 220)">
+      <rect x="0" y="0" width="760" height="110" rx="10" class="phase2-box"/>
+      <text x="15" y="20" class="emoji">📈</text>
+      <text x="45" y="20" class="phase-title" fill="#047857">15-35分：B問題チャレンジ期</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="target-text" fill="#047857">目標：B問題の理解と可能であれば正解</text>
+        
+        <text x="0" y="35" style="font: 600 11px Inter, sans-serif; fill: #047857;">戦略分岐：</text>
+        <text x="0" y="50" class="breakdown-text" fill="#047857;">• A問題AC済み → B問題に本格挑戦</text>
+        <text x="300" y="50" class="breakdown-text" fill="#047857;">• A問題未AC → A・B両方検討</text>
+        <text x="0" y="63" class="breakdown-text" fill="#047857;">• 10分考えて進展なし → 他問題も検討</text>
+        <text x="300" y="63" class="breakdown-text" fill="#047857;">• 解法の見当つかず → C問題確認</text>
+        
+        <text x="0" y="83" class="strategy-text" fill="#047857;">💡 このフェーズで重要なのは「柔軟性」- 固執せず最適な問題選択</text>
+      </g>
+    </g>
+    
+    <!-- Phase 3: Multi-Problem Strategy -->
+    <g id="phase3" transform="translate(20, 350)">
+      <rect x="0" y="0" width="760" height="110" rx="10" class="phase3-box"/>
+      <text x="15" y="20" class="emoji">🎯</text>
+      <text x="45" y="20" class="phase-title" fill="#D97706">35-65分：マルチ問題戦略期</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="target-text" fill="#D97706">目標：自分に最適な問題で2問目以降のAC</text>
+        
+        <text x="0" y="35" class="breakdown-text" fill="#D97706;">• 複数問題を俯瞰して取り組み順序を決定</text>
+        <text x="350" y="35" class="breakdown-text" fill="#D97706;">• 15分ルール：15分で進展なければ切り替え</text>
+        <text x="0" y="50" class="breakdown-text" fill="#D97706;">• 解法が見えた問題から優先的に実装</text>
+        <text x="350" y="50" class="breakdown-text" fill="#D97706;">• 部分点が狙える問題は部分解法も検討</text>
+        
+        <text x="0" y="70" style="font: 600 11px Inter, sans-serif; fill: #D97706;">時間管理のコツ：</text>
+        <text x="130" y="70" class="strategy-text" fill="#D97706;">問題ごとに時間上限を設定し、メリハリをつける</text>
+      </g>
+    </g>
+    
+    <!-- Phase 4: Final Push -->
+    <g id="phase4" transform="translate(20, 480)">
+      <rect x="0" y="0" width="760" height="110" rx="10" class="phase4-box"/>
+      <text x="15" y="20" class="emoji">🚀</text>
+      <text x="45" y="20" class="phase-title" fill="#BE185D">65-85分：最終アタック期</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="target-text" fill="#BE185D">目標：残り時間で確実に解ける問題の完答</text>
+        
+        <text x="0" y="35" class="breakdown-text" fill="#BE185D;">• 新しい問題への挑戦は慎重に判断</text>
+        <text x="300" y="35" class="breakdown-text" fill="#BE185D;">• 既存の取り組み中問題の完成を優先</text>
+        <text x="0" y="50" class="breakdown-text" fill="#BE185D;">• 解法は見えているが実装が未完の問題に集中</text>
+        <text x="300" y="50" class="breakdown-text" fill="#BE185D;">• 簡単な問題の見落としがないか最終確認</text>
+        
+        <text x="0" y="70" class="strategy-text" fill="#BE185D;">⚡ 集中力を総動員して、確実性の高い問題で得点を稼ぐ</text>
+      </g>
+    </g>
+    
+    <!-- Phase 5: Final Check -->
+    <g id="phase5" transform="translate(20, 610)">
+      <rect x="0" y="0" width="760" height="60" rx="10" class="phase5-box"/>
+      <text x="15" y="20" class="emoji">✅</text>
+      <text x="45" y="20" class="phase-title" fill="#7C3AED">85-100分：最終確認期</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="breakdown-text" fill="#7C3AED;">• 提出済み解答の再確認（特にA問題）</text>
+        <text x="300" y="15" class="breakdown-text" fill="#7C3AED;">• ケアレスミスがないか最終チェック</text>
+        <text x="0" y="28" class="breakdown-text" fill="#7C3AED;">• 時間があれば簡単な問題の見直し</text>
+        <text x="300" y="28" class="breakdown-text" fill="#7C3AED;">• コンテスト終了まで諦めない姿勢</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Important Note -->
+  <g id="important-note" transform="translate(100, 780)">
+    <rect x="0" y="0" width="700" height="15" rx="7" class="warning-box"/>
+    <text x="350" y="11" text-anchor="middle" class="warning-text" fill="#DC2626">
+      ⚠️ この配分は目安です。実際は問題の難易度や個人の得意分野に応じて柔軟に調整しましょう
+    </text>
+  </g>
+  
+</svg>
