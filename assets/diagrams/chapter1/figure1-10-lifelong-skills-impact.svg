@@ -3,22 +3,22 @@
   
   <defs>
     <style>
-      .bg { fill: var(--svg-bg); }
-      .bg-alt { fill: var(--svg-bg-alt); }
-      .text { fill: var(--svg-text); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+      .bg { fill: var(--svg-bg, #ffffff); }
+      .bg-alt { fill: var(--svg-bg-alt, #f8fafc); }
+      .text { fill: var(--svg-text, #1a1a1a); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
       .text-sm { font-size: 11px; }
       .text-md { font-size: 14px; font-weight: 500; }
       .text-lg { font-size: 16px; font-weight: 600; }
-      .border { stroke: var(--svg-border); fill: none; stroke-width: 1; }
-      .primary { fill: var(--svg-primary); }
-      .success { fill: var(--svg-success); }
-      .warning { fill: var(--svg-warning); }
-      .stage-box { fill: var(--svg-bg-alt); stroke: var(--svg-primary); stroke-width: 2; rx: 8; }
-      .foundation-box { fill: #E3F2FD; stroke: var(--svg-primary); stroke-width: 2; rx: 6; }
+      .border { stroke: var(--svg-border, #d1d5db); fill: none; stroke-width: 1; }
+      .primary { fill: var(--svg-primary, #3b82f6); }
+      .success { fill: var(--svg-success, #10b981); }
+      .warning { fill: var(--svg-warning, #f59e0b); }
+      .stage-box { fill: var(--svg-bg-alt, #f8fafc); stroke: var(--svg-primary, #3b82f6); stroke-width: 2; rx: 8; }
+      .foundation-box { fill: #E3F2FD; stroke: var(--svg-primary, #3b82f6); stroke-width: 2; rx: 6; }
       .advantage-box { fill: #F3E5F5; stroke: #9C27B0; stroke-width: 2; rx: 6; }
-      .career-box { fill: #E8F5E8; stroke: var(--svg-success); stroke-width: 2; rx: 6; }
-      .timeline-line { stroke: var(--svg-primary); stroke-width: 3; }
-      .timeline-arrow { stroke: var(--svg-primary); stroke-width: 2; fill: none; }
+      .career-box { fill: #E8F5E8; stroke: var(--svg-success, #10b981); stroke-width: 2; rx: 6; }
+      .timeline-line { stroke: var(--svg-primary, #3b82f6); stroke-width: 3; }
+      .timeline-arrow { stroke: var(--svg-primary, #3b82f6); stroke-width: 2; fill: none; }
     </style>
     
     <!-- Arrow marker -->
@@ -132,7 +132,7 @@
   
   <!-- Investment return visualization -->
   <g class="investment-return">
-    <rect x="250" y="540" width="300" height="40" fill="#E8F5E8" stroke="var(--svg-success)" stroke-width="2" rx="6"/>
+    <rect x="250" y="540" width="300" height="40" fill="#E8F5E8" stroke="var(--svg-success, #10b981)" stroke-width="2" rx="6"/>
     <text x="400" y="565" text-anchor="middle" class="text text-sm success">💰 投資対効果：今の努力 → 生涯にわたる競争優位性</text>
   </g>
   

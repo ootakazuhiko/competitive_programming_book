@@ -3,19 +3,19 @@
   
   <defs>
     <style>
-      .bg { fill: var(--svg-bg); }
-      .bg-alt { fill: var(--svg-bg-alt); }
-      .text { fill: var(--svg-text); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+      .bg { fill: var(--svg-bg, #ffffff); }
+      .bg-alt { fill: var(--svg-bg-alt, #f8fafc); }
+      .text { fill: var(--svg-text, #1a1a1a); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
       .text-sm { font-size: 12px; }
       .text-md { font-size: 14px; font-weight: 500; }
       .text-lg { font-size: 16px; font-weight: 600; }
-      .border { stroke: var(--svg-border); fill: none; stroke-width: 1; }
-      .primary { fill: var(--svg-primary); }
-      .primary-stroke { stroke: var(--svg-primary); stroke-width: 2; }
-      .success { fill: var(--svg-success); }
-      .warning { fill: var(--svg-warning); }
-      .step-box { fill: var(--svg-bg-alt); stroke: var(--svg-primary); stroke-width: 2; rx: 4; }
-      .code-box { fill: var(--svg-bg); stroke: var(--svg-border); stroke-width: 1; rx: 4; }
+      .border { stroke: var(--svg-border, #d1d5db); fill: none; stroke-width: 1; }
+      .primary { fill: var(--svg-primary, #3b82f6); }
+      .primary-stroke { stroke: var(--svg-primary, #3b82f6); stroke-width: 2; }
+      .success { fill: var(--svg-success, #10b981); }
+      .warning { fill: var(--svg-warning, #f59e0b); }
+      .step-box { fill: var(--svg-bg-alt, #f8fafc); stroke: var(--svg-primary, #3b82f6); stroke-width: 2; rx: 4; }
+      .code-box { fill: var(--svg-bg, #ffffff); stroke: var(--svg-border, #d1d5db); stroke-width: 1; rx: 4; }
       .mono { font-family: 'SF Mono', 'Monaco', 'Consolas', monospace; font-size: 11px; }
     </style>
     

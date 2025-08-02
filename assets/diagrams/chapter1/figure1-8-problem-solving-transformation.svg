@@ -3,20 +3,20 @@
   
   <defs>
     <style>
-      .bg { fill: var(--svg-bg); }
-      .bg-alt { fill: var(--svg-bg-alt); }
-      .text { fill: var(--svg-text); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+      .bg { fill: var(--svg-bg, #ffffff); }
+      .bg-alt { fill: var(--svg-bg-alt, #f8fafc); }
+      .text { fill: var(--svg-text, #1a1a1a); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
       .text-sm { font-size: 12px; }
       .text-md { font-size: 14px; font-weight: 500; }
       .text-lg { font-size: 16px; font-weight: 600; }
-      .border { stroke: var(--svg-border); fill: none; stroke-width: 1; }
-      .primary { fill: var(--svg-primary); }
-      .primary-stroke { stroke: var(--svg-primary); stroke-width: 2; }
-      .success { fill: var(--svg-success); }
-      .error { fill: var(--svg-error); }
-      .warning { fill: var(--svg-warning); }
-      .before-box { fill: #FEF2F2; stroke: var(--svg-error); stroke-width: 2; rx: 8; }
-      .after-box { fill: #F0FDF4; stroke: var(--svg-success); stroke-width: 2; rx: 8; }
+      .border { stroke: var(--svg-border, #d1d5db); fill: none; stroke-width: 1; }
+      .primary { fill: var(--svg-primary, #3b82f6); }
+      .primary-stroke { stroke: var(--svg-primary, #3b82f6); stroke-width: 2; }
+      .success { fill: var(--svg-success, #10b981); }
+      .error { fill: var(--svg-error, #ef4444); }
+      .warning { fill: var(--svg-warning, #f59e0b); }
+      .before-box { fill: #FEF2F2; stroke: var(--svg-error, #ef4444); stroke-width: 2; rx: 8; }
+      .after-box { fill: #F0FDF4; stroke: var(--svg-success, #10b981); stroke-width: 2; rx: 8; }
     </style>
     
     <!-- Arrow marker -->
@@ -72,7 +72,7 @@
   
   <!-- Transformation arrow -->
   <g class="transformation">
-    <path d="M 350 180 Q 400 150 450 180" fill="none" stroke="var(--svg-primary)" stroke-width="3" marker-end="url(#arrow)"/>
+    <path d="M 350 180 Q 400 150 450 180" fill="none" stroke="var(--svg-primary, #3b82f6)" stroke-width="3" marker-end="url(#arrow)"/>
     <text x="400" y="140" text-anchor="middle" class="text text-md primary">競技プログラミングによる変化</text>
   </g>
   

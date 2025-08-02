@@ -3,18 +3,18 @@
   
   <defs>
     <style>
-      .bg { fill: var(--svg-bg); }
-      .bg-alt { fill: var(--svg-bg-alt); }
-      .text { fill: var(--svg-text); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+      .bg { fill: var(--svg-bg, #ffffff); }
+      .bg-alt { fill: var(--svg-bg-alt, #f8fafc); }
+      .text { fill: var(--svg-text, #1a1a1a); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
       .text-sm { font-size: 12px; }
       .text-md { font-size: 14px; font-weight: 500; }
       .text-lg { font-size: 16px; font-weight: 600; }
-      .border { stroke: var(--svg-border); fill: none; stroke-width: 1; }
-      .primary { fill: var(--svg-primary); }
-      .primary-stroke { stroke: var(--svg-primary); stroke-width: 2; }
-      .success { fill: var(--svg-success); }
-      .warning { fill: var(--svg-warning); }
-      .level-box { fill: var(--svg-bg-alt); stroke: var(--svg-primary); stroke-width: 2; rx: 8; }
+      .border { stroke: var(--svg-border, #d1d5db); fill: none; stroke-width: 1; }
+      .primary { fill: var(--svg-primary, #3b82f6); }
+      .primary-stroke { stroke: var(--svg-primary, #3b82f6); stroke-width: 2; }
+      .success { fill: var(--svg-success, #10b981); }
+      .warning { fill: var(--svg-warning, #f59e0b); }
+      .level-box { fill: var(--svg-bg-alt, #f8fafc); stroke: var(--svg-primary, #3b82f6); stroke-width: 2; rx: 8; }
       .scratch-color { fill: #FF6B35; color: #FF6B35; }
       .competition-color { fill: #FFD23F; color: #FFD23F; }
       .application-color { fill: #06FFA5; color: #06FFA5; }
@@ -98,7 +98,7 @@
     <text x="15" y="545" class="text text-sm">発展</text>
     
     <!-- Connecting line -->
-    <line x1="50" y1="158" x2="50" y2="532" stroke="var(--svg-primary)" stroke-width="3" opacity="0.3"/>
+    <line x1="50" y1="158" x2="50" y2="532" stroke="var(--svg-primary, #3b82f6)" stroke-width="3" opacity="0.3"/>
   </g>
   
   <!-- Accessibility -->

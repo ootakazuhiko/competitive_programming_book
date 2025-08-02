@@ -3,19 +3,19 @@
   
   <defs>
     <style>
-      .bg { fill: var(--svg-bg); }
-      .bg-alt { fill: var(--svg-bg-alt); }
-      .text { fill: var(--svg-text); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+      .bg { fill: var(--svg-bg, #ffffff); }
+      .bg-alt { fill: var(--svg-bg-alt, #f8fafc); }
+      .text { fill: var(--svg-text, #1a1a1a); font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
       .text-sm { font-size: 12px; }
       .text-md { font-size: 14px; font-weight: 500; }
       .text-lg { font-size: 16px; font-weight: 600; }
-      .border { stroke: var(--svg-border); fill: none; stroke-width: 1; }
-      .primary { fill: var(--svg-primary); }
-      .success { fill: var(--svg-success); }
-      .warning { fill: var(--svg-warning); }
-      .error { fill: var(--svg-error); }
-      .negative-box { fill: #FEF2F2; stroke: var(--svg-error); stroke-width: 2; rx: 8; }
-      .positive-box { fill: #F0FDF4; stroke: var(--svg-success); stroke-width: 2; rx: 8; }
+      .border { stroke: var(--svg-border, #d1d5db); fill: none; stroke-width: 1; }
+      .primary { fill: var(--svg-primary, #3b82f6); }
+      .success { fill: var(--svg-success, #10b981); }
+      .warning { fill: var(--svg-warning, #f59e0b); }
+      .error { fill: var(--svg-error, #ef4444); }
+      .negative-box { fill: #FEF2F2; stroke: var(--svg-error, #ef4444); stroke-width: 2; rx: 8; }
+      .positive-box { fill: #F0FDF4; stroke: var(--svg-success, #10b981); stroke-width: 2; rx: 8; }
       .step-text { font-size: 11px; }
     </style>
   </defs>
@@ -89,7 +89,7 @@
   
   <!-- Transformation arrow -->
   <g class="transformation">
-    <path d="M 360 200 Q 400 180 440 200" stroke="var(--svg-primary)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 360 200 Q 400 180 440 200" stroke="var(--svg-primary, #3b82f6)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
     <text x="400" y="175" text-anchor="middle" class="text text-sm primary">競技プログラミングによる変化</text>
   </g>
   
