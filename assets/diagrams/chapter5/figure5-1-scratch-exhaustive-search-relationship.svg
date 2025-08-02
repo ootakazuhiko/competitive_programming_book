@@ -1,0 +1,142 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-1：Scratchのゲーム開発と全探索の関係</title>
+  <desc>Scratchの敵キャラ発見処理と競技プログラミングの全探索アルゴリズムの共通概念を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .step-text { font: 500 12px Inter, sans-serif; }
+      .insight-text { font: 600 12px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      .arrow-text { font: 600 12px Inter, sans-serif; fill: var(--svg-primary, #3B82F6); }
+      
+      .scratch-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .competitive-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .insight-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .concept-box { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .arrow { stroke: var(--svg-primary, #3B82F6); stroke-width: 3; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="var(--svg-primary, #3B82F6)"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-1：Scratchのゲーム開発と全探索の関係</text>
+  
+  <!-- Scratch Section -->
+  <g id="scratch-section">
+    <text x="80" y="75" class="emoji">🎮</text>
+    <text x="110" y="75" class="section-title" fill="#D97706">Scratchでの敵キャラ発見</text>
+    
+    <rect x="50" y="90" width="280" height="140" rx="12" class="scratch-box"/>
+    
+    <g transform="translate(70, 110)">
+      <text x="0" y="15" class="step-text" fill="#92400E">
+        画面上の全ての場所を
+      </text>
+      <text x="0" y="30" class="step-text" fill="#92400E">
+        順番にチェック
+      </text>
+      
+      <text x="120" y="22" style="font: 600 14px Inter, sans-serif; fill: #92400E;">↓</text>
+      
+      <text x="0" y="55" class="step-text" fill="#92400E">
+        敵がいるかどうか確認
+      </text>
+      
+      <text x="120" y="62" style="font: 600 14px Inter, sans-serif; fill: #92400E;">↓</text>
+      
+      <text x="0" y="85" class="step-text" fill="#92400E">
+        見つかったら処理実行
+      </text>
+      
+      <rect x="0" y="100" width="240" height="20" rx="8" fill="#D97706" fill-opacity="0.1"/>
+      <text x="10" y="113" style="font: 600 11px Inter, sans-serif; fill: #D97706;">
+        🔍 画面スキャニング手法
+      </text>
+    </g>
+  </g>
+  
+  <!-- Arrow -->
+  <path d="M340 160 L420 160" class="arrow" marker-end="url(#arrow)"/>
+  <text x="380" y="150" text-anchor="middle" class="arrow-text">⟷</text>
+  
+  <!-- Competitive Programming Section -->
+  <g id="competitive-section">
+    <text x="480" y="75" class="emoji">🔍</text>
+    <text x="510" y="75" class="section-title" fill="#1E40AF">競技プログラミングの全探索</text>
+    
+    <rect x="450" y="90" width="300" height="140" rx="12" class="competitive-box"/>
+    
+    <g transform="translate(470, 110)">
+      <text x="0" y="15" class="step-text" fill="#1E40AF">
+        可能な全ての答えを
+      </text>
+      <text x="0" y="30" class="step-text" fill="#1E40AF">
+        順番にチェック
+      </text>
+      
+      <text x="150" y="22" style="font: 600 14px Inter, sans-serif; fill: #1E40AF;">↓</text>
+      
+      <text x="0" y="55" class="step-text" fill="#1E40AF">
+        条件を満たすかどうか確認
+      </text>
+      
+      <text x="150" y="62" style="font: 600 14px Inter, sans-serif; fill: #1E40AF;">↓</text>
+      
+      <text x="0" y="85" class="step-text" fill="#1E40AF">
+        見つかったら答えとして採用
+      </text>
+      
+      <rect x="0" y="100" width="260" height="20" rx="8" fill="#1E40AF" fill-opacity="0.1"/>
+      <text x="10" y="113" style="font: 600 11px Inter, sans-serif; fill: #1E40AF;">
+        🎯 全解空間探索手法
+      </text>
+    </g>
+  </g>
+  
+  <!-- Common Concept Section -->
+  <g id="common-concept" transform="translate(100, 260)">
+    <rect x="0" y="0" width="600" height="100" rx="12" class="insight-box"/>
+    <text x="20" y="25" class="emoji">💡</text>
+    <text x="50" y="25" style="font: 600 14px Inter, sans-serif; fill: #047857;">
+      共通する考え方：「しらみつぶしに調べる」
+    </text>
+    
+    <text x="50" y="50" style="font: 600 13px Inter, sans-serif; fill: #047857;">
+      = 「可能性を1つずつ丁寧に確認していく」
+    </text>
+    
+    <g transform="translate(20, 60)">
+      <circle cx="8" cy="8" r="4" fill="#10B981"/>
+      <text x="20" y="12" class="step-text" fill="#047857">
+        シンプルで確実なアプローチ
+      </text>
+      
+      <circle cx="200" cy="8" r="4" fill="#10B981"/>
+      <text x="220" y="12" class="step-text" fill="#047857">
+        理解しやすく実装も簡単
+      </text>
+      
+      <circle cx="420" cy="8" r="4" fill="#10B981"/>
+      <text x="440" y="12" class="step-text" fill="#047857">
+        確実に正解を見つけられる
+      </text>
+    </g>
+  </g>
+  
+  <!-- Algorithm Details -->
+  <g id="algorithm-details" transform="translate(150, 375)">
+    <rect x="0" y="0" width="500" height="20" rx="10" class="concept-box"/>
+    <text x="250" y="14" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #0369A1;">
+      全探索（Brute Force）：最もシンプルで確実なアルゴリズム
+    </text>
+  </g>
+  
+</svg>

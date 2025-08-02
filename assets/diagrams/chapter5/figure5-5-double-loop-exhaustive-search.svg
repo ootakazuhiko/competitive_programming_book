@@ -1,0 +1,195 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-5：二重ループによる全探索</title>
+  <desc>二重ループを使った全探索アルゴリズムの動作原理とペア検索の具体例を示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .problem-text { font: 500 12px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Monaco', monospace; fill: var(--svg-text, #4B5563); }
+      .step-text { font: 500 11px Inter, sans-serif; }
+      .input-text { font: 600 11px 'Monaco', monospace; fill: var(--svg-text, #059669); }
+      .output-text { font: 600 11px 'Monaco', monospace; fill: var(--svg-text, #DC2626); }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .problem-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .input-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .output-box { fill: var(--svg-bg, #FEE2E2); stroke: var(--svg-primary, #EF4444); stroke-width: 2; }
+      .strategy-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .example-box { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .pair-highlight { fill: var(--svg-bg, #FBBF24); stroke: var(--svg-primary, #D97706); stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-5：二重ループによる全探索</text>
+  
+  <!-- Problem Statement -->
+  <g id="problem-statement" transform="translate(50, 60)">
+    <rect x="0" y="0" width="700" height="80" rx="12" class="problem-box"/>
+    <text x="20" y="25" class="emoji">📋</text>
+    <text x="50" y="25" style="font: 600 14px Inter, sans-serif; fill: #D97706;">
+      問題例：「N個の数から2つ選んで、その和がKになる組み合わせの個数を求める」
+    </text>
+    
+    <g transform="translate(20, 35)">
+      <text x="0" y="15" class="problem-text" fill="#92400E">
+        与えられた数列から任意の2つの数を選択し、その合計が目標値Kと等しい
+      </text>
+      <text x="0" y="30" class="problem-text" fill="#92400E">
+        組み合わせが何通りあるかを数える問題
+      </text>
+    </g>
+  </g>
+  
+  <!-- Input/Output Example -->
+  <g id="io-example" transform="translate(50, 160)">
+    <!-- Input -->
+    <rect x="0" y="0" width="150" height="100" rx="12" class="input-box"/>
+    <text x="15" y="25" style="font: 600 12px Inter, sans-serif; fill: #047857;">入力例：</text>
+    <g transform="translate(15, 35)">
+      <text x="0" y="15" class="input-text">4 7</text>
+      <text x="0" y="30" class="input-text">1 3 4 6</text>
+      <text x="0" y="50" style="font: 500 10px Inter, sans-serif; fill: #047857;">
+        N=4個の数, K=7
+      </text>
+      <text x="0" y="65" style="font: 500 10px Inter, sans-serif; fill: #047857;">
+        配列: [1, 3, 4, 6]
+      </text>
+    </g>
+    
+    <!-- Arrow -->
+    <path d="M160 50 L200 50" stroke="var(--svg-primary, #6B7280)" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    
+    <!-- Output -->
+    <rect x="210" y="0" width="150" height="100" rx="12" class="output-box"/>
+    <text x="225" y="25" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">出力例：</text>
+    <g transform="translate(225, 35)">
+      <text x="0" y="15" class="output-text">2</text>
+      <text x="0" y="35" style="font: 500 10px Inter, sans-serif; fill: #DC2626;">
+        合計が7になる組み合わせ:
+      </text>
+      <text x="0" y="50" style="font: 500 10px Inter, sans-serif; fill: #DC2626;">
+        (1,6) と (3,4)
+      </text>
+      <text x="0" y="65" style="font: 500 10px Inter, sans-serif; fill: #DC2626;">
+        答えは2通り
+      </text>
+    </g>
+  </g>
+  
+  <!-- Strategy Section -->
+  <g id="strategy" transform="translate(420, 160)">
+    <rect x="0" y="0" width="330" height="100" rx="12" class="strategy-box"/>
+    <text x="15" y="25" class="emoji">🎯</text>
+    <text x="45" y="25" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">
+      方針：全ての2つの組み合わせをチェック
+    </text>
+    
+    <g transform="translate(15, 35)">
+      <text x="0" y="15" class="step-text" fill="#1E40AF;">
+        📝 手順：
+      </text>
+      <text x="0" y="30" class="step-text" fill="#1E40AF;">
+        1. i番目とj番目（i &lt; j）の全組み合わせ
+      </text>
+      <text x="0" y="45" class="step-text" fill="#1E40AF;">
+        2. arr[i] + arr[j] == k かチェック
+      </text>
+      <text x="0" y="60" class="step-text" fill="#1E40AF;">
+        3. 条件を満たす組み合わせをカウント
+      </text>
+    </g>
+  </g>
+  
+  <!-- Detailed Example -->
+  <g id="detailed-example" transform="translate(50, 290)">
+    <rect x="0" y="0" width="700" height="200" rx="12" class="example-box"/>
+    <text x="20" y="25" class="emoji">🔍</text>
+    <text x="50" y="25" style="font: 600 14px Inter, sans-serif; fill: #0369A1;">
+      具体例：配列 [1, 3, 4, 6] で K=7 の場合
+    </text>
+    
+    <!-- Array visualization -->
+    <g transform="translate(20, 45)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #0369A1;">配列のインデックス：</text>
+      
+      <!-- Index labels -->
+      <g transform="translate(200, 0)">
+        <text x="20" y="15" text-anchor="middle" style="font: 500 11px Inter, sans-serif; fill: #6B7280;">i=0</text>
+        <text x="80" y="15" text-anchor="middle" style="font: 500 11px Inter, sans-serif; fill: #6B7280;">i=1</text>
+        <text x="140" y="15" text-anchor="middle" style="font: 500 11px Inter, sans-serif; fill: #6B7280;">i=2</text>
+        <text x="200" y="15" text-anchor="middle" style="font: 500 11px Inter, sans-serif; fill: #6B7280;">i=3</text>
+      </g>
+      
+      <!-- Array elements -->
+      <g transform="translate(200, 20)">
+        <rect x="0" y="0" width="40" height="30" fill="var(--svg-bg, #BFDBFE)" stroke="var(--svg-primary, #3B82F6)" stroke-width="1"/>
+        <text x="20" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #1E40AF);">1</text>
+        
+        <rect x="60" y="0" width="40" height="30" fill="var(--svg-bg, #BFDBFE)" stroke="var(--svg-primary, #3B82F6)" stroke-width="1"/>
+        <text x="80" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #1E40AF);">3</text>
+        
+        <rect x="120" y="0" width="40" height="30" fill="var(--svg-bg, #BFDBFE)" stroke="var(--svg-primary, #3B82F6)" stroke-width="1"/>
+        <text x="140" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #1E40AF);">4</text>
+        
+        <rect x="180" y="0" width="40" height="30" fill="var(--svg-bg, #BFDBFE)" stroke="var(--svg-primary, #3B82F6)" stroke-width="1"/>
+        <text x="200" y="20" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #1E40AF);">6</text>
+      </g>
+    </g>
+    
+    <!-- Combination checking -->
+    <g transform="translate(20, 105)">
+      <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #0369A1;">
+        全組み合わせのチェック：
+      </text>
+      
+      <g transform="translate(0, 25)">
+        <!-- Combinations -->
+        <text x="0" y="15" class="step-text" fill="#374151">(i=0,j=1): 1+3=4 ≠ 7 ❌</text>
+        <text x="200" y="15" class="step-text" fill="#374151">(i=0,j=2): 1+4=5 ≠ 7 ❌</text>
+        
+        <!-- Highlighted successful pairs -->
+        <rect x="-5" y="25" width="180" height="18" rx="9" class="pair-highlight"/>
+        <text x="0" y="35" class="step-text" fill="#92400E">(i=0,j=3): 1+6=7 = 7 ✅</text>
+        
+        <rect x="195" y="25" width="180" height="18" rx="9" class="pair-highlight"/>
+        <text x="200" y="35" class="step-text" fill="#92400E">(i=1,j=2): 3+4=7 = 7 ✅</text>
+        
+        <text x="0" y="55" class="step-text" fill="#374151">(i=1,j=3): 3+6=9 ≠ 7 ❌</text>
+        <text x="200" y="55" class="step-text" fill="#374151">(i=2,j=3): 4+6=10 ≠ 7 ❌</text>
+      </g>
+      
+      <rect x="500" y="25" width="180" height="50" rx="12" fill="var(--svg-bg, #DCFCE7)" stroke="var(--svg-primary, #22C55E)" stroke-width="2"/>
+      <text x="590" y="40" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #047857;">
+        結果：2通り
+      </text>
+      <text x="590" y="55" text-anchor="middle" style="font: 500 11px Inter, sans-serif; fill: #047857;">
+        (1,6) と (3,4)
+      </text>
+    </g>
+  </g>
+  
+  <!-- Algorithm Complexity -->
+  <g id="complexity" transform="translate(150, 510)">
+    <rect x="0" y="0" width="500" height="60" rx="12" fill="var(--svg-bg, #F3F4F6)" stroke="var(--svg-primary, #9CA3AF)" stroke-width="2"/>
+    <text x="20" y="25" class="emoji">⚡</text>
+    <text x="50" y="25" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #374151);">
+      時間計算量：O(N²) - N個の要素から2個選ぶ組み合わせ数
+    </text>
+    <text x="50" y="45" style="font: 500 11px Inter, sans-serif; fill: var(--svg-text, #6B7280);">
+      二重ループで全てのペアをチェックするため、N(N-1)/2 回の比較が必要
+    </text>
+  </g>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L10,3 z" fill="var(--svg-primary, #6B7280)"/>
+    </marker>
+  </defs>
+  
+</svg>

@@ -1,0 +1,164 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図5-9：ユークリッドの互除法の視覚的理解</title>
+  <desc>ユークリッドの互除法によるGCD計算過程を視覚的に分かりやすく示した図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .step-title { font: 600 14px Inter, sans-serif; }
+      .calc-text { font: 500 12px 'Monaco', monospace; fill: var(--svg-text, #4B5563); }
+      .label-text { font: 500 11px Inter, sans-serif; fill: var(--svg-text, #6B7280); }
+      .result-text { font: 600 12px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .step1-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .step2-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .step3-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .result-box { fill: var(--svg-bg, #FEE2E2); stroke: var(--svg-primary, #EF4444); stroke-width: 3; }
+      .visual-rect { stroke: var(--svg-text, #374151); stroke-width: 2; }
+      .remainder-rect { fill: var(--svg-bg, #FBBF24); stroke: var(--svg-primary, #D97706); stroke-width: 2; }
+      .summary-box { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      
+      .arrow { stroke: var(--svg-primary, #10B981); stroke-width: 2; fill: none; }
+    </style>
+    
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L10,3 z" fill="var(--svg-primary, #10B981)"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="700" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" class="title">図5-9：ユークリッドの互除法の視覚的理解</text>
+  
+  <!-- Example Problem -->
+  <g id="problem" transform="translate(250, 60)">
+    <rect x="0" y="0" width="300" height="40" rx="20" fill="var(--svg-bg, #F3F4F6)" stroke="var(--svg-primary, #9CA3AF)" stroke-width="2"/>
+    <text x="150" y="17" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: var(--svg-text, #374151);">
+      例：gcd(48, 18)を求める
+    </text>
+    <text x="150" y="33" text-anchor="middle" style="font: 500 12px Inter, sans-serif; fill: var(--svg-text, #6B7280);">
+      48と18の最大公約数を計算
+    </text>
+  </g>
+  
+  <!-- Step 1 -->
+  <g id="step1" transform="translate(50, 130)">
+    <rect x="0" y="0" width="700" height="120" rx="12" class="step1-box"/>
+    <text x="20" y="25" style="font: 600 14px Inter, sans-serif; fill: #D97706;">
+      Step 1: 48 ÷ 18 = 2 余り 12
+    </text>
+    
+    <!-- Calculation -->
+    <g transform="translate(20, 35)">
+      <text x="0" y="15" class="calc-text">48 = 18 × 2 + 12</text>
+      <text x="0" y="30" class="label-text">大きい数 = 小さい数 × 商 + 余り</text>
+    </g>
+    
+    <!-- Visual representation -->
+    <g transform="translate(350, 40)">
+      <text x="0" y="-5" class="label-text">48を18で割った視覚表現：</text>
+      
+      <!-- First 18 -->
+      <rect x="0" y="10" width="80" height="30" class="visual-rect" fill="var(--svg-bg, #BFDBFE)"/>
+      <text x="40" y="30" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #1E40AF);">18</text>
+      
+      <!-- Second 18 -->
+      <rect x="90" y="10" width="80" height="30" class="visual-rect" fill="var(--svg-bg, #BFDBFE)"/>
+      <text x="130" y="30" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #1E40AF);">18</text>
+      
+      <!-- Remainder 12 -->
+      <rect x="180" y="10" width="60" height="30" class="remainder-rect"/>
+      <text x="210" y="30" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #D97706);">12</text>
+      
+      <text x="120" y="55" text-anchor="middle" class="label-text">48 = 18 × 2 + 12</text>
+    </g>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M400 260 L400 280" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Step 2 -->
+  <g id="step2" transform="translate(50, 290)">
+    <rect x="0" y="0" width="700" height="120" rx="12" class="step2-box"/>
+    <text x="20" y="25" style="font: 600 14px Inter, sans-serif; fill: #1E40AF;">
+      Step 2: 18 ÷ 12 = 1 余り 6
+    </text>
+    
+    <!-- Calculation -->
+    <g transform="translate(20, 35)">
+      <text x="0" y="15" class="calc-text">18 = 12 × 1 + 6</text>
+      <text x="0" y="30" class="label-text">前の小さい数 = 前の余り × 商 + 新しい余り</text>
+    </g>
+    
+    <!-- Visual representation -->
+    <g transform="translate(350, 40)">
+      <text x="0" y="-5" class="label-text">18を12で割った視覚表現：</text>
+      
+      <!-- 12 -->
+      <rect x="0" y="10" width="70" height="30" class="visual-rect" fill="var(--svg-bg, #BFDBFE)"/>
+      <text x="35" y="30" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #1E40AF);">12</text>
+      
+      <!-- Remainder 6 -->
+      <rect x="80" y="10" width="40" height="30" class="remainder-rect"/>
+      <text x="100" y="30" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #D97706);">6</text>
+      
+      <text x="60" y="55" text-anchor="middle" class="label-text">18 = 12 × 1 + 6</text>
+    </g>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M400 420 L400 440" class="arrow" marker-end="url(#arrow)"/>
+  
+  <!-- Step 3 -->
+  <g id="step3" transform="translate(50, 450)">
+    <rect x="0" y="0" width="700" height="120" rx="12" class="step3-box"/>
+    <text x="20" y="25" style="font: 600 14px Inter, sans-serif; fill: #047857;">
+      Step 3: 12 ÷ 6 = 2 余り 0
+    </text>
+    
+    <!-- Calculation -->
+    <g transform="translate(20, 35)">
+      <text x="0" y="15" class="calc-text">12 = 6 × 2 + 0</text>
+      <text x="0" y="30" class="label-text">余りが0になったので終了</text>
+    </g>
+    
+    <!-- Visual representation -->
+    <g transform="translate(350, 40)">
+      <text x="0" y="-5" class="label-text">12を6で割った視覚表現：</text>
+      
+      <!-- First 6 -->
+      <rect x="0" y="10" width="40" height="30" class="visual-rect" fill="var(--svg-bg, #BBF7D0)"/>
+      <text x="20" y="30" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #047857);">6</text>
+      
+      <!-- Second 6 -->
+      <rect x="50" y="10" width="40" height="30" class="visual-rect" fill="var(--svg-bg, #BBF7D0)"/>
+      <text x="70" y="30" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: var(--svg-text, #047857);">6</text>
+      
+      <text x="45" y="55" text-anchor="middle" class="label-text">12 = 6 × 2 + 0（余りなし）</text>
+    </g>
+  </g>
+  
+  <!-- Result -->
+  <g id="result" transform="translate(200, 590)">
+    <rect x="0" y="0" width="400" height="60" rx="15" class="result-box"/>
+    <text x="20" y="25" class="emoji">🎉</text>
+    <text x="50" y="25" style="font: 600 16px Inter, sans-serif; fill: #DC2626;">
+      余りが0になったので、gcd(48, 18) = 6
+    </text>
+    <text x="50" y="45" style="font: 500 12px Inter, sans-serif; fill: #DC2626;">
+      最後に割り切れた数（6）が最大公約数
+    </text>
+  </g>
+  
+  <!-- Algorithm Summary -->
+  <g id="algorithm-summary" transform="translate(50, 670)">
+    <rect x="0" y="0" width="700" height="25" rx="12" class="summary-box"/>
+    <text x="350" y="17" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #0369A1;">
+      💡 ユークリッドの互除法：「割る数」と「余り」を順次入れ替えて、余りが0になるまで繰り返す
+    </text>
+  </g>
+  
+</svg>
