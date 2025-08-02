@@ -1,0 +1,225 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <title>図9-9：AtCoder提出時のよくある失敗と対策</title>
+  <desc>提出前のチェックリストとWA時の段階的対処法</desc>
+  
+  <!-- Background -->
+  <rect width="800" height="1000" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="bold" fill="#1f2937">
+    AtCoder提出時のよくある失敗と対策
+  </text>
+  
+  <!-- Pre-submission Checklist Section -->
+  <g id="pre-submission-checklist">
+    <!-- Main container -->
+    <rect x="50" y="60" width="700" height="280" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="70" width="680" height="30" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="80" y="88" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#16a34a">
+      🚨 提出時のチェックリスト
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="80" y="118" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#16a34a">
+      ✅ 提出前の最終確認：
+    </text>
+    
+    <!-- Checklist items -->
+    <rect x="80" y="130" width="640" height="180" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    
+    <!-- Check item 1 -->
+    <rect x="90" y="140" width="15" height="15" rx="2" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="95" y="151" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">✓</text>
+    <text x="115" y="151" font-family="Inter, Arial, sans-serif" font-size="12" fill="#374151">
+      言語選択が「Python (CPython 3.x)」になっているか
+    </text>
+    
+    <!-- Check item 2 -->
+    <rect x="90" y="165" width="15" height="15" rx="2" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="95" y="176" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">✓</text>
+    <text x="115" y="176" font-family="Inter, Arial, sans-serif" font-size="12" fill="#374151">
+      デバッグ用のprint文をすべて削除したか
+    </text>
+    
+    <!-- Check item 3 -->
+    <rect x="90" y="190" width="15" height="15" rx="2" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="95" y="201" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">✓</text>
+    <text x="115" y="201" font-family="Inter, Arial, sans-serif" font-size="12" fill="#374151">
+      コード全体を正しくコピー&amp;ペーストしたか
+    </text>
+    
+    <!-- Check item 4 -->
+    <rect x="90" y="215" width="15" height="15" rx="2" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="95" y="226" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">✓</text>
+    <text x="115" y="226" font-family="Inter, Arial, sans-serif" font-size="12" fill="#374151">
+      サンプルケースで動作確認済みか
+    </text>
+    
+    <!-- Check item 5 -->
+    <rect x="90" y="240" width="15" height="15" rx="2" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="95" y="251" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">✓</text>
+    <text x="115" y="251" font-family="Inter, Arial, sans-serif" font-size="12" fill="#374151">
+      出力形式が問題文の要求と完全一致するか
+    </text>
+    
+    <!-- Common mistakes section -->
+    <rect x="400" y="140" width="310" height="170" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+    <text x="410" y="158" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="bold" fill="#dc2626">
+      🎯 よくある失敗パターン：
+    </text>
+    <text x="410" y="178" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+      • 間違ってPyPyを選んでしまう
+    </text>
+    <text x="410" y="194" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+      • Python2.7を選んで文法エラー
+    </text>
+    <text x="410" y="210" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+      • 一部のコードが欠けている
+    </text>
+    <text x="410" y="226" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+      • 余分な文字が混入している
+    </text>
+    <text x="410" y="242" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+      • print("Debug: ...")が残っている
+    </text>
+    <text x="410" y="258" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+      • 本来の出力以外が表示される
+    </text>
+    <text x="410" y="274" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+      • 改行、空白、大文字小文字のミス
+    </text>
+    <text x="410" y="290" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+      • 小数点精度や桁数の間違い
+    </text>
+  </g>
+  
+  <!-- WA Troubleshooting Process Section -->
+  <g id="wa-troubleshooting">
+    <!-- Main container -->
+    <rect x="50" y="360" width="700" height="620" rx="12" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="370" width="680" height="30" rx="8" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="80" y="388" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#0284c7">
+      🔧 WA時の段階的対処法：
+    </text>
+    
+    <!-- Phase 1 -->
+    <g id="phase1">
+      <rect x="80" y="420" width="640" height="120" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+      <text x="90" y="438" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+        Phase 1: 出力形式の再確認（5分以内）
+      </text>
+      
+      <!-- Phase 1 content -->
+      <rect x="90" y="448" width="620" height="82" rx="6" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+      <text x="100" y="464" font-family="Inter, Arial, sans-serif" font-size="11" fill="#92400e">
+        • サンプル出力を1文字ずつ照合
+      </text>
+      <text x="100" y="478" font-family="Inter, Arial, sans-serif" font-size="11" fill="#92400e">
+        • 改行、空白、大文字小文字を厳密チェック
+      </text>
+      <text x="100" y="492" font-family="Inter, Arial, sans-serif" font-size="11" fill="#92400e">
+        • print()の引数を慎重にチェック
+      </text>
+      <text x="100" y="506" font-family="Inter, Arial, sans-serif" font-size="11" fill="#92400e">
+        • 区切り文字（空白 vs コンマ）の確認
+      </text>
+      <text x="100" y="520" font-family="Inter, Arial, sans-serif" font-size="11" fill="#92400e">
+        • "Yes"/"No" vs "yes"/"no" の大文字小文字
+      </text>
+    </g>
+    
+    <!-- Phase 2 -->
+    <g id="phase2">
+      <rect x="80" y="560" width="640" height="120" rx="8" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+      <text x="90" y="578" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#9333ea">
+        Phase 2: サンプルケースでの手動追跡（10分以内）
+      </text>
+      
+      <!-- Phase 2 content -->
+      <rect x="90" y="588" width="620" height="82" rx="6" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+      <text x="100" y="604" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7c3aed">
+        • 自分の手で計算した結果と比較
+      </text>
+      <text x="100" y="618" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7c3aed">
+        • 中間過程をすべて確認
+      </text>
+      <text x="100" y="632" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7c3aed">
+        • 変数の値をstderr出力でデバッグ
+      </text>
+      <text x="100" y="646" font-family="Monaco, 'Courier New', monospace" font-size="10" fill="#7c3aed">
+        print(f"Debug: n={n}, arr={arr}", file=sys.stderr)
+      </text>
+      <text x="100" y="660" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7c3aed">
+        • 提出前にはデバッグ文をすべて削除
+      </text>
+    </g>
+    
+    <!-- Phase 3 -->
+    <g id="phase3">
+      <rect x="80" y="700" width="640" height="140" rx="8" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+      <text x="90" y="718" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">
+        Phase 3: エッジケースでの動作確認（15分以内）
+      </text>
+      
+      <!-- Phase 3 content -->
+      <rect x="90" y="728" width="620" height="102" rx="6" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+      <text x="100" y="744" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+        🎯 サイズ関連：N=1（最小ケース）、N=制約上限（計算量は大丈夫？）
+      </text>
+      <text x="100" y="758" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+        🎯 値関連：全要素が同じ値、最小値・最大値が境界、負数・ゼロの扱い
+      </text>
+      <text x="100" y="772" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+        🎯 構造関連：ソート済み・逆順データ、重複要素の存在、空集合・単一要素
+      </text>
+      <text x="100" y="786" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+        📝 自作テストケース例：
+      </text>
+      <text x="100" y="804" font-family="Monaco, 'Courier New', monospace" font-size="10" fill="#7f1d1d">
+        最小: 1 / 5  |  重複: 3 / 2 2 2  |  境界: 2 / 1000000000 1000000000
+      </text>
+      <text x="100" y="820" font-family="Inter, Arial, sans-serif" font-size="11" fill="#7f1d1d">
+        各ケースで期待される動作を事前に手計算で確認
+      </text>
+    </g>
+    
+    <!-- Phase 4 -->
+    <g id="phase4">
+      <rect x="80" y="860" width="640" height="100" rx="8" fill="#f8fafc" stroke="#6b7280" stroke-width="2"/>
+      <text x="90" y="878" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#4b5563">
+        Phase 4: アルゴリズム自体の見直し（残り時間）
+      </text>
+      
+      <!-- Phase 4 content -->
+      <rect x="90" y="888" width="620" height="62" rx="6" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+      <text x="100" y="904" font-family="Inter, Arial, sans-serif" font-size="11" fill="#4b5563">
+        • そもそもの解法が間違っていないか？
+      </text>
+      <text x="100" y="918" font-family="Inter, Arial, sans-serif" font-size="11" fill="#4b5563">
+        • より確実な解法に変更する判断も必要
+      </text>
+      <text x="100" y="932" font-family="Inter, Arial, sans-serif" font-size="11" fill="#4b5563">
+        • 問題文の解釈に誤りがないか再確認
+      </text>
+      <text x="100" y="946" font-family="Inter, Arial, sans-serif" font-size="11" fill="#4b5563">
+        • 制約条件を満たしているか最終チェック
+      </text>
+    </g>
+  </g>
+  
+  <!-- Arrow indicators for phases -->
+  <defs>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0284c7"/>
+    </marker>
+  </defs>
+  
+  <!-- Phase progression arrows -->
+  <path d="M400 540 L400 560" stroke="#0284c7" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)"/>
+  <path d="M400 680 L400 700" stroke="#0284c7" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)"/>
+  <path d="M400 840 L400 860" stroke="#0284c7" stroke-width="2" fill="none" marker-end="url(#arrowhead-blue)"/>
+</svg>

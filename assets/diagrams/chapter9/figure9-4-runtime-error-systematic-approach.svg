@@ -1,0 +1,260 @@
+<svg viewBox="0 0 800 900" xmlns="http://www.w3.org/2000/svg">
+  <title>図9-4：実行時エラーの体系的対処法</title>
+  <desc>ZeroDivisionError、ValueError、TypeErrorの原因と対策</desc>
+  
+  <!-- Background -->
+  <rect width="800" height="900" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="bold" fill="#1f2937">
+    実行時エラーの体系的対処法
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="56" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" fill="#6b7280">
+    🔍 実行時エラーの分類と対策
+  </text>
+  
+  <!-- ZeroDivisionError Section -->
+  <g id="zero-division-error">
+    <!-- Main container -->
+    <rect x="50" y="80" width="700" height="240" rx="12" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+    
+    <!-- Error type header -->
+    <rect x="60" y="90" width="680" height="40" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+    <text x="80" y="108" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#dc2626">
+      ❌ ZeroDivisionError（ゼロ除算エラー）
+    </text>
+    <text x="80" y="122" font-family="Inter, Arial, sans-serif" font-size="12" fill="#7f1d1d">
+      💡 エラーの原因：0で数値を割ろうとした
+    </text>
+    
+    <!-- Problem code section -->
+    <rect x="80" y="150" width="300" height="140" rx="8" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="90" y="168" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+      🚨 問題のあるコード：
+    </text>
+    
+    <!-- Code block background -->
+    <rect x="90" y="178" width="280" height="102" rx="4" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="100" y="194" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#1f2937">
+      a = int(input())
+    </text>
+    <text x="100" y="208" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#1f2937">
+      b = int(input())
+    </text>
+    <text x="100" y="222" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      print(a / b)
+    </text>
+    <text x="200" y="222" font-family="Inter, Arial, sans-serif" font-size="10" fill="#dc2626">
+      # bが0の場合エラー
+    </text>
+    <text x="100" y="252" font-family="Inter, Arial, sans-serif" font-size="10" fill="#7f1d1d" font-style="italic">
+      ⚠️ b=0のとき：ZeroDivisionError発生
+    </text>
+    <text x="100" y="268" font-family="Inter, Arial, sans-serif" font-size="10" fill="#7f1d1d" font-style="italic">
+      プログラムが異常終了
+    </text>
+    
+    <!-- Solution code section -->
+    <rect x="420" y="150" width="300" height="140" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="430" y="168" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      ✅ 改善されたコード：
+    </text>
+    
+    <!-- Solution code block background -->
+    <rect x="430" y="178" width="280" height="102" rx="4" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="440" y="194" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#1f2937">
+      a = int(input())
+    </text>
+    <text x="440" y="208" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#1f2937">
+      b = int(input())
+    </text>
+    <text x="440" y="222" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+      if b != 0:
+    </text>
+    <text x="450" y="236" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+        print(a / b)
+    </text>
+    <text x="440" y="250" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+      else:
+    </text>
+    <text x="450" y="264" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+        print("0で割ることはできません")
+    </text>
+    
+    <!-- Key points -->
+    <rect x="80" y="300" width="640" height="16" rx="4" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="90" y="312" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="bold" fill="#0284c7">
+      🎯 対策のポイント：• 除算の前に分母が0でないかチェック • 入力データの検証を習慣にする
+    </text>
+  </g>
+  
+  <!-- ValueError Section -->
+  <g id="value-error">
+    <!-- Main container -->
+    <rect x="50" y="340" width="700" height="240" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    
+    <!-- Error type header -->
+    <rect x="60" y="350" width="680" height="40" rx="8" fill="#fde68a" stroke="#f59e0b" stroke-width="1"/>
+    <text x="80" y="368" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#d97706">
+      ❌ ValueError（値エラー）
+    </text>
+    <text x="80" y="382" font-family="Inter, Arial, sans-serif" font-size="12" fill="#92400e">
+      💡 エラーの原因：数値に変換できない文字列を変換しようとした
+    </text>
+    
+    <!-- Problem code section -->
+    <rect x="80" y="410" width="300" height="140" rx="8" fill="#fed7aa" stroke="#f59e0b" stroke-width="1"/>
+    <text x="90" y="428" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+      🚨 問題のあるコード：
+    </text>
+    
+    <!-- Code block background -->
+    <rect x="90" y="438" width="280" height="102" rx="4" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="100" y="454" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#1f2937">
+      text = "abc"
+    </text>
+    <text x="100" y="468" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#d97706">
+      number = int(text)
+    </text>
+    <text x="220" y="468" font-family="Inter, Arial, sans-serif" font-size="10" fill="#d97706">
+      # "abc"は数値じゃない
+    </text>
+    <text x="100" y="498" font-family="Inter, Arial, sans-serif" font-size="10" fill="#92400e" font-style="italic">
+      ⚠️ "abc"は整数に変換不可能
+    </text>
+    <text x="100" y="514" font-family="Inter, Arial, sans-serif" font-size="10" fill="#92400e" font-style="italic">
+      ValueError: invalid literal for int()
+    </text>
+    <text x="100" y="530" font-family="Inter, Arial, sans-serif" font-size="10" fill="#92400e" font-style="italic">
+      with base 10: 'abc'
+    </text>
+    
+    <!-- Solution code section -->
+    <rect x="420" y="410" width="300" height="140" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="430" y="428" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      ✅ 改善されたコード：
+    </text>
+    
+    <!-- Solution code block background -->
+    <rect x="430" y="438" width="280" height="102" rx="4" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="440" y="454" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#1f2937">
+      text = input()
+    </text>
+    <text x="440" y="468" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+      if text.isdigit():
+    </text>
+    <text x="590" y="468" font-family="Inter, Arial, sans-serif" font-size="10" fill="#16a34a">
+      # 数字かチェック
+    </text>
+    <text x="450" y="482" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+        number = int(text)
+    </text>
+    <text x="450" y="496" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+        print(f"数値: {number}")
+    </text>
+    <text x="440" y="510" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+      else:
+    </text>
+    <text x="450" y="524" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+        print("数値ではありません")
+    </text>
+    
+    <!-- Key points -->
+    <rect x="80" y="560" width="640" height="16" rx="4" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="90" y="572" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="bold" fill="#0284c7">
+      🎯 対策のポイント：• 変換前にデータの妥当性をチェック • isdigit()メソッドで数字かどうか判定
+    </text>
+  </g>
+  
+  <!-- TypeError Section -->
+  <g id="type-error">
+    <!-- Main container -->
+    <rect x="50" y="600" width="700" height="240" rx="12" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+    
+    <!-- Error type header -->
+    <rect x="60" y="610" width="680" height="40" rx="8" fill="#e9d5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="80" y="628" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#9333ea">
+      ❌ TypeError（型エラー）
+    </text>
+    <text x="80" y="642" font-family="Inter, Arial, sans-serif" font-size="12" fill="#7c3aed">
+      💡 エラーの原因：異なる型同士で演算しようとした
+    </text>
+    
+    <!-- Problem code section -->
+    <rect x="80" y="670" width="300" height="140" rx="8" fill="#ddd6fe" stroke="#a855f7" stroke-width="1"/>
+    <text x="90" y="688" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#9333ea">
+      🚨 問題のあるコード：
+    </text>
+    
+    <!-- Code block background -->
+    <rect x="90" y="698" width="280" height="102" rx="4" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="100" y="714" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#1f2937">
+      number = 5
+    </text>
+    <text x="100" y="728" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#1f2937">
+      text = "3"
+    </text>
+    <text x="100" y="742" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#9333ea">
+      result = number + text
+    </text>
+    <text x="100" y="758" font-family="Inter, Arial, sans-serif" font-size="10" fill="#7c3aed" font-style="italic">
+      ⚠️ intとstrは足せない
+    </text>
+    <text x="100" y="774" font-family="Inter, Arial, sans-serif" font-size="10" fill="#7c3aed" font-style="italic">
+      TypeError: unsupported operand
+    </text>
+    <text x="100" y="790" font-family="Inter, Arial, sans-serif" font-size="10" fill="#7c3aed" font-style="italic">
+      type(s) for +: 'int' and 'str'
+    </text>
+    
+    <!-- Solution code section -->
+    <rect x="420" y="670" width="300" height="140" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="430" y="688" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+      ✅ 改善されたコード：
+    </text>
+    
+    <!-- Solution code block background -->
+    <rect x="430" y="698" width="280" height="102" rx="4" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="440" y="714" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#1f2937">
+      number = 5
+    </text>
+    <text x="440" y="728" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#1f2937">
+      text = "3"
+    </text>
+    <text x="440" y="742" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+      result = number + int(text)
+    </text>
+    <text x="580" y="742" font-family="Inter, Arial, sans-serif" font-size="10" fill="#16a34a">
+      # 文字列を数値に変換
+    </text>
+    <text x="440" y="756" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+      print(result)
+    </text>
+    <text x="540" y="756" font-family="Inter, Arial, sans-serif" font-size="10" fill="#16a34a">
+      # 8
+    </text>
+    <text x="440" y="784" font-family="Inter, Arial, sans-serif" font-size="10" fill="#16a34a" font-style="italic">
+      ✅ 型を統一してから演算
+    </text>
+    <text x="440" y="800" font-family="Inter, Arial, sans-serif" font-size="10" fill="#16a34a" font-style="italic">
+      期待通りの結果：8
+    </text>
+    
+    <!-- Key points -->
+    <rect x="80" y="820" width="640" height="16" rx="4" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="90" y="832" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="bold" fill="#0284c7">
+      🎯 対策のポイント：• 演算前に型を統一する • int(), str(), float()で明示的に変換
+    </text>
+  </g>
+  
+  <!-- Summary box -->
+  <rect x="50" y="860" width="700" height="30" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <text x="400" y="876" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+    🔑 共通対策：事前のデータ検証 → 安全な処理 → エラー回避
+  </text>
+  <text x="400" y="888" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="10" fill="#16a34a">
+    入力値の妥当性チェックを習慣化することで、実行時エラーの大部分を予防できる
+  </text>
+</svg>

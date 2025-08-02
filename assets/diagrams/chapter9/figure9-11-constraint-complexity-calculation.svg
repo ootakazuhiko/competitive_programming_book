@@ -1,0 +1,316 @@
+<svg viewBox="0 0 800 1100" xmlns="http://www.w3.org/2000/svg">
+  <title>図9-11：制約から計算量を逆算する技術</title>
+  <desc>問題の制約条件から適切な計算量とアルゴリズムを逆算して選択する手法</desc>
+  
+  <!-- Background -->
+  <rect width="800" height="1100" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="bold" fill="#1f2937">
+    制約から計算量を逆算する技術
+  </text>
+  
+  <!-- Concept Overview Section -->
+  <g id="concept-overview">
+    <rect x="50" y="60" width="700" height="140" rx="12" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="70" width="680" height="30" rx="8" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="80" y="88" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#0284c7">
+      ⚡ 制約から計算量を逆算する理由
+    </text>
+    
+    <!-- Content -->
+    <text x="80" y="115" font-family="Inter, Arial, sans-serif" font-size="13" fill="#0369a1">
+      • 競技プログラミングでは実行時間制限（通常1-2秒）がある
+    </text>
+    <text x="80" y="135" font-family="Inter, Arial, sans-serif" font-size="13" fill="#0369a1">
+      • データサイズ（N）から必要な計算量を逆算し、適切なアルゴリズムを選択
+    </text>
+    <text x="80" y="155" font-family="Inter, Arial, sans-serif" font-size="13" fill="#0369a1">
+      • 無駄に複雑なアルゴリズムを避け、確実に通るシンプルな解法を選ぶ
+    </text>
+    <text x="80" y="175" font-family="Inter, Arial, sans-serif" font-size="13" fill="#0369a1">
+      • TLE（Time Limit Exceeded）を事前に回避する重要なスキル
+    </text>
+  </g>
+  
+  <!-- Time Complexity Chart -->
+  <g id="complexity-chart">
+    <rect x="50" y="220" width="700" height="300" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="230" width="680" height="30" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="1"/>
+    <text x="80" y="248" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#047857">
+      📊 データサイズと許容される計算量の目安
+    </text>
+    
+    <!-- Chart headers -->
+    <rect x="80" y="280" width="120" height="30" rx="4" fill="#047857" stroke="none"/>
+    <text x="140" y="298" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+      データサイズ N
+    </text>
+    
+    <rect x="200" y="280" width="160" height="30" rx="4" fill="#047857" stroke="none"/>
+    <text x="280" y="298" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+      許容計算量
+    </text>
+    
+    <rect x="360" y="280" width="180" height="30" rx="4" fill="#047857" stroke="none"/>
+    <text x="450" y="298" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+      適切なアルゴリズム
+    </text>
+    
+    <rect x="540" y="280" width="180" height="30" rx="4" fill="#047857" stroke="none"/>
+    <text x="630" y="298" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="white">
+      具体例
+    </text>
+    
+    <!-- Data rows -->
+    <g id="data-rows">
+      <!-- Row 1 -->
+      <rect x="80" y="310" width="640" height="35" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+      <text x="140" y="330" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+        N ≤ 20
+      </text>
+      <text x="280" y="330" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+        O(2^N), O(N!)
+      </text>
+      <text x="450" y="330" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#374151">
+        全探索、bit全探索
+      </text>
+      <text x="630" y="330" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        巡回セールスマン問題
+      </text>
+      
+      <!-- Row 2 -->
+      <rect x="80" y="345" width="640" height="35" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+      <text x="140" y="365" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+        N ≤ 100
+      </text>
+      <text x="280" y="365" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#ea580c">
+        O(N^3)
+      </text>
+      <text x="450" y="365" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#374151">
+        三重ループ、Floyd-Warshall
+      </text>
+      <text x="630" y="365" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        最短経路問題
+      </text>
+      
+      <!-- Row 3 -->
+      <rect x="80" y="380" width="640" height="35" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+      <text x="140" y="400" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+        N ≤ 1,000
+      </text>
+      <text x="280" y="400" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#f59e0b">
+        O(N^2)
+      </text>
+      <text x="450" y="400" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#374151">
+        二重ループ、バブルソート
+      </text>
+      <text x="630" y="400" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        配列操作、DP
+      </text>
+      
+      <!-- Row 4 -->
+      <rect x="80" y="415" width="640" height="35" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+      <text x="140" y="435" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+        N ≤ 100,000
+      </text>
+      <text x="280" y="435" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+        O(N log N)
+      </text>
+      <text x="450" y="435" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#374151">
+        ソート、二分探索
+      </text>
+      <text x="630" y="435" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        マージソート、優先度付きキュー
+      </text>
+      
+      <!-- Row 5 -->
+      <rect x="80" y="450" width="640" height="35" fill="#ffffff" stroke="#d1d5db" stroke-width="1"/>
+      <text x="140" y="470" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+        N ≤ 1,000,000
+      </text>
+      <text x="280" y="470" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#0ea5e9">
+        O(N)
+      </text>
+      <text x="450" y="470" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#374151">
+        線形探索、累積和
+      </text>
+      <text x="630" y="470" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        配列の走査、文字列処理
+      </text>
+      
+      <!-- Row 6 -->
+      <rect x="80" y="485" width="640" height="35" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+      <text x="140" y="505" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+        N ≤ 10^9
+      </text>
+      <text x="280" y="505" text-anchor="middle" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#8b5cf6">
+        O(log N), O(1)
+      </text>
+      <text x="450" y="505" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#374151">
+        数学的解法、公式
+      </text>
+      <text x="630" y="505" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        二分探索、べき乗計算
+      </text>
+    </g>
+  </g>
+  
+  <!-- Practical Examples Section -->
+  <g id="practical-examples">
+    <rect x="50" y="540" width="700" height="280" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="550" width="680" height="30" rx="8" fill="#fde68a" stroke="#f59e0b" stroke-width="1"/>
+    <text x="80" y="568" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#d97706">
+      💡 実践例：制約からアルゴリズム選択
+    </text>
+    
+    <!-- Example 1 -->
+    <rect x="80" y="600" width="640" height="60" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="90" y="620" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+      例1：配列の最大値を求める
+    </text>
+    <text x="100" y="635" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      制約：N ≤ 200,000
+    </text>
+    <text x="300" y="635" font-family="Inter, Arial, sans-serif" font-size="11" fill="#16a34a">
+      → O(N)の線形探索で十分
+    </text>
+    <text x="100" y="650" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+      判断：ソートする必要なし。一度の走査で解決。
+    </text>
+    
+    <!-- Example 2 -->
+    <rect x="80" y="670" width="640" height="60" rx="8" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="90" y="690" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+      例2：ペアの組み合わせ全チェック
+    </text>
+    <text x="100" y="705" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      制約：N ≤ 5,000
+    </text>
+    <text x="300" y="705" font-family="Inter, Arial, sans-serif" font-size="11" fill="#ea580c">
+      → O(N²)の二重ループが使える
+    </text>
+    <text x="100" y="720" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+      判断：全ペア確認OK。より効率的な解法は不要。
+    </text>
+    
+    <!-- Example 3 -->
+    <rect x="80" y="740" width="640" height="70" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="90" y="760" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+      例3：数値の探索
+    </text>
+    <text x="100" y="775" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      制約：N ≤ 100,000, クエリ数 Q ≤ 100,000
+    </text>
+    <text x="100" y="790" font-family="Inter, Arial, sans-serif" font-size="11" fill="#dc2626">
+      ❌ 線形探索：O(N×Q) = O(10^10) → TLE確実
+    </text>
+    <text x="100" y="805" font-family="Inter, Arial, sans-serif" font-size="11" fill="#16a34a">
+      ✅ ソート+二分探索：O(N log N + Q log N) → 安全
+    </text>
+  </g>
+  
+  <!-- Decision Process Section -->
+  <g id="decision-process">
+    <rect x="50" y="840" width="700" height="220" rx="12" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="850" width="680" height="30" rx="8" fill="#e9d5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="80" y="868" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#9333ea">
+      🎯 判断プロセス
+    </text>
+    
+    <!-- Process steps -->
+    <g id="process-steps">
+      <!-- Step 1 -->
+      <rect x="80" y="900" width="150" height="140" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+      <text x="155" y="920" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#9333ea">
+        1️⃣ 制約確認
+      </text>
+      <text x="90" y="940" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        • データサイズ N
+      </text>
+      <text x="90" y="955" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        • クエリ数 Q
+      </text>
+      <text x="90" y="970" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        • 時間制限
+      </text>
+      <text x="90" y="985" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        • メモリ制限
+      </text>
+      <text x="90" y="1000" font-family="Inter, Arial, sans-serif" font-size="11" fill="#9333ea">
+        問題文の制約を
+      </text>
+      <text x="90" y="1015" font-family="Inter, Arial, sans-serif" font-size="11" fill="#9333ea">
+        しっかり読む
+      </text>
+      <text x="90" y="1030" font-family="Inter, Arial, sans-serif" font-size="11" fill="#9333ea">
+        最大値に注目
+      </text>
+      
+      <!-- Arrow 1 -->
+      <polygon points="240,970 260,970 250,980 250,960" fill="#9333ea"/>
+      
+      <!-- Step 2 -->
+      <rect x="270" y="900" width="150" height="140" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+      <text x="345" y="920" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#9333ea">
+        2️⃣ 計算量見積
+      </text>
+      <text x="280" y="940" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        • 表から許容計算量
+      </text>
+      <text x="280" y="955" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        を確認
+      </text>
+      <text x="280" y="975" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        • 実行回数を概算
+      </text>
+      <text x="280" y="990" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        • 10^8回/秒を目安
+      </text>
+      <text x="280" y="1010" font-family="Inter, Arial, sans-serif" font-size="11" fill="#9333ea">
+        安全マージンを
+      </text>
+      <text x="280" y="1025" font-family="Inter, Arial, sans-serif" font-size="11" fill="#9333ea">
+        考慮する
+      </text>
+      
+      <!-- Arrow 2 -->
+      <polygon points="430,970 450,970 440,980 440,960" fill="#9333ea"/>
+      
+      <!-- Step 3 -->
+      <rect x="460" y="900" width="150" height="140" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+      <text x="535" y="920" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#9333ea">
+        3️⃣ 解法選択
+      </text>
+      <text x="470" y="940" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        • 条件に合う最も
+      </text>
+      <text x="470" y="955" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        シンプルな解法
+      </text>
+      <text x="470" y="975" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        • 実装しやすさも
+      </text>
+      <text x="470" y="990" font-family="Inter, Arial, sans-serif" font-size="11" fill="#6b7280">
+        考慮
+      </text>
+      <text x="470" y="1010" font-family="Inter, Arial, sans-serif" font-size="11" fill="#9333ea">
+        過度に複雑な
+      </text>
+      <text x="470" y="1025" font-family="Inter, Arial, sans-serif" font-size="11" fill="#9333ea">
+        解法は避ける
+      </text>
+    </g>
+  </g>
+  
+  <!-- Key takeaway bar -->
+  <rect x="50" y="1080" width="700" height="5" rx="4" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+</svg>

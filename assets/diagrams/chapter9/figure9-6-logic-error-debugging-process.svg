@@ -1,0 +1,267 @@
+<svg viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
+  <title>図9-6：論理エラーの発見・修正プロセス</title>
+  <desc>論理エラーの特徴、手動トレースによる原因発見、境界値テストによる検証</desc>
+  
+  <!-- Background -->
+  <rect width="800" height="1000" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="bold" fill="#1f2937">
+    論理エラーの発見・修正プロセス
+  </text>
+  
+  <!-- Logic Error Characteristics Section -->
+  <g id="logic-error-characteristics">
+    <!-- Main container -->
+    <rect x="50" y="60" width="700" height="180" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="70" width="680" height="30" rx="8" fill="#fde68a" stroke="#f59e0b" stroke-width="1"/>
+    <text x="80" y="88" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#d97706">
+      🕵️ 論理エラーの特徴
+    </text>
+    
+    <!-- Characteristics list -->
+    <text x="80" y="120" font-family="Inter, Arial, sans-serif" font-size="13" fill="#92400e">
+      • エラーメッセージが出ない
+    </text>
+    <text x="80" y="140" font-family="Inter, Arial, sans-serif" font-size="13" fill="#92400e">
+      • プログラムは最後まで実行される
+    </text>
+    <text x="80" y="160" font-family="Inter, Arial, sans-serif" font-size="13" fill="#92400e">
+      • でも出力が期待と違う
+    </text>
+    <text x="80" y="180" font-family="Inter, Arial, sans-serif" font-size="13" fill="#92400e">
+      • 一番発見が困難で修正に時間がかかる
+    </text>
+    
+    <!-- Example section -->
+    <text x="80" y="210" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+      例：「配列の最大値を求める」プログラム
+    </text>
+  </g>
+  
+  <!-- Buggy Code vs Fixed Code Section -->
+  <g id="code-comparison">
+    <!-- Buggy code section -->
+    <rect x="50" y="260" width="340" height="280" rx="12" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/>
+    <text x="60" y="280" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#dc2626">
+      🚨 バグのあるコード：
+    </text>
+    
+    <!-- Code block -->
+    <rect x="60" y="290" width="320" height="120" rx="6" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="70" y="306" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      def find_max(arr):
+    </text>
+    <text x="80" y="320" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#dc2626">
+      max_val = 0
+    </text>
+    <text x="200" y="320" font-family="Inter, Arial, sans-serif" font-size="9" fill="#dc2626">
+      # ⚠️ 初期値が間違い
+    </text>
+    <text x="80" y="334" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      for num in arr:
+    </text>
+    <text x="90" y="348" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      if num > max_val:
+    </text>
+    <text x="100" y="362" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      max_val = num
+    </text>
+    <text x="80" y="376" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      return max_val
+    </text>
+    <text x="70" y="396" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      # テスト
+    </text>
+    
+    <!-- Test results -->
+    <rect x="60" y="420" width="320" height="110" rx="6" fill="#fecaca" stroke="#ef4444" stroke-width="1"/>
+    <text x="70" y="436" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      print(find_max([3, 1, 4]))
+    </text>
+    <text x="70" y="450" font-family="Inter, Arial, sans-serif" font-size="10" fill="#16a34a">
+      期待:4, 実際:4 ✅
+    </text>
+    <text x="70" y="470" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      print(find_max([-1, -5, -2]))
+    </text>
+    <text x="70" y="484" font-family="Inter, Arial, sans-serif" font-size="10" fill="#dc2626">
+      期待:-1, 実際:0 ❌
+    </text>
+    <text x="70" y="508" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="bold" fill="#dc2626">
+      🐛 問題：全要素が負数の場合、初期値0が返される
+    </text>
+    
+    <!-- Fixed code section -->
+    <rect x="410" y="260" width="340" height="280" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+    <text x="420" y="280" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#16a34a">
+      ✅ 修正版：
+    </text>
+    
+    <!-- Fixed code block -->
+    <rect x="420" y="290" width="320" height="120" rx="6" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="430" y="306" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      def find_max(arr):
+    </text>
+    <text x="440" y="320" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+      max_val = arr[0]
+    </text>
+    <text x="560" y="320" font-family="Inter, Arial, sans-serif" font-size="9" fill="#16a34a">
+      # 最初の要素で初期化
+    </text>
+    <text x="440" y="334" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#16a34a">
+      for num in arr[1:]:
+    </text>
+    <text x="560" y="334" font-family="Inter, Arial, sans-serif" font-size="9" fill="#16a34a">
+      # 2番目から開始
+    </text>
+    <text x="450" y="348" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      if num > max_val:
+    </text>
+    <text x="460" y="362" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      max_val = num
+    </text>
+    <text x="440" y="376" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      return max_val
+    </text>
+    
+    <!-- Test results for fixed version -->
+    <rect x="420" y="420" width="320" height="110" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+    <text x="430" y="436" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      print(find_max([3, 1, 4]))
+    </text>
+    <text x="430" y="450" font-family="Inter, Arial, sans-serif" font-size="10" fill="#16a34a">
+      期待:4, 実際:4 ✅
+    </text>
+    <text x="430" y="470" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      print(find_max([-1, -5, -2]))
+    </text>
+    <text x="430" y="484" font-family="Inter, Arial, sans-serif" font-size="10" fill="#16a34a">
+      期待:-1, 実際:-1 ✅
+    </text>
+    <text x="430" y="508" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="bold" fill="#16a34a">
+      💡 解決：配列の最初の要素で初期化
+    </text>
+  </g>
+  
+  <!-- Manual Trace Section -->
+  <g id="manual-trace">
+    <!-- Main container -->
+    <rect x="50" y="560" width="700" height="200" rx="12" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="570" width="680" height="30" rx="8" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="80" y="588" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#0284c7">
+      🔍 手動トレースによる原因発見
+    </text>
+    
+    <!-- Trace title -->
+    <text x="80" y="620" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#0284c7">
+      📝 find_max([-1, -5, -2])の動作を追跡：
+    </text>
+    
+    <!-- Trace steps -->
+    <rect x="80" y="630" width="640" height="120" rx="6" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="90" y="646" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      Step 1: max_val = 0 で初期化
+    </text>
+    <text x="90" y="660" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      Step 2: num = -1, -1 > 0? → False
+    </text>
+    <text x="90" y="674" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      Step 3: num = -5, -5 > 0? → False
+    </text>
+    <text x="90" y="688" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      Step 4: num = -2, -2 > 0? → False
+    </text>
+    <text x="90" y="702" font-family="Monaco, 'Courier New', monospace" font-size="11" fill="#374151">
+      Step 5: return 0
+    </text>
+    <text x="90" y="726" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#dc2626">
+      💡 発見：初期値が0だと、負数が全て無視される
+    </text>
+    <text x="90" y="742" font-family="Inter, Arial, sans-serif" font-size="11" fill="#0284c7">
+      → すべての要素が負数の場合、初期値0が最大値として返される
+    </text>
+  </g>
+  
+  <!-- Boundary Value Testing Section -->
+  <g id="boundary-testing">
+    <!-- Main container -->
+    <rect x="50" y="780" width="700" height="200" rx="12" fill="#f3e8ff" stroke="#a855f7" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="60" y="790" width="680" height="30" rx="8" fill="#e9d5ff" stroke="#a855f7" stroke-width="1"/>
+    <text x="80" y="808" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="bold" fill="#9333ea">
+      🧪 境界値テストによる検証
+    </text>
+    
+    <!-- Test cases title -->
+    <text x="80" y="840" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="bold" fill="#9333ea">
+      🎯 テストケース設計：
+    </text>
+    
+    <!-- Test cases grid -->
+    <g id="test-cases">
+      <!-- Normal cases -->
+      <rect x="80" y="850" width="200" height="120" rx="6" fill="#dcfce7" stroke="#22c55e" stroke-width="1"/>
+      <text x="90" y="868" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">
+        ✅ 正常ケース：
+      </text>
+      <text x="90" y="884" font-family="Monaco, 'Courier New', monospace" font-size="10" fill="#374151">
+        • [1, 2, 3, 4, 5] → 5
+      </text>
+      <text x="90" y="898" font-family="Monaco, 'Courier New', monospace" font-size="10" fill="#374151">
+        • [10, 5, 8] → 10
+      </text>
+      <text x="90" y="912" font-family="Inter, Arial, sans-serif" font-size="10" fill="#16a34a">
+        一般的な正の整数での動作確認
+      </text>
+      <text x="90" y="926" font-family="Inter, Arial, sans-serif" font-size="10" fill="#16a34a">
+        最大値が先頭・中間・末尾にある場合
+      </text>
+      
+      <!-- Boundary cases -->
+      <rect x="300" y="850" width="200" height="120" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+      <text x="310" y="868" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#d97706">
+        ✅ 境界ケース：
+      </text>
+      <text x="310" y="884" font-family="Monaco, 'Courier New', monospace" font-size="10" fill="#374151">
+        • [5] → 5（単一要素）
+      </text>
+      <text x="310" y="898" font-family="Monaco, 'Courier New', monospace" font-size="10" fill="#374151">
+        • [-1, -2, -3] → -1（全負数）
+      </text>
+      <text x="310" y="912" font-family="Monaco, 'Courier New', monospace" font-size="10" fill="#374151">
+        • [0, 0, 0] → 0（全ゼロ）
+      </text>
+      <text x="310" y="926" font-family="Inter, Arial, sans-serif" font-size="10" fill="#d97706">
+        特殊な値での動作確認
+      </text>
+      
+      <!-- Special cases -->
+      <rect x="520" y="850" width="200" height="120" rx="6" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="1"/>
+      <text x="530" y="868" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="bold" fill="#0284c7">
+        ✅ 特殊ケース：
+      </text>
+      <text x="530" y="884" font-family="Monaco, 'Courier New', monospace" font-size="10" fill="#374151">
+        • [100, -50, 200] → 200（正負混在）
+      </text>
+      <text x="530" y="898" font-family="Monaco, 'Courier New', monospace" font-size="10" fill="#374151">
+        • [5, 5, 5] → 5（同値）
+      </text>
+      <text x="530" y="912" font-family="Inter, Arial, sans-serif" font-size="10" fill="#0284c7">
+        論理の盲点を発見しやすいケース
+      </text>
+      <text x="530" y="926" font-family="Inter, Arial, sans-serif" font-size="10" fill="#0284c7">
+        重複要素、混在データでの確認
+      </text>
+    </g>
+  </g>
+  
+  <!-- Key Insights -->
+  <rect x="50" y="990" width="700" height="5" rx="4" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <!-- Summary note at the bottom would be cut off, removed to fit in viewBox -->
+</svg>
