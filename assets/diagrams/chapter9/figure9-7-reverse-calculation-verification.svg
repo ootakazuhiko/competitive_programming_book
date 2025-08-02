@@ -1,0 +1,109 @@
+<svg viewBox="0 0 900 800" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+  <defs>
+    <style>
+      .header { font-size: 16px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .section-title { font-size: 14px; font-weight: 600; fill: var(--text-primary, #1a1a1a); }
+      .item-text { font-size: 12px; fill: var(--text-secondary, #4a4a4a); }
+      .code-text { font-size: 10px; fill: var(--text-tertiary, #666666); font-family: 'Monaco', 'Consolas', monospace; }
+      .step-text { font-size: 11px; fill: var(--text-tertiary, #666666); }
+      .highlight-text { font-size: 11px; fill: var(--success-text, #059669); font-weight: 500; }
+      .warning-text { font-size: 11px; fill: var(--error-text, #dc2626); font-weight: 500; }
+      .calculation-text { font-size: 10px; fill: var(--text-secondary, #4a4a4a); font-family: 'Monaco', 'Consolas', monospace; }
+      .result-text { font-size: 11px; fill: var(--info-text, #3b82f6); font-weight: 500; }
+      .box { fill: var(--bg-primary, #ffffff); stroke: var(--border-primary, #d1d5db); stroke-width: 1.5; }
+      .header-box { fill: var(--bg-accent, #f3f4f6); stroke: var(--border-primary, #d1d5db); stroke-width: 1.5; }
+      .step-box { fill: var(--bg-info, #e8f5ff); stroke: var(--border-info, #3b82f6); stroke-width: 1.5; }
+      .calculation-box { fill: var(--bg-warning, #fffaf0); stroke: var(--border-warning, #f59e0b); stroke-width: 1.5; }
+      .verification-box { fill: var(--bg-success, #f0f9f5); stroke: var(--border-success, #10b981); stroke-width: 1.5; }
+      .arrow { fill: none; stroke: var(--text-tertiary, #666666); stroke-width: 2; marker-end: url(#arrowhead); }
+    </style>
+    <defs>
+      <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="var(--text-tertiary, #666666)"/>
+      </marker>
+    </defs>
+  </defs>
+
+  <!-- Title -->
+  <rect x="20" y="20" width="860" height="40" class="header-box" rx="8"/>
+  <text x="450" y="44" text-anchor="middle" class="header">🔍 期待される出力からの逆算検証</text>
+
+  <!-- Example Problem -->
+  <rect x="40" y="80" width="820" height="100" class="step-box" rx="8"/>
+  <text x="60" y="104" class="section-title">📋 例題設定</text>
+  
+  <text x="80" y="128" class="item-text">問題：「配列の合計がKになる部分配列の個数」</text>
+  <text x="80" y="148" class="code-text">入力：arr = [1, 2, 3, 4], K = 5</text>
+  <text x="80" y="168" class="warning-text">期待出力：2</text>
+  
+  <text x="500" y="128" class="step-text">🤔 あなたのプログラムの出力：1</text>
+  <text x="500" y="148" class="warning-text">❌ 期待値と異なる！どこが間違い？</text>
+
+  <!-- Arrow -->
+  <path d="M 450 190 L 450 220" class="arrow"/>
+
+  <!-- Manual Calculation Process -->
+  <rect x="40" y="200" width="820" height="280" class="calculation-box" rx="8"/>
+  <text x="60" y="224" class="section-title">📝 Step 1: 手動計算による期待値検証</text>
+  
+  <text x="80" y="248" class="item-text">全ての部分配列とその合計を列挙：</text>
+  
+  <rect x="60" y="260" width="370" height="200" class="box" rx="4"/>
+  <text x="80" y="280" class="step-text">単一要素：</text>
+  <text x="80" y="300" class="calculation-text">• [1]: 合計 = 1</text>
+  <text x="80" y="320" class="calculation-text">• [2]: 合計 = 2</text>
+  <text x="80" y="340" class="calculation-text">• [3]: 合計 = 3</text>
+  <text x="80" y="360" class="calculation-text">• [4]: 合計 = 4</text>
+  
+  <text x="80" y="390" class="step-text">2つの要素：</text>
+  <text x="80" y="410" class="calculation-text">• [1,2]: 合計 = 3</text>
+  <text x="80" y="430" class="highlight-text">• [2,3]: 合計 = 5 ✅</text>
+  <text x="80" y="450" class="calculation-text">• [3,4]: 合計 = 7</text>
+  
+  <rect x="450" y="260" width="370" height="200" class="box" rx="4"/>
+  <text x="470" y="280" class="step-text">3つの要素：</text>
+  <text x="470" y="300" class="calculation-text">• [1,2,3]: 合計 = 6</text>
+  <text x="470" y="320" class="calculation-text">• [2,3,4]: 合計 = 9</text>
+  
+  <text x="470" y="350" class="step-text">4つの要素：</text>
+  <text x="470" y="370" class="calculation-text">• [1,2,3,4]: 合計 = 10</text>
+  
+  <text x="470" y="410" class="result-text">🎯 K=5になる部分配列：</text>
+  <text x="470" y="430" class="highlight-text">• [2,3] のみ</text>
+  <text x="470" y="450" class="warning-text">正解：1個（あなたのプログラムと一致）</text>
+
+  <!-- Arrow -->
+  <path d="M 450 490 L 450 520" class="arrow"/>
+
+  <!-- Problem Analysis -->
+  <rect x="40" y="500" width="820" height="120" class="verification-box" rx="8"/>
+  <text x="60" y="524" class="section-title">💡 Step 2: 問題文の再読解と発見</text>
+  
+  <text x="80" y="548" class="warning-text">🚨 発見：期待出力「2」が間違っている可能性</text>
+  <text x="80" y="568" class="item-text">対策：</text>
+  <text x="100" y="588" class="step-text">• 問題文をもう一度詳細に読み直す</text>
+  <text x="100" y="608" class="step-text">• 「部分配列」の定義を再確認（連続性の条件など）</text>
+  
+  <text x="450" y="548" class="highlight-text">✅ 手動計算と一致 → プログラムロジックは正しい</text>
+  <text x="450" y="568" class="step-text">• 期待出力が間違いの可能性が高い</text>
+  <text x="450" y="588" class="step-text">• 他のテストケースでも検証する</text>
+
+  <!-- Bottom Process Summary -->
+  <rect x="40" y="640" width="820" height="140" class="header-box" rx="8"/>
+  <text x="60" y="664" class="section-title">🔄 逆算検証の完全プロセス</text>
+  
+  <text x="80" y="688" class="highlight-text">Phase 1: 手動計算</text>
+  <text x="80" y="708" class="step-text">期待される結果を自分で計算して確認</text>
+  
+  <text x="280" y="688" class="highlight-text">Phase 2: 比較分析</text>
+  <text x="280" y="708" class="step-text">プログラム出力と手動計算を比較</text>
+  
+  <text x="480" y="688" class="highlight-text">Phase 3: 原因特定</text>
+  <text x="480" y="708" class="step-text">差異の原因を特定（ロジックor期待値）</text>
+  
+  <text x="680" y="688" class="highlight-text">Phase 4: 追加検証</text>
+  <text x="680" y="708" class="step-text">他ケースで仮説を検証</text>
+  
+  <text x="300" y="748" class="item-text">💡 この手法により、プログラムの正しさと問題設定の妥当性を同時に検証可能</text>
+  <text x="350" y="768" class="step-text">競技プログラミングでは特に重要なスキル</text>
+</svg>
