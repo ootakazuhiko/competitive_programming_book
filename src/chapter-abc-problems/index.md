@@ -30,7 +30,7 @@ order: 7
 
 ### A問題の出題パターン分析
 
-![ABC A問題の典型パターンと実装戦略を示す図表：四則演算、文字列操作、条件分岐、入出力処理の4つのパターンを頻度順で表示]({{ site.baseurl }}/images/figure7-2-abc-a-typical-patterns.svg)
+![ABC A問題の典型パターンと実装戦略を示す図表：四則演算、文字列操作、条件分岐、入出力処理の4つのパターンを頻度順で表示]({{ site.baseurl }}/assets/diagrams/chapter7/figure7-2-abc-a-problem-patterns.svg)
 
 ABC A問題は、以下の4つの典型パターンに分類できる：
 

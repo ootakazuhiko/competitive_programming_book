@@ -138,8 +138,8 @@
   </g>
   
   <!-- Connection Lines -->
-  <path d="M160 340 Q200 320 240 330" class="connection-line"/>
-  <path d="M400 340 Q440 320 480 330" class="connection-line"/>
+  <path d="M160 340 L240 330" class="connection-line"/>
+  <path d="M400 340 L480 330" class="connection-line"/>
   
   <!-- Bottom Summary -->
   <g id="summary">
