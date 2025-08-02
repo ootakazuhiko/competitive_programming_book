@@ -1,0 +1,122 @@
+<svg viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図8-5：実際の問題でのサンプル分析実演</title>
+  <desc>具体的な配列変換問題を例に、サンプル入出力から問題の本質を読み取る分析手法を実演する図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .problem-text { font: 500 12px Inter, sans-serif; }
+      .sample-text { font: 600 11px 'Monaco', monospace; }
+      .analysis-text { font: 500 11px Inter, sans-serif; }
+      .insight-text { font: 600 11px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-bg { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .problem-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .sample-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .analysis-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .insight-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .step-box { fill: var(--svg-bg, #F8FAFC); stroke: var(--svg-primary, #CBD5E0); stroke-width: 1; }
+      .pattern-highlight { fill: var(--svg-bg, #FBBF24); stroke: var(--svg-primary, #D97706); stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="650" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図8-5：実際の問題でのサンプル分析実演</text>
+  
+  <!-- Main Container -->
+  <g id="main-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="550" rx="12" class="main-bg"/>
+    
+    <!-- Problem Statement -->
+    <g id="problem-statement" transform="translate(20, 20)">
+      <rect x="0" y="0" width="760" height="100" rx="10" class="problem-box"/>
+      <text x="15" y="20" class="emoji">📋</text>
+      <text x="45" y="20" class="section-title" fill="#1E40AF">問題例：「配列の変換」</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="problem-text" fill="#1E40AF">N個の整数からなる配列Aが与えられます。</text>
+        <text x="0" y="30" class="problem-text" fill="#1E40AF">配列Aを特定のルールで変換した結果を出力してください。</text>
+        
+        <text x="0" y="55" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">⚠️ 問題文が曖昧！この状況こそサンプル分析の出番</text>
+      </g>
+    </g>
+    
+    <!-- Sample Analysis -->
+    <g id="sample-analysis" transform="translate(20, 140)">
+      <rect x="0" y="0" width="760" height="180" rx="10" class="sample-box"/>
+      <text x="15" y="20" class="emoji">🧪</text>
+      <text x="45" y="20" class="section-title" fill="#D97706">サンプル分析の実演</text>
+      
+      <!-- Sample 1 -->
+      <g transform="translate(15, 35)">
+        <rect x="0" y="0" width="350" height="80" rx="8" class="step-box"/>
+        <text x="10" y="18" style="font: 600 12px Inter, sans-serif; fill: #374151;">サンプル1：</text>
+        <text x="10" y="35" class="sample-text" fill="#D97706">入力：3</text>
+        <text x="10" y="50" class="sample-text" fill="#D97706">     2 4 6</text>
+        <text x="10" y="65" class="sample-text" fill="#D97706">出力：1 2 3</text>
+      </g>
+      
+      <!-- Sample 2 -->
+      <g transform="translate(385, 35)">
+        <rect x="0" y="0" width="350" height="80" rx="8" class="step-box"/>
+        <text x="10" y="18" style="font: 600 12px Inter, sans-serif; fill: #374151;">サンプル2：</text>
+        <text x="10" y="35" class="sample-text" fill="#D97706">入力：4</text>
+        <text x="10" y="50" class="sample-text" fill="#D97706">     1 5 3 7</text>
+        <text x="10" y="65" class="sample-text" fill="#D97706">出力：1 3 2 4</text>
+      </g>
+      
+      <!-- Pattern Recognition -->
+      <g transform="translate(15, 125)">
+        <rect x="0" y="0" width="720" height="40" rx="8" class="pattern-highlight"/>
+        <text x="10" y="18" style="font: 600 12px Inter, sans-serif; fill: #D97706;">🔍 パターン発見プロセス：</text>
+        <text x="10" y="32" class="analysis-text" fill="#D97706;">入力配列 [2,4,6] → 出力 [1,2,3] | 入力配列 [1,5,3,7] → 出力 [1,3,2,4]</text>
+      </g>
+    </g>
+    
+    <!-- Analysis Process -->
+    <g id="analysis-process" transform="translate(20, 340)">
+      <rect x="0" y="0" width="760" height="160" rx="10" class="analysis-box"/>
+      <text x="15" y="20" class="emoji">🔍</text>
+      <text x="45" y="20" class="section-title" fill="#047857">段階的な分析プロセス</text>
+      
+      <!-- Step 1 -->
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #047857;">ステップ1：数値の関係性を確認</text>
+        <text x="10" y="30" class="analysis-text" fill="#047857;">• サンプル1: [2,4,6] は全て偶数、昇順</text>
+        <text x="10" y="45" class="analysis-text" fill="#047857;">• サンプル2: [1,5,3,7] は混在、非昇順</text>
+      </g>
+      
+      <!-- Step 2 -->
+      <g transform="translate(15, 70)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #047857;">ステップ2：出力の特徴を分析</text>
+        <text x="10" y="30" class="analysis-text" fill="#047857;">• 両方とも1から始まる連続整数</text>
+        <text x="10" y="45" class="analysis-text" fill="#047857;">• 長さは入力配列と同じ</text>
+      </g>
+      
+      <!-- Step 3 -->
+      <g transform="translate(15, 115)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #047857;">ステップ3：変換ルールの仮説</text>
+        <text x="10" y="30" class="analysis-text" fill="#047857;">→ 入力配列をソートした順位（ランク）を出力？</text>
+      </g>
+    </g>
+    
+    <!-- Rule Discovery -->
+    <g id="rule-discovery" transform="translate(20, 520)">
+      <rect x="0" y="0" width="760" height="80" rx="10" class="insight-box"/>
+      <text x="15" y="20" class="emoji">💡</text>
+      <text x="45" y="20" class="section-title" fill="#BE185D">発見したルール</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="insight-text" fill="#BE185D">「配列の各要素を、ソートした時の順位（1-indexed）に変換する」</text>
+        
+        <text x="0" y="35" class="analysis-text" fill="#BE185D">検証：[2,4,6] → ソート順位 [1,2,3] ✅ | [1,5,3,7] → ソート順位 [1,3,2,4] ✅</text>
+      </g>
+    </g>
+  </g>
+  
+</svg>

@@ -1,0 +1,226 @@
+<svg viewBox="0 0 900 800" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-14：12章すべてで学んだ成長の軌跡</title>
+  <desc>本書の12章を通じて積み上げた学習内容と身につけたスキルの全体像を示す完全ロードマップ</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .chapter-title { font: 600 12px Inter, sans-serif; }
+      .chapter-content { font: 500 10px Inter, sans-serif; }
+      .skill-gained { font: 600 10px Inter, sans-serif; }
+      .flow-arrow { stroke: var(--svg-primary, #10B981); stroke-width: 3; fill: none; }
+      .emoji { font: 400 14px Inter, sans-serif; }
+      
+      .chapter1-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .chapter2-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .chapter3-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .chapter4-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .chapter5-box { fill: var(--svg-bg, #EDE9FE); stroke: var(--svg-primary, #8B5CF6); stroke-width: 2; }
+      .chapter6-box { fill: var(--svg-bg, #FEE2E2); stroke: var(--svg-primary, #EF4444); stroke-width: 2; }
+      .chapter7-box { fill: var(--svg-bg, #ECFCCB); stroke: var(--svg-primary, #65A30D); stroke-width: 2; }
+      .chapter8-box { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .chapter9-box { fill: var(--svg-bg, #FEF7ED); stroke: var(--svg-primary, #EA580C); stroke-width: 2; }
+      .chapter10-box { fill: var(--svg-bg, #F3E8FF); stroke: var(--svg-primary, #7C3AED); stroke-width: 2; }
+      .chapter11-box { fill: var(--svg-bg, #ECFDF5); stroke: var(--svg-primary, #059669); stroke-width: 2; }
+      .chapter12-box { fill: var(--svg-bg, #FFFBEB); stroke: var(--svg-primary, #D97706); stroke-width: 2; }
+      
+      .main-bg { fill: var(--svg-bg, #F8FAFC); stroke: var(--svg-primary, #CBD5E0); stroke-width: 2; }
+      .achievement-highlight { fill: var(--svg-bg, #FBBF24); stroke: var(--svg-primary, #D97706); stroke-width: 2; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="var(--svg-primary, #10B981)"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="800" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図12-14：12章すべてで学んだ成長の軌跡</text>
+  
+  <!-- Main Container -->
+  <g id="main-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="700" rx="12" class="main-bg"/>
+    
+    <!-- Left Column: Chapters 1-6 -->
+    <g id="left-column">
+      <!-- Chapter 1 -->
+      <g id="chapter1" transform="translate(20, 20)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter1-box"/>
+        <text x="10" y="15" class="emoji">🌟</text>
+        <text x="30" y="15" class="chapter-title" fill="#D97706">第1章 競技プログラミングとの出会い</text>
+        <text x="10" y="30" class="chapter-content" fill="#D97706">• プログラミングの楽しさ発見</text>
+        <text x="10" y="42" class="chapter-content" fill="#D97706">• 学習への動機づけ・目標設定</text>
+        <text x="10" y="54" class="skill-gained" fill="#B45309">習得：学習マインドセット</text>
+      </g>
+      
+      <!-- Arrow 1→2 -->
+      <path d="M110 90 L110 110" class="flow-arrow" marker-end="url(#arrow)"/>
+      
+      <!-- Chapter 2 -->
+      <g id="chapter2" transform="translate(20, 120)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter2-box"/>
+        <text x="10" y="15" class="emoji">🚪</text>
+        <text x="30" y="15" class="chapter-title" fill="#1E40AF">第2章 AtCoderでの最初の一歩</text>
+        <text x="10" y="30" class="chapter-content" fill="#1E40AF">• アカウント登録・初回参加</text>
+        <text x="10" y="42" class="chapter-content" fill="#1E40AF">• 競技の基本ルール理解</text>
+        <text x="10" y="54" class="skill-gained" fill="#1E3A8A">習得：競技参加スキル</text>
+      </g>
+      
+      <!-- Arrow 2→3 -->
+      <path d="M110 190 L110 210" class="flow-arrow" marker-end="url(#arrow)"/>
+      
+      <!-- Chapter 3 -->
+      <g id="chapter3" transform="translate(20, 220)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter3-box"/>
+        <text x="10" y="15" class="emoji">🛠️</text>
+        <text x="30" y="15" class="chapter-title" fill="#047857">第3章 開発環境の整備</text>
+        <text x="10" y="30" class="chapter-content" fill="#047857">• Python・エディタ導入</text>
+        <text x="10" y="42" class="chapter-content" fill="#047857">• デバッグ技術・エラー対処</text>
+        <text x="10" y="54" class="skill-gained" fill="#065F46">習得：開発環境構築力</text>
+      </g>
+      
+      <!-- Arrow 3→4 -->
+      <path d="M110 290 L110 310" class="flow-arrow" marker-end="url(#arrow)"/>
+      
+      <!-- Chapter 4 -->
+      <g id="chapter4" transform="translate(20, 320)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter4-box"/>
+        <text x="10" y="15" class="emoji">📝</text>
+        <text x="30" y="15" class="chapter-title" fill="#BE185D">第4章 入出力処理の習得</text>
+        <text x="10" y="30" class="chapter-content" fill="#BE185D">• 標準入出力の完全理解</text>
+        <text x="10" y="42" class="chapter-content" fill="#BE185D">• 様々な形式のデータ処理</text>
+        <text x="10" y="54" class="skill-gained" fill="#9F1239">習得：データ入出力技術</text>
+      </g>
+      
+      <!-- Arrow 4→5 -->
+      <path d="M110 390 L110 410" class="flow-arrow" marker-end="url(#arrow)"/>
+      
+      <!-- Chapter 5 -->
+      <g id="chapter5" transform="translate(20, 420)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter5-box"/>
+        <text x="10" y="15" class="emoji">🧠</text>
+        <text x="30" y="15" class="chapter-title" fill="#7C3AED">第5章 基本アルゴリズムの理解</text>
+        <text x="10" y="30" class="chapter-content" fill="#7C3AED">• 全探索・貪欲法・ソート</text>
+        <text x="10" y="42" class="chapter-content" fill="#7C3AED">• 数学的思考・論理構成</text>
+        <text x="10" y="54" class="skill-gained" fill="#5B21B6">習得：アルゴリズム思考</text>
+      </g>
+      
+      <!-- Arrow 5→6 -->
+      <path d="M110 490 L110 510" class="flow-arrow" marker-end="url(#arrow)"/>
+      
+      <!-- Chapter 6 -->
+      <g id="chapter6" transform="translate(20, 520)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter6-box"/>
+        <text x="10" y="15" class="emoji">📚</text>
+        <text x="30" y="15" class="chapter-title" fill="#DC2626">第6章 データ構造の活用</text>
+        <text x="10" y="30" class="chapter-content" fill="#DC2626">• リスト・辞書・集合の活用</text>
+        <text x="10" y="42" class="chapter-content" fill="#DC2626">• 効率的なデータ管理</text>
+        <text x="10" y="54" class="skill-gained" fill="#991B1B">習得：データ構造設計力</text>
+      </g>
+    </g>
+    
+    <!-- Center Arrow (6→7) -->
+    <path d="M220 550 L420 550" class="flow-arrow" marker-end="url(#arrow)"/>
+    
+    <!-- Right Column: Chapters 7-12 -->
+    <g id="right-column">
+      <!-- Chapter 7 -->
+      <g id="chapter7" transform="translate(420, 20)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter7-box"/>
+        <text x="10" y="15" class="emoji">🎯</text>
+        <text x="30" y="15" class="chapter-title" fill="#65A30D">第7章 ABC問題の攻略</text>
+        <text x="10" y="30" class="chapter-content" fill="#65A30D">• A・B問題の確実な解法</text>
+        <text x="10" y="42" class="chapter-content" fill="#65A30D">• パターン認識・時間配分</text>
+        <text x="10" y="54" class="skill-gained" fill="#4D7C0F">習得：実戦問題解決力</text>
+      </g>
+      
+      <!-- Arrow 7→8 -->
+      <path d="M510 90 L510 110" class="flow-arrow" marker-end="url(#arrow)"/>
+      
+      <!-- Chapter 8 -->
+      <g id="chapter8" transform="translate(420, 120)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter8-box"/>
+        <text x="10" y="15" class="emoji">🔧</text>
+        <text x="30" y="15" class="chapter-title" fill="#0369A1">第8章 効率的な学習法</text>
+        <text x="10" y="30" class="chapter-content" fill="#0369A1">• 体系的学習計画・記録</text>
+        <text x="10" y="42" class="chapter-content" fill="#0369A1">• 継続的成長戦略</text>
+        <text x="10" y="54" class="skill-gained" fill="#075985">習得：自律学習力</text>
+      </g>
+      
+      <!-- Arrow 8→9 -->
+      <path d="M510 190 L510 210" class="flow-arrow" marker-end="url(#arrow)"/>
+      
+      <!-- Chapter 9 -->
+      <g id="chapter9" transform="translate(420, 220)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter9-box"/>
+        <text x="10" y="15" class="emoji">🏆</text>
+        <text x="30" y="15" class="chapter-title" fill="#EA580C">第9章 上達の秘訣</text>
+        <text x="10" y="30" class="chapter-content" fill="#EA580C">• 精神力・集中力の強化</text>
+        <text x="10" y="42" class="chapter-content" fill="#EA580C">• 高レベル問題への挑戦</text>
+        <text x="10" y="54" class="skill-gained" fill="#C2410C">習得：継続的向上力</text>
+      </g>
+      
+      <!-- Arrow 9→10 -->
+      <path d="M510 290 L510 310" class="flow-arrow" marker-end="url(#arrow)"/>
+      
+      <!-- Chapter 10 -->
+      <g id="chapter10" transform="translate(420, 320)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter10-box"/>
+        <text x="10" y="15" class="emoji">⚡</text>
+        <text x="30" y="15" class="chapter-title" fill="#7C3AED">第10章 実戦テクニック</text>
+        <text x="10" y="30" class="chapter-content" fill="#7C3AED">• コンテスト戦略・時間管理</text>
+        <text x="10" y="42" class="chapter-content" fill="#7C3AED">• プレッシャー下での判断</text>
+        <text x="10" y="54" class="skill-gained" fill="#5B21B6">習得：実戦応用力</text>
+      </g>
+      
+      <!-- Arrow 10→11 -->
+      <path d="M510 390 L510 410" class="flow-arrow" marker-end="url(#arrow)"/>
+      
+      <!-- Chapter 11 -->
+      <g id="chapter11" transform="translate(420, 420)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter11-box"/>
+        <text x="10" y="15" class="emoji">🤝</text>
+        <text x="30" y="15" class="chapter-title" fill="#059669">第11章 コミュニティ活用</text>
+        <text x="10" y="30" class="chapter-content" fill="#059669">• 学習仲間・指導者との関係</text>
+        <text x="10" y="42" class="chapter-content" fill="#059669">• オンライン・オフライン交流</text>
+        <text x="10" y="54" class="skill-gained" fill="#047857">習得：コミュニティ活用力</text>
+      </g>
+      
+      <!-- Arrow 11→12 -->
+      <path d="M510 490 L510 510" class="flow-arrow" marker-end="url(#arrow)"/>
+      
+      <!-- Chapter 12 -->
+      <g id="chapter12" transform="translate(420, 520)">
+        <rect x="0" y="0" width="180" height="60" rx="8" class="chapter12-box"/>
+        <text x="10" y="15" class="emoji">🚀</text>
+        <text x="30" y="15" class="chapter-title" fill="#D97706">第12章 未来への道筋</text>
+        <text x="10" y="30" class="chapter-content" fill="#D97706">• 将来のキャリア設計</text>
+        <text x="10" y="42" class="chapter-content" fill="#D97706">• 継続的成長戦略</text>
+        <text x="10" y="54" class="skill-gained" fill="#B45309">習得：将来設計力</text>
+      </g>
+    </g>
+    
+    <!-- Center Achievement Box -->
+    <g id="achievement-summary" transform="translate(220, 280)">
+      <rect x="0" y="0" width="180" height="120" rx="12" class="achievement-highlight"/>
+      <text x="90" y="20" text-anchor="middle" class="emoji">🏆</text>
+      <text x="90" y="40" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #D97706;">達成した成果</text>
+      
+      <text x="10" y="60" style="font: 600 11px Inter, sans-serif; fill: #D97706;">✅ Python基本文法完全習得</text>
+      <text x="10" y="75" style="font: 600 11px Inter, sans-serif; fill: #D97706;">✅ ABC A・B問題攻略力</text>
+      <text x="10" y="90" style="font: 600 11px Inter, sans-serif; fill: #D97706;">✅ 論理的思考・問題解決力</text>
+      <text x="10" y="105" style="font: 600 11px Inter, sans-serif; fill: #D97706;">✅ 継続学習・自律成長力</text>
+    </g>
+    
+    <!-- Bottom Future Path -->
+    <g id="future-path" transform="translate(80, 620)">
+      <rect x="0" y="0" width="520" height="60" rx="12" fill="var(--svg-bg, #ECFDF5)" stroke="var(--svg-primary, #22C55E)" stroke-width="3"/>
+      <text x="260" y="20" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #047857;">🎓 中学生から始まった成長の軌跡</text>
+      <text x="260" y="35" text-anchor="middle" style="font: 500 12px Inter, sans-serif; fill: #047857;">→ 高校・大学での発展 → 社会での活躍 → 世界への貢献</text>
+      <text x="260" y="50" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #047857;">💡 今日の一歩が、未来の大きな飛躍につながる</text>
+    </g>
+  </g>
+  
+</svg>

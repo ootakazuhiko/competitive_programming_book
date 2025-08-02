@@ -1,0 +1,156 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-3：学習段階による質的変化</title>
+  <desc>中学生から大学生まで、競技プログラミング学習における思考力・技術力・応用力の質的変化を段階的に示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .stage-title { font: 600 14px Inter, sans-serif; }
+      .category-title { font: 600 12px Inter, sans-serif; }
+      .skill-text { font: 500 11px Inter, sans-serif; }
+      .detail-text { font: 500 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-bg { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .middle-school-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .high-school-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .university-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .skill-category-bg { fill: var(--svg-bg, #F8FAFC); stroke: var(--svg-primary, #CBD5E0); stroke-width: 1; }
+      .arrow { stroke: var(--svg-primary, #10B981); stroke-width: 3; fill: none; }
+      .growth-highlight { fill: var(--svg-bg, #ECFDF5); stroke: var(--svg-primary, #22C55E); stroke-width: 2; }
+    </style>
+    
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L12,3 z" fill="var(--svg-primary, #10B981)"/>
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図12-3：学習段階による質的変化</text>
+  
+  <!-- Main Container -->
+  <g id="main-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="600" rx="12" class="main-bg"/>
+    
+    <!-- Middle School Stage -->
+    <g id="middle-school-stage" transform="translate(20, 20)">
+      <rect x="0" y="0" width="760" height="170" rx="10" class="middle-school-box"/>
+      <text x="15" y="20" class="emoji">🎯</text>
+      <text x="45" y="20" class="stage-title" fill="#1E40AF">中学生期：基礎スキルの獲得</text>
+      
+      <!-- Language/Grammar Level -->
+      <g transform="translate(15, 35)">
+        <rect x="0" y="0" width="230" height="120" rx="8" class="skill-category-bg"/>
+        <text x="10" y="18" class="emoji">🔤</text>
+        <text x="35" y="18" class="category-title" fill="#374151">言語・文法レベル：</text>
+        <text x="10" y="35" class="skill-text" fill="#374151">• Pythonの基本文法の習得</text>
+        <text x="10" y="50" class="skill-text" fill="#374151">• 変数、条件分岐、繰り返し処理</text>
+        <text x="10" y="65" class="skill-text" fill="#374151">• 関数、リスト、辞書の基本操作</text>
+        <text x="10" y="80" class="skill-text" fill="#374151">• エラーメッセージの理解</text>
+        <text x="10" y="95" class="skill-text" fill="#374151">• デバッグの基本技術</text>
+      </g>
+      
+      <!-- Problem Solving Level -->
+      <g transform="translate(260, 35)">
+        <rect x="0" y="0" width="230" height="120" rx="8" class="skill-category-bg"/>
+        <text x="10" y="18" class="emoji">🧩</text>
+        <text x="35" y="18" class="category-title" fill="#374151">問題解決レベル：</text>
+        <text x="10" y="35" class="skill-text" fill="#374151">• 基本的なアルゴリズムの理解</text>
+        <text x="10" y="50" class="skill-text" fill="#374151">• パターン認識による解法適用</text>
+        <text x="10" y="65" class="skill-text" fill="#374151">• A・B問題レベルの確実な解答</text>
+        <text x="10" y="80" class="skill-text" fill="#374151">• 全探索・貪欲法の基本活用</text>
+        <text x="10" y="95" class="skill-text" fill="#374151">• 制約条件の読み取り</text>
+      </g>
+      
+      <!-- Thinking Level -->
+      <g transform="translate(505, 35)">
+        <rect x="0" y="0" width="240" height="120" rx="8" class="skill-category-bg"/>
+        <text x="10" y="18" class="emoji">💭</text>
+        <text x="35" y="18" class="category-title" fill="#374151">思考レベル：</text>
+        <text x="10" y="35" class="skill-text" fill="#374151">• 手順的な思考（ステップバイステップ）</text>
+        <text x="10" y="50" class="skill-text" fill="#374151">• 模倣による学習（解説を読んで理解）</text>
+        <text x="10" y="65" class="skill-text" fill="#374151">• 既知のパターンへの当てはめ</text>
+        <text x="10" y="80" class="skill-text" fill="#374151">• 論理的思考の基礎形成</text>
+        <text x="10" y="95" class="skill-text" fill="#374151">• 集中力・継続力の育成</text>
+      </g>
+    </g>
+    
+    <!-- Arrow to High School -->
+    <path d="M400 210 L400 240" class="arrow" marker-end="url(#arrow)"/>
+    
+    <!-- High School Stage -->
+    <g id="high-school-stage" transform="translate(20, 250)">
+      <rect x="0" y="0" width="760" height="170" rx="10" class="high-school-box"/>
+      <text x="15" y="20" class="emoji">🚀</text>
+      <text x="45" y="20" class="stage-title" fill="#047857">高校生期：応用力の発展</text>
+      
+      <!-- Advanced Technical Skills -->
+      <g transform="translate(15, 35)">
+        <rect x="0" y="0" width="230" height="120" rx="8" class="skill-category-bg"/>
+        <text x="10" y="18" class="emoji">⚡</text>
+        <text x="35" y="18" class="category-title" fill="#374151">技術的発展：</text>
+        <text x="10" y="35" class="skill-text" fill="#374151">• 複数プログラミング言語の習得</text>
+        <text x="10" y="50" class="skill-text" fill="#374151">• 高度なアルゴリズム・データ構造</text>
+        <text x="10" y="65" class="skill-text" fill="#374151">• C・D問題への挑戦</text>
+        <text x="10" y="80" class="skill-text" fill="#374151">• 計算量解析の理解</text>
+        <text x="10" y="95" class="skill-text" fill="#374151">• Web開発・実用アプリ制作</text>
+      </g>
+      
+      <!-- Strategic Problem Solving -->
+      <g transform="translate(260, 35)">
+        <rect x="0" y="0" width="230" height="120" rx="8" class="skill-category-bg"/>
+        <text x="10" y="18" class="emoji">🎮</text>
+        <text x="35" y="18" class="category-title" fill="#374151">戦略的解決：</text>
+        <text x="10" y="35" class="skill-text" fill="#374151">• 複数解法の比較検討</text>
+        <text x="10" y="50" class="skill-text" fill="#374151">• 時間配分・戦略的思考</text>
+        <text x="10" y="65" class="skill-text" fill="#374151">• 未知問題への仮説検証</text>
+        <text x="10" y="80" class="skill-text" fill="#374151">• 数学的洞察力の発達</text>
+        <text x="10" y="95" class="skill-text" fill="#374151">• 効率的な学習方法の確立</text>
+      </g>
+      
+      <!-- Leadership & Community -->
+      <g transform="translate(505, 35)">
+        <rect x="0" y="0" width="240" height="120" rx="8" class="skill-category-bg"/>
+        <text x="10" y="18" class="emoji">🤝</text>
+        <text x="35" y="18" class="category-title" fill="#374151">社会性・指導力：</text>
+        <text x="10" y="35" class="skill-text" fill="#374151">• 後輩への指導・メンタリング</text>
+        <text x="10" y="50" class="skill-text" fill="#374151">• チーム開発・協働作業</text>
+        <text x="10" y="65" class="skill-text" fill="#374151">• コミュニティでの積極的活動</text>
+        <text x="10" y="80" class="skill-text" fill="#374151">• 知識の体系化・発信</text>
+        <text x="10" y="95" class="skill-text" fill="#374151">• 進路設計・目標設定力</text>
+      </g>
+    </g>
+    
+    <!-- Arrow to University -->
+    <path d="M400 440 L400 470" class="arrow" marker-end="url(#arrow)"/>
+    
+    <!-- University Stage -->
+    <g id="university-stage" transform="translate(20, 480)">
+      <rect x="0" y="0" width="760" height="100" rx="10" class="university-box"/>
+      <text x="15" y="20" class="emoji">🎓</text>
+      <text x="45" y="20" class="stage-title" fill="#D97706">大学生期：創造力・研究力の開花</text>
+      
+      <!-- Research & Innovation -->
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="skill-text" fill="#D97706">• 独創的な解法・アルゴリズムの開発</text>
+        <text x="350" y="15" class="skill-text" fill="#D97706">• 学術研究・論文執筆</text>
+        <text x="0" y="30" class="skill-text" fill="#D97706">• 実世界問題への応用・起業</text>
+        <text x="350" y="30" class="skill-text" fill="#D97706">• 国際競技での活躍</text>
+        <text x="0" y="45" class="skill-text" fill="#D97706">• 新技術分野の開拓・貢献</text>
+        <text x="350" y="45" class="skill-text" fill="#D97706">• 次世代の指導・教育</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Growth Summary -->
+  <g id="growth-summary" transform="translate(100, 680)">
+    <rect x="0" y="0" width="600" height="15" rx="7" class="growth-highlight"/>
+    <text x="300" y="11" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #047857;">
+      💡 模倣学習 → 応用思考 → 創造的問題解決への質的変化
+    </text>
+  </g>
+  
+</svg>

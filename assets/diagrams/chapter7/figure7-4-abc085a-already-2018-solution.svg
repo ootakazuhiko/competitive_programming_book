@@ -1,0 +1,130 @@
+<svg viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図7-4：ABC085 A問題完全解法プロセス</title>
+  <desc>ABC085 A「Already 2018」問題の読解から実装まで、A問題の典型的な解法プロセスを詳細に示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .problem-text { font: 500 12px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Monaco', monospace; }
+      .step-text { font: 600 11px Inter, sans-serif; }
+      .detail-text { font: 500 10px Inter, sans-serif; }
+      .sample-text { font: 600 11px 'Monaco', monospace; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-bg { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .problem-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .analysis-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .solution-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .code-box { fill: var(--svg-bg, #F8FAFC); stroke: var(--svg-primary, #CBD5E0); stroke-width: 1; }
+      .sample-box { fill: var(--svg-bg, #F3E8FF); stroke: var(--svg-primary, #8B5CF6); stroke-width: 2; }
+      .step-highlight { fill: var(--svg-bg, #FBBF24); stroke: var(--svg-primary, #D97706); stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="650" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図7-4：ABC085 A問題完全解法プロセス</text>
+  
+  <!-- Main Container -->
+  <g id="main-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="550" rx="12" class="main-bg"/>
+    
+    <!-- Problem Statement -->
+    <g id="problem-statement" transform="translate(20, 20)">
+      <rect x="0" y="0" width="760" height="120" rx="10" class="problem-box"/>
+      <text x="15" y="20" class="emoji">📋</text>
+      <text x="45" y="20" class="section-title" fill="#1E40AF">問題文（ABC085 A - Already 2018）</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="problem-text" fill="#1E40AF">高橋君は年賀状を書いています。年賀状には</text>
+        <text x="0" y="30" class="problem-text" fill="#1E40AF">「2017年」と書かれています。これを</text>
+        <text x="0" y="45" class="problem-text" fill="#1E40AF">「2018年」に修正して出力してください。</text>
+        
+        <g transform="translate(0, 65)">
+          <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">入力：文字列S（"2017"が含まれる）</text>
+          <text x="400" y="15" style="font: 600 12px Inter, sans-serif; fill: #1E40AF;">出力：修正された文字列</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Sample Analysis -->
+    <g id="sample-analysis" transform="translate(20, 160)">
+      <rect x="0" y="0" width="760" height="100" rx="10" class="sample-box"/>
+      <text x="15" y="20" class="emoji">🧪</text>
+      <text x="45" y="20" class="section-title" fill="#7C3AED">サンプル入出力分析</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Sample 1 -->
+        <g>
+          <rect x="0" y="0" width="350" height="50" rx="8" class="code-box"/>
+          <text x="10" y="18" style="font: 600 11px Inter, sans-serif; fill: #374151;">サンプル入力 1：</text>
+          <text x="10" y="32" class="sample-text" fill="#7C3AED">2017/01/01</text>
+          <text x="120" y="32" style="font: 500 10px Inter, sans-serif; fill: #7C3AED;">→</text>
+          <text x="140" class="sample-text" fill="#047857" y="32">2018/01/01</text>
+        </g>
+        
+        <!-- Sample 2 -->
+        <g transform="translate(370, 0)">
+          <rect x="0" y="0" width="350" height="50" rx="8" class="code-box"/>
+          <text x="10" y="18" style="font: 600 11px Inter, sans-serif; fill: #374151;">サンプル入力 2：</text>
+          <text x="10" y="32" class="sample-text" fill="#7C3AED">Happy New Year 2017!</text>
+          <text x="200" y="32" style="font: 500 10px Inter, sans-serif; fill: #7C3AED;">→</text>
+          <text x="220" class="sample-text" fill="#047857" y="32">Happy New Year 2018!</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Problem Analysis -->
+    <g id="problem-analysis" transform="translate(20, 280)">
+      <rect x="0" y="0" width="760" height="120" rx="10" class="analysis-box"/>
+      <text x="15" y="20" class="emoji">🔍</text>
+      <text x="45" y="20" class="section-title" fill="#D97706">問題の本質を理解</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Step 1 -->
+        <g>
+          <rect x="0" y="0" width="720" height="25" rx="8" class="step-highlight"/>
+          <text x="10" y="17" class="step-text" fill="#D97706">ステップ1: 「2017」を「2018」に置き換える単純な文字列操作</text>
+        </g>
+        
+        <!-- Step 2 -->
+        <g transform="translate(0, 35)">
+          <text x="0" y="15" class="step-text" fill="#D97706">ステップ2: Pythonの文字列replace()メソッドが最適</text>
+          <text x="10" y="30" class="detail-text" fill="#D97706">replace(old, new) → 文字列内のoldをnewに全て置換</text>
+        </g>
+        
+        <!-- Step 3 -->
+        <g transform="translate(0, 70)">
+          <text x="0" y="15" class="step-text" fill="#D97706">ステップ3: 入力→置換→出力の単純な3ステップ</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Solution Implementation -->
+    <g id="solution-implementation" transform="translate(20, 420)">
+      <rect x="0" y="0" width="760" height="110" rx="10" class="solution-box"/>
+      <text x="15" y="20" class="emoji">💻</text>
+      <text x="45" y="20" class="section-title" fill="#047857">実装解法</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Code implementation -->
+        <rect x="0" y="0" width="720" height="60" rx="8" fill="var(--svg-bg, #000000)" stroke="var(--svg-primary, #4B5563)" stroke-width="1"/>
+        <text x="10" y="18" style="font: 500 12px 'Monaco', monospace; fill: #22C55E;"># ABC085 A - Already 2018</text>
+        <text x="10" y="35" style="font: 500 12px 'Monaco', monospace; fill: #60A5FA;">s = input()</text>
+        <text x="10" y="50" style="font: 500 12px 'Monaco', monospace; fill: #F59E0B;">print(s.replace("2017", "2018"))</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Bottom Key Points -->
+  <g id="key-points" transform="translate(100, 630)">
+    <text x="350" y="15" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: var(--svg-text, #374151);">
+      💡 A問題の典型：文字列操作の基本パターンを確実にマスター
+    </text>
+  </g>
+  
+</svg>

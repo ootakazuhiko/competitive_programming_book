@@ -1,0 +1,244 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図8-13：サンプルテストの徹底実施法</title>
+  <desc>プログラム提出前のサンプルテスト確認プロセスを体系化した完全チェックリスト</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .check-title { font: 600 12px Inter, sans-serif; }
+      .check-item { font: 500 11px Inter, sans-serif; }
+      .detail-text { font: 500 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-bg { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .input-check-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .process-check-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .output-check-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .final-check-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .check-item-bg { fill: var(--svg-bg, #F8FAFC); stroke: var(--svg-primary, #CBD5E0); stroke-width: 1; }
+      .success-highlight { fill: var(--svg-bg, #22C55E); }
+      .warning-highlight { fill: var(--svg-bg, #EF4444); }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図8-13：サンプルテストの徹底実施法</text>
+  
+  <!-- Main Container -->
+  <g id="main-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="600" rx="12" class="main-bg"/>
+    
+    <text x="400" y="25" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #0369A1;">
+      ✅ サンプルテストの完全チェックリスト
+    </text>
+    
+    <!-- Input Check Section -->
+    <g id="input-check" transform="translate(20, 40)">
+      <rect x="0" y="0" width="360" height="140" rx="10" class="input-check-box"/>
+      <text x="15" y="20" class="emoji">🧪</text>
+      <text x="45" y="20" class="section-title" fill="#1E40AF">入力の確認</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Check 1 -->
+        <g>
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#1E40AF">サンプル入力を正確にコピーしたか</text>
+        </g>
+        
+        <!-- Check 2 -->
+        <g transform="translate(0, 25)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#1E40AF">改行や空白が正しく入力されているか</text>
+        </g>
+        
+        <!-- Check 3 -->
+        <g transform="translate(0, 50)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#1E40AF">数値の型変換が正しく行われているか</text>
+        </g>
+        
+        <!-- Check 4 -->
+        <g transform="translate(0, 75)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#1E40AF">EOF（ファイル終端）まで正しく読み込めているか</text>
+        </g>
+        
+        <!-- Tip -->
+        <g transform="translate(0, 105)">
+          <rect x="0" y="0" width="320" height="20" rx="8" fill="var(--svg-bg, #EFF6FF)" stroke="var(--svg-primary, #3B82F6)" stroke-width="1"/>
+          <text x="10" y="14" style="font: 600 9px Inter, sans-serif; fill: #1E40AF;">💡 コピペの際は改行コードに注意</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Process Check Section -->
+    <g id="process-check" transform="translate(400, 40)">
+      <rect x="0" y="0" width="360" height="140" rx="10" class="process-check-box"/>
+      <text x="15" y="20" class="emoji">⚙️</text>
+      <text x="45" y="20" class="section-title" fill="#047857">処理の確認</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Check 1 -->
+        <g>
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#047857">中間計算の値が期待通りか</text>
+        </g>
+        
+        <!-- Check 2 -->
+        <g transform="translate(0, 25)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#047857">条件分岐が正しく動作しているか</text>
+        </g>
+        
+        <!-- Check 3 -->
+        <g transform="translate(0, 50)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#047857">ループの回数・範囲が適切か</text>
+        </g>
+        
+        <!-- Check 4 -->
+        <g transform="translate(0, 75)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#047857">配列のインデックスが正しいか</text>
+        </g>
+        
+        <!-- Tip -->
+        <g transform="translate(0, 105)">
+          <rect x="0" y="0" width="320" height="20" rx="8" fill="var(--svg-bg, #F0FDF4)" stroke="var(--svg-primary, #10B981)" stroke-width="1"/>
+          <text x="10" y="14" style="font: 600 9px Inter, sans-serif; fill: #047857;">💡 print文でデバッグ情報を確認</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Output Check Section -->
+    <g id="output-check" transform="translate(20, 200)">
+      <rect x="0" y="0" width="360" height="140" rx="10" class="output-check-box"/>
+      <text x="15" y="20" class="emoji">📤</text>
+      <text x="45" y="20" class="section-title" fill="#D97706">出力の確認</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Check 1 -->
+        <g>
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#D97706">期待される出力と完全に一致するか</text>
+        </g>
+        
+        <!-- Check 2 -->
+        <g transform="translate(0, 25)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#D97706">余計な文字・空白が出力されていないか</text>
+        </g>
+        
+        <!-- Check 3 -->
+        <g transform="translate(0, 50)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#D97706">改行が正しく出力されているか</text>
+        </g>
+        
+        <!-- Check 4 -->
+        <g transform="translate(0, 75)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#D97706">複数行出力の順序が正しいか</text>
+        </g>
+        
+        <!-- Tip -->
+        <g transform="translate(0, 105)">
+          <rect x="0" y="0" width="320" height="20" rx="8" fill="var(--svg-bg, #FFFBEB)" stroke="var(--svg-primary, #F59E0B)" stroke-width="1"/>
+          <text x="10" y="14" style="font: 600 9px Inter, sans-serif; fill: #D97706;">💡 出力形式の指定を再確認</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Final Check Section -->
+    <g id="final-check" transform="translate(400, 200)">
+      <rect x="0" y="0" width="360" height="140" rx="10" class="final-check-box"/>
+      <text x="15" y="20" class="emoji">🎯</text>
+      <text x="45" y="20" class="section-title" fill="#BE185D">最終確認</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Check 1 -->
+        <g>
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#BE185D">全てのサンプルで正しい結果が得られるか</text>
+        </g>
+        
+        <!-- Check 2 -->
+        <g transform="translate(0, 25)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#BE185D">デバッグ用print文を削除したか</text>
+        </g>
+        
+        <!-- Check 3 -->
+        <g transform="translate(0, 50)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#BE185D">コードに文法エラーがないか</text>
+        </g>
+        
+        <!-- Check 4 -->
+        <g transform="translate(0, 75)">
+          <circle cx="8" cy="8" r="6" class="success-highlight"/>
+          <text x="12" y="12" text-anchor="middle" style="font: 600 10px Inter, sans-serif; fill: white;">✓</text>
+          <text x="25" y="12" class="check-item" fill="#BE185D">実行時間が制限内に収まるか</text>
+        </g>
+        
+        <!-- Tip -->
+        <g transform="translate(0, 105)">
+          <rect x="0" y="0" width="320" height="20" rx="8" fill="var(--svg-bg, #FDF2F8)" stroke="var(--svg-primary, #EC4899)" stroke-width="1"/>
+          <text x="10" y="14" style="font: 600 9px Inter, sans-serif; fill: #BE185D;">💡 提出前の最後の見直し</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Testing Workflow -->
+    <g id="testing-workflow" transform="translate(20, 360)">
+      <rect x="0" y="0" width="740" height="120" rx="10" fill="var(--svg-bg, #EDE9FE)" stroke="var(--svg-primary, #8B5CF6)" stroke-width="2"/>
+      <text x="15" y="20" class="emoji">🔄</text>
+      <text x="45" y="20" style="font: 600 14px Inter, sans-serif; fill: #7C3AED;">推奨テストワークフロー</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">1. 手動実行テスト</text>
+        <text x="10" y="30" class="detail-text" fill="#7C3AED;">サンプル入力をコピー&ペーストして、期待される出力と比較</text>
+        
+        <text x="220" y="15" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">2. エッジケース確認</text>
+        <text x="230" y="30" class="detail-text" fill="#7C3AED;">最小値・最大値での動作確認</text>
+        
+        <text x="450" y="15" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">3. 最終クリーンアップ</text>
+        <text x="460" y="30" class="detail-text" fill="#7C3AED;">不要なprint文削除、コード整理</text>
+        
+        <text x="0" y="60" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">4. 提出準備確認</text>
+        <text x="10" y="75" class="detail-text" fill="#7C3AED;">言語選択・コードのコピー&ペーストミスがないか最終チェック</text>
+      </g>
+    </g>
+    
+    <!-- Success Message -->
+    <g id="success-message" transform="translate(150, 520)">
+      <rect x="0" y="0" width="500" height="60" rx="12" fill="var(--svg-bg, #ECFDF5)" stroke="var(--svg-primary, #22C55E)" stroke-width="2"/>
+      <text x="250" y="25" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #047857;">
+        🎉 全チェック完了！安心して提出できます
+      </text>
+      <text x="250" y="45" text-anchor="middle" style="font: 500 12px Inter, sans-serif; fill: #047857;">
+        このプロセスを習慣化することで、ケアレスミスを大幅に減らせます
+      </text>
+    </g>
+  </g>
+  
+</svg>
