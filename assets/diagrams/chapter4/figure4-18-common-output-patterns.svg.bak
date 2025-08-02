@@ -1,0 +1,76 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --success-color: #27ae60;
+        --info-color: #17a2b8;
+        --background-light: #ecf0f1;
+        --text-dark: #2c3e50;
+        --border-color: #bdc3c7;
+      }
+      
+      .container { font-family: 'Inter', sans-serif; }
+      .title { font-size: 18px; font-weight: 600; fill: var(--primary-color); }
+      .subtitle { font-size: 14px; font-weight: 500; fill: var(--text-dark); }
+      .text { font-size: 12px; fill: var(--text-dark); }
+      .code { font-family: 'Consolas', 'Monaco', monospace; font-size: 11px; fill: var(--text-dark); }
+      .pattern1-box { fill: #f0f8ff; stroke: var(--secondary-color); stroke-width: 2; rx: 8; }
+      .pattern2-box { fill: #f0fff0; stroke: var(--success-color); stroke-width: 2; rx: 8; }
+      .pattern3-box { fill: #fff8f0; stroke: var(--info-color); stroke-width: 2; rx: 8; }
+      .pattern4-box { fill: #f8f0ff; stroke: #9b59b6; stroke-width: 2; rx: 8; }
+    </style>
+  </defs>
+  
+  <title>図4-18：競技プログラミングでよくある出力パターン</title>
+  <desc>競技プログラミングで頻繁に使用される出力パターンを示した図</desc>
+  
+  <g class="container">
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" class="title">図4-18：競技プログラミングでよくある出力パターン</text>
+    
+    <!-- Pattern 1: List elements in one line -->
+    <rect x="50" y="60" width="700" height="120" class="pattern1-box"/>
+    <text x="70" y="85" class="subtitle">パターン1: リストの要素を1行で出力</text>
+    <text x="70" y="110" class="code">numbers = [1, 2, 3, 4, 5]</text>
+    <text x="70" y="135" class="code"># 方法1: *演算子を使用（推奨）</text>
+    <text x="70" y="155" class="code">print(*numbers)          # 1 2 3 4 5</text>
+    <text x="400" y="135" class="code"># 方法2: join()を使用</text>
+    <text x="400" y="155" class="code">print(' '.join(map(str, numbers)))  # 1 2 3 4 5</text>
+    
+    <!-- Pattern 2: List elements line by line -->
+    <rect x="50" y="200" width="700" height="100" class="pattern2-box"/>
+    <text x="70" y="225" class="subtitle">パターン2: リストの要素を1行ずつ出力</text>
+    <text x="70" y="250" class="code">numbers = [10, 20, 30]</text>
+    <text x="70" y="275" class="code">for num in numbers:</text>
+    <text x="90" y="295" class="code">print(num)  # 10, 20, 30（各行に出力）</text>
+    <text x="400" y="275" class="code"># または join()を使用</text>
+    <text x="400" y="295" class="code">print('\n'.join(map(str, numbers)))</text>
+    
+    <!-- Pattern 3: Conditional output -->
+    <rect x="50" y="320" width="700" height="120" class="pattern3-box"/>
+    <text x="70" y="345" class="subtitle">パターン3: 条件付き出力</text>
+    <text x="70" y="370" class="code">n = int(input())</text>
+    <text x="70" y="390" class="code">if n % 2 == 0:</text>
+    <text x="90" y="410" class="code">print("Even")        # 大文字小文字注意</text>
+    <text x="70" y="430" class="code">else: print("Odd")</text>
+    <text x="400" y="370" class="code"># Yes/Noの出力</text>
+    <text x="400" y="390" class="code">if condition:</text>
+    <text x="420" y="410" class="code">print("Yes")         # "YES"ではない</text>
+    <text x="400" y="430" class="code">else: print("No")</text>
+    
+    <!-- Pattern 4: Decimal precision -->
+    <rect x="50" y="460" width="700" height="120" class="pattern4-box"/>
+    <text x="70" y="485" class="subtitle">パターン4: 小数点の制御</text>
+    <text x="70" y="510" class="code">import math</text>
+    <text x="70" y="530" class="code">pi = math.pi             # 3.141592653589793</text>
+    <text x="70" y="550" class="code">print(f"{pi:.2f}")       # 3.14（小数点以下2桁）</text>
+    <text x="70" y="570" class="code">print(f"{pi:.6f}")       # 3.141593（小数点以下6桁）</text>
+    <text x="400" y="510" class="code"># 計算結果の精度制御</text>
+    <text x="400" y="530" class="code">result = 7 / 3           # 2.3333333333333335</text>
+    <text x="400" y="550" class="code">print(f"{result:.3f}")   # 2.333</text>
+    <text x="400" y="570" class="text">問題文で精度が指定された場合に使用</text>
+  </g>
+</svg>

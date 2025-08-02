@@ -1,0 +1,65 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      :root {
+        --primary-color: #2c3e50;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --success-color: #27ae60;
+        --info-color: #17a2b8;
+        --background-light: #ecf0f1;
+        --text-dark: #2c3e50;
+        --border-color: #bdc3c7;
+      }
+      
+      .container { font-family: 'Inter', sans-serif; }
+      .title { font-size: 18px; font-weight: 600; fill: var(--primary-color); }
+      .subtitle { font-size: 14px; font-weight: 500; fill: var(--text-dark); }
+      .text { font-size: 12px; fill: var(--text-dark); }
+      .code { font-family: 'Consolas', 'Monaco', monospace; font-size: 11px; fill: var(--text-dark); }
+      .basic-box { fill: #f0f8ff; stroke: var(--secondary-color); stroke-width: 2; rx: 8; }
+      .delimiter-box { fill: #f0fff0; stroke: var(--success-color); stroke-width: 2; rx: 8; }
+      .whitespace-box { fill: #fff8f0; stroke: var(--info-color); stroke-width: 2; rx: 8; }
+      .tips-box { fill: #f8f9fa; stroke: var(--border-color); stroke-width: 2; rx: 8; }
+    </style>
+  </defs>
+  
+  <title>図4-8：split()関数の動作パターン</title>
+  <desc>split()関数の様々な使用パターンと動作を示した図</desc>
+  
+  <g class="container">
+    <!-- Title -->
+    <text x="400" y="30" text-anchor="middle" class="title">図4-8：split()関数の動作パターン</text>
+    
+    <!-- Basic usage -->
+    <rect x="50" y="60" width="700" height="100" class="basic-box"/>
+    <text x="70" y="85" class="subtitle">基本的な使い方：</text>
+    <text x="70" y="110" class="code">text = "apple banana cherry"</text>
+    <text x="70" y="130" class="code">words = text.split()  # 空白で分割</text>
+    <text x="70" y="150" class="code">print(words)  # ['apple', 'banana', 'cherry']</text>
+    
+    <!-- Custom delimiter -->
+    <rect x="50" y="180" width="700" height="100" class="delimiter-box"/>
+    <text x="70" y="205" class="subtitle">区切り文字を指定：</text>
+    <text x="70" y="230" class="code">text = "1,2,3,4,5"</text>
+    <text x="70" y="250" class="code">numbers = text.split(',')  # カンマで分割</text>
+    <text x="70" y="270" class="code">print(numbers)  # ['1', '2', '3', '4', '5']</text>
+    
+    <!-- Whitespace handling -->
+    <rect x="50" y="300" width="700" height="120" class="whitespace-box"/>
+    <text x="70" y="325" class="subtitle">空白の処理：</text>
+    <text x="70" y="350" class="code">text = "  1   2    3  "  # 不規則な空白</text>
+    <text x="70" y="370" class="code">parts = text.split()    # 連続空白も1つとして扱う</text>
+    <text x="70" y="390" class="code">print(parts)  # ['1', '2', '3']</text>
+    <text x="70" y="410" class="text">✅ 先頭・末尾の空白は自動で無視され、連続空白は1つの区切りとして扱われる</text>
+    
+    <!-- Key features -->
+    <rect x="50" y="440" width="700" height="140" class="tips-box"/>
+    <text x="70" y="465" class="subtitle">💡 重要な特徴：</text>
+    <text x="90" y="490" class="text">• split()は必ず文字列のリストを返す</text>
+    <text x="90" y="510" class="text">• 引数なしの場合、任意の空白文字（スペース、タブ、改行）で分割</text>
+    <text x="90" y="530" class="text">• 連続する空白は1つの区切りとして扱われる</text>
+    <text x="90" y="550" class="text">• 先頭・末尾の空白は自動で無視される</text>
+    <text x="90" y="570" class="text">• 競技プログラミングでは空白区切りの数値入力で最も頻繁に使用</text>
+  </g>
+</svg>
