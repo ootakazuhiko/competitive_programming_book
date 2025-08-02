@@ -1,0 +1,127 @@
+<svg viewBox="0 0 900 650" xmlns="http://www.w3.org/2000/svg">
+  <title>図9-3：エラーメッセージ解読の技術</title>
+  <desc>Pythonのトレースバック（Traceback）の構造と読み方を詳しく解説し、効率的なエラー解決につなげる技術</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .error-text { font: 600 12px 'Monaco', monospace; }
+      .explanation-text { font: 500 11px Inter, sans-serif; }
+      .step-text { font: 600 11px Inter, sans-serif; }
+      .detail-text { font: 500 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-bg { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .traceback-box { fill: var(--svg-bg, #FEF2F2); stroke: var(--svg-primary, #EF4444); stroke-width: 2; }
+      .analysis-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .solution-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .highlight-bg { fill: var(--svg-bg, #F8FAFC); stroke: var(--svg-primary, #CBD5E0); stroke-width: 1; }
+      .error-highlight { fill: var(--svg-bg, #FBBF24); stroke: var(--svg-primary, #D97706); stroke-width: 2; }
+      .line-highlight { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="650" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図9-3：エラーメッセージ解読の技術</text>
+  
+  <!-- Main Container -->
+  <g id="main-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="550" rx="12" class="main-bg"/>
+    
+    <!-- Traceback Example -->
+    <g id="traceback-example" transform="translate(20, 20)">
+      <rect x="0" y="0" width="760" height="160" rx="10" class="traceback-box"/>
+      <text x="15" y="20" class="emoji">🔍</text>
+      <text x="45" y="20" class="section-title" fill="#DC2626">Traceback（トレースバック）の読み方</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #DC2626;">実際のエラー例：</text>
+        
+        <!-- Error message display -->
+        <rect x="0" y="25" width="720" height="100" rx="8" fill="var(--svg-bg, #000000)" stroke="var(--svg-primary, #4B5563)" stroke-width="1"/>
+        <text x="10" y="45" style="font: 500 11px 'Monaco', monospace; fill: #EF4444;">Traceback (most recent call last):</text>
+        <text x="10" y="60" style="font: 500 11px 'Monaco', monospace; fill: #EF4444;">  File "solution.py", line 7, in &lt;module&gt;</text>
+        <text x="10" y="75" style="font: 500 11px 'Monaco', monospace; fill: #EF4444;">    result = 10 / zero_value</text>
+        <text x="10" y="90" style="font: 500 11px 'Monaco', monospace; fill: #EF4444;">ZeroDivisionError: division by zero</text>
+        
+        <!-- Analysis arrows and labels -->
+        <g transform="translate(0, 135)">
+          <text x="0" y="15" style="font: 600 10px Inter, sans-serif; fill: #DC2626;">↑ この4行に重要な情報が全て含まれている</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Step-by-step Analysis -->
+    <g id="step-analysis" transform="translate(20, 200)">
+      <rect x="0" y="0" width="760" height="200" rx="10" class="analysis-box"/>
+      <text x="15" y="20" class="emoji">📖</text>
+      <text x="45" y="20" class="section-title" fill="#D97706">ステップバイステップ解読</text>
+      
+      <!-- Step 1 -->
+      <g transform="translate(15, 35)">
+        <rect x="0" y="0" width="720" height="35" rx="8" class="line-highlight"/>
+        <text x="10" y="15" class="step-text" fill="#1E40AF">ステップ1: エラーの種類を確認</text>
+        <text x="10" y="27" class="detail-text" fill="#1E40AF">「ZeroDivisionError: division by zero」→ ゼロ除算エラーが発生</text>
+      </g>
+      
+      <!-- Step 2 -->
+      <g transform="translate(15, 80)">
+        <rect x="0" y="0" width="720" height="35" rx="8" class="line-highlight"/>
+        <text x="10" y="15" class="step-text" fill="#1E40AF">ステップ2: エラーが起きた場所を特定</text>
+        <text x="10" y="27" class="detail-text" fill="#1E40AF">「File "solution.py", line 7」→ solution.pyファイルの7行目でエラー</text>
+      </g>
+      
+      <!-- Step 3 -->
+      <g transform="translate(15, 125)">
+        <rect x="0" y="0" width="720" height="35" rx="8" class="line-highlight"/>
+        <text x="10" y="15" class="step-text" fill="#1E40AF">ステップ3: 問題のあるコードを確認</text>
+        <text x="10" y="27" class="detail-text" fill="#1E40AF">「result = 10 / zero_value」→ zero_valueが0だったため除算エラー</text>
+      </g>
+      
+      <!-- Step 4 -->
+      <g transform="translate(15, 170)">
+        <rect x="0" y="0" width="720" height="20" rx="8" class="error-highlight"/>
+        <text x="10" y="14" style="font: 600 11px Inter, sans-serif; fill: #D97706;">結論: zero_valueの値を確認し、0でない値を保証するか条件分岐を追加</text>
+      </g>
+    </g>
+    
+    <!-- Reading Strategy -->
+    <g id="reading-strategy" transform="translate(20, 420)">
+      <rect x="0" y="0" width="760" height="110" rx="10" class="solution-box"/>
+      <text x="15" y="20" class="emoji">💡</text>
+      <text x="45" y="20" class="section-title" fill="#047857">効率的な読み方のコツ</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Tips left column -->
+        <g>
+          <text x="0" y="15" class="step-text" fill="#047857">1. 下から上に読む</text>
+          <text x="10" y="28" class="detail-text" fill="#047857">エラーの種類（最下行）→発生場所（上の行）の順</text>
+          
+          <text x="0" y="50" class="step-text" fill="#047857">3. 行番号に注目</text>
+          <text x="10" y="63" class="detail-text" fill="#047857">エディタで該当行にジャンプして問題を確認</text>
+        </g>
+        
+        <!-- Tips right column -->
+        <g transform="translate(370, 0)">
+          <text x="0" y="15" class="step-text" fill="#047857">2. エラータイプをまず理解</text>
+          <text x="10" y="28" class="detail-text" fill="#047857">NameError、TypeError、SyntaxErrorなど</text>
+          
+          <text x="0" y="50" class="step-text" fill="#047857">4. 変数の値を確認</text>
+          <text x="10" y="63" class="detail-text" fill="#047857">print文でエラー直前の変数の状態をチェック</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Bottom Tips -->
+  <g id="bottom-tips" transform="translate(100, 630)">
+    <text x="350" y="15" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: var(--svg-text, #374151);">
+      🎯 エラーメッセージは敵ではなく、問題解決への重要な手がかり
+    </text>
+  </g>
+  
+</svg>

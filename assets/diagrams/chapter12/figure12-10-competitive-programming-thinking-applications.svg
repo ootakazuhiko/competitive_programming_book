@@ -1,0 +1,162 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-10：競技プログラミングで培った思考力の応用</title>
+  <desc>競技プログラミングで身につけた論理的思考・問題解決力が他分野でどのように活用できるかを示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .category-title { font: 600 12px Inter, sans-serif; }
+      .skill-text { font: 500 11px Inter, sans-serif; }
+      .detail-text { font: 500 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-bg { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .business-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .research-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .creative-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .social-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .core-skill-bg { fill: var(--svg-bg, #F8FAFC); stroke: var(--svg-primary, #CBD5E0); stroke-width: 1; }
+      .thinking-center { fill: var(--svg-bg, #EDE9FE); stroke: var(--svg-primary, #8B5CF6); stroke-width: 3; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図12-10：競技プログラミングで培った思考力の応用</text>
+  
+  <!-- Main Container -->
+  <g id="main-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="600" rx="12" class="main-bg"/>
+    
+    <!-- Central Core Thinking Skills -->
+    <g id="core-thinking" transform="translate(300, 200)">
+      <circle cx="100" cy="100" r="80" class="thinking-center"/>
+      <text x="100" y="80" text-anchor="middle" class="emoji">🧠</text>
+      <text x="100" y="100" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #7C3AED;">競技プログラミング</text>
+      <text x="100" y="115" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">思考力</text>
+      <text x="100" y="130" text-anchor="middle" style="font: 500 10px Inter, sans-serif; fill: #7C3AED;">論理的思考・構造化・最適化</text>
+    </g>
+    
+    <!-- Business Strategy Application -->
+    <g id="business-application" transform="translate(20, 30)">
+      <rect x="0" y="0" width="350" height="160" rx="10" class="business-box"/>
+      <text x="15" y="20" class="emoji">📊</text>
+      <text x="45" y="20" class="section-title" fill="#1E40AF">ビジネス企画・戦略立案</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="skill-text" fill="#1E40AF">• 複雑な課題の構造化・分解</text>
+        <text x="10" y="28" class="detail-text" fill="#1E40AF">問題を小さな要素に分けて段階的に解決</text>
+        
+        <text x="0" y="45" class="skill-text" fill="#1E40AF">• データに基づく論理的な意思決定</text>
+        <text x="10" y="58" class="detail-text" fill="#1E40AF">感情ではなく客観的事実による判断</text>
+        
+        <text x="0" y="75" class="skill-text" fill="#1E40AF">• 制約条件下での最適解の探索</text>
+        <text x="10" y="88" class="detail-text" fill="#1E40AF">限られたリソースでの効率的な戦略立案</text>
+        
+        <text x="0" y="105" class="skill-text" fill="#1E40AF">• リスク分析・シナリオプランニング</text>
+        <text x="10" y="118" class="detail-text" fill="#1E40AF">複数の可能性を想定した包括的な計画</text>
+      </g>
+    </g>
+    
+    <!-- Academic Research Application -->
+    <g id="research-application" transform="translate(430, 30)">
+      <rect x="0" y="0" width="350" height="160" rx="10" class="research-box"/>
+      <text x="15" y="20" class="emoji">📚</text>
+      <text x="45" y="20" class="section-title" fill="#047857">学術研究・論文執筆</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="skill-text" fill="#047857">• 研究テーマの体系的な整理</text>
+        <text x="10" y="28" class="detail-text" fill="#047857">関連分野・先行研究の論理的な分類</text>
+        
+        <text x="0" y="45" class="skill-text" fill="#047857">• 仮説設定・検証プロセスの設計</text>
+        <text x="10" y="58" class="detail-text" fill="#047857">科学的手法による systematic な研究実行</text>
+        
+        <text x="0" y="75" class="skill-text" fill="#047857">• データ解析・統計処理</text>
+        <text x="10" y="88" class="detail-text" fill="#047857">数値データから意味のある知見の抽出</text>
+        
+        <text x="0" y="105" class="skill-text" fill="#047857">• 論理的で説得力のある論証構成</text>
+        <text x="10" y="118" class="detail-text" fill="#047857">一貫性のある主張と証拠の構築</text>
+      </g>
+    </g>
+    
+    <!-- Creative Problem Solving -->
+    <g id="creative-application" transform="translate(20, 410)">
+      <rect x="0" y="0" width="350" height="160" rx="10" class="creative-box"/>
+      <text x="15" y="20" class="emoji">💡</text>
+      <text x="45" y="20" class="section-title" fill="#D97706">創造的問題解決・発明</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="skill-text" fill="#D97706">• 既存の枠組みを超えた発想</text>
+        <text x="10" y="28" class="detail-text" fill="#D97706">常識にとらわれない新しいアプローチ</text>
+        
+        <text x="0" y="45" class="skill-text" fill="#D97706">• 技術的制約の中での革新</text>
+        <text x="10" y="58" class="detail-text" fill="#D97706">限界を逆手に取った創造的解決策</text>
+        
+        <text x="0" y="75" class="skill-text" fill="#D97706">• 抽象化・一般化による応用力</text>
+        <text x="10" y="88" class="detail-text" fill="#D97706">一つの解を他の分野にも適用</text>
+        
+        <text x="0" y="105" class="skill-text" fill="#D97706">• プロトタイプ思考・反復改善</text>
+        <text x="10" y="118" class="detail-text" fill="#D97706">素早い試作→検証→改良のサイクル</text>
+      </g>
+    </g>
+    
+    <!-- Social Impact Application -->
+    <g id="social-application" transform="translate(430, 410)">
+      <rect x="0" y="0" width="350" height="160" rx="10" class="social-box"/>
+      <text x="15" y="20" class="emoji">🤝</text>
+      <text x="45" y="20" class="section-title" fill="#BE185D">社会課題解決・リーダーシップ</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="skill-text" fill="#BE185D">• 複雑な社会問題の分析・構造化</text>
+        <text x="10" y="28" class="detail-text" fill="#BE185D">多面的な課題を要素別に整理</text>
+        
+        <text x="0" y="45" class="skill-text" fill="#BE185D">• ステークホルダー分析・合意形成</text>
+        <text x="10" y="58" class="detail-text" fill="#BE185D">関係者の利害関係を論理的に調整</text>
+        
+        <text x="0" y="75" class="skill-text" fill="#BE185D">• 効果測定・改善サイクルの設計</text>
+        <text x="10" y="88" class="detail-text" fill="#BE185D">客観的指標による継続的な改善</text>
+        
+        <text x="0" y="105" class="skill-text" fill="#BE185D">• チームの論理的思考力向上</text>
+        <text x="10" y="118" class="detail-text" fill="#BE185D">メンバーの分析・判断力の底上げ</text>
+      </g>
+    </g>
+    
+    <!-- Core Skills Summary -->
+    <g id="core-skills" transform="translate(150, 200)">
+      <rect x="0" y="0" width="120" height="200" rx="8" class="core-skill-bg"/>
+      <text x="60" y="18" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #6B7280;">核となるスキル</text>
+      
+      <text x="10" y="40" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 論理的思考</text>
+      <text x="10" y="55" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 構造化能力</text>
+      <text x="10" y="70" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 最適化思考</text>
+      <text x="10" y="85" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• パターン認識</text>
+      <text x="10" y="100" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 効率性追求</text>
+      <text x="10" y="115" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 制約条件理解</text>
+      <text x="10" y="130" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 抽象化思考</text>
+      <text x="10" y="145" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 反復改善</text>
+      <text x="10" y="160" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 客観的評価</text>
+      <text x="10" y="175" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 体系的学習</text>
+    </g>
+    
+    <g id="arrows" transform="translate(270, 250)">
+      <rect x="0" y="0" width="120" height="100" rx="8" class="core-skill-bg"/>
+      <text x="60" y="18" text-anchor="middle" style="font: 600 12px Inter, sans-serif; fill: #6B7280;">応用の方向性</text>
+      
+      <text x="10" y="40" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• データ分析</text>
+      <text x="10" y="55" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 戦略立案</text>
+      <text x="10" y="70" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 研究設計</text>
+      <text x="10" y="85" style="font: 500 10px Inter, sans-serif; fill: #6B7280;">• 創造的発想</text>
+    </g>
+  </g>
+  
+  <!-- Bottom Message -->
+  <g id="bottom-message" transform="translate(150, 680)">
+    <text x="300" y="15" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: var(--svg-text, #374151);">
+      💡 競技プログラミングで身につけた思考力は、あらゆる分野で価値を発揮する万能ツール
+    </text>
+  </g>
+  
+</svg>

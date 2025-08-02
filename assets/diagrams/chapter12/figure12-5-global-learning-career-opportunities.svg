@@ -1,0 +1,190 @@
+<svg viewBox="0 0 900 800" xmlns="http://www.w3.org/2000/svg">
+  <title>図12-5：グローバルな学習・キャリア機会</title>
+  <desc>競技プログラミング経験を活かした海外大学進学、国際的なキャリア機会、奨学金制度を包括的に示す図</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .university-name { font: 600 12px Inter, sans-serif; }
+      .benefit-text { font: 500 11px Inter, sans-serif; }
+      .detail-text { font: 500 10px Inter, sans-serif; }
+      .scholarship-text { font: 600 11px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-bg { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .university-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .benefit-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .scholarship-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .career-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .highlight-bg { fill: var(--svg-bg, #F8FAFC); stroke: var(--svg-primary, #CBD5E0); stroke-width: 1; }
+      .top-tier-highlight { fill: var(--svg-bg, #FBBF24); stroke: var(--svg-primary, #D97706); stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="800" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図12-5：グローバルな学習・キャリア機会</text>
+  
+  <!-- Main Container -->
+  <g id="main-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="700" rx="12" class="main-bg"/>
+    
+    <!-- Top Universities Section -->
+    <g id="top-universities" transform="translate(20, 20)">
+      <rect x="0" y="0" width="760" height="200" rx="10" class="university-box"/>
+      <text x="15" y="20" class="emoji">🌐</text>
+      <text x="45" y="20" class="section-title" fill="#1E40AF">海外大学への進学</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="university-name" fill="#1E40AF">🎓 競技プログラミング経験が評価される大学：</text>
+        
+        <!-- MIT -->
+        <g transform="translate(0, 35)">
+          <rect x="0" y="0" width="350" height="25" rx="8" class="top-tier-highlight"/>
+          <text x="10" y="17" class="university-name" fill="#D97706">• MIT（マサチューセッツ工科大学）</text>
+        </g>
+        
+        <!-- Stanford -->
+        <g transform="translate(370, 35)">
+          <rect x="0" y="0" width="350" height="25" rx="8" class="top-tier-highlight"/>
+          <text x="10" y="17" class="university-name" fill="#D97706">• Stanford University（スタンフォード大学）</text>
+        </g>
+        
+        <!-- Carnegie Mellon -->
+        <g transform="translate(0, 70)">
+          <rect x="0" y="0" width="350" height="25" rx="8" class="highlight-bg"/>
+          <text x="10" y="17" class="university-name" fill="#374151">• Carnegie Mellon University</text>
+        </g>
+        
+        <!-- UC Berkeley -->
+        <g transform="translate(370, 70)">
+          <rect x="0" y="0" width="350" height="25" rx="8" class="highlight-bg"/>
+          <text x="10" y="17" class="university-name" fill="#374151">• UC Berkeley（カリフォルニア大学バークレー校）</text>
+        </g>
+        
+        <!-- University of Waterloo -->
+        <g transform="translate(0, 105)">
+          <rect x="0" y="0" width="350" height="25" rx="8" class="highlight-bg"/>
+          <text x="10" y="17" class="university-name" fill="#374151">• University of Waterloo（カナダ）</text>
+        </g>
+        
+        <!-- Other top universities -->
+        <g transform="translate(370, 105)">
+          <rect x="0" y="0" width="350" height="25" rx="8" class="highlight-bg"/>
+          <text x="10" y="17" class="university-name" fill="#374151">• ETH Zurich（スイス連邦工科大学）</text>
+        </g>
+        
+        <!-- Competition advantages -->
+        <g transform="translate(0, 145)">
+          <text x="0" y="15" class="benefit-text" fill="#1E40AF">💡 競技プログラミング実績の価値：</text>
+          <text x="0" y="30" class="detail-text" fill="#1E40AF">世界トップレベルの大学では、レーティング・参加実績が明確な評価基準として活用される</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Benefits Section -->
+    <g id="benefits" transform="translate(20, 240)">
+      <rect x="0" y="0" width="760" height="160" rx="10" class="benefit-box"/>
+      <text x="15" y="20" class="emoji">📊</text>
+      <text x="45" y="20" class="section-title" fill="#047857">海外大学進学のメリット</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Research Environment -->
+        <g>
+          <text x="0" y="15" class="benefit-text" fill="#047857">• 世界最高レベルの研究環境</text>
+          <text x="10" y="28" class="detail-text" fill="#047857">最先端のAI・機械学習・量子コンピューティング研究</text>
+        </g>
+        
+        <!-- Cultural Diversity -->
+        <g transform="translate(0, 45)">
+          <text x="0" y="15" class="benefit-text" fill="#047857">• 多様な文化・価値観との出会い</text>
+          <text x="10" y="28" class="detail-text" fill="#047857">世界各国から集まる優秀な学生との切磋琢磨</text>
+        </g>
+        
+        <!-- Global Skills -->
+        <g transform="translate(380, 0)">
+          <text x="0" y="15" class="benefit-text" fill="#047857">• 英語力とグローバルな視野の獲得</text>
+          <text x="10" y="28" class="detail-text" fill="#047857">国際的なコミュニケーション・プレゼンテーション能力</text>
+        </g>
+        
+        <!-- International Network -->
+        <g transform="translate(380, 45)">
+          <text x="0" y="15" class="benefit-text" fill="#047857">• 国際的なネットワークの構築</text>
+          <text x="10" y="28" class="detail-text" fill="#047857">将来のビジネスパートナー・共同研究者との出会い</text>
+        </g>
+        
+        <!-- Career Options -->
+        <g transform="translate(0, 90)">
+          <text x="0" y="15" class="benefit-text" fill="#047857">• 将来のキャリア選択肢の拡大</text>
+          <text x="10" y="28" class="detail-text" fill="#047857">シリコンバレー・世界のテック企業への就職機会</text>
+        </g>
+        
+        <!-- Innovation Mindset -->
+        <g transform="translate(380, 90)">
+          <text x="0" y="15" class="benefit-text" fill="#047857">• イノベーション・起業家精神の育成</text>
+          <text x="10" y="28" class="detail-text" fill="#047857">世界を変える技術・サービス創造への挑戦</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Scholarship Section -->
+    <g id="scholarships" transform="translate(20, 420)">
+      <rect x="0" y="0" width="760" height="140" rx="10" class="scholarship-box"/>
+      <text x="15" y="20" class="emoji">💰</text>
+      <text x="45" y="20" class="section-title" fill="#D97706">奨学金・支援制度</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Competition-based scholarships -->
+        <g>
+          <text x="0" y="15" class="scholarship-text" fill="#D97706">• 競技プログラミング実績による特別奨学金</text>
+          <text x="10" y="28" class="detail-text" fill="#D97706">TopCoder・Codeforces高レーティング保持者向け</text>
+          <text x="10" y="41" class="detail-text" fill="#D97706">ICPCファイナリスト・IOI金メダリスト特別支援</text>
+        </g>
+        
+        <!-- Japanese scholarships -->
+        <g transform="translate(380, 0)">
+          <text x="0" y="15" class="scholarship-text" fill="#D97706">• JASSO海外留学支援制度</text>
+          <text x="10" y="28" class="detail-text" fill="#D97706">日本学生支援機構による給付型・貸与型奨学金</text>
+          <text x="10" y="41" class="detail-text" fill="#D97706">月額8-16万円＋授業料減免（成績・家計基準あり）</text>
+        </g>
+        
+        <!-- Corporate support -->
+        <g transform="translate(0, 65)">
+          <text x="0" y="15" class="scholarship-text" fill="#D97706">• 企業・財団による支援制度</text>
+          <text x="10" y="28" class="detail-text" fill="#D97706">孫正義育英財団・柳井正財団・船井奨学会</text>
+        </g>
+        
+        <!-- University scholarships -->
+        <g transform="translate(380, 65)">
+          <text x="0" y="15" class="scholarship-text" fill="#D97706">• 大学独自の特待生制度</text>
+          <text x="10" y="28" class="detail-text" fill="#D97706">学費全額免除＋生活費支給（成績優秀者）</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Global Career Section -->
+    <g id="global-career" transform="translate(20, 580)">
+      <rect x="0" y="0" width="760" height="100" rx="10" class="career-box"/>
+      <text x="15" y="20" class="emoji">🚀</text>
+      <text x="45" y="20" class="section-title" fill="#BE185D">国際的なキャリア機会</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Tech Giants -->
+        <text x="0" y="15" class="benefit-text" fill="#BE185D">• テック企業：Google・Meta・Amazon・Microsoft・Apple</text>
+        <text x="0" y="30" class="benefit-text" fill="#BE185D">• 研究機関：MIT CSAIL・Stanford AI Lab・DeepMind・OpenAI</text>
+        <text x="0" y="45" class="benefit-text" fill="#BE185D">• 起業：シリコンバレー・世界各都市でのテックスタートアップ創業</text>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Bottom Message -->
+  <g id="bottom-message" transform="translate(100, 780)">
+    <text x="350" y="15" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: var(--svg-text, #374151);">
+      🌟 競技プログラミングは世界への扉を開く最強のツール
+    </text>
+  </g>
+  
+</svg>

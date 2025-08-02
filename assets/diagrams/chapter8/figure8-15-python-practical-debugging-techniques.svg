@@ -1,0 +1,145 @@
+<svg viewBox="0 0 900 750" xmlns="http://www.w3.org/2000/svg">
+  <title>図8-15：Pythonでの実践的デバッグ技法</title>
+  <desc>競技プログラミングで即座に使えるPythonデバッグ技術の実践的活用法</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .technique-title { font: 600 12px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Monaco', monospace; }
+      .comment-text { font: 500 10px Inter, sans-serif; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-bg { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .basic-debug-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .conditional-debug-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .advanced-debug-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .cleanup-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .code-bg { fill: var(--svg-bg, #000000); stroke: var(--svg-primary, #4B5563); stroke-width: 1; }
+      .tip-bg { fill: var(--svg-bg, #F8FAFC); stroke: var(--svg-primary, #CBD5E0); stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="750" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図8-15：Pythonでの実践的デバッグ技法</text>
+  
+  <!-- Main Container -->
+  <g id="main-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="650" rx="12" class="main-bg"/>
+    
+    <!-- Basic Print Debugging -->
+    <g id="basic-debug" transform="translate(20, 20)">
+      <rect x="0" y="0" width="760" height="150" rx="10" class="basic-debug-box"/>
+      <text x="15" y="20" class="emoji">🔍</text>
+      <text x="45" y="20" class="section-title" fill="#1E40AF">print文デバッグの高度な活用</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="technique-title" fill="#1E40AF">💡 基本的なデバッグprint：</text>
+        
+        <!-- Basic debug code -->
+        <rect x="0" y="25" width="720" height="80" rx="8" class="code-bg"/>
+        <text x="10" y="43" style="font: 500 11px 'Monaco', monospace; fill: #22C55E;"># 変数の値を確認</text>
+        <text x="10" y="58" style="font: 500 11px 'Monaco', monospace; fill: #60A5FA;">print(f"変数名: {変数}")</text>
+        <text x="10" y="73" style="font: 500 11px 'Monaco', monospace; fill: #60A5FA;">print(f"ここまで到達: {行番号}")</text>
+        <text x="10" y="88" style="font: 500 11px 'Monaco', monospace; fill: #60A5FA;">print(f"リストの内容: {arr}, 長さ: {len(arr)}")</text>
+        
+        <text x="0" y="125" class="comment-text" fill="#1E40AF">プログラムの実行過程と変数の状態を詳しく追跡できる</text>
+      </g>
+    </g>
+    
+    <!-- Conditional Debugging -->
+    <g id="conditional-debug" transform="translate(20, 190)">
+      <rect x="0" y="0" width="760" height="150" rx="10" class="conditional-debug-box"/>
+      <text x="15" y="20" class="emoji">🎛️</text>
+      <text x="45" y="20" class="section-title" fill="#047857">条件付きデバッグ</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="technique-title" fill="#047857">💡 条件付きデバッグ：</text>
+        
+        <!-- Conditional debug code -->
+        <rect x="0" y="25" width="720" height="80" rx="8" class="code-bg"/>
+        <text x="10" y="43" style="font: 500 11px 'Monaco', monospace; fill: #22C55E;"># デバッグフラグでOn/Off切替</text>
+        <text x="10" y="58" style="font: 500 11px 'Monaco', monospace; fill: #F59E0B;">DEBUG = True</text>
+        <text x="10" y="73" style="font: 500 11px 'Monaco', monospace; fill: #60A5FA;">if DEBUG:</text>
+        <text x="10" y="88" style="font: 500 11px 'Monaco', monospace; fill: #60A5FA;">    print(f"デバッグ情報: {変数}")</text>
+        
+        <text x="0" y="125" class="comment-text" fill="#047857">提出前にDEBUG=Falseに変更するだけで全てのデバッグ出力を無効化</text>
+      </g>
+    </g>
+    
+    <!-- Advanced Debugging -->
+    <g id="advanced-debug" transform="translate(20, 360)">
+      <rect x="0" y="0" width="760" height="170" rx="10" class="advanced-debug-box"/>
+      <text x="15" y="20" class="emoji">⚡</text>
+      <text x="45" y="20" class="section-title" fill="#D97706">高度なデバッグテクニック</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Loop debugging -->
+        <g>
+          <text x="0" y="15" class="technique-title" fill="#D97706">ループ内デバッグ：</text>
+          <rect x="0" y="20" width="350" height="60" rx="8" class="code-bg"/>
+          <text x="10" y="38" style="font: 500 10px 'Monaco', monospace; fill: #60A5FA;">for i, item in enumerate(arr):</text>
+          <text x="10" y="53" style="font: 500 10px 'Monaco', monospace; fill: #60A5FA;">    print(f"[{i}]: {item}")</text>
+          <text x="10" y="68" style="font: 500 10px 'Monaco', monospace; fill: #60A5FA;">    # 処理内容</text>
+        </g>
+        
+        <!-- Function debugging -->
+        <g transform="translate(370, 0)">
+          <text x="0" y="15" class="technique-title" fill="#D97706">関数の入出力確認：</text>
+          <rect x="0" y="20" width="350" height="60" rx="8" class="code-bg"/>
+          <text x="10" y="38" style="font: 500 10px 'Monaco', monospace; fill: #60A5FA;">def solve(n, arr):</text>
+          <text x="10" y="53" style="font: 500 10px 'Monaco', monospace; fill: #60A5FA;">    print(f"入力: n={n}, arr={arr}")</text>
+          <text x="10" y="68" style="font: 500 10px 'Monaco', monospace; fill: #60A5FA;">    # 処理...</text>
+        </g>
+        
+        <!-- Complex data debugging -->
+        <g transform="translate(0, 95)">
+          <text x="0" y="15" class="technique-title" fill="#D97706">複雑なデータ構造の確認：</text>
+          <rect x="0" y="20" width="720" height="45" rx="8" class="code-bg"/>
+          <text x="10" y="38" style="font: 500 10px 'Monaco', monospace; fill: #60A5FA;">import pprint</text>
+          <text x="10" y="53" style="font: 500 10px 'Monaco', monospace; fill: #60A5FA;">pprint.pprint(複雑な辞書やリスト)  # 見やすく整形して出力</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Cleanup Process -->
+    <g id="cleanup-process" transform="translate(20, 550)">
+      <rect x="0" y="0" width="760" height="130" rx="10" class="cleanup-box"/>
+      <text x="15" y="20" class="emoji">🧹</text>
+      <text x="45" y="20" class="section-title" fill="#BE185D">提出前のクリーンアップ</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Cleanup steps -->
+        <g>
+          <text x="0" y="15" class="technique-title" fill="#BE185D">1. デバッグprint文の一括削除：</text>
+          <text x="10" y="30" class="comment-text" fill="#BE185D">エディタの検索・置換機能でprint文を検索</text>
+          <text x="10" y="45" class="comment-text" fill="#BE185D">必要な出力以外は全て削除する</text>
+        </g>
+        
+        <g transform="translate(380, 0)">
+          <text x="0" y="15" class="technique-title" fill="#BE185D">2. 最終動作確認：</text>
+          <text x="10" y="30" class="comment-text" fill="#BE185D">サンプル入力で期待通りの出力になるか</text>
+          <text x="10" y="45" class="comment-text" fill="#BE185D">余計な出力がないかを再確認</text>
+        </g>
+        
+        <!-- Warning -->
+        <g transform="translate(0, 70)">
+          <rect x="0" y="0" width="720" height="25" rx="8" fill="var(--svg-bg, #FEE2E2)" stroke="var(--svg-primary, #EF4444)" stroke-width="1"/>
+          <text x="10" y="17" style="font: 600 11px Inter, sans-serif; fill: #DC2626;">⚠️ 重要：提出前は必ずprint文によるデバッグ出力を全て削除！</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Bottom Tips -->
+  <g id="bottom-tips" transform="translate(100, 730)">
+    <text x="350" y="15" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: var(--svg-text, #374151);">
+      💡 効率的なデバッグで問題解決速度を大幅に向上
+    </text>
+  </g>
+  
+</svg>

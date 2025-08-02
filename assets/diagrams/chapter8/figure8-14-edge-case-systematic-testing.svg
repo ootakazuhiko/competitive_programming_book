@@ -1,0 +1,212 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <title>図8-14：エッジケースの体系的テスト</title>
+  <desc>プログラムの堅牢性を確保するためのエッジケース分類と体系的テスト手法</desc>
+  
+  <defs>
+    <style>
+      .title { font: 600 16px Inter, sans-serif; fill: var(--svg-text, #1F2937); }
+      .section-title { font: 600 14px Inter, sans-serif; }
+      .category-title { font: 600 12px Inter, sans-serif; }
+      .test-item { font: 500 11px Inter, sans-serif; }
+      .detail-text { font: 500 10px Inter, sans-serif; }
+      .code-text { font: 500 11px 'Monaco', monospace; }
+      .emoji { font: 400 16px Inter, sans-serif; }
+      
+      .main-bg { fill: var(--svg-bg, #F0F9FF); stroke: var(--svg-primary, #0369A1); stroke-width: 2; }
+      .data-size-box { fill: var(--svg-bg, #DBEAFE); stroke: var(--svg-primary, #3B82F6); stroke-width: 2; }
+      .numeric-box { fill: var(--svg-bg, #D1FAE5); stroke: var(--svg-primary, #10B981); stroke-width: 2; }
+      .string-box { fill: var(--svg-bg, #FEF3C7); stroke: var(--svg-primary, #F59E0B); stroke-width: 2; }
+      .logic-box { fill: var(--svg-bg, #FCE7F3); stroke: var(--svg-primary, #EC4899); stroke-width: 2; }
+      .test-case-bg { fill: var(--svg-bg, #F8FAFC); stroke: var(--svg-primary, #CBD5E0); stroke-width: 1; }
+      .warning-highlight { fill: var(--svg-bg, #FEE2E2); stroke: var(--svg-primary, #EF4444); stroke-width: 1; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="900" height="700" fill="var(--svg-bg, #FFFFFF)"/>
+  
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" class="title">図8-14：エッジケースの体系的テスト</text>
+  
+  <!-- Main Container -->
+  <g id="main-container" transform="translate(50, 60)">
+    <rect x="0" y="0" width="800" height="600" rx="12" class="main-bg"/>
+    
+    <text x="400" y="25" text-anchor="middle" style="font: 600 14px Inter, sans-serif; fill: #0369A1;">
+      🎯 エッジケースの分類と対策
+    </text>
+    
+    <!-- Data Size Edge Cases -->
+    <g id="data-size-cases" transform="translate(20, 40)">
+      <rect x="0" y="0" width="360" height="140" rx="10" class="data-size-box"/>
+      <text x="15" y="20" class="emoji">📊</text>
+      <text x="45" y="20" class="section-title" fill="#1E40AF">データサイズのエッジケース</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Minimum cases -->
+        <g>
+          <text x="0" y="15" class="category-title" fill="#1E40AF">• 最小ケース（境界値下限）</text>
+          <text x="10" y="30" class="test-item" fill="#1E40AF">N=1, 配列が空、文字列長0</text>
+          <text x="10" y="45" class="detail-text" fill="#1E40AF">制約の最小値での動作確認</text>
+        </g>
+        
+        <!-- Maximum cases -->
+        <g transform="translate(0, 60)">
+          <text x="0" y="15" class="category-title" fill="#1E40AF">• 最大ケース（境界値上限）</text>
+          <text x="10" y="30" class="test-item" fill="#1E40AF">制約上限値での動作・実行時間</text>
+          <text x="10" y="45" class="detail-text" fill="#1E40AF">メモリ使用量とTLE対策の確認</text>
+        </g>
+        
+        <!-- Test example -->
+        <g transform="translate(0, 105)">
+          <rect x="0" y="0" width="320" height="20" rx="8" class="warning-highlight"/>
+          <text x="10" y="14" style="font: 600 9px Inter, sans-serif; fill: #DC2626;">例：N≤100000の制約でN=1とN=100000をテスト</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Numeric Edge Cases -->
+    <g id="numeric-cases" transform="translate(400, 40)">
+      <rect x="0" y="0" width="360" height="140" rx="10" class="numeric-box"/>
+      <text x="15" y="20" class="emoji">🔢</text>
+      <text x="45" y="20" class="section-title" fill="#047857">数値のエッジケース</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Zero and negative -->
+        <g>
+          <text x="0" y="15" class="category-title" fill="#047857">• 0、負数、最大値、最小値</text>
+          <text x="10" y="30" class="test-item" fill="#047857">除算や配列インデックスでの注意</text>
+        </g>
+        
+        <!-- Floating point -->
+        <g transform="translate(0, 50)">
+          <text x="0" y="15" class="category-title" fill="#047857">• 浮動小数点の精度問題</text>
+          <text x="10" y="30" class="test-item" fill="#047857">0.1 + 0.2 != 0.3 など</text>
+        </g>
+        
+        <!-- Overflow -->
+        <g transform="translate(0, 80)">
+          <text x="0" y="15" class="category-title" fill="#047857">• オーバーフロー・アンダーフロー</text>
+          <text x="10" y="30" class="test-item" fill="#047857">巨大な数値計算での桁あふれ</text>
+        </g>
+        
+        <!-- Test example -->
+        <g transform="translate(0, 105)">
+          <rect x="0" y="0" width="320" height="20" rx="8" class="warning-highlight"/>
+          <text x="10" y="14" style="font: 600 9px Inter, sans-serif; fill: #DC2626;">特に除算前の0チェックは必須</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- String Edge Cases -->
+    <g id="string-cases" transform="translate(20, 200)">
+      <rect x="0" y="0" width="360" height="140" rx="10" class="string-box"/>
+      <text x="15" y="20" class="emoji">🔤</text>
+      <text x="45" y="20" class="section-title" fill="#D97706">文字列のエッジケース</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Empty strings -->
+        <g>
+          <text x="0" y="15" class="category-title" fill="#D97706">• 空文字列・単一文字</text>
+          <text x="10" y="30" class="test-item" fill="#D97706">split()や切り出し処理での例外</text>
+        </g>
+        
+        <!-- Special characters -->
+        <g transform="translate(0, 50)">
+          <text x="0" y="15" class="category-title" fill="#D97706">• 特殊文字・記号</text>
+          <text x="10" y="30" class="test-item" fill="#D97706">改行、スペース、Unicode文字</text>
+        </g>
+        
+        <!-- Case sensitivity -->
+        <g transform="translate(0, 80)">
+          <text x="0" y="15" class="category-title" fill="#D97706">• 大文字小文字の区別</text>
+          <text x="10" y="30" class="test-item" fill="#D97706">文字列比較での予期しない結果</text>
+        </g>
+        
+        <!-- Test example -->
+        <g transform="translate(0, 105)">
+          <rect x="0" y="0" width="320" height="20" rx="8" class="warning-highlight"/>
+          <text x="10" y="14" style="font: 600 9px Inter, sans-serif; fill: #DC2626;">空文字列はlen()=0、インデックス範囲外</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Logic Edge Cases -->
+    <g id="logic-cases" transform="translate(400, 200)">
+      <rect x="0" y="0" width="360" height="140" rx="10" class="logic-box"/>
+      <text x="15" y="20" class="emoji">🤔</text>
+      <text x="45" y="20" class="section-title" fill="#BE185D">論理的エッジケース</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Conditional branches -->
+        <g>
+          <text x="0" y="15" class="category-title" fill="#BE185D">• 条件分岐の境界</text>
+          <text x="10" y="30" class="test-item" fill="#BE185D">if x >= 0の境界（x=0）</text>
+        </g>
+        
+        <!-- Loop boundaries -->
+        <g transform="translate(0, 50)">
+          <text x="0" y="15" class="category-title" fill="#BE185D">• ループの境界条件</text>
+          <text x="10" y="30" class="test-item" fill="#BE185D">range(0), while文の終了条件</text>
+        </g>
+        
+        <!-- Impossible cases -->
+        <g transform="translate(0, 80)">
+          <text x="0" y="15" class="category-title" fill="#BE185D">• 不可能なケース</text>
+          <text x="10" y="30" class="test-item" fill="#BE185D">解が存在しない場合の処理</text>
+        </g>
+        
+        <!-- Test example -->
+        <g transform="translate(0, 105)">
+          <rect x="0" y="0" width="320" height="20" rx="8" class="warning-highlight"/>
+          <text x="10" y="14" style="font: 600 9px Inter, sans-serif; fill: #DC2626;">境界値±1のテストが重要</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Testing Process -->
+    <g id="testing-process" transform="translate(20, 360)">
+      <rect x="0" y="0" width="740" height="140" rx="10" fill="var(--svg-bg, #EDE9FE)" stroke="var(--svg-primary, #8B5CF6)" stroke-width="2"/>
+      <text x="15" y="20" class="emoji">🔄</text>
+      <text x="45" y="20" style="font: 600 14px Inter, sans-serif; fill: #7C3AED;">エッジケーステストのプロセス</text>
+      
+      <g transform="translate(15, 35)">
+        <!-- Step 1 -->
+        <g>
+          <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">1. 制約条件の分析</text>
+          <text x="10" y="30" class="detail-text" fill="#7C3AED;">問題文の制約から考えられる境界値を洗い出し</text>
+        </g>
+        
+        <!-- Step 2 -->
+        <g transform="translate(200, 0)">
+          <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">2. テストケース作成</text>
+          <text x="10" y="30" class="detail-text" fill="#7C3AED;">各カテゴリのエッジケースを具体的に列挙</text>
+        </g>
+        
+        <!-- Step 3 -->
+        <g transform="translate(400, 0)">
+          <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">3. 手動実行・検証</text>
+          <text x="10" y="30" class="detail-text" fill="#7C3AED;">期待される結果と実際の出力を比較</text>
+        </g>
+        
+        <!-- Step 4 -->
+        <g transform="translate(0, 60)">
+          <text x="0" y="15" style="font: 600 12px Inter, sans-serif; fill: #7C3AED;">4. コード修正・再テスト</text>
+          <text x="10" y="30" class="detail-text" fill="#7C3AED;">問題が見つかれば修正し、全ケースで再確認</text>
+        </g>
+      </g>
+    </g>
+    
+    <!-- Practical Example -->
+    <g id="practical-example" transform="translate(20, 520)">
+      <rect x="0" y="0" width="740" height="60" rx="10" fill="var(--svg-bg, #F0FDF4)" stroke="var(--svg-primary, #22C55E)" stroke-width="2"/>
+      <text x="15" y="20" class="emoji">💡</text>
+      <text x="45" y="20" style="font: 600 14px Inter, sans-serif; fill: #047857;">実践例：配列の最大値問題</text>
+      
+      <g transform="translate(15, 35)">
+        <text x="0" y="15" class="detail-text" fill="#047857">テストケース：空配列[]、単一要素[5]、全て同じ値[3,3,3]、負数[-1,-5,-2]、最大制約サイズ</text>
+      </g>
+    </g>
+  </g>
+  
+</svg>
