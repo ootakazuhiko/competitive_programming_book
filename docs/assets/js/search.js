@@ -85,8 +85,93 @@ class SearchManager {
                 });
             }
         });
+
+        // Also extract content from current page if available
+        this.addCurrentPageContent(searchData);
+        
+        // Add common search terms for competitive programming
+        this.addCommonTerms(searchData);
         
         this.searchData = searchData;
+        console.log('Search data loaded:', this.searchData.length, 'items');
+    }
+
+    addCurrentPageContent(searchData) {
+        // Extract content from the main page content
+        const pageContent = document.querySelector('.page-content, .book-content, main');
+        if (pageContent) {
+            // Extract headings and their content
+            const headings = pageContent.querySelectorAll('h1, h2, h3, h4, h5, h6');
+            headings.forEach(heading => {
+                const headingText = heading.textContent.trim();
+                const nextElement = heading.nextElementSibling;
+                let contentText = headingText;
+                
+                // Try to get some content after the heading
+                if (nextElement && nextElement.tagName === 'P') {
+                    contentText += ' ' + nextElement.textContent.substring(0, 150);
+                }
+                
+                searchData.push({
+                    title: headingText,
+                    url: window.location.pathname + '#' + (heading.id || ''),
+                    content: contentText,
+                    type: 'heading'
+                });
+            });
+
+            // Extract paragraphs for full-text search
+            const paragraphs = pageContent.querySelectorAll('p');
+            paragraphs.forEach((p, index) => {
+                const text = p.textContent.trim();
+                if (text.length > 20) { // Only include substantial paragraphs
+                    searchData.push({
+                        title: text.substring(0, 50) + (text.length > 50 ? '...' : ''),
+                        url: window.location.pathname,
+                        content: text,
+                        type: 'content'
+                    });
+                }
+            });
+        }
+    }
+
+    addCommonTerms(searchData) {
+        // Add common competitive programming terms
+        const commonTerms = [
+            {
+                title: 'Python',
+                url: '/src/chapter-programming-environment/',
+                content: 'Python プログラミング言語 環境設定 インストール',
+                type: 'keyword'
+            },
+            {
+                title: 'AtCoder',
+                url: '/src/chapter-contest-participation/',
+                content: 'AtCoder 競技プログラミング コンテスト 参加',
+                type: 'keyword'
+            },
+            {
+                title: 'アルゴリズム',
+                url: '/src/chapter-basic-algorithms/',
+                content: 'アルゴリズム 基本 データ構造 計算量',
+                type: 'keyword'
+            },
+            {
+                title: 'デバッグ',
+                url: '/src/chapter-debugging/',
+                content: 'デバッグ エラー 修正 テスト',
+                type: 'keyword'
+            },
+            {
+                title: '入出力',
+                url: '/src/chapter-input-output/',
+                content: '入力 出力 標準入力 print input',
+                type: 'keyword'
+            }
+        ];
+        
+        searchData.push(...commonTerms);
     }
 
     setupEventListeners() {
@@ -137,7 +222,7 @@ class SearchManager {
     }
 
     performSearch(query) {
-        if (!query || query.length < 2) {
+        if (!query || query.length < 1) {
             this.hideResults();
             return;
         }
@@ -151,19 +236,58 @@ class SearchManager {
         const results = [];
 
         this.searchData.forEach(item => {
-            const titleMatch = item.title.toLowerCase().includes(lowerQuery);
-            const contentMatch = item.content && item.content.toLowerCase().includes(lowerQuery);
+            const titleLower = item.title.toLowerCase();
+            const contentLower = item.content ? item.content.toLowerCase() : '';
             
-            if (titleMatch || contentMatch) {
+            const titleMatch = titleLower.includes(lowerQuery);
+            const contentMatch = contentLower.includes(lowerQuery);
+            
+            // Also try partial matching for Japanese
+            const titleWords = titleLower.split(/[\s　]+/);
+            const queryWords = lowerQuery.split(/[\s　]+/);
+            const partialTitleMatch = queryWords.some(qWord => 
+                titleWords.some(tWord => tWord.includes(qWord) || qWord.includes(tWord))
+            );
+            
+            if (titleMatch || contentMatch || partialTitleMatch) {
                 // Calculate relevance score
                 let score = 0;
-                if (item.title.toLowerCase().startsWith(lowerQuery)) {
-                    score += 10; // Exact start match gets highest score
-                } else if (titleMatch) {
-                    score += 5; // Title match gets medium score
+                
+                // Exact title start match (highest priority)
+                if (titleLower.startsWith(lowerQuery)) {
+                    score += 20;
                 }
+                // Exact title match
+                else if (titleMatch) {
+                    score += 10;
+                }
+                // Partial title match
+                else if (partialTitleMatch) {
+                    score += 7;
+                }
+                
+                // Content match bonus
                 if (contentMatch) {
-                    score += 2; // Content match gets lower score
+                    score += 3;
+                    // Bonus for content that starts with query
+                    if (contentLower.startsWith(lowerQuery)) {
+                        score += 2;
+                    }
+                }
+                
+                // Type-based scoring
+                switch (item.type) {
+                    case 'chapter':
+                        score += 5;
+                        break;
+                    case 'heading':
+                        score += 3;
+                        break;
+                    case 'keyword':
+                        score += 4;
+                        break;
+                    default:
+                        score += 1;
                 }
 
                 results.push({
@@ -181,7 +305,7 @@ class SearchManager {
                 return b.score - a.score;
             }
             return a.title.localeCompare(b.title);
-        }).slice(0, 8); // Limit to 8 results
+        }).slice(0, 10); // Increase to 10 results
     }
 
     highlightText(text, query) {
@@ -198,10 +322,15 @@ class SearchManager {
     }
 
     displayResults(results, query) {
+        console.log('Displaying search results:', results.length, 'for query:', query);
+        
         if (!results.length) {
             this.searchResults.innerHTML = `
                 <div class="search-no-results">
                     ${this.i18n.noResults.replace('{query}', this.escapeHtml(query))}
+                    <div style="font-size: 0.75rem; margin-top: 0.5rem; color: var(--text-muted);">
+                        検索対象: ${this.searchData.length}項目
+                    </div>
                 </div>
             `;
             this.showResults();
