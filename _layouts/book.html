@@ -67,16 +67,15 @@
             </div>
             
             <div class="header-center">
-                <!-- Search functionality temporarily disabled for performance optimization -->
-                <!-- TODO: Re-enable after performance improvements are validated -->
-                <!-- <div class="search-container">
+                <!-- Search functionality enabled -->
+                <div class="search-container">
                     <input type="search" 
                            placeholder="Search..." 
                            class="search-input"
                            id="search-input"
                            autocomplete="off">
                     <div class="search-results" id="search-results"></div>
-                </div> -->
+                </div>
             </div>
             
             <div class="header-right">
@@ -151,43 +150,9 @@
     <!-- Overlay for mobile sidebar (CSS-only close trigger) -->
     <label for="sidebar-toggle-checkbox" class="book-sidebar-overlay" id="sidebar-overlay" aria-label="Close sidebar"></label>
 
-    <!-- 
-    =======================================================================
-    JAVASCRIPT ISOLATION TEST - Phase 1: Complete JavaScript Disable
-    =======================================================================
-    Purpose: Identify if JavaScript is the root cause of page freeze issues
-    
-    Current state: ALL JavaScript completely disabled for isolation testing
-    - All external JS files disabled
-    - All inline JavaScript disabled
-    - Basic HTML/CSS functionality only
-    
-    Expected results if JS is the cause:
-    ✓ Pages load faster
-    ✓ No page freezing after load
-    ✓ Navigation works (CSS-only)
-    ✓ Theme toggle non-functional (expected)
-    ✓ Mobile sidebar non-functional (expected)
-    
-    Note: This will temporarily disable ALL interactive features
-    =======================================================================
-    -->
-    
-    <!-- All JavaScript files disabled for isolation test -->
-    <!-- 
+    <!-- JavaScript enabled for search and theme functionality -->
     <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/code-copy.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/safe-main.js' | relative_url }}"></script>
-    -->
-    
-    <!-- All inline JavaScript disabled for isolation test -->
-    <!-- 
-    <script>
-        // This section intentionally disabled for JavaScript isolation testing
-        // Will be re-enabled after root cause identification
-    </script>
-    -->
+    <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
     
     <!-- Production CSS for sidebar functionality -->
     <style>
