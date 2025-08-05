@@ -12,6 +12,29 @@ class SearchManager {
         this.currentResultIndex = -1;
         this.searchTimeout = null;
         
+        // Search configuration constants
+        this.SEARCH_CONFIG = {
+            MIN_SEARCH_LENGTH: 1,
+            DEBOUNCE_DELAY: 150,
+            MAX_RESULTS: 10,
+            MIN_PARAGRAPH_LENGTH: 20,
+            CONTENT_PREVIEW_LENGTH: 150,
+            TITLE_PREVIEW_LENGTH: 50
+        };
+        
+        // Scoring constants
+        this.SCORES = {
+            TITLE_START_MATCH: 20,
+            TITLE_EXACT_MATCH: 10,
+            TITLE_PARTIAL_MATCH: 7,
+            CONTENT_MATCH: 3,
+            CONTENT_START_BONUS: 2,
+            TYPE_CHAPTER: 5,
+            TYPE_HEADING: 3,
+            TYPE_KEYWORD: 4,
+            TYPE_DEFAULT: 1
+        };
+        
         // Localization strings
         this.i18n = {
             noResults: document.documentElement.lang === 'ja' ? 
@@ -93,7 +116,7 @@ class SearchManager {
         this.addCommonTerms(searchData);
         
         this.searchData = searchData;
-        console.log('Search data loaded:', this.searchData.length, 'items');
+        this.debugLog('Search data loaded:', this.searchData.length, 'items');
     }
 
     addCurrentPageContent(searchData) {
@@ -109,7 +132,7 @@ class SearchManager {
                 
                 // Try to get some content after the heading
                 if (nextElement && nextElement.tagName === 'P') {
-                    contentText += ' ' + nextElement.textContent.substring(0, 150);
+                    contentText += ' ' + nextElement.textContent.substring(0, this.SEARCH_CONFIG.CONTENT_PREVIEW_LENGTH);
                 }
                 
                 searchData.push({
@@ -124,9 +147,10 @@ class SearchManager {
             const paragraphs = pageContent.querySelectorAll('p');
             paragraphs.forEach((p, index) => {
                 const text = p.textContent.trim();
-                if (text.length > 20) { // Only include substantial paragraphs
+                if (text.length > this.SEARCH_CONFIG.MIN_PARAGRAPH_LENGTH) {
                     searchData.push({
-                        title: text.substring(0, 50) + (text.length > 50 ? '...' : ''),
+                        title: text.substring(0, this.SEARCH_CONFIG.TITLE_PREVIEW_LENGTH) + 
+                               (text.length > this.SEARCH_CONFIG.TITLE_PREVIEW_LENGTH ? '...' : ''),
                         url: window.location.pathname,
                         content: text,
                         type: 'content'
@@ -218,11 +242,11 @@ class SearchManager {
         // Debounce search
         this.searchTimeout = setTimeout(() => {
             this.performSearch(query);
-        }, 150);
+        }, this.SEARCH_CONFIG.DEBOUNCE_DELAY);
     }
 
     performSearch(query) {
-        if (!query || query.length < 1) {
+        if (!query || query.length < this.SEARCH_CONFIG.MIN_SEARCH_LENGTH) {
             this.hideResults();
             return;
         }
@@ -255,46 +279,46 @@ class SearchManager {
                 
                 // Exact title start match (highest priority)
                 if (titleLower.startsWith(lowerQuery)) {
-                    score += 20;
+                    score += this.SCORES.TITLE_START_MATCH;
                 }
                 // Exact title match
                 else if (titleMatch) {
-                    score += 10;
+                    score += this.SCORES.TITLE_EXACT_MATCH;
                 }
                 // Partial title match
                 else if (partialTitleMatch) {
-                    score += 7;
+                    score += this.SCORES.TITLE_PARTIAL_MATCH;
                 }
                 
                 // Content match bonus
                 if (contentMatch) {
-                    score += 3;
+                    score += this.SCORES.CONTENT_MATCH;
                     // Bonus for content that starts with query
                     if (contentLower.startsWith(lowerQuery)) {
-                        score += 2;
+                        score += this.SCORES.CONTENT_START_BONUS;
                     }
                 }
                 
                 // Type-based scoring
                 switch (item.type) {
                     case 'chapter':
-                        score += 5;
+                        score += this.SCORES.TYPE_CHAPTER;
                         break;
                     case 'heading':
-                        score += 3;
+                        score += this.SCORES.TYPE_HEADING;
                         break;
                     case 'keyword':
-                        score += 4;
+                        score += this.SCORES.TYPE_KEYWORD;
                         break;
                     default:
-                        score += 1;
+                        score += this.SCORES.TYPE_DEFAULT;
                 }
 
                 results.push({
                     ...item,
                     score: score,
                     highlightedTitle: this.highlightText(item.title, query),
-                    highlightedContent: item.content ? this.highlightText(item.content.substring(0, 150), query) : null
+                    highlightedContent: item.content ? this.highlightText(item.content.substring(0, this.SEARCH_CONFIG.CONTENT_PREVIEW_LENGTH), query) : null
                 });
             }
         });
@@ -305,7 +329,7 @@ class SearchManager {
                 return b.score - a.score;
             }
             return a.title.localeCompare(b.title);
-        }).slice(0, 10); // Increase to 10 results
+        }).slice(0, this.SEARCH_CONFIG.MAX_RESULTS);
     }
 
     highlightText(text, query) {
@@ -322,7 +346,7 @@ class SearchManager {
     }
 
     displayResults(results, query) {
-        console.log('Displaying search results:', results.length, 'for query:', query);
+        this.debugLog('Displaying search results:', results.length, 'for query:', query);
         
         if (!results.length) {
             this.searchResults.innerHTML = `
@@ -416,6 +440,14 @@ class SearchManager {
         const div = document.createElement('div');
         div.textContent = text;
         return div.innerHTML;
+    }
+
+    debugLog(...args) {
+        // Only log in development mode (when console is available and hostname is localhost)
+        if (typeof console !== 'undefined' && console.log && 
+            (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+            console.log('[SearchManager]', ...args);
+        }
     }
 
     // Public API
