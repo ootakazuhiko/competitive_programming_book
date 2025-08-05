@@ -300,8 +300,9 @@ a:hover {
 /* Search */
 .search-container {
     position: relative;
-    max-width: 400px;
-    width: 100%;
+    max-width: 200px;
+    width: 200px;
+    margin-right: 0.75rem;
 }
 
 .search-input {
@@ -492,7 +493,16 @@ a:hover {
     }
     
     .header-center {
-        display: none;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* Mobile search adjustments */
+    .search-container {
+        max-width: 150px;
+        width: 150px;
+        margin-right: 0.5rem;
     }
     
     /* Mobile-specific improvements */
