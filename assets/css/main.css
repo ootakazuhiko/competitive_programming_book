@@ -357,14 +357,6 @@ a:hover {
     display: none; /* Hidden by default on desktop */
 }
 
-@media (max-width: 1024px) {
-    .sidebar-toggle {
-        display: flex !important; /* Show on tablet and mobile */
-        align-items: center;
-        justify-content: center;
-    }
-}
-
 .sidebar-toggle:hover,
 .theme-toggle:hover {
     background: var(--bg-secondary);
@@ -426,9 +418,11 @@ a:hover {
 }
 
 @media (max-width: 1024px) {
-    /* Show hamburger menu for tablets and below */
-    .sidebar-toggle {
-        display: flex !important;
+    /* Show hamburger menu for tablets and below - higher specificity without !important */
+    .book-header .sidebar-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     /* Hide desktop sidebar, enable mobile CSS-only version */
