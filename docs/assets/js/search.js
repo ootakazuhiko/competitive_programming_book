@@ -12,6 +12,15 @@ class SearchManager {
         this.currentResultIndex = -1;
         this.searchTimeout = null;
         
+        // Localization strings
+        this.i18n = {
+            noResults: document.documentElement.lang === 'ja' ? 
+                '「{query}」の検索結果はありません' : 
+                'No results found for "{query}"',
+            chapter: document.documentElement.lang === 'ja' ? '章' : 'Chapter',
+            section: document.documentElement.lang === 'ja' ? '節' : 'Section'
+        };
+        
         this.init();
     }
 
@@ -183,14 +192,16 @@ class SearchManager {
     }
 
     escapeRegex(string) {
-        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        // Escape special regex characters for safe string matching
+        const specialChars = /[.*+?^${}()|[\]\\]/g;
+        return string.replace(specialChars, '\\$&');
     }
 
     displayResults(results, query) {
         if (!results.length) {
             this.searchResults.innerHTML = `
                 <div class="search-no-results">
-                    「${this.escapeHtml(query)}」の検索結果はありません
+                    ${this.i18n.noResults.replace('{query}', this.escapeHtml(query))}
                 </div>
             `;
             this.showResults();
@@ -205,7 +216,7 @@ class SearchManager {
                 <div class="search-result-title">${result.highlightedTitle}</div>
                 ${result.highlightedContent && result.highlightedContent !== result.highlightedTitle ? 
                     `<div class="search-result-content">${result.highlightedContent}...</div>` : ''}
-                <div class="search-result-type">${result.type === 'chapter' ? '章' : '節'}</div>
+                <div class="search-result-type">${result.type === 'chapter' ? this.i18n.chapter : this.i18n.section}</div>
             </a>
         `).join('');
 
@@ -289,64 +300,14 @@ class SearchManager {
     }
 }
 
-// CSS for search result styling
-const searchStyles = `
-    .search-result-title {
-        font-weight: 500;
-        margin-bottom: 4px;
-    }
-    
-    .search-result-content {
-        font-size: 0.875rem;
-        color: var(--color-text-secondary);
-        margin-bottom: 4px;
-        line-height: 1.4;
-    }
-    
-    .search-result-type {
-        font-size: 0.75rem;
-        color: var(--color-text-muted);
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-    
-    .search-result-item {
-        padding: var(--space-3) var(--space-4);
-        display: block;
-        border-bottom: 1px solid var(--color-border-light);
-        transition: background-color 0.15s ease;
-    }
-    
-    .search-result-item:hover,
-    .search-result-item.search-highlighted {
-        background-color: var(--color-bg-secondary);
-    }
-    
-    .search-result-item:last-child {
-        border-bottom: none;
-    }
-    
-    .search-result-item mark {
-        background-color: var(--color-primary);
-        color: white;
-        padding: 1px 3px;
-        border-radius: 2px;
-        font-weight: 500;
-    }
-    
-    .search-no-results {
-        padding: var(--space-4);
-        text-align: center;
-        color: var(--color-text-secondary);
-        font-size: var(--font-size-sm);
-        font-style: italic;
-    }
-`;
-
-// Inject search styles
-const styleSheet = document.createElement('style');
-styleSheet.textContent = searchStyles;
-document.head.appendChild(styleSheet);
+// Load search CSS if not already present
+if (!document.querySelector('link[href*="search.css"]')) {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = document.querySelector('link[href*="main.css"]')?.href.replace('main.css', 'search.css') || 
+                '/assets/css/search.css';
+    document.head.appendChild(link);
+}
 
 // Initialize search manager when DOM is ready
 if (document.readyState === 'loading') {
