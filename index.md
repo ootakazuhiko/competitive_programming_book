@@ -10,6 +10,10 @@ layout: book
 
 > Scratchから次のステップへ - 楽しく学ぶ競技プログラミングの世界
 
+<div style="text-align: center; margin: 2em 0;">
+  <img src="{{ '/cover.png' | relative_url }}" alt="中学生向け競技プログラミング入門書 表紙" style="max-width: 400px; width: 100%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+</div>
+
 ## 📖 概要
 
 本書は、Scratchでのプログラミング経験がある中学生を対象とした、競技プログラミング入門書です。AtCoderを通じた実践的な学習により、プログラミングスキルを体系的に向上させ、将来のキャリア形成に役立つ基盤を構築します。
