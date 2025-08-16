@@ -56,6 +56,14 @@ layout: book
 
 ---
 
+## 📄 ライセンス
+
+本書はCreative Commons BY-NC-SA 4.0ライセンスで公開されています。
+
+🔓 教育・研究・個人学習での利用は自由ですが、💼 商用利用には事前許諾が必要です。[詳細なライセンス条件](https://github.com/ootakazuhiko/competitive_programming_book/blob/main/LICENSE.md)
+
+---
+
 **著者:** ITDO Inc.（株式会社アイティードゥ）  
 **バージョン:** 1.0.0  
 **最終更新:** 2025-07-31
