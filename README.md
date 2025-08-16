@@ -98,7 +98,19 @@
 
 ## 📄 ライセンス
 
-MIT License
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+本書は **Creative Commons BY-NC-SA 4.0** の下で公開されています。
+
+### 🔓 自由な利用
+- 非営利目的での利用・改変・再配布が可能
+- 教育機関での利用歓迎
+- 個人学習での自由な活用
+
+### 💼 商用利用
+商用利用には事前の許諾が必要です。詳細は [LICENSE.md](LICENSE.md) をご確認ください。
+
+**お問い合わせ：** [ootakazuhiko@gmail.com](mailto:ootakazuhiko@gmail.com)
 
 ## 👥 著者
 
