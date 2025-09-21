@@ -1,10 +1,3 @@
-<!-- 
-本章は「中学生向け競技プログラミング入門書」の一部であり、
-CC BY-NC-SA 4.0ライセンスの下で提供されます。
-商用利用は事前許諾が必要です。
-詳細：../../LICENSE.md
--->
-
 ---
 title: "第7章：ABC A・B問題を攻略しよう"
 layout: book
@@ -19,6 +12,13 @@ exercises:
   - { level: A, text: "条件分岐の基本", link: "https://atcoder.jp/contests/abc081/tasks/abc081_a" }
   - { level: B, text: "反復処理の基本", link: "https://atcoder.jp/contests/abc081/tasks/abc081_b" }
 ---
+
+<!-- 
+本章は「中学生向け競技プログラミング入門書」の一部であり、
+CC BY-NC-SA 4.0ライセンスの下で提供されます。
+商用利用は事前許諾が必要です。
+詳細：../../LICENSE.md
+-->
 
 # 第7章：ABC A・B問題を攻略しよう
 
