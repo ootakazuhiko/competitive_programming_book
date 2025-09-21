@@ -16,26 +16,25 @@
         searchResults = document.getElementById('search-results');
     }
     
-    // Build search index from page content
-    function buildSearchIndex() {
-        // In a real implementation, this would be generated at build time
-        // For now, we'll create a simple index from current page
+    // Build search index (remote JSON with local fallback)
+    async function buildSearchIndex() {
+        try {
+            const base = document.documentElement.getAttribute('data-baseurl') || '';
+            const resp = await fetch(`${base}/assets/search-index.json`, { cache: 'no-store' });
+            if (resp.ok) {
+                const data = await resp.json();
+                searchIndex = data.map((item, i) => ({ id: `remote-${i}`, title: item.title, content: item.content, url: item.url }));
+                return;
+            }
+        } catch (_) {}
+        // Fallback: build from current page
         const content = document.querySelector('.page-content');
         if (!content) return;
-        
-        // Get all headings and paragraphs
         const elements = content.querySelectorAll('h1, h2, h3, h4, h5, h6, p');
-        
         elements.forEach((el, index) => {
             const text = el.textContent.trim();
             if (text) {
-                searchIndex.push({
-                    id: `search-result-${index}`,
-                    title: el.tagName.startsWith('H') ? text : text.substring(0, 50) + '...',
-                    content: text,
-                    element: el,
-                    type: el.tagName.toLowerCase()
-                });
+                searchIndex.push({ id: `local-${index}`, title: el.tagName.startsWith('H') ? text : text.substring(0, 50) + '...', content: text, element: el });
             }
         });
     }
@@ -72,7 +71,7 @@
                 const highlightedSnippet = highlightText(snippet, query);
                 
                 return `
-                    <div class="search-result-item" data-id="${result.id}">
+                    <div class="search-result-item" data-id="${result.id}" data-url="${escapeHtml(result.url || '')}">
                         <div class="search-result-title">${highlightedTitle}</div>
                         <div class="search-result-snippet">${highlightedSnippet}</div>
                     </div>
@@ -132,17 +131,17 @@
         
         const id = resultItem.dataset.id;
         const result = searchIndex.find(item => item.id === id);
-        
-        if (result && result.element) {
-            hideResults();
-            searchInput.value = '';
+        if (!result) return;
+        hideResults();
+        searchInput.value = '';
+        if (result.url) {
+            window.location.href = result.url;
+            return;
+        }
+        if (result.element) {
             result.element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            
-            // Highlight the element temporarily
             result.element.classList.add('search-highlight');
-            setTimeout(() => {
-                result.element.classList.remove('search-highlight');
-            }, 2000);
+            setTimeout(() => { result.element.classList.remove('search-highlight'); }, 2000);
         }
     }
     
