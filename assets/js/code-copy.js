@@ -1,17 +1,26 @@
 // Add copy buttons to code blocks
 (function() {
   'use strict';
+  function findBlocks() {
+    const blocks = [];
+    document.querySelectorAll('div.highlight pre > code, pre > code').forEach(code => {
+      blocks.push(code);
+    });
+    return blocks;
+  }
+
   function addButtons() {
-    const blocks = document.querySelectorAll('pre > code');
+    const blocks = findBlocks();
     blocks.forEach(code => {
-      const pre = code.parentElement;
+      const pre = code.closest('pre');
       if (pre.dataset.copyBound) return;
       pre.dataset.copyBound = '1';
 
       const wrapper = document.createElement('div');
       wrapper.className = 'codeblock-wrapper';
-      pre.parentNode.insertBefore(wrapper, pre);
-      wrapper.appendChild(pre);
+      const container = pre.parentElement.classList.contains('highlight') ? pre.parentElement : pre.parentNode;
+      container.parentNode.insertBefore(wrapper, container);
+      wrapper.appendChild(container);
 
       const btn = document.createElement('button');
       btn.className = 'copy-button';
@@ -54,4 +63,3 @@
     addButtons();
   }
 })();
-
