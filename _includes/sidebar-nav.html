@@ -17,8 +17,7 @@
     </div>
 
     {% assign nav = site.data.navigation %}
-    {% if nav %}
-      {% if nav.chapters %}
+    {% if nav and nav.chapters %}
       <div class="toc-section">
         <h3 class="toc-section-title">目次</h3>
         <ul class="toc-list">
@@ -29,9 +28,24 @@
           {% endfor %}
         </ul>
       </div>
+    {% else %}
+      {%- comment -%} Fallback: auto-generate from pages when data missing {%- endcomment -%}
+      {% assign pages = site.pages | where_exp: "p", "p.url contains '/src/'" | sort: 'order' %}
+      {% if pages and pages.size > 0 %}
+      <div class="toc-section">
+        <h3 class="toc-section-title">目次</h3>
+        <ul class="toc-list">
+          {% for p in pages %}
+          <li class="toc-item toc-chapter">
+            <a href="{{ p.url | relative_url }}" class="toc-link {% if page.url == p.url %}active{% endif %}">{{ p.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
       {% endif %}
+    {% endif %}
 
-      {% if nav.appendices and nav.appendices.size > 0 %}
+    {% if nav and nav.appendices and nav.appendices.size > 0 %}
       <div class="toc-section">
         <h3 class="toc-section-title">付録</h3>
         <ul class="toc-list">
@@ -42,7 +56,6 @@
           {% endfor %}
         </ul>
       </div>
-      {% endif %}
     {% endif %}
   </div>
 
