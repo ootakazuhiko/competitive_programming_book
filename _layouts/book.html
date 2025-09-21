@@ -6,6 +6,11 @@
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
     <meta name="author" content="{{ site.author | escape }}">
     
+    {% comment %}
+    Inject jekyll-seo-tag for richer SEO/OG/Twitter metadata.
+    {% endcomment %}
+    {% seo %}
+    
     <title>{% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
     
     <!-- Preconnect to external domains -->
@@ -150,6 +155,7 @@
     <!-- JavaScript enabled for search and theme functionality -->
     <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/code-copy.js' | relative_url }}"></script>
     
     <!-- Production CSS for sidebar functionality -->
     <style>
