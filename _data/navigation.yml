@@ -1,0 +1,32 @@
+introduction:
+  - title: この本について
+    path: /
+
+chapters:
+  - title: 第1章：競技プログラミングの世界
+    path: /src/chapter-introduction/
+  - title: 第2章：AtCoderへの第一歩
+    path: /src/chapter-environment-setup/
+  - title: 第3章：プログラミング環境を整えよう
+    path: /src/chapter-programming-environment/
+  - title: 第4章：入出力処理を完全マスター
+    path: /src/chapter-input-output/
+  - title: 第5章：基本アルゴリズムの道具箱
+    path: /src/chapter-basic-algorithms/
+  - title: 第6章：データ構造を理解して活用しよう
+    path: /src/chapter-basic-data-structures/
+  - title: 第7章：ABC A・B問題を攻略しよう
+    path: /src/chapter-abc-problems/
+  - title: 第8章：問題解決プロセスを身につけよう
+    path: /src/chapter-problem-solving/
+  - title: 第9章：エラーと上手に付き合おう
+    path: /src/chapter-debugging/
+  - title: 第10章：コンテストに参加してみよう
+    path: /src/chapter-contest-participation/
+  - title: 第11章：仲間と一緒に成長しよう
+    path: /src/chapter-community/
+  - title: 第12章：未来への道筋を描こう
+    path: /src/chapter-future-career/
+
+appendices: []
+
