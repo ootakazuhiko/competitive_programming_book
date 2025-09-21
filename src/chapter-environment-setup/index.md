@@ -1,15 +1,15 @@
+---
+title: "第2章：AtCoderへの第一歩"
+layout: book
+order: 2
+---
+
 <!-- 
 本章は「中学生向け競技プログラミング入門書」の一部であり、
 CC BY-NC-SA 4.0ライセンスの下で提供されます。
 商用利用は事前許諾が必要です。
 詳細：../../LICENSE.md
 -->
-
----
-title: "第2章：AtCoderへの第一歩"
-layout: book
-order: 2
----
 
 # 第2章：AtCoderへの第一歩
 

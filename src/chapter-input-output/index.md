@@ -1,10 +1,3 @@
-<!-- 
-本章は「中学生向け競技プログラミング入門書」の一部であり、
-CC BY-NC-SA 4.0ライセンスの下で提供されます。
-商用利用は事前許諾が必要です。
-詳細：../../LICENSE.md
--->
-
 ---
 title: "第4章：入出力処理を完全マスター"
 layout: book
@@ -22,6 +15,13 @@ exercises:
   - { level: A, text: "桁の和の判定", link: "https://atcoder.jp/contests/abc080/tasks/abc080_a" }
   - { level: B, text: "ユニーク要素数", link: "https://atcoder.jp/contests/abc085/tasks/abc085_b" }
 ---
+
+<!-- 
+本章は「中学生向け競技プログラミング入門書」の一部であり、
+CC BY-NC-SA 4.0ライセンスの下で提供されます。
+商用利用は事前許諾が必要です。
+詳細：../../LICENSE.md
+-->
 
 # 第4章：入出力処理を完全マスター
 

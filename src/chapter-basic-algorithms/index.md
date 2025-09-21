@@ -1,10 +1,3 @@
-<!-- 
-本章は「中学生向け競技プログラミング入門書」の一部であり、
-CC BY-NC-SA 4.0ライセンスの下で提供されます。
-商用利用は事前許諾が必要です。
-詳細：../../LICENSE.md
--->
-
 ---
 title: "第5章：基本アルゴリズムの道具箱"
 layout: book
@@ -20,6 +13,13 @@ exercises:
   - { level: B, text: "ソートを用いた実装", link: "https://atcoder.jp/contests/abc085/tasks/abc085_b" }
   - { level: B, text: "貪欲的な選択", link: "https://atcoder.jp/contests/abc085/tasks/abc085_c" }
 ---
+
+<!-- 
+本章は「中学生向け競技プログラミング入門書」の一部であり、
+CC BY-NC-SA 4.0ライセンスの下で提供されます。
+商用利用は事前許諾が必要です。
+詳細：../../LICENSE.md
+-->
 
 # 第5章：基本アルゴリズムの道具箱
 
