@@ -1,0 +1,30 @@
+<hr>
+<section class="chapter-footer">
+  {% if page.checklist %}
+  <h2>学習チェックリスト</h2>
+  <ul>
+    {% for item in page.checklist %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if page.pitfalls %}
+  <h2>よくある落とし穴</h2>
+  <ul>
+    {% for item in page.pitfalls %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+  {% if page.exercises %}
+  <h2>演習</h2>
+  <ul>
+    {% for ex in page.exercises %}
+    <li><strong>{{ ex.level }}</strong>: {{ ex.text }}{% if ex.link %} — <a href="{{ ex.link }}" target="_blank" rel="noopener">AtCoder</a>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>
+

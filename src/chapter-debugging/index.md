@@ -9,6 +9,14 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 title: "第9章：エラーと上手に付き合おう"
 layout: book
 order: 9
+checklist:
+  - 構文/実行/論理エラーを切り分けられる
+  - ログ・一時出力で原因特定できる
+pitfalls:
+  - 例外メッセージを読まない
+  - データ境界の未チェック
+exercises:
+  - { level: A, text: "典型バグの修正", link: "https://atcoder.jp/contests/abc049/tasks/abc049_a" }
 ---
 
 # 第9章：エラーと上手に付き合おう

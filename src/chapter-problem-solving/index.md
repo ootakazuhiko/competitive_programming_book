@@ -9,6 +9,14 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 title: "第8章：問題解決プロセスを身につけよう"
 layout: book
 order: 8
+checklist:
+  - 入力→計画→実装→検証の流れを実践できる
+  - サンプルから反例を作れる
+pitfalls:
+  - 計画無しで書き始める
+  - サンプルに寄せすぎる
+exercises:
+  - { level: A, text: "実装前の手順書き", link: "https://atcoder.jp/contests/abc086/tasks/abc086_a" }
 ---
 
 # 第8章：問題解決プロセスを身につけよう

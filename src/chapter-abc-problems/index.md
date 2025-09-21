@@ -9,6 +9,15 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 title: "第7章：ABC A・B問題を攻略しよう"
 layout: book
 order: 7
+checklist:
+  - A/Bの典型パターンを説明できる
+  - 制約から解法を選べる
+pitfalls:
+  - 問題文の読み落とし
+  - サンプル通過に合わせたハードコード
+exercises:
+  - { level: A, text: "条件分岐の基本", link: "https://atcoder.jp/contests/abc081/tasks/abc081_a" }
+  - { level: B, text: "反復処理の基本", link: "https://atcoder.jp/contests/abc081/tasks/abc081_b" }
 ---
 
 # 第7章：ABC A・B問題を攻略しよう
