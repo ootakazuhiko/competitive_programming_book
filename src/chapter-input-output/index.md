@@ -9,6 +9,18 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 title: "第4章：入出力処理を完全マスター"
 layout: book
 order: 4
+checklist:
+  - 標準入力/出力の基本を説明できる
+  - 数値/文字列/配列など入力形式の扱いに慣れる
+  - 出力フォーマット（小数/空白/改行）を制御できる
+pitfalls:
+  - 入力末尾の改行・空白の扱いミス
+  - 出力の余計な空白/改行
+  - 半角/全角や大小文字の取り違え
+exercises:
+  - { level: A, text: "四則演算の基礎", link: "https://atcoder.jp/contests/abc086/tasks/abc086_a" }
+  - { level: A, text: "桁の和の判定", link: "https://atcoder.jp/contests/abc080/tasks/abc080_a" }
+  - { level: B, text: "ユニーク要素数", link: "https://atcoder.jp/contests/abc085/tasks/abc085_b" }
 ---
 
 # 第4章：入出力処理を完全マスター

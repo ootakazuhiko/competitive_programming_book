@@ -9,6 +9,16 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 title: "第5章：基本アルゴリズムの道具箱"
 layout: book
 order: 5
+checklist:
+  - 全探索/条件分岐/ソート/貪欲の適用場面を説明できる
+  - 計算量の目安を見積もれる
+pitfalls:
+  - 二重/三重ループの境界条件ミス
+  - ソート順や安定性の取り違え
+exercises:
+  - { level: A, text: "二重ループでペアの和を数える", link: "https://atcoder.jp/contests/abc144/tasks/abc144_b" }
+  - { level: B, text: "ソートを用いた実装", link: "https://atcoder.jp/contests/abc085/tasks/abc085_b" }
+  - { level: B, text: "貪欲的な選択", link: "https://atcoder.jp/contests/abc085/tasks/abc085_c" }
 ---
 
 # 第5章：基本アルゴリズムの道具箱
