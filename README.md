@@ -118,6 +118,27 @@
 - Email: knowledge@itdo.jp
 - GitHub: [@itdojp](https://github.com/itdojp)
 
+## 公開方法（GitHub Pages）
+
+本リポジトリは GitHub Pages で公開しています。
+
+推奨設定（プロジェクトPages）:
+- Source: Deploy from a branch
+- Branch: `main` / folder: `/ (root)`
+- Jekyll: 有効（`.nojekyll` は不要）
+
+注意:
+- ルートにある `index.md` をホームとして使用し、`_layouts/book.html` のレイアウトが適用されます。
+- 旧 `index.html` は削除済み（重複回避のため）。
+
+## トラブルシューティング
+
+- 章ページにレイアウトが適用されない:
+  - `_layouts/book.html` と `_includes/sidebar-nav.html` が存在するか確認
+  - 各章の front matter に `layout: book` が含まれているか確認
+  - GitHub Pages の公開元が `main / root` か確認
+  - ブラウザキャッシュをクリアして再読み込み
+
 ## 🤝 貢献
 
 本書の改善にご協力いただける方は、以下の方法でご参加ください：
