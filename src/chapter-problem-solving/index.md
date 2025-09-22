@@ -93,22 +93,23 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 **時間**: 2–3分
 {% endcapture %}
 {% include panel.html type="plan" title="🧪 サンプル分析" content=s3a %}
-│ ✅ サンプル分析のポイント：                  │
-│ • 入力から出力への変換過程を手動で追跡       │
-│ • なぜその出力になるのか理論的に理解         │
-│ • 解法の検証（他のケースでも成り立つか）     │
-│ • エッジケースの動作も推測                  │
-│                                           │
-│ 🧠 思考プロセス：                          │
-│ 1. サンプル入力を実際に処理してみる          │
-│ 2. 中間過程の値を確認                      │
-│ 3. 出力に至る論理を把握                    │
-│ 4. 一般化できるアルゴリズムを導出           │
-│                                           │
-│ 💡 完了の目安：                            │
-│ 「このアルゴリズムで間違いなく解ける」       │
-│ という確信が持てれば第3段階完了             │
-└─────────────────────────────────────────────┘
+{% capture sample_points %}
+• 入力→出力の変換過程を手で追う  
+• なぜその出力になるかを説明できる  
+• 他ケースでも成り立つか検証  
+• エッジケースを推測
+{% endcapture %}
+{% include panel.html type="steps" title="サンプル分析のポイント" content=sample_points %}
+
+{% capture sample_think %}
+1) サンプル入力を実際に処理  
+2) 中間値を確認  
+3) 出力に至る論理を把握  
+4) 一般化できるアルゴリズムを導出
+{% endcapture %}
+{% include panel.html type="info" title="思考プロセス" content=sample_think %}
+
+{% include panel.html type="info" title="完了の目安" content="このアルゴリズムで間違いなく解ける、と確信できたら第3段階完了" %}
 ```
 
 ### 問題文読解の実践テクニック
@@ -330,28 +331,24 @@ else:
 {% include panel.html type="steps" title="段階3：仮説検証" content=a3 %}
 
 🎯 段階4：実装準備
-┌─────────────────────────────────────────────┐
-│ アルゴリズム確定：                          │
-│ 1. 配列を読み込む                          │
-│ 2. 各要素のソート順位（ランク）を計算        │
-│ 3. 順位を配列として出力                    │
-│                                           │
-│ 実装方針：                                 │
-│ • 値と元の位置をペアにしてソート            │
-│ • ソート後の順序からランクを決定            │
-│ • 元の位置に戻してランクを配置              │
-│                                           │
-│ 疑似コード：                               │
-│ 1. arr = input_array()                    │
-│ 2. indexed_arr = [(arr[i], i) for i in range(n)]│
-│ 3. indexed_arr.sort()                     │
-│ 4. ranks = [0] * n                        │
-│ 5. for rank, (value, original_index) in enumerate(indexed_arr):│
-│      ranks[original_index] = rank + 1     │
-│ 6. print(ranks)                           │
-│                                           │
-│ ✅ 実装準備完了！                          │
-└─────────────────────────────────────────────┘
+{% capture algo_confirm %}
+1) 配列を読み込む  
+2) 要素のランクを計算（値と元位置のペアをソート）  
+3) 元の位置にランクを配置して出力
+{% endcapture %}
+{% include panel.html type="steps" title="アルゴリズム確定" content=algo_confirm %}
+
+<figure class="pseudocode">
+<figcaption>疑似コード</figcaption>
+<pre><code class="language-python">arr = input_array()
+indexed_arr = [(arr[i], i) for i in range(n)]
+indexed_arr.sort()
+ranks = [0] * n
+for rank, (value, original_index) in enumerate(indexed_arr):
+    ranks[original_index] = rank + 1
+print(ranks)
+</code></pre>
+</figure>
 ```
 
 ## 8.3 解法を段階的に組み立てよう
@@ -546,28 +543,21 @@ Stage 3: データ構造
 【図8-9：効果的な実装計画書の作成方法】
 
 📋 実装計画書テンプレート
-┌─────────────────────────────────────────────┐
-│ 🎯 問題：[問題番号と簡潔な説明]               │
-│                                           │
-│ 📥 入力設計：                              │
-│ • 行1: [形式と変数名]                      │
-│ • 行2: [形式と変数名]                      │
-│ • 制約: [重要な制約条件]                   │
-│                                           │
-│ 📤 出力設計：                              │
-│ • [出力内容と形式]                         │
-│ • [注意事項：改行、区切り文字など]          │
-│                                           │
-│ 🔢 変数設計：                              │
-│ • 入力用変数: [型と名前と用途]              │
-│ • 作業用変数: [型と名前と用途]              │
-│ • 出力用変数: [型と名前と用途]              │
-│                                           │
-│ 🏗️ 関数設計：                              │
-│ • main(): メイン処理                       │
-│ • [関数名](): [機能説明]                   │
-│                                           │
-│ 📋 処理手順：                              │
+{% capture design_head %}
+🎯 問題: [問題番号と簡潔な説明]
+{% endcapture %}
+{% include panel.html type="info" title="問題の整理" content=design_head %}
+
+{% capture design_io %}
+入力設計: 行1/行2…／必要な制約  
+出力設計: 出力内容と形式（改行・区切り）
+{% endcapture %}
+{% include panel.html type="steps" title="入出力設計" content=design_io %}
+
+{% capture design_vars %}
+変数設計: 入力用／作業用／出力用の役割と型
+{% endcapture %}
+{% include panel.html type="info" title="変数・関数設計" content=design_vars %}
 │ 1. [ステップ1の詳細]                       │
 │ 2. [ステップ2の詳細]                       │
 │ 3. [...]                                  │
