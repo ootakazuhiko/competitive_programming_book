@@ -204,46 +204,33 @@ Thonnyは、プログラミング教育のために特別に設計されたエ�
 
 Thonnyに慣れてきたら、VSCodeへの移行を検討しよう。世界中のプロのプログラマーが使っている本格的なエディタだ。
 
-```
 【図3-10：VSCode セットアップ完全ガイド】
 
-📥 基本インストール
-┌─────────────────────────────────────────────┐
-│ 1. https://code.visualstudio.com にアクセス │
-│ 2. "Download for Windows/Mac/Linux" をクリック│
-│ 3. インストーラーを実行                     │
-│ 4. 初回起動時に日本語化の設定               │
-└─────────────────────────────────────────────┘
+{% capture vs_install %}
+📥 基本インストール  
+1) https://code.visualstudio.com にアクセス  
+2) Download をクリック  
+3) インストーラーを実行  
+4) 初回起動時に日本語化
+{% endcapture %}
+{% include panel.html type="steps" title="インストール" content=vs_install %}
 
-🔌 必須拡張機能のインストール
-┌─────────────────────────────────────────────┐
-│ Python Extension Pack:                      │
-│ • Python言語サポート                       │
-│ • IntelliSense（コード補完）               │
-│ • Linting（エラー検出）                    │
-│ • Debugging（デバッグ機能）                │
-│                                           │
-│ その他の有用な拡張機能：                    │
-│ • Bracket Pair Colorizer（括弧の色分け）   │
-│ • indent-rainbow（インデントの視覚化）     │
-│ • Code Runner（ワンクリック実行）           │
-└─────────────────────────────────────────────┘
+{% capture vs_ext %}
+🔌 必須拡張機能  
+• Python Extension Pack（言語/補完/Lint/デバッグ）  
+• 便利: Bracket Pair Colorizer, indent-rainbow, Code Runner
+{% endcapture %}
+{% include panel.html type="info" title="拡張機能" content=vs_ext %}
 
-⚙️ 競技プログラミング向け設定
-┌─────────────────────────────────────────────┐
-│ 設定項目：                                  │
-│ • ファイル自動保存：有効                    │
-│ • フォントサイズ：14px（見やすさ重視）       │
-│ • テーマ：Dark+（目に優しい）               │
-│ • 行番号表示：有効                         │
-│ • ミニマップ表示：無効（画面スペース確保）   │
-│                                           │
-│ ショートカットキー設定：                    │
-│ • F5：プログラム実行                       │
-│ • Ctrl+S：ファイル保存                     │
-│ • Ctrl+/：コメントアウト                   │
-└─────────────────────────────────────────────┘
-```
+{% capture vs_settings %}
+⚙️ 推奨設定  
+• 自動保存: 有効  
+• フォント: 14px  
+• テーマ: Dark+  
+• 行番号: 有効／ミニマップ: 無効  
+• ショートカット: F5 実行, Ctrl+S 保存, Ctrl+/ コメント
+{% endcapture %}
+{% include panel.html type="steps" title="競プロ向け設定" content=vs_settings %}
 
 ### 開発環境の基本操作
 
