@@ -92,6 +92,11 @@ Step 5: temp = 0 → ループ終了
 
 ### より複雑な全探索の例
 
+<figure>
+  <img src="{{ '/assets/diagrams/generated/ch5-bruteforce.svg' | relative_url }}" alt="図5-x：全探索の基本フロー">
+  <figcaption>図5-x：全探索の基本フロー</figcaption>
+</figure>
+
 ```
 【図5-5：二重ループによる全探索】
 
