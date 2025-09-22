@@ -559,6 +559,8 @@ Stage 3: データ構造
 {% endcapture %}
 {% include panel.html type="info" title="変数・関数設計" content=design_vars %}
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 {% capture impl_steps %}
 1) 実装手順を箇条書きにする  
 2) 先に入力/出力の枠を作る  
@@ -570,6 +572,7 @@ Stage 3: データ構造
 
 {% include panel.html type="steps" title="テスト計画" content="サンプル→境界→自作ケースの順で確認" %}
 =======
+>>>>>>> origin/main
 │ 1. [ステップ1の詳細]                       │
 │ 2. [ステップ2の詳細]                       │
 │ 3. [...]                                  │
