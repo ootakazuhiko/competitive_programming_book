@@ -405,6 +405,57 @@ a:hover {
     color: var(--primary-color);
 }
 
+/* Panels (callouts) */
+.panel {
+    margin: 1rem 0;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+}
+.panel__title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.panel__list { margin: 0.25rem 0 0; padding-left: 1.25rem; }
+.panel--plan { border-left: 4px solid #3b82f6; }
+.panel--steps { border-left: 4px solid #10b981; }
+.panel--warn { border-left: 4px solid #f59e0b; }
+.panel--info { border-left: 4px solid #6366f1; }
+[data-theme="dark"] .panel { background: var(--bg-secondary); }
+
+/* Pseudocode figure */
+.pseudocode {
+    margin: 1.25rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+}
+.pseudocode figcaption {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.pseudocode pre {
+    margin: 0;
+    padding: 1rem 1.25rem;
+    background: transparent;
+}
+[data-theme="dark"] .pseudocode { background: var(--bg-secondary); }
+
+/* Tables */
+table.table-compact {
+    font-size: 0.95rem;
+}
+table.table-striped tbody tr:nth-child(odd) {
+    background: var(--bg-secondary);
+}
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 /* Mobile Styles */
 .sidebar-overlay {
     display: none;

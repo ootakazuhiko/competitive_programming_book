@@ -1,0 +1,17 @@
+<div class="panel panel--{{ include.type | default: 'info' }}">
+  {% if include.title %}
+  <div class="panel__title">{{ include.title }}</div>
+  {% endif %}
+  <div class="panel__body">
+    {% if include.content %}
+      {{ include.content | markdownify }}
+    {% elsif include.items %}
+      <ul class="panel__list">
+        {% for it in include.items %}
+        <li>{{ it }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div>
+
