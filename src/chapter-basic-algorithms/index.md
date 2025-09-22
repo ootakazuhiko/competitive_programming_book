@@ -316,111 +316,99 @@ gcd(a, b) = gcd(b, a % b)（b=0で停止）
 
 ```
 【図5-10：GCDの実装と応用】
-
-基本実装：
-┌─────────────────────────────────────────────┐
-│ def gcd(a, b):                                │
-│     while b:                                  │
-│         a, b = b, a % b                       │
-│     return a                                  │
-│                                             │
-│ # 使用例                                     │
-│ print(gcd(48, 18))  # 6                      │
-│ print(gcd(17, 13))  # 1（互いに素）           │
-└─────────────────────────────────────────────┘
-
-Python標準ライブラリの利用：
-┌─────────────────────────────────────────────┐
-│ import math                                   │
-│ print(math.gcd(48, 18))  # 6                 │
-│                                             │
-│ # 複数の数のGCD                              │
-│ from functools import reduce                  │
-│ numbers = [48, 18, 24]                       │
-│ result = reduce(math.gcd, numbers)            │
-│ print(result)  # 6                           │
-└─────────────────────────────────────────────┘
-
-LCM（最小公倍数）の計算：
-┌─────────────────────────────────────────────┐
-│ def lcm(a, b):                                │
-│     return (a * b) // gcd(a, b)               │
-│                                             │
-│ # 公式：lcm(a, b) × gcd(a, b) = a × b        │
-│ print(lcm(48, 18))  # 144                    │
-└─────────────────────────────────────────────┘
-
-実際の問題での活用例：
-┌─────────────────────────────────────────────┐
-│ # 「分数 a/b を約分せよ」                    │
-│ a, b = map(int, input().split())              │
-│ g = math.gcd(a, b)                           │
-│ print(a // g, b // g)                        │
-│                                             │
-│ # 「2つの周期がa, bの現象が同時に起こるのは？」│
-│ a, b = map(int, input().split())              │
-│ print(lcm(a, b))                             │
-└─────────────────────────────────────────────┘
 ```
+
+<figure class="pseudocode">
+  <figcaption>基本実装（ユークリッドの互除法）</figcaption>
+  <pre><code class="language-python">def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+print(gcd(48, 18))  # 6
+print(gcd(17, 13))  # 1（互いに素）</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>標準ライブラリの利用</figcaption>
+  <pre><code class="language-python">import math
+print(math.gcd(48, 18))  # 6
+
+from functools import reduce
+numbers = [48, 18, 24]
+print(reduce(math.gcd, numbers))  # 6</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>LCM（最小公倍数）と活用例</figcaption>
+  <pre><code class="language-python">def lcm(a, b):
+    return (a * b) // gcd(a, b)  # lcm*gcd = a*b
+
+print(lcm(48, 18))  # 144
+
+# 分数 a/b の約分
+a, b = map(int, input().split())
+g = math.gcd(a, b)
+print(a // g, b // g)
+
+# 2つの周期が同時に起こる時刻
+a, b = map(int, input().split())
+print(lcm(a, b))</code></pre>
+</figure>
 
 ### 素数判定と素数の性質
 
 ```
 【図5-11：効率的な素数判定】
-
-素朴な素数判定：
-┌─────────────────────────────────────────────┐
-│ def is_prime_simple(n):                       │
-│     if n < 2:                                 │
-│         return False                          │
-│     for i in range(2, n):                     │
-│         if n % i == 0:                        │
-│             return False                      │
-│     return True                               │
-│                                             │
-│ # 問題：nが大きいと非常に遅い（O(n)）          │
-└─────────────────────────────────────────────┘
-
-改良版（√nまでチェック）：
-┌─────────────────────────────────────────────┐
-│ import math                                   │
-│                                             │
-│ def is_prime(n):                              │
-│     if n < 2:                                 │
-│         return False                          │
-│     if n == 2:                                │
-│         return True                           │
-│     if n % 2 == 0:                            │
-│         return False                          │
-│                                             │
-│     for i in range(3, int(math.sqrt(n)) + 1, 2):│
-│         if n % i == 0:                        │
-│             return False                      │
-│     return True                               │
-│                                             │
-│ # 計算量：O(√n) - 大幅な高速化                │
-└─────────────────────────────────────────────┘
-
-素数の性質を活用した問題例：
-┌─────────────────────────────────────────────┐
-│ # 「N以下の素数の個数を求める」               │
-│ n = int(input())                              │
-│ count = 0                                     │
-│ for i in range(2, n + 1):                     │
-│     if is_prime(i):                           │
-│         count += 1                            │
-│ print(count)                                  │
-│                                             │
-│ # 「Nを2つの素数の和で表せるか？」            │
-│ n = int(input())                              │
-│ for i in range(2, n // 2 + 1):                │
-│     if is_prime(i) and is_prime(n - i):       │
-│         print(f"{n} = {i} + {n - i}")         │
-│         break                                 │
-│ else:                                         │
-│     print("表せません")                       │
-└─────────────────────────────────────────────┘
 ```
+
+<figure class="pseudocode">
+  <figcaption>素朴な素数判定（O(n)）</figcaption>
+  <pre><code class="language-python">def is_prime_simple(n):
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>改良版：√n までチェック（O(√n)）</figcaption>
+  <pre><code class="language-python">import math
+
+def is_prime(n):
+    if n < 2:
+        return False
+    if n == 2:
+        return True
+    if n % 2 == 0:
+        return False
+    for i in range(3, int(math.sqrt(n)) + 1, 2):
+        if n % i == 0:
+            return False
+    return True</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>素数の性質の活用例</figcaption>
+  <pre><code class="language-python"># N 以下の素数の個数
+n = int(input())
+count = 0
+for i in range(2, n + 1):
+    if is_prime(i):
+        count += 1
+print(count)
+
+# N を2つの素数の和で表せるか
+n = int(input())
+for i in range(2, n // 2 + 1):
+    if is_prime(i) and is_prime(n - i):
+        print(f"{n} = {i} + {n - i}")
+        break
+else:
+    print("表せません")</code></pre>
+</figure>
 
 ### 数学的な性質の活用
 
