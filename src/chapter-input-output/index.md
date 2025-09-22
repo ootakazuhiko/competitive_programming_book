@@ -96,28 +96,30 @@ print(type(n)) # <class 'int'>
 
 ```
 【図4-5：文字列と数値の違いによる動作の差】
-
-int()変換なしの場合：
-┌─────────────────────────────────────────────┐
-│ n = input()  # nは"42"（文字列）              │
-│ print(n + n)  # "42" + "42" = "4242"（文字列結合）│
-│ print(n * 2)  # "42" * 2 = "4242"（文字列繰り返し）│
-│ print(n > 5)  # エラー！文字列と数値は比較できない│
-└─────────────────────────────────────────────┘
-
-int()変換ありの場合：
-┌─────────────────────────────────────────────┐
-│ n = int(input())  # nは42（整数）             │
-│ print(n + n)  # 42 + 42 = 84（数値加算）      │
-│ print(n * 2)  # 42 * 2 = 84（数値乗算）       │
-│ print(n > 5)  # 42 > 5 = True（数値比較）     │
-└─────────────────────────────────────────────┘
-
-🎯 覚えるポイント：
-• input()は必ず文字列を返す
-• 数値として計算したい場合は必ずint()で変換
-• 文字列のままだと予期しない動作になる
 ```
+
+<figure class="pseudocode">
+  <figcaption>int()変換なしの場合</figcaption>
+  <pre><code class="language-python">n = input()  # nは"42"（文字列）
+print(n + n)   # "42" + "42" = "4242"（結合）
+print(n * 2)   # "42" * 2 = "4242"（繰り返し）
+print(n &gt; 5)   # エラー：文字列と数値は比較不可</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>int()変換ありの場合</figcaption>
+  <pre><code class="language-python">n = int(input())  # nは42（整数）
+print(n + n)   # 84（数値加算）
+print(n * 2)   # 84（数値乗算）
+print(n &gt; 5)   # True（数値比較）</code></pre>
+</figure>
+
+{% capture remember_int %}
+• input() は必ず文字列を返す  
+• 数値として計算したい場合は `int()` で変換  
+• 文字列のままだと予期しない動作になる
+{% endcapture %}
+{% include panel.html type="info" title="🎯 覚えるポイント" content=remember_int %}
 
 ### 小数を読み込む場合
 
@@ -125,32 +127,33 @@ int()変換ありの場合：
 
 ```
 【図4-6：浮動小数点数の入力処理】
-
-基本的な浮動小数点数の読み込み：
-┌─────────────────────────────────────────────┐
-│ # 入力例：3.14                               │
-│ pi = float(input())                          │
-│ print(pi)        # 3.14                     │
-│ print(pi * 2)    # 6.28                     │
-│ print(type(pi))  # <class 'float'>          │
-└─────────────────────────────────────────────┘
-
-整数か小数か分からない場合：
-┌─────────────────────────────────────────────┐
-│ # 問題文で「実数」と書かれている場合          │
-│ x = float(input())                           │
-│                                             │
-│ # 入力が"5"でも"5.0"でも正しく処理される      │
-│ # float("5") → 5.0                          │
-│ # float("5.0") → 5.0                        │
-│ # float("3.14") → 3.14                      │
-└─────────────────────────────────────────────┘
-
-💡 使い分けの指針：
-• 問題文で「整数」→ int()を使用
-• 問題文で「実数」「小数」→ float()を使用
-• 迷った場合は問題文のサンプル入力を確認
 ```
+
+<figure class="pseudocode">
+  <figcaption>基本的な浮動小数点数の読み込み</figcaption>
+  <pre><code class="language-python"># 入力例: 3.14
+pi = float(input())
+print(pi)        # 3.14
+print(pi * 2)    # 6.28
+print(type(pi))  # &lt;class 'float'&gt;</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>整数か小数か分からない場合（実数）</figcaption>
+  <pre><code class="language-python"># 問題文で「実数」と書かれている場合
+x = float(input())
+
+# 入力が"5"でも"5.0"でも正しく処理される
+# float("5") → 5.0
+# float("5.0") → 5.0
+# float("3.14") → 3.14</code></pre>
+</figure>
+
+{% capture float_tips %}
+• 「整数」→ `int()`、 「実数/小数」→ `float()`  
+• 迷ったらサンプル入力を確認
+{% endcapture %}
+{% include panel.html type="steps" title="💡 使い分けの指針" content=float_tips %}
 
 ## 4.3 複数の数字を読み込もう
 
