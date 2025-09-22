@@ -1,0 +1,27 @@
+name: Guard against new ASCII box-drawing
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan changed files for box-drawing chars
+        run: |
+          set -e
+          files=$(jq -r '.pull_request.number' <(curl -sSL $GITHUB_API_URL/repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER) >/dev/null 2>&1 || true)
+          # Fallback to git diff if API not available
+          CHANGED=$(git diff --name-only origin/${{ github.base_ref }}...${{ github.head_ref }} | grep '^src/' || true)
+          if [ -z "$CHANGED" ]; then echo "No changed src files"; exit 0; fi
+          echo "$CHANGED" | while read f; do
+            if rg -n "[┌┐└┘│]|─{3,}" "$f"; then
+              echo "::error file=$f::Box-drawing characters detected. Please use panels/pseudocode/tables or SVG diagrams.";
+              EXIT=1
+            fi
+          done
+          test -z "$EXIT"
+        env:
+          PR_NUMBER: ${{ github.event.number }}
