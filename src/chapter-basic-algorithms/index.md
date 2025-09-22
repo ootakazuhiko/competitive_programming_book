@@ -519,90 +519,79 @@ print(parts)</code></pre>
 
 ```
 【図5-14：回文判定の様々な実装】
-
-基本的な回文判定：
-┌─────────────────────────────────────────────┐
-│ def is_palindrome_basic(s):                   │
-│     return s == s[::-1]                       │
-│                                             │
-│ # テスト                                     │
-│ print(is_palindrome_basic("racecar"))  # True│
-│ print(is_palindrome_basic("hello"))    # False│
-└─────────────────────────────────────────────┘
-
-大文字小文字を無視する回文判定：
-┌─────────────────────────────────────────────┐
-│ def is_palindrome_ignore_case(s):             │
-│     s = s.lower()                             │
-│     return s == s[::-1]                       │
-│                                             │
-│ print(is_palindrome_ignore_case("Racecar"))  # True│
-│ print(is_palindrome_ignore_case("RaceCar"))  # True│
-└─────────────────────────────────────────────┘
-
-空白・記号を無視する回文判定：
-┌─────────────────────────────────────────────┐
-│ def is_palindrome_advanced(s):                │
-│     # アルファベットのみを抽出               │
-│     clean = ''.join(c.lower() for c in s if c.isalpha())│
-│     return clean == clean[::-1]               │
-│                                             │
-│ print(is_palindrome_advanced("A man, a plan, a canal: Panama"))│
-│ # True（amanaplanacanalpanama）              │
-└─────────────────────────────────────────────┘
-
-効率的な回文判定（大きな文字列用）：
-┌─────────────────────────────────────────────┐
-│ def is_palindrome_efficient(s):               │
-│     left, right = 0, len(s) - 1               │
-│     while left < right:                       │
-│         if s[left] != s[right]:               │
-│             return False                      │
-│         left += 1                             │
-│         right -= 1                            │
-│     return True                               │
-│                                             │
-│ # メモリ使用量が少なく、途中で判定終了可能    │
-└─────────────────────────────────────────────┘
 ```
+
+<figure class="pseudocode">
+  <figcaption>基本：スライスで反転比較</figcaption>
+  <pre><code class="language-python">def is_palindrome_basic(s):
+    return s == s[::-1]
+
+print(is_palindrome_basic("racecar"))  # True
+print(is_palindrome_basic("hello"))    # False</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>大小無視・記号無視</figcaption>
+  <pre><code class="language-python">def is_palindrome_ignore_case(s):
+    s = s.lower()
+    return s == s[::-1]
+
+def is_palindrome_advanced(s):
+    clean = ''.join(c.lower() for c in s if c.isalpha())
+    return clean == clean[::-1]
+
+print(is_palindrome_ignore_case("Racecar"))  # True
+print(is_palindrome_advanced("A man, a plan, a canal: Panama"))  # True</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>効率的：両端からの比較</figcaption>
+  <pre><code class="language-python">def is_palindrome_efficient(s):
+    left, right = 0, len(s) - 1
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        left += 1; right -= 1
+    return True  # 途中終了可能で効率的</code></pre>
+</figure>
 
 ### 文字列の辞書順ソート
 
 ```
 【図5-15：文字列のソートと順序】
-
-基本的な文字列ソート：
-┌─────────────────────────────────────────────┐
-│ words = ["banana", "apple", "cherry", "date"] │
-│ words.sort()                                  │
-│ print(words)  # ['apple', 'banana', 'cherry', 'date']│
-│                                             │
-│ # 文字列の長さでソート                       │
-│ words.sort(key=len)                           │
-│ print(words)  # ['date', 'apple', 'banana', 'cherry']│
-│                                             │
-│ # 複合条件でソート（長さ→辞書順）             │
-│ words.sort(key=lambda x: (len(x), x))         │
-│ print(words)  # ['date', 'apple', 'banana', 'cherry']│
-└─────────────────────────────────────────────┘
-
-文字列の大小比較の理解：
-┌─────────────────────────────────────────────┐
-│ # 辞書順の比較                               │
-│ print("apple" < "banana")     # True         │
-│ print("Apple" < "apple")      # True（大文字が先）│
-│ print("a" < "aa")            # True          │
-│                                             │
-│ # 数値文字列の比較（注意が必要）              │
-│ print("10" < "2")            # True（文字列として）│
-│ print("10" < "02")           # False         │
-│                                             │
-│ # 数値として比較したい場合                   │
-│ numbers = ["10", "2", "1", "20"]              │
-│ numbers.sort(key=int)                         │
-│ print(numbers)  # ['1', '2', '10', '20']     │
-└─────────────────────────────────────────────┘
 ```
+
+<figure class="pseudocode">
+  <figcaption>基本の文字列ソート</figcaption>
+  <pre><code class="language-python">words = ["banana", "apple", "cherry", "date"]
+words.sort()
+print(words)  # ['apple', 'banana', 'cherry', 'date']
+
+# 長さでソート
+words.sort(key=len)
+print(words)
+
+# 複合条件（長さ→辞書順）
+words.sort(key=lambda x: (len(x), x))
+print(words)</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>大小比較の基礎と注意</figcaption>
+  <pre><code class="language-python"># 辞書順の比較
+print("apple" < "banana")
+print("Apple" < "apple")  # 大文字が先
+print("a" < "aa")
+
+# 数値文字列の比較（注意）
+print("10" < "2")   # True（文字列の比較）
+print("10" < "02")  # False
+
+# 数値として比較
+numbers = ["10", "2", "1", "20"]
+numbers.sort(key=int)
+print(numbers)</code></pre>
+</figure>
 
 ## 5.5 ソート（並び替え）を活用しよう
 
