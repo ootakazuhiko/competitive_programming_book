@@ -29,13 +29,10 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 
 【図8-1：問題文読解の3段階プロセス】
 
-```mermaid
-flowchart LR
-  A[第1段階: 全体把握] --> B[第2段階: 詳細理解]
-  B --> C[第3段階: 実装準備]
-  A:::s A:::s; B:::s; C:::s
-  classDef s fill:#eef,stroke:#99c,color:#111;
-```
+<figure>
+  <img src="{{ '/assets/diagrams/generated/ch8-3stage.svg' | relative_url }}" alt="図8-1：問題文読解の3段階プロセス">
+  <figcaption>図8-1：問題文読解の3段階プロセス</figcaption>
+</figure>
 
 {% capture s1a %}
 **目的**: 問題の全体像を掴む  

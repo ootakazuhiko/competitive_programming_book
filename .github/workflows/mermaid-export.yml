@@ -1,0 +1,31 @@
+name: Export Mermaid diagrams to SVG
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'assets/mermaid/**/*.mmd'
+      - '.github/workflows/mermaid-export.yml'
+  workflow_dispatch: {}
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: |
+          npm -g install @mermaid-js/mermaid-cli@10
+          mkdir -p assets/diagrams/generated
+          for f in $(find assets/mermaid -name '*.mmd'); do \
+            base=$(basename "$f" .mmd); \
+            mmdc -i "$f" -o "assets/diagrams/generated/${base}.svg" --backgroundColor white; \
+          done
+      - name: Commit generated SVG
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'assets/diagrams/generated/*.svg'
+          message: 'chore(diagrams): export Mermaid to SVG [skip ci]'
+          default_author: github_actions
+
