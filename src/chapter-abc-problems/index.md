@@ -663,31 +663,31 @@ print(len(set(diams)))</code></pre>
 {% include panel.html type="steps" title="💡 ポイント" content=mochi_points %}
 
 🔤 パターン3：文字列の高度な処理（約20%）
-┌─────────────────────────────────────────────┐
-│ 特徴：文字列の変換、パターンマッチング       │
-│                                           │
-│ 例：ABC071 B - Not Found                   │
-│ 問題：文字列Sに含まれない英小文字のうち、    │
-│       アルファベット順で最初のものを出力せよ。│
-│       全て含まれている場合は "None" を出力。 │
-│                                           │
-│ 入力例：atcoderregularcontest             │
-│ 出力例：b                                 │
-│                                           │
-│ 解法：                                     │
-│ s = input()                                │
-│ s_set = set(s)                             │
-│ for c in "abcdefghijklmnopqrstuvwxyz":     │
-│     if c not in s_set:                     │
-│         print(c)                           │
-│         exit()                             │
-│ print("None")                              │
-│                                           │
-│ 💡 ポイント：                              │
-│ • 集合を使った高速な存在確認                │
-│ • アルファベット順の効率的な走査            │
-│ • 早期リターンによる効率化                  │
-└─────────────────────────────────────────────┘
+{% capture notfound_desc %}
+特徴：文字列の変換・パターンマッチング  
+例：ABC071 B - Not Found  
+問題：文字列Sに含まれない英小文字のうち、アルファベット順で最初を出力（全て含むなら "None"）
+{% endcapture %}
+{% include panel.html type="info" title="文字列の欠損検索（Not Found）" content=notfound_desc %}
+
+<figure class="pseudocode">
+  <figcaption>実装（集合とアルファベット走査）</figcaption>
+  <pre><code class="language-python">s = input()
+s_set = set(s)
+for c in "abcdefghijklmnopqrstuvwxyz":
+    if c not in s_set:
+        print(c)
+        break
+else:
+    print("None")</code></pre>
+</figure>
+
+{% capture notfound_points %}
+• 集合で高速な存在確認  
+• アルファベット順で走査  
+• for-else で見つからない場合を処理
+{% endcapture %}
+{% include panel.html type="steps" title="💡 ポイント" content=notfound_points %}
 
 🧮 パターン4：数学・論理的思考（約15%）
 ┌─────────────────────────────────────────────┐
