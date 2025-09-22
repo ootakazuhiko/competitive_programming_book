@@ -600,54 +600,52 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 └─────────────────────────────────────────────┘
 
 📝 Stage 4: 疑似コード作成
-┌─────────────────────────────────────────────┐
-│ ```                                       │
-│ 1. S1, S2 を入力                          │
-│ 2. len1 = len(S1), len2 = len(S2)         │
-│ 3. dp = [[0] * (len2+1) for _ in range(len1+1)]│
-│ 4. max_length = 0                         │
-│ 5.                                        │
-│ 6. for i in range(1, len1+1):             │
-│ 7.     for j in range(1, len2+1):         │
-│ 8.         if S1[i-1] == S2[j-1]:         │
-│ 9.             dp[i][j] = dp[i-1][j-1] + 1│
-│ 10.            max_length = max(max_length, dp[i][j])│
-│ 11.        else:                          │
-│ 12.            dp[i][j] = 0               │
-│ 13.                                       │
-│ 14. print(max_length)                     │
-│ ```                                       │
-│                                           │
-│ サンプルでの動作確認：                      │
-│ S1="abcdef", S2="cdefgh"                   │
-│ i=3,j=1: 'c'=='c' → dp[3][1]=1            │
-│ i=4,j=2: 'd'=='d' → dp[4][2]=2            │
-│ i=5,j=3: 'e'=='e' → dp[5][3]=3            │
-│ i=6,j=4: 'f'=='f' → dp[6][4]=4            │
-│ max_length = 4 ✅                         │
-└─────────────────────────────────────────────┘
+
+<figure class="pseudocode">
+  <figcaption>最長共通部分文字列（DP）の疑似コード</figcaption>
+  <pre><code>1. S1, S2 を入力
+2. len1 = len(S1), len2 = len(S2)
+3. dp = [[0] * (len2+1) for _ in range(len1+1)]
+4. max_length = 0
+
+5. for i in range(1, len1+1):
+6.     for j in range(1, len2+1):
+7.         if S1[i-1] == S2[j-1]:
+8.             dp[i][j] = dp[i-1][j-1] + 1
+9.             max_length = max(max_length, dp[i][j])
+10.        else:
+11.            dp[i][j] = 0
+
+12. print(max_length)</code></pre>
+</figure>
+
+{% capture st4check %}
+サンプルでの動作確認  
+• S1="abcdef", S2="cdefgh"  
+• 一致が連続したときに長さが伸びる  
+• 最長値 max_length は 4 になる ✅
+{% endcapture %}
+{% include panel.html type="info" title="サンプル検証" content=st4check %}
 
 🔧 Stage 5: 実装とテスト戦略
-┌─────────────────────────────────────────────┐
-│ 実装順序：                                 │
-│ 1. 入力処理とDP表の初期化                  │
-│ 2. 二重ループの骨組み                      │
-│ 3. 文字比較と更新ロジック                  │
-│ 4. 最大値の追跡と出力                      │
-│                                           │
-│ テスト項目：                               │
-│ ✅ サンプルケースで正しい結果               │
-│ ✅ 同じ文字列同士の場合                    │
-│ ✅ 完全に異なる文字列の場合                 │
-│ ✅ 片方が空文字列の場合                    │
-│ ✅ 1文字の文字列の場合                     │
-│                                           │
-│ デバッグ支援：                             │
-│ • DP表の中身をprintで確認                  │
-│ • 各ステップでmax_lengthの値を確認          │
-│ • 文字比較の結果をログ出力                  │
-└─────────────────────────────────────────────┘
-```
+{% capture st5plan %}
+実装順序  
+1. 入力処理とDP表の初期化  
+2. 二重ループの骨組み  
+3. 文字比較と更新ロジック  
+4. 最大値の追跡と出力
+
+テスト項目  
+✅ サンプルで正しい結果  
+✅ 同じ文字列同士／完全に異なる文字列  
+✅ 片方が空文字列／1文字のケース
+
+デバッグ支援  
+• DP表の一部をprintで確認  
+• 各ステップで max_length を確認  
+• 文字比較のログ出力
+{% endcapture %}
+{% include panel.html type="plan" title="Stage 5: 実装とテスト" content=st5plan %}
 
 ## 8.4 コードを書く前に計画を立てよう
 
