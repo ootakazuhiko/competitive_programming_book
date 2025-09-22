@@ -424,6 +424,38 @@ a:hover {
 .panel--info { border-left: 4px solid #6366f1; }
 [data-theme="dark"] .panel { background: var(--bg-secondary); }
 
+/* Pseudocode figure */
+.pseudocode {
+    margin: 1.25rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+}
+.pseudocode figcaption {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.pseudocode pre {
+    margin: 0;
+    padding: 1rem 1.25rem;
+    background: transparent;
+}
+[data-theme="dark"] .pseudocode { background: var(--bg-secondary); }
+
+/* Tables */
+table.table-compact {
+    font-size: 0.95rem;
+}
+table.table-striped tbody tr:nth-child(odd) {
+    background: var(--bg-secondary);
+}
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 /* Mobile Styles */
 .sidebar-overlay {
     display: none;
