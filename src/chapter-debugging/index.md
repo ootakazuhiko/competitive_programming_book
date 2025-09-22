@@ -250,77 +250,79 @@ def calculate_average(numbers):
 
 最も厄介なのが論理エラーだ。プログラムは動くけれど、期待した結果にならない。これはプログラマーの考え方とコンピューターの動作にずれがあるときに起こる。
 
-```
 【図9-6：論理エラーの発見・修正プロセス】
 
-🕵️ 論理エラーの特徴
-┌─────────────────────────────────────────────┐
-│ • エラーメッセージが出ない                   │
-│ • プログラムは最後まで実行される             │
-│ • でも出力が期待と違う                      │
-│ • 一番発見が困難で修正に時間がかかる         │
-│                                           │
-│ 例：「配列の最大値を求める」プログラム        │
-│                                           │
-│ 🚨 バグのあるコード：                       │
-│ def find_max(arr):                         │
-│     max_val = 0           # ⚠️ 初期値が間違い│
-│     for num in arr:                        │
-│         if num > max_val:                  │
-│             max_val = num                  │
-│     return max_val                         │
-│                                           │
-│ # テスト                                   │
-│ print(find_max([3, 1, 4]))  # 期待:4, 実際:4 ✅│
-│ print(find_max([-1, -5, -2])) # 期待:-1, 実際:0 ❌│
-│                                           │
-│ 🐛 問題：全要素が負数の場合、初期値0が返される│
-└─────────────────────────────────────────────┘
+{% include panel.html type="info" title="論理エラーの特徴" content="エラーメッセージは出ない／最後まで実行される／出力が期待と違う／発見が難しく時間がかかる" %}
+
+例：「配列の最大値を求める」
+
+{% capture bug_code %}
+🚨 バグのあるコード
+```python
+def find_max(arr):
+    max_val = 0        # ⚠️ 初期値が問題
+    for num in arr:
+        if num > max_val:
+            max_val = num
+    return max_val
+
+# テスト
+print(find_max([3, 1, 4]))      # 期待:4, 実際:4 ✅
+print(find_max([-1, -5, -2]))   # 期待:-1, 実際:0 ❌
+```
+🐛 問題: 全要素が負数の時に 0 を返してしまう
+{% endcapture %}
+{% include panel.html type="steps" title="問題例" content=bug_code %}
 
 🔍 手動トレースによる原因発見
-┌─────────────────────────────────────────────┐
-│ 📝 find_max([-1, -5, -2])の動作を追跡：      │
-│                                           │
-│ Step 1: max_val = 0 で初期化               │
-│ Step 2: num = -1, -1 > 0? → False         │
-│ Step 3: num = -5, -5 > 0? → False         │
-│ Step 4: num = -2, -2 > 0? → False         │
-│ Step 5: return 0                          │
-│                                           │
-│ 💡 発見：初期値が0だと、負数が全て無視される  │
-│                                           │
-│ ✅ 修正版：                                │
-│ def find_max(arr):                         │
-│     max_val = arr[0]      # 最初の要素で初期化│
-│     for num in arr[1:]:   # 2番目から開始   │
-│         if num > max_val:                  │
-│             max_val = num                  │
-│     return max_val                         │
-└─────────────────────────────────────────────┘
+
+{% capture trace_steps %}
+📝 find_max([-1, -5, -2]) の追跡  
+Step 1: max_val = 0 で初期化  
+Step 2: num = -1, -1 > 0? → False  
+Step 3: num = -5, -5 > 0? → False  
+Step 4: num = -2, -2 > 0? → False  
+Step 5: return 0  
+
+💡 発見: 初期値が0だと、負数が全て無視される
+{% endcapture %}
+{% include panel.html type="steps" title="動作追跡" content=trace_steps %}
+
+{% capture fix_code %}
+✅ 修正版
+```python
+def find_max(arr):
+    max_val = arr[0]       # 最初の要素で初期化
+    for num in arr[1:]:    # 2番目から開始
+        if num > max_val:
+            max_val = num
+    return max_val
+```
+{% endcapture %}
+{% include panel.html type="steps" title="修正コード" content=fix_code %}
 
 🧪 境界値テストによる検証
-┌─────────────────────────────────────────────┐
-│ 🎯 テストケース設計：                       │
-│                                           │
-│ ✅ 正常ケース：                            │
-│ • [1, 2, 3, 4, 5] → 5                     │
-│ • [10, 5, 8] → 10                         │
-│                                           │
-│ ✅ 境界ケース：                            │
-│ • [5] → 5（単一要素）                      │
-│ • [-1, -2, -3] → -1（全負数）             │
-│ • [0, 0, 0] → 0（全ゼロ）                 │
-│                                           │
-│ ✅ 特殊ケース：                            │
-│ • [100, -50, 200] → 200（正負混在）        │
-│ • [5, 5, 5] → 5（同値）                   │
-│                                           │
-│ 💡 テストの考え方：                        │
-│ • 期待される動作ケース                     │
-│ • 想定外の入力パターン                     │
-│ • 数学的に特別な意味を持つ値                │
-└─────────────────────────────────────────────┘
-```
+
+{% capture test_design %}
+🎯 テストケース設計  
+
+✅ 正常ケース  
+• [1, 2, 3, 4, 5] → 5  
+• [10, 5, 8] → 10  
+
+✅ 境界ケース  
+• [5] → 5（単一要素）  
+• [-1, -2, -3] → -1（全負数）  
+• [0, 0, 0] → 0（全ゼロ）  
+
+✅ 特殊ケース  
+• [100, -50, 200] → 200（正負混在）  
+• [5, 5, 5] → 5（同値）  
+
+💡 テストの考え方  
+• 期待される動作ケース／想定外の入力／数学的に特別な値
+{% endcapture %}
+{% include panel.html type="steps" title="テスト設計" content=test_design %}
 
 ### 逆算チェックの技法
 
