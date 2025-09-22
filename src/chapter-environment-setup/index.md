@@ -27,48 +27,59 @@ AtCoderは他の競技プログラミングサイトと比べて、中学生の�
 
 **世界の中でのAtCoderの位置づけ**
 
-```
 【図2-3：世界の競技プログラミングサイト比較】
 
-🌍 世界規模                    🇯🇵 日本特化
-┌──────────────┐           ┌──────────────┐
-│ Codeforces      │           │ AtCoder       │
-│ (ロシア)         │           │ (日本)        │
-│                │           │               │
-│ 👑 世界最高峰     │    VS     │ 🎓 教育重視    │
-│ 🌐 英語のみ      │           │ 🗾 日本語対応   │
-│ 💪 上級者向け    │           │ 👶 初心者歓迎   │
-│ ⚡ 高速判定      │           │ 📚 詳細解説    │
-└──────────────┘           └──────────────┘
-        ↑                           ↑
-   🎯 将来の目標                🎯 今から始める場所
+{% capture world_sites_left %}
+🌍 世界規模（例: Codeforces）  
+• 世界最高峰・上級者向け  
+• 英語UI  
+• 高速な判定／多彩なラウンド
+{% endcapture %}
+{% include panel.html type="info" title="世界規模サイト" content=world_sites_left %}
 
-🔄 学習の流れ：
-AtCoderで基礎固め → 実力向上 → Codeforcesに挑戦
-```
+{% capture world_sites_right %}
+🇯🇵 日本特化（AtCoder）  
+• 教育重視・初心者歓迎  
+• 日本語UI  
+• 公式解説が充実
+{% endcapture %}
+{% include panel.html type="info" title="日本特化サイト" content=world_sites_right %}
+
+{% capture learning_flow %}
+🔄 学習の流れ  
+AtCoderで基礎固め → 実力向上 → Codeforcesに挑戦（将来の目標）
+{% endcapture %}
+{% include panel.html type="steps" title="学習パス（推奨）" content=learning_flow %}
 
 **AtCoderで何ができる？**
 
-```
 【図2-4：AtCoderでできることマップ】
 
-        🏠 AtCoderホーム
-           │
-    ┌──────┼──────────────────┐
-    │      │                  │
-    ▼      ▼                  ▼
-🏆 コンテスト  📚 過去問練習      👥 コミュニティ
-┌─────────┐ ┌─────────────┐   ┌─────────────┐
-│土日に開催  │ │いつでも利用可能 │   │他の参加者との│
-│リアルタイム│ │自分のペースで  │   │情報交換     │
-│他の人と競争│ │苦手分野を集中 │   │解法の議論    │
-│成績が反映  │ │的に練習可能   │   │友達作り     │
-└─────────┘ └─────────────┘   └─────────────┘
-    │           │                  │
-    ▼           ▼                  ▼
-📈 レーティング  💪 スキルアップ      🤝 ネットワーキング
-上昇            基礎から応用まで      将来の仲間発見
-```
+{% capture atcoder_map_contest %}
+🏆 コンテスト  
+• 土日に開催／リアルタイム  
+• 他の参加者と競争／成績反映
+{% endcapture %}
+{% include panel.html type="info" title="コンテスト" content=atcoder_map_contest %}
+
+{% capture atcoder_map_practice %}
+📚 過去問練習  
+• いつでも利用可能／自分のペース  
+• 苦手分野を集中的に練習
+{% endcapture %}
+{% include panel.html type="info" title="過去問練習" content=atcoder_map_practice %}
+
+{% capture atcoder_map_comm %}
+👥 コミュニティ  
+• 情報交換／解法の議論  
+• 仲間作り・ネットワーキング
+{% endcapture %}
+{% include panel.html type="info" title="コミュニティ" content=atcoder_map_comm %}
+
+{% capture atcoder_map_outcomes %}
+📈 レーティング上昇／💪 スキルアップ／🤝 ネットワーキング
+{% endcapture %}
+{% include panel.html type="steps" title="得られるもの" content=atcoder_map_outcomes %}
 
 ## 2.2 アカウントを作ってみよう
 
@@ -83,28 +94,14 @@ AtCoderで基礎固め → 実力向上 → Codeforcesに挑戦
 
 ### Step 1: AtCoderサイトにアクセス
 
-```
 【図2-6：AtCoderトップページへのアクセス】
 
-🌐 ブラウザを開く
-┌─────────────────────────────────┐
-│ https://atcoder.jp/                │  ← このURLを入力
-└─────────────────────────────────┘
-            ↓
-┌─────────────────────────────────┐
-│      AtCoderトップページ           │
-│  ┌─────────────────────────┐    │
-│  │     AtCoder              │    │  
-│  │  競技プログラミングサイト   │    │
-│  └─────────────────────────┘    │
-│                               │
-│  [ログイン] [新規登録] ← これをクリック│
-│                               │
-│  📊 最新のコンテスト情報           │
-│  👥 ユーザーランキング            │
-│  📚 練習問題                    │
-└─────────────────────────────────┘
-```
+{% capture access_steps %}
+1) ブラウザで `https://atcoder.jp/` を開く  
+2) トップ右上の「新規登録」または「ログイン」をクリック  
+3) 最新コンテスト情報や過去問にアクセス可能
+{% endcapture %}
+{% include panel.html type="steps" title="アクセス手順" content=access_steps %}
 
 ### Step 2-3: 新規登録とユーザー名設定
 
