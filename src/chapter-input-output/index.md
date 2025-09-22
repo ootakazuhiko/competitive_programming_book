@@ -59,7 +59,6 @@ AtCoderでは、この標準入力・標準出力を使って、自動的にプ�
 
 最もシンプルな入力処理から始めよう。1つの整数を読み込む処理だ。
 
-```
 【図4-4：単一数値入力の内部処理フロー】
 
 標準入力: "42\n"  ← \nは改行文字（見えない）
@@ -86,17 +85,13 @@ n = int(input())
 print(n)       # 42
 print(n * 2)   # 84
 print(type(n)) # <class 'int'>
-```
 </figure>
-```
 
 ### なぜint()が必要なのか
 
 この点は初心者がよく混乱するところだ。詳しく説明しよう：
 
-```
 【図4-5：文字列と数値の違いによる動作の差】
-```
 
 <figure class="pseudocode">
   <figcaption>int()変換なしの場合</figcaption>
@@ -125,9 +120,7 @@ print(n &gt; 5)   # True（数値比較）</code></pre>
 
 整数だけでなく、小数（浮動小数点数）を読み込む場合もある：
 
-```
 【図4-6：浮動小数点数の入力処理】
-```
 
 <figure class="pseudocode">
   <figcaption>基本的な浮動小数点数の読み込み</figcaption>
@@ -161,7 +154,6 @@ x = float(input())
 
 複数の数値が1行に書かれている場合の処理は、競技プログラミングで最もよく使うパターンだ。
 
-```
 【図4-7：複数数値入力の段階的処理】
 
 入力: "3 5 2\n"
@@ -181,13 +173,10 @@ a, b, c = map(int, input().split())
 パターン2：リストとして取得
 numbers = list(map(int, input().split()))
 # numbers = [3, 5, 2]（整数のリスト）
-```
 
 ### split()関数の詳細
 
-```
 【図4-8：split()関数の動作パターン】
-```
 
 <figure class="pseudocode">
   <figcaption>基本的な使い方</figcaption>
@@ -224,9 +213,7 @@ print(parts)  # ['1', '2', '3']</code></pre>
 
 ### 実践的な使い分け
 
-```
 【図4-10：複数入力の使い分けガイド】
-```
 
 <figure class="pseudocode">
   <figcaption>2–3個の値 → 個別変数（推奨）</figcaption>
@@ -275,7 +262,6 @@ print(f"要素数: {len(data)}")</code></pre>
 
 競技プログラミングでは「N個のデータが1行ずつ与えられる」というパターンが非常に多い。
 
-```
 【図4-11：N行入力処理の基本形】
 
 問題例：「N個の整数が1行ずつ与えられる」
@@ -301,15 +287,12 @@ for _ in range(n):        # N回繰り返し
 print(max(numbers))       # 最大値: 25
 print(sum(numbers))       # 合計: 48
 print(len(numbers))       # 個数: 3
-```
 </figure>
-```
 
 ### リスト内包表記による効率化
 
 Pythonには、より簡潔に書ける「リスト内包表記」という機能がある：
 
-```
 【図4-12：リスト内包表記の活用】
 
 基本形 → 内包表記への変換
@@ -323,7 +306,6 @@ n = int(input())
 numbers = []
 for _ in range(n):
     numbers.append(int(input()))
-```
 </figure>
 
 ✅ 内包表記（推奨）：
@@ -333,7 +315,6 @@ for _ in range(n):
 ```python
 n = int(input())
 numbers = [int(input()) for _ in range(n)]
-```
 </figure>
 
 さらなる応用例：
@@ -347,7 +328,6 @@ for _ in range(n):
     v = int(input())
     if v > 0:
         positive_nums.append(v)
-```
 </figure>
 
 <figure class="pseudocode">
@@ -357,14 +337,12 @@ for _ in range(n):
 n = int(input())
 points = [list(map(int, input().split())) for _ in range(n)]
 # 例: [[1, 2], [3, 4], [5, 6]]
-```
 </figure>
 
 💡 "_"（アンダースコア）の意味：
 • 変数名として"_"を使うのは「値を使わない」という慣習
 • range(n)のカウンタは必要だが、実際の値は使わない場合
 • "i"でも動作するが、"_"の方がPython的で推奨される
-```
 
 ### 複数行・複数列データの処理
 
@@ -394,7 +372,6 @@ for _ in range(n):
 print(matrix[0][0])  # 1行1列目: 1
 print(matrix[1][2])  # 2行3列目: 7
 print(matrix[2][3])  # 3行4列目: 12
-```
 </figure>
 
 内包表記版：
@@ -404,7 +381,6 @@ print(matrix[2][3])  # 3行4列目: 12
 ```python
 n, m = map(int, input().split())
 matrix = [list(map(int, input().split())) for _ in range(n)]
-```
 </figure>
 
 実用例：
@@ -422,7 +398,6 @@ for row in matrix:
     for val in row:
         max_val = max(max_val, val)
 print(f"最大値: {max_val}")
-```
 </figure>
 
 ## 4.5 文字列入力を扱おう
@@ -431,9 +406,7 @@ print(f"最大値: {max_val}")
 
 数値だけでなく、文字列を扱う問題も多い。文字列の場合は`int()`変換は不要だ。
 
-```
 【図4-14：文字列入力の処理方法】
-```
 
 <figure class="pseudocode">
   <figcaption>基本的な文字列入力</figcaption>
@@ -467,9 +440,7 @@ for i, char in enumerate(s):
 
 ### 文字列と数値の混在入力
 
-```
 【図4-15：混在データの処理パターン】
-```
 
 <figure class="pseudocode">
   <figcaption>名前と年齢（空白区切り）</figcaption>
@@ -506,9 +477,7 @@ for i, name in enumerate(names):
 
 ### 文字列操作の実践例
 
-```
 【図4-16：競技プログラミングでよく使う文字列操作】
-```
 
 <figure class="pseudocode">
   <figcaption>パターン1：文字の出現回数カウント</figcaption>
@@ -560,9 +529,7 @@ print("_".join(words))        # "hell0_w0rld"</code></pre>
 
 ### 問題別出力パターン
 
-```
 【図4-18：競技プログラミングでよくある出力パターン】
-```
 
 <figure class="pseudocode">
   <figcaption>パターン1: リストの要素を1行で出力</figcaption>
@@ -621,9 +588,7 @@ print(f"{result:.3f}")  # 2.333</code></pre>
 
 ### 出力でよくあるミス
 
-```
 【図4-19：出力の典型的な間違いパターン】
-```
 
 {% capture mistake1 %}
 ❌ 余分な文字・説明の出力  
@@ -669,9 +634,7 @@ print(f"{result:.3f}")  # 2.333</code></pre>
 
 この章では、競技プログラミングにおける入出力処理のすべてを学んだ。
 
-```
 【図4-20：この章で身につけたスキル】
-```
 
 {% capture ch4_gained %}
 ✅ 単一/複数数値の読み込み  
