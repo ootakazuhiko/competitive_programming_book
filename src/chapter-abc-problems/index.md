@@ -519,75 +519,67 @@ print(snow_depth)</code></pre>
 ```
 【図7-7：ABC122 A問題「Double Helix」完全解法】
 
-📋 問題文
-┌─────────────────────────────────────────────┐
-│ DNAは A, T, G, C の4つの塩基からなります。     │
-│ A と T、G と C はそれぞれ対応します。          │
-│ 1文字の塩基 b が与えられるので、対応する塩基を │
-│ 出力してください。                          │
-│                                           │
-│ 対応関係：                                 │
-│ A ↔ T, G ↔ C                              │
-│                                           │
-│ 入力例：A                                 │
-│ 出力例：T                                 │
-└─────────────────────────────────────────────┘
+{% capture dna_problem %}
+DNAは A, T, G, C の4つの塩基からなる。  
+A と T、G と C はそれぞれ対応する。  
+1文字の塩基 b が与えられるので、対応する塩基を出力せよ。  
+対応関係: A↔T, G↔C  
+入力例: A → 出力例: T
+{% endcapture %}
+{% include panel.html type="info" title="📋 問題文（ABC122 A）" content=dna_problem %}
 
-🔍 問題分析
-┌─────────────────────────────────────────────┐
-│ 理解したこと：                              │
-│ • 4つの文字（A, T, G, C）の対応関係         │
-│ • A → T, T → A, G → C, C → G              │
-│ • 1文字入力して、対応する1文字を出力         │
-│                                           │
-│ 解法の選択肢：                              │
-│ 1. if-elif文で場合分け                     │
-│ 2. 辞書を使って対応関係を定義               │
-│ 3. 文字列のreplaceを活用                   │
-└─────────────────────────────────────────────┘
+{% capture dna_analysis %}
+理解したこと  
+• 4文字（A,T,G,C）の相互対応  
+• 入力1文字に対し、対応する1文字を出力
 
-⌨️ 複数の実装パターン
-┌─────────────────────────────────────────────┐
-│ 解法1: if-elif文（最も分かりやすい）         │
-│ b = input()                                │
-│ if b == 'A':                               │
-│     print('T')                             │
-│ elif b == 'T':                             │
-│     print('A')                             │
-│ elif b == 'G':                             │
-│     print('C')                             │
-│ elif b == 'C':                             │
-│     print('G')                             │
-│                                           │
-│ 解法2: 辞書を使用（スマート）                │
-│ b = input()                                │
-│ pair = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}│
-│ print(pair[b])                             │
-│                                           │
-│ 解法3: 対応を利用した数学的手法              │
-│ b = input()                                │
-│ dna = "ATGC"                               │
-│ pairs = "TACG"                             │
-│ print(pairs[dna.index(b)])                 │
-│                                           │
-│ 💡 A問題では解法1が最も確実で推奨            │
-└─────────────────────────────────────────────┘
+解法の選択肢  
+1) if-elif で場合分け  
+2) 辞書で対応表を定義  
+3) 文字列のインデックス対応
+{% endcapture %}
+{% include panel.html type="steps" title="🔍 問題分析" content=dna_analysis %}
 
-🧪 全パターンでの検証
-┌─────────────────────────────────────────────┐
-│ テストケース：                              │
-│ • 入力：A → 出力：T ✅                      │
-│ • 入力：T → 出力：A ✅                      │
-│ • 入力：G → 出力：C ✅                      │
-│ • 入力：C → 出力：G ✅                      │
-│                                           │
-│ 各解法での動作確認：                        │
-│ 解法1: 各条件分岐が正しく動作               │
-│ 解法2: 辞書のキー検索が正常                 │
-│ 解法3: インデックス検索が正常               │
-│                                           │
-│ 💡 どれも正解だが、if文が最も理解しやすい    │
-└─────────────────────────────────────────────┘
+<figure class="pseudocode">
+  <figcaption>解法1: if-elif（分かりやすい）</figcaption>
+  <pre><code class="language-python">b = input()
+if b == 'A':
+    print('T')
+elif b == 'T':
+    print('A')
+elif b == 'G':
+    print('C')
+elif b == 'C':
+    print('G')</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>解法2: 辞書を使用（スマート）</figcaption>
+  <pre><code class="language-python">b = input()
+pair = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'}
+print(pair[b])</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>解法3: インデックス対応</figcaption>
+  <pre><code class="language-python">b = input()
+dna = "ATGC"
+pairs = "TACG"
+print(pairs[dna.index(b)])</code></pre>
+</figure>
+
+{% include panel.html type="info" title="💡 推奨" content="A問題では解法1が最も確実で推奨" %}
+
+{% capture dna_tests %}
+テストケース  
+• A → T、T → A、G → C、C → G（全てOK）
+
+各解法の確認  
+• 解法1: 条件分岐が正しく動作  
+• 解法2: 辞書のキー検索が正常  
+• 解法3: インデックス検索が正常
+{% endcapture %}
+{% include panel.html type="steps" title="🧪 検証" content=dna_tests %}
 ```
 
 ## 7.3 B問題の特徴と対策
@@ -598,26 +590,23 @@ A問題に慣れてきたら、次はB問題に挑戦しよう。B問題はA問�
 【図7-8：A問題からB問題への段階的ステップアップ】
 
 📊 難易度・要求スキルの比較
-┌─────────────────────────────────────────────┐
-│              A問題        B問題              │
-│ 配点         100-200点    200-400点          │
-│ 解答時間     5-10分       10-20分            │
-│ データサイズ  小（～100）   中（～1000）       │
-│ 必要スキル   基本文法      基本アルゴリズム    │
-│ 思考の深さ   1-2段階      2-4段階            │
-│ 実装の複雑さ  簡単         やや複雑           │
-└─────────────────────────────────────────────┘
+|            | A問題         | B問題         |
+|------------|---------------|---------------|
+| 配点       | 100–200点     | 200–400点     |
+| 解答時間   | 5–10分        | 10–20分       |
+| データサイズ | 小（〜100）    | 中（〜1000）    |
+| 必要スキル | 基本文法       | 基本アルゴリズム |
+| 思考の深さ | 1–2段階       | 2–4段階        |
+| 実装の複雑さ | 簡単          | やや複雑        |
 
 🎯 B問題で新たに求められるスキル
-┌─────────────────────────────────────────────┐
-│ ✅ 繰り返し処理の応用                       │
-│ ✅ リスト・配列操作の活用                    │
-│ ✅ 条件分岐の組み合わせ                     │
-│ ✅ 文字列の高度な処理                       │
-│ ✅ 簡単なアルゴリズム（ソート、探索）        │
-│ ✅ 数学的思考（最大公約数、素数など）        │
-│ ✅ 効率性への意識（計算量の考慮）            │
-└─────────────────────────────────────────────┘
+{% capture bskills %}
+✅ 繰り返し処理の応用／リスト・配列操作  
+✅ 条件分岐の組み合わせ／文字列の高度な処理  
+✅ 簡単なアルゴリズム（ソート・探索）  
+✅ 数学的思考（GCD・素数など）／計算量の意識
+{% endcapture %}
+{% include panel.html type="steps" title="B問題に向けて身につけたいスキル" content=bskills %}
 ```
 
 ### B問題の典型パターン分析
@@ -626,63 +615,52 @@ A問題に慣れてきたら、次はB問題に挑戦しよう。B問題はA問�
 【図7-9：ABC B問題の出題パターン（頻出順）】
 
 🔄 パターン1：繰り返し処理・シミュレーション（約40%）
-┌─────────────────────────────────────────────┐
-│ 特徴：ルールに従って複数回の処理を実行       │
-│                                           │
-│ 例：ABC083 B - Some Sums                   │
-│ 問題：1以上N以下の整数のうち、各桁の和が     │
-│       A以上B以下であるものの総和を求めよ。   │
-│                                           │
-│ 入力例：20 2 5                            │
-│ 出力例：84                                │
-│                                           │
-│ 解法：                                     │
-│ n, a, b = map(int, input().split())        │
-│ total = 0                                  │
-│ for i in range(1, n + 1):                  │
-│     digit_sum = sum(int(d) for d in str(i))│
-│     if a <= digit_sum <= b:                │
-│         total += i                         │
-│ print(total)                               │
-│                                           │
-│ 💡 ポイント：                              │
-│ • 全ての候補を調べる（全探索）              │
-│ • 条件判定の正確な実装                      │
-│ • 桁和計算の効率的な実装                   │
-└─────────────────────────────────────────────┘
+{% capture some_sums_desc %}
+特徴：ルールに従って複数回の処理を実行  
+例：ABC083 B - Some Sums  
+問題：1以上N以下の整数のうち、各桁の和がA以上B以下であるものの総和
+{% endcapture %}
+{% include panel.html type="info" title="繰り返し×条件の応用" content=some_sums_desc %}
+
+<figure class="pseudocode">
+  <figcaption>実装（桁和でフィルタ）</figcaption>
+  <pre><code class="language-python">n, a, b = map(int, input().split())
+total = 0
+for i in range(1, n + 1):
+    s = sum(int(d) for d in str(i))
+    if a <= s <= b:
+        total += i
+print(total)</code></pre>
+</figure>
+
+{% capture some_sums_points %}
+• 全候補を調べる（全探索）  
+• 条件判定を正確に  
+• 桁和の実装を簡潔に
+{% endcapture %}
+{% include panel.html type="steps" title="💡 ポイント" content=some_sums_points %}
 
 📊 パターン2：配列・リスト操作（約25%）
-┌─────────────────────────────────────────────┐
-│ 特徴：データの整理、ソート、検索、集計       │
-│                                           │
-│ 例：ABC085 B - Kagami Mochi                │
-│ 問題：N個のお餅の直径が与えられる。         │
-│       重ねられるお餅の段数を求めよ。        │
-│       （同じ直径は重ねられない）            │
-│                                           │
-│ 入力例：                                   │
-│ 4                                          │
-│ 10 8 8 6                                  │
-│ 出力例：3                                 │
-│                                           │
-│ 解法：                                     │
-│ n = int(input())                           │
-│ diameters = []                             │
-│ for _ in range(n):                         │
-│     diameters.append(int(input()))         │
-│ unique_diameters = set(diameters)          │
-│ print(len(unique_diameters))               │
-│                                           │
-│ # より簡潔に：                              │
-│ n = int(input())                           │
-│ diameters = [int(input()) for _ in range(n)]│
-│ print(len(set(diameters)))                 │
-│                                           │
-│ 💡 ポイント：                              │
-│ • 重複除去にsetを活用                      │
-│ • リスト内包表記の活用                     │
-│ • 問題の本質（ユニーク要素数）の理解        │
-└─────────────────────────────────────────────┘
+{% capture mochi_desc %}
+特徴：データの整理・ソート・集計  
+例：ABC085 B - Kagami Mochi  
+問題：N個の直径から重ねられる段数（ユニーク直径数）を求める
+{% endcapture %}
+{% include panel.html type="info" title="ソート/重複除去の応用" content=mochi_desc %}
+
+<figure class="pseudocode">
+  <figcaption>実装（ユニーク直径の個数）</figcaption>
+  <pre><code class="language-python">n = int(input())
+diams = [int(input()) for _ in range(n)]
+print(len(set(diams)))</code></pre>
+</figure>
+
+{% capture mochi_points %}
+• 重複除去に set を活用  
+• リスト内包表記で簡潔に  
+• 問題の本質＝ユニーク要素数
+{% endcapture %}
+{% include panel.html type="steps" title="💡 ポイント" content=mochi_points %}
 
 🔤 パターン3：文字列の高度な処理（約20%）
 ┌─────────────────────────────────────────────┐
