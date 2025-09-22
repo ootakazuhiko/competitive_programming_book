@@ -430,56 +430,48 @@ LCM（最小公倍数）の計算：
 
 ```
 【図5-12：競技プログラミングでよく使う数学的性質】
-
-奇数・偶数の性質：
-┌─────────────────────────────────────────────┐
-│ # 偶数 + 偶数 = 偶数                         │
-│ # 奇数 + 奇数 = 偶数                         │
-│ # 偶数 + 奇数 = 奇数                         │
-│                                             │
-│ # 活用例：「2つの数の和が偶数になるペア数」    │
-│ numbers = list(map(int, input().split()))     │
-│ even_count = sum(1 for x in numbers if x % 2 == 0)│
-│ odd_count = len(numbers) - even_count         │
-│ # 偶数同士 + 奇数同士のペア数                 │
-│ pairs = even_count * (even_count - 1) // 2 + odd_count * (odd_count - 1) // 2│
-│ print(pairs)                                  │
-└─────────────────────────────────────────────┘
-
-約数の性質：
-┌─────────────────────────────────────────────┐
-│ # N の約数は √N を境に対になって存在          │
-│ def get_divisors(n):                          │
-│     divisors = []                             │
-│     for i in range(1, int(n**0.5) + 1):       │
-│         if n % i == 0:                        │
-│             divisors.append(i)                │
-│             if i != n // i:  # 重複避け       │
-│                 divisors.append(n // i)       │
-│     return sorted(divisors)                   │
-│                                             │
-│ print(get_divisors(12))  # [1, 2, 3, 4, 6, 12]│
-└─────────────────────────────────────────────┘
-
-組み合わせの計算：
-┌─────────────────────────────────────────────┐
-│ # nCr = n! / (r! * (n-r)!)                   │
-│ def combination(n, r):                        │
-│     if r > n or r < 0:                        │
-│         return 0                              │
-│     if r == 0 or r == n:                      │
-│         return 1                              │
-│                                             │
-│     # 効率的な計算（大きな階乗を避ける）       │
-│     r = min(r, n - r)  # C(n,r) = C(n,n-r)    │
-│     result = 1                                │
-│     for i in range(r):                        │
-│         result = result * (n - i) // (i + 1)  │
-│     return result                             │
-│                                             │
-│ print(combination(5, 2))  # 10               │
-└─────────────────────────────────────────────┘
 ```
+
+<figure class="pseudocode">
+  <figcaption>奇数・偶数の性質と応用</figcaption>
+  <pre><code class="language-python"># 偶数+偶数=偶数 / 奇数+奇数=偶数 / 偶数+奇数=奇数
+numbers = list(map(int, input().split()))
+even = sum(1 for x in numbers if x % 2 == 0)
+odd = len(numbers) - even
+# 偶数同士 + 奇数同士 のペア数
+pairs = even * (even - 1) // 2 + odd * (odd - 1) // 2
+print(pairs)</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>約数の性質（√N まで調べる）</figcaption>
+  <pre><code class="language-python">def get_divisors(n):
+    divisors = []
+    for i in range(1, int(n ** 0.5) + 1):
+        if n % i == 0:
+            divisors.append(i)
+            if i != n // i:  # 重複回避
+                divisors.append(n // i)
+    return sorted(divisors)
+
+print(get_divisors(12))  # [1, 2, 3, 4, 6, 12]</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>組み合わせ nCr の効率計算</figcaption>
+  <pre><code class="language-python">def combination(n, r):
+    if r > n or r < 0:
+        return 0
+    if r == 0 or r == n:
+        return 1
+    r = min(r, n - r)  # 対称性
+    result = 1
+    for i in range(r):
+        result = result * (n - i) // (i + 1)
+    return result
+
+print(combination(5, 2))  # 10</code></pre>
+</figure>
 
 ## 5.4 文字列を操作してみよう
 
@@ -489,70 +481,51 @@ LCM（最小公倍数）の計算：
 
 ```
 【図5-13：競技プログラミングでよく使う文字列操作】
-
-パターン1：文字の出現回数カウント
-┌─────────────────────────────────────────────┐
-│ # 方法1: 辞書を手動で作成                    │
-│ s = input()  # "programming"                 │
-│ char_count = {}                               │
-│ for char in s:                                │
-│     if char in char_count:                    │
-│         char_count[char] += 1                 │
-│     else:                                     │
-│         char_count[char] = 1                  │
-│ print(char_count)                             │
-│                                             │
-│ # 方法2: get()メソッドを使用（推奨）          │
-│ char_count = {}                               │
-│ for char in s:                                │
-│     char_count[char] = char_count.get(char, 0) + 1│
-│                                             │
-│ # 方法3: Counterを使用（最も簡潔）            │
-│ from collections import Counter               │
-│ char_count = Counter(s)                       │
-│ print(char_count)                             │
-│ # Counter({'r': 2, 'g': 2, 'm': 2, 'p': 1, 'o': 1, 'a': 1, 'i': 1, 'n': 1})│
-└─────────────────────────────────────────────┘
-
-パターン2：文字列の検索・置換
-┌─────────────────────────────────────────────┐
-│ s = "Hello World Hello"                       │
-│                                             │
-│ # 部分文字列の検索                           │
-│ print("Hello" in s)        # True            │
-│ print(s.find("World"))     # 6（位置）        │
-│ print(s.count("Hello"))    # 2（出現回数）     │
-│                                             │
-│ # 文字列の置換                               │
-│ s2 = s.replace("Hello", "Hi")                 │
-│ print(s2)  # "Hi World Hi"                   │
-│                                             │
-│ # 先頭・末尾の削除                           │
-│ s3 = "  programming  "                       │
-│ print(s3.strip())          # "programming"   │
-│ print(s3.lstrip())         # "programming  " │
-│ print(s3.rstrip())         # "  programming" │
-└─────────────────────────────────────────────┘
-
-パターン3：文字列の分割・結合
-┌─────────────────────────────────────────────┐
-│ # 分割                                       │
-│ sentence = "apple,banana,cherry"              │
-│ fruits = sentence.split(",")                  │
-│ print(fruits)  # ['apple', 'banana', 'cherry']│
-│                                             │
-│ # 結合                                       │
-│ words = ["Hello", "World", "Python"]          │
-│ result = " ".join(words)                      │
-│ print(result)  # "Hello World Python"        │
-│                                             │
-│ # より複雑な分割                             │
-│ text = "a1b2c3d4"                            │
-│ import re                                     │
-│ parts = re.split(r'\d', text)  # 数字で分割   │
-│ print(parts)  # ['a', 'b', 'c', 'd', '']     │
-└─────────────────────────────────────────────┘
 ```
+
+<figure class="pseudocode">
+  <figcaption>パターン1：文字の出現回数カウント</figcaption>
+  <pre><code class="language-python"># 方法1: 手動カウント
+s = input()
+char_count = {}
+for ch in s:
+    char_count[ch] = char_count.get(ch, 0) + 1
+print(char_count)
+
+# 方法2: Counter
+from collections import Counter
+print(Counter(s))</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>パターン2：検索・置換・トリム</figcaption>
+  <pre><code class="language-python">s = "Hello World Hello"
+# 検索
+print("Hello" in s)
+print(s.find("World"))
+print(s.count("Hello"))
+# 置換
+s2 = s.replace("Hello", "Hi")
+print(s2)  # Hi World Hi
+# トリム
+s3 = "  programming  "
+print(s3.strip()); print(s3.lstrip()); print(s3.rstrip())</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>パターン3：分割・結合・正規表現</figcaption>
+  <pre><code class="language-python">sentence = "apple,banana,cherry"
+fruits = sentence.split(',')
+print(fruits)
+
+words = ["Hello", "World", "Python"]
+print(' '.join(words))
+
+import re
+text = "a1b2c3d4"
+parts = re.split(r'\\d', text)
+print(parts)</code></pre>
+</figure>
 
 ### 回文（Palindrome）判定
 
