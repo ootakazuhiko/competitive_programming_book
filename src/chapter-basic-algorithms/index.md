@@ -700,59 +700,36 @@ for coin, num in detail:
 
 ```
 【図5-20：区間スケジューリング問題】
-
-問題：「複数の会議があり、重複しないよう最大数の会議に参加したい」
-
-会議データ例：
-┌─────────────────────────────────────────────┐
-│ 会議A: 9:00-10:30                           │
-│ 会議B: 10:00-11:30                          │
-│ 会議C: 11:00-12:00                          │
-│ 会議D: 11:30-12:30                          │
-│ 会議E: 12:00-13:00                          │
-└─────────────────────────────────────────────┘
-
-貪欲戦略：「終了時刻が早い会議から選ぶ」
-┌─────────────────────────────────────────────┐
-│ 1. 終了時刻順にソート                        │
-│ 2. 最初の会議を選択                         │
-│ 3. 前の会議と重複しない次の会議を選択         │
-│ 4. 3を繰り返す                              │
-└─────────────────────────────────────────────┘
-
-実装：
-┌─────────────────────────────────────────────┐
-│ def max_meetings(meetings):                   │
-│     # (開始時刻, 終了時刻, 名前) のタプルのリスト│
-│     meetings.sort(key=lambda x: x[1])  # 終了時刻でソート│
-│                                             │
-│     selected = []                             │
-│     last_end_time = 0                         │
-│                                             │
-│     for start, end, name in meetings:         │
-│         if start >= last_end_time:            │
-│             selected.append((start, end, name))│
-│             last_end_time = end               │
-│                                             │
-│     return selected                           │
-│                                             │
-│ # 使用例                                     │
-│ meetings = [                                  │
-│     (9.0, 10.5, "会議A"),                     │
-│     (10.0, 11.5, "会議B"),                    │
-│     (11.0, 12.0, "会議C"),                    │
-│     (11.5, 12.5, "会議D"),                    │
-│     (12.0, 13.0, "会議E")                     │
-│ ]                                            │
-│                                             │
-│ result = max_meetings(meetings)               │
-│ print("選択された会議:")                      │
-│ for start, end, name in result:               │
-│     print(f"{name}: {start}-{end}")           │
-│                                             │
-│ # 出力: 会議A, 会議C, 会議E が選択される       │
-└─────────────────────────────────────────────┘
 ```
+
+{% capture interval_strategy %}
+貪欲戦略：「終了時刻が早い会議から選ぶ」  
+1) 終了時刻順にソート → 2) 最初を選択 → 3) 前と重ならない次を選択（繰り返し）
+{% endcapture %}
+{% include panel.html type="steps" title="戦略" content=interval_strategy %}
+
+<figure class="pseudocode">
+  <figcaption>実装</figcaption>
+  <pre><code class="language-python">def max_meetings(meetings):
+    # meetings: (start, end, name)
+    meetings.sort(key=lambda x: x[1])
+    selected = []
+    last_end = 0
+    for start, end, name in meetings:
+        if start >= last_end:
+            selected.append((start, end, name))
+            last_end = end
+    return selected
+
+meetings = [
+    (9.0, 10.5, "会議A"),
+    (10.0, 11.5, "会議B"),
+    (11.0, 12.0, "会議C"),
+    (11.5, 12.5, "会議D"),
+    (12.0, 13.0, "会議E"),
+]
+print(max_meetings(meetings))</code></pre>
+</figure>
 
 ### 貪欲法の注意点
 
