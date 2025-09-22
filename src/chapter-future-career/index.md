@@ -188,98 +188,28 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 
 ### 国際的な進路オプション
 
-```
 【図12-5：グローバルな学習・キャリア機会】
 
 🌐 海外大学への進学
-┌─────────────────────────────────────────────┐
-│ 🎓 競技プログラミング経験が評価される大学：   │
-│ • MIT（マサチューセッツ工科大学）           │
-│ • Stanford University（スタンフォード大学） │
-│ • Carnegie Mellon University              │
-│ • UC Berkeley（カリフォルニア大学バークレー校）│
-│ • University of Waterloo（カナダ）         │
-│                                           │
-│ 📊 海外大学進学のメリット：                 │
-│ • 世界最高レベルの研究環境                  │
-│ • 多様な文化・価値観との出会い              │
-│ • 英語力とグローバルな視野の獲得            │
-│ • 国際的なネットワークの構築                │
-│ • 将来のキャリア選択肢の拡大                │
-│                                           │
-│ 💰 奨学金・支援制度：                       │
-│ • 競技プログラミング実績による特別奨学金     │
-│ • JASSO海外留学支援制度                    │
-│ • 民間財団の海外留学奨学金                  │
-│ • 大学独自の支援制度                       │
-│                                           │
-│ 📝 準備すべきこと：                        │
-│ • 英語力（TOEFL、IELTS）の向上             │
-│ • SAT、ACT等の標準テスト対策               │
-│ • 国際的なプログラミングコンテストでの実績   │
-│ • 研究経験や社会貢献活動                   │
-└─────────────────────────────────────────────┘
+
+{% include panel.html type="info" title="評価される大学" content="MIT／Stanford／Carnegie Mellon／UC Berkeley／University of Waterloo など" %}
+{% include panel.html type="info" title="進学のメリット" content="最高水準の研究環境／多様な文化との出会い／英語力と視野の拡大／国際ネットワーク構築／キャリア選択肢の拡大" %}
+{% include panel.html type="info" title="奨学金・支援" content="競プロ実績による特別奨学金／JASSO／民間財団／大学独自制度" %}
+{% include panel.html type="steps" title="準備すべきこと" content="英語（TOEFL/IELTS）／SAT/ACT対策／国際コンテスト実績／研究経験・社会貢献" %}
 
 💼 グローバル企業でのインターンシップ
-┌─────────────────────────────────────────────┐
-│ 🌟 主要なテック企業の学生プログラム：        │
-│ • Google：Summer of Code、STEP             │
-│ • Microsoft：Student Partner Program      │
-│ • Facebook（Meta）：University Relations   │
-│ • Apple：Worldwide Developer Conference    │
-│ • Amazon：Future Engineer Program          │
-│                                           │
-│ 🎯 参加のメリット：                        │
-│ • 最新技術と開発手法の体験                  │
-│ • 世界トップレベルのエンジニアとの交流       │
-│ • 実際のプロダクト開発への参加              │
-│ • 将来の就職への大きなアドバンテージ        │
-│ • 高額な報酬（米国では月額50-100万円）      │
-│                                           │
-│ 📋 選考での評価ポイント：                   │
-│ • 競技プログラミングでの高い実績            │
-│ • オープンソースプロジェクトへの貢献        │
-│ • 創造的な個人プロジェクトの開発            │
-│ • 技術的な問題解決能力                     │
-│ • コミュニケーション能力と英語力            │
-│                                           │
-│ 💡 応募の準備：                            │
-│ • GitHub上での質の高いコード公開           │
-│ • 技術ブログでの発信活動                   │
-│ • ハッカソンやコンテストでの実績            │
-│ • オンラインでの技術コミュニティ参加        │
-└─────────────────────────────────────────────┘
+
+{% include panel.html type="info" title="主要プログラム" content="Google（GSoC/STEP）／Microsoft（Student Partner）／Meta（University Relations）／Apple（WWDC関連）／Amazon（Future Engineer）" %}
+{% include panel.html type="info" title="参加のメリット" content="最新技術の体験／トップエンジニアと交流／実プロダクト開発／就職での優位／高報酬の機会" %}
+{% include panel.html type="info" title="評価ポイント" content="競プロ実績／OSS貢献／創造的プロジェクト／問題解決力／コミュニケーションと英語力" %}
+{% include panel.html type="steps" title="応募準備" content="GitHubで良質なコード公開／技術ブログ発信／ハッカソン・コンテスト実績／技術コミュニティ参加" %}
 
 🏆 国際競技での活躍
-┌─────────────────────────────────────────────┐
-│ 🌍 主要な国際プログラミング競技：           │
-│ • IOI（国際情報オリンピック）               │
-│ • ICPC（国際大学対抗プログラミングコンテスト）│
-│ • Google Code Jam                         │
-│ • Facebook Hacker Cup                     │
-│ • TopCoder Open                           │
-│ • Codeforces Global Round                 │
-│                                           │
-│ 🎖️ 国際競技参加の価値：                    │
-│ • 世界レベルでの実力証明                   │
-│ • 国際的な知名度とネットワーク              │
-│ • 海外大学・企業からの直接スカウト          │
-│ • 生涯にわたる友人関係の構築                │
-│ • 文化交流と国際感覚の養成                  │
-│                                           │
-│ 📈 段階的な挑戦プラン：                     │
-│ 中学生：JOI予選→本選→春季合宿              │
-│ 高校生：IOI代表選考→IOI本大会               │
-│ 大学生：ICPC地区大会→世界大会               │
-│ 社会人：企業代表として国際競技に参加        │
-│                                           │
-│ 💭 参加への心構え：                        │
-│ • 結果より経験と学習を重視                  │
-│ • 文化の違いを楽しみ、視野を広げる          │
-│ • 語学力向上の良い機会として活用            │
-│ • 国際的な友人関係を大切にする              │
-└─────────────────────────────────────────────┘
-```
+
+{% include panel.html type="info" title="主要競技" content="IOI／ICPC／Google Code Jam／Facebook Hacker Cup／TopCoder Open／Codeforces Global Round" %}
+{% include panel.html type="info" title="参加の価値" content="世界レベルの証明／国際的ネットワーク／スカウト機会／生涯の友人関係／文化交流" %}
+{% include panel.html type="steps" title="挑戦プラン" content="中学生：JOI予選→本選→春季合宿／高校生：IOI代表選考→IOI本大会／大学生：ICPC地区→世界大会／社会人：企業代表で参加" %}
+{% include panel.html type="steps" title="心構え" content="結果より学び重視／文化の違いを楽しむ／語学力向上／国際的な友情を大切に" %}
 
 ## 12.3 IT業界でのキャリアパス
 
