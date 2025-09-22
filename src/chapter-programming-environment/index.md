@@ -305,32 +305,21 @@ print(a + b + c, s)</code></pre>
 
 ### 提出画面の詳細操作
 
-```
 【図3-14：AtCoder提出画面ガイド】
 
-┌─────────────────────────────────────────────┐
-│ 🏆 A - Welcome to AtCoder                   │
-├─────────────────────────────────────────────┤
-│ 📝 Language: [Python (3.8.2) ▼]            │
-│ 📄 Source Code:                             │
-│ ┌─────────────────────────────────────────┐ │
-│ │ a = int(input())                        │ │
-│ │ b, c = map(int, input().split())        │ │
-│ │ s = input()                             │ │
-│ │ print(a + b + c, s)                     │ │
-│ │                                         │ │
-│ │                                         │ │
-│ └─────────────────────────────────────────┘ │
-│                                           │
-│ 🔍 提出前チェックポイント:                   │
-│ ✅ 言語が Python になっているか             │
-│ ✅ コードに文法エラーがないか               │
-│ ✅ インデントが正しいか                     │
-│ ✅ input() の数が問題文と一致するか          │
-│ ✅ print() の出力形式が正しいか             │
-│                                           │
-│            [Submit]  [Reset]               │
-└─────────────────────────────────────────────┘
+{% include panel.html type="steps" title="提出前チェックポイント" content="言語がPythonか／文法エラーなし／インデント正しい／inputの数一致／出力形式正しい" %}
+
+{% include panel.html type="info" title="入力例と解答コード（再掲）" content="上のStep 3の解答例をそのまま貼り付けて提出」 %}
+
+{% capture result_notes %}
+結果表示の見方  
+• ✅ AC (Accepted): 正解  
+• ❌ WA (Wrong Answer): 不正解  
+• ❌ TLE (Time Limit Exceeded): 時間切れ  
+• ❌ RE (Runtime Error): 実行時エラー  
+• ❌ CE (Compilation Error): 文法エラー
+{% endcapture %}
+{% include panel.html type="info" title="提出結果の見方" content=result_notes %}
 
 提出後の結果表示：
 ✅ AC (Accepted): 正解！
@@ -356,25 +345,25 @@ print(a + b + c, s)</code></pre>
 └─────────────────────────────────────────────┘
 
 ❌ ミス2: 不要な出力
-┌─────────────────────────────────────────────┐
-│ 間違いコード：                              │
-│ a = int(input())                           │
-│ print("aの値は", a)  # ← これが余計         │
-│ print(a * 2)                               │
-│                                           │
-│ 正しいコード：                              │
-│ a = int(input())                           │
-│ print(a * 2)       # 答えのみ出力          │
-└─────────────────────────────────────────────┘
+{% include panel.html type="steps" title="提出時の出力は答えのみ" content="余計な説明文を出力しない／期待されるフォーマットに厳密に合わせる" %}
+```python
+# 間違い
+a = int(input())
+print("aの値は", a)
+print(a * 2)
+
+# 正しい
+a = int(input())
+print(a * 2)  # 答えのみ
+```
 
 ❌ ミス3: input()の数の間違い
-┌─────────────────────────────────────────────┐
-│ 問題：「2行にわたってN、Mが与えられる」       │
-│ 間違い：n, m = map(int, input().split())    │
-│ 正解：                                     │
-│ n = int(input())                           │
-│ m = int(input())                           │
-└─────────────────────────────────────────────┘
+{% include panel.html type="steps" title="複数行入力の基本" content="1行ずつ input() を読む／split() は1行の多値入力に使う" %}
+```python
+# 2行で N と M が与えられる例
+n = int(input())
+m = int(input())
+```
 
 🛡️ ミス防止のチェックリスト：
 1. サンプル入出力で必ずテスト
@@ -389,22 +378,17 @@ print(a + b + c, s)</code></pre>
 
 「バグ（プログラムの間違い）は敵ではなく、成長のための大切な先生だ」という考え方を身につけよう。
 
-```
 【図3-16：デバッグの心構え】
 
-❌ 避けるべき考え方          ✅ 推奨される考え方
-┌─────────────────┐      ┌─────────────────┐
-│「また間違えた...」      │  →  │「新しい発見のチャンス！」 │
-│「自分はプログラミング    │  →  │「この経験が実力向上に   │
-│  に向いていない」       │      │  つながる」           │
-│「すぐに答えを見よう」    │  →  │「まず自分で原因を      │
-│                       │      │  探してみよう」        │
-└─────────────────┘      └─────────────────┘
+{% capture mindset %}
+避けるべき考え方 → 推奨される考え方  
+• 「また間違えた…」 → 「新しい発見のチャンス！」  
+• 「向いていない」 → 「経験が実力向上につながる」  
+• 「すぐ答えを見る」 → 「まず自分で原因を探す」
+{% endcapture %}
+{% include panel.html type="info" title="前向きマインド" content=mindset %}
 
-🕵️ デバッグは探偵ゲーム！
-「なぜこのプログラムは期待通りに動かないのか？」
-という謎を解く、とても楽しい知的ゲームだと考えよう。
-```
+{% include panel.html type="info" title="デバッグは探偵ゲーム" content="なぜ期待通りに動かない？という謎解きを楽しもう" %}
 
 ### print文を使ったデバッグ技法
 
@@ -414,28 +398,28 @@ print(a + b + c, s)</code></pre>
 【図3-17：print文デバッグの実践例】
 
 問題のあるコード例：
-┌─────────────────────────────────────────────┐
-│ n = int(input())                              │
-│ total = 0                                     │
-│ for i in range(n):                            │
-│     x = int(input())                          │
-│     total += x                                │
-│ print(total // 2)  # なぜか答えが違う...      │
-└─────────────────────────────────────────────┘
+```python
+n = int(input())
+total = 0
+for i in range(n):
+    x = int(input())
+    total += x
+print(total // 2)  # なぜか答えが違う...
+```
 
 デバッグ版（print文追加）：
-┌─────────────────────────────────────────────┐
-│ n = int(input())                              │
-│ print(f"🔍 n = {n}")  # 👈 確認用             │
-│ total = 0                                     │
-│ for i in range(n):                            │
-│     x = int(input())                          │
-│     print(f"🔍 i={i}, x={x}")  # 👈 確認用     │
-│     total += x                                │
-│     print(f"🔍 total={total}")  # 👈 確認用    │
-│ print(f"🔍 最終total = {total}")  # 👈 確認用  │
-│ print(total // 2)                             │
-└─────────────────────────────────────────────┘
+```python
+n = int(input())
+print(f"🔍 n = {n}")  # 👈 確認用
+total = 0
+for i in range(n):
+    x = int(input())
+    print(f"🔍 i={i}, x={x}")  # 👈 確認用
+    total += x
+    print(f"🔍 total={total}")  # 👈 確認用
+print(f"🔍 最終total = {total}")  # 👈 確認用
+print(total // 2)
+```
 
 デバッグ実行例：
 🔍 n = 3
