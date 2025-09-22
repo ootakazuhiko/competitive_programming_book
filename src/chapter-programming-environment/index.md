@@ -81,23 +81,30 @@ Pythonを学ぶことは、単に競技プログラミングのためだけで�
 
 まず、君のパソコンの状況を確認しよう：
 
-```
 【図3-4：事前確認チェックリスト】
 
-✅ ハードウェア要件
-• Windows 10/11、macOS 10.9以降、または Linux
-• 空き容量：最低100MB（推奨1GB以上）
-• メモリ：最低512MB（推奨2GB以上）
+{% capture precheck_hw %}
+✅ ハードウェア要件  
+• Windows 10/11、macOS 10.9以降、または Linux  
+• 空き容量: 最低100MB（推奨1GB以上）  
+• メモリ: 最低512MB（推奨2GB以上）
+{% endcapture %}
+{% include panel.html type="steps" title="ハードウェア" content=precheck_hw %}
 
-✅ 権限の確認
-• パソコンの管理者権限（または保護者の許可）
-• インターネット接続環境
-• セキュリティソフトの設定確認
+{% capture precheck_perm %}
+✅ 権限の確認  
+• 管理者権限（または保護者の許可）  
+• インターネット接続  
+• セキュリティソフト設定の確認
+{% endcapture %}
+{% include panel.html type="info" title="権限/ネットワーク" content=precheck_perm %}
 
-✅ 学習環境
-• 集中できる時間（30分-1時間）
-• メモを取る準備（紙とペン、またはデジタルメモ）
-```
+{% capture precheck_env %}
+✅ 学習環境  
+• 集中できる時間（30分〜1時間）  
+• メモの準備（紙/デジタル）
+{% endcapture %}
+{% include panel.html type="steps" title="学習環境" content=precheck_env %}
 
 ### Windows版インストール手順（詳細版）
 
@@ -107,72 +114,65 @@ Windowsユーザーが最も多いため、詳しく説明するね。
 
 ### macOS版インストール手順
 
-```
 【図3-6：macOS Python インストールガイド】
 
-方法1: 公式インストーラー（推奨）
-┌─────────────────────────────────────────────┐
-│ 🌐 https://python.org からmacOS版をダウンロード│
-│ 📦 .pkg ファイルをダブルクリック               │
-│ 🔐 パスワードを入力してインストール実行        │
-│ ✅ ターミナルで python3 --version で確認      │
-└─────────────────────────────────────────────┘
+{% capture macos_installer %}
+方法1（推奨）: 公式インストーラー  
+1) https://python.org から macOS 版をダウンロード  
+2) .pkg を実行  
+3) 管理者パスワード入力→インストール  
+4) `python3 --version` で確認
+{% endcapture %}
+{% include panel.html type="steps" title="公式インストーラー" content=macos_installer %}
 
-方法2: Homebrew経由（上級者向け）
-┌─────────────────────────────────────────────┐
-│ 🍺 Homebrewがインストール済みの場合：          │
-│ ⌨️ brew install python                      │
-│ ✅ より最新版を自動で取得・管理               │
-└─────────────────────────────────────────────┘
+{% capture macos_brew %}
+方法2（上級者）: Homebrew  
+• `brew install python` で最新版を管理
+{% endcapture %}
+{% include panel.html type="info" title="Homebrew" content=macos_brew %}
 
-確認方法：
-┌─────────────────────────────────────────────┐
-│ 🖥️ ターミナルアプリを開く                     │
-│ ⌨️ python3 --version                        │
-│ ⌨️ python3 -c "print('macOSでPython成功!')"  │
-└─────────────────────────────────────────────┘
-```
+{% capture macos_check %}
+確認  
+• ターミナルを開く  
+• `python3 --version` を実行  
+• `python3 -c "print('macOS OK')"`
+{% endcapture %}
+{% include panel.html type="steps" title="動作確認" content=macos_check %}
 
 ### トラブルシューティング
 
 インストールでよくあるトラブルと解決方法：
 
-```
 【図3-7：よくあるトラブルと解決方法】
 
-❌ 問題1: 「'python'は認識されません」エラー
-┌─────────────────────────────────────────────┐
-│ 原因：PATHの設定漏れ                         │
-│ 解決：                                      │
-│ 1. Pythonを再インストール                   │
-│ 2. 「Add Python to PATH」に必ずチェック     │
-│ 3. コマンドプロンプトを再起動               │
-└─────────────────────────────────────────────┘
+{% capture tr_path %}
+❌ 問題: "python が認識されません"  
+原因: PATH 設定漏れ  
+対処: 1) 再インストール  2) 「Add Python to PATH」にチェック  3) 端末を再起動
+{% endcapture %}
+{% include panel.html type="warn" title="PATHエラー" content=tr_path %}
 
-❌ 問題2: 管理者権限がないエラー
-┌─────────────────────────────────────────────┐
-│ 原因：インストールに管理者権限が必要          │
-│ 解決：                                      │
-│ 1. 保護者にインストールを依頼               │
-│ 2. 学校のパソコンの場合は先生に相談          │
-│ 3. ポータブル版Pythonの検討                 │
-└─────────────────────────────────────────────┘
+{% capture tr_admin %}
+❌ 問題: 管理者権限がない  
+対処: 1) 保護者に依頼  2) 学校PCは先生に相談  3) ポータブル版Pythonを検討
+{% endcapture %}
+{% include panel.html type="warn" title="権限エラー" content=tr_admin %}
 
-❌ 問題3: 古いバージョンが起動してしまう
-┌─────────────────────────────────────────────┐
-│ 原因：複数のPythonがインストールされている     │
-│ 解決：                                      │
-│ 1. python3 コマンドを使用（macOS/Linux）    │
-│ 2. py -3 コマンドを使用（Windows）          │
-│ 3. フルパス指定での実行                     │
-└─────────────────────────────────────────────┘
+{% capture tr_versions %}
+❌ 問題: 古いバージョンが起動する  
+原因: 複数Pythonの混在  
+対処: 1) macOS/Linux: `python3` を使用  2) Windows: `py -3` を使用  3) フルパス指定
+{% endcapture %}
+{% include panel.html type="warn" title="複数バージョン衝突" content=tr_versions %}
 
-🔧 総合的なトラブル解決手順：
-1. インストーラーを管理者権限で再実行
-2. セキュリティソフトの一時無効化
-3. 公式ドキュメントの確認
-4. コミュニティフォーラムで質問
-```
+{% capture tr_flow %}
+🔧 総合手順  
+1) 管理者権限で再実行  
+2) セキュリティソフト一時無効  
+3) 公式ドキュメント確認  
+4) コミュニティで質問
+{% endcapture %}
+{% include panel.html type="steps" title="困ったときの流れ" content=tr_flow %}
 
 ## 3.3 エディタを選んで設定しよう
 
