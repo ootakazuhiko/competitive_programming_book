@@ -108,50 +108,21 @@ else:
 【図9-3：エラーメッセージ解読の技術】
 
 🔍 Traceback（トレースバック）の読み方
-┌─────────────────────────────────────────────┐
-│ 実際のエラー例：                            │
-│                                           │
-│ Traceback (most recent call last):         │
-│   File "solution.py", line 7, in <module>  │
-│     result = 10 / zero_value               │
-│ ZeroDivisionError: division by zero        │
-│                                           │
-│ 📖 読み方ガイド：                          │
-│                                           │
-│ ①「File "solution.py", line 7」            │
-│   → solution.pyファイルの7行目でエラー      │
-│                                           │
-│ ②「result = 10 / zero_value」              │
-│   → この行でエラーが発生                   │
-│                                           │
-│ ③「ZeroDivisionError: division by zero」   │
-│   → エラーの種類：ゼロで割り算しようとした   │
-│                                           │
-│ 💡 対処法：                                │
-│ 7行目の zero_value が0になっていないか確認  │
-└─────────────────────────────────────────────┘
+
+{% capture tb_example %}
+Traceback (most recent call last):  
+  File "solution.py", line 7, in <module>  
+    result = 10 / zero_value  
+ZeroDivisionError: division by zero
+{% endcapture %}
+{% include panel.html type="info" title="実際のエラー例" content=tb_example %}
+
+{% include panel.html type="steps" title="読み方ガイド" content="① File/line → どのファイル・何行目か／② 該当行 → どこで起きたか／③ 例外名と説明 → 種類と要因" %}
+{% include panel.html type="steps" title="対処のヒント" content="原因値や状態を確認（例: zero_value が0）／再現を最小化して検証／ログや一時出力で前後の値を追跡" %}
 
 🎯 エラーメッセージから原因を特定する手順
-┌─────────────────────────────────────────────┐
-│ Step 1: エラーの種類を確認                   │
-│ • SyntaxError → 文法ミス                   │
-│ • NameError → 変数名ミス                   │
-│ • IndexError → 配列の範囲外アクセス         │
-│ • ZeroDivisionError → ゼロ除算             │
-│                                           │
-│ Step 2: エラー発生行を特定                   │
-│ • 「line X」でX行目を確認                  │
-│ • その行とその前後を詳しく見る              │
-│                                           │
-│ Step 3: 具体的な原因を推測                   │
-│ • 変数の値が予想と違っていないか？           │
-│ • 条件分岐で想定外のケースに入っていないか？  │
-│ • 計算式に問題はないか？                   │
-│                                           │
-│ Step 4: 仮説を立てて修正                     │
-│ • print文で変数の値を確認                  │
-│ • 一つずつ修正して動作確認                  │
-└─────────────────────────────────────────────┘
+
+{% include panel.html type="steps" title="ステップ" content="1) 例外の種類を確認（Syntax/Name/Index/ZeroDivisionなど）／2) 発生行を特定（line X と前後）／3) 原因を推測（値/条件/式）／4) 仮説→修正→検証を反復" %}
 ```
 
 ## 9.2 実行時エラーを解決しよう
