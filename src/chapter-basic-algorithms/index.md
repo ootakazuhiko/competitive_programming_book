@@ -605,66 +605,61 @@ print(numbers)</code></pre>
 
 ```
 【図5-17：ソートによる問題解決の典型例】
-
-パターン1: 中央値の求取
-┌─────────────────────────────────────────────┐
-│ def find_median(numbers):                     │
-│     sorted_nums = sorted(numbers)             │
-│     n = len(sorted_nums)                      │
-│     if n % 2 == 1:                            │
-│         return sorted_nums[n // 2]            │
-│     else:                                     │
-│         mid1 = sorted_nums[n // 2 - 1]        │
-│         mid2 = sorted_nums[n // 2]            │
-│         return (mid1 + mid2) / 2              │
-│                                             │
-│ print(find_median([3, 1, 4, 1, 5]))  # 3     │
-│ print(find_median([3, 1, 4, 1]))     # 2.5   │
-└─────────────────────────────────────────────┘
-
-パターン2: 最小差分ペアの発見
-┌─────────────────────────────────────────────┐
-│ def min_difference_pair(numbers):             │
-│     numbers.sort()                            │
-│     min_diff = float('inf')                   │
-│     best_pair = None                          │
-│                                             │
-│     for i in range(len(numbers) - 1):         │
-│         diff = numbers[i + 1] - numbers[i]    │
-│         if diff < min_diff:                   │
-│             min_diff = diff                   │
-│             best_pair = (numbers[i], numbers[i + 1])│
-│                                             │
-│     return best_pair, min_diff                │
-│                                             │
-│ nums = [4, 2, 1, 3]                          │
-│ pair, diff = min_difference_pair(nums)        │
-│ print(f"最小差分ペア: {pair}, 差分: {diff}")   │
-│ # 最小差分ペア: (1, 2), 差分: 1               │
-└─────────────────────────────────────────────┘
-
-パターン3: 重複の除去（順序保持）
-┌─────────────────────────────────────────────┐
-│ def remove_duplicates_sorted(numbers):        │
-│     numbers.sort()                            │
-│     if not numbers:                           │
-│         return []                             │
-│                                             │
-│     result = [numbers[0]]                     │
-│     for i in range(1, len(numbers)):          │
-│         if numbers[i] != numbers[i - 1]:      │
-│             result.append(numbers[i])         │
-│     return result                             │
-│                                             │
-│ nums = [3, 1, 4, 1, 5, 9, 2, 6, 5]           │
-│ unique = remove_duplicates_sorted(nums)       │
-│ print(unique)  # [1, 2, 3, 4, 5, 6, 9]       │
-│                                             │
-│ # Pythonらしい書き方                         │
-│ unique = sorted(set(nums))                    │
-│ print(unique)  # [1, 2, 3, 4, 5, 6, 9]       │
-└─────────────────────────────────────────────┘
 ```
+
+<figure class="pseudocode">
+  <figcaption>パターン1: 中央値</figcaption>
+  <pre><code class="language-python">def find_median(numbers):
+    sorted_nums = sorted(numbers)
+    n = len(sorted_nums)
+    if n % 2 == 1:
+        return sorted_nums[n // 2]
+    else:
+        mid1 = sorted_nums[n // 2 - 1]
+        mid2 = sorted_nums[n // 2]
+        return (mid1 + mid2) / 2
+
+print(find_median([3, 1, 4, 1, 5]))  # 3
+print(find_median([3, 1, 4, 1]))     # 2.5</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>パターン2: 最小差分ペア</figcaption>
+  <pre><code class="language-python">def min_difference_pair(numbers):
+    numbers.sort()
+    min_diff = float('inf')
+    best_pair = None
+    for i in range(len(numbers) - 1):
+        diff = numbers[i + 1] - numbers[i]
+        if diff < min_diff:
+            min_diff = diff
+            best_pair = (numbers[i], numbers[i + 1])
+    return best_pair, min_diff
+
+nums = [4, 2, 1, 3]
+pair, diff = min_difference_pair(nums)
+print(f"最小差分ペア: {pair}, 差分: {diff}")</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>パターン3: 重複除去（順序保持）</figcaption>
+  <pre><code class="language-python">def remove_duplicates_sorted(numbers):
+    numbers.sort()
+    if not numbers:
+        return []
+    result = [numbers[0]]
+    for i in range(1, len(numbers)):
+        if numbers[i] != numbers[i - 1]:
+            result.append(numbers[i])
+    return result
+
+nums = [3, 1, 4, 1, 5, 9, 2, 6, 5]
+unique = remove_duplicates_sorted(nums)
+print(unique)
+
+# Pythonらしい書き方
+print(sorted(set(nums)))</code></pre>
+</figure>
 
 ## 5.6 貪欲法（グリーディ）で最適解を見つけよう
 
@@ -676,38 +671,28 @@ print(numbers)</code></pre>
 
 ```
 【図5-19：コイン問題の実装】
-
-実装：
-┌─────────────────────────────────────────────┐
-│ def min_coins(target):                        │
-│     coins = [500, 100, 50, 10, 1]             │
-│     count = 0                                 │
-│     result = []                               │
-│                                             │
-│     for coin in coins:                        │
-│         if target >= coin:                    │
-│             num_coins = target // coin        │
-│             count += num_coins                │
-│             target %= coin                    │
-│             result.append((coin, num_coins))  │
-│                                             │
-│     return count, result                      │
-│                                             │
-│ # 使用例                                     │
-│ target = 890                                  │
-│ total_coins, detail = min_coins(target)       │
-│ print(f"必要なコイン数: {total_coins}")        │
-│ for coin, num in detail:                      │
-│     print(f"{coin}円硬貨: {num}枚")           │
-│                                             │
-│ # 出力:                                      │
-│ # 必要なコイン数: 9                          │
-│ # 500円硬貨: 1枚                            │
-│ # 100円硬貨: 3枚                            │
-│ # 50円硬貨: 1枚                             │
-│ # 10円硬貨: 4枚                             │
-└─────────────────────────────────────────────┘
 ```
+
+<figure class="pseudocode">
+  <figcaption>貪欲によるコイン最少枚数</figcaption>
+  <pre><code class="language-python">def min_coins(target):
+    coins = [500, 100, 50, 10, 1]
+    count = 0
+    result = []
+    for coin in coins:
+        if target >= coin:
+            num = target // coin
+            count += num
+            target %= coin
+            result.append((coin, num))
+    return count, result
+
+target = 890
+total, detail = min_coins(target)
+print(total)
+for coin, num in detail:
+    print(coin, num)</code></pre>
+</figure>
 
 ### 区間スケジューリング問題
 
