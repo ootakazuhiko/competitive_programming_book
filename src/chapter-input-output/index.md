@@ -433,130 +433,122 @@ print(f"最大値: {max_val}")
 
 ```
 【図4-14：文字列入力の処理方法】
-
-基本的な文字列入力：
-┌─────────────────────────────────────────────┐
-│ s = input()                # 1行を文字列として│
-│ print(len(s))             # 文字数を出力     │
-│ print(s.upper())          # 大文字に変換     │
-│ print(s.lower())          # 小文字に変換     │
-│ print(s[::-1])            # 文字列を逆順     │
-└─────────────────────────────────────────────┘
-
-複数の文字列を読み込み：
-┌─────────────────────────────────────────────┐
-│ # "apple banana cherry"のような入力         │
-│ words = input().split()   # ['apple', 'banana', 'cherry']│
-│ for word in words:                            │
-│     print(f"単語: {word}, 長さ: {len(word)}")  │
-└─────────────────────────────────────────────┘
-
-1文字ずつの処理：
-┌─────────────────────────────────────────────┐
-│ s = input()               # "hello"          │
-│ for i, char in enumerate(s):                  │
-│     print(f"{i}番目の文字: {char}")           │
-│                                             │
-│ # 出力:                                     │
-│ # 0番目の文字: h                            │
-│ # 1番目の文字: e                            │
-│ # 2番目の文字: l                            │
-│ # 3番目の文字: l                            │
-│ # 4番目の文字: o                            │
-└─────────────────────────────────────────────┘
 ```
+
+<figure class="pseudocode">
+  <figcaption>基本的な文字列入力</figcaption>
+  <pre><code class="language-python">s = input()                # 1行を文字列として読む
+print(len(s))             # 文字数
+print(s.upper())          # 大文字
+print(s.lower())          # 小文字
+print(s[::-1])            # 逆順</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>複数の文字列を読み込む</figcaption>
+  <pre><code class="language-python"># 例: "apple banana cherry"
+words = input().split()   # ['apple', 'banana', 'cherry']
+for word in words:
+    print(f"単語: {word}, 長さ: {len(word)}")</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>1文字ずつの処理</figcaption>
+  <pre><code class="language-python">s = input()               # 例: "hello"
+for i, char in enumerate(s):
+    print(f"{i}番目の文字: {char}")
+# 出力:
+# 0番目の文字: h
+# 1番目の文字: e
+# 2番目の文字: l
+# 3番目の文字: l
+# 4番目の文字: o</code></pre>
+</figure>
 
 ### 文字列と数値の混在入力
 
 ```
 【図4-15：混在データの処理パターン】
-
-問題例：「名前と年齢が空白区切りで与えられる」
-
-入力例: "Alice 15"
-
-処理方法：
-┌─────────────────────────────────────────────┐
-│ # 方法1: split()で分割してから個別に変換      │
-│ line = input().split()                        │
-│ name = line[0]           # 文字列のまま       │
-│ age = int(line[1])       # 整数に変換         │
-│ print(f"{name}さんは{age}歳です")             │
-│                                             │
-│ # 方法2: 直接代入（型が確定している場合）     │
-│ name, age_str = input().split()               │
-│ age = int(age_str)                            │
-│ print(f"{name}さんは{age}歳です")             │
-└─────────────────────────────────────────────┘
-
-複雑な混在パターン：
-┌─────────────────────────────────────────────┐
-│ # "3 Alice Bob Charlie" のような入力         │
-│ # 最初が個数、後ろが名前のリスト              │
-│ data = input().split()                        │
-│ n = int(data[0])         # 最初の要素は個数   │
-│ names = data[1:]         # 2番目以降は名前    │
-│                                             │
-│ print(f"人数: {n}")                          │
-│ for i, name in enumerate(names):              │
-│     print(f"{i+1}番目: {name}")              │
-└─────────────────────────────────────────────┘
-
-注意が必要なパターン：
-┌─────────────────────────────────────────────┐
-│ # 文字列に空白が含まれる場合                  │
-│ # 「"Hello World" 25」のような入力           │
-│ # この場合、split()だけでは正しく分割できない │
-│ # 問題文で入力形式を必ず確認すること          │
-└─────────────────────────────────────────────┘
 ```
+
+<figure class="pseudocode">
+  <figcaption>名前と年齢（空白区切り）</figcaption>
+  <pre><code class="language-python"># 方法1: 分割してから変換
+line = input().split()
+name = line[0]
+age = int(line[1])
+print(f"{name}さんは{age}歳です")
+
+# 方法2: 直接代入（型が確定）
+name, age_str = input().split()
+age = int(age_str)
+print(f"{name}さんは{age}歳です")</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>複雑な混在（先頭が個数）</figcaption>
+  <pre><code class="language-python"># 例: "3 Alice Bob Charlie"
+data = input().split()
+n = int(data[0])     # 最初は個数
+names = data[1:]
+print(f"人数: {n}")
+for i, name in enumerate(names):
+    print(f"{i+1}番目: {name}")</code></pre>
+</figure>
+
+{% capture mixed_warn %}
+注意が必要  
+• 文字列に空白が含まれる場合（例: "Hello World" 25）  
+• split() だけでは分割できないケースあり  
+• 問題文の入力形式を必ず確認
+{% endcapture %}
+{% include panel.html type="warn" title="注意が必要なパターン" content=mixed_warn %}
 
 ### 文字列操作の実践例
 
 ```
 【図4-16：競技プログラミングでよく使う文字列操作】
-
-パターン1：文字の出現回数カウント
-┌─────────────────────────────────────────────┐
-│ s = input()  # "programming"                 │
-│ char_count = {}                               │
-│ for char in s:                                │
-│     if char in char_count:                    │
-│         char_count[char] += 1                 │
-│     else:                                     │
-│         char_count[char] = 1                  │
-│ print(char_count)                             │
-│ # {'p': 1, 'r': 2, 'o': 1, 'g': 2, 'a': 1, 'm': 2, 'i': 1, 'n': 1}│
-│                                             │
-│ # より簡潔な書き方                           │
-│ from collections import Counter               │
-│ char_count = Counter(s)                       │
-└─────────────────────────────────────────────┘
-
-パターン2：回文（palindrome）判定
-┌─────────────────────────────────────────────┐
-│ s = input()  # "racecar"                     │
-│ if s == s[::-1]:                              │
-│     print("回文です")                         │
-│ else:                                         │
-│     print("回文ではありません")                │
-│                                             │
-│ # 大文字小文字を区別しない回文判定            │
-│ s = input().lower()                           │
-│ if s == s[::-1]:                              │
-│     print("回文です（大小文字無視）")           │
-└─────────────────────────────────────────────┘
-
-パターン3：文字列の置換・加工
-┌─────────────────────────────────────────────┐
-│ s = input()  # "Hello World"                 │
-│ s = s.replace(" ", "_")      # "Hello_World"  │
-│ s = s.replace("o", "0")      # "Hell0_W0rld"  │
-│ s = s.lower()               # "hell0_w0rld"  │
-│ words = s.split("_")        # ["hell0", "w0rld"]│
-│ print("_".join(words))      # "hell0_w0rld"   │
-└─────────────────────────────────────────────┘
 ```
+
+<figure class="pseudocode">
+  <figcaption>パターン1：文字の出現回数カウント</figcaption>
+  <pre><code class="language-python">s = input()  # 例: "programming"
+char_count = {}
+for char in s:
+    if char in char_count:
+        char_count[char] += 1
+    else:
+        char_count[char] = 1
+print(char_count)
+
+# より簡潔に
+from collections import Counter
+char_count = Counter(s)</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>パターン2：回文（palindrome）判定</figcaption>
+  <pre><code class="language-python">s = input()  # 例: "racecar"
+if s == s[::-1]:
+    print("回文です")
+else:
+    print("回文ではありません")
+
+# 大文字小文字を区別しない場合
+s = input().lower()
+if s == s[::-1]:
+    print("回文です（大小文字無視）")</code></pre>
+</figure>
+
+<figure class="pseudocode">
+  <figcaption>パターン3：文字列の置換・加工</figcaption>
+  <pre><code class="language-python">s = input()  # 例: "Hello World"
+s = s.replace(" ", "_")      # "Hello_World"
+s = s.replace("o", "0")      # "Hell0_W0rld"
+s = s.lower()                  # "hell0_w0rld"
+words = s.split("_")           # ["hell0", "w0rld"]
+print("_".join(words))        # "hell0_w0rld"</code></pre>
+</figure>
 
 ## 4.6 出力フォーマットをマスターしよう
 
