@@ -127,66 +127,55 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 
 一人で学習を続けるのは大変だが、オンラインコミュニティを上手に活用すれば、世界中の仲間と一緒に成長できる。安全で建設的なコミュニティ参加の方法を学ぼう。
 
-```
 【図11-4：推奨オンラインコミュニティと参加方法】
 
-💬 AtCoder公式Discord
-┌─────────────────────────────────────────────┐
-│ 🎯 主な活動内容：                          │
-│ • コンテスト中の実況・感想共有              │
-│ • 解法の議論（コンテスト終了後）            │
-│ • 学習方法の相談・アドバイス                │
-│ • 初心者向けの質問対応                     │
-│ • プログラミング以外の雑談                 │
-│                                           │
-│ 📝 参加時のマナー：                        │
-│ • 実名は避け、AtCoderのIDを使用            │
-│ • コンテスト中のネタバレ厳禁                │
-│ • 質問前に過去ログを検索                   │
-│ • 建設的で礼儀正しいコミュニケーション       │
-│ • 年齢を明かす場合は保護者の同意を確認       │
-│                                           │
-│ 🔰 初心者におすすめのチャンネル：           │
-│ • #general：一般的な話題                   │
-│ • #beginners：初心者向け質問               │
-│ • #study-group：学習グループ               │
-│ • #contest-talk：コンテストの感想共有       │
-│                                           │
-│ ⚠️ 注意点：                               │
-│ • 個人情報（本名、学校名、住所等）は絶対NG   │
-│ • 写真の投稿は慎重に                       │
-│ • 怪しいDMには返信しない                   │
-└─────────────────────────────────────────────┘
+{% capture discord_info %}
+💬 AtCoder公式Discord  
+主な活動: コンテスト実況/感想、解法議論（終了後）、学習相談、初心者Q&A、雑談
+{% endcapture %}
+{% include panel.html type="info" title="AtCoder公式Discord（概要）" content=discord_info %}
 
-🐦 Twitter (X) での情報収集
-┌─────────────────────────────────────────────┐
-│ 👥 フォローすべきアカウント種類：           │
-│ • AtCoder公式アカウント                    │
-│ • 有名競技プログラマー（chokudai氏など）     │
-│ • 解説記事を書く中級者                     │
-│ • 同世代の競技プログラマー                 │
-│ • プログラミング学習アカウント              │
-│                                           │
-│ 📚 得られる情報：                          │
-│ • コンテスト開催のお知らせ                 │
-│ • 解法解説記事のシェア                     │
-│ • 学習方法のTips                          │
-│ • モチベーション維持のための情報            │
-│ • 業界動向・技術トレンド                   │
-│                                           │
-│ 📝 自分での発信のコツ：                     │
-│ • 学習記録の定期投稿                       │
-│ • 解けた問題の達成感をシェア                │
-│ • 躓いた点と解決方法の共有                  │
-│ • 同世代への励ましメッセージ                │
-│                                           │
-│ ⚠️ 注意点：                               │
-│ • 個人情報の投稿は避ける                   │
-│ • 批判的な投稿は控える                     │
-│ • 情報の真偽を確認する習慣                 │
-│ • ネガティブな内容は投稿前に一晩考える       │
-└─────────────────────────────────────────────┘
-```
+{% capture discord_manners %}
+参加マナー  
+• 実名を避け、AtCoder IDを使用  
+• コンテスト中のネタバレ禁止  
+• 質問前に過去ログ検索  
+• 礼儀正しく建設的に  
+• 年齢公開は保護者同意を確認
+{% endcapture %}
+{% include panel.html type="steps" title="Discordのマナー" content=discord_manners %}
+
+{% capture discord_channels %}
+初心者におすすめ  
+• #general（一般）／#beginners（初心者質問）  
+• #study-group（学習グループ）  
+• #contest-talk（感想共有）
+{% endcapture %}
+{% include panel.html type="steps" title="推奨チャンネル" content=discord_channels %}
+
+{% include panel.html type="warn" title="Discordの注意" content="個人情報（本名/学校/住所）NG／写真投稿は慎重に／怪しいDMは無視" %}
+
+{% capture x_follow %}
+🐦 X（旧Twitter）  
+フォロー対象: AtCoder公式／有名競技勢／解説を書く中級者／同世代／学習アカウント
+{% endcapture %}
+{% include panel.html type="steps" title="Xでの情報収集" content=x_follow %}
+
+{% capture x_benefits %}
+得られる情報  
+• コンテスト告知／解法記事のシェア  
+• 学習Tips／モチベ維持／技術トレンド
+{% endcapture %}
+{% include panel.html type="info" title="Xのメリット" content=x_benefits %}
+
+{% capture x_post %}
+発信のコツ  
+• 学習記録の定期投稿／達成の共有  
+• 躓きと解決の記録／同世代への励まし
+{% endcapture %}
+{% include panel.html type="steps" title="Xでの発信" content=x_post %}
+
+{% include panel.html type="warn" title="Xの注意" content="個人情報は投稿しない／批判的投稿は控える／真偽確認の習慣／ネガティブ投稿は一晩置く" %}
 
 ### 技術ブログ・情報発信の活用
 
