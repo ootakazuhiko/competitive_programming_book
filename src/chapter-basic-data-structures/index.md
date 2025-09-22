@@ -304,101 +304,77 @@ print(high_scores)  # {"math": 85, "english": 92}
 ```
 【図6-7：辞書を使った典型的な解法パターン】
 
-🎯 パターン1: カウント処理
-┌─────────────────────────────────────────────┐
-│ 問題：文字列中の各文字の出現回数を数えよ      │
-│                                           │
-│ 入力：programming                          │
-│ 出力：p:1, r:2, o:1, g:2, a:1, m:2, i:1, n:1│
-│                                           │
-│ 解法：                                     │
-│ text = "programming"                       │
-│ char_count = {}                            │
-│ for char in text:                          │
-│     char_count[char] = char_count.get(char, 0) + 1│
-│                                           │
-│ for char, count in char_count.items():     │
-│     print(f"{char}:{count}")               │
-│                                           │
-│ 💡 Pythonらしい書き方：                     │
-│ from collections import Counter            │
-│ char_count = Counter(text)                 │
-│ print(dict(char_count))                    │
-└─────────────────────────────────────────────┘
+{% include panel.html type="info" title="パターン1: カウント処理（文字出現回数）" content="入力: programming → 出力: p:1, r:2, o:1, g:2, a:1, m:2, i:1, n:1" %}
+```python
+text = "programming"
+char_count = {}
+for char in text:
+    char_count[char] = char_count.get(char, 0) + 1
 
-🎯 パターン2: グループ分け
-┌─────────────────────────────────────────────┐
-│ 問題：学生リストを学年でグループ分けせよ      │
-│                                           │
-│ 入力：[("Alice", "8th"), ("Bob", "7th"), ("Charlie", "8th")]│
-│                                           │
-│ 解法：                                     │
-│ students = [("Alice", "8th"), ("Bob", "7th"), ("Charlie", "8th")]│
-│ groups = {}                                │
-│ for name, grade in students:               │
-│     if grade not in groups:                │
-│         groups[grade] = []                 │
-│     groups[grade].append(name)             │
-│                                           │
-│ print(groups)                              │
-│ # {"8th": ["Alice", "Charlie"], "7th": ["Bob"]}│
-│                                           │
-│ 💡 defaultdictを使った改良版：               │
-│ from collections import defaultdict        │
-│ groups = defaultdict(list)                 │
-│ for name, grade in students:               │
-│     groups[grade].append(name)             │
-└─────────────────────────────────────────────┘
+for char, count in char_count.items():
+    print(f"{char}:{count}")
 
-🎯 パターン3: 高速な存在確認・検索
-┌─────────────────────────────────────────────┐
-│ 問題：許可されたユーザーIDかどうかを高速判定せよ│
-│                                           │
-│ 解法：                                     │
-│ allowed_users = {"alice", "bob", "charlie", "david"}│
-│                                           │
-│ def is_allowed(user_id):                   │
-│     return user_id in allowed_users        │
-│                                           │
-│ # 使用例                                   │
-│ print(is_allowed("alice"))     # True      │
-│ print(is_allowed("eve"))       # False     │
-│                                           │
-│ 💡 リストとの比較：                         │
-│ # リスト版（遅い：O(N)）                    │
-│ allowed_list = ["alice", "bob", "charlie", "david"]│
-│ def is_allowed_slow(user_id):              │
-│     return user_id in allowed_list         │
-│                                           │
-│ # 辞書・集合版（速い：O(1)）                │
-│ # 大量データでは圧倒的な差が出る              │
-└─────────────────────────────────────────────┘
-
-🎯 パターン4: メモ化（動的プログラミング）
-┌─────────────────────────────────────────────┐
-│ 問題：フィボナッチ数列のN番目を効率的に計算せよ │
-│                                           │
-│ 普通の再帰（遅い）：                        │
-│ def fibonacci_slow(n):                     │
-│     if n <= 1:                             │
-│         return n                           │
-│     return fibonacci_slow(n-1) + fibonacci_slow(n-2)│
-│                                           │
-│ メモ化版（速い）：                          │
-│ memo = {}                                  │
-│ def fibonacci_fast(n):                     │
-│     if n in memo:                          │
-│         return memo[n]                     │
-│     if n <= 1:                             │
-│         return n                           │
-│     memo[n] = fibonacci_fast(n-1) + fibonacci_fast(n-2)│
-│     return memo[n]                         │
-│                                           │
-│ 💡 効果：                                  │
-│ fibonacci_slow(30)  # 数秒かかる           │
-│ fibonacci_fast(30)  # 瞬時に計算           │
-└─────────────────────────────────────────────┘
+# 簡潔版（標準ライブラリ）
+from collections import Counter
+print(dict(Counter(text)))
 ```
+
+{% include panel.html type="steps" title="パターン2: グループ分け（学年で分類）" content="辞書のキーにグループ名、値にリスト／defaultdict(list) で初期化不要化" %}
+```python
+students = [("Alice", "8th"), ("Bob", "7th"), ("Charlie", "8th")]
+
+# 通常の辞書版
+groups = {}
+for name, grade in students:
+    if grade not in groups:
+        groups[grade] = []
+    groups[grade].append(name)
+print(groups)  # {"8th": ["Alice", "Charlie"], "7th": ["Bob"]}
+
+# defaultdict 版
+from collections import defaultdict
+groups = defaultdict(list)
+for name, grade in students:
+    groups[grade].append(name)
+```
+
+{% include panel.html type="steps" title="パターン3: 高速な存在確認・検索" content="集合/辞書による O(1) 確認。リストは O(N) で非効率" %}
+```python
+allowed_users = {"alice", "bob", "charlie", "david"}
+
+def is_allowed(user_id):
+    return user_id in allowed_users  # True/False を高速判定
+
+print(is_allowed("alice"))  # True
+print(is_allowed("eve"))    # False
+
+# リスト比較（遅い: O(N)）
+allowed_list = ["alice", "bob", "charlie", "david"]
+def is_allowed_slow(user_id):
+    return user_id in allowed_list
+```
+
+{% include panel.html type="steps" title="パターン4: メモ化（動的計画法の基礎）" content="計算済み結果を辞書に保存して再利用。大幅な高速化" %}
+```python
+def fibonacci_slow(n):
+    if n <= 1:
+        return n
+    return fibonacci_slow(n-1) + fibonacci_slow(n-2)
+
+memo = {}
+def fibonacci_fast(n):
+    if n in memo:
+        return memo[n]
+    if n <= 1:
+        return n
+    memo[n] = fibonacci_fast(n-1) + fibonacci_fast(n-2)
+    return memo[n]
+
+# 効果の例
+# fibonacci_slow(30) は数秒、fibonacci_fast(30) は瞬時
+ 
+
+ 
 
 ## 6.3 集合（セット）で重複を管理
 
@@ -599,64 +575,65 @@ print("どちらも普通:", normal)          # {"Grace"}
 ```
 【図6-13：Pythonでのスタック実装と活用】
 
-📚 リストを使ったスタック実装
-┌─────────────────────────────────────────────┐
-│ # スタックの作成                             │
-│ stack = []                                  │
-│                                           │
-│ # 要素の追加（push）                         │
-│ stack.append(1)                            │
-│ stack.append(2)                            │
-│ stack.append(3)                            │
-│ print(stack)  # [1, 2, 3]                 │
-│                                           │
-│ # 要素の取り出し（pop）                      │
-│ top = stack.pop()                          │
-│ print(top)    # 3（最後に追加した要素）     │
-│ print(stack)  # [1, 2]                    │
-│                                           │
-│ # 先頭要素の確認（取り出さない）              │
-│ if stack:                                  │
-│     print(stack[-1])  # 2                 │
-│                                           │
-│ # スタックが空かどうかの確認                 │
-│ print(len(stack) == 0)  # False           │
-└─────────────────────────────────────────────┘
+{% include panel.html type="steps" title="基本操作（push/pop/peek）" content="リストの append/pop を用いる（末尾がトップ）／空チェックは if stack" %}
+```python
+# スタックの作成
+stack = []
+
+# 要素の追加（push）
+stack.append(1)
+stack.append(2)
+stack.append(3)
+print(stack)  # [1, 2, 3]
+
+# 要素の取り出し（pop）
+top = stack.pop()
+print(top)    # 3（最後に追加した要素）
+print(stack)  # [1, 2]
+
+# 先頭要素の確認（取り出さない）
+if stack:
+    print(stack[-1])  # 2
+
+# 空チェック
+print(len(stack) == 0)  # False
+```
+
+{% include panel.html type="steps" title="使用例1: 括弧の対応チェック" content="開き括弧で push、閉じ括弧で pop／空や不一致で不正" %}
+```python
+def is_balanced_parentheses(s: str) -> bool:
+    stack = []
+    for ch in s:
+        if ch == '(': stack.append(ch)
+        elif ch == ')':
+            if not stack:
+                return False
+            stack.pop()
+    return len(stack) == 0
+
+print(is_balanced_parentheses("((()))"))  # True
+print(is_balanced_parentheses("(()))"))   # False
+```
+
+{% include panel.html type="steps" title="使用例2: 逆ポーランド記法（RPN）" content="オペランドは push、演算子で2つ pop→結果を push" %}
+```python
+def eval_rpn(tokens):
+    stack = []
+    for token in tokens:
+        if token in ['+', '-', '*', '/']:
+            b = stack.pop(); a = stack.pop()
+            if token == '+': stack.append(a + b)
+            elif token == '-': stack.append(a - b)
+            elif token == '*': stack.append(a * b)
+            elif token == '/': stack.append(a // b)
+        else:
+            stack.append(int(token))
+    return stack[0]
+
+print(eval_rpn(["2", "1", "+", "3", "*"]))  # 9
+```
 
 🎯 スタックの典型的な使用例
-┌─────────────────────────────────────────────┐
-│ 例1: 括弧の対応チェック                      │
-│ def is_balanced_parentheses(s):            │
-│     stack = []                             │
-│     for char in s:                         │
-│         if char == '(':                    │
-│             stack.append(char)             │
-│         elif char == ')':                  │
-│             if not stack:                  │
-│                 return False               │
-│             stack.pop()                    │
-│     return len(stack) == 0                 │
-│                                           │
-│ print(is_balanced_parentheses("((()))"))  # True│
-│ print(is_balanced_parentheses("(()))"))   # False│
-│                                           │
-│ 例2: 逆ポーランド記法の計算                  │
-│ def eval_rpn(tokens):                      │
-│     stack = []                             │
-│     for token in tokens:                   │
-│         if token in ['+', '-', '*', '/']:  │
-│             b = stack.pop()                │
-│             a = stack.pop()                │
-│             if token == '+': stack.append(a + b)│
-│             elif token == '-': stack.append(a - b)│
-│             elif token == '*': stack.append(a * b)│
-│             elif token == '/': stack.append(a // b)│
-│         else:                              │
-│             stack.append(int(token))       │
-│     return stack[0]                        │
-│                                           │
-│ print(eval_rpn(["2", "1", "+", "3", "*"])) # 9│
-└─────────────────────────────────────────────┘
 ```
 
 ### Pythonでのキュー実装
@@ -664,86 +641,74 @@ print("どちらも普通:", normal)          # {"Grace"}
 ```
 【図6-14：Pythonでのキュー実装と活用】
 
-🚶 dequeを使った効率的なキュー実装
-┌─────────────────────────────────────────────┐
-│ from collections import deque               │
-│                                           │
-│ # キューの作成                              │
-│ queue = deque()                            │
-│                                           │
-│ # 要素の追加（enqueue）                     │
-│ queue.append(1)                            │
-│ queue.append(2)                            │
-│ queue.append(3)                            │
-│ print(queue)  # deque([1, 2, 3])          │
-│                                           │
-│ # 要素の取り出し（dequeue）                  │
-│ front = queue.popleft()                    │
-│ print(front)  # 1（最初に追加した要素）     │
-│ print(queue)  # deque([2, 3])             │
-│                                           │
-│ # 先頭要素の確認（取り出さない）              │
-│ if queue:                                  │
-│     print(queue[0])  # 2                  │
-│                                           │
-│ # キューが空かどうかの確認                   │
-│ print(len(queue) == 0)  # False           │
-└─────────────────────────────────────────────┘
+{% include panel.html type="steps" title="基本操作（enqueue/dequeue/peek）" content="deque の append/popleft を用いる（先頭がフロント）" %}
+```python
+from collections import deque
 
-⚠️ リストをキューとして使うべきでない理由
-┌─────────────────────────────────────────────┐
-│ # ❌ 効率が悪い方法                          │
-│ queue = []                                 │
-│ queue.append(1)    # O(1) - 問題なし       │
-│ queue.append(2)    # O(1) - 問題なし       │
-│ front = queue.pop(0)  # O(N) - 遅い！      │
-│                                           │
-│ # ✅ 効率的な方法                           │
-│ from collections import deque              │
-│ queue = deque()                            │
-│ queue.append(1)       # O(1)              │
-│ queue.append(2)       # O(1)              │
-│ front = queue.popleft()  # O(1) - 高速！   │
-│                                           │
-│ 💡 理由：                                  │
-│ リストのpop(0)は全要素を左にシフトする必要があり、│
-│ 要素数Nに比例した時間がかかる（O(N)）        │
-│ dequeのpopleft()は常に一定時間（O(1)）      │
-└─────────────────────────────────────────────┘
+# キューの作成
+queue = deque()
 
-🎯 キューの典型的な使用例
-┌─────────────────────────────────────────────┐
-│ 例1: 幅優先探索（BFS）                       │
-│ def bfs(graph, start):                     │
-│     visited = set()                        │
-│     queue = deque([start])                 │
-│     result = []                            │
-│                                           │
-│     while queue:                           │
-│         node = queue.popleft()             │
-│         if node not in visited:            │
-│             visited.add(node)              │
-│             result.append(node)            │
-│             for neighbor in graph[node]:   │
-│                 if neighbor not in visited:│
-│                     queue.append(neighbor) │
-│     return result                          │
-│                                           │
-│ 例2: タスクの順番処理                        │
-│ def process_tasks():                       │
-│     task_queue = deque()                   │
-│                                           │
-│     # タスクの追加                          │
-│     task_queue.append("メール送信")         │
-│     task_queue.append("データ処理")         │
-│     task_queue.append("レポート作成")       │
-│                                           │
-│     # タスクの順次処理                      │
-│     while task_queue:                      │
-│         current_task = task_queue.popleft()│
-│         print(f"実行中: {current_task}")    │
-│         # 実際の処理はここに書く             │
-└─────────────────────────────────────────────┘
+# 追加（enqueue）
+queue.append(1)
+queue.append(2)
+queue.append(3)
+print(queue)  # deque([1, 2, 3])
+
+# 取り出し（dequeue）
+front = queue.popleft()
+print(front)  # 1（最初に追加した要素）
+print(queue)  # deque([2, 3])
+
+# 先頭の確認（取り出さない）
+if queue:
+    print(queue[0])  # 2
+
+# 空チェック
+print(len(queue) == 0)  # False
+```
+
+{% include panel.html type="warn" title="リストをキューに使わない理由" content="pop(0) は全体シフトで O(N)。deque の popleft() は O(1) で高速" %}
+```python
+# 悪い例（遅い）
+queue = []
+queue.append(1); queue.append(2)
+front = queue.pop(0)   # O(N)
+
+# 良い例（速い）
+from collections import deque
+queue = deque()
+queue.append(1); queue.append(2)
+front = queue.popleft()  # O(1)
+```
+
+{% include panel.html type="steps" title="使用例: BFS とタスク処理" content="BFS で探索順を管理／先入れ先出しの処理待ち行列に最適" %}
+```python
+from collections import deque
+
+def bfs(graph, start):
+    visited = set()
+    queue = deque([start])
+    order = []
+    while queue:
+        node = queue.popleft()
+        if node in visited:
+            continue
+        visited.add(node)
+        order.append(node)
+        for nb in graph[node]:
+            if nb not in visited:
+                queue.append(nb)
+    return order
+
+def process_tasks():
+    q = deque()
+    q.append("メール送信"); q.append("データ処理"); q.append("レポート作成")
+    while q:
+        current = q.popleft()
+        print(f"実行中: {current}")
+```
+
+ 
 ```
 
 ## 6.5 どのデータ構造を選ぶべき？
