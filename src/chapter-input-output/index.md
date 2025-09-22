@@ -366,7 +366,6 @@ points = [list(map(int, input().split())) for _ in range(n)]
 
 ### 複数行・複数列データの処理
 
-```
 【図4-13：2次元データの読み込みパターン】
 
 問題例：「N行M列の数値が与えられる」
@@ -385,37 +384,44 @@ points = [list(map(int, input().split())) for _ in range(n)]
 n, m = map(int, input().split())
 matrix = []
 for _ in range(n):
-│     row = list(map(int, input().split()))     │
-│     matrix.append(row)                        │
-│                                             │
-│ # 結果: matrix = [[1,2,3,4], [5,6,7,8], [9,10,11,12]]│
-│                                             │
-│ # アクセス例                                 │
-│ print(matrix[0][0])  # 1行1列目: 1            │
-│ print(matrix[1][2])  # 2行3列目: 7            │
-│ print(matrix[2][3])  # 3行4列目: 12           │
-└─────────────────────────────────────────────┘
+    row = list(map(int, input().split()))
+    matrix.append(row)
+# 例: 3行4列 → [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+
+# アクセス例
+print(matrix[0][0])  # 1行1列目: 1
+print(matrix[1][2])  # 2行3列目: 7
+print(matrix[2][3])  # 3行4列目: 12
+```
+</figure>
 
 内包表記版：
-┌─────────────────────────────────────────────┐
-│ n, m = map(int, input().split())              │
-│ matrix = [list(map(int, input().split())) for _ in range(n)]│
-└─────────────────────────────────────────────┘
+<figure class="pseudocode">
+<figcaption>2次元の内包表記版</figcaption>
+
+```python
+n, m = map(int, input().split())
+matrix = [list(map(int, input().split())) for _ in range(n)]
+```
+</figure>
 
 実用例：
-┌─────────────────────────────────────────────┐
-│ # 各行の合計を計算                           │
-│ for i, row in enumerate(matrix):              │
-│     print(f"{i+1}行目の合計: {sum(row)}")     │
-│                                             │
-│ # 全体の最大値を探索                         │
-│ max_val = 0                                  │
-│ for row in matrix:                           │
-│     for val in row:                          │
-│         max_val = max(max_val, val)          │
-│ print(f"最大値: {max_val}")                  │
-└─────────────────────────────────────────────┘
+<figure class="pseudocode">
+<figcaption>集計パターン</figcaption>
+
+```python
+# 各行の合計
+for i, row in enumerate(matrix):
+    print(f"{i+1}行目の合計: {sum(row)}")
+
+# 全体の最大値
+max_val = 0
+for row in matrix:
+    for val in row:
+        max_val = max(max_val, val)
+print(f"最大値: {max_val}")
 ```
+</figure>
 
 ## 4.5 文字列入力を扱おう
 
