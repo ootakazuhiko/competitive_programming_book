@@ -42,6 +42,8 @@ if x > 0:
 for i in range(10):
     print(i)
 
+```
+
 ### 競技プログラミングでのPythonの優位性
 
 ![図3-2：競技プログラミング言語比較表]({{ site.baseurl }}/assets/diagrams/chapter3/figure3-2-programming-language-comparison.svg)

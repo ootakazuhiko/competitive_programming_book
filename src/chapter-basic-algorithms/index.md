@@ -97,7 +97,6 @@ Step 5: temp = 0 → ループ終了
   <figcaption>図5-x：全探索の基本フロー</figcaption>
 </figure>
 
-```
 【図5-5：二重ループによる全探索】
 
 問題例：「N個の数から2つ選んで、その和がKになる組み合わせの個数を求める」
@@ -153,7 +152,6 @@ print(count)
 • range(i + 1, n) により、i < j を保証
 • これで重複や同じ要素の組み合わせを避けられる
 • 計算量は O(N^2) - N個から2つ選ぶ組み合わせ
-```
 
 ## 5.2 条件分岐で場合分けしよう
 
@@ -161,12 +159,10 @@ print(count)
 
 競技プログラミングでは、複数の条件が組み合わさった複雑な場合分けが必要になることがある。整理して考える方法を学ぼう。
 
-```
 【図5-6：条件分岐の段階的構築】
 
 問題例：「点数に応じて成績を判定」  
 90点以上：A, 80点以上：B, 70点以上：C, 60点以上：D, 未満：F
-```
 
 <figure class="pseudocode">
   <figcaption>悪い例（冗長な条件）</figcaption>
@@ -205,9 +201,7 @@ else:                 # 60未満
 
 ### 複雑な論理演算の活用
 
-```
 【図5-7：論理演算子の効果的な使用】
-```
 
 {% capture logic_ops %}
 基本的な論理演算子  
@@ -241,9 +235,7 @@ else:
 
 複雑な条件分岐は、表や図で整理すると理解しやすい：
 
-```
 【図5-8：条件分岐の表による整理】
-```
 
 {% capture pat_list %}
 可能なパターン（6通り）  
@@ -294,9 +286,7 @@ print(*numbers)</code></pre>
 
 数学の知識は競技プログラミングで非常に重要だ。特に最大公約数は頻出なので、しっかりマスターしよう。
 
-```
 【図5-9：ユークリッドの互除法の理解】
-```
 
 <figure class="pseudocode">
   <figcaption>反復版（ユークリッドの互除法）</figcaption>
@@ -314,9 +304,7 @@ gcd(a, b) = gcd(b, a % b)（b=0で停止）
 {% endcapture %}
 {% include panel.html type="info" title="アルゴリズムの原理" content=gcd_principle %}
 
-```
 【図5-10：GCDの実装と応用】
-```
 
 <figure class="pseudocode">
   <figcaption>基本実装（ユークリッドの互除法）</figcaption>
@@ -358,9 +346,7 @@ print(lcm(a, b))</code></pre>
 
 ### 素数判定と素数の性質
 
-```
 【図5-11：効率的な素数判定】
-```
 
 <figure class="pseudocode">
   <figcaption>素朴な素数判定（O(n)）</figcaption>
@@ -416,9 +402,7 @@ else:
 
 競技プログラミングでは、数学的な性質を理解し活用することで、計算量を劇的に削減できる。
 
-```
 【図5-12：競技プログラミングでよく使う数学的性質】
-```
 
 <figure class="pseudocode">
   <figcaption>奇数・偶数の性質と応用</figcaption>
@@ -467,9 +451,7 @@ print(combination(5, 2))  # 10</code></pre>
 
 文字列処理は競技プログラミングで頻出の分野だ。様々なパターンをマスターしよう。
 
-```
 【図5-13：競技プログラミングでよく使う文字列操作】
-```
 
 <figure class="pseudocode">
   <figcaption>パターン1：文字の出現回数カウント</figcaption>
@@ -517,9 +499,7 @@ print(parts)</code></pre>
 
 ### 回文（Palindrome）判定
 
-```
 【図5-14：回文判定の様々な実装】
-```
 
 <figure class="pseudocode">
   <figcaption>基本：スライスで反転比較</figcaption>
@@ -557,9 +537,7 @@ print(is_palindrome_advanced("A man, a plan, a canal: Panama"))  # True</code></
 
 ### 文字列の辞書順ソート
 
-```
 【図5-15：文字列のソートと順序】
-```
 
 <figure class="pseudocode">
   <figcaption>基本の文字列ソート</figcaption>
@@ -603,9 +581,7 @@ print(numbers)</code></pre>
 
 ### ソートを活用した問題解決パターン
 
-```
 【図5-17：ソートによる問題解決の典型例】
-```
 
 <figure class="pseudocode">
   <figcaption>パターン1: 中央値</figcaption>
@@ -669,9 +645,7 @@ print(sorted(set(nums)))</code></pre>
 
 ![図5-4：貪欲法アルゴリズム]({{ site.baseurl }}/images/figure5-4-greedy-algorithm-patterns.svg)
 
-```
 【図5-19：コイン問題の実装】
-```
 
 <figure class="pseudocode">
   <figcaption>貪欲によるコイン最少枚数</figcaption>
@@ -698,9 +672,7 @@ for coin, num in detail:
 
 貪欲法の応用として、区間スケジューリング問題も重要だ：
 
-```
 【図5-20：区間スケジューリング問題】
-```
 
 {% capture interval_strategy %}
 貪欲戦略：「終了時刻が早い会議から選ぶ」  
@@ -733,9 +705,7 @@ print(max_meetings(meetings))</code></pre>
 
 ### 貪欲法の注意点
 
-```
 【図5-21：貪欲法が失敗する例】
-```
 
 {% capture bad_coin %}
 コイン系の反例（[1,3,4] で 6 を作る）  
@@ -767,9 +737,7 @@ print(max_meetings(meetings))</code></pre>
 
 この章では、競技プログラミングで最も頻繁に使用される6つの基本アルゴリズムを学んだ。
 
-```
 【図5-22：この章で身につけたアルゴリズム道具箱】
-```
 
 {% capture ch5_gained %}
 ✅ 全探索／条件分岐  
