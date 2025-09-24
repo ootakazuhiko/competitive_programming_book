@@ -378,7 +378,6 @@ def find_max(arr):
 • 構造: ソート済み/逆順／重複／空/単一
 {% endcapture %}
 {% include panel.html type="steps" title="エッジケース" content=edge_cases %}
-│                                           │
 {% capture custom_tests %}
 📝 自作テストケース例  
 ```text
@@ -396,7 +395,6 @@ def find_max(arr):
 ```
 {% endcapture %}
 {% include panel.html type="steps" title="自作テスト" content=custom_tests %}
-```
 
 ### AtCoder特有のトラブルシューティング
 

@@ -110,7 +110,6 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 {% include panel.html type="info" title="思考プロセス" content=sample_think %}
 
 {% include panel.html type="info" title="完了の目安" content="このアルゴリズムで間違いなく解ける、と確信できたら第3段階完了" %}
-```
 
 ### 問題文読解の実践テクニック
 
@@ -211,7 +210,6 @@ else:
 
 問題文を正確に理解したら、次はサンプル入出力を徹底活用しよう。サンプルは単なる「例」ではない。解法発見の重要な手がかりなんだ。
 
-```
 【図8-4：サンプル活用の4段階戦略】
 
 🔍 段階1：動作確認（基本）
@@ -284,11 +282,9 @@ else:
 上記すべてに「Yes」→ 実装開始。1つでも不明点があれば問題文を再確認。
 {% endcapture %}
 {% include panel.html type="plan" title="段階4：実装準備" content=g4 %}
-```
 
 ### サンプル分析の実践例
 
-```
 【図8-5：実際の問題でのサンプル分析実演】
 
 📋 問題例：「配列の変換」
@@ -349,7 +345,6 @@ for rank, (value, original_index) in enumerate(indexed_arr):
 print(ranks)
 </code></pre>
 </figure>
-```
 
 ## 8.3 解法を段階的に組み立てよう
 
@@ -518,7 +513,6 @@ Stage 3: データ構造
 
 解法が固まったら、いよいよ実装だ。でも、いきなりコードを書き始めるのは効率が悪い。実装前の計画が、その後のすべてを決める。
 
-```
 【図8-8：実装前計画の重要性】
 
 {% capture plan_bad %}
@@ -535,11 +529,9 @@ Stage 3: データ構造
 効果: 書き直し減／デバッグ容易／提出まで短縮
 {% endcapture %}
 {% include panel.html type="steps" title="計画的な実装（推奨）" content=plan_good %}
-```
 
 ### 実装計画書テンプレート
 
-```
 【図8-9：効果的な実装計画書の作成方法】
 
 📋 実装計画書テンプレート
@@ -558,9 +550,6 @@ Stage 3: データ構造
 変数設計: 入力用／作業用／出力用の役割と型
 {% endcapture %}
 {% include panel.html type="info" title="変数・関数設計" content=design_vars %}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 {% capture impl_steps %}
 1) 実装手順を箇条書きにする  
 2) 先に入力/出力の枠を作る  
@@ -571,37 +560,17 @@ Stage 3: データ構造
 {% include panel.html type="warn" title="注意点" content="エッジケースの扱い／計算量とメモリ／境界条件のテスト" %}
 
 {% include panel.html type="steps" title="テスト計画" content="サンプル→境界→自作ケースの順で確認" %}
-=======
->>>>>>> origin/main
-│ 1. [ステップ1の詳細]                       │
-│ 2. [ステップ2の詳細]                       │
-│ 3. [...]                                  │
-│                                           │
-│ ⚠️ 注意点：                               │
-│ • [実装時の注意事項]                       │
-│ • [エッジケースの処理]                     │
-│ • [パフォーマンス上の考慮点]                │
-│                                           │
-│ 🧪 テスト計画：                            │
-│ • [サンプルケース]                         │
-│ • [エッジケース]                           │
-│ • [自作テストケース]                       │
-└─────────────────────────────────────────────┘
->>>>>>> origin/main
-```
+
 
 ### 実装計画の具体例
 
-```
 【図8-10：実際の問題での実装計画例】
 
 📋 実装計画書：ABC999 C「Magic Square Checker」
 {% include panel.html type="info" title="例題：3×3の魔方陣判定" content="入力: 3×3 整数／出力: Yes/No。変数: grid/各種合計/target_sum=15。行列対角の合計一致＋1..9重複なし" %}
-```
 
 ### 実装の段階的進行
 
-```
 【図8-11：実装の段階的アプローチ】
 
 🏗️ Phase 1: 骨組み実装（10-15分）
@@ -631,42 +600,36 @@ if __name__ == "__main__":
 {% include panel.html type="steps" title="この段階の確認" content="入力が正しく読める／基本的な出力ができる／構造に問題がない" %}
 
 🔧 Phase 2: 核心機能実装（15-25分）
-┌─────────────────────────────────────────────┐
-│ ✅ 核心機能の段階的実装：                   │
-│ • 最重要な処理から順番に実装                │
-│ • 一つずつ動作確認しながら進める             │
-│ • print文でデバッグ情報を出力               │
-│                                           │
-│ 💻 段階的実装例：                          │
-│ def check_magic_square(grid):              │
-│     # Step 1: 行の合計チェック              │
-│     for i in range(3):                     │
-│         row_sum = sum(grid[i])             │
-│         print(f"Row {i}: {row_sum}")  # デバッグ│
-│         if row_sum != 15:                  │
-│             return False                   │
-│                                           │
-│     # Step 2: 列の合計チェック              │
-│     for j in range(3):                     │
-│         col_sum = sum(grid[i][j] for i in range(3))│
-│         print(f"Col {j}: {col_sum}")  # デバッグ│
-│         if col_sum != 15:                  │
-│             return False                   │
-│                                           │
-│     # Step 3: 対角線の合計チェック          │
-│     diag1 = sum(grid[i][i] for i in range(3))│
-│     diag2 = sum(grid[i][2-i] for i in range(3))│
-│     print(f"Diag1: {diag1}, Diag2: {diag2}")│
-│     if diag1 != 15 or diag2 != 15:         │
-│         return False                       │
-│                                           │
-│     return True                            │
-│                                           │
-│ 🧪 各ステップでの確認：                     │
-│ • 各計算が正しい値を返すか                  │
-│ • 条件分岐が期待通りに動作するか            │
-│ • サンプルケースで正しい結果が得られるか     │
-└─────────────────────────────────────────────┘
+{% include panel.html type="steps" title="核心機能の段階的実装" content="重要処理から順に実装／1つずつ動作確認／printでデバッグ情報を出す" %}
+
+<figure class="pseudocode">
+<figcaption>段階的実装例（デバッグ出力つき）</figcaption>
+<pre><code class="language-python">def check_magic_square(grid):
+    # Step 1: 行の合計
+    for i in range(3):
+        row_sum = sum(grid[i])
+        print(f"Row {i}: {row_sum}")
+        if row_sum != 15:
+            return False
+
+    # Step 2: 列の合計
+    for j in range(3):
+        col_sum = sum(grid[i][j] for i in range(3))
+        print(f"Col {j}: {col_sum}")
+        if col_sum != 15:
+            return False
+
+    # Step 3: 対角線
+    diag1 = sum(grid[i][i] for i in range(3))
+    diag2 = sum(grid[i][2 - i] for i in range(3))
+    print(f"Diag1: {diag1}, Diag2: {diag2}")
+    if diag1 != 15 or diag2 != 15:
+        return False
+    return True
+</code></pre>
+</figure>
+
+{% include panel.html type="steps" title="各ステップの確認" content="各計算が正しい／分岐が期待通り／サンプルで正しい結果" %}
 
 🎯 Phase 3: 完成・最適化（5-10分）
 {% include panel.html type="steps" title="最終調整" content="デバッグ出力を削除／例外処理／可読性向上／最終動作確認" %}
@@ -699,7 +662,6 @@ if __name__ == "__main__":
 </figure>
 
 {% include panel.html type="steps" title="最終確認" content="サンプル通過／境界動作OK／デバッグ出力なし／読みやすい構造" %}
-```
 
 ## 8.5 テストとデバッグを習慣にしよう
 
@@ -832,7 +794,6 @@ print デバッグ
 
 この章では、どんな問題にも応用できる体系的な問題解決プロセスを学んだ。
 
-```
 【図8-16：習得した問題解決プロセス】
 
 {% capture ph1 %}
@@ -877,7 +838,6 @@ print デバッグ
 
 また、テストとデバッグの重要性も理解した。「動けばいい」ではなく、「確実に正しく動く」ことを目指す姿勢は、プロのエンジニアに必要な品質意識の基盤になる。
 
-```
 【図8-17：次章への発展】
 
 {% capture next %}
