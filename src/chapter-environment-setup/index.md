@@ -298,13 +298,13 @@ AtCoderの大きな特徴の一つが「レーティングシステム」だ。�
 🏆 コンテスト結果による変動
 
 ケース1: 期待より良い成績
-{% include panel.html type="steps" title="ケース1: 実際順位が期待より良い" content="例: 実際600位（期待800位より上）→ レーティング上昇（420→450）」 %}
+{% include panel.html type="steps" title="ケース1: 実際順位が期待より良い" content="例: 実際600位（期待800位より上）→ レーティング上昇（420→450）" %}
 
 ケース2: 期待通りの成績  
-{% include panel.html type="info" title="ケース2: 実際順位が期待通り" content="例: 実際800位 → レーティング変動なし（420→420）」 %}
+{% include panel.html type="info" title="ケース2: 実際順位が期待通り" content="例: 実際800位 → レーティング変動なし（420→420）" %}
 
 ケース3: 期待より悪い成績
-{% include panel.html type="warn" title="ケース3: 実際順位が期待より悪い" content="例: 実際1000位（期待800位より下）→ レーティング下降（420→390）」 %}
+{% include panel.html type="warn" title="ケース3: 実際順位が期待より悪い" content="例: 実際1000位（期待800位より下）→ レーティング下降（420→390）" %}
 
 💡 ポイント：
 • 実力より上の成績 → レーティング上昇
