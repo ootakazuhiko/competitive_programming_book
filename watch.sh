@@ -31,12 +31,20 @@ append_log() {
 
 write_json_state() {
   local porcelain="$1"
-  local timestamp
+  local timestamp ci_json
   timestamp=$(date --iso-8601=seconds)
+  if command -v gh >/dev/null 2>&1; then
+    # Best-effort: latest CI runs (name/status/conclusion)
+    ci_json=$(gh run list --limit 5 --json databaseId,status,conclusion,name 2>/dev/null \
+      | jq -c '[.[] | {id:.databaseId,name,status,conclusion}]' 2>/dev/null || echo '[]')
+  else
+    ci_json='[]'
+  fi
   cat > "$JSON_STATE" <<JSON
 {
   "timestamp": "${timestamp}",
-  "status": "$(printf '%s' "$porcelain" | sed 's/"/\\"/g')"
+  "status": "$(printf '%s' "$porcelain" | sed 's/"/\\"/g')",
+  "ci": ${ci_json}
 }
 JSON
 }
@@ -94,6 +102,12 @@ summary() {
     echo
     echo "Latest JSON state ($JSON_STATE):"
     cat "$JSON_STATE"
+  fi
+  if command -v gh >/dev/null 2>&1; then
+    echo
+    echo "Latest CI runs:"
+    gh run list --limit 5 --json databaseId,status,conclusion,name \
+      | jq -r '.[] | ["#"+(.databaseId|tostring), .name, .status, (.conclusion//"-")] | @tsv' 2>/dev/null || true
   fi
 }
 
