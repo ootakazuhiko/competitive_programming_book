@@ -32,7 +32,6 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 
 ### Python競技プログラミングでの頻出エラー TOP5
 
-```
 【図9-2：エラーメッセージ頻出ランキング】
 
 🥇 第1位：SyntaxError（構文エラー）
@@ -100,11 +99,9 @@ else:
     print("インデックス3は存在しません")
 {% endcapture %}
 {% include panel.html type="steps" title="安全な書き方" content=idx_safe %}
-```
 
 ### エラーメッセージの読み方をマスターしよう
 
-```
 【図9-3：エラーメッセージ解読の技術】
 
 🔍 Traceback（トレースバック）の読み方
@@ -123,7 +120,6 @@ ZeroDivisionError: division by zero
 🎯 エラーメッセージから原因を特定する手順
 
 {% include panel.html type="steps" title="ステップ" content="1) 例外の種類を確認（Syntax/Name/Index/ZeroDivisionなど）／2) 発生行を特定（line X と前後）／3) 原因を推測（値/条件/式）／4) 仮説→修正→検証を反復" %}
-```
 
 ## 9.2 実行時エラーを解決しよう
 
@@ -204,7 +200,6 @@ print(result)   # 8
 {% include panel.html type="steps" title="改善例" content=type_good %}
 
 {% include panel.html type="steps" title="対策" content="演算前に型を統一／int()/str()/float()で明示的に変換" %}
-```
 
 ### デバッグの実践的テクニック
 
@@ -349,7 +344,6 @@ def find_max(arr):
 
 競技プログラミング特有のエラー「Wrong Answer（WA）」は、プログラムは動くが期待される出力と異なる結果を出力した時に出る。これを解決するコツを覚えよう。
 
-```
 【図9-8：Wrong Answer の体系的対処法】
 
 {% include panel.html type="steps" title="WA分析のフロー" content="1) 出力形式の厳密確認／2) サンプルで手動追跡／3) エッジケース検証／4) 解法の見直し" %}
@@ -416,7 +410,6 @@ def find_max(arr):
 
 TLE（Time Limit Exceeded）は、プログラムの実行時間が制限時間を超えた時に出るエラーだ。正しい答えは出るけれど、計算に時間がかかりすぎるということ。
 
-```
 【図9-10：TLE対策の段階的アプローチ】
 
 ⏰ TLE（Time Limit Exceeded）の原因分析
@@ -482,11 +475,9 @@ import sys
 for x in arr:
     sys.stdout.write(str(x) + '\\n')
 ```
-```
 
 ### 計算量の見積もりと改善
 
-```
 【図9-11：制約から計算量を逆算する技術】
 
 {% include panel.html type="info" title="制約と計算量の目安" content="N≤10: 何でも可／N≤20: O(2^N)可／N≤100: O(N^3)／N≤1,000: O(N^2)／N≤100,000: O(N log N)／N≤1,000,000: O(N)" %}
@@ -500,11 +491,9 @@ for x in arr:
 ✅ 最後の手段: PyPy提出／解法の根本見直し／制約の再確認
 {% endcapture %}
 {% include panel.html type="steps" title="高速化チェックリスト" content=speed_check %}
-```
 
 ### TLE解決の実践例
 
-```
 【図9-12：実際のTLE解決プロセス】
 
 🎯 例題：「N個の数から2つ選んで積がKになるペアの個数」
@@ -551,13 +540,11 @@ print(count)
 改善: N=100,000 でも10万回程度の計算に抑制
 {% endcapture %}
 {% include panel.html type="steps" title="ペア積=K（改善）" content=fast_pairs %}
-```
 
 ## まとめ：エラーは成長への階段
 
 この章では、プログラミングで避けて通れないエラーとの正しい付き合い方を学んだね。
 
-```
 【図9-13：この章で身につけたエラー対応力】
 
 🛠️ 習得したスキル

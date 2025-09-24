@@ -344,7 +344,6 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 
 ### 校内イベントの企画・運営
 
-```
 【図11-8：学校内でのプログラミングイベント企画】
 
 {% capture schedule %}
@@ -442,7 +441,6 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 {% include panel.html type="info" title="交流のメリット" content=exchange_benefits %}
 
 {% include panel.html type="warn" title="注意点" content="学校間の調整時間／交通・会場費の予算／保護者同意と安全対策" %}
-```
 
 ## 11.4 プログラミング教室・イベント活用
 
