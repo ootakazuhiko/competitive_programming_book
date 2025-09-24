@@ -21,9 +21,13 @@ jobs:
       - run: |
           npm -g install @mermaid-js/mermaid-cli@10
           mkdir -p assets/diagrams/generated
+          # Puppeteer config to disable sandbox in GitHub Actions
+          cat > assets/mermaid/puppeteer-config.json <<'JSON'
+          {"args": ["--no-sandbox", "--disable-setuid-sandbox"]}
+          JSON
           for f in $(find assets/mermaid -name '*.mmd'); do \
             base=$(basename "$f" .mmd); \
-            mmdc -i "$f" -o "assets/diagrams/generated/${base}.svg" --backgroundColor white; \
+            mmdc -i "$f" -o "assets/diagrams/generated/${base}.svg" --backgroundColor white -p assets/mermaid/puppeteer-config.json; \
           done
       - name: Commit generated SVG
         uses: EndBug/add-and-commit@v9
