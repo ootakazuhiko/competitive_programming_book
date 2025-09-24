@@ -156,23 +156,27 @@ x = float(input())
 
 【図4-7：複数数値入力の段階的処理】
 
-入力: "3 5 2\n"
+<figure class="pseudocode">
+  <figcaption>1行の複数数値を処理する流れ</figcaption>
+  <pre><code class="language-text">入力: "3 5 2\n"
     ↓
-input(): "3 5 2"  ← 改行文字は自動で除去
+input(): "3 5 2"   ← 改行は自動で除去
     ↓
-.split(): ["3", "5", "2"]  ← 空白で分割、文字列のリスト
+.split(): ["3", "5", "2"]   ← 空白で分割（文字列のリスト）
     ↓
-map(int, ...): <map object>  ← 各要素をint()で変換するオブジェクト
+map(int, ...): &lt;map object&gt;   ← 各要素を int() で変換するイテレータ
     ↓
-使用方法による分岐:
-
-パターン1：個別変数に代入
-a, b, c = map(int, input().split())
-# a=3, b=5, c=2（それぞれ整数）
-
-パターン2：リストとして取得
-numbers = list(map(int, input().split()))
-# numbers = [3, 5, 2]（整数のリスト）
+用途に応じて受け取り方を選ぶ
+  - 個別変数に展開（要素数が決まっている場合）
+  - リスト化して扱う（可変長の場合）</code></pre>
+  <figcaption>パターン1：個別変数に代入</figcaption>
+  <pre><code class="language-python">a, b, c = map(int, input().split())
+# a=3, b=5, c=2</code></pre>
+  <figcaption>パターン2：リストとして取得</figcaption>
+  <pre><code class="language-python">numbers = list(map(int, input().split()))
+# numbers = [3, 5, 2]</code></pre>
+  
+</figure>
 
 ### split()関数の詳細
 
