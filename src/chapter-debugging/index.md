@@ -243,7 +243,7 @@ def calculate_average(numbers):
 ```
 
 {% include panel.html type="steps" title="良いデバッグprint" content="Debug: を付けて区別／変数名=値 の形で出す／処理ステップを明記（Step 1 など）" %}
-{% include panel.html type="warn" title="分かりにくい例" content="print(x) だけ／"ここ" 等の曖昧なメッセージ／意味のない数値だけ" %}
+{% include panel.html type='warn' title='分かりにくい例' content='print(x) だけ／"ここ" 等の曖昧なメッセージ／意味のない数値だけ' %}
 {% include panel.html type="steps" title="コツ" content="本来の出力と混ざらない工夫／最小限で十分な情報を出す／不要になったら削除する" %}
 
 ## 9.3 論理エラーを見つけよう
