@@ -43,7 +43,7 @@ zeros = [0] * 5
 matrix = [[0] * 3 for _ in range(2)]
 ```
 
-{% include panel.html type="steps" title="アクセス" content="正のインデックス／負のインデックス／スライス（start:end）」 %}
+{% include panel.html type="steps" title="アクセス" content="正のインデックス／負のインデックス／スライス（start:end）" %}
 
 ```python
 numbers = [10, 25, 7, 33, 2]
