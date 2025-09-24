@@ -1,0 +1,29 @@
+name: Lint figures/panels around code fences
+
+on:
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  lint-figures:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Show base/base_sha
+        run: |
+          echo "Base ref: ${{ github.base_ref }}"
+          echo "Base sha: ${{ github.event.pull_request.base.sha }}"
+
+      - name: Run lint-figures
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          bash scripts/lint-figures.sh
+
