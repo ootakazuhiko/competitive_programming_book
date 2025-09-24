@@ -306,7 +306,7 @@ print(a + b + c, s)</code></pre>
 
 {% include panel.html type="steps" title="提出前チェックポイント" content="言語がPythonか／文法エラーなし／インデント正しい／inputの数一致／出力形式正しい" %}
 
-{% include panel.html type="info" title="入力例と解答コード（再掲）" content="上のStep 3の解答例をそのまま貼り付けて提出」 %}
+{% include panel.html type="info" title="入力例と解答コード（再掲）" content="上のStep 3の解答例をそのまま貼り付けて提出" %}
 
 {% capture result_notes %}
 結果表示の見方  
