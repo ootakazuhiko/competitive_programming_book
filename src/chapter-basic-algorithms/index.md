@@ -59,26 +59,28 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 
 【図5-4：数値の各桁分解プロセス】
 
-例：数値 1234 の各桁の和を求める
+<figure class="pseudocode">
+  <figcaption>各桁の和を求める（手続きの流れ）</figcaption>
+  <pre><code class="language-text">例：数値 1234 の各桁の和を求める
 
-Step 1: temp = 1234, digit_sum = 0  
-temp % 10 = 4（最下位桁） → digit_sum = 0 + 4 = 4 → temp = 123
+Step 1: temp = 1234, digit_sum = 0
+  temp % 10 = 4（最下位桁） → digit_sum = 4 → temp = 123
 
-Step 2: temp = 123, digit_sum = 4  
-temp % 10 = 3 → digit_sum = 7 → temp = 12
+Step 2: temp = 123, digit_sum = 4
+  temp % 10 = 3 → digit_sum = 7 → temp = 12
 
-Step 3: temp = 12, digit_sum = 7  
-temp % 10 = 2 → digit_sum = 9 → temp = 1
+Step 3: temp = 12, digit_sum = 7
+  temp % 10 = 2 → digit_sum = 9 → temp = 1
 
-Step 4: temp = 1, digit_sum = 9  
-temp % 10 = 1 → digit_sum = 10 → temp = 0
+Step 4: temp = 1, digit_sum = 9
+  temp % 10 = 1 → digit_sum = 10 → temp = 0
 
-Step 5: temp = 0 → ループ終了  
-結果: digit_sum = 10
-
-💡 重要な演算子  
-• % (mod): 余りを求める → 最下位桁の取得  
-• // (整数除算): 小数切り捨ての除算 → 最下位桁の除去
+Step 5: temp = 0 → ループ終了
+結果: digit_sum = 10</code></pre>
+  <figcaption>💡 重要な演算子</figcaption>
+  <pre><code class="language-text">• % (mod): 余りを求める → 最下位桁の取得
+• // (整数除算): 小数切り捨ての除算 → 最下位桁の除去</code></pre>
+</figure>
 
 ### より複雑な全探索の例
 
