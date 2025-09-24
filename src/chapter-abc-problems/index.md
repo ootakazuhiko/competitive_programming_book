@@ -60,6 +60,7 @@ ABC A問題は、以下の4つの典型パターンに分類できる：
 h1 = int(input())
 h2 = int(input())
 print(h2 - h1)
+```
 
 **ポイント**:  
 • 問題文を式に翻訳する  
@@ -77,6 +78,7 @@ print(h2 - h1)
 ```python
 a, b = map(int, input().split())
 print("Even" if (a*b) % 2 == 0 else "Odd")
+```
 
 **ポイント**:  
 • 偶奇性の理解（偶数×任意=偶数）  
@@ -94,6 +96,7 @@ print("Even" if (a*b) % 2 == 0 else "Odd")
 ```python
 s = input()
 print(s.count('1'))
+```
 
 または:
 ```python
@@ -103,6 +106,7 @@ for ch in s:
     if ch == '1':
         count += 1
 print(count)
+```
 {% endcapture %}
 {% include panel.html type="info" title="文字列操作" content=pat3 %}
 {% capture pat3_points %}
@@ -122,6 +126,7 @@ print(count)
 ```python
 x, a, b = map(int, input().split())
 print("A" if abs(x - a) < abs(x - b) else "B")
+```
 
 **ポイント**:  
 • 距離の概念（絶対値）の理解  
