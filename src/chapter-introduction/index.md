@@ -301,11 +301,7 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 
 【図1-24：君の競技プログラミングジャーニーの始まり】
 
-今日の君                     3年後の君
-{% include panel.html type="info" title="ビフォー→アフター（例）" content="興味/Scratch/初心者→JOI本選/情報科目高評価/論理的思考の汎用活用" %}
-                            5年後の君（イメージ）
-
-🎯 この成長は、今日の一歩から始まる！
+![図1-24：君の競技プログラミングジャーニーの始まり]({{ site.baseurl }}/assets/diagrams/chapter1/figure1-24-programming-journey-start.svg)
 
 **最後のメッセージ**
 
@@ -315,8 +311,7 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 
 【図1-25：次章への架け橋】
 
-第1章で学んだこと              第2章で学ぶこと
-{% include panel.html type="steps" title="この先で学ぶこと（例）" content="競プロの意義／AtCoderの使い方／アカウント作成／画面構成／コンテストの実際" %}
+![図1-25：次章への架け橋]({{ site.baseurl }}/assets/diagrams/chapter1/figure1-25-next-chapter-bridge.svg)
 
 🎮 理論から実践へ！
 いよいよAtCoderの世界に足を踏み入れよう！
