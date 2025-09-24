@@ -90,7 +90,6 @@ print(numbers)  # [100, 33, 2]
 
 ### 二次元リスト（表形式データ）の活用
 
-```
 【図6-3：二次元リストの構造と活用法】
 
 📊 二次元リストの基本概念
@@ -301,7 +300,6 @@ print(high_scores)  # {"math": 85, "english": 92}
 
 ### 競技プログラミングでの辞書活用パターン
 
-```
 【図6-7：辞書を使った典型的な解法パターン】
 
 {% include panel.html type="info" title="パターン1: カウント処理（文字出現回数）" content="入力: programming → 出力: p:1, r:2, o:1, g:2, a:1, m:2, i:1, n:1" %}
@@ -572,7 +570,6 @@ print("どちらも普通:", normal)          # {"Grace"}
 
 ### Pythonでのスタック実装
 
-```
 【図6-13：Pythonでのスタック実装と活用】
 
 {% include panel.html type="steps" title="基本操作（push/pop/peek）" content="リストの append/pop を用いる（末尾がトップ）／空チェックは if stack" %}
@@ -638,7 +635,6 @@ print(eval_rpn(["2", "1", "+", "3", "*"]))  # 9
 
 ### Pythonでのキュー実装
 
-```
 【図6-14：Pythonでのキュー実装と活用】
 
 {% include panel.html type="steps" title="基本操作（enqueue/dequeue/peek）" content="deque の append/popleft を用いる（先頭がフロント）" %}
