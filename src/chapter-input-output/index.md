@@ -675,3 +675,23 @@ print(f"{result:.3f}")  # 2.333</code></pre>
 - `print(*list)` - リストの要素をスペース区切りで出力
 
 次の章では、いよいよアルゴリズムの世界に足を踏み入れよう。問題を効率的に解くための「道具箱」を手に入れることで、君の競技プログラミングスキルは大きく飛躍するはずだ！
+
+# 章末クイズ（理解度チェック）
+
+{% capture quiz_q %}
+Q1. 標準入力から1行の整数を3つ読み、合計を出力したい。最も簡潔な実装は？（Python）  
+Q2. `input().split()` が返す型は？  
+Q3. `map(int, input().split())` の返り値をそのまま `len()` に渡すと何が起こる？  
+Q4. N行入力で、1行ずつ整数を読みたい。forの回数と `input()` の呼び出し関係は？  
+Q5. 浮動小数点の出力で小数第2位まで表示するフォーマット指定子は？
+{% endcapture %}
+{% include panel.html type="steps" title="📘 質問" content=quiz_q %}
+
+{% capture quiz_a %}
+A1. `a,b,c = map(int, input().split()); print(a+b+c)`  
+A2. 文字列のリスト（例: `["1","2","3"]`）  
+A3. `map` オブジェクトであり、そのままでは長さを数えられない（`len()`は不可）。`list(...)` で実体化する  
+A4. `for _ in range(N): x = int(input())` のように N 回 `input()` を呼ぶ  
+A5. `print(f"{x:.2f}")`（フォーマット指定: `.2f`）
+{% endcapture %}
+{% include panel.html type="info" title="📝 解答とヒント" content=quiz_a %}
