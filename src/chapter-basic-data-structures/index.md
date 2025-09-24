@@ -91,32 +91,27 @@ print(numbers)  # [100, 33, 2]
 
 【図6-3：二次元リストの構造と活用法】
 
-📊 二次元リストの基本概念
-
-```python
-grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-```
-
-<div class="table-scroll">
-<table class="table-compact table-striped">
-  <thead>
-    <tr><th></th><th>列0</th><th>列1</th><th>列2</th></tr>
-  </thead>
-  <tbody>
-    <tr><th>行0</th><td>1</td><td>2</td><td>3</td></tr>
-    <tr><th>行1</th><td>4</td><td>5</td><td>6</td></tr>
-    <tr><th>行2</th><td>7</td><td>8</td><td>9</td></tr>
-  </tbody>
-</table>
-</div>
-
-アクセス方法:
-
-```python
-print(grid[0][0])  # 1
+<figure>
+  <figcaption>二次元リストの構造と活用法</figcaption>
+  <pre><code class="language-python">grid = [[1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]]</code></pre>
+  <div class="table-scroll">
+  <table class="table-compact table-striped">
+    <thead>
+      <tr><th></th><th>列0</th><th>列1</th><th>列2</th></tr>
+    </thead>
+    <tbody>
+      <tr><th>行0</th><td>1</td><td>2</td><td>3</td></tr>
+      <tr><th>行1</th><td>4</td><td>5</td><td>6</td></tr>
+      <tr><th>行2</th><td>7</td><td>8</td><td>9</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <pre><code class="language-python">print(grid[0][0])  # 1
 print(grid[1][2])  # 6
-print(grid[2][1])  # 8
-```
+print(grid[2][1])  # 8</code></pre>
+</figure>
 
 🏗️ 二次元リストの作成方法
 <figure class="pseudocode">

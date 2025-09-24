@@ -291,6 +291,7 @@ for _ in range(n):        # N回繰り返し
 print(max(numbers))       # 最大値: 25
 print(sum(numbers))       # 合計: 48
 print(len(numbers))       # 個数: 3
+```
 </figure>
 
 ### リスト内包表記による効率化
@@ -310,6 +311,7 @@ n = int(input())
 numbers = []
 for _ in range(n):
     numbers.append(int(input()))
+```
 </figure>
 
 ✅ 内包表記（推奨）：
@@ -319,6 +321,7 @@ for _ in range(n):
 ```python
 n = int(input())
 numbers = [int(input()) for _ in range(n)]
+```
 </figure>
 
 さらなる応用例：
@@ -332,6 +335,7 @@ for _ in range(n):
     v = int(input())
     if v > 0:
         positive_nums.append(v)
+```
 </figure>
 
 <figure class="pseudocode">
@@ -341,6 +345,7 @@ for _ in range(n):
 n = int(input())
 points = [list(map(int, input().split())) for _ in range(n)]
 # 例: [[1, 2], [3, 4], [5, 6]]
+```
 </figure>
 
 💡 "_"（アンダースコア）の意味：
@@ -376,6 +381,7 @@ for _ in range(n):
 print(matrix[0][0])  # 1行1列目: 1
 print(matrix[1][2])  # 2行3列目: 7
 print(matrix[2][3])  # 3行4列目: 12
+```
 </figure>
 
 内包表記版：
@@ -385,6 +391,7 @@ print(matrix[2][3])  # 3行4列目: 12
 ```python
 n, m = map(int, input().split())
 matrix = [list(map(int, input().split())) for _ in range(n)]
+```
 </figure>
 
 実用例：
@@ -402,6 +409,7 @@ for row in matrix:
     for val in row:
         max_val = max(max_val, val)
 print(f"最大値: {max_val}")
+```
 </figure>
 
 ## 4.5 文字列入力を扱おう
