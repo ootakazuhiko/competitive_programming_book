@@ -719,3 +719,39 @@ def process_tasks():
 第7章では、いよいよ実際のAtCoderのABC問題に挑戦し、これまで学んだアルゴリズムとデータ構造を組み合わせた実戦的な問題解決を学ぶ。君が身につけた技術を、本物の競技で活用する時が来た！
 
 君はもう、競技プログラミングで必要な基本的な道具を全て手に入れた。次の章では、その道具を使って実際の問題を解く楽しさと、競技での勝利の喜びを体験しよう！
+
+# よくある誤りと修正（データ構造）
+
+{% capture ds_wrong %}
+ケース1: 二次元リストの初期化で `[[0]*m]*n` を使ってしまう  
+→ すべての行が同じリストを参照し、1カ所の更新が全行に波及  
+修正: `[[0 for _ in range(m)] for _ in range(n)]` として独立行を作成
+
+ケース2: キューに `list.pop(0)` を使う  
+→ O(N) で全体シフトが発生し遅い  
+修正: `collections.deque` を使い、`popleft()` で O(1)
+
+ケース3: 集合（set）に順序を期待する  
+→ set は順序を持たない。順序が必要なら `list` や `dict`（3.7+の保持順）を検討
+{% endcapture %}
+{% include panel.html type="warn" title="⚠️ 典型的な誤り" content=ds_wrong %}
+
+# 章末クイズ（理解度チェック）
+
+{% capture ch6_quiz_q %}
+Q1. 2次元配列 `a` を 3×4 の 0 で初期化する正しい方法は？  
+Q2. 出現回数カウントに便利な標準ライブラリ/データ構造は？  
+Q3. 二つの集合 A,B の共通部分・和集合を求める演算子は？  
+Q4. スタック/キューの Python 標準実装（推奨）は？  
+Q5. 辞書で `key` が存在しない場合に 0 を返しつつ加算する簡便な方法は？
+{% endcapture %}
+{% include panel.html type="steps" title="📘 質問" content=ch6_quiz_q %}
+
+{% capture ch6_quiz_a %}
+A1. `a = [[0 for _ in range(4)] for _ in range(3)]`  
+A2. `collections.Counter` または `dict`  でのカウント  
+A3. 共通部分: `&`、和集合: `|`  
+A4. スタック: `list.append/pop`、キュー: `collections.deque`  
+A5. `collections.defaultdict(int)` または `dict.get(key, 0)` を用いる
+{% endcapture %}
+{% include panel.html type="info" title="📝 解答とヒント" content=ch6_quiz_a %}
