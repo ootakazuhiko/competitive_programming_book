@@ -642,6 +642,20 @@ print(f"{result:.3f}")  # 2.333</code></pre>
 {% endcapture %}
 {% include panel.html type="steps" title="チェックリスト" content=checklist %}
 
+## 典型的な誤りと修正（入出力）
+
+{% capture io_wrong %}
+ケース1: `a, b = input().split()` のまま演算してしまう  
+→ 文字列のままなので `"2" + "3" == "23"`。修正: `a, b = map(int, input().split())`
+
+ケース2: リストをそのまま `print(numbers)` してしまう  
+→ 期待は `1 2 3` だが `['1', '2', '3']` になる。修正: `print(*numbers)`（アンパック）
+
+ケース3: N行入力なのに1行で `split()` しようとする  
+→ 入力形式と不一致。修正: `for _ in range(N): x = int(input())`
+{% endcapture %}
+{% include panel.html type="warn" title="⚠️ よくある誤り" content=io_wrong %}
+
 ## まとめ：入出力処理の完全マスター達成！
 
 この章では、競技プログラミングにおける入出力処理のすべてを学んだ。

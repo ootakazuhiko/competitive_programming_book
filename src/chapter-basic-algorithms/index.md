@@ -733,6 +733,20 @@ print(max_meetings(meetings))</code></pre>
 {% endcapture %}
 {% include panel.html type="info" title="💡 貪欲法を使う判断基準" content=greedy_guides %}
 
+## 典型的な誤りと修正（アルゴリズム）
+
+{% capture algo_wrong %}
+ケース1: 二重ループで i<j の制約を忘れる  
+→ 重複カウントや同一要素の組を数えてしまう。修正: `for i in range(n): for j in range(i+1, n): ...`
+
+ケース2: 計算量の過小評価  
+→ N=10^5 で O(N^2) を選ぶ。修正: 上限から計算量を見積もり、O(N log N) などへ設計変更
+
+ケース3: 条件分岐の境界ズレ  
+→ `>=`/`>` の混在で境界が誤判定。修正: 大きい方から順に if/elif を設計
+{% endcapture %}
+{% include panel.html type="warn" title="⚠️ よくある誤り" content=algo_wrong %}
+
 ## まとめ：アルゴリズムの道具箱を手に入れた！
 
 この章では、競技プログラミングで最も頻繁に使用される6つの基本アルゴリズムを学んだ。
