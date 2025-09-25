@@ -661,3 +661,18 @@ Q5. 終了後の振り返りのポイントは？
 • 終了直後の振り返りと復習が成長の最短ルート
 {% endcapture %}
 {% include panel.html type="info" title="✅ 要点チェック" content=ch10_points %}
+
+## 典型的な誤りと修正（コンテスト運用）
+
+{% capture cp_wrong %}
+ケース1: A問題に時間をかけすぎる  
+→ 全体配分が崩れる。修正: 上限時間を決め、切り上げてBへ
+
+ケース2: WA連発で闇雲に再提出  
+→ 検証不足。修正: 反例/境界のテストを作ってから再提出
+
+ケース3: 読解を飛ばして実装  
+→ 問題の取り違え。修正: 読解→設計→実装→検証の順守
+{% endcapture %}
+{% include panel.html type="warn" title="⚠️ よくある誤り" content=cp_wrong %}
+
