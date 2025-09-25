@@ -219,6 +219,35 @@ print(snow_depth)</code></pre>
 {% endcapture %}
 {% include panel.html type="info" title="検証の進め方" content=s4_how %}
 
+## 章末クイズ（理解度チェック）
+
+{% capture ch7_quiz_q %}
+Q1. A問題で最頻のパターンを3つ挙げ、各1行で実装の型を示せ  
+Q2. B問題で増える典型的な思考段階は？（少なくとも2つ）  
+Q3. 「サンプルに合わせたハードコード」が危険な理由を説明せよ  
+Q4. `N % 500 <= A` の意味（Infinite Coins）を自然言語で説明せよ  
+Q5. 文字1つの対応（ATGC）を if-elif 以外で実装する2つの方法は？
+{% endcapture %}
+{% include panel.html type="steps" title="📘 質問" content=ch7_quiz_q %}
+
+{% capture ch7_quiz_a %}
+A1. 四則演算/条件分岐/文字列メソッド例:  
+ - `print(h2-h1)`、`print('Even' if (a*b)%2==0 else 'Odd')`、`print(s.count('1'))`  
+A2. 読解の精度UP、列挙/全探索、場合分けの網羅、境界/エッジの洗い出し  
+A3. サンプル以外の入力で破綻するため。一般化されたロジックで合格を目指す  
+A4. 500円玉を最大限使った後の不足額を 1円玉で賄えるかの判定  
+A5. `dict` を用いた対応表、インデックス対応（`dna.index`→`pairs[...]`）
+{% endcapture %}
+{% include panel.html type="info" title="📝 解答とヒント" content=ch7_quiz_a %}
+
+{% capture ch7_examples %}
+実例リンク（AtCoder）  
+- A: ABC081A, ABC086A, ABC071A  
+- B: ABC081B, ABC085B, ABC083B  
+各問題は本章のパターンに対応。制約/想定テクは問題ページ参照
+{% endcapture %}
+{% include panel.html type="info" title="🔗 パターン→実例マッピング" content=ch7_examples %}
+
 {% capture s5_submit %}
 ✅ 提出前の最終確認  
 • 言語がPython 3か  
