@@ -317,3 +317,21 @@ CC BY-NC-SA 4.0ライセンスの下で提供されます。
 いよいよAtCoderの世界に足を踏み入れよう！
 
 次の章では、実際にAtCoderのサイトにアクセスして、アカウントを作る方法から詳しく学んでいこう。君の競技プログラミングライフが、いよいよ本格的に始まる！
+
+## 章末クイズ（理解度チェック）
+
+{% capture ch1_quiz_q %}
+Q1. 競技プログラミングの魅力を3つ挙げる  
+Q2. 本書で扱う主なプラットフォームは？  
+Q3. 初心者が最初に目指すべきコンテストは？  
+Q4. 本章の学びを一言で説明すると？  
+Q5. 次章で行う実践ステップは？
+{% endcapture %}
+{% include panel.html type="steps" title="📘 質問" content=ch1_quiz_q %}
+
+{% capture ch1_points %}
+• 世界と繋がる挑戦／論理的思考の伸長／達成感と成長の可視化  
+• AtCoder を中心に学び、確実に前進する  
+• まずはABC（Beginner Contest）で経験を積む
+{% endcapture %}
+{% include panel.html type="info" title="✅ 要点チェック" content=ch1_points %}

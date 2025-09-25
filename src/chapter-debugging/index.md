@@ -564,3 +564,21 @@ print(count)
 **実戦での活用に向けて**
 
 次の章では、いよいよ実際のAtCoderコンテストに参加する方法を学ぶよ。君が身につけたエラー対応力を、時間制限のあるコンテストでどう活用するか、実戦的なコツを身につけよう！
+
+## 章末クイズ（理解度チェック）
+
+{% capture ch9_quiz_q %}
+Q1. SyntaxError と NameError の違い  
+Q2. 例外発生時の最初の一歩（再現/最小化）  
+Q3. デバッグのための出力のコツ（何を、いつ、どこで）  
+Q4. タイムアウト時の典型原因と対策  
+Q5. 提出前の最終チェック項目は？
+{% endcapture %}
+{% include panel.html type="steps" title="📘 質問" content=ch9_quiz_q %}
+
+{% capture ch9_points %}
+• 例外の種類とメッセージから原因を特定  
+• 再現→最小化→観察→修正→再テストのサイクル  
+• 入出力/境界/計算量の再点検を徹底
+{% endcapture %}
+{% include panel.html type="info" title="✅ 要点チェック" content=ch9_points %}
