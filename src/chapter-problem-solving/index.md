@@ -875,3 +875,13 @@ A4. まず再現、最小ケースへ切り詰める、入力/状態を観察
 A5. 境界/最小/最大/ランダム/反例を含む、失敗時に原因が分かる
 {% endcapture %}
 {% include panel.html type="info" title="📝 解答とヒント" content=ch8_quiz_a %}
+
+{% capture ch8_map %}
+| 練習テーマ | 問題 | 難易度 | 制約目安 | 想定テク/プロセス |
+|---|---|---|---|---|
+| 読解→実装（基礎） | [ABC086A Product](https://atcoder.jp/contests/abc086/tasks/abc086_a) | A | 小 | Stage1-3で読解→実装→検証 |
+| サンプル分析→一般化 | [ABC081B Shift only](https://atcoder.jp/contests/abc081/tasks/abc081_b) | B | 中 | 反復・エッジ想定 |
+| 2D入力の設計 | [ABC075B Minesweeper](https://atcoder.jp/contests/abc075/tasks/abc075_b) | B | 中 | グリッド走査・境界条件 |
+| 数学設計（発展） | [ABC109C Skip](https://atcoder.jp/contests/abc109/tasks/abc109_c) | C | 中 | 差分GCD・証明的思考 |
+{% endcapture %}
+{% include panel.html type="info" title="🔗 パターン→実例マッピング（問題解決プロセス）" content=ch8_map %}
