@@ -722,3 +722,11 @@ A5. `print(f"{x:.2f}")`（フォーマット指定: `.2f`）
 | 混在データ | [ABC086C Traveling](https://atcoder.jp/contests/abc086/tasks/abc086_c) | C（発展） | 中 | 複数行/複数値の読解と検証 |
 {% endcapture %}
 {% include panel.html type="info" title="🔗 パターン→実例マッピング（入出力）" content=ch4_map %}
+
+{% capture ch4_note %}
+凡例  
+• 難易度: AtCoderのA/B/C目安  
+• 制約目安: 小（〜10^2）、中（〜10^5 前後）  
+• 想定テク: そのパターンで身につく代表的な手筋
+{% endcapture %}
+{% include panel.html type="info" title="ℹ️ 注記（凡例）" content=ch4_note %}
