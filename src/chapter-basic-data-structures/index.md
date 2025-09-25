@@ -755,3 +755,14 @@ A4. スタック: `list.append/pop`、キュー: `collections.deque`
 A5. `collections.defaultdict(int)` または `dict.get(key, 0)` を用いる
 {% endcapture %}
 {% include panel.html type="info" title="📝 解答とヒント" content=ch6_quiz_a %}
+
+{% capture ch6_map %}
+| データ構造 | 問題 | 難易度 | 制約目安 | 想定テク |
+|---|---|---|---|---|
+| リスト操作 | [ABC081B Shift only](https://atcoder.jp/contests/abc081/tasks/abc081_b) | B | 中 | 反復/最小回数 |
+| 集合（重複排除） | [ABC085B Kagami Mochi](https://atcoder.jp/contests/abc085/tasks/abc085_b) | B | 小 | `set`で重複除去 |
+| ソート＋配列 | [ABC088B Card Game for Two](https://atcoder.jp/contests/abc088/tasks/abc088_b) | B | 小 | 降順ソート |
+| 辞書/頻度（発展） | [ABC081C Not so Diverse](https://atcoder.jp/contests/abc081/tasks/abc081_c) | C（発展） | 中 | 頻度マップ/整列 |
+| キュー/BFS（発展） | [ABC007C 幅優先探索](https://atcoder.jp/contests/abc007/tasks/abc007_3) | C（発展） | 中 | `deque`とBFS |
+{% endcapture %}
+{% include panel.html type="info" title="🔗 パターン→実例マッピング（データ構造）" content=ch6_map %}

@@ -709,3 +709,16 @@ A4. `for _ in range(N): x = int(input())` のように N 回 `input()` を呼ぶ
 A5. `print(f"{x:.2f}")`（フォーマット指定: `.2f`）
 {% endcapture %}
 {% include panel.html type="info" title="📝 解答とヒント" content=quiz_a %}
+
+{% capture ch4_map %}
+| パターン | 問題 | 難易度 | 制約目安 | 想定テク |
+|---|---|---|---|---|
+| 1行で複数整数 | [ABC086A Product](https://atcoder.jp/contests/abc086/tasks/abc086_a) | A | 小 | `map(int, input().split())` |
+| N個の整数（1行） | [ABC081B Shift only](https://atcoder.jp/contests/abc081/tasks/abc081_b) | B | 中 | 分割→`map`→反復/条件 |
+| N行入力（整数） | [ABC155B Papers, Please](https://atcoder.jp/contests/abc155/tasks/abc155_b) | B | 中 | `for _ in range(N): int(input())` |
+| 2次元グリッド | [ABC075B Minesweeper](https://atcoder.jp/contests/abc075/tasks/abc075_b) | B | 中 | `H,W`→`grid=[input() for _ in range(H)]` |
+| 2次元数値 | [ABC237B Matrix Transposition](https://atcoder.jp/contests/abc237/tasks/abc237_b) | B | 中 | `H,W`＋各行`map(int, ...)` |
+| 文字列入力/処理 | [ABC081A Placing Marbles](https://atcoder.jp/contests/abc081/tasks/abc081_a) | A | 小 | `s=input(); s.count('1')` |
+| 混在データ | [ABC086C Traveling](https://atcoder.jp/contests/abc086/tasks/abc086_c) | C（発展） | 中 | 複数行/複数値の読解と検証 |
+{% endcapture %}
+{% include panel.html type="info" title="🔗 パターン→実例マッピング（入出力）" content=ch4_map %}

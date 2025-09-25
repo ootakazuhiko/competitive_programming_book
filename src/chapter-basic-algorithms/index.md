@@ -788,3 +788,16 @@ print(max_meetings(meetings))</code></pre>
 4. **貪欲に選択して大丈夫か？** → 局所最適＝全体最適の保証
 
 この判断力は、実際に多くの問題を解くことで身についてくる。次の章では、これらのアルゴリズムをより効率的に実行するための「データ構造」について学ぼう。適切なデータ構造を選ぶことで、同じアルゴリズムでも劇的に高速化できるんだ！
+
+{% capture ch5_map %}
+| パターン | 問題 | 難易度 | 制約目安 | 想定テク |
+|---|---|---|---|---|
+| 全探索（二重/三重） | [ABC051B Sum of Three Integers](https://atcoder.jp/contests/abc051/tasks/abc051_b) | B | 中 | 三重ループと枝刈り |
+| 条件分岐の整理 | [ABC086A Product](https://atcoder.jp/contests/abc086/tasks/abc086_a) | A | 小 | 場合分け/偶奇 |
+| 数学/GCD | [ABC109C Skip](https://atcoder.jp/contests/abc109/tasks/abc109_c) | C（発展） | 中 | 差分のGCD |
+| 文字列処理 | [ABC071B Not Found](https://atcoder.jp/contests/abc071/tasks/abc071_b) | B | 中 | 出現チェック/最小文字 |
+| ソート活用 | [ABC088B Card Game for Two](https://atcoder.jp/contests/abc088/tasks/abc088_b) | B | 小 | 降順ソートと交互取り |
+| 貪欲 | [ABC095B Bitter Alchemy](https://atcoder.jp/contests/abc095/tasks/abc095_b) | B | 小 | 最小コスト選択/余り処理 |
+| 貪欲（発展） | [ABC153C Fennec vs Monster](https://atcoder.jp/contests/abc153/tasks/abc153_c) | C（発展） | 中 | 降順ソート→上位Kカット |
+{% endcapture %}
+{% include panel.html type="info" title="🔗 パターン→実例マッピング（アルゴリズム）" content=ch5_map %}

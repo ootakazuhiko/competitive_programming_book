@@ -881,3 +881,12 @@ A問題とB問題の解法を理解したところで、実際のコンテスト
 {% endcapture %}
 {% include panel.html type="warn" title="⚠️ よくある誤り" content=abc_wrong %}
 
+
+{% capture ch7_map %}
+| パターン | 問題 | 難易度 | 制約目安 | 想定テク |
+|---|---|---|---|---|
+| A: 四則/条件/文字列 | [ABC086A](https://atcoder.jp/contests/abc086/tasks/abc086_a), [ABC081A](https://atcoder.jp/contests/abc081/tasks/abc081_a) | A | 小 | 偶奇/`count` |
+| A→Bの橋渡し | [ABC081B](https://atcoder.jp/contests/abc081/tasks/abc081_b), [ABC088B](https://atcoder.jp/contests/abc088/tasks/abc088_b) | B | 中 | 反復/ソート |
+| B: 2D/累積/組合せ | [ABC075B](https://atcoder.jp/contests/abc075/tasks/abc075_b), [ABC051B](https://atcoder.jp/contests/abc051/tasks/abc051_b) | B | 中 | グリッド/全探索 |
+{% endcapture %}
+{% include panel.html type="info" title="🔗 パターン→実例マッピング（ABC A/B）" content=ch7_map %}
