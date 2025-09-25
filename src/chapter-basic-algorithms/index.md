@@ -801,3 +801,11 @@ print(max_meetings(meetings))</code></pre>
 | 貪欲（発展） | [ABC153C Fennec vs Monster](https://atcoder.jp/contests/abc153/tasks/abc153_c) | C（発展） | 中 | 降順ソート→上位Kカット |
 {% endcapture %}
 {% include panel.html type="info" title="🔗 パターン→実例マッピング（アルゴリズム）" content=ch5_map %}
+
+{% capture ch5_note %}
+凡例  
+• 難易度: AtCoderのA/B/C目安  
+• 制約目安: 小（〜10^2）、中（〜10^5 前後）  
+• 想定テク: 代表的な手筋（計算量/枝刈り/整列など）
+{% endcapture %}
+{% include panel.html type="info" title="ℹ️ 注記（凡例）" content=ch5_note %}

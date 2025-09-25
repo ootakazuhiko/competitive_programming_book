@@ -766,3 +766,8 @@ A5. `collections.defaultdict(int)` または `dict.get(key, 0)` を用いる
 | キュー/BFS（発展） | [ABC007C 幅優先探索](https://atcoder.jp/contests/abc007/tasks/abc007_3) | C（発展） | 中 | `deque`とBFS |
 {% endcapture %}
 {% include panel.html type="info" title="🔗 パターン→実例マッピング（データ構造）" content=ch6_map %}
+
+{% capture ch6_note %}
+凡例  \n• 難易度: AtCoderのA/B/C目安  \n• 制約目安: 小（〜10^2）、中（〜10^5 前後）  \n• 想定テク: 代表的な手筋/設計要素
+{% endcapture %}
+{% include panel.html type="info" title="ℹ️ 注記（凡例）" content=ch6_note %}
