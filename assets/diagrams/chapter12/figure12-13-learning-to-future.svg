@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">図12-13：この本全体で身につけた力と未来への道筋</title>
+  <desc id="desc">中学生の今から、教育・キャリア・研究/創造の3つの道に分岐し、最終的に社会への貢献につながる道筋</desc>
+  <defs>
+    <style>
+      .title { font: 600 20px Inter, Arial, sans-serif; fill: #1e293b; }
+      .label { font: 600 16px Inter, Arial, sans-serif; fill: #1e293b; }
+      .small { font: 400 13px Inter, Arial, sans-serif; fill: #334155; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 10; }
+      .box-muted { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 2; rx: 10; }
+      .arrow { stroke: #94a3b8; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
+      .accent-edu { fill: #dbeafe; stroke: #60a5fa; }
+      .accent-career { fill: #dcfce7; stroke: #34d399; }
+      .accent-research { fill: #ede9fe; stroke: #a78bfa; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text class="title" x="480" y="40" text-anchor="middle">この本全体で身につけた力と未来への道筋</text>
+
+  <!-- Source: Middle school / Start -->
+  <rect class="box" x="360" y="70" width="240" height="70" />
+  <text class="label" x="480" y="105" text-anchor="middle">🌟 中学生の今</text>
+  <text class="small" x="480" y="125" text-anchor="middle">競技プログラミングとの出会い</text>
+
+  <!-- Split arrows to three paths -->
+  <path class="arrow" d="M480,140 L480,190"/>
+  <path class="arrow" d="M480,140 C480,165 340,170 320,200"/>
+  <path class="arrow" d="M480,140 C480,165 620,170 640,200"/>
+
+  <!-- Three branches: Education / Career / Research -->
+  <!-- Education -->
+  <rect class="box accent-edu" x="160" y="200" width="240" height="90" />
+  <text class="label" x="280" y="230" text-anchor="middle">🎓 教育</text>
+  <text class="small" x="280" y="252" text-anchor="middle">高校/大学受験・留学 など</text>
+
+  <!-- Career -->
+  <rect class="box accent-career" x="360" y="200" width="240" height="90" />
+  <text class="label" x="480" y="230" text-anchor="middle">💼 キャリア</text>
+  <text class="small" x="480" y="252" text-anchor="middle">IT企業就職・起業・技術顧問</text>
+
+  <!-- Research / Creation -->
+  <rect class="box accent-research" x="560" y="200" width="240" height="90" />
+  <text class="label" x="680" y="230" text-anchor="middle">🔬 研究・創造</text>
+  <text class="small" x="680" y="252" text-anchor="middle">新技術開発・学術研究・特許</text>
+
+  <!-- Converge arrows -->
+  <path class="arrow" d="M280,290 C280,330 320,360 480,360"/>
+  <path class="arrow" d="M480,290 L480,350"/>
+  <path class="arrow" d="M680,290 C680,330 640,360 480,360"/>
+
+  <!-- Destination: Social contribution -->
+  <rect class="box-muted" x="330" y="360" width="300" height="90" />
+  <text class="label" x="480" y="395" text-anchor="middle">🌍 社会への貢献</text>
+  <text class="small" x="480" y="417" text-anchor="middle">より良い未来の創造</text>
+
+  <!-- Footer note -->
+  <text class="small" x="480" y="500" text-anchor="middle">本書で培った「学び続ける力」が、いずれの道にも通底する土台となる</text>
+</svg>
+
