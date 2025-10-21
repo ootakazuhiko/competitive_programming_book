@@ -1,0 +1,25 @@
+name: Guard includes from code fences
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'src/**/*.md'
+      - 'index.md'
+      - 'scripts/lint-includes-not-in-codefence.js'
+
+permissions:
+  contents: read
+
+jobs:
+  include-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run include guard
+        run: |
+          node scripts/lint-includes-not-in-codefence.js
+
