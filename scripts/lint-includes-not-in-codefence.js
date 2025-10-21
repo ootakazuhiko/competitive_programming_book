@@ -48,11 +48,16 @@ function scanFile(file) {
 
 function main() {
   const root = process.cwd();
-  const targets = [];
-  const srcDir = path.join(root, 'src');
-  if (fs.existsSync(srcDir)) targets.push(...collectMdFiles(srcDir));
-  const indexMd = path.join(root, 'index.md');
-  if (fs.existsSync(indexMd)) targets.push(indexMd);
+  let targets = [];
+  const cliFiles = process.argv.slice(2);
+  if (cliFiles.length > 0) {
+    targets = cliFiles.filter(f => fs.existsSync(f) && f.endsWith('.md'));
+  } else {
+    const srcDir = path.join(root, 'src');
+    if (fs.existsSync(srcDir)) targets.push(...collectMdFiles(srcDir));
+    const indexMd = path.join(root, 'index.md');
+    if (fs.existsSync(indexMd)) targets.push(indexMd);
+  }
 
   let total = 0;
   const report = [];
