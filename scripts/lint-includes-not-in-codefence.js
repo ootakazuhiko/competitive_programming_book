@@ -48,11 +48,21 @@ function scanFile(file) {
 
 function main() {
   const root = process.cwd();
-  const targets = [];
-  const srcDir = path.join(root, 'src');
-  if (fs.existsSync(srcDir)) targets.push(...collectMdFiles(srcDir));
-  const indexMd = path.join(root, 'index.md');
-  if (fs.existsSync(indexMd)) targets.push(indexMd);
+  let targets = [];
+  const cli = process.argv.slice(2);
+  if (cli.length > 0) {
+    // Accept newline-delimited list as a single argument as well
+    if (cli.length === 1 && /\n/.test(cli[0])) {
+      targets = cli[0].split(/\r?\n/).filter(p => p && p.endsWith('.md') && fs.existsSync(p));
+    } else {
+      targets = cli.filter(p => p && p.endsWith('.md') && fs.existsSync(p));
+    }
+  } else {
+    const srcDir = path.join(root, 'src');
+    if (fs.existsSync(srcDir)) targets.push(...collectMdFiles(srcDir));
+    const indexMd = path.join(root, 'index.md');
+    if (fs.existsSync(indexMd)) targets.push(indexMd);
+  }
 
   let total = 0;
   const report = [];

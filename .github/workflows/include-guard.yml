@@ -31,7 +31,13 @@ jobs:
           # Fetch changed files via GitHub API
           CHANGED=$(curl -sSL -H "Authorization: Bearer $GH_TOKEN" \
             "https://api.github.com/repos/$REPO/pulls/$PR_NUMBER/files?per_page=200" \
-            | jq -r '.[].filename' \
-            | grep -E '^src/.+\.md$|^index\.md$' || true)
-          if [ -z "$CHANGED" ]; then echo "No changed markdown files"; exit 0; fi
-          echo "$CHANGED" | xargs -r node scripts/lint-includes-not-in-codefence.js
+            | jq -r '.[].filename' || true)
+          CHANGED_MD=$(printf "%s\n" "$CHANGED" | grep -E '^src/.+\.md$|^index\.md$' || true)
+          if [ -z "$CHANGED_MD" ]; then echo "No changed markdown files"; exit 0; fi
+          echo "Changed markdown files:"; printf "%s\n" "$CHANGED_MD"
+          while IFS= read -r f; do
+            [ -n "$f" ] || continue
+            node scripts/lint-includes-not-in-codefence.js "$f"
+          done <<EOF
+          $CHANGED_MD
+          EOF
