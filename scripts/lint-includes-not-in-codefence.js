@@ -1,14 +1,16 @@
 #!/usr/bin/env node
-/*
- Detect Jekyll include tags used inside fenced code blocks in Markdown.
- This helps avoid panels/figures being wrapped in <pre> due to stray ``` fences.
-
- Scans: src/**/*.md and index.md
- Exits with non-zero status if any violation is found.
-*/
+// Detect Jekyll include tags used inside fenced code blocks in Markdown.
+// This helps avoid panels/figures being wrapped in <pre> due to stray ``` fences.
+//
+// Scope: scans markdown files under src/ and the top-level index.md.
+// Exits with non-zero status if any violation is found.
 
 const fs = require('fs');
 const path = require('path');
+
+// Precompile regex patterns once
+const JEKYLL_INCLUDE_RE = /\{\%\s*include\b[^%]*\%\}/; // Jekyll include tag
+const FENCE_START_RE = /^\s*```/; // allow indented fenced code blocks
 
 /**
  * Recursively collect markdown files under dir.
@@ -29,16 +31,15 @@ function scanFile(file) {
   let inFence = false;
   let fenceStart = 0;
   const problems = [];
-  const includeRe = /\{\%\s*include\b[^%]*\%\}/; // Jekyll include tag
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     // Start/end of fenced code block (```)
-    if (/^```/.test(line)) {
+    if (FENCE_START_RE.test(line)) {
       inFence = !inFence;
       fenceStart = inFence ? (i + 1) : 0;
       continue;
     }
-    if (inFence && includeRe.test(line)) {
+    if (inFence && JEKYLL_INCLUDE_RE.test(line)) {
       problems.push({ line: i + 1, fenceStart, text: line.trim() });
     }
   }
@@ -78,4 +79,3 @@ function main() {
 }
 
 main();
-

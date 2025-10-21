@@ -29,13 +29,9 @@ jobs:
         run: |
           bundle exec jekyll build --trace
 
-      - name: Install html-proofer
-        run: |
-          gem install html-proofer
-
       - name: Run html-proofer (internal only)
         run: |
-          htmlproofer ./_site \
+          bundle exec htmlproofer ./_site \
             --disable-external \
             --check-html \
             --empty-alt-ignore \
