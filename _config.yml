@@ -26,6 +26,8 @@ exclude:
   - scripts/
   - tests/
   - "README.md"
+  - vendor/
+  - vendor/bundle/
 
 # 日本語対応
 kramdown:

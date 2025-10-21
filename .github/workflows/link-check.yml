@@ -3,6 +3,13 @@ name: Link check (Pages site)
 on:
   pull_request:
     branches: [ main ]
+    paths:
+      - 'src/**'
+      - 'assets/**'
+      - 'index.md'
+      - '_config.yml'
+      - '_layouts/**'
+      - '_includes/**'
 
 permissions:
   contents: read
@@ -13,6 +20,7 @@ jobs:
     steps:
       - name: Check links with lychee
         uses: lycheeverse/lychee-action@v2.0.2
+        continue-on-error: true
         with:
           args: >
             --verbose

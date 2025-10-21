@@ -1,0 +1,37 @@
+name: Guard includes from code fences
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'src/**/*.md'
+      - 'index.md'
+      - 'scripts/lint-includes-not-in-codefence.js'
+
+permissions:
+  contents: read
+
+jobs:
+  include-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run include guard (changed Markdown only)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -e
+          # Fetch changed files via GitHub API
+          CHANGED=$(curl -sSL -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/$REPO/pulls/$PR_NUMBER/files?per_page=200" \
+            | jq -r '.[].filename' \
+            | grep -E '^src/.+\.md$|^index\.md$' || true)
+          if [ -z "$CHANGED" ]; then echo "No changed markdown files"; exit 0; fi
+          echo "$CHANGED" | xargs -r node scripts/lint-includes-not-in-codefence.js
